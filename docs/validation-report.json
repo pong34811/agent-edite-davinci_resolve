@@ -3,8 +3,8 @@
   "core_skill_count": 16,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 168,
-  "local_reference_count": 42,
+  "manifest_file_count": 177,
+  "local_reference_count": 48,
   "scanner": "Hermes tools.skills_guard.scan_skill",
   "security_scans": [
     {
@@ -176,7 +176,29 @@
     {
       "name": "resolve-video-enrichment",
       "verdict": "safe",
-      "findings": []
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 28,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references/automation-safety.md",
+          "line": 6,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references/resolve-editing-workflow.md",
+          "line": 7,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
     },
     {
       "name": "thai-subtitles-resolve",

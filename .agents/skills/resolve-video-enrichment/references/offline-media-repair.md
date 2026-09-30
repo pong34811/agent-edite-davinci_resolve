@@ -4,9 +4,7 @@ For timeline items whose media-pool entry was deleted while the timeline item
 survived. Symptom: `GetMediaPoolItem()` returns `None`, and Resolve's Relink
 Media is useless because there is no pool item to repoint.
 
-This is a project-database repair. It never touches source media — replacement
-files are only read and imported. Snapshot `Project.db` (or export a `.drp`)
-before the first write.
+This is a timeline/media-pool repair and requires explicit approval to re-import and re-place the exact targets. It never touches source media: replacement files are only read and imported. Export and verify a fresh `.drp` before the first mutation; this procedure does not authorize direct SQL or copying an open database as a reliable backup.
 
 ## 1. Record everything before changing anything
 
@@ -34,6 +32,8 @@ so surviving clips do not shift.
 
 ## 3. Re-place at the recorded position
 
+The example below assumes matching source/timeline frame units and no retime. Verify that assumption first. For mixed-FPS GIF/audio/video sources, derive the source-frame span from the actual imported `FPS`/`Frames` and approved duration rather than treating timeline duration as a source-frame count; read back the placed record range before committing.
+
 ```python
 info = {
     "mediaPoolItem": clip,
@@ -48,8 +48,7 @@ info = {
 Clamp `endFrame` to the source's own `Frames - 1` and report when you did, so a
 short replacement file is visible rather than silently truncating.
 
-Sleep ~0.45 s between appends — a tight batch of SFX/BGM/GIF appends crashes
-Resolve, and the rate is the trigger, not any one file.
+Begin structural mutations at roughly 1.2-second spacing and save/read back between batches. A historical 0.45-second append-only delay is not a safe general delete/import/append policy; rapid mutations have crashed Resolve.
 
 ## 4. Restore the transform, then re-read it
 
@@ -67,9 +66,7 @@ Two more traps on the same call:
 
 ## 5. Verify
 
-Re-enumerate every track on the repaired timelines and assert zero items with
-`GetMediaPoolItem() is None`, then diff each restored item's transform dict
-against the values recorded in step 1 and report the mismatch count.
+Re-enumerate every approved repaired item and verify its expected Media Pool identity/path, record and source ranges, and transform values. Diff all protected track ranges against the baseline and report mismatches. Do not assert that every timeline item needs a Media Pool item: legitimate source-less titles/generators can also return None.
 
 Finish with a rendered frame at a previously-broken timecode and look at it: the
 structural check proves the item is online, only the pixels prove the red card

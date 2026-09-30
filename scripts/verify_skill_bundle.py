@@ -15,6 +15,24 @@ ROOT = Path(__file__).resolve().parents[1]
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+def checksum_matches(path, expected):
+    if sha(path) == expected:
+        return True
+    text_suffixes = {'', '.cjs', '.html', '.js', '.json', '.md', '.py',
+                     '.pyi', '.sh', '.ts', '.txt', '.yaml', '.yml'}
+    data = path.read_bytes()
+    if path.suffix.lower() not in text_suffixes or bytes([0]) in data:
+        return False
+    try:
+        data.decode('utf-8')
+    except UnicodeDecodeError:
+        return False
+    # Git can convert LF/CRLF on checkout and archive; change no other bytes.
+    lf = data.replace(bytes([13, 10]), bytes([10]))
+    crlf = lf.replace(bytes([10]), bytes([13, 10]))
+    return expected in {hashlib.sha256(lf).hexdigest(),
+                        hashlib.sha256(crlf).hexdigest()}
+
 def validate():
     manifest = json.loads((ROOT / 'docs/skills-manifest.json').read_text(encoding='utf-8'))
     errors = []
@@ -107,7 +125,7 @@ def validate():
         dst = ROOT / record['path']
         if not dst.is_file():
             errors.append('Missing manifest file: ' + record['path'])
-        elif sha(dst) != record['sha256']:
+        elif not checksum_matches(dst, record['sha256']):
             errors.append('Checksum mismatch: ' + record['path'])
     for path in [ROOT/'scripts/contact_sheet.py', ROOT/'scripts/verify_skill_bundle.py', ROOT/'tests/test_skill_bundle.py']:
         ast.parse(path.read_text(encoding='utf-8'), filename=str(path))

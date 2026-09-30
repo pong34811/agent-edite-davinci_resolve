@@ -1,5 +1,9 @@
 # Resolve render and deliverable QC
 
+## Scope and live-target guard
+
+Invoke CLI examples through the `terminal` tool. These are established Windows recipes, not a test of the currently installed build. Discover the actual interpreter/module path and render matrix first. All raster, FPS, codec and preset values below are illustrative: replace them with the approved live target and verify every return value. Never turn a vertical project into 1920x1080 or force 60 fps because this example uses them. Render only when authorized; preserve original media and restore the captured project/timeline/timecode/page/folder/track states after save.
+
 ## Windows ResolvePython connection
 
 Use the bundled interpreter and module path:

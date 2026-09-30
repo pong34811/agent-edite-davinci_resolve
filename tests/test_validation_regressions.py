@@ -98,6 +98,35 @@ class ValidationRegressionTests(unittest.TestCase):
         result = self.validate()
         self.assertTrue(result['ok'], result['errors'])
 
+    def test_text_checksum_accepts_git_newline_conversion(self):
+        relative = '.agents/skills/house-style/SKILL.md'
+        path = self.root / relative
+        record = next(r for r in self.manifest['files'] if r['path'] == relative)
+        lf = path.read_bytes().replace(bytes([13, 10]), bytes([10]))
+        crlf = lf.replace(bytes([10]), bytes([13, 10]))
+        for expected, checked_out in [(lf, crlf), (crlf, lf)]:
+            with self.subTest(expected_crlf=bytes([13, 10]) in expected):
+                record['sha256'] = hashlib.sha256(expected).hexdigest()
+                path.write_bytes(checked_out)
+                self.write_manifest()
+                result = self.validate()
+                self.assertTrue(result['ok'], result['errors'])
+
+    def test_binary_checksum_keeps_exact_bytes(self):
+        relative = 'docs/binary-fixture.bin'
+        path = self.root / relative
+        original = bytes([0, 255, 13, 10, 65])
+        path.write_bytes(original.replace(bytes([13, 10]), bytes([10])))
+        self.manifest['files'].append({
+            'path': relative,
+            'sha256': hashlib.sha256(original).hexdigest(),
+        })
+        self.manifest['counts']['manifest_files'] = len(self.manifest['files'])
+        self.write_manifest()
+        result = self.validate()
+        self.assertFalse(result['ok'])
+        self.assertIn('Checksum mismatch: ' + relative, result['errors'])
+
     def test_empty_inventory_is_rejected(self):
         self.manifest['files'] = []
         self.manifest['counts']['manifest_files'] = 0

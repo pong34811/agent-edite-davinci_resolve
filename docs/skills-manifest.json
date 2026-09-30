@@ -820,9 +820,9 @@
     {
       "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
-      "source_sha256": "ac9ed7070f3fa7773b689776e146ea86c6f180ca6ec54021d5a0cc643ca62d61",
+      "source_sha256": "8329ce648fa442e46bbc381d472c998db2042d389dc9d8128c1be79af2a4f05e",
       "kind": "editing_skill",
-      "sha256": "ac9ed7070f3fa7773b689776e146ea86c6f180ca6ec54021d5a0cc643ca62d61"
+      "sha256": "8329ce648fa442e46bbc381d472c998db2042d389dc9d8128c1be79af2a4f05e"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
@@ -834,31 +834,31 @@
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-library-and-cues.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
-      "source_sha256": "a27ace565d626185542bab9691bd270e1989eac10ee11adf98448236cba7ee72",
+      "source_sha256": "64b41a29bab3be3b3cb0b01ce627a1119b2772de3a52de275d0c61e2afc3df04",
       "kind": "editing_skill",
-      "sha256": "a27ace565d626185542bab9691bd270e1989eac10ee11adf98448236cba7ee72"
+      "sha256": "64b41a29bab3be3b3cb0b01ce627a1119b2772de3a52de275d0c61e2afc3df04"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/offline-media-repair.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\offline-media-repair.md",
-      "source_sha256": "1e5a7b98fbae90fea309174524b9ba157a5596d58325cc0b720d416264958790",
+      "source_sha256": "322595db89aec5cd99d3ae392ab6c7aa4d7259ac6c58ec2812a1204ab48a3404",
       "kind": "editing_skill",
-      "sha256": "1e5a7b98fbae90fea309174524b9ba157a5596d58325cc0b720d416264958790"
+      "sha256": "322595db89aec5cd99d3ae392ab6c7aa4d7259ac6c58ec2812a1204ab48a3404"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/render-qc.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\render-qc.md",
-      "source_sha256": "8f1ba08689a7d82f013ece2a7539ec00ff573daa8831b47eb150122ed221c08c",
+      "source_sha256": "2e223f5cb7a35b65b4393afcb9da68e7cae55a18fc7c4b529355f669f572e5ee",
       "kind": "editing_skill",
-      "sha256": "8f1ba08689a7d82f013ece2a7539ec00ff573daa8831b47eb150122ed221c08c"
+      "sha256": "2e223f5cb7a35b65b4393afcb9da68e7cae55a18fc7c4b529355f669f572e5ee"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\SKILL.md",
-      "source_sha256": "26e45a30fe876ad8226a2df8a4746856e869093952e023c0b19e0ebe206fd299",
+      "source_sha256": "fb16caade1535867501e8fde57769b770f7186d366fbfc2c7dbbdb79d10f02a4",
       "kind": "editing_skill",
-      "local_amendment": "Activate before timecode reads; serialize live operations; separate migration, legibility, listening and restore verification.",
-      "sha256": "171df483d4eacd89324639adbb8eb8bf5e3890431228d26629b7852210adca3e"
+      "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
+      "sha256": "9d062fbd8beb40544aa247b2ae3877287cf3fce969a4b159103af6d6420f54b0"
     },
     {
       "path": "docs/related-skills/computer-use/SKILL.md",
@@ -1827,13 +1827,13 @@
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "9b175929e1ca8d427f653eee99d90e0856232b9d322f65bfee010403fbba004a"
+      "sha256": "02c483426df849fca7a9753d52e5fd6d692d6ca4a5b579687ed99bf11d5bd4ca"
     },
     {
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d12afa2b0ea8bc4e62fcc16cabb263759d85c5dadfad1786232b674348d962f4"
+      "sha256": "edd29ea65bc83f6b7da4cf9ed12e077fed050ff659d8c8acfb23432a50179a38"
     },
     {
       "path": "tests/test_skill_bundle.py",
@@ -1845,7 +1845,7 @@
       "path": "tests/test_validation_regressions.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "4e1735ad299f49447e008cbd616fde769899fa44f6a019150df283612ac43852"
+      "sha256": "3c8f10bf553bf151efb317ff22ca7396a7f1dc472bd1d1df66651fcc278f40b2"
     },
     {
       "path": "tests/test_contact_sheet.py",
@@ -1870,6 +1870,74 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "a6345f3e6d1a3dd08a27d81204481e509fe453952d8b7aebf9db81688413f00c"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/automation-safety.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/automation-safety.md",
+      "source_sha256": "5635bd8e080b21ce1333dac3427638ce3934fb39bb47e868f00cae1ea5e72841",
+      "sha256": "2a2ff4c41e3a521bee08ed33caa9748a50fba4b02d816464938a1cbd38538379",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/resolve-editing-workflow.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/resolve-editing-workflow.md",
+      "source_sha256": "37f2eec69546061c3fea7d7904f66304b471e8ba6ae3189480b547f813adeef2",
+      "sha256": "815b8b7bc8b3f757117012f1d68cf6183067b5e86e4f35f97caf3a9c3568fb2c",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/thai-captions-audio-framing.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/thai-captions-audio-framing.md",
+      "source_sha256": "e5522bf349cee20f2b33b19fa24e2cbfb51b025833eb4898dde0b9231d6d2e18",
+      "sha256": "16dc0f2df6ede3e4e34a68e62ffefaeb0504c37faae16fc7fc7f78ec1ebb6aa7",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
+      "source_sha256": "400a678cdb8f34b8b4a8e8198ee45c58ac9bb8d77c5b41bda999a758360ac51a",
+      "sha256": "20c5b853b69fb10160abd316d078caf6e74fb1c15d1a58863e948c29bd6106ed",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/youtube-delivery-and-rights.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/youtube-delivery-and-rights.md",
+      "source_sha256": "63fd521e905bc2af1db03e2b7089cfc41bbbb91e6d7e4f1e9446fad03a9c964b",
+      "sha256": "5f879b8f195542611e8685e0788f90abd8283982c3a4d14385267d42b7e40729",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/youtube-packaging-and-feedback.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/youtube-packaging-and-feedback.md",
+      "source_sha256": "4d55962879818738ca1b2981bf5d02cf73883f1ff57eeb6a586e4f6781cd5df8",
+      "sha256": "a4e811458f95bda8a4f8e267a1a6af10f15c94a7cd97c752b7bb8fe621ea2bde",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/templates/vtuber-edit-brief.md",
+      "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/templates/vtuber-edit-brief.md",
+      "source_sha256": "6bf8c52e503e58a3384680cce9200ef34056c121943c1780e7f1969a3c206ad2",
+      "sha256": "31280670812fd8e16e3e57d2c6d97adbb2bfbd4424b3d95730c969b19760cb89",
+      "kind": "editing_skill",
+      "local_amendment": "Normalize final newline for the repository bundle."
+    },
+    {
+      "path": "VERSION",
+      "source": "project-authored",
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "kind": "integration_or_validation"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source": "project-authored",
+      "sha256": "d96ff63ce55190df993eb7cfd56bc1f6559d2bf6ab955385678f9e2ed11b0e8f",
+      "kind": "integration_or_validation"
     }
   ],
   "historical_variants": [
@@ -1920,13 +1988,14 @@
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
-      "reason": "State-dependent playhead readback, serialized calls and separate cue, legibility, audio and backup verification."
+      "reason": "Source-backed Thai VTuber/YouTube knowledge base, 11 on-demand references and one brief template; retained state-dependent readback, native captions and separate legibility/audio/restore verification. Documentation only; no live Resolve test."
     }
   ],
   "counts": {
     "editing_skills": 16,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 168
-  }
+    "manifest_files": 177
+  },
+  "bundle_version": "0.1.0"
 }

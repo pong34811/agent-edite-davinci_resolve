@@ -2,6 +2,8 @@
 
 รวบรวม skills จากงานเดิมมาไว้ในโปรเจกต์นี้ โดยไม่ย้ายหรือลบต้นฉบับ ไม่แก้คลิป ไทม์ไลน์ หรือฐานข้อมูล Resolve และไม่เปลี่ยน config ของ Hermes
 
+รุ่นของชุด skills: **v0.1.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
+
 ## ชุดหลัก — 16 skills
 
 อยู่ที่ `.agents/skills/` พร้อม references และคู่มือ Resolve ที่อ้างถึง
@@ -19,7 +21,7 @@
 | `resolve-edit` | ตัด ย้าย คัดลอกช่วง ปรับ pacing และโครงสร้างไทม์ไลน์ |
 | `resolve-audio` | เสียง Fairlight การมิกซ์ การถอดเสียง และขอบเขต API |
 | `thai-subtitles-resolve` | ถอดเสียงไทย จัดคำและเวลา SRT นำเข้าและตรวจ subtitle |
-| `resolve-video-enrichment` | เติม SFX/BGM/GIF ซูม VTuber ด้วย Adjustment Clip และ QC |
+| `resolve-video-enrichment` | ตัดคลิป VTuber ไทย วางจังหวะมุก/ซับ/เสียง เติม SFX/BGM/GIF จัดเฟรม และวัดผล YouTube |
 | `resolve-fusion` | Fusion composition / Transform / title / VFX |
 | `resolve-color` | ปรับสีและ matching แบบ frame-first |
 | `resolve-conform` | Conform/interchange ตรวจ source range และการ relink |
@@ -48,6 +50,21 @@
 - เก็บ historical variants ที่ต่างจริงไว้ใน `docs/skill-variants/` ไม่เอากฎเก่าทับ house style ปัจจุบัน
 
 อ่านกฎใช้งานที่ `AGENTS.md` และรายละเอียดข้อขัดแย้ง/ข้อจำกัดที่ `docs/OPERATING-NOTES.md`
+
+## ฐานความรู้คลิป VTuber ไทยและ YouTube
+
+`resolve-video-enrichment` มีแกนงานสั้น พร้อม references 11 ไฟล์และ template 1 ไฟล์ใน `.agents/skills/resolve-video-enrichment/` เรียกอ่านเฉพาะหัวข้อผ่าน `skill_view` ได้:
+
+- `resolve-editing-workflow.md` — เลือกช่วง ตัด/trim และลำดับการเก็บงาน
+- `vtuber-story-and-pacing.md` — hook จังหวะมุก reaction และบุคลิกของผู้พูด
+- `thai-captions-audio-framing.md` — ซับไทย native เสียงพูดชัด และพื้นที่อวาตาร์/เกม
+- `youtube-packaging-and-feedback.md` — ชื่อ/ปก retention และการทดลองปรับคลิปจากข้อมูลจริง
+- `youtube-delivery-and-rights.md` — สเปกส่งออก สิทธิ์ตัดคลิป เพลง และขอบเขต monetization
+- `automation-safety.md` — รวมข้อควรระวังการสั่งงาน Resolve โดยรักษาต้นฉบับและสถานะ UI
+- References เดิม: `asset-coverage.md`, `asset-library-and-cues.md`, `adjustment-focus.md`, `offline-media-repair.md`, `render-qc.md`
+- Template: `templates/vtuber-edit-brief.md`
+
+เนื้อหาแยกข้อเท็จจริงจากคู่มือ Blackmagic Design/YouTube Help ออกจากแนวทางสร้างสรรค์ที่ต้องทดลองกับผู้ชม ไม่รับประกันยอดวิว และคำขอเรียนรู้ไม่ใช่การอนุญาตให้แก้โปรเจกต์หรือเผยแพร่คลิป
 
 ผลรีวิว ข้อบกพร่องที่แก้ และประเด็นค้างของงานตัดต่อแยกอยู่ที่ `docs/REVIEW.md`
 
@@ -78,8 +95,10 @@ Tests ของ contact sheet ต้องมี Pillow ด้วย ใช้ e
 
 `docs/skills-manifest.json` บันทึกแหล่งที่มา SHA-256 ของต้นฉบับ/สำเนา รายการปรับเฉพาะโปรเจกต์ และ history anchors โดยไม่คัดลอกข้อความสนทนาหรือ secrets
 
+Checksum ตรวจไบต์จริงก่อน และยอมรับเฉพาะความต่าง LF/CRLF สำหรับไฟล์ข้อความ UTF-8 ที่ Git แปลงตอน checkout/archive เท่านั้น ไม่ข้ามการเปลี่ยนเนื้อหา ช่องว่าง หรือไบต์ของไฟล์ binary
+
 ## ขอบเขต
 
 นี่คือ **ชุด skills และคู่มือ ไม่ใช่ MCP server ตัวใหม่** ต้องใช้ backend `davinci-resolve-mcp` ที่มีอยู่หรือ scripting bridge ที่ตรวจการเชื่อมต่อจริงก่อนลงมือ คำสั่งเกี่ยวกับ `src/server.py` ในคู่มือต้นทางให้รันจาก installation ของ backend ไม่ใช่จากโปรเจกต์นี้
 
-ไม่ได้รวม `release-check` ซึ่งใช้ปล่อยเวอร์ชัน server, งาน Canva thumbnail/YouTube downloader ที่เป็นคนละ workflow, source footage, ไฟล์ SRT ของคลิป, render, หรือ Project.db ไม่มีการ commit/push หรือติดตั้งแพ็กเกจเพิ่มในงานนี้
+ไม่ได้รวม `release-check` ซึ่งใช้ปล่อยเวอร์ชัน server, งาน Canva thumbnail/YouTube downloader ที่เป็นคนละ workflow, source footage, ไฟล์ SRT ของคลิป, render, หรือ Project.db รุ่นนี้เผยแพร่ชุดเอกสาร/skills ไม่ใช่การปล่อย MCP server หรือหลักฐานว่าตัดต่อคลิปเสร็จแล้ว
