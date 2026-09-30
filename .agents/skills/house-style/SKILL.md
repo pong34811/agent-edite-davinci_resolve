@@ -44,6 +44,24 @@ Latin terms such as names. Use shorter holds when the spoken words arrive
 faster. The trap is using spaces to show word grouping, which makes Thai text
 look unnaturally spread out.
 
+## Subtitle track only
+
+Create and continue dialogue captions only on native Resolve Subtitle tracks.
+Do not use Text+ / TextPlus, Fusion titles, or text on video tracks as a
+substitute, even if they offer easier styling. The user wants subtitles kept
+in the existing Subtitle-track workflow. Historical Text+ captions are not
+permission to create more; migrating existing captions must preserve their
+text and timing and must not remove unrelated titles or overlays.
+
+Treat a native-track preference as a creation rule, not permission to modify every historical Text+ timeline.
+Confirm the migration targets; preserve protected horizontal versions. After
+verifying exact text and frames, disable a captions-only legacy track rather
+than deleting its clips. Never disable a mixed track of titles and overlays.
+When the user handles fonts/styles, do not revive an older font/style plan;
+report legibility problems without styling or retiming outside current scope.
+For preserve-text-and-timing migrations, flag legacy house-style exceptions
+instead of dropping words, shortening holds, or splitting cues automatically.
+
 ## Shot selection
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->

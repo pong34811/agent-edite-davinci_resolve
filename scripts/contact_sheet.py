@@ -13,9 +13,10 @@ timestamp and the sampler's `selection_reason`, so per-frame findings can still
 be reported by index against the schema.
 
 Source-safe: reads only the analysis scratch directory and the sidecar
-`visual.json`; writes only into `out_dir`. Never touches source media.
+`visual.json`; writes only new files into `out_dir`. Never overwrites existing
+outputs or source frames; use a fresh output directory for each run.
 
-Run: `python3 scripts/contact_sheet.py <clip_analysis_dir> <out_dir>`
+Run: `python scripts/contact_sheet.py <clip_analysis_dir> <out_dir>`
 where `<clip_analysis_dir>` is the directory holding `visual.json` and
 `frames/` (printed as `artifacts.clip_dir` by `media_analysis`).
 """
@@ -25,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
 try:
@@ -83,8 +85,13 @@ def load_frames(clip_dir: str) -> Tuple[List[str], Dict[int, Dict[str, Any]]]:
     there is no vision payload left to report against.
     """
     visual = _read_json(os.path.join(clip_dir, "visual.json"))
-    paths = [p for p in visual.get("frame_paths", []) if os.path.exists(p)]
+    paths = visual.get("frame_paths", [])
     if paths:
+        for path in paths:
+            if not os.path.isfile(path):
+                raise FileNotFoundError(
+                    "Pending vision frame is missing; refusing to renumber: %s" % path
+                )
         meta = {
             m["frame_index"]: m for m in visual.get("frame_metadata", [])
         }
@@ -128,11 +135,23 @@ def build_sheets(
     rows: int = 3,
 ) -> Tuple[List[Tuple[str, int, int]], int]:
     """Tile every sampled frame into labelled sheets. Returns (sheets, frame_count)."""
+    for name, value in [('tile_width', tile_width), ('columns', columns), ('rows', rows)]:
+        if value <= 0:
+            raise ValueError('%s must be positive' % name)
     paths, meta = load_frames(clip_dir)
     if not paths:
         return [], 0
 
     per_sheet = columns * rows
+    output_paths = [
+        Path(out_dir) / ("sheet_%02d.jpg" % (offset // per_sheet + 1))
+        for offset in range(0, len(paths), per_sheet)
+    ]
+    # Check the complete batch before creating any file; also protect source
+    # frames when the caller accidentally chooses their directory as output.
+    for output_path in output_paths:
+        if output_path.exists() or output_path.is_symlink():
+            raise FileExistsError("Refusing to overwrite: %s" % output_path)
     os.makedirs(out_dir, exist_ok=True)
     font = _load_font(17)
 
@@ -171,8 +190,10 @@ def build_sheets(
                 font=font,
             )
 
-        out_path = os.path.join(out_dir, "sheet_%02d.jpg" % (offset // per_sheet + 1))
-        sheet.save(out_path, quality=82, optimize=True)
+        out_path = str(output_paths[offset // per_sheet])
+        # Exclusive creation also prevents a race from replacing an input.
+        with open(out_path, 'xb') as handle:
+            sheet.save(handle, format='JPEG', quality=82, optimize=True)
         sheets.append((out_path, offset + 1, offset + len(chunk)))
 
     return sheets, len(paths)
@@ -187,9 +208,12 @@ def main() -> int:
     parser.add_argument("--rows", type=int, default=3)
     args = parser.parse_args()
 
-    sheets, frame_count = build_sheets(
-        args.clip_dir, args.out_dir, args.tile_width, args.columns, args.rows
-    )
+    try:
+        sheets, frame_count = build_sheets(
+            args.clip_dir, args.out_dir, args.tile_width, args.columns, args.rows
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     if not frame_count:
         print(
             "no sampled frames found in %s\n"

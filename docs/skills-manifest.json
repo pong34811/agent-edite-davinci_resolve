@@ -705,7 +705,8 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\house-style\\SKILL.md",
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
-      "sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92"
+      "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
+      "sha256": "7ec4c803f89b8f5a8561bedc6984f1adff50fd7372128bd124e095aabc62ff3a"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -776,8 +777,8 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-rough-cut\\SKILL.md",
       "source_sha256": "aee1ffd3e2c0a539466f1fc7be4346f67f2845a0cbb6e24a0eb117dad0523ba4",
       "kind": "editing_skill",
-      "local_amendment": "Windows python command; authorized dependency installs; permission-gated archive cleanup.",
-      "sha256": "7e6bdc44db0d01388d52db1a481d0a27b1c66b218770d02b04d2110f6f149796"
+      "local_amendment": "Windows python command; authorized dependency installs; permission-gated archive cleanup; contact-sheet collision and vision-index safeguards.",
+      "sha256": "4facc14753c6fd56580d6200b4ad819e897928712c9fbfe82f123c4c123459bc"
     },
     {
       "path": ".agents/skills/resolve-session/agents/openai.yaml",
@@ -813,8 +814,8 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\thai-subtitles-resolve\\SKILL.md",
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
-      "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing.",
-      "sha256": "8adb4194f869086a3a011dbbd890a7b186be036594929b175b219d880fc61d98"
+      "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
+      "sha256": "561f6a581099dc2e96427e8fb3245d64370614d7f898e172b80af239615e2adb"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
@@ -856,7 +857,8 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\SKILL.md",
       "source_sha256": "26e45a30fe876ad8226a2df8a4746856e869093952e023c0b19e0ebe206fd299",
       "kind": "editing_skill",
-      "sha256": "26e45a30fe876ad8226a2df8a4746856e869093952e023c0b19e0ebe206fd299"
+      "local_amendment": "Activate before timecode reads; serialize live operations; separate migration, legibility, listening and restore verification.",
+      "sha256": "171df483d4eacd89324639adbb8eb8bf5e3890431228d26629b7852210adca3e"
     },
     {
       "path": "docs/related-skills/computer-use/SKILL.md",
@@ -1766,7 +1768,8 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\scripts\\contact_sheet.py",
       "source_sha256": "1cdd0e06c7acd2f4a74b04d7294f22618f10f63c2344482f959823bb5f9ff32a",
       "kind": "analysis_helper",
-      "sha256": "1cdd0e06c7acd2f4a74b04d7294f22618f10f63c2344482f959823bb5f9ff32a"
+      "local_amendment": "Refuse output overwrites, preserve pending vision indices by failing on missing frames, validate positive grid dimensions with CLI usage errors, and use the Windows python command.",
+      "sha256": "ba5b017830b598feb7991340f24d34ee10a36c8c6cc4e272760015c74980dbb5"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
@@ -1818,25 +1821,55 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5a8a8c89ee38a9d359a6335ff3b191074bb2cacade0d4e5fd1a2ca9a8c132b27"
+      "sha256": "f87302aacc161841f8f63e50cbfc489049a65cdddd52636baf80c55d415fe3bd"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e591f037f62f9661d6a70b5f84ef88bf21d20a6e5a07f79d8013f94138c324f3"
+      "sha256": "9b175929e1ca8d427f653eee99d90e0856232b9d322f65bfee010403fbba004a"
     },
     {
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a12fb5e1ce92ea38173241eb9306a3054d5a931ccd0755639089aaf01666077c"
+      "sha256": "d12afa2b0ea8bc4e62fcc16cabb263759d85c5dadfad1786232b674348d962f4"
     },
     {
       "path": "tests/test_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "83957964f38e0cbd816b9d58c12524cdd63f5f0fb7fe1fd491ddcca946346043"
+    },
+    {
+      "path": "tests/test_validation_regressions.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "4e1735ad299f49447e008cbd616fde769899fa44f6a019150df283612ac43852"
+    },
+    {
+      "path": "tests/test_contact_sheet.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "995ab9f7865e63fe249f308b69a331fff299268de87b23a83d0b1c9f7c3c6e56"
+    },
+    {
+      "path": "docs/REVIEW.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "d342bf75d4a3a4b008cb287258f072e25ea66738ca0eeb90285fa3690a800ba6"
+    },
+    {
+      "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "af61dfa83102b6a06967be3aaf3e5e59641df272d33fa6152cd26730056aa688"
+    },
+    {
+      "path": "tests/test_subtitle_workflow_rules.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "a6345f3e6d1a3dd08a27d81204481e509fe453952d8b7aebf9db81688413f00c"
     }
   ],
   "historical_variants": [
@@ -1857,16 +1890,17 @@
     "release-check: publishing the MCP server, not editing footage",
     "software-development:codebase-inspection: MCP repository inspection",
     "gif-search / whisper: no direct load evidence in the inspected Resolve sessions; transcription guidance already covered by Thai subtitle skill",
-    "Canva thumbnail and YouTube downloader projects: separate workflows"
+    "Canva thumbnail and YouTube downloader projects: separate workflows",
+    "PLAN.md, WORKLOG.md, reference/ and .mcp.json: separate editing-work context; left untouched and not included in skill-package provenance or validation."
   ],
   "edits": [
     {
       "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
-      "reason": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing."
+      "reason": "House-style 1.5s cue cap; bare SRT payload; conservative mutation pacing; native-caption migration, authorized style/SQL scope, fresh playhead and asynchronous page readback."
     },
     {
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
-      "reason": "Windows python command; authorized dependency installs; permission-gated archive cleanup."
+      "reason": "Windows python command; authorized dependency installs; permission-gated archive cleanup; contact-sheet collision and vision-index safeguards."
     },
     {
       "path": ".agents/skills/video-footage-review/SKILL.md",
@@ -1875,12 +1909,24 @@
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
       "reason": "Agent-neutral wording; mechanics unchanged."
+    },
+    {
+      "path": "scripts/contact_sheet.py",
+      "reason": "Refuse output overwrites, preserve pending vision indices by failing on missing frames, validate positive grid dimensions with CLI usage errors, and use the Windows python command."
+    },
+    {
+      "path": ".agents/skills/house-style/SKILL.md",
+      "reason": "Native Subtitle-only captions, explicit migration targets, legacy recovery and current user-owned styling scope."
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
+      "reason": "State-dependent playhead readback, serialized calls and separate cue, legibility, audio and backup verification."
     }
   ],
   "counts": {
     "editing_skills": 16,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 163
+    "manifest_files": 168
   }
 }

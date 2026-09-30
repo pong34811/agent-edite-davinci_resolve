@@ -3,10 +3,200 @@
   "core_skill_count": 16,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 163,
-  "local_reference_count": 41,
-  "scanner": "unavailable; structural/checksum checks only",
-  "security_scans": [],
+  "manifest_file_count": 168,
+  "local_reference_count": 42,
+  "scanner": "Hermes tools.skills_guard.scan_skill",
+  "security_scans": [
+    {
+      "name": "house-style",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-audio",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 85,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-color",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 50,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 60,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-conform",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 142,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-delivery",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 133,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-edit",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 149,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-fusion",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 31,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-mcp",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 88,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 100,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-media-analysis",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-media-pool",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 31,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-rough-cut",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 61,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 174,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-session",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-tighten-recording",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 151,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-video-enrichment",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "thai-subtitles-resolve",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "unicode_escape_chain",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 135,
+          "description": "chain of unicode escapes (possible obfuscation)"
+        }
+      ]
+    },
+    {
+      "name": "video-footage-review",
+      "verdict": "safe",
+      "findings": []
+    }
+  ],
   "errors": [],
   "live_resolve_tested": false,
   "project_trust_changed": false

@@ -22,6 +22,10 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | API methods | Exact build, installed README/typed stub, then a read-only or isolated probe | Older manuals' blanket API gaps may be stale; do not treat absence from a catalog as proof. |
 | Audio level | AudioVolume in dB on observed builds; enumerate/read back actual properties | Volume/Gain/Level guesses can return False silently. |
 | Caption QC | Viewer screenshot or short burn-in render | ExportCurrentFrameAsStill can omit subtitle overlays. |
+| Native captions | Subtitle track only; migrate only exact authorized targets | A creation preference does not authorize modifying protected legacy timelines. |
+| User-owned styling | If the user handles fonts/styles, verify insertion and report legibility separately | Older font plans or easier SQL styling cannot override the current scope. |
+| Playhead readback | Activate each timeline before GetCurrentTimecode; capture fresh state on resume | Inactive timeline reads can return the active timeline's playhead. |
+| Page restoration | Serialize live calls; wait and read GetCurrentPage after OpenPage | A True return can precede completion of the page switch. |
 | Adjustment Clip | Scripted pilot; lock all original video/audio/subtitle tracks; full range audit and rendered frames | Generator insertion can ripple other track types even when V1 looks unchanged. |
 
 ## Transform and offline-media traps
@@ -38,9 +42,37 @@ Subtitle track style has no supported scripting setter in the observed workflow.
 
 ## Evidence and scope
 
+For legacy subtitle migration, read the Thai subtitle skill's native-caption
+migration reference. Preserve exact words and absolute frames; disable only a
+verified captions-only legacy track after native cues pass. Preserve unrelated
+titles/overlays and protected horizontal versions. Recheck live state before
+repeating interrupted mutations. Caption insertion, publication legibility,
+listening QC and DRP restore are separate verdicts.
+
 `docs/skills-manifest.json` records original paths, source SHA-256s, copied files, local amendments, and bounded historical usage anchors. Only the current default Hermes history was examined. A load in a session mentioning Resolve is evidence of loading, not proof that the skill was used on every clip or completed an edit. No footage, render, SRT deliverable, project DB, secret, or entire conversation transcript was copied.
 
 The current portable `.agents` source was chosen over older worktree versions. Distinct historical versions are retained under `docs/skill-variants/`; the old house-style variant lacks the newer Thai rules. A Codex-specific media-analysis wording variant was archived; the active local copy is agent-neutral.
+
+The bundle validator checks file coverage under `.agents/`, `docs/`,
+`resolve-advanced/`, `scripts/`, and `tests/`, plus the declared integration
+documents. It excludes its manifest, generated validation report and Python
+bytecode caches. `PLAN.md`, `WORKLOG.md`, `reference/` and `.mcp.json` are
+separate editing-work context, not evidence that this collection completed any
+live edit. Check those tasks independently; do not rewrite their progress from
+bundle tests. Checksums detect drift against the local manifest, not malicious
+changes to both a file and the manifest; they are not signed provenance.
+
+Archive validation checks the discovered names/paths and upstream frontmatter.
+Tests use `TMPDIR` when supplied, otherwise `HERMES_HOME/cache/scratch` or
+the platform's default Hermes home; no system-temp fallback is needed.
+The `superpowers-` directory prefix is an archive namespace, not part of the
+upstream skill name. Archive scripts and all archive links are not execution-
+tested by core validation; these files remain inactive historical references.
+
+In the separate editing plan, keep the sample-approval gate authoritative.
+`PLAN.md` Task 2's all-timeline font heading must not be used to bypass Task 3's
+explicit sample approval. Review/reorder that plan with its owner before any
+batch writes; this skill-package review does not approve the remaining clips.
 
 ## Imported references that are not prerequisites
 

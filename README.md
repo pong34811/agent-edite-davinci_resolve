@@ -49,6 +49,8 @@
 
 อ่านกฎใช้งานที่ `AGENTS.md` และรายละเอียดข้อขัดแย้ง/ข้อจำกัดที่ `docs/OPERATING-NOTES.md`
 
+ผลรีวิว ข้อบกพร่องที่แก้ และประเด็นค้างของงานตัดต่อแยกอยู่ที่ `docs/REVIEW.md`
+
 ## ใช้กับ Hermes
 
 Hermes รองรับ project-local skills ใน `.agents/skills/` แต่ต้อง trust โปรเจกต์ก่อน จากไดเรกทอรีนี้ใช้:
@@ -69,6 +71,10 @@ python scripts/verify_skill_bundle.py
 ```
 
 Validator ต้องมี PyYAML; ใช้ Python environment ที่ตรวจแล้วว่ามีแพ็กเกจนี้ หากมี Hermes ใน interpreter เดียวกัน จะสแกน core skills ด้วย security scanner จริงของ Hermes ด้วย ผลตรวจชุดปัจจุบันอยู่ที่ `docs/validation-report.json`
+
+Tests ของ contact sheet ต้องมี Pillow ด้วย ใช้ environment ที่ตรวจว่ามีแล้ว; ไม่ติดตั้งแพ็กเกจอัตโนมัติ ตัวตรวจสอบตรวจทั้งไฟล์ที่ตกหล่นจาก manifest และการจับคู่รายการ skills กับไฟล์จริง ไม่ใช่ตรวจเพียงจำนวนเท่ากัน
+
+การตรวจนี้ครอบคลุม **ชุด skills** ไม่ใช่การตัดต่อคลิปให้เสร็จ `PLAN.md`, `WORKLOG.md`, `reference/` และ `.mcp.json` เป็นบริบทงานแยก ไม่ได้รวมใน provenance หรือการรับรองนี้ สถานะการแก้คลิปต้องตรวจจากหลักฐานของงานนั้นและ Resolve จริง ไม่ใช่จากผล tests ชุดนี้
 
 `docs/skills-manifest.json` บันทึกแหล่งที่มา SHA-256 ของต้นฉบับ/สำเนา รายการปรับเฉพาะโปรเจกต์ และ history anchors โดยไม่คัดลอกข้อความสนทนาหรือ secrets
 

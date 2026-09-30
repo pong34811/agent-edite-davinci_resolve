@@ -45,6 +45,14 @@ Use this skill for existing Resolve timelines that need external SFX, BGM, GIF/i
 
 ## Procedure
 
+### State and QC boundaries
+
+- Activate each timeline before reading its playhead: an inactive `Timeline.GetCurrentTimecode()` can return the active timeline's timecode on observed 21.1.0.17. Capture fresh state when resuming, not stale state from an earlier session.
+- Serialize live Resolve calls. `OpenPage()` may return True before the page switch completes; wait and read back `GetCurrentPage()` before saving/asserting restoration. Never launch a render and export/save in parallel against one project.
+- Migration success is not publication-legibility approval. Compare every cue's text and frames separately from checking contrast, frame margins, chat/face overlap and glyph rendering in burn-in previews. Report deferred user-owned style work without applying it.
+- AAC renders can decode to different PCM despite unchanged timeline audio. Report unequal hashes honestly; compare timeline audio properties independently, and never treat a numerical comparison as listening QC.
+- Reuse an existing preview only after a fresh content/settings audit proves that it still represents the current timeline. Otherwise rerender within authorization. A DRP ZIP/hash check is not a restore test.
+
 ### 1. Establish scope and preserve state
 
 1. Identify the Resolve project, target timelines, asset directories, and output directory.

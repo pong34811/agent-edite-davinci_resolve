@@ -78,6 +78,13 @@ index. Roughly a 15x saving with no loss of coverage. It needs Pillow
 (probe Pillow in the intended interpreter first; install only if authorized) — the repo treats Pillow as optional elsewhere, but this
 script hard-fails without it rather than silently producing nothing.
 
+Use a fresh scratch output directory for each contact-sheet run. The local
+helper refuses existing `sheet_*.jpg` destinations, so it cannot overwrite an
+input frame or a previous sheet. If a pending `visual.json` frame is missing,
+repair/re-extract that analysis input before continuing; never filter missing
+frames and renumber the remainder, which would misattribute `commit_vision`
+findings to the wrong frame.
+
 Ask for **short clips per subject** rather than 20-35 minute takes when the
 shooter can choose. `adaptive_capped` tops out at 80 frames per clip, so a
 35-minute take gets sampled only to about its first 16 minutes — the tail is

@@ -11,6 +11,16 @@ to subtitle tracks, verified by readback.
 
 Built and proven on Resolve Studio 21.1.0.17, RTX 4060, 12 gameplay shorts.
 
+## Subtitle-track-only workflow
+
+Create and continue dialogue captions only on native Resolve Subtitle tracks.
+Do not substitute Text+ / TextPlus, Fusion titles, or text clips on video
+tracks, even when their styling is easier. Preserve unrelated titles/overlays.
+For authorized legacy migration or interrupted-work verification, read
+`references/native-caption-migration.md` before any mutation.
+If the user handles fonts/styles, stop at verified cue insertion; do not apply
+an old font/style plan, copy a style blob, or write SQL on their behalf.
+
 ## The three findings that matter
 
 ### 1. SRT import IS scriptable (most guides, and this repo's own api_truth, said it is not)
@@ -52,7 +62,8 @@ mp.ImportMedia([srt_path])                        # 3. now re-reads disk
 ```
 
 Never trust the item count printed right after append — read it back in a
-separate pass. After replacing a track, reapply any whole-track subtitle style:
+separate pass. After replacing a track, reapply any whole-track subtitle style
+only when style work is authorized; otherwise report that it is deferred.
 SRT import/AddTrack recreates the track's style blob as an unstyled stub. Verify
 both cue content/timing and style after the replacement. And when a re-run writes
 a per-item result file, MERGE with the previous record instead of overwriting, or
@@ -142,6 +153,8 @@ model.transcribe(wav, language="th", word_timestamps=True, beam_size=5,
 - `MIN_GAP_S ≈ 0.034` (2 frames @60) so blocks do not visually merge.
 - Break early on a pause `>= 0.7 s` — otherwise captions straddle sentences.
 - Never drop words to fit; flag low confidence instead and report it.
+- Apply these limits to newly authored cues. Do not shorten or split legacy
+  cues in a preserve-text-and-timing migration; report exceptions instead.
 
 ## Curating existing multi-pass ASR without a new model run
 
@@ -171,6 +184,15 @@ timelines need this or part 2 lands at zero. Get ranges from
   add the install dir via `add_dll_directory`, then `import DaVinciResolveScript`.
 - Probe API presence with `name in dir(obj)` — `hasattr` returns True for every
   name on a Resolve object, real or invented.
+- Activate each timeline before capturing its playhead: on observed 21.1.0.17,
+  an inactive `Timeline.GetCurrentTimecode()` returns the active timeline's
+  timecode. Never restore an inactive-read value onto another timeline. Wait
+  after activation and read its own timecode; capture the current active state
+  again when resuming instead of restoring stale session state.
+- `OpenPage()` can return True before `GetCurrentPage()` changes. Wait and read
+  back the requested page before final save/state assertions, and serialize
+  live Resolve calls; a successful render can otherwise be followed by a false
+  restoration failure.
 - Resolve constants (`resolve.SUBTITLE_LANGUAGE`, `AUTO_CAPTION_THAI`) are
   absent from `dir()` yet readable via `getattr` — absence from dir() is not
   absence.
@@ -179,11 +201,15 @@ timelines need this or part 2 lands at zero. Get ranges from
 
 Source media is read-only: ffmpeg decodes the original and writes NEW scratch
 WAVs. Only project-database state changes (subtitle track + items + one media
-pool item per SRT). Do probe experiments in a scratch timeline and delete it.
+pool item per SRT). Create/delete a scratch timeline only within explicit scope;
+when extra timelines are prohibited, use a verified DRP backup instead.
 Skip timelines that already have a subtitle track unless `--replace` is passed,
 so a re-run cannot silently double captions.
 
 ### Copying a user-approved subtitle-track style
+
+Direct database writes require explicit authorization for that operation;
+permission to insert subtitles or change a font is not permission to write SQL.
 
 Read before writing: inspect one reference track in Resolve's Track Inspector and compare the `EffectFiltersBA` keyed-dict value on every target `Sm2TiTrack.FieldsBlob` (`Type=2`). If all values are byte-identical, the whole-track style already matches; leave the database untouched. Different non-style keys (such as `ExcludeTrackFromSequenceCaching`) do not require replacement. Qt's QFont descriptor `pointSize` is **not** the Inspector Size (e.g. an 8.14286 descriptor displayed as Size 58), so do not set an Inspector size by assigning that number to `pointSize`. Resolve's Stroke checkbox is labeled **Outside Only**, not Outline Only: checked keeps the white fill and places the stroke outside the glyph.
 
