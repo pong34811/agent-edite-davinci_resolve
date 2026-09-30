@@ -190,12 +190,11 @@ def analyze_subtitle_cues(subtitles: List[Dict[str, Any]]) -> List[CuePoint]:
 # Asset Catalog Resolution Helper
 # ---------------------------------------------------------------------------
 
-def _find_catalog_item(catalog: Dict[str, List[Any]], bin_name: str, preferred_name: Optional[str] = None) -> Tuple[Any, str]:
-    """Find matching MediaPoolItem or asset name from catalog bin."""
+def _find_catalog_item(catalog: Dict[str, List[Any]], bin_name: str, preferred_name: Optional[str] = None) -> Tuple[Optional[Any], Optional[str]]:
+    """Find matching MediaPoolItem or asset name from catalog bin. Returns (None, None) if empty."""
     clips = catalog.get(bin_name, [])
     if not clips:
-        # If bin is empty or not in catalog, return mock/fallback name
-        return preferred_name or f"fallback_{bin_name}", preferred_name or f"fallback_{bin_name}"
+        return None, None
 
     if preferred_name:
         for clip in clips:
@@ -241,18 +240,20 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
     fade_in_frames = int(0.5 * fps)
     fade_out_frames = int(1.0 * fps)
 
-    bgm_item = PlacementItem(
-        track_type="audio",
-        track_index=3,
-        start_frame=start_frame,
-        end_frame=end_frame,
-        media_pool_item=bgm_clip,
-        asset_name=bgm_actual_name,
-        properties={"AudioVolume": -23.0},
-        fade_in_frames=fade_in_frames,
-        fade_out_frames=fade_out_frames,
-        media_type=2,  # Audio only
-    )
+    bgm_item = None
+    if bgm_clip is not None:
+        bgm_item = PlacementItem(
+            track_type="audio",
+            track_index=3,
+            start_frame=start_frame,
+            end_frame=end_frame,
+            media_pool_item=bgm_clip,
+            asset_name=bgm_actual_name or preferred_bgm_name,
+            properties={"AudioVolume": -23.0},
+            fade_in_frames=fade_in_frames,
+            fade_out_frames=fade_out_frames,
+            media_type=2,  # Audio only
+        )
 
     # 2. Analyze Cues
     cues = analyze_subtitle_cues(subtitles)
@@ -269,6 +270,9 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
             continue
 
         sfx_clip, sfx_actual_name = _find_catalog_item(asset_catalog, "Enrichment_SFX", cue.suggested_sfx)
+        if sfx_clip is None:
+            continue
+
         # 1.5s nominal duration for SFX
         sfx_duration = int(1.5 * fps)
         sfx_end = min(cue.start_frame + sfx_duration, end_frame)
@@ -280,7 +284,7 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
                 start_frame=cue.start_frame,
                 end_frame=sfx_end,
                 media_pool_item=sfx_clip,
-                asset_name=sfx_actual_name,
+                asset_name=sfx_actual_name or cue.suggested_sfx or "sfx.mp3",
                 properties={"AudioVolume": -11.0},
                 media_type=2,  # Audio only
             )
@@ -292,22 +296,23 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
     # If no subtitle cues matched, provide at least two comedic/punchline beats spaced evenly
     if len(sfx_items) < 2 and (end_frame - start_frame) > int(10 * fps):
         default_sfx_clip, default_sfx_name = _find_catalog_item(asset_catalog, "Enrichment_SFX", "1_ตลกตบมุก_1.mp3")
-        interval = (end_frame - start_frame) // 3
-        for i in range(1, 3):
-            cand_start = start_frame + i * interval
-            if not any(abs(it.start_frame - cand_start) < min_sfx_gap for it in sfx_items):
-                sfx_items.append(
-                    PlacementItem(
-                        track_type="audio",
-                        track_index=2,
-                        start_frame=cand_start,
-                        end_frame=min(cand_start + int(1.5 * fps), end_frame),
-                        media_pool_item=default_sfx_clip,
-                        asset_name=default_sfx_name,
-                        properties={"AudioVolume": -11.0},
-                        media_type=2,
+        if default_sfx_clip is not None:
+            interval = (end_frame - start_frame) // 3
+            for i in range(1, 3):
+                cand_start = start_frame + i * interval
+                if not any(abs(it.start_frame - cand_start) < min_sfx_gap for it in sfx_items):
+                    sfx_items.append(
+                        PlacementItem(
+                            track_type="audio",
+                            track_index=2,
+                            start_frame=cand_start,
+                            end_frame=min(cand_start + int(1.5 * fps), end_frame),
+                            media_pool_item=default_sfx_clip,
+                            asset_name=default_sfx_name or "1_ตลกตบมุก_1.mp3",
+                            properties={"AudioVolume": -11.0},
+                            media_type=2,
+                        )
                     )
-                )
 
     # 4. Plan GIFs on V2
     gif_items: List[PlacementItem] = []
@@ -327,6 +332,9 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
             continue
 
         gif_clip, gif_actual_name = _find_catalog_item(asset_catalog, "Enrichment_GIF", cue.suggested_gif)
+        if gif_clip is None:
+            continue
+
         # Duration: 2.0s (120 frames at 60fps)
         gif_duration = int(2.0 * fps)
         gif_end = min(cue.start_frame + gif_duration, end_frame)
@@ -338,7 +346,7 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
                 start_frame=cue.start_frame,
                 end_frame=gif_end,
                 media_pool_item=gif_clip,
-                asset_name=gif_actual_name,
+                asset_name=gif_actual_name or cue.suggested_gif or "gif.gif",
                 properties={
                     "ZoomX": 0.55,
                     "ZoomY": 0.55,
@@ -355,24 +363,25 @@ def plan_timeline_enrichment(timeline_info: Dict[str, Any], asset_catalog: Dict[
     # If no GIF cues matched, place at least 1 centered reaction GIF around timeline midpoint
     if not gif_items and (end_frame - start_frame) > int(6 * fps):
         default_gif_clip, default_gif_name = _find_catalog_item(asset_catalog, "Enrichment_GIF", "Reaction - Iconic Laugh.gif")
-        mid_point = start_frame + (end_frame - start_frame) // 2
-        gif_items.append(
-            PlacementItem(
-                track_type="video",
-                track_index=2,
-                start_frame=mid_point,
-                end_frame=min(mid_point + int(2.0 * fps), end_frame),
-                media_pool_item=default_gif_clip,
-                asset_name=default_gif_name,
-                properties={
-                    "ZoomX": 0.55,
-                    "ZoomY": 0.55,
-                    "Pan": 0.0,
-                    "Tilt": 0.0,
-                },
-                media_type=1,
+        if default_gif_clip is not None:
+            mid_point = start_frame + (end_frame - start_frame) // 2
+            gif_items.append(
+                PlacementItem(
+                    track_type="video",
+                    track_index=2,
+                    start_frame=mid_point,
+                    end_frame=min(mid_point + int(2.0 * fps), end_frame),
+                    media_pool_item=default_gif_clip,
+                    asset_name=default_gif_name or "Reaction - Iconic Laugh.gif",
+                    properties={
+                        "ZoomX": 0.55,
+                        "ZoomY": 0.55,
+                        "Pan": 0.0,
+                        "Tilt": 0.0,
+                    },
+                    media_type=1,
+                )
             )
-        )
 
     return EnrichmentPlan(
         timeline_name=name,
@@ -433,14 +442,14 @@ def apply_enrichment_plan(
 
     # Resolve MediaPool
     if media_pool is None:
-        if hasattr(timeline, "GetMediaPool"):
-            media_pool = timeline.GetMediaPool()
+        if resolve and hasattr(resolve, "GetProjectManager"):
+            pm = resolve.GetProjectManager()
+            if pm and hasattr(pm, "GetCurrentProject") and pm.GetCurrentProject():
+                media_pool = pm.GetCurrentProject().GetMediaPool()
         elif hasattr(timeline, "GetProject") and timeline.GetProject():
             media_pool = timeline.GetProject().GetMediaPool()
-        elif resolve:
-            pm = resolve.GetProjectManager()
-            if pm and pm.GetCurrentProject():
-                media_pool = pm.GetCurrentProject().GetMediaPool()
+        elif hasattr(timeline, "GetMediaPool"):
+            media_pool = timeline.GetMediaPool()
 
     if not media_pool:
         raise RuntimeError("Could not obtain MediaPool for timeline placement.")
@@ -484,7 +493,13 @@ def apply_enrichment_plan(
         all_items.extend(plan.sfx_items)
         all_items.extend(plan.gif_items)
 
-    for item in all_items:
+    # Filter out items without a valid media pool item
+    valid_items = [it for it in all_items if it.media_pool_item is not None]
+    if not valid_items and all_items:
+        # Items were expected in plan but none had valid media pool items
+        return False
+
+    for item in valid_items:
         clip_info = {
             "mediaPoolItem": item.media_pool_item,
             "startFrame": item.source_start_frame,
@@ -495,17 +510,38 @@ def apply_enrichment_plan(
         }
 
         appended = media_pool.AppendToTimeline([clip_info])
-        if delay_between_mutations > 0:
-            time.sleep(min(delay_between_mutations, 0.35))
+        if not appended or not isinstance(appended, list) or len(appended) == 0:
+            return False
 
-        # Apply properties to the created timeline items
-        if appended and isinstance(appended, list):
-            for placed_item in appended:
-                if not placed_item:
-                    continue
-                for prop_name, prop_val in item.properties.items():
-                    if hasattr(placed_item, "SetProperty"):
-                        placed_item.SetProperty(prop_name, prop_val)
+        if delay_between_mutations > 0:
+            time.sleep(delay_between_mutations)
+
+        # Apply properties and native fades to the created timeline items
+        for placed_item in appended:
+            if not placed_item:
+                continue
+            for prop_name, prop_val in item.properties.items():
+                if hasattr(placed_item, "SetProperty"):
+                    placed_item.SetProperty(prop_name, prop_val)
+
+            # Apply native fades (e.g. for BGM)
+            if (item.fade_in_frames is not None or item.fade_out_frames is not None) and hasattr(placed_item, "SetFades"):
+                fades_dict = {}
+                if item.fade_in_frames is not None:
+                    fades_dict["FadeIn"] = int(item.fade_in_frames)
+                if item.fade_out_frames is not None:
+                    fades_dict["FadeOut"] = int(item.fade_out_frames)
+                try:
+                    placed_item.SetFades(fades_dict)
+                except Exception:
+                    pass
+
+    # Save project state if ProjectManager is accessible
+    pm = None
+    if resolve and hasattr(resolve, "GetProjectManager"):
+        pm = resolve.GetProjectManager()
+    if pm and hasattr(pm, "SaveProject"):
+        pm.SaveProject()
 
     return True
 

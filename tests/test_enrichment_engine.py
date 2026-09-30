@@ -214,6 +214,122 @@ def test_apply_enrichment_plan():
     assert gif_clip._props.get("Pan") == 0.0
     assert gif_clip._props.get("Tilt") == 0.0
 
+    # Verify native fades applied to BGM
+    bgm_clip.SetFades.assert_called_once_with({"FadeIn": 30, "FadeOut": 60})
+
+
+def test_apply_enrichment_plan_mutation_delay(monkeypatch):
+    mock_timeline = MagicMock()
+    mock_timeline.GetTrackCount.return_value = 5
+    mock_media_pool = MagicMock()
+    mock_media_pool.AppendToTimeline.return_value = [MagicMock()]
+
+    sleep_calls = []
+    monkeypatch.setattr("time.sleep", lambda s: sleep_calls.append(s))
+
+    plan = EnrichmentPlan(
+        timeline_name="Delay_Test",
+        timeline_start=0,
+        timeline_end=100,
+        bgm_item=PlacementItem(
+            track_type="audio",
+            track_index=3,
+            start_frame=0,
+            end_frame=100,
+            media_pool_item=MagicMock(),
+            asset_name="bgm.mp3",
+        ),
+    )
+
+    ok = apply_enrichment_plan(mock_timeline, plan, media_pool=mock_media_pool, delay_between_mutations=1.2)
+    assert ok is True
+    # Verify that sleep was called with full 1.2s delay, not clamped to 0.35s
+    assert 1.2 in sleep_calls
+
+
+def test_apply_enrichment_plan_save_project_called():
+    mock_resolve = MagicMock()
+    mock_pm = MagicMock()
+    mock_resolve.GetProjectManager.return_value = mock_pm
+
+    mock_timeline = MagicMock()
+    mock_timeline.GetTrackCount.return_value = 5
+    mock_media_pool = MagicMock()
+    mock_media_pool.AppendToTimeline.return_value = [MagicMock()]
+
+    plan = EnrichmentPlan(
+        timeline_name="Save_Test",
+        timeline_start=0,
+        timeline_end=100,
+        bgm_item=PlacementItem(
+            track_type="audio",
+            track_index=3,
+            start_frame=0,
+            end_frame=100,
+            media_pool_item=MagicMock(),
+            asset_name="bgm.mp3",
+        ),
+    )
+
+    ok = apply_enrichment_plan(mock_timeline, plan, media_pool=mock_media_pool, resolve_obj=mock_resolve)
+    assert ok is True
+    mock_pm.SaveProject.assert_called_once()
+
+
+def test_apply_enrichment_plan_append_failure():
+    mock_timeline = MagicMock()
+    mock_timeline.GetTrackCount.return_value = 5
+    mock_media_pool = MagicMock()
+    # Simulate AppendToTimeline failing and returning empty list
+    mock_media_pool.AppendToTimeline.return_value = []
+
+    plan = EnrichmentPlan(
+        timeline_name="Failure_Test",
+        timeline_start=0,
+        timeline_end=100,
+        bgm_item=PlacementItem(
+            track_type="audio",
+            track_index=3,
+            start_frame=0,
+            end_frame=100,
+            media_pool_item=MagicMock(),
+            asset_name="bgm.mp3",
+        ),
+    )
+
+    ok = apply_enrichment_plan(mock_timeline, plan, media_pool=mock_media_pool)
+    assert ok is False
+
+
+def test_empty_catalog_handling():
+    from scripts.enrichment_engine import _find_catalog_item
+    item, name = _find_catalog_item({}, "Enrichment_SFX", "1_ตลกตบมุก_1.mp3")
+    assert item is None
+    assert name is None
+
+    empty_catalog = {
+        "Enrichment_SFX": [],
+        "Enrichment_BGM": [],
+        "Enrichment_GIF": [],
+    }
+    plan = plan_timeline_enrichment(
+        {"name": "Empty_Minecraft-vdo", "start": 0, "end": 1000},
+        empty_catalog,
+    )
+    assert plan.bgm_item is None
+    assert len(plan.sfx_items) == 0
+    assert len(plan.gif_items) == 0
+
+    mock_timeline = MagicMock()
+    mock_timeline.GetTrackCount.return_value = 5
+    mock_media_pool = MagicMock()
+
+    # Plan with no valid items returns True without appending
+    ok = apply_enrichment_plan(mock_timeline, plan, media_pool=mock_media_pool)
+    assert ok is True
+    mock_media_pool.AppendToTimeline.assert_not_called()
+
+
 
 def test_analyze_subtitle_cues_with_objects():
     class MockSubItem:
