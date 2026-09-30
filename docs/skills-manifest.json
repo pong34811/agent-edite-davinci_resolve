@@ -1,0 +1,1886 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-09-30T04:23:40.056108+00:00",
+  "scope": "Current default Hermes profile and local Resolve skill copies; past sessions mentioning Resolve, not a per-clip execution ledger.",
+  "sources": {
+    "resolve_repository": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp",
+    "hermes_profile": "C:\\Users\\warit\\AppData\\Local\\hermes",
+    "superpowers_snapshot": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2"
+  },
+  "skills": [
+    {
+      "name": "house-style",
+      "tier": "editing",
+      "path": ".agents/skills/house-style/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\house-style",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 173,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1058,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1277,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 5637,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 6062,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        }
+      ],
+      "history_loads": 11,
+      "history_sessions": 5
+    },
+    {
+      "name": "resolve-audio",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-audio/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 157,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1051,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1055,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1270,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1274,
+          "title": "Brainstorm 2026-09 video project"
+        }
+      ],
+      "history_loads": 23,
+      "history_sessions": 7
+    },
+    {
+      "name": "resolve-color",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-color/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-color",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "resolve-conform",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-conform/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-conform",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "resolve-delivery",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-delivery/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery",
+      "history_evidence": [
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3250,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260924_105933_a41515",
+          "message_id": 7935,
+          "title": "ตรวจสอบและเพิ่ม Sound effect BGM ภาพประกอบ ให้คลิปน่าสนใจ"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 2
+    },
+    {
+      "name": "resolve-edit",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-edit/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit",
+      "history_evidence": [
+        {
+          "session_id": "20260919_175807_5dc5c0",
+          "message_id": 58,
+          "title": "ตรวจสอบฟุตเทจและตัดต่อ First Pass"
+        },
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 530,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2341,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2352,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3114,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        }
+      ],
+      "history_loads": 34,
+      "history_sessions": 12
+    },
+    {
+      "name": "resolve-fusion",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-fusion/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-fusion",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 524,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260924_230133_c8df76",
+          "message_id": 12721,
+          "title": "ปรับ Adjustment Clip ซูมเน้น VTuber ช่วงมี subtitle"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 2
+    },
+    {
+      "name": "resolve-mcp",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-mcp/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 157,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260923_142134_36ca35",
+          "message_id": 3655,
+          "title": "ตรวจสอบและแก้ไข Subtitle ทุก Timeline"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 2
+    },
+    {
+      "name": "resolve-media-analysis",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-media-analysis/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-analysis",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 160,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1051,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1055,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1270,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1274,
+          "title": "Brainstorm 2026-09 video project"
+        }
+      ],
+      "history_loads": 23,
+      "history_sessions": 9
+    },
+    {
+      "name": "resolve-media-pool",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-media-pool/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-pool",
+      "history_evidence": [
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3114,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3358,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 5642,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_105933_a41515",
+          "message_id": 7935,
+          "title": "ตรวจสอบและเพิ่ม Sound effect BGM ภาพประกอบ ให้คลิปน่าสนใจ"
+        },
+        {
+          "session_id": "20260924_154709_c163f4",
+          "message_id": 9670,
+          "title": "ลบ Timeline สำรองของ KT404 Shorts 2026-09"
+        }
+      ],
+      "history_loads": 6,
+      "history_sessions": 5
+    },
+    {
+      "name": "resolve-rough-cut",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-rough-cut/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-rough-cut",
+      "history_evidence": [
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 5637,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 6062,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 1
+    },
+    {
+      "name": "resolve-session",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-session/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session",
+      "history_evidence": [
+        {
+          "session_id": "20260923_142134_36ca35",
+          "message_id": 3644,
+          "title": "ตรวจสอบและแก้ไข Subtitle ทุก Timeline"
+        },
+        {
+          "session_id": "20260924_042917_c02985",
+          "message_id": 5642,
+          "title": "วิเคราะห์ฟุตเทจ Armigon 2026-09-20 ทำคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_105933_a41515",
+          "message_id": 7908,
+          "title": "ตรวจสอบและเพิ่ม Sound effect BGM ภาพประกอบ ให้คลิปน่าสนใจ"
+        }
+      ],
+      "history_loads": 3,
+      "history_sessions": 3
+    },
+    {
+      "name": "resolve-tighten-recording",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-tighten-recording/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-tighten-recording",
+      "history_evidence": [
+        {
+          "session_id": "20260919_175807_5dc5c0",
+          "message_id": 64,
+          "title": "ตรวจสอบฟุตเทจและตัดต่อ First Pass"
+        }
+      ],
+      "history_loads": 1,
+      "history_sessions": 1
+    },
+    {
+      "name": "video-footage-review",
+      "tier": "editing",
+      "path": ".agents/skills/video-footage-review/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\video-footage-review",
+      "history_evidence": [
+        {
+          "session_id": "20260921_222041_063ba5",
+          "message_id": 962,
+          "title": "Add SFX BGM and GIF paths to video"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2330,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2491,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2588,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2898,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        }
+      ],
+      "history_loads": 66,
+      "history_sessions": 20
+    },
+    {
+      "name": "thai-subtitles-resolve",
+      "tier": "editing",
+      "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\thai-subtitles-resolve",
+      "history_evidence": [
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1051,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1270,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_143203_786be7",
+          "message_id": 1504,
+          "title": null
+        },
+        {
+          "session_id": "20260922_143202_14d31f",
+          "message_id": 1505,
+          "title": null
+        },
+        {
+          "session_id": "20260922_143203_1516bf",
+          "message_id": 1507,
+          "title": null
+        }
+      ],
+      "history_loads": 55,
+      "history_sessions": 23
+    },
+    {
+      "name": "resolve-video-enrichment",
+      "tier": "editing",
+      "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment",
+      "history_evidence": [
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3297,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3306,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3405,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3414,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3466,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        }
+      ],
+      "history_loads": 54,
+      "history_sessions": 11
+    },
+    {
+      "name": "computer-use",
+      "tier": "related_archive",
+      "path": "docs/related-skills/computer-use/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use",
+      "history_evidence": [
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1151,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1370,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_214531_ca3953",
+          "message_id": 3119,
+          "title": "เพิ่มเสียงและภาพประกอบคลิปวิดีโอ"
+        }
+      ],
+      "history_loads": 28,
+      "history_sessions": 9,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "songsee",
+      "tier": "related_archive",
+      "path": "docs/related-skills/songsee/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\songsee",
+      "history_evidence": [
+        {
+          "session_id": "20260924_082206_388e46",
+          "message_id": 6942,
+          "title": "สร้างซับไตเติลไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_082206_388e46",
+          "message_id": 6994,
+          "title": "สร้างซับไตเติลไทยสำหรับคลิปสั้น"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "codex",
+      "tier": "related_archive",
+      "path": "docs/related-skills/codex/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex",
+      "history_evidence": [
+        {
+          "session_id": "20260924_230133_c8df76",
+          "message_id": 11727,
+          "title": "ปรับ Adjustment Clip ซูมเน้น VTuber ช่วงมี subtitle"
+        },
+        {
+          "session_id": "20260924_230133_c8df76",
+          "message_id": 12067,
+          "title": "ปรับ Adjustment Clip ซูมเน้น VTuber ช่วงมี subtitle"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "systematic-debugging",
+      "tier": "related_archive",
+      "path": "docs/related-skills/systematic-debugging/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging",
+      "history_evidence": [
+        {
+          "session_id": "20260924_082206_388e46",
+          "message_id": 7335,
+          "title": "สร้างซับไตเติลไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_082206_388e46",
+          "message_id": 7472,
+          "title": "สร้างซับไตเติลไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260924_082206_388e46",
+          "message_id": 7552,
+          "title": "สร้างซับไตเติลไทยสำหรับคลิปสั้น"
+        }
+      ],
+      "history_loads": 3,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "grounded-citations",
+      "tier": "related_archive",
+      "path": "docs/related-skills/grounded-citations/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations",
+      "history_evidence": [
+        {
+          "session_id": "20260924_102547_8010e6",
+          "message_id": 7423,
+          "title": null
+        },
+        {
+          "session_id": "20260924_231457_d501a1",
+          "message_id": 11820,
+          "title": null
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 2,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "blocked-page-recovery",
+      "tier": "related_archive",
+      "path": "docs/related-skills/blocked-page-recovery/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery",
+      "history_evidence": [
+        {
+          "session_id": "20260924_231457_d501a1",
+          "message_id": 11875,
+          "title": null
+        }
+      ],
+      "history_loads": 1,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-brainstorming",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-brainstorming/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming",
+      "history_evidence": [
+        {
+          "session_id": "20260919_201029_570d61",
+          "message_id": 408,
+          "title": "ใส่ซับไตเติลภาษาไทยในคลิป 3 คำต่อบรรทัด"
+        },
+        {
+          "session_id": "20260921_222041_063ba5",
+          "message_id": 967,
+          "title": "Add SFX BGM and GIF paths to video"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1014,
+          "title": "Brainstorm 2026-09 video project"
+        }
+      ],
+      "history_loads": 53,
+      "history_sessions": 16,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-test-driven-development",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-test-driven-development/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development",
+      "history_evidence": [
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1113,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1332,
+          "title": "Brainstorm 2026-09 video project"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-dispatching-parallel-agents",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-dispatching-parallel-agents/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\dispatching-parallel-agents",
+      "history_evidence": [
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1258,
+          "title": "Brainstorm 2026-09 video project"
+        },
+        {
+          "session_id": "20260922_124046_ae2a2c",
+          "message_id": 1477,
+          "title": "Brainstorm 2026-09 video project"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-systematic-debugging",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-systematic-debugging/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging",
+      "history_evidence": [
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2729,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2822,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        },
+        {
+          "session_id": "20260922_191646_c0985a",
+          "message_id": 2898,
+          "title": "ทำซับภาษาไทยสำหรับคลิปสั้น"
+        }
+      ],
+      "history_loads": 4,
+      "history_sessions": 2,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-executing-plans",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-executing-plans/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans",
+      "history_evidence": [
+        {
+          "session_id": "20260925_110842_ab8ee8",
+          "message_id": 13198,
+          "title": "อัปเดต Timeline ของ Subtitle track ตามตัวอย่างกินแต่เซเว่นทุกวัน-vdo"
+        }
+      ],
+      "history_loads": 1,
+      "history_sessions": 1,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-verification-before-completion",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-verification-before-completion/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\verification-before-completion",
+      "history_evidence": [
+        {
+          "session_id": "20260925_110842_ab8ee8",
+          "message_id": 13272,
+          "title": "อัปเดต Timeline ของ Subtitle track ตามตัวอย่างกินแต่เซเว่นทุกวัน-vdo"
+        },
+        {
+          "session_id": "20260930_105144_2e208a",
+          "message_id": 14318,
+          "title": "Continue work from previous context"
+        }
+      ],
+      "history_loads": 2,
+      "history_sessions": 2,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    },
+    {
+      "name": "superpowers-using-superpowers",
+      "tier": "related_archive",
+      "path": "docs/related-skills/superpowers-using-superpowers/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0,
+      "note": "Support context; not automatically loaded as editing skills. Bootstrap included as a dependency."
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/house-style/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\house-style\\SKILL.md",
+      "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
+      "kind": "editing_skill",
+      "sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92"
+    },
+    {
+      "path": ".agents/skills/resolve-audio/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
+      "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
+      "kind": "editing_skill",
+      "sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb"
+    },
+    {
+      "path": ".agents/skills/resolve-color/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-color\\SKILL.md",
+      "source_sha256": "5a14db0b06c97e63fc2f18c857f03ec8cc5f92e2d1f6ca8b1225c3ebcc374310",
+      "kind": "editing_skill",
+      "sha256": "5a14db0b06c97e63fc2f18c857f03ec8cc5f92e2d1f6ca8b1225c3ebcc374310"
+    },
+    {
+      "path": ".agents/skills/resolve-conform/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-conform\\SKILL.md",
+      "source_sha256": "4b78ad0092111cbefa153be2b4a60e85cfde5f664be69bb0ddfe5c2429c3a0e0",
+      "kind": "editing_skill",
+      "sha256": "4b78ad0092111cbefa153be2b4a60e85cfde5f664be69bb0ddfe5c2429c3a0e0"
+    },
+    {
+      "path": ".agents/skills/resolve-delivery/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
+      "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
+      "kind": "editing_skill",
+      "sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8"
+    },
+    {
+      "path": ".agents/skills/resolve-edit/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
+      "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
+      "kind": "editing_skill",
+      "sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63"
+    },
+    {
+      "path": ".agents/skills/resolve-fusion/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-fusion\\SKILL.md",
+      "source_sha256": "ed18e1b025ef9b27afbc9115327df54bfc287c591d7948e8403390ec59280b4b",
+      "kind": "editing_skill",
+      "sha256": "ed18e1b025ef9b27afbc9115327df54bfc287c591d7948e8403390ec59280b4b"
+    },
+    {
+      "path": ".agents/skills/resolve-mcp/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
+      "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
+      "kind": "editing_skill",
+      "sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6"
+    },
+    {
+      "path": ".agents/skills/resolve-media-analysis/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-analysis\\SKILL.md",
+      "source_sha256": "98359bc82e20de38dcabb0d6ce330ed9209ff735d097fde5599d001ebf63e743",
+      "kind": "editing_skill",
+      "local_amendment": "Agent-neutral wording; mechanics unchanged.",
+      "sha256": "25d95d83b72da816213503d1eac659322f8c58a7f86d3501ff86ff5251814e91"
+    },
+    {
+      "path": ".agents/skills/resolve-media-pool/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-pool\\SKILL.md",
+      "source_sha256": "2ede4db63c156a2899c85bae8ea11db7bf83f71e79246b49d00149f305f0f3f6",
+      "kind": "editing_skill",
+      "sha256": "2ede4db63c156a2899c85bae8ea11db7bf83f71e79246b49d00149f305f0f3f6"
+    },
+    {
+      "path": ".agents/skills/resolve-rough-cut/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-rough-cut\\SKILL.md",
+      "source_sha256": "aee1ffd3e2c0a539466f1fc7be4346f67f2845a0cbb6e24a0eb117dad0523ba4",
+      "kind": "editing_skill",
+      "local_amendment": "Windows python command; authorized dependency installs; permission-gated archive cleanup.",
+      "sha256": "7e6bdc44db0d01388d52db1a481d0a27b1c66b218770d02b04d2110f6f149796"
+    },
+    {
+      "path": ".agents/skills/resolve-session/agents/openai.yaml",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session\\agents\\openai.yaml",
+      "source_sha256": "a762e002918543e9e1e71a497f7f63bca4369cf2fd28cd3cc7dd46fce2c0edc1",
+      "kind": "editing_skill",
+      "sha256": "a762e002918543e9e1e71a497f7f63bca4369cf2fd28cd3cc7dd46fce2c0edc1"
+    },
+    {
+      "path": ".agents/skills/resolve-session/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session\\SKILL.md",
+      "source_sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c",
+      "kind": "editing_skill",
+      "sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c"
+    },
+    {
+      "path": ".agents/skills/resolve-tighten-recording/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-tighten-recording\\SKILL.md",
+      "source_sha256": "3ffa4d3fcb8a136c450a5aa4379e8d937ced440b6e0abbb207c8315bd5ba4243",
+      "kind": "editing_skill",
+      "sha256": "3ffa4d3fcb8a136c450a5aa4379e8d937ced440b6e0abbb207c8315bd5ba4243"
+    },
+    {
+      "path": ".agents/skills/video-footage-review/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\video-footage-review\\SKILL.md",
+      "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
+      "kind": "editing_skill",
+      "local_amendment": "Hermes search_files inventory instead of ls; supplied missing Whisper reference.",
+      "sha256": "79f95eeb0d666db6809314659ac230d66ae402f8a284e4100700da00824a09d1"
+    },
+    {
+      "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\thai-subtitles-resolve\\SKILL.md",
+      "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
+      "kind": "editing_skill",
+      "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing.",
+      "sha256": "8adb4194f869086a3a011dbbd890a7b186be036594929b175b219d880fc61d98"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
+      "source_sha256": "ac9ed7070f3fa7773b689776e146ea86c6f180ca6ec54021d5a0cc643ca62d61",
+      "kind": "editing_skill",
+      "sha256": "ac9ed7070f3fa7773b689776e146ea86c6f180ca6ec54021d5a0cc643ca62d61"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-coverage.md",
+      "source_sha256": "635139da5f141b6dd049570d613753b98ad1eb5772d792b41f1fc88f4920f343",
+      "kind": "editing_skill",
+      "sha256": "635139da5f141b6dd049570d613753b98ad1eb5772d792b41f1fc88f4920f343"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/asset-library-and-cues.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
+      "source_sha256": "a27ace565d626185542bab9691bd270e1989eac10ee11adf98448236cba7ee72",
+      "kind": "editing_skill",
+      "sha256": "a27ace565d626185542bab9691bd270e1989eac10ee11adf98448236cba7ee72"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/offline-media-repair.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\offline-media-repair.md",
+      "source_sha256": "1e5a7b98fbae90fea309174524b9ba157a5596d58325cc0b720d416264958790",
+      "kind": "editing_skill",
+      "sha256": "1e5a7b98fbae90fea309174524b9ba157a5596d58325cc0b720d416264958790"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/render-qc.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\render-qc.md",
+      "source_sha256": "8f1ba08689a7d82f013ece2a7539ec00ff573daa8831b47eb150122ed221c08c",
+      "kind": "editing_skill",
+      "sha256": "8f1ba08689a7d82f013ece2a7539ec00ff573daa8831b47eb150122ed221c08c"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\SKILL.md",
+      "source_sha256": "26e45a30fe876ad8226a2df8a4746856e869093952e023c0b19e0ebe206fd299",
+      "kind": "editing_skill",
+      "sha256": "26e45a30fe876ad8226a2df8a4746856e869093952e023c0b19e0ebe206fd299"
+    },
+    {
+      "path": "docs/related-skills/computer-use/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use\\SKILL.md",
+      "source_sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf",
+      "kind": "related_skill_archive",
+      "sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf"
+    },
+    {
+      "path": "docs/related-skills/songsee/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\songsee\\SKILL.md",
+      "source_sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07",
+      "kind": "related_skill_archive",
+      "sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07"
+    },
+    {
+      "path": "docs/related-skills/codex/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex\\SKILL.md",
+      "source_sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d",
+      "kind": "related_skill_archive",
+      "sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d"
+    },
+    {
+      "path": "docs/related-skills/systematic-debugging/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging\\SKILL.md",
+      "source_sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a",
+      "kind": "related_skill_archive",
+      "sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a"
+    },
+    {
+      "path": "docs/related-skills/grounded-citations/references/citation-formats.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\citation-formats.md",
+      "source_sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04",
+      "kind": "related_skill_archive",
+      "sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04"
+    },
+    {
+      "path": "docs/related-skills/grounded-citations/references/grounding-rationale.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\grounding-rationale.md",
+      "source_sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1",
+      "kind": "related_skill_archive",
+      "sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1"
+    },
+    {
+      "path": "docs/related-skills/grounded-citations/scripts/_hermes_home.py",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\_hermes_home.py",
+      "source_sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4",
+      "kind": "related_skill_archive",
+      "sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4"
+    },
+    {
+      "path": "docs/related-skills/grounded-citations/scripts/sources.py",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\sources.py",
+      "source_sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c",
+      "kind": "related_skill_archive",
+      "sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c"
+    },
+    {
+      "path": "docs/related-skills/grounded-citations/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\SKILL.md",
+      "source_sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
+      "kind": "related_skill_archive",
+      "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6"
+    },
+    {
+      "path": "docs/related-skills/blocked-page-recovery/scripts/recover_page.py",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\scripts\\recover_page.py",
+      "source_sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6",
+      "kind": "related_skill_archive",
+      "sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6"
+    },
+    {
+      "path": "docs/related-skills/blocked-page-recovery/SKILL.md",
+      "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\SKILL.md",
+      "source_sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061",
+      "kind": "related_skill_archive",
+      "sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/scripts/frame-template.html",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\frame-template.html",
+      "source_sha256": "7b9418e9939dded0cf8e6a5549a18162b7c7e5495deeefa83a12f3394b81395d",
+      "kind": "related_skill_archive",
+      "sha256": "7b9418e9939dded0cf8e6a5549a18162b7c7e5495deeefa83a12f3394b81395d"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/scripts/helper.js",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\helper.js",
+      "source_sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
+      "kind": "related_skill_archive",
+      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/scripts/server.cjs",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\server.cjs",
+      "source_sha256": "ee89af11506ac4933324c89a2cfb36b391fe611f82efb9eeb3b814e40825145f",
+      "kind": "related_skill_archive",
+      "sha256": "ee89af11506ac4933324c89a2cfb36b391fe611f82efb9eeb3b814e40825145f"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/scripts/start-server.sh",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\start-server.sh",
+      "source_sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
+      "kind": "related_skill_archive",
+      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/scripts/stop-server.sh",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\stop-server.sh",
+      "source_sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
+      "kind": "related_skill_archive",
+      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\SKILL.md",
+      "source_sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72",
+      "kind": "related_skill_archive",
+      "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/spec-document-reviewer-prompt.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\spec-document-reviewer-prompt.md",
+      "source_sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457",
+      "kind": "related_skill_archive",
+      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457"
+    },
+    {
+      "path": "docs/related-skills/superpowers-brainstorming/visual-companion.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\visual-companion.md",
+      "source_sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2",
+      "kind": "related_skill_archive",
+      "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+    },
+    {
+      "path": "docs/related-skills/superpowers-test-driven-development/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\SKILL.md",
+      "source_sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
+      "kind": "related_skill_archive",
+      "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
+    },
+    {
+      "path": "docs/related-skills/superpowers-test-driven-development/writing-good-tests.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\writing-good-tests.md",
+      "source_sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1",
+      "kind": "related_skill_archive",
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+    },
+    {
+      "path": "docs/related-skills/superpowers-dispatching-parallel-agents/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\dispatching-parallel-agents\\SKILL.md",
+      "source_sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
+      "kind": "related_skill_archive",
+      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting-example.ts",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting-example.ts",
+      "source_sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e",
+      "kind": "related_skill_archive",
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting.md",
+      "source_sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
+      "kind": "related_skill_archive",
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/CREATION-LOG.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\CREATION-LOG.md",
+      "source_sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789",
+      "kind": "related_skill_archive",
+      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/defense-in-depth.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\defense-in-depth.md",
+      "source_sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
+      "kind": "related_skill_archive",
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/find-polluter.sh",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\find-polluter.sh",
+      "source_sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
+      "kind": "related_skill_archive",
+      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/root-cause-tracing.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\root-cause-tracing.md",
+      "source_sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8",
+      "kind": "related_skill_archive",
+      "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\SKILL.md",
+      "source_sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "kind": "related_skill_archive",
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/test-academic.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-academic.md",
+      "source_sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486",
+      "kind": "related_skill_archive",
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-1.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-1.md",
+      "source_sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a",
+      "kind": "related_skill_archive",
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-2.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-2.md",
+      "source_sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016",
+      "kind": "related_skill_archive",
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+    },
+    {
+      "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-3.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-3.md",
+      "source_sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708",
+      "kind": "related_skill_archive",
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+    },
+    {
+      "path": "docs/related-skills/superpowers-executing-plans/scripts/task-done",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans\\scripts\\task-done",
+      "source_sha256": "5896ebbb8c2a942a523913de6975b2a6334a27d0b9bc128cedad83bd2737792a",
+      "kind": "related_skill_archive",
+      "sha256": "5896ebbb8c2a942a523913de6975b2a6334a27d0b9bc128cedad83bd2737792a"
+    },
+    {
+      "path": "docs/related-skills/superpowers-executing-plans/scripts/task-start",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans\\scripts\\task-start",
+      "source_sha256": "5eb4db5457bfe9d201712fd7322896afd2f7f12b277b563900331b4e2ddfb114",
+      "kind": "related_skill_archive",
+      "sha256": "5eb4db5457bfe9d201712fd7322896afd2f7f12b277b563900331b4e2ddfb114"
+    },
+    {
+      "path": "docs/related-skills/superpowers-executing-plans/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans\\SKILL.md",
+      "source_sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71",
+      "kind": "related_skill_archive",
+      "sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71"
+    },
+    {
+      "path": "docs/related-skills/superpowers-verification-before-completion/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\verification-before-completion\\SKILL.md",
+      "source_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "kind": "related_skill_archive",
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/antigravity-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\antigravity-tools.md",
+      "source_sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0",
+      "kind": "related_skill_archive",
+      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/claude-code-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\claude-code-tools.md",
+      "source_sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b",
+      "kind": "related_skill_archive",
+      "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/codex-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\codex-tools.md",
+      "source_sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7",
+      "kind": "related_skill_archive",
+      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/gemini-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\gemini-tools.md",
+      "source_sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965",
+      "kind": "related_skill_archive",
+      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/hermes-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\hermes-tools.md",
+      "source_sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190",
+      "kind": "related_skill_archive",
+      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/muse-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\muse-tools.md",
+      "source_sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3",
+      "kind": "related_skill_archive",
+      "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/references/pi-tools.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\pi-tools.md",
+      "source_sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5",
+      "kind": "related_skill_archive",
+      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
+    },
+    {
+      "path": "docs/related-skills/superpowers-using-superpowers/SKILL.md",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\SKILL.md",
+      "source_sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
+      "kind": "related_skill_archive",
+      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
+    },
+    {
+      "path": "docs/authoring/fuse-dctl-authoring.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\fuse-dctl-authoring.md",
+      "source_sha256": "791f33af4fae9bbd7ca4ba912b0c0cd9ad2da8dabbbd2799f18a627791ff587d",
+      "kind": "mcp_reference",
+      "sha256": "791f33af4fae9bbd7ca4ba912b0c0cd9ad2da8dabbbd2799f18a627791ff587d"
+    },
+    {
+      "path": "docs/authoring/script-plugin-authoring.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\script-plugin-authoring.md",
+      "source_sha256": "d2525e9f26d70c583ed87698ece7dcec1a9955e805abede734c946def1772542",
+      "kind": "mcp_reference",
+      "sha256": "d2525e9f26d70c583ed87698ece7dcec1a9955e805abede734c946def1772542"
+    },
+    {
+      "path": "docs/authoring/setting-files/README.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\README.md",
+      "source_sha256": "4a9623715cbe0b75e548fdee1bae151ffaac08fbbc915ec374ff0e1a0a54b5c8",
+      "kind": "mcp_reference",
+      "sha256": "4a9623715cbe0b75e548fdee1bae151ffaac08fbbc915ec374ff0e1a0a54b5c8"
+    },
+    {
+      "path": "docs/authoring/setting-files/references/category-patterns.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\references\\category-patterns.md",
+      "source_sha256": "7d9c09efd0549c72a21e0689cf8ef9bf25f4fc9daf55d6347545cc5ca0befa95",
+      "kind": "mcp_reference",
+      "sha256": "7d9c09efd0549c72a21e0689cf8ef9bf25f4fc9daf55d6347545cc5ca0befa95"
+    },
+    {
+      "path": "docs/authoring/setting-files/references/controls.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\references\\controls.md",
+      "source_sha256": "5c5a17b1dff6aa5776a6428e68b5e4891063b5af89def5c6b0ceae2ed5649455",
+      "kind": "mcp_reference",
+      "sha256": "5c5a17b1dff6aa5776a6428e68b5e4891063b5af89def5c6b0ceae2ed5649455"
+    },
+    {
+      "path": "docs/authoring/setting-files/references/format.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\references\\format.md",
+      "source_sha256": "2701374d8ac25a7c8234d7a6e57003b535804448f817afd9da27dcce4ccdeab1",
+      "kind": "mcp_reference",
+      "sha256": "2701374d8ac25a7c8234d7a6e57003b535804448f817afd9da27dcce4ccdeab1"
+    },
+    {
+      "path": "docs/authoring/setting-files/references/gotchas.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\references\\gotchas.md",
+      "source_sha256": "7ad2e8cd48308bee9a7dfe7e3af992b91835828ca57b88fbc19d3a8a30e89a20",
+      "kind": "mcp_reference",
+      "sha256": "7ad2e8cd48308bee9a7dfe7e3af992b91835828ca57b88fbc19d3a8a30e89a20"
+    },
+    {
+      "path": "docs/authoring/setting-files/references/thumbnails.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\authoring\\setting-files\\references\\thumbnails.md",
+      "source_sha256": "8acfe8f01e617e2314d5138bf3c7c6633ea92a536efc3d474ea607df60f2542f",
+      "kind": "mcp_reference",
+      "sha256": "8acfe8f01e617e2314d5138bf3c7c6633ea92a536efc3d474ea607df60f2542f"
+    },
+    {
+      "path": "docs/contributing.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\contributing.md",
+      "source_sha256": "8774dd2dee4a9215e9285cb326021c385652ae69f34b6edb7cdf8ebd9569aefa",
+      "kind": "mcp_reference",
+      "sha256": "8774dd2dee4a9215e9285cb326021c385652ae69f34b6edb7cdf8ebd9569aefa"
+    },
+    {
+      "path": "docs/guides/color-decision-guide.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\color-decision-guide.md",
+      "source_sha256": "d4814e8a3f706f1916ae61dfd337a03232f1956f89c1fb23b975280ff4315d67",
+      "kind": "mcp_reference",
+      "sha256": "d4814e8a3f706f1916ae61dfd337a03232f1956f89c1fb23b975280ff4315d67"
+    },
+    {
+      "path": "docs/guides/conforming-an-avid-aaf.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\conforming-an-avid-aaf.md",
+      "source_sha256": "1c8a18ee519c0784d1dbf41993e219407e0c3c53b9ab9e04791217e4df743b3b",
+      "kind": "mcp_reference",
+      "sha256": "1c8a18ee519c0784d1dbf41993e219407e0c3c53b9ab9e04791217e4df743b3b"
+    },
+    {
+      "path": "docs/guides/control-panel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\control-panel.md",
+      "source_sha256": "d8d2e98ecf560a41a017a4d9f33cc9067e07d8b1a3c4fe004fc1e1e3b6da0454",
+      "kind": "mcp_reference",
+      "sha256": "d8d2e98ecf560a41a017a4d9f33cc9067e07d8b1a3c4fe004fc1e1e3b6da0454"
+    },
+    {
+      "path": "docs/guides/editorial-decision-guide.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\editorial-decision-guide.md",
+      "source_sha256": "5a80e1d94758cc8f8dd483ea060149ce2f2115ad8c3db7242a0cf3f5d69ce7e1",
+      "kind": "mcp_reference",
+      "sha256": "5a80e1d94758cc8f8dd483ea060149ce2f2115ad8c3db7242a0cf3f5d69ce7e1"
+    },
+    {
+      "path": "docs/guides/headless-edit-loop.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\headless-edit-loop.md",
+      "source_sha256": "2b936866cf8f3f935420b74d8c6b9a79ec3a5494bcbce685eb3b2d034e6cfc0d",
+      "kind": "mcp_reference",
+      "sha256": "2b936866cf8f3f935420b74d8c6b9a79ec3a5494bcbce685eb3b2d034e6cfc0d"
+    },
+    {
+      "path": "docs/guides/media-analysis-guide.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\media-analysis-guide.md",
+      "source_sha256": "a97b08246db3f831e6f02b5436a7097a96f2d5dba25501fe32e6c92d8328907c",
+      "kind": "mcp_reference",
+      "sha256": "a97b08246db3f831e6f02b5436a7097a96f2d5dba25501fe32e6c92d8328907c"
+    },
+    {
+      "path": "docs/guides/multicam-setup-guide.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\multicam-setup-guide.md",
+      "source_sha256": "32bfb187c5dafdb78faaea304c11725c6836a6709b922c0763ad1b2227fb2917",
+      "kind": "mcp_reference",
+      "sha256": "32bfb187c5dafdb78faaea304c11725c6836a6709b922c0763ad1b2227fb2917"
+    },
+    {
+      "path": "docs/guides/native-drt-authoring.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\native-drt-authoring.md",
+      "source_sha256": "a0479171b1724c30e96160f19a45f9b39b598d4bcef148418454b435e210665e",
+      "kind": "mcp_reference",
+      "sha256": "a0479171b1724c30e96160f19a45f9b39b598d4bcef148418454b435e210665e"
+    },
+    {
+      "path": "docs/install.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\install.md",
+      "source_sha256": "89d4cf44e45f06953c00312c60a2d3df2bbb7299f5d83453697433428cf10b6a",
+      "kind": "mcp_reference",
+      "sha256": "89d4cf44e45f06953c00312c60a2d3df2bbb7299f5d83453697433428cf10b6a"
+    },
+    {
+      "path": "docs/integrations/workflow-integrations.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\integrations\\workflow-integrations.md",
+      "source_sha256": "0e7a10dbf7eb4076400d1701639eb1a247d260c9a3a4c41e9a17e0b6bbfe1511",
+      "kind": "mcp_reference",
+      "sha256": "0e7a10dbf7eb4076400d1701639eb1a247d260c9a3a4c41e9a17e0b6bbfe1511"
+    },
+    {
+      "path": "docs/kernels/audio-fairlight-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\audio-fairlight-kernel.md",
+      "source_sha256": "761b8436404dc776160bdd7cf9084a264af23a08ba2dbdecf7fb87f956e027a7",
+      "kind": "mcp_reference",
+      "sha256": "761b8436404dc776160bdd7cf9084a264af23a08ba2dbdecf7fb87f956e027a7"
+    },
+    {
+      "path": "docs/kernels/color-grade-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\color-grade-kernel.md",
+      "source_sha256": "79da5bfe651bcc261cae1c3f1dc3c20e833e03b21b3596c37f08d08c5b1f4f7e",
+      "kind": "mcp_reference",
+      "sha256": "79da5bfe651bcc261cae1c3f1dc3c20e833e03b21b3596c37f08d08c5b1f4f7e"
+    },
+    {
+      "path": "docs/kernels/extension-authoring-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\extension-authoring-kernel.md",
+      "source_sha256": "7b18d842c4b4b921f5addcadaa65f42aa9ea92670f6e344c0026196501b8f910",
+      "kind": "mcp_reference",
+      "sha256": "7b18d842c4b4b921f5addcadaa65f42aa9ea92670f6e344c0026196501b8f910"
+    },
+    {
+      "path": "docs/kernels/fusion-composition-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\fusion-composition-kernel.md",
+      "source_sha256": "32c46d0aadb78dc0a3b05fd118a6861e0b6df057d906cdfed7ff866a889741d9",
+      "kind": "mcp_reference",
+      "sha256": "32c46d0aadb78dc0a3b05fd118a6861e0b6df057d906cdfed7ff866a889741d9"
+    },
+    {
+      "path": "docs/kernels/media-pool-ingest-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\media-pool-ingest-kernel.md",
+      "source_sha256": "49e2333501af2bec03fa77b0d4366b3c658687e9d4261ee28680e1b8a03f8393",
+      "kind": "mcp_reference",
+      "sha256": "49e2333501af2bec03fa77b0d4366b3c658687e9d4261ee28680e1b8a03f8393"
+    },
+    {
+      "path": "docs/kernels/project-lifecycle-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\project-lifecycle-kernel.md",
+      "source_sha256": "c66c72972462f5e20f47c2a0dfe9d1f7aa73f4ee5032b4a1cfcd5bbdb239e577",
+      "kind": "mcp_reference",
+      "sha256": "c66c72972462f5e20f47c2a0dfe9d1f7aa73f4ee5032b4a1cfcd5bbdb239e577"
+    },
+    {
+      "path": "docs/kernels/README.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\README.md",
+      "source_sha256": "56c8ee50d82d5b77a8b8966563d6887050859d9c2edd5ffef45d81cf1693761f",
+      "kind": "mcp_reference",
+      "sha256": "56c8ee50d82d5b77a8b8966563d6887050859d9c2edd5ffef45d81cf1693761f"
+    },
+    {
+      "path": "docs/kernels/render-deliver-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\render-deliver-kernel.md",
+      "source_sha256": "eef7538aa174a8c78ac0b3c65fe3dd351cceb87be16b858e2b3de511a40e59f8",
+      "kind": "mcp_reference",
+      "sha256": "eef7538aa174a8c78ac0b3c65fe3dd351cceb87be16b858e2b3de511a40e59f8"
+    },
+    {
+      "path": "docs/kernels/review-annotation-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\review-annotation-kernel.md",
+      "source_sha256": "d931e1957575a3194251b639efb1ce67c96c59663e6f0e206b9e7c2dbab5825e",
+      "kind": "mcp_reference",
+      "sha256": "d931e1957575a3194251b639efb1ce67c96c59663e6f0e206b9e7c2dbab5825e"
+    },
+    {
+      "path": "docs/kernels/timeline-conform-interchange-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\timeline-conform-interchange-kernel.md",
+      "source_sha256": "4e667fd6b01206f70d15c7b919447c525772ab156c880b2419cf2ec0d8da8996",
+      "kind": "mcp_reference",
+      "sha256": "4e667fd6b01206f70d15c7b919447c525772ab156c880b2419cf2ec0d8da8996"
+    },
+    {
+      "path": "docs/kernels/timeline-edit-kernel.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\timeline-edit-kernel.md",
+      "source_sha256": "acf9d4c23bfd75ad337f10286e4b46bbd7d5386a024e2a4b3424d66a55cb32e9",
+      "kind": "mcp_reference",
+      "sha256": "acf9d4c23bfd75ad337f10286e4b46bbd7d5386a024e2a4b3424d66a55cb32e9"
+    },
+    {
+      "path": "docs/notes/codec-plugin-notes.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\codec-plugin-notes.md",
+      "source_sha256": "320e3950149e201e82e22800beb17a152471653b54f11b8798c2cde703ab6e82",
+      "kind": "mcp_reference",
+      "sha256": "320e3950149e201e82e22800beb17a152471653b54f11b8798c2cde703ab6e82"
+    },
+    {
+      "path": "docs/notes/dctl-notes.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\dctl-notes.md",
+      "source_sha256": "a78f2c2d0157e4fcb894641a638ec2f3f170fb78185d674a9e4ef66230e7c94c",
+      "kind": "mcp_reference",
+      "sha256": "a78f2c2d0157e4fcb894641a638ec2f3f170fb78185d674a9e4ef66230e7c94c"
+    },
+    {
+      "path": "docs/notes/fusion-template-notes.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\fusion-template-notes.md",
+      "source_sha256": "5f8d3ca6f9d695709490ed5372b22eb97bf2d0e07272c3fa36c738933d7a2a07",
+      "kind": "mcp_reference",
+      "sha256": "5f8d3ca6f9d695709490ed5372b22eb97bf2d0e07272c3fa36c738933d7a2a07"
+    },
+    {
+      "path": "docs/notes/lut-notes.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\lut-notes.md",
+      "source_sha256": "b1df10f3eda1d345da91ff8b0eb2ac3f68ff4d388a23d6c1c1b7e61f25673c3d",
+      "kind": "mcp_reference",
+      "sha256": "b1df10f3eda1d345da91ff8b0eb2ac3f68ff4d388a23d6c1c1b7e61f25673c3d"
+    },
+    {
+      "path": "docs/notes/openfx-notes.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\openfx-notes.md",
+      "source_sha256": "1b0b9fdbf86f0151f42bf26ebc6028cdfd4ba3cad838c411ae39a70df971567f",
+      "kind": "mcp_reference",
+      "sha256": "1b0b9fdbf86f0151f42bf26ebc6028cdfd4ba3cad838c411ae39a70df971567f"
+    },
+    {
+      "path": "docs/process/release-process.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\process\\release-process.md",
+      "source_sha256": "bf7327f3d7a5280177d1d86789648038d8abc79f6aee44a70d478dd4bc7d6adc",
+      "kind": "mcp_reference",
+      "sha256": "bf7327f3d7a5280177d1d86789648038d8abc79f6aee44a70d478dd4bc7d6adc"
+    },
+    {
+      "path": "docs/README.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\README.md",
+      "source_sha256": "c255d0727829846b697d281c23948566be4a8e386eec561d401a32fdc01e82e2",
+      "kind": "mcp_reference",
+      "sha256": "c255d0727829846b697d281c23948566be4a8e386eec561d401a32fdc01e82e2"
+    },
+    {
+      "path": "docs/reference/api-coverage.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\api-coverage.md",
+      "source_sha256": "6c5c1cc79c58402f02a97782213d9773a9e81b7dd84c4eafa8d74ca5f23ce7dc",
+      "kind": "mcp_reference",
+      "sha256": "6c5c1cc79c58402f02a97782213d9773a9e81b7dd84c4eafa8d74ca5f23ce7dc"
+    },
+    {
+      "path": "docs/reference/api-limitations.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\api-limitations.md",
+      "source_sha256": "c23f985d1efae0dd42889f79530f7325c128c178ae76d10ef206d5cebb4fb02e",
+      "kind": "mcp_reference",
+      "sha256": "c23f985d1efae0dd42889f79530f7325c128c178ae76d10ef206d5cebb4fb02e"
+    },
+    {
+      "path": "docs/reference/DaVinciResolveScript.pyi",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\DaVinciResolveScript.pyi",
+      "source_sha256": "f934bcdbc71d3bcbe2b4eb9d921811ac5a47bad6aba1f4f46b7ca917fa8411d5",
+      "kind": "mcp_reference",
+      "sha256": "f934bcdbc71d3bcbe2b4eb9d921811ac5a47bad6aba1f4f46b7ca917fa8411d5"
+    },
+    {
+      "path": "docs/reference/evidence/complex-relink_gui-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\complex-relink_gui-20260801.json",
+      "source_sha256": "1021fac1821171758fbfd09f3a5465a29ec2f4a5a837840afb9ca1c05b75cbc2",
+      "kind": "mcp_reference",
+      "sha256": "1021fac1821171758fbfd09f3a5465a29ec2f4a5a837840afb9ca1c05b75cbc2"
+    },
+    {
+      "path": "docs/reference/evidence/complex-relink_hl-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\complex-relink_hl-20260801.json",
+      "source_sha256": "56ee32a7b6befd1f54732eb940d9c964b4514f6bb37c7e1568857f3422a872c3",
+      "kind": "mcp_reference",
+      "sha256": "56ee32a7b6befd1f54732eb940d9c964b4514f6bb37c7e1568857f3422a872c3"
+    },
+    {
+      "path": "docs/reference/evidence/complex-rr_gui-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\complex-rr_gui-20260801.json",
+      "source_sha256": "95edf35308b997f0b1e2912b50b50ad841f21ee20f88f36610b98ff6d817452f",
+      "kind": "mcp_reference",
+      "sha256": "95edf35308b997f0b1e2912b50b50ad841f21ee20f88f36610b98ff6d817452f"
+    },
+    {
+      "path": "docs/reference/evidence/complex-rr_headless-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\complex-rr_headless-20260801.json",
+      "source_sha256": "45d62970c76eed8406e9b49eb9db55946283862c4958928b6a8abde5008050fa",
+      "kind": "mcp_reference",
+      "sha256": "45d62970c76eed8406e9b49eb9db55946283862c4958928b6a8abde5008050fa"
+    },
+    {
+      "path": "docs/reference/evidence/lut-file-controls.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\lut-file-controls.json",
+      "source_sha256": "6013c017645d8a5b9fa8b31e9c837db7410d1050c6252ae626c68cdbce080b98",
+      "kind": "mcp_reference",
+      "sha256": "6013c017645d8a5b9fa8b31e9c837db7410d1050c6252ae626c68cdbce080b98"
+    },
+    {
+      "path": "docs/reference/evidence/pixel-equality-gui-20260802.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\pixel-equality-gui-20260802.json",
+      "source_sha256": "938ee901316a65b6e663df315dc5cc01f7906ac2eb4ff5d8494e0f0a7ba42fb9",
+      "kind": "mcp_reference",
+      "sha256": "938ee901316a65b6e663df315dc5cc01f7906ac2eb4ff5d8494e0f0a7ba42fb9"
+    },
+    {
+      "path": "docs/reference/evidence/pixel-equality-headless-20260802.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\pixel-equality-headless-20260802.json",
+      "source_sha256": "14c8e4537be010ad0fdcaf0ddb683d8a2c13eec761a3c81d4724826f8b091fb0",
+      "kind": "mcp_reference",
+      "sha256": "14c8e4537be010ad0fdcaf0ddb683d8a2c13eec761a3c81d4724826f8b091fb0"
+    },
+    {
+      "path": "docs/reference/evidence/project-archive-21.1.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\project-archive-21.1.json",
+      "source_sha256": "c04c967d994392e17e0a7a8e96302cf2c7deb519dea8ea7a6cdd8de18dac9d2d",
+      "kind": "mcp_reference",
+      "sha256": "c04c967d994392e17e0a7a8e96302cf2c7deb519dea8ea7a6cdd8de18dac9d2d"
+    },
+    {
+      "path": "docs/reference/evidence/render-stress-gui-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\render-stress-gui-20260801.json",
+      "source_sha256": "3c8e904d3362adf93a3e83da249a1146a35b7720c7729d2ac380dabf7fe2d5fd",
+      "kind": "mcp_reference",
+      "sha256": "3c8e904d3362adf93a3e83da249a1146a35b7720c7729d2ac380dabf7fe2d5fd"
+    },
+    {
+      "path": "docs/reference/evidence/render-stress-headless-20260802.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\render-stress-headless-20260802.json",
+      "source_sha256": "94d4644fdbac71e6c75f87feb3f691840308c4f172c811638117b16432e6676c",
+      "kind": "mcp_reference",
+      "sha256": "94d4644fdbac71e6c75f87feb3f691840308c4f172c811638117b16432e6676c"
+    },
+    {
+      "path": "docs/reference/evidence/resolve211-transcription-type.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\resolve211-transcription-type.json",
+      "source_sha256": "e62cc020bfe4fab8f0c0e4f09b4d07f5a6f4554b1e6058d1075490c9ec104e2e",
+      "kind": "mcp_reference",
+      "sha256": "e62cc020bfe4fab8f0c0e4f09b4d07f5a6f4554b1e6058d1075490c9ec104e2e"
+    },
+    {
+      "path": "docs/reference/evidence/roundtrip-gui-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\roundtrip-gui-20260801.json",
+      "source_sha256": "16be66b03cd105005aeedf906b31653936adf82df1167245dc85f71d9779f9fb",
+      "kind": "mcp_reference",
+      "sha256": "16be66b03cd105005aeedf906b31653936adf82df1167245dc85f71d9779f9fb"
+    },
+    {
+      "path": "docs/reference/evidence/roundtrip-headless-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\roundtrip-headless-20260801.json",
+      "source_sha256": "2b3e0a5c7dc644d6bb7424b4b88d5b72e0996ac20583d18981d062fedde3f365",
+      "kind": "mcp_reference",
+      "sha256": "2b3e0a5c7dc644d6bb7424b4b88d5b72e0996ac20583d18981d062fedde3f365"
+    },
+    {
+      "path": "docs/reference/evidence/saveproject-hang-headless-20260801.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\evidence\\saveproject-hang-headless-20260801.json",
+      "source_sha256": "e6ef1877145ce66125dcc7333139d455aea7d0199037126baedaf3529339e41b",
+      "kind": "mcp_reference",
+      "sha256": "e6ef1877145ce66125dcc7333139d455aea7d0199037126baedaf3529339e41b"
+    },
+    {
+      "path": "docs/reference/headless-capability-matrix.json",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\headless-capability-matrix.json",
+      "source_sha256": "a31f48c81b9fdc49a2f7b9ad8bdf813c08e48ec9647e8fd153a11f8e59e8a065",
+      "kind": "mcp_reference",
+      "sha256": "a31f48c81b9fdc49a2f7b9ad8bdf813c08e48ec9647e8fd153a11f8e59e8a065"
+    },
+    {
+      "path": "docs/reference/headless-capability-matrix.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\headless-capability-matrix.md",
+      "source_sha256": "e9a61664e463db52b888f55deed5514609d8c6c26b02fe483a02f21d158a4673",
+      "kind": "mcp_reference",
+      "sha256": "e9a61664e463db52b888f55deed5514609d8c6c26b02fe483a02f21d158a4673"
+    },
+    {
+      "path": "docs/reference/headless-cli.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\headless-cli.md",
+      "source_sha256": "b12dc358dc6fa176a3e8d61fd9bbc8be93ea31dd6920afc19461cf0d5219fdfb",
+      "kind": "mcp_reference",
+      "sha256": "b12dc358dc6fa176a3e8d61fd9bbc8be93ea31dd6920afc19461cf0d5219fdfb"
+    },
+    {
+      "path": "docs/reference/lut-file-controls.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\lut-file-controls.md",
+      "source_sha256": "aff736827d5ce572532068a031020719f3d06e0d4abfe329addf2ec51de01049",
+      "kind": "mcp_reference",
+      "sha256": "aff736827d5ce572532068a031020719f3d06e0d4abfe329addf2ec51de01049"
+    },
+    {
+      "path": "docs/reference/pixel-equality.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\pixel-equality.md",
+      "source_sha256": "b7df5fc9baae236f535095e6ab941b1d6f805827f7acd121fb38294e2504b7f5",
+      "kind": "mcp_reference",
+      "sha256": "b7df5fc9baae236f535095e6ab941b1d6f805827f7acd121fb38294e2504b7f5"
+    },
+    {
+      "path": "docs/reference/project-archive.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\project-archive.md",
+      "source_sha256": "f3e24cd586f65510980f4f664ab97aed574040ac0f67333a03f70df8d031e4e8",
+      "kind": "mcp_reference",
+      "sha256": "f3e24cd586f65510980f4f664ab97aed574040ac0f67333a03f70df8d031e4e8"
+    },
+    {
+      "path": "docs/reference/readwrite-symmetry.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\readwrite-symmetry.md",
+      "source_sha256": "d1683435413265e43f1acba0b6b380e08a11be3a2bc9ebee355397d72f364c90",
+      "kind": "mcp_reference",
+      "sha256": "d1683435413265e43f1acba0b6b380e08a11be3a2bc9ebee355397d72f364c90"
+    },
+    {
+      "path": "docs/reference/resolve-211-typed-api.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve-211-typed-api.md",
+      "source_sha256": "b0c2f93b5ec5baa7257538796a8e5712ecdcbbf4db5a9760f2857ff3e52a6d04",
+      "kind": "mcp_reference",
+      "sha256": "b0c2f93b5ec5baa7257538796a8e5712ecdcbbf4db5a9760f2857ff3e52a6d04"
+    },
+    {
+      "path": "docs/reference/resolve211-alignment.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-alignment.md",
+      "source_sha256": "3eb568645620a0e9a6b4fb926ab6f251f505f322466067ead00977bf7513612c",
+      "kind": "mcp_reference",
+      "sha256": "3eb568645620a0e9a6b4fb926ab6f251f505f322466067ead00977bf7513612c"
+    },
+    {
+      "path": "docs/reference/resolve211-blanking.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-blanking.md",
+      "source_sha256": "30570ef6c9d66c12c238e5dc98058a446d4a6e8410a6a0afd2b1b042d953d587",
+      "kind": "mcp_reference",
+      "sha256": "30570ef6c9d66c12c238e5dc98058a446d4a6e8410a6a0afd2b1b042d953d587"
+    },
+    {
+      "path": "docs/reference/resolve211-dctl-validation.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-dctl-validation.md",
+      "source_sha256": "d96b2e7c0e5c4cb335f54a2f6a71dca3799fab13307c66c650c11f5ff01aa74c",
+      "kind": "mcp_reference",
+      "sha256": "d96b2e7c0e5c4cb335f54a2f6a71dca3799fab13307c66c650c11f5ff01aa74c"
+    },
+    {
+      "path": "docs/reference/resolve211-encryption.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-encryption.md",
+      "source_sha256": "1d123ac41852bef5c3894f37f9a57b119aa5fb2e81def758d9f4f22c9c25fb1d",
+      "kind": "mcp_reference",
+      "sha256": "1d123ac41852bef5c3894f37f9a57b119aa5fb2e81def758d9f4f22c9c25fb1d"
+    },
+    {
+      "path": "docs/reference/resolve211-multicam.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-multicam.md",
+      "source_sha256": "1d25e6465dcd2535080bebbd159f1d19c98a836bad3bf928cbb727d76f9e6980",
+      "kind": "mcp_reference",
+      "sha256": "1d25e6465dcd2535080bebbd159f1d19c98a836bad3bf928cbb727d76f9e6980"
+    },
+    {
+      "path": "docs/reference/resolve211-native-transitions.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-native-transitions.md",
+      "source_sha256": "a51345cf0de842bfb2aea30de524dcf0a7279e834225670f01b06b7d99592c7a",
+      "kind": "mcp_reference",
+      "sha256": "a51345cf0de842bfb2aea30de524dcf0a7279e834225670f01b06b7d99592c7a"
+    },
+    {
+      "path": "docs/reference/resolve211-normalization.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-normalization.md",
+      "source_sha256": "cc94d6eec8def1656dc2286a36b5255314d31bde07262b42ae01cbe1d3fbe74a",
+      "kind": "mcp_reference",
+      "sha256": "cc94d6eec8def1656dc2286a36b5255314d31bde07262b42ae01cbe1d3fbe74a"
+    },
+    {
+      "path": "docs/reference/resolve211-read-controls.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-read-controls.md",
+      "source_sha256": "32b2f0ea89d292d8047d9f830ad76fc2940292023f37b4e78a5c6923f94fee5d",
+      "kind": "mcp_reference",
+      "sha256": "32b2f0ea89d292d8047d9f830ad76fc2940292023f37b4e78a5c6923f94fee5d"
+    },
+    {
+      "path": "docs/reference/resolve211-speed-fades.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-speed-fades.md",
+      "source_sha256": "b7008319a5f21ae15a52505f1bf1529478522def55601e1e0022e1ddf948469c",
+      "kind": "mcp_reference",
+      "sha256": "b7008319a5f21ae15a52505f1bf1529478522def55601e1e0022e1ddf948469c"
+    },
+    {
+      "path": "docs/reference/resolve211-transcription-type.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve211-transcription-type.md",
+      "source_sha256": "2074a367c654fe90e25f46619e92e4fa2738f71b855350d6c707705cee22f313",
+      "kind": "mcp_reference",
+      "sha256": "2074a367c654fe90e25f46619e92e4fa2738f71b855350d6c707705cee22f313"
+    },
+    {
+      "path": "docs/reference/resolve_scripting_api.txt",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve_scripting_api.txt",
+      "source_sha256": "3d75040528d53d803450f09d12dc1e158052257377819ce5e28a12c83e04788b",
+      "kind": "mcp_reference",
+      "sha256": "3d75040528d53d803450f09d12dc1e158052257377819ce5e28a12c83e04788b"
+    },
+    {
+      "path": "docs/reference/resolve_scripting_changelog_21.1.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve_scripting_changelog_21.1.md",
+      "source_sha256": "b094a560258282657efb594a208b81c5aa22c1d2767af991d9d430100d37df15",
+      "kind": "mcp_reference",
+      "sha256": "b094a560258282657efb594a208b81c5aa22c1d2767af991d9d430100d37df15"
+    },
+    {
+      "path": "docs/reference/roundtrip-fidelity.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\roundtrip-fidelity.md",
+      "source_sha256": "81e15c076d65185988b1cc60ff5a8aed11560cd912053f7f3d405e5ac3e0b8fa",
+      "kind": "mcp_reference",
+      "sha256": "81e15c076d65185988b1cc60ff5a8aed11560cd912053f7f3d405e5ac3e0b8fa"
+    },
+    {
+      "path": "docs/reference/roundtrip-rich-fidelity.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\roundtrip-rich-fidelity.md",
+      "source_sha256": "6abc173f03ddef53d58784646cb4ba5cb7cad83e3fde24ffe2c07d480a3f51cc",
+      "kind": "mcp_reference",
+      "sha256": "6abc173f03ddef53d58784646cb4ba5cb7cad83e3fde24ffe2c07d480a3f51cc"
+    },
+    {
+      "path": "docs/reference/typed-api-search.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\typed-api-search.md",
+      "source_sha256": "92be7400c0da56e687b9a265fef0c1ca391eab0a7fc14dcfd2bf82477d0c8740",
+      "kind": "mcp_reference",
+      "sha256": "92be7400c0da56e687b9a265fef0c1ca391eab0a7fc14dcfd2bf82477d0c8740"
+    },
+    {
+      "path": "docs/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\SKILL.md",
+      "source_sha256": "c324d0bd3dc0437292603277b7ea9f04592f3208c00fde72a3d790bef445a440",
+      "kind": "mcp_reference",
+      "sha256": "c324d0bd3dc0437292603277b7ea9f04592f3208c00fde72a3d790bef445a440"
+    },
+    {
+      "path": "resolve-advanced/README.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\resolve-advanced\\README.md",
+      "source_sha256": "294f68433d1b56ba491d4a497e0b565fa60d67430fb6c9acd62e5219cc65082d",
+      "kind": "mcp_reference",
+      "sha256": "294f68433d1b56ba491d4a497e0b565fa60d67430fb6c9acd62e5219cc65082d"
+    },
+    {
+      "path": "resolve-advanced/vendor/drx-parameters/CALIBRATION-STATUS.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\resolve-advanced\\vendor\\drx-parameters\\CALIBRATION-STATUS.md",
+      "source_sha256": "9bade7c7067b3eb51360bc48a15880ee65cd0fc28879400ab03c134dd766a2ee",
+      "kind": "mcp_reference",
+      "sha256": "9bade7c7067b3eb51360bc48a15880ee65cd0fc28879400ab03c134dd766a2ee"
+    },
+    {
+      "path": "resolve-advanced/vendor/drx-parameters/DRX-VALUE-SCALING.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\resolve-advanced\\vendor\\drx-parameters\\DRX-VALUE-SCALING.md",
+      "source_sha256": "c942d6dd81816e09e52c41f08ab80c76f5add3d610f9054cdc94c8512cc02f92",
+      "kind": "mcp_reference",
+      "sha256": "c942d6dd81816e09e52c41f08ab80c76f5add3d610f9054cdc94c8512cc02f92"
+    },
+    {
+      "path": "docs/upstream-licenses/resolve-mcp-LICENSE",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\LICENSE",
+      "source_sha256": "7d064ba57dc21d994cc0139a1baba04284d5fabe9a05b5952d933e23b535ed53",
+      "kind": "license",
+      "sha256": "7d064ba57dc21d994cc0139a1baba04284d5fabe9a05b5952d933e23b535ed53"
+    },
+    {
+      "path": "docs/upstream-licenses/advanced-LICENSE",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\resolve-advanced\\LICENSE",
+      "source_sha256": "7d064ba57dc21d994cc0139a1baba04284d5fabe9a05b5952d933e23b535ed53",
+      "kind": "license",
+      "sha256": "7d064ba57dc21d994cc0139a1baba04284d5fabe9a05b5952d933e23b535ed53"
+    },
+    {
+      "path": "docs/upstream-licenses/superpowers-LICENSE",
+      "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\LICENSE",
+      "source_sha256": "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc",
+      "kind": "license",
+      "sha256": "0da33ed814ee87e72db078f489c4447af72f13d9f25d9e17476f32efd77705fc"
+    },
+    {
+      "path": "scripts/contact_sheet.py",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\scripts\\contact_sheet.py",
+      "source_sha256": "1cdd0e06c7acd2f4a74b04d7294f22618f10f63c2344482f959823bb5f9ff32a",
+      "kind": "analysis_helper",
+      "sha256": "1cdd0e06c7acd2f4a74b04d7294f22618f10f63c2344482f959823bb5f9ff32a"
+    },
+    {
+      "path": ".agents/roles/cut-reviewer.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\roles\\cut-reviewer.md",
+      "source_sha256": "6bc16c826391ad204b2e49d1b8917f242bdd9a6767468bde6e44278ce301e176",
+      "kind": "review_role",
+      "sha256": "6bc16c826391ad204b2e49d1b8917f242bdd9a6767468bde6e44278ce301e176"
+    },
+    {
+      "path": ".agents/roles/grade-match-verifier.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\roles\\grade-match-verifier.md",
+      "source_sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2",
+      "kind": "review_role",
+      "sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2"
+    },
+    {
+      "path": "docs/skill-variants/resolve-media-analysis/65a9f37845a3/SKILL.md",
+      "source": "C:\\Users\\warit\\.agents\\skills\\resolve-media-analysis\\SKILL.md",
+      "source_sha256": "65a9f37845a3a5fabc63bb91e5faea09aed4725234b67a4de16f52fd80f73123",
+      "kind": "historical_variant",
+      "sha256": "65a9f37845a3a5fabc63bb91e5faea09aed4725234b67a4de16f52fd80f73123"
+    },
+    {
+      "path": "docs/skill-variants/house-style/585298d16b71/SKILL.md",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.claude\\worktrees\\aomi-mama-vertical-clips-42b118\\.agents\\skills\\house-style\\SKILL.md",
+      "source_sha256": "585298d16b71b4880e8f5f2c74031afa82a5340a42910c4f57fa734e6b281342",
+      "kind": "historical_variant",
+      "sha256": "585298d16b71b4880e8f5f2c74031afa82a5340a42910c4f57fa734e6b281342"
+    },
+    {
+      "path": ".agents/skills/video-footage-review/references/whisper-transcription.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "db6ac0b9cefae228dac78e466e55533bdd53f81225962985c0f8823cf0fa65d1"
+    },
+    {
+      "path": ".gitignore",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "fc9a94d5c8b4a8c13b10ff23558a5d90f87d93f9a9e0ee3154d702c7b506408d"
+    },
+    {
+      "path": "AGENTS.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "7757ee1f71490dcb4d116f8253b93652e6700bec3e637c7aa686abed5d5539a4"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "5a8a8c89ee38a9d359a6335ff3b191074bb2cacade0d4e5fd1a2ca9a8c132b27"
+    },
+    {
+      "path": "README.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "e591f037f62f9661d6a70b5f84ef88bf21d20a6e5a07f79d8013f94138c324f3"
+    },
+    {
+      "path": "scripts/verify_skill_bundle.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "a12fb5e1ce92ea38173241eb9306a3054d5a931ccd0755639089aaf01666077c"
+    },
+    {
+      "path": "tests/test_skill_bundle.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "83957964f38e0cbd816b9d58c12524cdd63f5f0fb7fe1fd491ddcca946346043"
+    }
+  ],
+  "historical_variants": [
+    {
+      "name": "resolve-media-analysis",
+      "source": "C:\\Users\\warit\\.agents\\skills\\resolve-media-analysis\\SKILL.md",
+      "path": "docs/skill-variants/resolve-media-analysis/65a9f37845a3/SKILL.md",
+      "sha256": "65a9f37845a3a5fabc63bb91e5faea09aed4725234b67a4de16f52fd80f73123"
+    },
+    {
+      "name": "house-style",
+      "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.claude\\worktrees\\aomi-mama-vertical-clips-42b118\\.agents\\skills\\house-style\\SKILL.md",
+      "path": "docs/skill-variants/house-style/585298d16b71/SKILL.md",
+      "sha256": "585298d16b71b4880e8f5f2c74031afa82a5340a42910c4f57fa734e6b281342"
+    }
+  ],
+  "excluded": [
+    "release-check: publishing the MCP server, not editing footage",
+    "software-development:codebase-inspection: MCP repository inspection",
+    "gif-search / whisper: no direct load evidence in the inspected Resolve sessions; transcription guidance already covered by Thai subtitle skill",
+    "Canva thumbnail and YouTube downloader projects: separate workflows"
+  ],
+  "edits": [
+    {
+      "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
+      "reason": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing."
+    },
+    {
+      "path": ".agents/skills/resolve-rough-cut/SKILL.md",
+      "reason": "Windows python command; authorized dependency installs; permission-gated archive cleanup."
+    },
+    {
+      "path": ".agents/skills/video-footage-review/SKILL.md",
+      "reason": "Hermes search_files inventory instead of ls; supplied missing Whisper reference."
+    },
+    {
+      "path": ".agents/skills/resolve-media-analysis/SKILL.md",
+      "reason": "Agent-neutral wording; mechanics unchanged."
+    }
+  ],
+  "counts": {
+    "editing_skills": 16,
+    "related_archive_skills": 13,
+    "history_evidenced_editing_skills": 14,
+    "manifest_files": 163
+  }
+}

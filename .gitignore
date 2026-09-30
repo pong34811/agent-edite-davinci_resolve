@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.db
+*.db-wal
+*.db-shm
+*.drp
+*.drt
+*.mp4
+*.mov
+renders/
+footage/

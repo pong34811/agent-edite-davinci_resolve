@@ -1,0 +1,1106 @@
+[
+  {
+    "index": 1,
+    "name": "เกมเเรกที่เริ่มไลฟ์คือ",
+    "id": "076f63ac-f2ff-4b9a-92cf-e4fd13c0f423",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 64.71666666666667,
+    "verification": {
+      "job_id": "7daa4df7-8dfe-4b00-8bf1-324b253f6ed1",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 19373
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_1.mp4",
+      "mark_range_frames": 3883,
+      "timeline_item_extent_frames": 3883,
+      "output_exists": true,
+      "output_size_bytes": 46906435,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 64.725333
+      },
+      "expected_duration_seconds": 64.71666666666667,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_2e945a1f60cd",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 101,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 101,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_1.jpg"
+  },
+  {
+    "index": 2,
+    "name": "ทำไมน้ำหน้กน่ายกจังครับ",
+    "id": "3b95ef25-d7cd-43c2-a2ac-88874aed8fee",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 16.266666666666666,
+    "verification": {
+      "job_id": "24918ede-53f8-4dee-9283-d133eb45938c",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 4322
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_2.mp4",
+      "mark_range_frames": 976,
+      "timeline_item_extent_frames": 976,
+      "output_exists": true,
+      "output_size_bytes": 11936350,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 16.277333
+      },
+      "expected_duration_seconds": 16.266666666666666,
+      "duration_ratio": 1.0007,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_d278a9210c73",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 66,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 66,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_2.jpg"
+  },
+  {
+    "index": 3,
+    "name": "เรื่องราวของ Aomi-mama",
+    "id": "0ef29023-8f80-4688-8e24-fa1a8b98d61c",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 52.083333333333336,
+    "verification": {
+      "job_id": "8c124112-4f1a-4111-879f-6b0fc1158ab8",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 12837
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_3.mp4",
+      "mark_range_frames": 3125,
+      "timeline_item_extent_frames": 3124,
+      "output_exists": true,
+      "output_size_bytes": 21062172,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 52.096
+      },
+      "expected_duration_seconds": 52.083333333333336,
+      "duration_ratio": 1.0002,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_8eecb1c91758",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 68,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 68,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_3.jpg"
+  },
+  {
+    "index": 4,
+    "name": "จบไลฟ์เดบิวต์ เล่น LoL ไม่เก่งอย่าว่าหนูนะ",
+    "id": "dba2359e-ba8b-4f69-b113-57927e635f51",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 63.483333333333334,
+    "verification": {
+      "job_id": "5fd00587-ccdd-4258-b9ad-b6d811fb34c0",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 16948
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_4.mp4",
+      "mark_range_frames": 3809,
+      "timeline_item_extent_frames": 3808,
+      "output_exists": true,
+      "output_size_bytes": 42393796,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 63.488
+      },
+      "expected_duration_seconds": 63.483333333333334,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_0a1c331bf926",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 73,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 73,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_4.jpg"
+  },
+  {
+    "index": 5,
+    "name": "เคยเล่น Rov ไหม",
+    "id": "07fc193e-c2fd-4be5-a184-04312956b2ba",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 21.416666666666668,
+    "verification": {
+      "job_id": "4bf51e5d-cd22-4061-9783-c5aa19edeafe",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 7306
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_5.mp4",
+      "mark_range_frames": 1285,
+      "timeline_item_extent_frames": 1285,
+      "output_exists": true,
+      "output_size_bytes": 12576732,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 21.418667
+      },
+      "expected_duration_seconds": 21.416666666666668,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_22823c7d53c9",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 71,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 71,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_5.jpg"
+  },
+  {
+    "index": 6,
+    "name": "ไม่เสียใจที่เลือกมาวีทูปเบอร์",
+    "id": "daedb334-977f-42c4-9053-e90b0ffb3d06",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 104.81666666666666,
+    "verification": {
+      "job_id": "93d98c58-45a2-4afa-a42a-efb6d5c0d899",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 29397
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_6.mp4",
+      "mark_range_frames": 6289,
+      "timeline_item_extent_frames": 6289,
+      "output_exists": true,
+      "output_size_bytes": 79217251,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 104.832
+      },
+      "expected_duration_seconds": 104.81666666666666,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_8603596c02b6",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 80,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 80,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_6.jpg"
+  },
+  {
+    "index": 7,
+    "name": "เป้าหมายช่อง aomi-mama",
+    "id": "43d87c6a-897b-4d00-b55e-cf76e400da6e",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 25.416666666666668,
+    "verification": {
+      "job_id": "b2a2e846-7f08-4ef4-94b2-6d1cd5867542",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 6303
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_7.mp4",
+      "mark_range_frames": 1525,
+      "timeline_item_extent_frames": 1525,
+      "output_exists": true,
+      "output_size_bytes": 17306356,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 25.429333
+      },
+      "expected_duration_seconds": 25.416666666666668,
+      "duration_ratio": 1.0005,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_074137fe96dc",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 65,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 65,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_7.jpg"
+  },
+  {
+    "index": 8,
+    "name": "สาเหตุไม่ชอบหนอนเเมลง",
+    "id": "19640dc1-cb83-47c9-94d5-1f672def6c40",
+    "frameRate": 60,
+    "width": "1920",
+    "height": "1080",
+    "durationSeconds": 51.03333333333333,
+    "verification": {
+      "job_id": "02e9064b-5d17-4176-b0d3-68ca426d9c31",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 16833
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_8.mp4",
+      "mark_range_frames": 3062,
+      "timeline_item_extent_frames": 3062,
+      "output_exists": true,
+      "output_size_bytes": 38146541,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 51.050667
+      },
+      "expected_duration_seconds": 51.03333333333333,
+      "duration_ratio": 1.0003,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_f8d1c1149140",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 90,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 90,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_8.jpg"
+  },
+  {
+    "index": 9,
+    "name": "สาเหตุไม่ชอบหนอนเเมลง_9x16",
+    "id": "f7ac306a-f1ca-4b22-903d-36f404981847",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 51.03333333333333,
+    "verification": {
+      "job_id": "9c24c88d-b78c-4806-9018-838401208b5e",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 24353
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_9.mp4",
+      "mark_range_frames": 3062,
+      "timeline_item_extent_frames": 3062,
+      "output_exists": true,
+      "output_size_bytes": 112108773,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 51.050667
+      },
+      "expected_duration_seconds": 51.03333333333333,
+      "duration_ratio": 1.0003,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_0f933110f59a",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 141,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 141,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_9.jpg"
+  },
+  {
+    "index": 10,
+    "name": "เกมเเรกที่เริ่มไลฟ์คือ_9x16",
+    "id": "1f9bb797-1460-4f76-a2e0-00ab9fde848a",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 64.71666666666667,
+    "verification": {
+      "job_id": "2c343294-5dd6-4b03-9abc-6a981c8bcf5e",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 27323
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_10.mp4",
+      "mark_range_frames": 3883,
+      "timeline_item_extent_frames": 3883,
+      "output_exists": true,
+      "output_size_bytes": 142976786,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 64.725333
+      },
+      "expected_duration_seconds": 64.71666666666667,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_f3c6206b98f1",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 119,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 119,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_10.jpg"
+  },
+  {
+    "index": 11,
+    "name": "ทำไมน้ำหน้กน่ายกจังครับ_9x16",
+    "id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 16.266666666666666,
+    "verification": {
+      "job_id": "4904600d-8816-43eb-9001-8dfa4f6815f3",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 6823
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_11.mp4",
+      "mark_range_frames": 976,
+      "timeline_item_extent_frames": 976,
+      "output_exists": true,
+      "output_size_bytes": 36395276,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 16.277333
+      },
+      "expected_duration_seconds": 16.266666666666666,
+      "duration_ratio": 1.0007,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_60baefd765ff",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 94,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 94,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_11.jpg"
+  },
+  {
+    "index": 12,
+    "name": "เรื่องราวของ Aomi-mama_9x16",
+    "id": "3eec050c-42e5-49e3-8e05-ca15abc9e119",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 52.083333333333336,
+    "verification": {
+      "job_id": "c41642d2-9aad-4a70-87d6-7ac5c364835d",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 17810
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_12.mp4",
+      "mark_range_frames": 3125,
+      "timeline_item_extent_frames": 3124,
+      "output_exists": true,
+      "output_size_bytes": 61877118,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 52.096
+      },
+      "expected_duration_seconds": 52.083333333333336,
+      "duration_ratio": 1.0002,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_39f9c689d199",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 105,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 105,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_12.jpg"
+  },
+  {
+    "index": 13,
+    "name": "จบไลฟ์เดบิวต์ เล่น LoL ไม่เก่งอย่าว่าหนูนะ_9x16",
+    "id": "4cbf3bc5-42eb-451a-a2ba-bb37bb813e9d",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 63.483333333333334,
+    "verification": {
+      "job_id": "3c389b89-fbb4-4a01-8612-46bec3b1ca29",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 24350
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_13.mp4",
+      "mark_range_frames": 3809,
+      "timeline_item_extent_frames": 3808,
+      "output_exists": true,
+      "output_size_bytes": 102227563,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 63.488
+      },
+      "expected_duration_seconds": 63.483333333333334,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_3edc61548fdf",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 132,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 132,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_13.jpg"
+  },
+  {
+    "index": 14,
+    "name": "เคยเล่น Rov ไหม_9x16",
+    "id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 21.416666666666668,
+    "verification": {
+      "job_id": "f2d4095c-ee75-4c30-8110-2dcaa96ca499",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 9321
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_14.mp4",
+      "mark_range_frames": 1285,
+      "timeline_item_extent_frames": 1285,
+      "output_exists": true,
+      "output_size_bytes": 25479874,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 21.418667
+      },
+      "expected_duration_seconds": 21.416666666666668,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_0715cae7a73c",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 208,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 208,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_14.jpg"
+  },
+  {
+    "index": 15,
+    "name": "ไม่เสียใจที่เลือกมาวีทูปเบอร์_9x16",
+    "id": "b4a81c4c-c681-46f9-aac9-86234a025b07",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 104.81666666666666,
+    "verification": {
+      "job_id": "ba41cb6c-3f8f-4513-bf3b-129d5eef618b",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 40820
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_15.mp4",
+      "mark_range_frames": 6289,
+      "timeline_item_extent_frames": 6289,
+      "output_exists": true,
+      "output_size_bytes": 228456574,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 104.832
+      },
+      "expected_duration_seconds": 104.81666666666666,
+      "duration_ratio": 1.0001,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_0711277f37b3",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 237,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 237,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_15.jpg"
+  },
+  {
+    "index": 16,
+    "name": "เป้าหมายช่อง aomi-mama_9x16",
+    "id": "59ea36b5-471b-46d4-979b-031c29da5004",
+    "frameRate": 60,
+    "width": "1080",
+    "height": "1920",
+    "durationSeconds": 25.416666666666668,
+    "verification": {
+      "job_id": "eda15d72-ab22-4724-bddd-4c2080fbc431",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 8870
+      },
+      "output_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\Aomi_review_20260930\\review_16.mp4",
+      "mark_range_frames": 1525,
+      "timeline_item_extent_frames": 1525,
+      "output_exists": true,
+      "output_size_bytes": 19156656,
+      "output_probe": {
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac"
+          },
+          {
+            "codec_type": "data",
+            "codec_name": null
+          }
+        ],
+        "duration_seconds": 25.429333
+      },
+      "expected_duration_seconds": 25.416666666666668,
+      "duration_ratio": 1.0005,
+      "warnings": [],
+      "verified": true,
+      "_operation": {
+        "status": "success",
+        "operation": "render.verify_output",
+        "execution_id": "exec_7b85f149b82d",
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "check": "readback_post_state",
+              "passed": true,
+              "contradiction": false,
+              "observed": null
+            }
+          ],
+          "contradiction": false
+        },
+        "duration_ms": 119,
+        "lifecycle": {
+          "provenance_trace": {
+            "execution_id": null,
+            "duration_ms": 119,
+            "risk_level": "medium"
+          }
+        }
+      }
+    },
+    "contactSheet": "C:/Users/warit/Documents/Aomi-mama_Review_20260930/sheet_16.jpg"
+  }
+]
