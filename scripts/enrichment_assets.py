@@ -3,8 +3,9 @@
 Provides functions to:
 - Validate presence of SFX, BGM, and GIF directories
 - Select mood-appropriate BGM for specific games
-- Safely export pre-flight .drp project backup
+- Safely export pre-flight .drp project backup and verify non-empty file creation
 - Create Media Pool bins (Enrichment_SFX, Enrichment_BGM, Enrichment_GIF) and ingest curated assets
+- Restore initial active folder and save project upon completion
 """
 
 import os
@@ -111,7 +112,7 @@ def select_bgm_for_game(game_name: str) -> str:
 
 
 def export_project_backup(backup_path: str, resolve_obj=None) -> bool:
-    """Safely export current project to a .drp archive."""
+    """Safely export current project to a .drp archive and verify file on disk."""
     resolve = resolve_obj or get_resolve()
     if not resolve:
         raise RuntimeError("Could not connect to DaVinci Resolve.")
@@ -128,7 +129,10 @@ def export_project_backup(backup_path: str, resolve_obj=None) -> bool:
         os.makedirs(parent_dir, exist_ok=True)
 
     success = pm.ExportProject(project_name, backup_path)
-    return bool(success)
+    if not success:
+        return False
+
+    return bool(os.path.exists(backup_path) and os.path.getsize(backup_path) > 0)
 
 
 def ingest_enrichment_assets(
@@ -137,7 +141,9 @@ def ingest_enrichment_assets(
     bgm_dir: Optional[str] = None,
     gif_dir: Optional[str] = None,
 ) -> Dict[str, List[Any]]:
-    """Create bins (Enrichment_SFX, Enrichment_BGM, Enrichment_GIF) and ingest curated assets."""
+    """Create bins (Enrichment_SFX, Enrichment_BGM, Enrichment_GIF), ingest curated assets,
+    persist changes with SaveProject(), and restore initial active folder.
+    """
     sfx_dir = sfx_dir or SFX_ROOT
     bgm_dir = bgm_dir or BGM_ROOT
     gif_dir = gif_dir or GIF_ROOT
@@ -158,6 +164,8 @@ def ingest_enrichment_assets(
     if not root_folder:
         raise RuntimeError("Could not get MediaPool RootFolder.")
 
+    initial_folder = media_pool.GetCurrentFolder()
+
     bin_configs = [
         ("Enrichment_SFX", sfx_dir, CURATED_SFX),
         ("Enrichment_BGM", bgm_dir, CURATED_BGM),
@@ -166,35 +174,44 @@ def ingest_enrichment_assets(
 
     catalog: Dict[str, List[Any]] = {}
 
-    for bin_name, src_dir, file_list in bin_configs:
-        subfolders = root_folder.GetSubFolderList() or []
-        folder = next((f for f in subfolders if f.GetName() == bin_name), None)
-        if folder is None:
-            folder = media_pool.AddSubFolder(root_folder, bin_name)
+    try:
+        for bin_name, src_dir, file_list in bin_configs:
+            subfolders = root_folder.GetSubFolderList() or []
+            folder = next((f for f in subfolders if f.GetName() == bin_name), None)
+            if folder is None:
+                folder = media_pool.AddSubFolder(root_folder, bin_name)
 
-        if not folder:
-            raise RuntimeError(f"Failed to create or access subfolder '{bin_name}'.")
+            if not folder:
+                raise RuntimeError(f"Failed to create or access subfolder '{bin_name}'.")
 
-        media_pool.SetCurrentFolder(folder)
+            media_pool.SetCurrentFolder(folder)
 
-        existing_clips = folder.GetClipList() or []
-        existing_names = {c.GetName() for c in existing_clips}
+            existing_clips = folder.GetClipList() or []
+            existing_names = {c.GetName() for c in existing_clips}
 
-        paths_to_import = []
-        for filename in file_list:
-            full_path = os.path.join(src_dir, filename)
-            if os.path.exists(full_path):
-                if filename not in existing_names:
-                    paths_to_import.append(full_path)
-            else:
-                if not os.path.exists(src_dir) or filename not in existing_names:
-                    paths_to_import.append(full_path)
+            paths_to_import = []
+            dir_exists = os.path.exists(src_dir)
+            for filename in file_list:
+                full_path = os.path.join(src_dir, filename)
+                if dir_exists:
+                    if os.path.isfile(full_path) and filename not in existing_names:
+                        paths_to_import.append(full_path)
+                else:
+                    if filename not in existing_names:
+                        paths_to_import.append(full_path)
 
-        if paths_to_import:
-            media_pool.ImportMedia(paths_to_import)
+            if paths_to_import:
+                media_pool.ImportMedia(paths_to_import)
 
-        final_clips = folder.GetClipList() or []
-        catalog[bin_name] = final_clips
+            final_clips = folder.GetClipList() or []
+            catalog[bin_name] = final_clips
+
+        # Save project to persist imported assets
+        pm.SaveProject()
+
+    finally:
+        if initial_folder:
+            media_pool.SetCurrentFolder(initial_folder)
 
     return catalog
 

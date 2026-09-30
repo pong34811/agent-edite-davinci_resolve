@@ -26,16 +26,23 @@ def test_select_bgm_for_game():
     assert "YEAT" in select_bgm_for_game("Soul Walker") or "Gaming" in select_bgm_for_game("Soul Walker")
 
 
-def test_export_project_backup_mock():
+def test_export_project_backup_mock(tmp_path):
     mock_resolve = MagicMock()
     mock_pm = MagicMock()
     mock_project = MagicMock()
     mock_project.GetName.return_value = "KT404_2026-09-29"
     mock_pm.GetCurrentProject.return_value = mock_project
-    mock_pm.ExportProject.return_value = True
+
+    backup_path = str(tmp_path / "test_backup.drp")
+
+    def mock_export(name, path):
+        with open(path, "wb") as f:
+            f.write(b"PK\x03\x04valid_mock_drp_data")
+        return True
+
+    mock_pm.ExportProject.side_effect = mock_export
     mock_resolve.GetProjectManager.return_value = mock_pm
 
-    backup_path = r"G:\My Drive\Projects\Katy404\2026-09-29\test_backup.drp"
     result = export_project_backup(backup_path, resolve_obj=mock_resolve)
     assert result is True
     assert mock_pm.ExportProject.call_count == 1
@@ -44,17 +51,43 @@ def test_export_project_backup_mock():
     assert args[1] == backup_path
 
 
+def test_export_project_backup_empty_file_fails(tmp_path):
+    mock_resolve = MagicMock()
+    mock_pm = MagicMock()
+    mock_project = MagicMock()
+    mock_project.GetName.return_value = "KT404_2026-09-29"
+    mock_pm.GetCurrentProject.return_value = mock_project
+
+    backup_path = str(tmp_path / "empty_backup.drp")
+
+    # Simulate exporter creating a 0-byte file
+    def mock_export_empty(name, path):
+        with open(path, "wb") as f:
+            pass
+        return True
+
+    mock_pm.ExportProject.side_effect = mock_export_empty
+    mock_resolve.GetProjectManager.return_value = mock_pm
+
+    result = export_project_backup(backup_path, resolve_obj=mock_resolve)
+    assert result is False
+
+
 def test_ingest_enrichment_assets_mock():
     mock_resolve = MagicMock()
     mock_pm = MagicMock()
     mock_project = MagicMock()
     mock_media_pool = MagicMock()
     mock_root_folder = MagicMock()
+    mock_initial_folder = MagicMock()
+    mock_initial_folder.GetName.return_value = "Master"
 
     mock_resolve.GetProjectManager.return_value = mock_pm
     mock_pm.GetCurrentProject.return_value = mock_project
     mock_project.GetMediaPool.return_value = mock_media_pool
     mock_media_pool.GetRootFolder.return_value = mock_root_folder
+    mock_media_pool.GetCurrentFolder.return_value = mock_initial_folder
+    mock_pm.SaveProject.return_value = True
 
     # Existing subfolders empty
     mock_root_folder.GetSubFolderList.return_value = []
@@ -62,7 +95,8 @@ def test_ingest_enrichment_assets_mock():
     # Mock AddSubFolder and ImportMedia with clip tracking
     folder_map = {}
     folder_clips = {}
-    current_folder = [None]
+    current_folder = [mock_initial_folder]
+    set_folder_history = []
 
     def mock_add_folder(*args, **kwargs):
         name = args[-1] if args else kwargs.get("name")
@@ -75,6 +109,7 @@ def test_ingest_enrichment_assets_mock():
 
     def mock_set_current_folder(folder):
         current_folder[0] = folder
+        set_folder_history.append(folder)
         return True
     mock_media_pool.SetCurrentFolder.side_effect = mock_set_current_folder
 
@@ -97,3 +132,55 @@ def test_ingest_enrichment_assets_mock():
     assert len(catalog["Enrichment_SFX"]) > 0
     assert len(catalog["Enrichment_BGM"]) > 0
     assert len(catalog["Enrichment_GIF"]) > 0
+
+    # Verify SaveProject was called to persist
+    mock_pm.SaveProject.assert_called_once()
+
+    # Verify initial folder was restored
+    assert set_folder_history[-1] == mock_initial_folder
+
+
+def test_ingest_skips_nonexistent_files_when_dir_exists(tmp_path):
+    mock_resolve = MagicMock()
+    mock_pm = MagicMock()
+    mock_project = MagicMock()
+    mock_media_pool = MagicMock()
+    mock_root_folder = MagicMock()
+    mock_initial_folder = MagicMock()
+
+    mock_resolve.GetProjectManager.return_value = mock_pm
+    mock_pm.GetCurrentProject.return_value = mock_project
+    mock_project.GetMediaPool.return_value = mock_media_pool
+    mock_media_pool.GetRootFolder.return_value = mock_root_folder
+    mock_media_pool.GetCurrentFolder.return_value = mock_initial_folder
+
+    mock_root_folder.GetSubFolderList.return_value = []
+    f = MagicMock()
+    f.GetName.return_value = "Enrichment_SFX"
+    f.GetClipList.return_value = []
+    mock_media_pool.AddSubFolder.return_value = f
+
+    # Create real directory with only ONE real file
+    sfx_dir = tmp_path / "sfx"
+    sfx_dir.mkdir()
+    real_file = sfx_dir / "1_ตลกตบมุก_1.mp3"
+    real_file.write_bytes(b"dummy_mp3")
+
+    imported_paths = []
+    def mock_import(paths):
+        imported_paths.extend(paths)
+        return [MagicMock()]
+    mock_media_pool.ImportMedia.side_effect = mock_import
+
+    # Only test SFX directory by mocking others as empty mock paths
+    catalog = ingest_enrichment_assets(
+        resolve_obj=mock_resolve,
+        sfx_dir=str(sfx_dir),
+        bgm_dir=str(tmp_path / "nonexistent_bgm"),
+        gif_dir=str(tmp_path / "nonexistent_gif"),
+    )
+
+    # For sfx_dir, only the 1 existing file should have been passed to ImportMedia
+    sfx_imports = [p for p in imported_paths if str(sfx_dir) in p]
+    assert len(sfx_imports) == 1
+    assert sfx_imports[0] == str(real_file)
