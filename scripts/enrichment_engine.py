@@ -454,6 +454,17 @@ def apply_enrichment_plan(
     if not media_pool:
         raise RuntimeError("Could not obtain MediaPool for timeline placement.")
 
+    # Ensure target timeline is active in project before appending
+    if resolve and hasattr(resolve, "GetProjectManager"):
+        pm = resolve.GetProjectManager()
+        if pm and hasattr(pm, "GetCurrentProject") and pm.GetCurrentProject():
+            proj = pm.GetCurrentProject()
+            if hasattr(proj, "SetCurrentTimeline"):
+                try:
+                    proj.SetCurrentTimeline(timeline)
+                except Exception:
+                    pass
+
     # 1. Ensure Video 2 exists
     v_track_count = timeline.GetTrackCount("video") if hasattr(timeline, "GetTrackCount") else 1
     while v_track_count < 2:
