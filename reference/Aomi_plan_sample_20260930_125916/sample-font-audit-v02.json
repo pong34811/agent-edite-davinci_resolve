@@ -1,0 +1,621 @@
+{
+  "method": "Read only exported DRP; zstd decode and exact UTF-8/UTF-16 literal detection. This is metadata evidence, not full rich-text codec or effective-font proof. No DB writes or binary replacement.",
+  "status": "Track descriptor Mitr Bold; stored UTF-16 Open Sans in individual captions requires GUI effective-font check. Resolve main window is hidden (visible=false); CUA cannot inspect it. Font work remains pending.",
+  "timelines": [
+    {
+      "timeline_id": "3b95ef25-d7cd-43c2-a2ac-88874aed8fee",
+      "name": "ทำไมน้ำหน้กน่ายกจังครับ",
+      "sequence_file": "SeqContainer/43d8b20f-af7c-47fc-a544-91102ba7f035.xml",
+      "track_font_literals": [
+        "Mitr,8.25,-1,5,75,0,0,0,0,0,BoldJ"
+      ],
+      "cues": [
+        {
+          "id": "35055b8a-55a4-49ce-8d1a-92a039239eb2",
+          "stored_name": "ทำมั้ยน้ำหนัก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ทำมั้ยน้ำหนัก",
+          "start_frame": 0.0,
+          "end_frame": 40.0,
+          "font_presence": []
+        },
+        {
+          "id": "75208cd3-947c-4107-aeae-133d614bd0bc",
+          "stored_name": "มัน",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "มัน",
+          "start_frame": 40.0,
+          "end_frame": 54.0,
+          "font_presence": []
+        },
+        {
+          "id": "899e3278-b236-4c91-897c-2e13984777d8",
+          "stored_name": "น่ายกจัง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "น่ายกจัง",
+          "start_frame": 54.0,
+          "end_frame": 89.0,
+          "font_presence": []
+        },
+        {
+          "id": "022c4b57-60d7-4a23-b27f-01949d9f34fc",
+          "stored_name": "เลยครับ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "เลยครับ",
+          "start_frame": 89.0,
+          "end_frame": 112.0,
+          "font_presence": []
+        },
+        {
+          "id": "0e35d752-ecb6-4110-86d2-53d5d174b1a9",
+          "stored_name": "อือ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "อือ",
+          "start_frame": 133.0,
+          "end_frame": 191.0,
+          "font_presence": []
+        },
+        {
+          "id": "40693238-4b77-44c6-83db-9bf32294b950",
+          "stored_name": "น่ายกอ่อ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "น่ายกอ่อ",
+          "start_frame": 205.0,
+          "end_frame": 248.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "850496e1-d349-45f2-8971-7f5db2ea96c6",
+          "stored_name": "ไม่รุ้สิ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ไม่รุ้สิ",
+          "start_frame": 283.0,
+          "end_frame": 337.0,
+          "font_presence": []
+        },
+        {
+          "id": "b667cfe3-f80b-47b9-92f6-2bb38b2d7a35",
+          "stored_name": "ก็ตัวเบา",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ก็ตัวเบา",
+          "start_frame": 337.0,
+          "end_frame": 394.0,
+          "font_presence": []
+        },
+        {
+          "id": "322ac9a3-d5f3-4c4a-9993-f8c465b8b663",
+          "stored_name": "ถ้าพูดกัน",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ถ้าพูดกัน",
+          "start_frame": 394.0,
+          "end_frame": 422.0,
+          "font_presence": []
+        },
+        {
+          "id": "ebce59ff-5785-4e38-a090-39ca2045b51b",
+          "stored_name": "ตามจริง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตามจริง",
+          "start_frame": 422.0,
+          "end_frame": 431.0,
+          "font_presence": []
+        },
+        {
+          "id": "6a63c9f6-dbd2-460e-aeb4-81e3f65e9421",
+          "stored_name": "ตัวเบาแล้วก็ตัวเล็ก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตัวเบาแล้วก็ตัวเล็ก",
+          "start_frame": 431.0,
+          "end_frame": 505.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "74d46f61-2bdf-4c66-8dd8-f820257aeb93",
+          "stored_name": "นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "นะ",
+          "start_frame": 505.0,
+          "end_frame": 530.0,
+          "font_presence": []
+        },
+        {
+          "id": "cee83f4c-7708-44c7-94b3-ab627b3a1e11",
+          "stored_name": "เพราะบ้างที",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "เพราะบ้างที",
+          "start_frame": 547.0,
+          "end_frame": 579.0,
+          "font_presence": []
+        },
+        {
+          "id": "2164e435-ea2c-44ff-9836-3a7ff9b5abbc",
+          "stored_name": "ความตัวเล็ก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ความตัวเล็ก",
+          "start_frame": 579.0,
+          "end_frame": 628.0,
+          "font_presence": []
+        },
+        {
+          "id": "ebc50a5a-e7fa-4a3a-944c-cba90694fbdf",
+          "stored_name": "มันทำให้รอดชีวิต",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "มันทำให้",
+          "start_frame": 628.0,
+          "end_frame": 656.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "f0726c57-f35f-4059-9a93-6278011000c1",
+          "stored_name": "มันทำให้รอดชีวิต",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "รอดชีวิตได้",
+          "start_frame": 656.0,
+          "end_frame": 705.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "f1dc6479-740e-4e7a-af99-7af8a2b97fe9",
+          "stored_name": "แล้วก็มันจวง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "แล้วก็มันจวงแทง",
+          "start_frame": 719.0,
+          "end_frame": 761.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "dd0cbb02-0f80-4815-a323-023af218d657",
+          "stored_name": "คนจากข้างหลัง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "คนจากข้างหลัง",
+          "start_frame": 761.0,
+          "end_frame": 801.0,
+          "font_presence": []
+        },
+        {
+          "id": "287933f1-fb6e-4b03-84d5-141d53ead774",
+          "stored_name": "ง่ายด้วย",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ง่ายด้วย",
+          "start_frame": 801.0,
+          "end_frame": 827.0,
+          "font_presence": []
+        },
+        {
+          "id": "e4505968-8048-44b8-9d3c-9d4925955d28",
+          "stored_name": "ตัวเล็กมีประโยชน์นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตัวเล็กมีประโยชน์นะ",
+          "start_frame": 841.0,
+          "end_frame": 888.0,
+          "font_presence": []
+        },
+        {
+          "id": "62fe37d9-ffe6-4930-b78f-0b776c5bf9fe",
+          "stored_name": "ตัวเล็กมีประโยชน์นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "555+",
+          "start_frame": 919.0,
+          "end_frame": 966.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+      "name": "ทำไมน้ำหน้กน่ายกจังครับ_9x16",
+      "sequence_file": "SeqContainer/e3bc91bb-a743-45ac-8da6-dc53f4c9d21f.xml",
+      "track_font_literals": [
+        "Mitr,8.25,-1,5,75,0,0,0,0,0,BoldJ"
+      ],
+      "cues": [
+        {
+          "id": "715b5dba-a54e-4f5e-a63a-8cf9c2dd9b30",
+          "stored_name": "ทำมั้ยน้ำหนัก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ทำมั้ยน้ำหนัก",
+          "start_frame": 0.0,
+          "end_frame": 40.0,
+          "font_presence": []
+        },
+        {
+          "id": "51fdcccd-f8a5-4a93-9f60-a202bc13266b",
+          "stored_name": "มัน",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "มัน",
+          "start_frame": 40.0,
+          "end_frame": 54.0,
+          "font_presence": []
+        },
+        {
+          "id": "292af48f-968a-4f8d-85ef-4e79bcd38865",
+          "stored_name": "น่ายกจัง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "น่ายกจัง",
+          "start_frame": 54.0,
+          "end_frame": 89.0,
+          "font_presence": []
+        },
+        {
+          "id": "a589b4c4-2026-4837-9df8-ef16c2464f5b",
+          "stored_name": "เลยครับ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "เลยครับ",
+          "start_frame": 89.0,
+          "end_frame": 112.0,
+          "font_presence": []
+        },
+        {
+          "id": "0fb4c3ae-798f-4e62-bb2a-e138de369c3d",
+          "stored_name": "อือ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "อือ",
+          "start_frame": 133.0,
+          "end_frame": 191.0,
+          "font_presence": []
+        },
+        {
+          "id": "e2d0e8cc-d609-46d3-94e3-a27970768ab0",
+          "stored_name": "น่ายกอ่อ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "น่ายกอ่อ",
+          "start_frame": 205.0,
+          "end_frame": 248.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "5614376d-654d-4ee2-ba01-6785412ae481",
+          "stored_name": "ไม่รุ้สิ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ไม่รุ้สิ",
+          "start_frame": 283.0,
+          "end_frame": 337.0,
+          "font_presence": []
+        },
+        {
+          "id": "203b7afb-ad19-474a-bf26-2a4480116494",
+          "stored_name": "ก็ตัวเบา",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ก็ตัวเบา",
+          "start_frame": 337.0,
+          "end_frame": 394.0,
+          "font_presence": []
+        },
+        {
+          "id": "79b46648-f285-4f2c-b8a9-52ce3384c48f",
+          "stored_name": "ถ้าพูดกัน",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ถ้าพูดกัน",
+          "start_frame": 394.0,
+          "end_frame": 422.0,
+          "font_presence": []
+        },
+        {
+          "id": "17cc5fa6-9bea-42bf-aaad-bf87f6b90ee4",
+          "stored_name": "ตามจริง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตามจริง",
+          "start_frame": 422.0,
+          "end_frame": 431.0,
+          "font_presence": []
+        },
+        {
+          "id": "35a630ae-329e-4af9-b3eb-7b395ad85448",
+          "stored_name": "ตัวเบาแล้วก็ตัวเล็ก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตัวเบาแล้วก็ตัวเล็ก",
+          "start_frame": 431.0,
+          "end_frame": 505.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "6eddf96a-75d6-462a-bc46-2def895e09da",
+          "stored_name": "นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "นะ",
+          "start_frame": 505.0,
+          "end_frame": 530.0,
+          "font_presence": []
+        },
+        {
+          "id": "9fff7f3a-4c5a-4ab6-ac5a-4be385962f07",
+          "stored_name": "เพราะบ้างที",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "เพราะบ้างที",
+          "start_frame": 547.0,
+          "end_frame": 579.0,
+          "font_presence": []
+        },
+        {
+          "id": "340ef820-844d-4df9-8536-da20f40129e3",
+          "stored_name": "ความตัวเล็ก",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ความตัวเล็ก",
+          "start_frame": 579.0,
+          "end_frame": 628.0,
+          "font_presence": []
+        },
+        {
+          "id": "07b8d5b4-7381-4840-833c-09c0fec43e88",
+          "stored_name": "มันทำให้รอดชีวิต",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "มันทำให้",
+          "start_frame": 628.0,
+          "end_frame": 656.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "b2045064-bbba-44d6-8382-1e6b1fa27b8c",
+          "stored_name": "มันทำให้รอดชีวิต",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "รอดชีวิตได้",
+          "start_frame": 656.0,
+          "end_frame": 705.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "34337f12-0b07-4527-8ad4-ccb8c78aa2de",
+          "stored_name": "แล้วก็มันจวง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "แล้วก็มันจวงแทง",
+          "start_frame": 719.0,
+          "end_frame": 761.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        },
+        {
+          "id": "9b8a921a-6de9-4738-bd9f-3c00a1530688",
+          "stored_name": "คนจากข้างหลัง",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "คนจากข้างหลัง",
+          "start_frame": 761.0,
+          "end_frame": 801.0,
+          "font_presence": []
+        },
+        {
+          "id": "a2f9abe1-53bd-4630-af2c-1e8b60ecd288",
+          "stored_name": "ง่ายด้วย",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ง่ายด้วย",
+          "start_frame": 801.0,
+          "end_frame": 827.0,
+          "font_presence": []
+        },
+        {
+          "id": "f21d6694-07a5-4024-947c-5bc5821d696c",
+          "stored_name": "ตัวเล็กมีประโยชน์นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "ตัวเล็กมีประโยชน์นะ",
+          "start_frame": 841.0,
+          "end_frame": 888.0,
+          "font_presence": []
+        },
+        {
+          "id": "41347be2-3ba9-419d-b516-69fe9044a18e",
+          "stored_name": "ตัวเล็กมีประโยชน์นะ",
+          "ganged": "true",
+          "prefixed": "true",
+          "font_literals": [],
+          "live_text": "555+",
+          "start_frame": 919.0,
+          "end_frame": 966.0,
+          "font_presence": [
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16be"
+            },
+            {
+              "field": "EffectFiltersBA",
+              "font": "Open Sans",
+              "encoding": "utf-16le"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supersedes": "sample-font-audit.json (ASCII-only detection was incomplete; this UTF-16-aware audit is authoritative)"
+}

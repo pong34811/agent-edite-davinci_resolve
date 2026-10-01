@@ -4,6 +4,7 @@
 - Consolidated from this skill's established enrichment workflow and the project's operating notes, not a new live API test.
 - Historical observations include Studio 21.1.0.17; discover the exact running build and verify its installed API before relying on them.
 - Current user scope and local `AGENTS.md`/house style override old examples, levels, render rasters, and mutation delays.
+- Test fakes must mirror the native Resolve object's method owner and exact argument/result shape; check the installed API reference and use a read-only probe when ambiguous, because a convenient mock can green-test calls Resolve rejects.
 - Existing detailed references remain authoritative for their narrow recipes; the guards here apply before running any example.
 
 ## Source and project boundaries
@@ -17,10 +18,13 @@
 - Name matching is not source verification: prefer exact asset basename, full media path, item ID, track, and frame range.
 - Source-less overlays may still be inventoried by item name, track, and position, but do not claim a verified media path.
 
+## Python CLI invocation
+- From the repository root, run the exact documented `--help` or dry-run command in a subprocess test before relying on a Resolve automation CLI. Direct file execution sets `sys.path[0]` to the script directory, so imports such as `from scripts...` can fail before argument handling; either bootstrap the repository root deliberately or invoke the module with `python -m`, and test the chosen form.
+
 ## Active-state discipline
 1. Capture fresh active project, timeline ID, playhead, page, folder, and track enable/lock states on entry or resume.
 2. Activate the target and verify `GetCurrentTimeline().GetUniqueId()` before state-dependent reads or mutations.
-3. Read a timeline's playhead only while it is active; inactive `GetCurrentTimecode()` has returned another timeline's timecode.
+3. Call `GetCurrentTimecode()` and `SetCurrentTimecode(timecode)` on the active Timeline, not Project; these methods belong to the Timeline API. Read the playhead only while that timeline is active, because inactive reads have returned the active timeline's timecode. After attempting `SetCurrentTimecode`, always read back the timecode even if the setter returns `False` or raises; treat restoration as successful only when the active Timeline reads back the exact requested value, because the return/exception alone cannot prove whether the state changed. Put these methods on fake Timeline objects in tests too, so a test double cannot hide a wrong API owner or skip the readback contract.
 4. Serialize all bridge calls; never render while a second worker changes, exports, or saves the same live project.
 5. Begin structural changes at roughly 1.2-second spacing; save and read back between batches.
 6. A False transform setter immediately after append may already have applied: wait and reread before retrying.
@@ -37,7 +41,9 @@
 - Use specific emotion rules before generic negations; broad words such as "not" must not swallow every other category.
 - Vary interchangeable assets; roughly 25 seconds between reuses is an editorial starting point, not a universal law.
 - Skip existing `(source path, record frame)` placements on the intended track; a rerun must not duplicate cues.
-- Prove one smallest representative timeline end to end before a batch.
+- Before a batch, prove one representative timeline end to end and record its exact target ID/name, protected-item baseline, inserted item paths/record frames/ranges, property readbacks, successful save, and visual/audio QC.
+- For overlay-clearance approval, inspect a rendered/viewer frame while the relevant subtitle cue is actually visible; a native still that omits subtitles or a frame with no active cue cannot prove caption clearance.
+- Resolve each batch target by stable timeline ID plus expected exact name, not list index alone; baseline protected source ranges and subtitle text/frames before editing, and verify/save each target before advancing so a partial batch can stop and resume without duplication.
 - Require every new cue's end inside the intended timeline; a valid start alone can append black-tail time.
 
 ## GIF and overlay timing
@@ -64,7 +70,7 @@
 ## Audio capability boundaries
 - Enumerate actual item properties; observed level key is `SetProperty('AudioVolume', dB)`.
 - `Volume`, `Gain`, `Level`, and `ClipVolume` have silently failed on observed builds; do not guess equivalents.
-- No verified fade/keyframe/ducking API exists in this established bridge workflow; a flat clip level is not automated ducking.
+- Resolve 21.1 exposes native `TimelineItem.SetFades`/`GetFades` for clip-edge fades; verify the installed build and read back through `GetFades()` (not generic `GetProperty("FadeIn")`). This does not provide keyframed music ducking: a flat `AudioVolume` level is not automated ducking.
 - Fairlight UI may support operations the scripting bridge does not. Verify the current route rather than claiming Resolve itself cannot mix dynamically.
 - Without approved/verified automation, choose a conservative flat music bed and listen through every loud phrase.
 - Verify the chosen music source covers the full timeline; a short bed must not silently run out.
@@ -74,7 +80,7 @@
 ## Offline media and crashes
 - A missing V2 reaction overlay can turn the entire composite red while V1 is online; inspect overlays before diagnosing the original source.
 - If `GetMediaPoolItem()` is None, no pool entry exists to relink; approved re-import/re-placement must preserve original record frame, track, ranges, and transforms.
-- Follow [offline-media-repair.md](offline-media-repair.md); do not silently replace sources as part of delivery.
+- Follow `references/offline-media-repair.md`; do not silently replace sources as part of delivery.
 - After a crash, a blocking Problem Report modal may prevent bridge calls; do not send a report on the user's behalf.
 - Use a read-only integrity check and timeline readback before retrying the interrupted batch; success logs from earlier calls are not a live inventory.
 - Never patch an open database. Direct SQL is a separately authorized last resort: verified export, close, database backup, exact rows, transaction, reopen, readback.

@@ -1,0 +1,412 @@
+{
+  "timeline_id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+  "scope": "Inspector transforms on 13 existing V1 picture cuts and 3 existing V4 assets in RoV vertical only. Preserve V2, all 17 TextPlus objects/inputs, audio/cuts/source ranges/track state and horizontal. No new layout/layers.",
+  "changes": [
+    {
+      "id": "99443434-c6f2-4a25-92d7-eb993762c93b",
+      "name": "images (1).jpg",
+      "track": 4,
+      "start_frame": 54.0,
+      "end_frame": 112.0,
+      "source_raster": [
+        447,
+        447
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.3888888888888889,
+        "ZoomY": 0.3888888888888889,
+        "Pan": 0.0,
+        "Tilt": 1269.3333333333333
+      },
+      "predicted_box": [
+        330.0,
+        36,
+        750.0,
+        456.0
+      ],
+      "reason": "Individual raster fit, full available asset top-centred, retain original timing; max width720/max height420."
+    },
+    {
+      "id": "2eb08232-6178-4c8a-9a0e-05e755615be2",
+      "name": "C4hzSBFu.gif",
+      "track": 4,
+      "start_frame": 455.0,
+      "end_frame": 603.0,
+      "source_raster": [
+        398,
+        498
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.3107987505577867,
+        "ZoomY": 0.3107987505577867,
+        "Pan": 0.0,
+        "Tilt": 1014.4471218206157
+      },
+      "predicted_box": [
+        372.16867469879514,
+        36,
+        707.8313253012049,
+        456.0
+      ],
+      "reason": "Individual raster fit, full available asset top-centred, retain original timing; max width720/max height420."
+    },
+    {
+      "id": "b5ebd215-b755-4d63-b479-f340863eecaf",
+      "name": "qjzta0qF.gif",
+      "track": 4,
+      "start_frame": 671.0,
+      "end_frame": 740.0,
+      "source_raster": [
+        402,
+        498
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.3139223560910308,
+        "ZoomY": 0.3139223560910308,
+        "Pan": 0.0,
+        "Tilt": 1024.6425702811246
+      },
+      "predicted_box": [
+        370.48192771084337,
+        36,
+        709.5180722891566,
+        456.00000000000006
+      ],
+      "reason": "Individual raster fit, full available asset top-centred, retain original timing; max width720/max height420."
+    },
+    {
+      "id": "f70ebe21-645a-4c66-a4a2-c3f9e5d31a3c",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 0.0,
+      "end_frame": 120.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.36,
+        "ZoomY": 3.36,
+        "Pan": 1162.56,
+        "Tilt": -364.392
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "9000e1eb-8bfb-4866-8ad0-fce8d556172a",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 120.0,
+      "end_frame": 192.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "253ed898-4c9e-400f-b4ae-c425e706c2bd",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 192.0,
+      "end_frame": 366.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 2.0,
+        "ZoomY": 2.0,
+        "Pan": -540.0,
+        "Tilt": -675.5555555555555
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "baa22090-b549-4f69-a480-dc3b4f455f5f",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 366.0,
+      "end_frame": 435.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "df549235-1515-4e03-a59d-9fb053c8c382",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 435.0,
+      "end_frame": 615.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.36,
+        "ZoomY": 3.36,
+        "Pan": 1162.56,
+        "Tilt": -364.392
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "913c0e20-fa0c-4114-85fe-dfd749bfa3b4",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 615.0,
+      "end_frame": 659.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 2.0,
+        "ZoomY": 2.0,
+        "Pan": -540.0,
+        "Tilt": -675.5555555555555
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "a82330a2-8fb0-49d9-8719-f2b5abf73a13",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 659.0,
+      "end_frame": 749.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "d34d48d4-3a2a-4132-a1c4-1b1bf24b6f6b",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 749.0,
+      "end_frame": 804.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.0,
+        "ZoomY": 3.0,
+        "Pan": -961.875,
+        "Tilt": -1546.6666666666667
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "ec66cf99-ab69-41f1-b129-1af624030aa0",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 804.0,
+      "end_frame": 888.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "e946a5e4-2fcd-426d-8ba4-d589ee3750da",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 888.0,
+      "end_frame": 969.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 2.0,
+        "ZoomY": 2.0,
+        "Pan": -540.0,
+        "Tilt": -675.5555555555555
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "3c49275c-0366-4987-ba73-d1d709ef8e95",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 969.0,
+      "end_frame": 1059.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "406d6d48-c671-4b9e-940f-d8b1b8dd8d82",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 1059.0,
+      "end_frame": 1192.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.36,
+        "ZoomY": 3.36,
+        "Pan": 1162.56,
+        "Tilt": -364.392
+      },
+      "after": {
+        "ZoomX": 5.2,
+        "ZoomY": 5.2,
+        "Pan": -1506.3750000000002,
+        "Tilt": -2068.543209876543
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    },
+    {
+      "id": "8cd06f68-ac52-40e1-9ef6-121bb64801e4",
+      "name": "【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00.mp4",
+      "track": 1,
+      "start_frame": 1192.0,
+      "end_frame": 1285.0,
+      "source_raster": [
+        1920,
+        1080
+      ],
+      "before": {
+        "ZoomX": 3.6,
+        "ZoomY": 3.6,
+        "Pan": -1154.25,
+        "Tilt": -1856.0
+      },
+      "after": {
+        "ZoomX": 5.4,
+        "ZoomY": 5.4,
+        "Pan": -1564.3125,
+        "Tilt": -2173.6296296296296
+      },
+      "reason": "Source-context frames prove avatar centred at x~1475, eyes~200; reframe existing V1 source around avatar/upper body instead of chat or displaced letterboxed scene. Keep hands and eyes; render-check."
+    }
+  ],
+  "pending": [
+    "TextPlus remains too small for mobile; Size/Center/stroke not changed without explicit style approval.",
+    "Existing V2 upper contextual inset retained; no new profile/chat composition."
+  ]
+}

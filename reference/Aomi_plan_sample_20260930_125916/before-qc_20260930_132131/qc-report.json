@@ -1,0 +1,1333 @@
+{
+  "phase": "before",
+  "streams": {
+    "16x9": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.4d4032",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "has_b_frames": 1,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 50,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 2,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "60/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 249856,
+          "duration": "16.266667",
+          "bit_rate": "15954160",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "976",
+          "nb_read_frames": "976",
+          "extradata_size": 40,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:09.000000Z",
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "H.264",
+            "timecode": "00:00:00:00"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 781312,
+          "duration": "16.277333",
+          "bit_rate": "320110",
+          "nb_frames": "763",
+          "nb_read_frames": "763",
+          "extradata_size": 2,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:09.000000Z",
+            "language": "und",
+            "handler_name": "SoundHandler"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "data",
+          "codec_tag_string": "tmcd",
+          "codec_tag": "0x64636d74",
+          "id": "0x3",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "15360/256",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 249856,
+          "duration": "16.266667",
+          "bit_rate": "1",
+          "nb_frames": "1",
+          "extradata_size": 20,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:09.000000Z",
+            "language": "eng",
+            "handler_name": "TimeCodeHandler",
+            "timecode": "00:00:00:00"
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before_16x9.mp4",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "nb_stream_groups": 1,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "16.277333",
+        "size": "33106217",
+        "bit_rate": "16271076",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "creation_time": "2026-09-30T06:19:09.000000Z",
+          "encoder": "Blackmagic Design DaVinci Resolve Studio"
+        }
+      }
+    },
+    "9x16": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.4d4032",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1088,
+          "coded_height": 1920,
+          "has_b_frames": 1,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 50,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 2,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "60/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 249856,
+          "duration": "16.266667",
+          "bit_rate": "17499206",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "976",
+          "nb_read_frames": "976",
+          "extradata_size": 40,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:18.000000Z",
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "H.264",
+            "timecode": "00:00:00:00"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 781312,
+          "duration": "16.277333",
+          "bit_rate": "320110",
+          "nb_frames": "763",
+          "nb_read_frames": "763",
+          "extradata_size": 2,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:18.000000Z",
+            "language": "und",
+            "handler_name": "SoundHandler"
+          }
+        },
+        {
+          "index": 2,
+          "codec_type": "data",
+          "codec_tag_string": "tmcd",
+          "codec_tag": "0x64636d74",
+          "id": "0x3",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "15360/256",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 249856,
+          "duration": "16.266667",
+          "bit_rate": "1",
+          "nb_frames": "1",
+          "extradata_size": 20,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "creation_time": "2026-09-30T06:19:18.000000Z",
+            "language": "eng",
+            "handler_name": "TimeCodeHandler",
+            "timecode": "00:00:00:00"
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before_9x16.mp4",
+        "nb_streams": 3,
+        "nb_programs": 0,
+        "nb_stream_groups": 1,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "16.277333",
+        "size": "36247810",
+        "bit_rate": "17815110",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "creation_time": "2026-09-30T06:19:18.000000Z",
+          "encoder": "Blackmagic Design DaVinci Resolve Studio"
+        }
+      }
+    }
+  },
+  "frames": [
+    {
+      "aspect": "16x9",
+      "frame": 0,
+      "time": 0.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0000.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 19,
+      "time": 0.31666666666666665,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0019.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 46,
+      "time": 0.7666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0046.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 71,
+      "time": 1.1833333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0071.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 100,
+      "time": 1.6666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0100.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 132,
+      "time": 2.2,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0132.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 133,
+      "time": 2.216666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0133.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 161,
+      "time": 2.683333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0161.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 201,
+      "time": 3.35,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0201.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 202,
+      "time": 3.3666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0202.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 205,
+      "time": 3.4166666666666665,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0205.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 226,
+      "time": 3.7666666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0226.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 228,
+      "time": 3.8,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0228.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 247,
+      "time": 4.116666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0247.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 283,
+      "time": 4.716666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0283.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 284,
+      "time": 4.733333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0284.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 299,
+      "time": 4.983333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0299.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 300,
+      "time": 5.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0300.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 309,
+      "time": 5.15,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0309.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 365,
+      "time": 6.083333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0365.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 407,
+      "time": 6.783333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0407.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 418,
+      "time": 6.966666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0418.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 419,
+      "time": 6.983333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0419.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 426,
+      "time": 7.1,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0426.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 443,
+      "time": 7.383333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0443.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 458,
+      "time": 7.633333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0458.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 459,
+      "time": 7.65,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0459.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 467,
+      "time": 7.783333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0467.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 468,
+      "time": 7.8,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0468.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 474,
+      "time": 7.9,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0474.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 475,
+      "time": 7.916666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0475.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 490,
+      "time": 8.166666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0490.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 491,
+      "time": 8.183333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0491.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 502,
+      "time": 8.366666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0502.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 503,
+      "time": 8.383333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0503.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 504,
+      "time": 8.4,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0504.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 505,
+      "time": 8.416666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0505.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 506,
+      "time": 8.433333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0506.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 517,
+      "time": 8.616666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0517.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 562,
+      "time": 9.366666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0562.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 603,
+      "time": 10.05,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0603.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 641,
+      "time": 10.683333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0641.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 643,
+      "time": 10.716666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0643.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 644,
+      "time": 10.733333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0644.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 680,
+      "time": 11.333333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0680.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 711,
+      "time": 11.85,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0711.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 712,
+      "time": 11.866666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0712.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 732,
+      "time": 12.2,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0732.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 739,
+      "time": 12.316666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0739.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 780,
+      "time": 13.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0780.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 790,
+      "time": 13.166666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0790.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 791,
+      "time": 13.183333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0791.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 813,
+      "time": 13.55,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0813.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 837,
+      "time": 13.95,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0837.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 838,
+      "time": 13.966666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0838.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 864,
+      "time": 14.4,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0864.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 908,
+      "time": 15.133333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0908.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 909,
+      "time": 15.15,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0909.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 942,
+      "time": 15.7,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0942.png"
+    },
+    {
+      "aspect": "16x9",
+      "frame": 975,
+      "time": 16.25,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_f0975.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 0,
+      "time": 0.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0000.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 19,
+      "time": 0.31666666666666665,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0019.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 46,
+      "time": 0.7666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0046.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 66,
+      "time": 1.1,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0066.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 71,
+      "time": 1.1833333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0071.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 100,
+      "time": 1.6666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0100.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 132,
+      "time": 2.2,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0132.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 133,
+      "time": 2.216666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0133.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 161,
+      "time": 2.683333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0161.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 201,
+      "time": 3.35,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0201.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 202,
+      "time": 3.3666666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0202.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 205,
+      "time": 3.4166666666666665,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0205.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 226,
+      "time": 3.7666666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0226.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 228,
+      "time": 3.8,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0228.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 247,
+      "time": 4.116666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0247.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 283,
+      "time": 4.716666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0283.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 284,
+      "time": 4.733333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0284.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 299,
+      "time": 4.983333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0299.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 300,
+      "time": 5.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0300.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 309,
+      "time": 5.15,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0309.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 365,
+      "time": 6.083333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0365.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 407,
+      "time": 6.783333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0407.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 418,
+      "time": 6.966666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0418.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 419,
+      "time": 6.983333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0419.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 426,
+      "time": 7.1,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0426.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 443,
+      "time": 7.383333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0443.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 450,
+      "time": 7.5,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0450.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 458,
+      "time": 7.633333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0458.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 459,
+      "time": 7.65,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0459.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 466,
+      "time": 7.766666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0466.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 467,
+      "time": 7.783333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0467.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 468,
+      "time": 7.8,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0468.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 474,
+      "time": 7.9,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0474.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 475,
+      "time": 7.916666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0475.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 482,
+      "time": 8.033333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0482.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 490,
+      "time": 8.166666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0490.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 491,
+      "time": 8.183333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0491.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 498,
+      "time": 8.3,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0498.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 502,
+      "time": 8.366666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0502.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 503,
+      "time": 8.383333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0503.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 504,
+      "time": 8.4,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0504.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 505,
+      "time": 8.416666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0505.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 506,
+      "time": 8.433333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0506.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 517,
+      "time": 8.616666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0517.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 562,
+      "time": 9.366666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0562.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 603,
+      "time": 10.05,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0603.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 641,
+      "time": 10.683333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0641.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 643,
+      "time": 10.716666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0643.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 644,
+      "time": 10.733333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0644.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 680,
+      "time": 11.333333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0680.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 711,
+      "time": 11.85,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0711.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 712,
+      "time": 11.866666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0712.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 732,
+      "time": 12.2,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0732.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 739,
+      "time": 12.316666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0739.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 780,
+      "time": 13.0,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0780.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 790,
+      "time": 13.166666666666666,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0790.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 791,
+      "time": 13.183333333333334,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0791.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 813,
+      "time": 13.55,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0813.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 837,
+      "time": 13.95,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0837.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 838,
+      "time": 13.966666666666667,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0838.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 864,
+      "time": 14.4,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0864.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 908,
+      "time": 15.133333333333333,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0908.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 909,
+      "time": 15.15,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0909.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 942,
+      "time": 15.7,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0942.png"
+    },
+    {
+      "aspect": "9x16",
+      "frame": 975,
+      "time": 16.25,
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_f0975.png"
+    }
+  ],
+  "sheets": [
+    {
+      "aspect": "16x9",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_sheet_01.jpg",
+      "frames": [
+        0,
+        19,
+        46,
+        71,
+        100,
+        132,
+        133,
+        161,
+        201,
+        202,
+        205,
+        226
+      ]
+    },
+    {
+      "aspect": "16x9",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_sheet_02.jpg",
+      "frames": [
+        228,
+        247,
+        283,
+        284,
+        299,
+        300,
+        309,
+        365,
+        407,
+        418,
+        419,
+        426
+      ]
+    },
+    {
+      "aspect": "16x9",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_sheet_03.jpg",
+      "frames": [
+        443,
+        458,
+        459,
+        467,
+        468,
+        474,
+        475,
+        490,
+        491,
+        502,
+        503,
+        504
+      ]
+    },
+    {
+      "aspect": "16x9",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_sheet_04.jpg",
+      "frames": [
+        505,
+        506,
+        517,
+        562,
+        603,
+        641,
+        643,
+        644,
+        680,
+        711,
+        712,
+        732
+      ]
+    },
+    {
+      "aspect": "16x9",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\16x9_sheet_05.jpg",
+      "frames": [
+        739,
+        780,
+        790,
+        791,
+        813,
+        837,
+        838,
+        864,
+        908,
+        909,
+        942,
+        975
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_01.jpg",
+      "frames": [
+        0,
+        19,
+        46,
+        66,
+        71,
+        100,
+        132,
+        133,
+        161,
+        201,
+        202,
+        205
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_02.jpg",
+      "frames": [
+        226,
+        228,
+        247,
+        283,
+        284,
+        299,
+        300,
+        309,
+        365,
+        407,
+        418,
+        419
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_03.jpg",
+      "frames": [
+        426,
+        443,
+        450,
+        458,
+        459,
+        466,
+        467,
+        468,
+        474,
+        475,
+        482,
+        490
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_04.jpg",
+      "frames": [
+        491,
+        498,
+        502,
+        503,
+        504,
+        505,
+        506,
+        517,
+        562,
+        603,
+        641,
+        643
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_05.jpg",
+      "frames": [
+        644,
+        680,
+        711,
+        712,
+        732,
+        739,
+        780,
+        790,
+        791,
+        813,
+        837,
+        838
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\before-qc_20260930_132131\\9x16_sheet_06.jpg",
+      "frames": [
+        864,
+        908,
+        909,
+        942,
+        975
+      ]
+    }
+  ],
+  "all_decoded": true
+}

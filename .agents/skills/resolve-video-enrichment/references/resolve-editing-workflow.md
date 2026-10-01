@@ -70,7 +70,7 @@ These operation meanings are documented in lessons 2–3; UI operations are not 
 4. Prove the smallest representative timeline through save, item readback, and rendered/viewer QC before batching.
 5. Begin structural mutations at roughly 1.2-second spacing and serialize live Resolve calls; read back after each batch.
 6. Keep cue placement idempotent using exact source path, record frame, and target track.
-7. Load [automation-safety.md](automation-safety.md) for the existing build-specific enrichment, render, and restoration traps.
+7. Load `references/automation-safety.md` for the existing build-specific enrichment, render, and restoration traps.
 8. Never turn a relink, proxy, transcode, original promotion, archive deletion, or database patch into an implied subtask.
 
 ## Finish in separate passes

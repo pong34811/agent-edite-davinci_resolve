@@ -1,0 +1,400 @@
+{
+  "source_backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\Aomi-mama_pre_remaining7_20260930_154412.drp",
+    "bytes": 2793394,
+    "sha256": "bdfc9edab8fa9d7ac2b06faf838e96fca61312832bc5e0dfb4efc4af9a451c16",
+    "zip_integrity": true,
+    "restore_tested": false
+  },
+  "fps": 60,
+  "timelines": {
+    "horizontal": {
+      "id": "07fc193e-c2fd-4be5-a184-04312956b2ba",
+      "name": "เคยเล่น Rov ไหม",
+      "caption_video_track": 4,
+      "cues": [
+        {
+          "source_item_id": "7f1ebb1a-09f9-461e-a8df-6a2a14884c39",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 38,
+          "end_frame": 107,
+          "text": "เล่น ROV มั้ยฮะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "76d0f62a29e3a39c4568c8e9854361efd9917e9615a8f8350a188f26a7c61b8a",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "9aba3030-effd-4658-871b-1ef51ccdf808",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 120,
+          "end_frame": 146,
+          "text": "ไม่อะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "b2faad7b91e6ae3bbb4825960180d77a9198207c02a4e5fe4c7d9ad1b100ab9a",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "f7c4d79b-6a5c-49a6-ba50-8ecc47796e00",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 167,
+          "end_frame": 361,
+          "text": "เคยเล่นหรือเล่นอยู่มั้ยฮะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "3ed3512725155dde221eef24c44b9b9abd1a5961576cfacda52368bb9e65d00e",
+          "legacy_duration_over_1_5s": true
+        },
+        {
+          "source_item_id": "68c6ed61-8c8e-4994-bb59-f411fa70fb3f",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 378,
+          "end_frame": 429,
+          "text": "ROV ไม่",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "5ec22abc1367dcc000e83b0aef73038529e8c566bb4cef3cb03c52b0c8c5bc1b",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "2ba40004-1ad5-41a2-8bfa-625c5f0c51c8",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 443,
+          "end_frame": 540,
+          "text": "เคยเล่นอยุ่นะแต่ว่า",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "a5936fd4299b3171badf832953dea458200149700135f95fde733e5c05755586",
+          "legacy_duration_over_1_5s": true
+        },
+        {
+          "source_item_id": "b5f08d4c-f2ee-467d-84b6-e07c489ff516",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 545,
+          "end_frame": 593,
+          "text": "ไม่ได้ชอบอะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "02e406e89f1263a6f987728be3e977566fffc8126b81472c5be2d0f61839ff75",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "013ce8e5-1573-4d12-a970-ea9ebe2ff0a7",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 620,
+          "end_frame": 652,
+          "text": "คือ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "93eecc8a0fbe5473e2207b1f2af6e474fb2b1d1653d797a183b724c1fc7c500b",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "1a44c123-1449-411e-9b9b-f954e26e39d1",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 672,
+          "end_frame": 740,
+          "text": "มันเร็วไปสำหรับฉัน",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "2d6a585a0c9965a358f3f3dbbda1580fc860d9db23d987798d76a7856071e465",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "d8da4020-87fd-4136-b28f-c8c1440bf3ea",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 755,
+          "end_frame": 812,
+          "text": "เกมมันเร็วเร็วแบบ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "c715f63d5c9c631d1ade94a9177563be94bbe7b7b7be14b935a3e2452b1d2b09",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "5a86b95c-7bf6-49f2-a090-d4df6f7cbc4b",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 816,
+          "end_frame": 847,
+          "text": "เร็วแบบ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "bcceb2b95510ead473b1c133a3c48930715d8efb8b1173ae781a4068006e9024",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "66eb7357-b094-4f64-8f1d-b52ba4eb4ef4",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 856,
+          "end_frame": 921,
+          "text": "เร็วเกิน",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "ec0c2d07fa45c7282eaa1b28a5109a1879156e07b0c8a4d246da3cee3f3b3eb5",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "79ab25d9-4a40-4818-b0ca-7398e2fd391d",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 921,
+          "end_frame": 981,
+          "text": "ไปหน่อย",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "032d2459eb7f6cbe64704602329d76a9fbfc4453ad70a0f0e7c27111bdf56f0c",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "2b187dd4-d205-4177-9e5c-757d3ec21ed3",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 981,
+          "end_frame": 1056,
+          "text": "ไม่ไหว",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "b6ebad2d22449479b0cba63354583252b1d6c996a8730fe71e18c8e3c232e9b3",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "98b35384-d832-4613-ae10-51db4371b089",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 1062,
+          "end_frame": 1135,
+          "text": "ส่วนตัวไม่สันทัด",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "7c803adc45ea2853ddded2ddd2264242f108e2030a162716ac0d18830b3078b0",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "799fe5c7-7df1-413a-a798-697abced419c",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 1135,
+          "end_frame": 1189,
+          "text": "เกมมือถือด้วย",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "ddcf925e86276cddcd7c0bb426bc27008f4b62c633896766738789cf64eb76d2",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "09b87ef4-206e-41db-a5ce-030097a6a7d3",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 1197,
+          "end_frame": 1233,
+          "text": "ฉันชอบเล่นเกม",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "db19e9a60f1a7efbcef367a5c33bb4789cc06ef6c4259196983ed76d0a648219",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "8f5f90e9-91d8-4ecd-a73c-a6b5df72358c",
+          "sequence_file": "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+          "start_frame": 1233,
+          "end_frame": 1276,
+          "text": "บนคอมมากกว่า",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "17a964dc121005860fc7a690ce68428dfda6690396a47781340edc5f9b5cc19c",
+          "legacy_duration_over_1_5s": false
+        }
+      ]
+    },
+    "vertical": {
+      "id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+      "name": "เคยเล่น Rov ไหม_9x16",
+      "caption_video_track": 5,
+      "cues": [
+        {
+          "source_item_id": "0e1ffab9-e7d8-473e-b3ef-3f6bc40b9770",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 38,
+          "end_frame": 107,
+          "text": "เล่น ROV มั้ยฮะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "76d0f62a29e3a39c4568c8e9854361efd9917e9615a8f8350a188f26a7c61b8a",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "0384eeb8-1ab3-40f1-a5c5-f99252b80186",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 120,
+          "end_frame": 146,
+          "text": "ไม่อะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "b2faad7b91e6ae3bbb4825960180d77a9198207c02a4e5fe4c7d9ad1b100ab9a",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "a3706bc7-0832-45fc-b5a4-b6b7fe8faff9",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 167,
+          "end_frame": 361,
+          "text": "เคยเล่นหรือเล่นอยู่มั้ยฮะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "3ed3512725155dde221eef24c44b9b9abd1a5961576cfacda52368bb9e65d00e",
+          "legacy_duration_over_1_5s": true
+        },
+        {
+          "source_item_id": "cdd488da-776c-41a6-867f-a962e5b86318",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 378,
+          "end_frame": 429,
+          "text": "ROV ไม่",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "5ec22abc1367dcc000e83b0aef73038529e8c566bb4cef3cb03c52b0c8c5bc1b",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "dc54ea4a-2d21-446e-812e-22d569f9efb4",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 443,
+          "end_frame": 540,
+          "text": "เคยเล่นอยุ่นะแต่ว่า",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "a5936fd4299b3171badf832953dea458200149700135f95fde733e5c05755586",
+          "legacy_duration_over_1_5s": true
+        },
+        {
+          "source_item_id": "d7995fab-38ca-42a0-befa-54fc0e277827",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 545,
+          "end_frame": 593,
+          "text": "ไม่ได้ชอบอะ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "02e406e89f1263a6f987728be3e977566fffc8126b81472c5be2d0f61839ff75",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "d157acfa-d5a0-4f12-925d-650c39876f20",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 620,
+          "end_frame": 652,
+          "text": "คือ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "93eecc8a0fbe5473e2207b1f2af6e474fb2b1d1653d797a183b724c1fc7c500b",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "88dd18c6-2930-4d6d-a979-042fdfde2e40",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 672,
+          "end_frame": 740,
+          "text": "มันเร็วไปสำหรับฉัน",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "2d6a585a0c9965a358f3f3dbbda1580fc860d9db23d987798d76a7856071e465",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "0444adb5-b4e0-47cc-a8f5-b9e05a7fac7e",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 755,
+          "end_frame": 812,
+          "text": "เกมมันเร็วเร็วแบบ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "c715f63d5c9c631d1ade94a9177563be94bbe7b7b7be14b935a3e2452b1d2b09",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "8672632c-039b-47aa-8379-4d4b54047dbe",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 816,
+          "end_frame": 847,
+          "text": "เร็วแบบ",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "bcceb2b95510ead473b1c133a3c48930715d8efb8b1173ae781a4068006e9024",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "0ecac9e1-aecd-4a50-81f8-723ed2a79f28",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 856,
+          "end_frame": 921,
+          "text": "เร็วเกิน",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "ec0c2d07fa45c7282eaa1b28a5109a1879156e07b0c8a4d246da3cee3f3b3eb5",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "bf719376-dd9e-41f7-971e-b6f5ac822a38",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 921,
+          "end_frame": 981,
+          "text": "ไปหน่อย",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "032d2459eb7f6cbe64704602329d76a9fbfc4453ad70a0f0e7c27111bdf56f0c",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "db92b97b-dfd7-43c6-a53a-ef52154b9061",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 981,
+          "end_frame": 1056,
+          "text": "ไม่ไหว",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "b6ebad2d22449479b0cba63354583252b1d6c996a8730fe71e18c8e3c232e9b3",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "ceb811bc-6a05-4378-b964-3114df21fe3a",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 1062,
+          "end_frame": 1135,
+          "text": "ส่วนตัวไม่สันทัด",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "7c803adc45ea2853ddded2ddd2264242f108e2030a162716ac0d18830b3078b0",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "3b814819-4882-4d37-863b-ddd5fe89e95a",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 1135,
+          "end_frame": 1189,
+          "text": "เกมมือถือด้วย",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "ddcf925e86276cddcd7c0bb426bc27008f4b62c633896766738789cf64eb76d2",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "38c3a564-73a8-4b7d-939c-b72605c69058",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 1197,
+          "end_frame": 1233,
+          "text": "ฉันชอบเล่นเกม",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "db19e9a60f1a7efbcef367a5c33bb4789cc06ef6c4259196983ed76d0a648219",
+          "legacy_duration_over_1_5s": false
+        },
+        {
+          "source_item_id": "111edafc-2b43-44f5-b8ef-3431ab1f30d7",
+          "sequence_file": "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+          "start_frame": 1233,
+          "end_frame": 1276,
+          "text": "บนคอมมากกว่า",
+          "font": "Mitr",
+          "style": "Bold",
+          "composition_sha256": "17a964dc121005860fc7a690ce68428dfda6690396a47781340edc5f9b5cc19c",
+          "legacy_duration_over_1_5s": false
+        }
+      ]
+    }
+  }
+}

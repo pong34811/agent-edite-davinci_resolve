@@ -1,0 +1,12 @@
+[
+  {
+    "key": "SelectAllFrames",
+    "value": true,
+    "accepted": true
+  },
+  {
+    "key": "VideoQuality",
+    "value": 0,
+    "accepted": false
+  }
+]

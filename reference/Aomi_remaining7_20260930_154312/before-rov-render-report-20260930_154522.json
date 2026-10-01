@@ -1,0 +1,82 @@
+{
+  "phase": "before",
+  "slug": "rov",
+  "timestamp": "20260930_154522",
+  "initial_state": {
+    "timeline": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder": "8b85078a-675e-4568-a959-72cb02525fbe",
+    "format_codec": {
+      "format": "mp4",
+      "codec": "H264"
+    },
+    "mode": 1
+  },
+  "original_queue": [],
+  "jobs": [
+    {
+      "timeline_id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+      "timeline_name": "เคยเล่น Rov ไหม_9x16",
+      "aspect": "9x16",
+      "job_id": "9e70b3ad-9104-473c-baf1-adff732ee843",
+      "settings": {
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312",
+        "CustomName": "before_rov_9x16",
+        "UseUniqueFilenames": false,
+        "SelectAllFrames": true,
+        "MarkIn": 0,
+        "MarkOut": 1284,
+        "ExportVideo": true,
+        "ExportAudio": true,
+        "FormatWidth": 1080,
+        "FormatHeight": 1920,
+        "FrameRate": 60.0,
+        "ExportSubtitle": true,
+        "SubtitleFormat": "BurnIn",
+        "AudioCodec": "aac",
+        "AudioSampleRate": 48000,
+        "DataBurnIn": "None"
+      },
+      "output": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\before_rov_9x16.mp4",
+      "expected_frames": 1285,
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 10370
+      },
+      "bytes": 25479874,
+      "queue_readback": {
+        "JobId": "9e70b3ad-9104-473c-baf1-adff732ee843",
+        "RenderJobName": "Job 1",
+        "TimelineName": "เคยเล่น Rov ไหม_9x16",
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312",
+        "IsExportVideo": true,
+        "IsExportAudio": true,
+        "FormatWidth": 1080,
+        "FormatHeight": 1920,
+        "FrameRate": "60",
+        "PixelAspectRatio": 1.0,
+        "MarkIn": 0,
+        "MarkOut": 1284,
+        "AudioBitDepth": 16,
+        "AudioSampleRate": 48000,
+        "ExportAlpha": false,
+        "OutputFilename": "before_rov_9x16.mp4",
+        "RenderMode": "Single clip",
+        "PresetName": "H.264 Master",
+        "VideoFormat": "MP4",
+        "VideoCodec": "H.264",
+        "AudioCodec": "aac",
+        "EncodingProfile": "Auto",
+        "MultiPassEncode": false,
+        "NetworkOptimization": false,
+        "ClipStartFrame": 1,
+        "TimelineStartTimecode": "00:00:00:00"
+      },
+      "own_job_removed": true
+    }
+  ],
+  "state_restored": true,
+  "original_queue_preserved": true
+}

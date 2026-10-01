@@ -101,6 +101,10 @@ def validate():
                 continue
             ref = ref.split('#')[0]
             candidates = [path.parent / ref, ROOT / ref, ROOT / 'docs/kernels' / ref, ROOT / 'docs/guides' / ref]
+            # Reference files cite siblings skill-root-relative (skill_view file_path style).
+            skill_root = next((p for p in path.parents if (p / 'SKILL.md').is_file()), None)
+            if skill_root is not None:
+                candidates.append(skill_root / ref)
             found = next((c for c in candidates if c.is_file()), None)
             if found is None:
                 errors.append(f'Missing local reference: {path.relative_to(ROOT)} -> {ref}')

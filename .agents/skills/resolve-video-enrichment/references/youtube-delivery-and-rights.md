@@ -56,7 +56,7 @@
 4. Load the intended preset and pin format/codec, raster, FPS, render range, video/audio export, and caption mode.
 5. Inspect rejected settings before queuing; preset inheritance is not a substitute for explicit configuration.
 6. Render only the authorized jobs and retain the exact job/output mapping for batch verification.
-- [render-qc.md](render-qc.md) contains the existing recipe; all example values must be replaced by the approved live target.
+- `references/render-qc.md` contains the existing recipe; all example values must be replaced by the approved live target.
 - Rendering is not uploading; publication and public metadata changes are separate authorized actions.
 
 ## Upload encoding reference, not a forced project preset

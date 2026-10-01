@@ -1,0 +1,107 @@
+{
+  "target": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+  "source_srt": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\rov-native-vertical.srt",
+  "cue_count": 17,
+  "complete": true,
+  "actions": [
+    "Imported a fresh SRT into one empty native subtitle track",
+    "Verified all 17 texts and exact absolute frame boundaries",
+    "Disabled legacy caption-only V5 without deleting its 17 Text+ clips"
+  ],
+  "backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\Aomi-mama_pre_native_20260930_155746.drp",
+    "sha256": "ab7ddd586b8b49f2e0d2f5acfbafafc4c7fc5ca4fce4a0e3030ae52d2bae9022",
+    "bytes": 2793311,
+    "zip_integrity": true,
+    "restore_tested": false
+  },
+  "media_pool_id": "aa7c5bc6-0f6f-4918-b49c-7ee2fe915471",
+  "cue_readback": [
+    {
+      "start_frame": 38.0,
+      "end_frame": 107.0,
+      "text": "เล่น ROV มั้ยฮะ"
+    },
+    {
+      "start_frame": 120.0,
+      "end_frame": 146.0,
+      "text": "ไม่อะ"
+    },
+    {
+      "start_frame": 167.0,
+      "end_frame": 361.0,
+      "text": "เคยเล่นหรือเล่นอยู่มั้ยฮะ"
+    },
+    {
+      "start_frame": 378.0,
+      "end_frame": 429.0,
+      "text": "ROV ไม่"
+    },
+    {
+      "start_frame": 443.0,
+      "end_frame": 540.0,
+      "text": "เคยเล่นอยุ่นะแต่ว่า"
+    },
+    {
+      "start_frame": 545.0,
+      "end_frame": 593.0,
+      "text": "ไม่ได้ชอบอะ"
+    },
+    {
+      "start_frame": 620.0,
+      "end_frame": 652.0,
+      "text": "คือ"
+    },
+    {
+      "start_frame": 672.0,
+      "end_frame": 740.0,
+      "text": "มันเร็วไปสำหรับฉัน"
+    },
+    {
+      "start_frame": 755.0,
+      "end_frame": 812.0,
+      "text": "เกมมันเร็วเร็วแบบ"
+    },
+    {
+      "start_frame": 816.0,
+      "end_frame": 847.0,
+      "text": "เร็วแบบ"
+    },
+    {
+      "start_frame": 856.0,
+      "end_frame": 921.0,
+      "text": "เร็วเกิน"
+    },
+    {
+      "start_frame": 921.0,
+      "end_frame": 981.0,
+      "text": "ไปหน่อย"
+    },
+    {
+      "start_frame": 981.0,
+      "end_frame": 1056.0,
+      "text": "ไม่ไหว"
+    },
+    {
+      "start_frame": 1062.0,
+      "end_frame": 1135.0,
+      "text": "ส่วนตัวไม่สันทัด"
+    },
+    {
+      "start_frame": 1135.0,
+      "end_frame": 1189.0,
+      "text": "เกมมือถือด้วย"
+    },
+    {
+      "start_frame": 1197.0,
+      "end_frame": 1233.0,
+      "text": "ฉันชอบเล่นเกม"
+    },
+    {
+      "start_frame": 1233.0,
+      "end_frame": 1276.0,
+      "text": "บนคอมมากกว่า"
+    }
+  ],
+  "state_restored": true
+}

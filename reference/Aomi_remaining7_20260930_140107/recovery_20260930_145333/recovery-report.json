@@ -1,0 +1,25 @@
+{
+  "source_database": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-08\\【DEBUT STREAM】AOMI-MAMA｜ 31⧸07⧸2026 เวลา 20.00\\Project.db",
+  "old_pid": 18700,
+  "authorization": "User explicitly approved backup, force-close only Resolve, relaunch original project; no SQL edits or source-media writes.",
+  "copies": [
+    {
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\recovery_20260930_145333\\saved-project-online-backup.db",
+      "bytes": 12603392,
+      "sha256": "996877d6e8f1b75d1c469ce17c07ebab237b13607178506fdc50b25f2ee208e3",
+      "kind": "consistent online SQLite backup; not restored"
+    },
+    {
+      "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\recovery_20260930_145333\\closed-Project.db",
+      "bytes": 12603392,
+      "sha256": "2c3074e3896830d62a4d80a6feb9c603a298da0734abfdd4b77140f6a3fff404",
+      "kind": "unmodified closed raw copy"
+    }
+  ],
+  "restart_started": true,
+  "online_backup_integrity": "ok",
+  "project_id_verified": "4c703836-46d8-4a0f-a539-1a6f5bc19f35",
+  "old_process_closed": true,
+  "new_pid": 29724,
+  "project_reopen_verified": false
+}

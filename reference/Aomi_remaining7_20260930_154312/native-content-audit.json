@@ -1,0 +1,24 @@
+{
+  "non_target_sequences_equal_ignoring_export_thumbnail_ids": [
+    "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+    "SeqContainer/09f46c87-ce41-4d66-915f-6112f642de21.xml",
+    "SeqContainer/0e8a06fb-c3c0-4608-90af-c7ae1140c661.xml",
+    "SeqContainer/3d22dc50-d5de-4bcb-ac2e-4ba66fe6516e.xml",
+    "SeqContainer/43d8b20f-af7c-47fc-a544-91102ba7f035.xml",
+    "SeqContainer/63730d00-abd0-4cbd-88ec-b81d6f866110.xml",
+    "SeqContainer/63b7b6f5-e63f-4289-a740-514a932801a1.xml",
+    "SeqContainer/72ac14dd-0c25-4a93-b654-ee33494b4cca.xml",
+    "SeqContainer/865d8643-3813-4ebe-a56c-222c6e62c859.xml",
+    "SeqContainer/98fbe1f6-0f91-4916-99ff-341639356f77.xml",
+    "SeqContainer/ae437590-d14e-4a3b-9187-0db3f128f3ee.xml",
+    "SeqContainer/b1a37abe-7a0c-4e58-8eb3-2426fff4b319.xml",
+    "SeqContainer/c5d618aa-cde5-46d3-8d38-3154428517ba.xml",
+    "SeqContainer/cc1eb6aa-ca61-4c2d-96c4-f6da15efb84e.xml",
+    "SeqContainer/d8b588d5-3f10-4de1-be71-f962ff236864.xml",
+    "SeqContainer/e3bc91bb-a743-45ac-8da6-dc53f4c9d21f.xml"
+  ],
+  "effect_blobs_unchanged": 2212,
+  "fusion_blobs_unchanged": 116,
+  "existing_subtitle_sequences_unchanged": 16,
+  "excluded_attribute": "BtThumnail.DbId (regenerated export thumbnail row IDs only)"
+}

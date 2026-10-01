@@ -1,0 +1,92 @@
+[
+  {
+    "key": "TargetDir",
+    "value": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+    "accepted": true
+  },
+  {
+    "key": "CustomName",
+    "value": "before_16x9",
+    "accepted": true
+  },
+  {
+    "key": "UseUniqueFilenames",
+    "value": false,
+    "accepted": true
+  },
+  {
+    "key": "ReplaceExistingFilesInPlace",
+    "value": false,
+    "accepted": false
+  },
+  {
+    "key": "SelectAllFrames",
+    "value": false,
+    "accepted": false
+  },
+  {
+    "key": "MarkIn",
+    "value": 0,
+    "accepted": true
+  },
+  {
+    "key": "MarkOut",
+    "value": 975,
+    "accepted": true
+  },
+  {
+    "key": "ExportVideo",
+    "value": true,
+    "accepted": true
+  },
+  {
+    "key": "ExportAudio",
+    "value": true,
+    "accepted": true
+  },
+  {
+    "key": "FormatWidth",
+    "value": 1920,
+    "accepted": true
+  },
+  {
+    "key": "FormatHeight",
+    "value": 1080,
+    "accepted": true
+  },
+  {
+    "key": "FrameRate",
+    "value": 60.0,
+    "accepted": true
+  },
+  {
+    "key": "ExportSubtitle",
+    "value": true,
+    "accepted": true
+  },
+  {
+    "key": "SubtitleFormat",
+    "value": "BurnIn",
+    "accepted": true
+  },
+  {
+    "key": "AudioCodec",
+    "value": "aac",
+    "accepted": true
+  },
+  {
+    "key": "AudioSampleRate",
+    "value": 48000,
+    "accepted": true
+  },
+  {
+    "key": "VideoQuality",
+    "value": "High",
+    "accepted": false
+  },
+  {
+    "key": "DataBurnIn",
+    "value": "None",
+    "accepted": true
+  }
+]

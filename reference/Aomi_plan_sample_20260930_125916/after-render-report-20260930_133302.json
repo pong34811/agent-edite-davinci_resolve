@@ -1,0 +1,145 @@
+{
+  "phase": "after",
+  "created_preset": "Hermes_Aomi_state_20260930_133302",
+  "unsupported_settings": {
+    "ReplaceExistingFilesInPlace": false,
+    "VideoQuality": [
+      "High",
+      0
+    ],
+    "SelectAllFrames": false
+  },
+  "ruling": "Use private collision-checked fresh output files, full timeline SelectAllFrames=True, quality inherited from the explicitly loaded H.264 Master preset. Both named High and numeric zero quality refused on this build.",
+  "initial_state": {
+    "timeline": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder": "8b85078a-675e-4568-a959-72cb02525fbe",
+    "format_codec": {
+      "format": "mp4",
+      "codec": "H264"
+    },
+    "mode": 1
+  },
+  "jobs": [
+    {
+      "timeline_id": "3b95ef25-d7cd-43c2-a2ac-88874aed8fee",
+      "timeline_name": "ทำไมน้ำหน้กน่ายกจังครับ",
+      "job_id": "b9a33877-1b6d-44f0-8400-284aa5638111",
+      "settings": {
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+        "CustomName": "after_16x9",
+        "UseUniqueFilenames": false,
+        "SelectAllFrames": true,
+        "MarkIn": 0,
+        "MarkOut": 975,
+        "ExportVideo": true,
+        "ExportAudio": true,
+        "FormatWidth": 1920,
+        "FormatHeight": 1080,
+        "FrameRate": 60.0,
+        "ExportSubtitle": true,
+        "SubtitleFormat": "BurnIn",
+        "AudioCodec": "aac",
+        "AudioSampleRate": 48000,
+        "DataBurnIn": "None"
+      },
+      "output": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\after_16x9.mp4",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 5848
+      },
+      "bytes": 33106217,
+      "queue_readback": {
+        "JobId": "b9a33877-1b6d-44f0-8400-284aa5638111",
+        "RenderJobName": "Job 1",
+        "TimelineName": "ทำไมน้ำหน้กน่ายกจังครับ",
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+        "IsExportVideo": true,
+        "IsExportAudio": true,
+        "FormatWidth": 1920,
+        "FormatHeight": 1080,
+        "FrameRate": "60",
+        "PixelAspectRatio": 1.0,
+        "MarkIn": 0,
+        "MarkOut": 975,
+        "AudioBitDepth": 16,
+        "AudioSampleRate": 48000,
+        "ExportAlpha": false,
+        "OutputFilename": "after_16x9.mp4",
+        "RenderMode": "Single clip",
+        "PresetName": "H.264 Master",
+        "VideoFormat": "MP4",
+        "VideoCodec": "H.264",
+        "AudioCodec": "aac",
+        "EncodingProfile": "Auto",
+        "MultiPassEncode": false,
+        "NetworkOptimization": false,
+        "ClipStartFrame": 1,
+        "TimelineStartTimecode": "00:00:00:00"
+      },
+      "own_queue_job_removed": true
+    },
+    {
+      "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+      "timeline_name": "ทำไมน้ำหน้กน่ายกจังครับ_9x16",
+      "job_id": "11e0e7d6-c1fd-448d-9981-5df544e3e37f",
+      "settings": {
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+        "CustomName": "after_9x16",
+        "UseUniqueFilenames": false,
+        "SelectAllFrames": true,
+        "MarkIn": 0,
+        "MarkOut": 975,
+        "ExportVideo": true,
+        "ExportAudio": true,
+        "FormatWidth": 1080,
+        "FormatHeight": 1920,
+        "FrameRate": 60.0,
+        "ExportSubtitle": true,
+        "SubtitleFormat": "BurnIn",
+        "AudioCodec": "aac",
+        "AudioSampleRate": 48000,
+        "DataBurnIn": "None"
+      },
+      "output": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\after_9x16.mp4",
+      "status": {
+        "JobStatus": "Complete",
+        "CompletionPercentage": 100,
+        "TimeTakenToRenderInMs": 6305
+      },
+      "bytes": 36726269,
+      "queue_readback": {
+        "JobId": "11e0e7d6-c1fd-448d-9981-5df544e3e37f",
+        "RenderJobName": "Job 1",
+        "TimelineName": "ทำไมน้ำหน้กน่ายกจังครับ_9x16",
+        "TargetDir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+        "IsExportVideo": true,
+        "IsExportAudio": true,
+        "FormatWidth": 1080,
+        "FormatHeight": 1920,
+        "FrameRate": "60",
+        "PixelAspectRatio": 1.0,
+        "MarkIn": 0,
+        "MarkOut": 975,
+        "AudioBitDepth": 16,
+        "AudioSampleRate": 48000,
+        "ExportAlpha": false,
+        "OutputFilename": "after_9x16.mp4",
+        "RenderMode": "Single clip",
+        "PresetName": "H.264 Master",
+        "VideoFormat": "MP4",
+        "VideoCodec": "H.264",
+        "AudioCodec": "aac",
+        "EncodingProfile": "Auto",
+        "MultiPassEncode": false,
+        "NetworkOptimization": false,
+        "ClipStartFrame": 1,
+        "TimelineStartTimecode": "00:00:00:00"
+      },
+      "own_queue_job_removed": true
+    }
+  ],
+  "state_restored": true
+}

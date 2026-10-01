@@ -1,0 +1,187 @@
+{
+  "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+  "changes": [
+    {
+      "id": "b3596b69-0259-480c-a31c-f1b8bbe6fb4d",
+      "name": "83WGh1ge.gif",
+      "start_frame": 0.0,
+      "end_frame": 133.0,
+      "source_raster": [
+        350,
+        204
+      ],
+      "before": {
+        "ZoomX": 2.0,
+        "ZoomY": 2.0,
+        "Pan": 0.0,
+        "Tilt": 650.0
+      },
+      "after": {
+        "ZoomX": 0.6666666666666666,
+        "ZoomY": 0.6666666666666666,
+        "Pan": 0.0,
+        "Tilt": 2178.3006535947716
+      },
+      "predicted_box": [
+        180.0,
+        36.0,
+        900.0,
+        455.65714285714284
+      ],
+      "saved_and_read_back": true
+    },
+    {
+      "id": "2cda3a38-c6c5-4217-9c07-30758276f910",
+      "name": "Cute - Happy Cat.gif",
+      "start_frame": 205.0,
+      "end_frame": 248.0,
+      "source_raster": [
+        164,
+        256
+      ],
+      "before": {
+        "ZoomX": 2.0,
+        "ZoomY": 2.0,
+        "Pan": 0.0,
+        "Tilt": 550.0
+      },
+      "after": {
+        "ZoomX": 0.28472222222222227,
+        "ZoomY": 0.28472222222222227,
+        "Pan": 0.0,
+        "Tilt": 779.0
+      },
+      "predicted_box": [
+        386.25,
+        36.0,
+        693.75,
+        516.0
+      ],
+      "saved_and_read_back": true
+    },
+    {
+      "id": "7f968d0b-7640-4134-860e-52cc12ca9326",
+      "name": "Anime - Angry Chibi.gif",
+      "start_frame": 443.0,
+      "end_frame": 459.0,
+      "source_raster": [
+        498,
+        445
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1214.3101123595504
+      },
+      "predicted_box": [
+        189.0,
+        36.0,
+        891.0,
+        663.289156626506
+      ],
+      "saved_and_read_back": true
+    },
+    {
+      "id": "5b6a49a2-e31a-462f-9584-d4b8114140ca",
+      "name": "Anime - Angry Chibi.gif",
+      "start_frame": 459.0,
+      "end_frame": 475.0,
+      "source_raster": [
+        498,
+        445
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1214.3101123595504
+      },
+      "predicted_box": [
+        189.0,
+        36.0,
+        891.0,
+        663.289156626506
+      ],
+      "saved_and_read_back": true
+    },
+    {
+      "id": "231e1533-0313-406f-82f8-990d8d9b7904",
+      "name": "Anime - Angry Chibi.gif",
+      "start_frame": 475.0,
+      "end_frame": 491.0,
+      "source_raster": [
+        498,
+        445
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1214.3101123595504
+      },
+      "predicted_box": [
+        189.0,
+        36.0,
+        891.0,
+        663.289156626506
+      ],
+      "saved_and_read_back": true
+    },
+    {
+      "id": "da5ce327-9ffb-4ad4-ba60-d1de65973069",
+      "name": "Anime - Angry Chibi.gif",
+      "start_frame": 491.0,
+      "end_frame": 507.0,
+      "source_raster": [
+        498,
+        445
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1214.3101123595504
+      },
+      "predicted_box": [
+        189.0,
+        36.0,
+        891.0,
+        663.289156626506
+      ],
+      "saved_and_read_back": true
+    }
+  ],
+  "invariants": {
+    "all_17_timelines_checked": true,
+    "duration_cuts_retime_sources_caption_text_timing_audio_properties_and_track_states_unchanged": true,
+    "all_nonapproved_properties_unchanged": true,
+    "project_settings_unchanged": true
+  },
+  "approved_scope": "Only ZoomX, ZoomY, Pan, Tilt on six existing V4 GIFs in the vertical sample. Preserve all cuts, retime, media references, captions, audio, underlying picture and horizontal timelines.",
+  "state_restored": true
+}

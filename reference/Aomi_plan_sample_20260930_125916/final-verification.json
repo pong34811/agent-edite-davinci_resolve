@@ -1,0 +1,41 @@
+{
+  "live_timelines_checked": [
+    "076f63ac-f2ff-4b9a-92cf-e4fd13c0f423",
+    "3b95ef25-d7cd-43c2-a2ac-88874aed8fee",
+    "0ef29023-8f80-4688-8e24-fa1a8b98d61c",
+    "dba2359e-ba8b-4f69-b113-57927e635f51",
+    "07fc193e-c2fd-4be5-a184-04312956b2ba",
+    "daedb334-977f-42c4-9053-e90b0ffb3d06",
+    "43d87c6a-897b-4d00-b55e-cf76e400da6e",
+    "19640dc1-cb83-47c9-94d5-1f672def6c40",
+    "f7ac306a-f1ca-4b22-903d-36f404981847",
+    "1f9bb797-1460-4f76-a2e0-00ab9fde848a",
+    "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "3eec050c-42e5-49e3-8e05-ca15abc9e119",
+    "4cbf3bc5-42eb-451a-a2ba-bb37bb813e9d",
+    "de94c609-9127-40bf-8a28-bbde6ffb3076",
+    "b4a81c4c-c681-46f9-aac9-86234a025b07",
+    "59ea36b5-471b-46d4-979b-031c29da5004",
+    "64c7068f-5ffd-4726-8539-d120999318ac"
+  ],
+  "unchanged_exported_subtitle_items": 593,
+  "unchanged_exported_effect_blobs": 2206,
+  "approved_gif_transform_effect_blobs_changed": [
+    "231e1533-0313-406f-82f8-990d8d9b7904",
+    "2cda3a38-c6c5-4217-9c07-30758276f910",
+    "5b6a49a2-e31a-462f-9584-d4b8114140ca",
+    "7f968d0b-7640-4134-860e-52cc12ca9326",
+    "b3596b69-0259-480c-a31c-f1b8bbe6fb4d",
+    "da5ce327-9ffb-4ad4-ba60-d1de65973069"
+  ],
+  "state_restored": true,
+  "backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\Aomi-mama_post_sample_20260930_134413.drp",
+    "bytes": 2793214,
+    "sha256": "b00d24ae1247e02128ef6d9427614f8465d294680d6748cded815f465a6c46ec",
+    "zip_integrity": true,
+    "restore_tested": false
+  },
+  "project_settings_unchanged": true,
+  "original_queue_preserved": true
+}

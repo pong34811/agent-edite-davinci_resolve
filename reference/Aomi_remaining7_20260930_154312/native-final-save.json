@@ -1,0 +1,19 @@
+{
+  "saved": true,
+  "state_restored": {
+    "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder_id": "8b85078a-675e-4568-a959-72cb02525fbe"
+  },
+  "render_queue_presets_format_mode_restored": true,
+  "backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\Aomi-mama_post_native_20260930_161354.drp",
+    "bytes": 2795437,
+    "sha256": "1fa6d831d3811bafeefa251d3a53a03eb180d6729ef5a28cdb015f06c7147d97",
+    "zip_integrity": true,
+    "restore_tested": false
+  },
+  "font_scope": "User explicitly requested native subtitles only and will adjust fonts/styles personally; no font or track-style write performed.",
+  "render_restore_note": "After-render command completed its render but its final page assertion raced the asynchronous page switch. Fresh waited state restoration and SaveProject now pass; no concurrent live calls in this verification."
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "before",
+  "created_preset": "Hermes_Aomi_state_20260930_131646",
+  "unsupported_settings": {
+    "ReplaceExistingFilesInPlace": false,
+    "VideoQuality": "High",
+    "SelectAllFrames": false
+  },
+  "ruling": "Use private collision-checked fresh output files, full timeline SelectAllFrames=True, automatic numeric VideoQuality=0. False and named quality values refused on this build.",
+  "initial_state": {
+    "timeline": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder": "8b85078a-675e-4568-a959-72cb02525fbe",
+    "format_codec": {
+      "format": "mp4",
+      "codec": "H264"
+    },
+    "mode": 1
+  },
+  "jobs": [],
+  "state_restored": true
+}

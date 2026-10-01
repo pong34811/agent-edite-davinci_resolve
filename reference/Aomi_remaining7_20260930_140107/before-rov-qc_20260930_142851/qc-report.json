@@ -1,0 +1,1389 @@
+{
+  "phase": "before",
+  "slug": "rov",
+  "folder": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851",
+  "outputs": [
+    {
+      "aspect": "16x9",
+      "timeline_id": "07fc193e-c2fd-4be5-a184-04312956b2ba",
+      "file": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before_rov_16x9.mp4",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d4032",
+            "width": 1920,
+            "height": 1080,
+            "coded_width": 1920,
+            "coded_height": 1088,
+            "has_b_frames": 1,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p",
+            "level": 50,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 2,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 328960,
+            "duration": "21.416667",
+            "bit_rate": "12697066",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "1285",
+            "nb_read_frames": "1285",
+            "extradata_size": 40,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:33.000000Z",
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "encoder": "H.264",
+              "timecode": "00:00:00:00"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "mime_codec_string": "mp4a.40.2",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 1028096,
+            "duration": "21.418667",
+            "bit_rate": "320030",
+            "nb_frames": "1004",
+            "nb_read_frames": "1004",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:33.000000Z",
+              "language": "und",
+              "handler_name": "SoundHandler"
+            }
+          },
+          {
+            "index": 2,
+            "codec_type": "data",
+            "codec_tag_string": "tmcd",
+            "codec_tag": "0x64636d74",
+            "id": "0x3",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "15360/256",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 328960,
+            "duration": "21.416667",
+            "bit_rate": "1",
+            "nb_frames": "1",
+            "extradata_size": 20,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:33.000000Z",
+              "language": "eng",
+              "handler_name": "TimeCodeHandler",
+              "timecode": "00:00:00:00"
+            }
+          }
+        ],
+        "format": {
+          "filename": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before_rov_16x9.mp4",
+          "nb_streams": 3,
+          "nb_programs": 0,
+          "nb_stream_groups": 1,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "21.418667",
+          "size": "34866752",
+          "bit_rate": "13022940",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "creation_time": "2026-09-30T07:28:33.000000Z",
+            "encoder": "Blackmagic Design DaVinci Resolve Studio"
+          }
+        }
+      },
+      "expected_frames": 1285,
+      "audio": {
+        "decoded_s16le_bytes": 4112384,
+        "sha256": "4c408b101f0d959d85c9f312edb4dbc16d50c1dcb75e17261dbb0a1ab353bde5",
+        "channels": 2,
+        "sample_rate": "48000",
+        "listened": false
+      },
+      "framemd5": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9-decoded.framemd5",
+      "full_black_segments": [],
+      "frames": [
+        {
+          "frame": 0,
+          "seconds": 0.0,
+          "labels": [
+            "opening",
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000000.jpg"
+        },
+        {
+          "frame": 55,
+          "seconds": 0.9166666666666666,
+          "labels": [
+            "V3/1/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000055.jpg"
+        },
+        {
+          "frame": 59,
+          "seconds": 0.9833333333333333,
+          "labels": [
+            "V1/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000059.jpg"
+        },
+        {
+          "frame": 72,
+          "seconds": 1.2,
+          "labels": [
+            "V4/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000072.jpg"
+        },
+        {
+          "frame": 82,
+          "seconds": 1.3666666666666667,
+          "labels": [
+            "V3/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000082.jpg"
+        },
+        {
+          "frame": 111,
+          "seconds": 1.85,
+          "labels": [
+            "V3/1/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000111.jpg"
+        },
+        {
+          "frame": 132,
+          "seconds": 2.2,
+          "labels": [
+            "V4/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000132.jpg"
+        },
+        {
+          "frame": 155,
+          "seconds": 2.5833333333333335,
+          "labels": [
+            "V1/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000155.jpg"
+        },
+        {
+          "frame": 180,
+          "seconds": 3.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000180.jpg"
+        },
+        {
+          "frame": 263,
+          "seconds": 4.383333333333334,
+          "labels": [
+            "V4/3/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000263.jpg"
+        },
+        {
+          "frame": 278,
+          "seconds": 4.633333333333334,
+          "labels": [
+            "V1/3/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000278.jpg"
+        },
+        {
+          "frame": 360,
+          "seconds": 6.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000360.jpg"
+        },
+        {
+          "frame": 400,
+          "seconds": 6.666666666666667,
+          "labels": [
+            "V1/4/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000400.jpg"
+        },
+        {
+          "frame": 403,
+          "seconds": 6.716666666666667,
+          "labels": [
+            "V4/4/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000403.jpg"
+        },
+        {
+          "frame": 456,
+          "seconds": 7.6,
+          "labels": [
+            "V3/2/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000456.jpg"
+        },
+        {
+          "frame": 491,
+          "seconds": 8.183333333333334,
+          "labels": [
+            "V4/5/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000491.jpg"
+        },
+        {
+          "frame": 524,
+          "seconds": 8.733333333333333,
+          "labels": [
+            "V1/5/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000524.jpg"
+        },
+        {
+          "frame": 528,
+          "seconds": 8.8,
+          "labels": [
+            "V3/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000528.jpg"
+        },
+        {
+          "frame": 540,
+          "seconds": 9.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000540.jpg"
+        },
+        {
+          "frame": 568,
+          "seconds": 9.466666666666667,
+          "labels": [
+            "V4/6/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000568.jpg"
+        },
+        {
+          "frame": 602,
+          "seconds": 10.033333333333333,
+          "labels": [
+            "V3/2/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000602.jpg"
+        },
+        {
+          "frame": 635,
+          "seconds": 10.583333333333334,
+          "labels": [
+            "V4/7/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000635.jpg"
+        },
+        {
+          "frame": 636,
+          "seconds": 10.6,
+          "labels": [
+            "V1/6/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000636.jpg"
+        },
+        {
+          "frame": 672,
+          "seconds": 11.2,
+          "labels": [
+            "V3/3/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000672.jpg"
+        },
+        {
+          "frame": 703,
+          "seconds": 11.716666666666667,
+          "labels": [
+            "V1/7/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000703.jpg"
+        },
+        {
+          "frame": 705,
+          "seconds": 11.75,
+          "labels": [
+            "V3/3/mid",
+            "V4/8/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000705.jpg"
+        },
+        {
+          "frame": 720,
+          "seconds": 12.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000720.jpg"
+        },
+        {
+          "frame": 739,
+          "seconds": 12.316666666666666,
+          "labels": [
+            "V3/3/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000739.jpg"
+        },
+        {
+          "frame": 776,
+          "seconds": 12.933333333333334,
+          "labels": [
+            "V1/8/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000776.jpg"
+        },
+        {
+          "frame": 783,
+          "seconds": 13.05,
+          "labels": [
+            "V4/9/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000783.jpg"
+        },
+        {
+          "frame": 831,
+          "seconds": 13.85,
+          "labels": [
+            "V4/10/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000831.jpg"
+        },
+        {
+          "frame": 845,
+          "seconds": 14.083333333333334,
+          "labels": [
+            "V1/9/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000845.jpg"
+        },
+        {
+          "frame": 888,
+          "seconds": 14.8,
+          "labels": [
+            "V4/11/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000888.jpg"
+        },
+        {
+          "frame": 900,
+          "seconds": 15.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000900.jpg"
+        },
+        {
+          "frame": 928,
+          "seconds": 15.466666666666667,
+          "labels": [
+            "V1/10/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000928.jpg"
+        },
+        {
+          "frame": 950,
+          "seconds": 15.833333333333334,
+          "labels": [
+            "V4/12/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_000950.jpg"
+        },
+        {
+          "frame": 1013,
+          "seconds": 16.883333333333333,
+          "labels": [
+            "V1/11/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001013.jpg"
+        },
+        {
+          "frame": 1018,
+          "seconds": 16.966666666666665,
+          "labels": [
+            "V4/13/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001018.jpg"
+        },
+        {
+          "frame": 1080,
+          "seconds": 18.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001080.jpg"
+        },
+        {
+          "frame": 1098,
+          "seconds": 18.3,
+          "labels": [
+            "V4/14/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001098.jpg"
+        },
+        {
+          "frame": 1125,
+          "seconds": 18.75,
+          "labels": [
+            "V1/12/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001125.jpg"
+        },
+        {
+          "frame": 1161,
+          "seconds": 19.35,
+          "labels": [
+            "V4/15/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001161.jpg"
+        },
+        {
+          "frame": 1214,
+          "seconds": 20.233333333333334,
+          "labels": [
+            "V4/16/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001214.jpg"
+        },
+        {
+          "frame": 1238,
+          "seconds": 20.633333333333333,
+          "labels": [
+            "V1/13/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001238.jpg"
+        },
+        {
+          "frame": 1254,
+          "seconds": 20.9,
+          "labels": [
+            "V4/17/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001254.jpg"
+        },
+        {
+          "frame": 1260,
+          "seconds": 21.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001260.jpg"
+        },
+        {
+          "frame": 1284,
+          "seconds": 21.4,
+          "labels": [
+            "last-frame"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9\\frame_001284.jpg"
+        }
+      ],
+      "sheets": [
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9_sheet_01.jpg",
+          "frames": [
+            0,
+            55,
+            59,
+            72,
+            82,
+            111,
+            132,
+            155,
+            180,
+            263,
+            278,
+            360
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9_sheet_02.jpg",
+          "frames": [
+            400,
+            403,
+            456,
+            491,
+            524,
+            528,
+            540,
+            568,
+            602,
+            635,
+            636,
+            672
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9_sheet_03.jpg",
+          "frames": [
+            703,
+            705,
+            720,
+            739,
+            776,
+            783,
+            831,
+            845,
+            888,
+            900,
+            928,
+            950
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\16x9_sheet_04.jpg",
+          "frames": [
+            1013,
+            1018,
+            1080,
+            1098,
+            1125,
+            1161,
+            1214,
+            1238,
+            1254,
+            1260,
+            1284
+          ],
+          "empty_tiles": 1
+        }
+      ]
+    },
+    {
+      "aspect": "9x16",
+      "timeline_id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+      "file": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before_rov_9x16.mp4",
+      "probe": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "mime_codec_string": "avc1.4d4032",
+            "width": 1080,
+            "height": 1920,
+            "coded_width": 1088,
+            "coded_height": 1920,
+            "has_b_frames": 1,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuv420p",
+            "level": 50,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "chroma_location": "left",
+            "field_order": "progressive",
+            "refs": 2,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 328960,
+            "duration": "21.416667",
+            "bit_rate": "9190684",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "1285",
+            "nb_read_frames": "1285",
+            "extradata_size": 40,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:42.000000Z",
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "encoder": "H.264",
+              "timecode": "00:00:00:00"
+            }
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "mime_codec_string": "mp4a.40.2",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 1028096,
+            "duration": "21.418667",
+            "bit_rate": "320030",
+            "nb_frames": "1004",
+            "nb_read_frames": "1004",
+            "extradata_size": 2,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:42.000000Z",
+              "language": "und",
+              "handler_name": "SoundHandler"
+            }
+          },
+          {
+            "index": 2,
+            "codec_type": "data",
+            "codec_tag_string": "tmcd",
+            "codec_tag": "0x64636d74",
+            "id": "0x3",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "15360/256",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 328960,
+            "duration": "21.416667",
+            "bit_rate": "1",
+            "nb_frames": "1",
+            "extradata_size": 20,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "creation_time": "2026-09-30T07:28:42.000000Z",
+              "language": "eng",
+              "handler_name": "TimeCodeHandler",
+              "timecode": "00:00:00:00"
+            }
+          }
+        ],
+        "format": {
+          "filename": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before_rov_9x16.mp4",
+          "nb_streams": 3,
+          "nb_programs": 0,
+          "nb_stream_groups": 1,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "21.418667",
+          "size": "25479874",
+          "bit_rate": "9516885",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "creation_time": "2026-09-30T07:28:42.000000Z",
+            "encoder": "Blackmagic Design DaVinci Resolve Studio"
+          }
+        }
+      },
+      "expected_frames": 1285,
+      "audio": {
+        "decoded_s16le_bytes": 4112384,
+        "sha256": "4c408b101f0d959d85c9f312edb4dbc16d50c1dcb75e17261dbb0a1ab353bde5",
+        "channels": 2,
+        "sample_rate": "48000",
+        "listened": false
+      },
+      "framemd5": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16-decoded.framemd5",
+      "full_black_segments": [],
+      "frames": [
+        {
+          "frame": 0,
+          "seconds": 0.0,
+          "labels": [
+            "opening",
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000000.jpg"
+        },
+        {
+          "frame": 1,
+          "seconds": 0.016666666666666666,
+          "labels": [
+            "V2/1/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000001.jpg"
+        },
+        {
+          "frame": 55,
+          "seconds": 0.9166666666666666,
+          "labels": [
+            "V4/1/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000055.jpg"
+        },
+        {
+          "frame": 59,
+          "seconds": 0.9833333333333333,
+          "labels": [
+            "V1/1/mid",
+            "V2/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000059.jpg"
+        },
+        {
+          "frame": 72,
+          "seconds": 1.2,
+          "labels": [
+            "V5/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000072.jpg"
+        },
+        {
+          "frame": 82,
+          "seconds": 1.3666666666666667,
+          "labels": [
+            "V4/1/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000082.jpg"
+        },
+        {
+          "frame": 111,
+          "seconds": 1.85,
+          "labels": [
+            "V4/1/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000111.jpg"
+        },
+        {
+          "frame": 119,
+          "seconds": 1.9833333333333334,
+          "labels": [
+            "V2/1/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000119.jpg"
+        },
+        {
+          "frame": 132,
+          "seconds": 2.2,
+          "labels": [
+            "V5/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000132.jpg"
+        },
+        {
+          "frame": 155,
+          "seconds": 2.5833333333333335,
+          "labels": [
+            "V1/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000155.jpg"
+        },
+        {
+          "frame": 180,
+          "seconds": 3.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000180.jpg"
+        },
+        {
+          "frame": 263,
+          "seconds": 4.383333333333334,
+          "labels": [
+            "V5/3/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000263.jpg"
+        },
+        {
+          "frame": 278,
+          "seconds": 4.633333333333334,
+          "labels": [
+            "V1/3/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000278.jpg"
+        },
+        {
+          "frame": 360,
+          "seconds": 6.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000360.jpg"
+        },
+        {
+          "frame": 400,
+          "seconds": 6.666666666666667,
+          "labels": [
+            "V1/4/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000400.jpg"
+        },
+        {
+          "frame": 403,
+          "seconds": 6.716666666666667,
+          "labels": [
+            "V5/4/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000403.jpg"
+        },
+        {
+          "frame": 436,
+          "seconds": 7.266666666666667,
+          "labels": [
+            "V2/2/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000436.jpg"
+        },
+        {
+          "frame": 456,
+          "seconds": 7.6,
+          "labels": [
+            "V4/2/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000456.jpg"
+        },
+        {
+          "frame": 491,
+          "seconds": 8.183333333333334,
+          "labels": [
+            "V5/5/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000491.jpg"
+        },
+        {
+          "frame": 524,
+          "seconds": 8.733333333333333,
+          "labels": [
+            "V1/5/mid",
+            "V2/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000524.jpg"
+        },
+        {
+          "frame": 528,
+          "seconds": 8.8,
+          "labels": [
+            "V4/2/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000528.jpg"
+        },
+        {
+          "frame": 540,
+          "seconds": 9.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000540.jpg"
+        },
+        {
+          "frame": 568,
+          "seconds": 9.466666666666667,
+          "labels": [
+            "V5/6/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000568.jpg"
+        },
+        {
+          "frame": 602,
+          "seconds": 10.033333333333333,
+          "labels": [
+            "V4/2/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000602.jpg"
+        },
+        {
+          "frame": 614,
+          "seconds": 10.233333333333333,
+          "labels": [
+            "V2/2/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000614.jpg"
+        },
+        {
+          "frame": 635,
+          "seconds": 10.583333333333334,
+          "labels": [
+            "V5/7/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000635.jpg"
+        },
+        {
+          "frame": 636,
+          "seconds": 10.6,
+          "labels": [
+            "V1/6/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000636.jpg"
+        },
+        {
+          "frame": 672,
+          "seconds": 11.2,
+          "labels": [
+            "V4/3/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000672.jpg"
+        },
+        {
+          "frame": 703,
+          "seconds": 11.716666666666667,
+          "labels": [
+            "V1/7/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000703.jpg"
+        },
+        {
+          "frame": 705,
+          "seconds": 11.75,
+          "labels": [
+            "V4/3/mid",
+            "V5/8/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000705.jpg"
+        },
+        {
+          "frame": 720,
+          "seconds": 12.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000720.jpg"
+        },
+        {
+          "frame": 739,
+          "seconds": 12.316666666666666,
+          "labels": [
+            "V4/3/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000739.jpg"
+        },
+        {
+          "frame": 776,
+          "seconds": 12.933333333333334,
+          "labels": [
+            "V1/8/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000776.jpg"
+        },
+        {
+          "frame": 783,
+          "seconds": 13.05,
+          "labels": [
+            "V5/9/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000783.jpg"
+        },
+        {
+          "frame": 831,
+          "seconds": 13.85,
+          "labels": [
+            "V5/10/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000831.jpg"
+        },
+        {
+          "frame": 845,
+          "seconds": 14.083333333333334,
+          "labels": [
+            "V1/9/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000845.jpg"
+        },
+        {
+          "frame": 888,
+          "seconds": 14.8,
+          "labels": [
+            "V5/11/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000888.jpg"
+        },
+        {
+          "frame": 900,
+          "seconds": 15.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000900.jpg"
+        },
+        {
+          "frame": 928,
+          "seconds": 15.466666666666667,
+          "labels": [
+            "V1/10/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000928.jpg"
+        },
+        {
+          "frame": 950,
+          "seconds": 15.833333333333334,
+          "labels": [
+            "V5/12/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_000950.jpg"
+        },
+        {
+          "frame": 1013,
+          "seconds": 16.883333333333333,
+          "labels": [
+            "V1/11/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001013.jpg"
+        },
+        {
+          "frame": 1018,
+          "seconds": 16.966666666666665,
+          "labels": [
+            "V5/13/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001018.jpg"
+        },
+        {
+          "frame": 1060,
+          "seconds": 17.666666666666668,
+          "labels": [
+            "V2/3/start"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001060.jpg"
+        },
+        {
+          "frame": 1080,
+          "seconds": 18.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001080.jpg"
+        },
+        {
+          "frame": 1098,
+          "seconds": 18.3,
+          "labels": [
+            "V5/14/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001098.jpg"
+        },
+        {
+          "frame": 1125,
+          "seconds": 18.75,
+          "labels": [
+            "V1/12/mid",
+            "V2/3/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001125.jpg"
+        },
+        {
+          "frame": 1161,
+          "seconds": 19.35,
+          "labels": [
+            "V5/15/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001161.jpg"
+        },
+        {
+          "frame": 1191,
+          "seconds": 19.85,
+          "labels": [
+            "V2/3/end"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001191.jpg"
+        },
+        {
+          "frame": 1214,
+          "seconds": 20.233333333333334,
+          "labels": [
+            "V5/16/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001214.jpg"
+        },
+        {
+          "frame": 1238,
+          "seconds": 20.633333333333333,
+          "labels": [
+            "V1/13/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001238.jpg"
+        },
+        {
+          "frame": 1254,
+          "seconds": 20.9,
+          "labels": [
+            "V5/17/mid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001254.jpg"
+        },
+        {
+          "frame": 1260,
+          "seconds": 21.0,
+          "labels": [
+            "3s-grid"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001260.jpg"
+        },
+        {
+          "frame": 1284,
+          "seconds": 21.4,
+          "labels": [
+            "last-frame"
+          ],
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16\\frame_001284.jpg"
+        }
+      ],
+      "sheets": [
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16_sheet_01.jpg",
+          "frames": [
+            0,
+            1,
+            55,
+            59,
+            72,
+            82,
+            111,
+            119,
+            132,
+            155,
+            180,
+            263
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16_sheet_02.jpg",
+          "frames": [
+            278,
+            360,
+            400,
+            403,
+            436,
+            456,
+            491,
+            524,
+            528,
+            540,
+            568,
+            602
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16_sheet_03.jpg",
+          "frames": [
+            614,
+            635,
+            636,
+            672,
+            703,
+            705,
+            720,
+            739,
+            776,
+            783,
+            831,
+            845
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16_sheet_04.jpg",
+          "frames": [
+            888,
+            900,
+            928,
+            950,
+            1013,
+            1018,
+            1060,
+            1080,
+            1098,
+            1125,
+            1161,
+            1191
+          ],
+          "empty_tiles": 0
+        },
+        {
+          "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_140107\\before-rov-qc_20260930_142851\\9x16_sheet_05.jpg",
+          "frames": [
+            1214,
+            1238,
+            1254,
+            1260,
+            1284
+          ],
+          "empty_tiles": 7
+        }
+      ]
+    }
+  ],
+  "visual_review_performed_by_script": false
+}

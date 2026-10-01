@@ -1,0 +1,89 @@
+{
+  "out": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312",
+  "version": "21.1.0.17",
+  "timeline_count": 17,
+  "targets": [
+    {
+      "order": 1,
+      "slug": "story",
+      "name": "เรื่องราวของ Aomi-mama",
+      "horizontal_id": "0ef29023-8f80-4688-8e24-fa1a8b98d61c",
+      "vertical_id": "3eec050c-42e5-49e3-8e05-ca15abc9e119",
+      "frames": 3125
+    },
+    {
+      "order": 2,
+      "slug": "rov",
+      "name": "เคยเล่น Rov ไหม",
+      "horizontal_id": "07fc193e-c2fd-4be5-a184-04312956b2ba",
+      "vertical_id": "de94c609-9127-40bf-8a28-bbde6ffb3076",
+      "frames": 1285
+    },
+    {
+      "order": 3,
+      "slug": "farewell",
+      "name": "จบไลฟ์เดบิวต์ เล่น LoL ไม่เก่งอย่าว่าหนูนะ",
+      "horizontal_id": "dba2359e-ba8b-4f69-b113-57927e635f51",
+      "vertical_id": "4cbf3bc5-42eb-451a-a2ba-bb37bb813e9d",
+      "frames": 3809
+    },
+    {
+      "order": 4,
+      "slug": "goals",
+      "name": "เป้าหมายช่อง aomi-mama",
+      "horizontal_id": "43d87c6a-897b-4d00-b55e-cf76e400da6e",
+      "vertical_id": "59ea36b5-471b-46d4-979b-031c29da5004",
+      "frames": 1525
+    },
+    {
+      "order": 5,
+      "slug": "bugs",
+      "name": "สาเหตุไม่ชอบหนอนเเมลง",
+      "horizontal_id": "19640dc1-cb83-47c9-94d5-1f672def6c40",
+      "vertical_id": "f7ac306a-f1ca-4b22-903d-36f404981847",
+      "frames": 3062
+    },
+    {
+      "order": 6,
+      "slug": "firstgame",
+      "name": "เกมเเรกที่เริ่มไลฟ์คือ",
+      "horizontal_id": "076f63ac-f2ff-4b9a-92cf-e4fd13c0f423",
+      "vertical_id": "1f9bb797-1460-4f76-a2e0-00ab9fde848a",
+      "frames": 3883
+    },
+    {
+      "order": 7,
+      "slug": "regret",
+      "name": "ไม่เสียใจที่เลือกมาวีทูปเบอร์",
+      "horizontal_id": "daedb334-977f-42c4-9053-e90b0ffb3d06",
+      "vertical_id": "b4a81c4c-c681-46f9-aac9-86234a025b07",
+      "frames": 6289
+    }
+  ],
+  "backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_remaining7_20260930_154312\\Aomi-mama_pre_remaining7_20260930_154412.drp",
+    "bytes": 2793394,
+    "sha256": "bdfc9edab8fa9d7ac2b06faf838e96fca61312832bc5e0dfb4efc4af9a451c16",
+    "zip_integrity": true,
+    "restore_tested": false
+  },
+  "missing_old_subtitles": [
+    "C:\\Users\\warit\\Desktop\\davinci-katy-mcp\\scripts\\vdo2_textplus.srt",
+    "C:\\Users\\warit\\Downloads\\1.srt",
+    "C:\\Users\\warit\\Downloads\\vdo2_textplus.srt",
+    "C:\\Users\\warit\\Downloads\\20260731001.srt",
+    "C:\\Users\\warit\\Downloads\\เรื่องราวของ Aomi-mama.srt",
+    "C:\\Users\\warit\\Downloads\\เป้าหมายช่อง aomi-mama.srt",
+    "C:\\Users\\warit\\Downloads\\เล่น lol ไม่เก่งอย่าด่าผมนะ.srt",
+    "C:\\Users\\warit\\Downloads\\สาเหตุไม่ชอบหนอนเเมลง.srt",
+    "C:\\Users\\warit\\Downloads\\video2_subtitles.srt",
+    "C:\\Users\\warit\\Downloads\\video2_subtitles_v4_2to3words.srt",
+    "C:\\Users\\warit\\Downloads\\video2_subtitles_v6_3to4words.srt"
+  ],
+  "initial_state": {
+    "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder_id": "8b85078a-675e-4568-a959-72cb02525fbe"
+  }
+}

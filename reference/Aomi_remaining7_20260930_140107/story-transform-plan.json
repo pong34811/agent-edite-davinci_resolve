@@ -1,0 +1,159 @@
+{
+  "timeline_id": "3eec050c-42e5-49e3-8e05-ca15abc9e119",
+  "scope": "Only transforms of the five existing story vertical GIF overlays; retain V1 lore wide shots until layout approval, V2, captions/audio/track state unchanged. No source changes or duplicate timeline.",
+  "pending": [
+    "Lore wide-slide shots remain letterboxed: complete wide text cannot fill 9x16 without losing words or a newly approved split-layout/background."
+  ],
+  "changes": [
+    {
+      "id": "69503152-e377-4039-9941-700509e59d82",
+      "name": "คิดหนัก - emm-thinking.gif",
+      "track": 4,
+      "start_frame": 104.0,
+      "end_frame": 320.0,
+      "source_raster": [
+        200,
+        188
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.47281323877068554,
+        "ZoomY": 0.47281323877068554,
+        "Pan": 0.0,
+        "Tilt": 1293.6170212765958
+      },
+      "predicted_box": [
+        284.6808510638298,
+        36,
+        795.3191489361702,
+        516.0
+      ],
+      "reason": "Full GIF bounds top-centred with 36px headroom; match approved sample instead of constant Tilt."
+    },
+    {
+      "id": "7f096c3a-3d8e-4d75-86fa-7fc309e17b08",
+      "name": "เท่ - cool-happy.gif",
+      "track": 4,
+      "start_frame": 546.0,
+      "end_frame": 706.0,
+      "source_raster": [
+        480,
+        480
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.4444444444444444,
+        "ZoomY": 0.4444444444444444,
+        "Pan": 0.0,
+        "Tilt": 1216.0
+      },
+      "predicted_box": [
+        300.0,
+        36,
+        780.0,
+        516.0
+      ],
+      "reason": "Full GIF bounds top-centred with 36px headroom; match approved sample instead of constant Tilt."
+    },
+    {
+      "id": "4d1f778d-cb06-4e6f-a234-04b2f3f1f7d1",
+      "name": "โกรธ - angry-cat.gif",
+      "track": 4,
+      "start_frame": 1354.0,
+      "end_frame": 1474.0,
+      "source_raster": [
+        200,
+        191
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.46538685282140774,
+        "ZoomY": 0.46538685282140774,
+        "Pan": 0.0,
+        "Tilt": 1273.2984293193715
+      },
+      "predicted_box": [
+        288.69109947643983,
+        36,
+        791.3089005235602,
+        516.0
+      ],
+      "reason": "Full GIF bounds top-centred with 36px headroom; match approved sample instead of constant Tilt."
+    },
+    {
+      "id": "93ba994c-55d6-497a-93c1-60845f07e2f3",
+      "name": "ขำ - haha-lol.gif",
+      "track": 4,
+      "start_frame": 1823.0,
+      "end_frame": 1943.0,
+      "source_raster": [
+        498,
+        458
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.4832605531295488,
+        "ZoomY": 0.4832605531295488,
+        "Pan": 0.0,
+        "Tilt": 1322.2008733624455
+      },
+      "predicted_box": [
+        279.03930131004364,
+        36,
+        800.9606986899564,
+        516.0
+      ],
+      "reason": "Full GIF bounds top-centred with 36px headroom; match approved sample instead of constant Tilt."
+    },
+    {
+      "id": "dbdf0eba-6be5-40c0-aaa4-9f1223466aff",
+      "name": "เศร้า - cute-teary.gif",
+      "track": 4,
+      "start_frame": 2886.0,
+      "end_frame": 3078.0,
+      "source_raster": [
+        200,
+        200
+      ],
+      "before": {
+        "ZoomX": 0.65,
+        "ZoomY": 0.65,
+        "Pan": 0.0,
+        "Tilt": 1420.0
+      },
+      "after": {
+        "ZoomX": 0.4444444444444444,
+        "ZoomY": 0.4444444444444444,
+        "Pan": 0.0,
+        "Tilt": 1216.0
+      },
+      "predicted_box": [
+        300.0,
+        36,
+        780.0,
+        516.0
+      ],
+      "reason": "Full GIF bounds top-centred with 36px headroom; match approved sample instead of constant Tilt."
+    }
+  ]
+}

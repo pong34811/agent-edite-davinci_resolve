@@ -1,0 +1,36 @@
+{
+  "horizontal_video_unchanged": true,
+  "decoded_audio_unchanged": {
+    "16x9": {
+      "before": {
+        "bytes": 3125248,
+        "sha256": "f6402e1aa01aafd984a3171f685a90881517625d2bec3cd8d994352cf0bb5611"
+      },
+      "after": {
+        "bytes": 3125248,
+        "sha256": "f6402e1aa01aafd984a3171f685a90881517625d2bec3cd8d994352cf0bb5611"
+      }
+    },
+    "9x16": {
+      "before": {
+        "bytes": 3125248,
+        "sha256": "f6402e1aa01aafd984a3171f685a90881517625d2bec3cd8d994352cf0bb5611"
+      },
+      "after": {
+        "bytes": 3125248,
+        "sha256": "f6402e1aa01aafd984a3171f685a90881517625d2bec3cd8d994352cf0bb5611"
+      }
+    }
+  },
+  "counts": {
+    "horizontal_frames_compared": 976,
+    "before_qc_frames": 125,
+    "after_qc_frames": 125
+  },
+  "outputs": [
+    "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\sample-before-after.jpg",
+    "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\sample-before-after.mp4"
+  ],
+  "audio_listened": false,
+  "visual_review_method": "Contact frames at every picture cut boundary, all 21 caption midpoints, and all 6 GIF first/middle/last frames. Sampled visual review, not every video frame."
+}

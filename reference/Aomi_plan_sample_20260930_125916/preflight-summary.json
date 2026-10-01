@@ -1,0 +1,125 @@
+{
+  "output_directory": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916",
+  "backup": {
+    "path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\reference\\Aomi_plan_sample_20260930_125916\\Aomi-mama_pre_sample_20260930_130245.drp",
+    "size": 2792891,
+    "sha256": "8c2d242be307269dec2116451d9caf07ad4fca6f770d6eee5c927257090a1d68",
+    "zip_integrity": true,
+    "zip_entries": [
+      "project.xml",
+      "MediaPool/Master/000_Archive/000_Aomi Enhancements/MpFolder.xml",
+      "MediaPool/Master/000_Archive/MpFolder.xml",
+      "MediaPool/Master/001_Master/000_SFX/MpFolder.xml",
+      "MediaPool/Master/001_Master/MpFolder.xml",
+      "MediaPool/Master/002_GIF/MpFolder.xml",
+      "MediaPool/Master/MpFolder.xml",
+      "SeqContainer/08403901-e3ad-4141-bd8b-97b6130daac1.xml",
+      "SeqContainer/09f46c87-ce41-4d66-915f-6112f642de21.xml",
+      "SeqContainer/0e8a06fb-c3c0-4608-90af-c7ae1140c661.xml",
+      "SeqContainer/3d22dc50-d5de-4bcb-ac2e-4ba66fe6516e.xml",
+      "SeqContainer/43d8b20f-af7c-47fc-a544-91102ba7f035.xml",
+      "SeqContainer/5ac88c57-2e78-4cad-bf80-a131b12ac62b.xml",
+      "SeqContainer/63730d00-abd0-4cbd-88ec-b81d6f866110.xml",
+      "SeqContainer/63b7b6f5-e63f-4289-a740-514a932801a1.xml",
+      "SeqContainer/72ac14dd-0c25-4a93-b654-ee33494b4cca.xml",
+      "SeqContainer/865d8643-3813-4ebe-a56c-222c6e62c859.xml",
+      "SeqContainer/98fbe1f6-0f91-4916-99ff-341639356f77.xml",
+      "SeqContainer/ae437590-d14e-4a3b-9187-0db3f128f3ee.xml",
+      "SeqContainer/b1a37abe-7a0c-4e58-8eb3-2426fff4b319.xml",
+      "SeqContainer/c5d618aa-cde5-46d3-8d38-3154428517ba.xml",
+      "SeqContainer/cc1eb6aa-ca61-4c2d-96c4-f6da15efb84e.xml",
+      "SeqContainer/d8b588d5-3f10-4de1-be71-f962ff236864.xml",
+      "SeqContainer/e3bc91bb-a743-45ac-8da6-dc53f4c9d21f.xml",
+      "Gallery.xml"
+    ],
+    "restore_tested": false,
+    "method": "ProjectManager.ExportProject; same native operation as MCP safe_project_export; MCP is not attached to this session"
+  },
+  "timeline_count": 17,
+  "manifest_timeline_count": 16,
+  "extra_timelines": [
+    {
+      "id": "64c7068f-5ffd-4726-8539-d120999318ac",
+      "name": "ทำไมน้ำหน้กน่ายกจังครับ_9x16_archived_v02"
+    }
+  ],
+  "pool_entries": 104,
+  "existing_source_files": 76,
+  "missing_av_paths": 0,
+  "missing_imported_subtitle_files": [
+    {
+      "id": "e0671fe9-f23b-4fa2-aaab-5c2117504f93",
+      "name": "vdo2_textplus",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Desktop\\davinci-katy-mcp\\scripts\\vdo2_textplus.srt"
+    },
+    {
+      "id": "b36970a2-efab-462e-851a-b42d1edc0c75",
+      "name": "1",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\1.srt"
+    },
+    {
+      "id": "920e8476-81d2-4b1e-8dbb-11aaf4249002",
+      "name": "vdo2_textplus",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\vdo2_textplus.srt"
+    },
+    {
+      "id": "e911dfe8-bdd6-4fcc-a261-c4ef46758009",
+      "name": "20260731001",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\20260731001.srt"
+    },
+    {
+      "id": "9e6d25b5-b8a6-4498-976a-4cdd760548c7",
+      "name": "เรื่องราวของ Aomi-mama",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\เรื่องราวของ Aomi-mama.srt"
+    },
+    {
+      "id": "a0468731-d7ea-4fbb-a299-b4d871c61894",
+      "name": "เป้าหมายช่อง aomi-mama",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\เป้าหมายช่อง aomi-mama.srt"
+    },
+    {
+      "id": "a9d03f7d-2520-4204-bdc3-6d13965f388c",
+      "name": "เล่น lol ไม่เก่งอย่าด่าผมนะ",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\เล่น lol ไม่เก่งอย่าด่าผมนะ.srt"
+    },
+    {
+      "id": "048eeaf1-39cb-46ee-8d2e-e32a49734516",
+      "name": "สาเหตุไม่ชอบหนอนเเมลง",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\สาเหตุไม่ชอบหนอนเเมลง.srt"
+    },
+    {
+      "id": "ff5af289-68d1-4ecf-bac8-04e229468d51",
+      "name": "video2_subtitles",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\video2_subtitles.srt"
+    },
+    {
+      "id": "cd587e97-74f9-415c-9f15-199e87da8068",
+      "name": "video2_subtitles_v4_2to3words",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\video2_subtitles_v4_2to3words.srt"
+    },
+    {
+      "id": "9c854e80-b23f-40bc-9e9a-bc000b81aa2c",
+      "name": "video2_subtitles_v6_3to4words",
+      "type": "Subtitle",
+      "path": "C:\\Users\\warit\\Downloads\\video2_subtitles_v6_3to4words.srt"
+    }
+  ],
+  "initial_state": {
+    "timeline_id": "f53c5134-d753-4f8b-b6f6-c91138f62c65",
+    "timecode": "00:00:00:00",
+    "page": "deliver",
+    "folder_id": "8b85078a-675e-4568-a959-72cb02525fbe"
+  },
+  "state_restored": true,
+  "subtitle_warning": "Missing original SRT imports; timeline cues are embedded and readable. No reimport, relink or cleanup. Burn-in render required to verify display."
+}
