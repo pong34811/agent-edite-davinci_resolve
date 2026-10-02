@@ -258,3 +258,20 @@ def test_attach_skip_omitted_keeps_cue_off_logged_speech():
     assert base[0]["start"] < 4.0                      # default: attaches onto the omitted piece
     skip = s.build_cues(words, regions, tokenizer=tk, omitted=om, attach_skip_omitted=True)
     assert skip[0]["start"] >= 4.22 - 1e-9
+
+
+def test_validate_cli_uses_job_custom_words(tmp_path):
+    import json
+    import subprocess
+    import sys as _sys
+    (tmp_path / "srt").mkdir()
+    (tmp_path / "jobs.json").write_text(json.dumps([{"job": 1, "duration_s": 55.0}]), encoding="utf-8")
+    srt = tmp_path / "srt" / "job1.srt"
+    srt.write_text("1\n00:00:01,000 --> 00:00:02,000\nชื่อทาทาไทการีด้า\n", encoding="utf-8")
+    script = os.path.join(os.path.dirname(__file__), "..", "scripts", "subtitle_srt.py")
+    run = lambda: subprocess.run([_sys.executable, script, "validate", str(srt), "--workspace", str(tmp_path),  # noqa: E731
+                                  "--job", "1"], capture_output=True, text=True, encoding="utf-8")
+    assert run().returncode == 1                       # name fragments counted as words
+    (tmp_path / "srt" / "job1.curation.json").write_text(
+        json.dumps({"custom_words": ["ทาทาไทการีด้า"]}, ensure_ascii=False), encoding="utf-8")
+    assert run().returncode == 0

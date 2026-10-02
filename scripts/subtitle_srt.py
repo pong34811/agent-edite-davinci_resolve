@@ -762,6 +762,15 @@ def job_end_limit(ws, n, default=END_LIMIT):
     return float(j["duration_s"]) if j and j.get("duration_s") else default
 
 
+def job_custom_words(ws, n):
+    """custom_words of srt/job<N>.curation.json ([] when absent)."""
+    p = os.path.join(ws, "srt", "job%d.curation.json" % n)
+    if not os.path.exists(p):
+        return []
+    with open(p, encoding="utf-8") as f:
+        return json.load(f).get("custom_words", [])
+
+
 def build_job(ws, n, tokenizer=None, end_limit=None):
     with open(os.path.join(ws, "srt", "job%d.curation.json" % n), encoding="utf-8") as f:
         cur = json.load(f)
@@ -937,6 +946,8 @@ def main():
         end = a.end
         if end is None:
             end = job_end_limit(a.workspace, a.job) if a.workspace and a.job else END_LIMIT
+        if a.workspace and a.job:   # the job's curated one-word proper nouns count as in build
+            add_custom_words(job_custom_words(a.workspace, a.job))
         errs = validate_file(a.srt, a.speech_start, end)
         print("PASS" if not errs else "\n".join(errs))
         sys.exit(1 if errs else 0)
