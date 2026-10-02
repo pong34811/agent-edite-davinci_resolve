@@ -134,8 +134,8 @@ def test_build_cues_never_linger_past_speech():
     tk = lambda t: [t]  # noqa: E731
     pw = [[W("กก", 1.0, 1.3)], [W("ขข", 3.0, 3.2)]]
     cues = s.build_cues(pw, regions=[[1.0, 1.3], [3.0, 3.2]], tokenizer=tk)
-    assert all(c["end"] <= c["speech_end"] + 0.1 + 1e-9 for c in cues)
-    assert cues[0]["end"] <= 1.3 + 0.1 and cues[1]["end"] <= 3.2 + 0.1   # no padding to 0.8 s
+    assert cues[0]["end"] <= 1.3 + 0.1                     # no padding to 0.8 s
+    assert abs(cues[1]["end"] - 3.35) < 1e-9 and cues[1]["floor"]  # 0.2 s cue raised to 0.35 s
     assert s.cue_speech_checks(cues, [[1.0, 1.3], [3.0, 3.2]]) == []
 
 
@@ -148,3 +148,21 @@ def test_adjacent_vad_speech_attached_far_speech_reported():
     assert [(a, b) for a, b, why in unc] == [(5.0, 6.0)] and unc[0][2] is None
     logged = s.uncovered_speech(regions, cues, [{"t0": 4.9, "t1": 6.1, "reason": "laughter"}])
     assert logged[0][2] == "laughter"
+
+
+def test_read_floor_merges_same_phrase_else_extends_unless_blocked():
+    tk = lambda t: [t[i:i + 2] for i in range(0, len(t), 2)]  # noqa: E731
+    cues = [{"text": "กก", "start": 1.0, "end": 1.15, "speech_end": 1.15, "phrases": {0}},
+            {"text": "ขข", "start": 1.2, "end": 1.8, "speech_end": 1.8, "phrases": {0}}]
+    s.enforce_floor(cues, tokenizer=tk)
+    assert len(cues) == 1 and cues[0]["text"] == "กกขข" and cues[0]["end"] == 1.8
+    # different phrase, big gap -> extend; blocked by the next cue start -> stays short
+    cues = [{"text": "กก", "start": 1.0, "end": 1.1, "speech_end": 1.1, "phrases": {0}},
+            {"text": "ขข", "start": 1.5, "end": 2.0, "speech_end": 2.0, "phrases": {1}},
+            {"text": "คค", "start": 3.0, "end": 3.1, "speech_end": 3.1, "phrases": {2}},
+            {"text": "งงงงงงงงงงงงงงงง", "start": 3.3, "end": 3.7, "speech_end": 3.7, "phrases": {3}}]
+    s.enforce_floor(cues, tokenizer=tk)
+    assert abs(cues[0]["end"] - 1.35) < 1e-9 and cues[0]["floor"]
+    # next cue can spare only 0.05 s (stays >= 0.35 s); the cue stays short, gap kept, no overlap
+    assert abs(cues[3]["start"] - 3.35) < 1e-9 and abs(cues[2]["end"] - (3.35 - s.MIN_GAP)) < 1e-9
+    assert cues[2]["end"] - cues[2]["start"] < s.READ_FLOOR
