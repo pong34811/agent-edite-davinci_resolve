@@ -63,22 +63,44 @@ def W(text, a, b, boundary=True):
     return {"text": text, "start": a, "end": b, "boundary": boundary}
 
 
-def test_segment_breaks_on_pause_caps_and_prefers_boundaries():
-    tk = lambda t: [t]  # noqa: E731  each display piece = one word for this test
-    pairs = lambda t: [t[i:i + 2] for i in range(0, len(t), 2)]  # noqa: E731
-    words = [W("กก", 0.0, 0.3), W("ขข", 0.3, 0.6, False), W("คค", 0.6, 0.9, False),
-             W("งง", 0.9, 1.2, False), W("จจ", 2.0, 2.3)]
-    groups = s.segment_words(words, tokenizer=pairs)
-    assert all(len(g) <= 3 for g in groups)
-    assert [w["text"] for w in groups[-1]] == ["จจ"]  # pause >= 0.7 s forces a split
-    # boundary preference: split at the space boundary rather than mid-chunk
-    words = [W("กก", 0.0, 0.3), W("ขข", 0.3, 0.6, False), W("คค", 0.6, 0.9), W("งง", 0.9, 1.2, False)]
-    groups = s.segment_words(words, tokenizer=tk)
-    assert [[w["text"] for w in g] for g in groups] == [["กก", "ขข"], ["คค", "งง"]]
-    # duration cap
-    words = [W("ก", 0.0, 0.8), W("ข", 0.8, 1.6, False)]
-    assert len(s.segment_words(words, tokenizer=tk)) == 2
+def test_natural_words_attach_prefixes_and_particles():
+    toks = {"ไม่มีนะครับ": ["ไม่", "มี", "นะ", "ครับ"], "ไม่ได้โม้เลย": ["ไม่", "ได้", "โม้", "เลย"],
+            "เขาบอกว่าเป็น": ["เขา", "บอก", "ว่า", "เป็น"], "จะไปกินข้าว": ["จะ", "ไป", "กิน", "ข้าว"],
+            "ได้เลย": ["ได้", "เลย"], "แบบไม่": ["แบบ", "ไม่"]}
+    tk = lambda t: toks[t]  # noqa: E731
+    assert s.natural_words("ไม่มีนะครับ", tk) == ["ไม่มีนะครับ"]
+    assert s.natural_words("ไม่ได้โม้เลย", tk) == ["ไม่ได้โม้เลย"]
+    assert s.natural_words("เขาบอกว่าเป็น", tk) == ["เขา", "บอกว่า", "เป็น"]
+    assert s.natural_words("จะไปกินข้าว", tk) == ["จะไป", "กิน", "ข้าว"]
+    assert s.natural_words("ได้เลย", tk) == ["ได้เลย"]
+    assert s.natural_words("แบบไม่", tk) == ["แบบ", "ไม่"]  # dangling prefix stays a word
 
+
+def test_segment_merges_to_target_breaks_on_pause_and_phrase_end():
+    tk = lambda t: [t[i:i + 2] for i in range(0, len(t), 2)]  # noqa: E731  2-char words
+    # four 0.3 s words in one phrase: merged into one ~1.2 s cue (3-word cap -> 3 + 1 avoided)
+    words = [W("กก", 0.0, 0.3), W("ขข", 0.3, 0.6), W("คค", 0.6, 0.9), W("จจ", 2.0, 2.3)]
+    groups = s.segment_words(words, tokenizer=tk)
+    assert [[w["text"] for w in g] for g in groups] == [["กก", "ขข", "คค"], ["จจ"]]  # pause split
+    # curated-phrase boundary with a gap >= 0.25 s is a hard break, a tiny gap is not
+    a = [dict(W("กก", 0.0, 0.4), phrase=0), dict(W("ขข", 0.7, 1.0), phrase=1)]
+    assert len(s.segment_words(a, tokenizer=tk)) == 2
+    # two very short pieces across a tiny gap are rescued into one cue
+    b = [dict(W("กก", 0.0, 0.1), phrase=0), dict(W("ขข", 0.15, 0.25), phrase=1)]
+    assert len(s.segment_words(b, tokenizer=tk)) == 1
+    # but longer curated phrases keep their own cues (phrase end treated as a sentence end)
+    c = [dict(W("กก", 0.0, 0.5), phrase=0), dict(W("ขข", 0.55, 1.0), phrase=1)]
+    assert len(s.segment_words(c, tokenizer=tk)) == 2
+    # an omitted span between words is a hard break
+    assert len(s.segment_words(b, tokenizer=tk, omitted=[(0.1, 0.15)])) == 2
+    # duration cap 1.5 s
+    words = [W("กก", 0.0, 0.8), W("ขข", 0.8, 1.6)]
+    assert len(s.segment_words(words, tokenizer=tk)) == 2
+    # never cut a particle away from its head when the merged cue fits
+    words = [W("ไม่", 0.0, 0.3), W("มี", 0.3, 0.6), W("ครับ", 0.6, 0.9)]
+    toks = {"ไม่มีครับ": ["ไม่", "มี", "ครับ"], "ไม่มี": ["ไม่", "มี"], "มีครับ": ["มี", "ครับ"],
+            "ไม่": ["ไม่"], "มี": ["มี"], "ครับ": ["ครับ"]}
+    assert len(s.segment_words(words, tokenizer=lambda t: toks[t])) == 1
 
 def test_build_cues_gap_cap_min_dur_end_limit_and_vad_clamp():
     pw = [[W("กก", 0.0, 0.5), W("ขข", 0.5, 2.4)], [W("คค", 2.4, 2.5)], [W("งง", 54.8, 56.0)]]
@@ -92,8 +114,8 @@ def test_build_cues_gap_cap_min_dur_end_limit_and_vad_clamp():
 
 def test_rebalance_short_gives_min_read_within_run_only():
     cues = [{"text": "a", "start": 1.0, "end": 1.1}, {"text": "b", "start": 1.134, "end": 1.6},
-            {"text": "c", "start": 1.634, "end": 2.4}, {"text": "d", "start": 5.0, "end": 5.1}]
+            {"text": "c", "start": 1.634, "end": 2.9}, {"text": "d", "start": 5.0, "end": 5.1}]
     s.rebalance_short(cues)
     assert all(c["end"] - c["start"] >= s.MIN_READ - 1e-9 for c in cues[:3])
-    assert cues[0]["start"] == 1.0 and abs(cues[2]["end"] - 2.4) < 1e-9
+    assert cues[0]["start"] == 1.0 and abs(cues[2]["end"] - 2.9) < 1e-9
     assert cues[3]["end"] - cues[3]["start"] < s.MIN_READ  # isolated cue untouched

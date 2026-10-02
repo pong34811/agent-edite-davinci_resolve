@@ -34,7 +34,6 @@ MAX_WORDS = 3
 MAX_CHARS = 14          # spacing (visible) characters; Thai combining marks are not counted
 MAX_DUR = 1.5
 MIN_GAP = 0.034
-MIN_DUR = 0.4           # a cue may be extended into following silence up to this length
 PAUSE_BREAK = 0.7
 END_LIMIT = 55.0
 
@@ -50,7 +49,7 @@ def visible_len(text):
 
 
 # Proper nouns that must count as one caption word (newmm splits them).
-CUSTOM_WORDS = {"ไทกะ"}
+CUSTOM_WORDS = {"ไทกะ", "โกโกนอล", "ฟรีทอล์ค"}
 _TRIE = None
 
 
@@ -83,8 +82,46 @@ def split_words(text, tokenizer=None):
     return out
 
 
+# Natural-word rule for the "<= 3 short words" cap (house style counts words a Thai
+# reader perceives, not tokenizer fragments):
+#   * newmm tokens (lone chars, combining marks, punctuation and ๆ already merged);
+#   * a SUFFIX token (sentence particle, bound auxiliary/complement or demonstrative)
+#     joins the word before it: ไป|แล้ว, บอก|ว่า, มี|นะ|ครับ, เล่า|ให้, คน|นั้น;
+#   * a PREFIX token (negation / pre-verbal auxiliary) joins the word after it:
+#     ไม่|มี, ไม่|ได้, ไม่|ใช่, จะ|ไป, ก็|ได้, ยัง|ไม่มี.
+# Suffixes are merged first, then prefixes, so ไม่|มี|นะ|ครับ is one natural word.
+# A prefix/suffix with nothing to attach to stays a word of its own.
+SUFFIX_WORDS = {
+    "ครับ", "ค่ะ", "คะ", "ค่า", "ฮะ", "จ้ะ", "จ้า", "นะ", "น่ะ", "นะคะ", "นะครับ", "เลย",
+    "อ่ะ", "อะ", "ล่ะ", "ละ", "ป่ะ", "ปะ", "เว้ย", "วะ", "ว่ะ", "แหละ", "หรอ", "เหรอ",
+    "เนี่ย", "เนี้ย", "ไหม", "มั้ย", "หรอก", "ด้วย", "แล้ว", "ว่า", "ได้", "ไป", "มา",
+    "กัน", "อีก", "เอง", "หน่อย", "สิ", "ซิ", "ดิ", "ให้", "อยู่", "ไว้", "นั้น", "นี้", "นี่"}
+PREFIX_WORDS = {"ไม่", "จะ", "ก็", "ยัง", "ต้อง", "กำลัง", "ได้"}
+
+
+def natural_words(text, tokenizer=None):
+    toks = split_words(text, tokenizer)
+    words = []
+    for t in toks:  # suffixes attach backwards
+        if words and t in SUFFIX_WORDS and words[-1] not in PREFIX_WORDS - {"ได้"}:
+            words[-1] += t
+        else:
+            words.append(t)
+    out, pend = [], ""
+    for w in words:  # prefixes attach forwards
+        if w in PREFIX_WORDS:
+            pend += w
+        else:
+            out.append(pend + w)
+            pend = ""
+    if pend:
+        out.append(pend)
+    return out
+
+
 def count_words(text, tokenizer=None):
-    return len(split_words(text, tokenizer))
+    """Natural words (see the rule above SUFFIX_WORDS)."""
+    return len(natural_words(text, tokenizer))
 
 
 def join_display(pieces):
@@ -248,41 +285,73 @@ def silence_gaps(regions, min_gap=0.5):
 
 
 # ---------------------------------------------------------------- segmentation
+TARGET_MIN = 0.8        # typical cue length band (house ruling: 0.8-1.3 s, avg ~1.0-1.3)
+TARGET_MAX = 1.3
+PHRASE_JOIN_GAP = 0.25  # adjacent curated phrases may share a cue only across a gap < this
+
+
 def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHARS, max_dur=MAX_DUR,
-                  gaps=()):
-    """DP split of a phrase's words into cues. Splits at space boundaries are free,
-    mid-chunk splits cost more, single-word cues cost a little, fewer cues preferred.
-    Mandatory split at pauses >= PAUSE_BREAK between word times, or where a VAD silence
-    gap (`gaps`) lies between two word midpoints. Returns list of word lists."""
+                  gaps=(), omitted=()):
+    """DP split of a word sequence (one or more curated phrases) into cues.
+
+    Hard breaks: word gap >= PAUSE_BREAK, a VAD silence >= PAUSE_BREAK between two word
+    midpoints, an omitted span between two words, or a curated-phrase boundary (a sentence
+    end) with gap >= PHRASE_JOIN_GAP. Limits: <= max_words natural words, <= max_chars
+    visible chars, word span <= max_dur. Cost: 1 per cue (fewer, longer cues preferred),
+    plus a penalty for cues shorter than TARGET_MIN or longer than TARGET_MAX, a penalty
+    for splitting inside a curator chunk, and a large one for cutting a prefix/suffix
+    (ไม่|มี, มี|ครับ) away from its head. Returns list of word lists."""
     n = len(words)
 
     def pause_after(k):
-        if words[k + 1].get("hard") or words[k + 1]["start"] - words[k]["end"] >= PAUSE_BREAK:
+        a, b = words[k], words[k + 1]
+        gap = b["start"] - a["end"]
+        if gap >= PAUSE_BREAK:
             return True
-        m0 = (words[k]["start"] + words[k]["end"]) / 2
-        m1 = (words[k + 1]["start"] + words[k + 1]["end"]) / 2
-        return any(m0 <= a and b <= m1 + 0.3 for a, b in gaps)
+        if b.get("phrase") != a.get("phrase") and gap >= PHRASE_JOIN_GAP:
+            return True          # curated phrases join only across a short gap
+        m0 = (a["start"] + a["end"]) / 2
+        m1 = (b["start"] + b["end"]) / 2
+        if any(m0 <= g0 and g1 <= m1 + 0.3 for g0, g1 in gaps):
+            return True
+        return any(m0 < (o0 + o1) / 2 < m1 for o0, o1 in omitted)
+
+    def split_cost(i):  # cost of a cue boundary before words[i]
+        if i == 0 or i == n:
+            return 0.0
+        prev, cur = words[i - 1]["text"], words[i]["text"]
+        cost = 0.0
+        if prev in PREFIX_WORDS or cur in SUFFIX_WORDS:
+            cost += 3.0
+        if words[i].get("phrase") == words[i - 1].get("phrase"):
+            if not words[i]["boundary"]:
+                cost += 5.0          # inside a curator chunk
+            elif not words[i].get("hard"):
+                cost += 0.3          # at a space; "|" boundaries are free
+        return cost
+
+    def join_cost(grp):  # crossing a curated-phrase boundary inside one cue (rescue only)
+        return 3.5 * sum(1 for a, b in zip(grp, grp[1:]) if a.get("phrase") != b.get("phrase"))
+
     best = [None] * (n + 1)
     best[0] = (0.0, None)
     for j in range(1, n + 1):
         for i in range(j - 1, -1, -1):
-            if any(pause_after(k) for k in range(i, j - 1)):
+            if i < j - 1 and pause_after(i):
                 break
             grp = words[i:j]
             txt = join_display([w["text"] for w in grp])
-            if j - i > 1 and (j - i > max_words or count_words(txt, tokenizer) > max_words or visible_len(txt) > max_chars
-                              or grp[-1]["end"] - grp[0]["start"] > max_dur):
+            span = grp[-1]["end"] - grp[0]["start"]
+            if j - i > 1 and (count_words(txt, tokenizer) > max_words or visible_len(txt) > max_chars
+                              or span > max_dur):
                 break
             if best[i] is None:
                 continue
-            cost = best[i][0] + 1.0
-            if i > 0 and not words[i]["boundary"]:
-                gap = words[i]["start"] - words[i - 1]["end"]
-                cost += 0.5 if gap >= 0.25 else 3.0
-            if j - i == 1 and visible_len(txt) <= 4:
-                cost += 0.6
-            if grp[-1]["end"] - grp[0]["start"] < 0.35:
-                cost += 0.8
+            cost = best[i][0] + 1.0 + split_cost(j) + join_cost(grp)
+            if span < TARGET_MIN:
+                cost += 3.0 * (TARGET_MIN - span)
+            elif span > TARGET_MAX:
+                cost += 0.5 * (span - TARGET_MAX)
             if best[j] is None or cost < best[j][0]:
                 best[j] = (cost, i)
     groups, j = [], n
@@ -293,13 +362,13 @@ def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHAR
     return groups[::-1]
 
 
-MIN_READ = 0.3
+MIN_READ = 0.5          # floor for a cue inside a back-to-back run (fast speech)
 
 
 def rebalance_short(cues, end_limit=END_LIMIT):
-    """Within runs of back-to-back cues (word-time boundaries are approximate), move a
+    """Within runs of back-to-back cues (word-time boundaries are approximate), move
     shared boundaries so very short cues get MIN_READ seconds, taking time from longer
-    cues of the same run; the run's outer start/end never move."""
+    cues of the same run (or up to 0.3 s of the silence after the run)."""
     k = 0
     while k < len(cues):
         j = k
@@ -311,32 +380,42 @@ def rebalance_short(cues, end_limit=END_LIMIT):
             continue
         total = run[-1]["end"] - run[0]["start"] - MIN_GAP * (len(run) - 1)
         d = [max(c["end"] - c["start"], 0.0) for c in run]
-        nd = [max(x, MIN_READ) for x in d]
-        excess = sum(nd) - total
-        slack = sum(x - MIN_READ for x in nd if x > MIN_READ)
-        if excess > slack:  # borrow up to 0.3 s of the silence after the run
+        need = sum(max(x, MIN_READ) for x in d) - total
+        slack = sum(x - MIN_READ for x in d if x > MIN_READ)
+        if need > slack:  # borrow up to 0.4 s of the silence after the run
             nxt = cues[k]["start"] - MIN_GAP if k < len(cues) else end_limit
-            room = max(0.0, min(0.3, nxt - run[-1]["end"], end_limit - run[-1]["end"]))
-            take = min(room, excess - slack)
-            total += take
-            excess -= take
+            room = max(0.0, min(0.4, nxt - run[-1]["end"], end_limit - run[-1]["end"]))
+            total += min(room, need - slack)
+        floor = min(MIN_READ, total / len(run))  # best achievable floor
+        nd = [max(x, floor) for x in d]
+        excess = sum(nd) - total
         if excess > 0:
-            if slack < excess:
+            sl = sum(x - floor for x in nd if x > floor)
+            if sl <= 0:
                 continue
-            nd = [x - (x - MIN_READ) * excess / slack if x > MIN_READ else x for x in nd]
+            nd = [x - (x - floor) * excess / sl if x > floor else x for x in nd]
+        elif excess < 0:
+            nd[-1] += -excess if total > sum(d) else 0
         t = run[0]["start"]
         for c, x in zip(run, nd):
             c["start"], c["end"] = t, t + x
             t += x + MIN_GAP
 
 
-def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None):
+MAX_TAIL = 0.6          # a short cue may stay up to this long after its last word
+
+
+def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None, omitted=()):
+    words = []
+    for pi, pw in enumerate(phrases_words):
+        for w in pw:
+            words.append(dict(w, phrase=pi))
+    words.sort(key=lambda w: w["start"])
+    gaps = silence_gaps(regions, PAUSE_BREAK) if regions else ()
     cues = []
-    gaps = silence_gaps(regions) if regions else ()
-    for words in phrases_words:
-        for grp in segment_words(words, tokenizer, gaps=gaps):
-            start, end = clamp_to_speech(grp[0], grp[-1], regions)
-            cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": end})
+    for grp in segment_words(words, tokenizer, gaps=gaps, omitted=[(o["t0"], o["t1"]) for o in omitted]):
+        start, end = clamp_to_speech(grp[0], grp[-1], regions)
+        cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": end})
     cues = sorted((c for c in cues if c["start"] < end_limit - 0.2), key=lambda c: c["start"])
     for k, c in enumerate(cues):
         nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
@@ -345,12 +424,12 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None)
     for k, c in enumerate(cues):
         nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
         c["end"] = min(c["end"], c["start"] + MAX_DUR, nxt - MIN_GAP, end_limit)
-        if c["end"] - c["start"] < MIN_DUR:
-            c["end"] = min(c["start"] + MIN_DUR, nxt - MIN_GAP, end_limit)
+        if c["end"] - c["start"] < TARGET_MIN:  # extend into following silence, bounded
+            c["end"] = max(c["end"], min(c["start"] + TARGET_MIN, c["end"] + MAX_TAIL,
+                                         nxt - MIN_GAP, end_limit))
         c["start"] = round(c["start"], 3)
         c["end"] = round(c["end"], 3)
     return cues
-
 
 def write_srt(path, cues):
     lines = []
@@ -462,7 +541,7 @@ def build_job(ws, n, tokenizer=None):
         p["_start"], p["_end"] = words[0]["start"], words[-1]["end"]
         pw.append(words)
     use_vad = cur.get("vad_clamp", True)
-    cues = build_cues(pw, regions if use_vad else None, tokenizer=tokenizer)
+    cues = build_cues(pw, regions if use_vad else None, tokenizer=tokenizer, omitted=cur.get("omitted", []))
     speech_start = regions[0][0] if regions else None
     out = os.path.join(ws, "srt", "job%d.srt" % n)
     write_srt(out, cues)
