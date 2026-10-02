@@ -15,7 +15,11 @@ Curation input: WORKSPACE/srt/job<N>.curation.json
      "omitted": [{"t0": 0.3, "t1": 3.0, "reason": "..."}],
      "uncertain": [{"term": "...", "t": 12.0, "note": "..."}],
      "changes": ["..."],
-     "custom_words": ["..."]}   # optional extra one-word proper nouns for the tokenizer
+     "custom_words": ["..."],   # optional extra one-word proper nouns for the tokenizer
+     "vad_clamp": true}         # optional; false = silero misses this job's speech (no VAD
+                                # snapping, no VAD speech-start check; use inspect check)
+A phrase may carry "split_before": true - its first word never shares a cue with the
+previous phrase (no DP join, no readable-floor merge across that boundary).
 A space inside phrase text marks a natural phrase boundary (preferred cue split);
 it is never rendered between Thai characters. `src` names an ASR pass in
 asr/job<N>.json or asr/job<N>_extra.json (`win` selects one overlapping window of
@@ -324,6 +328,8 @@ def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHAR
     def pause_after(k):
         a, b = words[k], words[k + 1]
         gap = b["start"] - a["end"]
+        if b.get("split_before"):
+            return True          # curator forced a cue break before this phrase
         if gap >= PAUSE_BREAK:
             return True
         if b.get("phrase") != a.get("phrase") and gap >= PHRASE_JOIN_GAP:
@@ -410,9 +416,12 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None,
     for grp in segment_words(words, tokenizer, gaps=gaps, omitted=[(o["t0"], o["t1"]) for o in omitted]):
         start, end = clamp_to_speech(grp[0], grp[-1], regions)
         se = speech_end(end, start, regions)
-        cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": se,
-                     "speech_end": se, "speech_start": start,
-                     "phrases": {w["phrase"] for w in grp}})
+        cue = {"text": join_display([w["text"] for w in grp]), "start": start, "end": se,
+               "speech_end": se, "speech_start": start,
+               "phrases": {w["phrase"] for w in grp}}
+        if grp[0].get("split_before"):
+            cue["split_before"] = True
+        cues.append(cue)
     cues = sorted((c for c in cues if c["start"] < end_limit - 0.2), key=lambda c: c["start"])
     for k, c in enumerate(cues):
         nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
@@ -521,6 +530,8 @@ def enforce_floor(cues, end_limit=END_LIMIT, tokenizer=None):
                 continue
             a, b = (cues[j], c) if j < k else (c, cues[j])
             gap = b["start"] - a["end"]
+            if b.get("split_before"):
+                continue         # curator-forced break (phrase "split_before")
             if not (a.get("phrases", set()) & b.get("phrases", set()) or gap < PHRASE_JOIN_GAP):
                 continue
             text = join_display([a["text"], b["text"]])
@@ -533,6 +544,8 @@ def enforce_floor(cues, end_limit=END_LIMIT, tokenizer=None):
                       "speech_start": a["speech_start"],
                       "speech_end": max(a["speech_end"], b["speech_end"]),
                       "phrases": a.get("phrases", set()) | b.get("phrases", set())}
+            if a.get("split_before"):
+                merged["split_before"] = True
             lo = min(j, k)
             cues[lo:lo + 2] = [merged]
             k = max(lo - 1, 0)
@@ -759,6 +772,8 @@ def build_job(ws, n, tokenizer=None, end_limit=None):
         src = source_chars(segs, p["t0"], p["t1"], p.get("win")) if segs else []
         timed = align_times(p["text"], src, p["t0"], p["t1"])
         words = phrase_words(p["text"], timed, tokenizer)
+        if p.get("split_before"):
+            words[0]["split_before"] = True
         for bad in lint_phrase(p["text"], tokenizer):
             print("  lint job %d: chunk %r exceeds one cue (split mid-chunk)" % (n, bad))
         p["_start"], p["_end"] = words[0]["start"], words[-1]["end"]
@@ -770,7 +785,9 @@ def build_job(ws, n, tokenizer=None, end_limit=None):
     use_vad = cur.get("vad_clamp", True)
     cues = build_cues(pw, regions if use_vad else None, end_limit=end_limit, tokenizer=tokenizer,
                       omitted=cur.get("omitted", []))
-    speech_start = regions[0][0] if regions else None
+    # With vad_clamp false the silero map is known to miss this job's speech, so its first
+    # onset is no start reference; subtitle_inspect check runs the energy-onset check instead.
+    speech_start = regions[0][0] if regions and use_vad else None
     out = os.path.join(ws, "srt", "job%d.srt" % n)
     write_srt(out, cues)
     errs = validate_file(out, speech_start=speech_start, end_limit=end_limit)

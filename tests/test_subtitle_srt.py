@@ -207,3 +207,43 @@ def test_start_snaps_forward_to_nearby_vad_onset_only():
     tiny = [C("กก", 0.75, 0.95, 0), C("ขข", 1.5, 2.0, 1)]                # ends before the onset
     s.snap_start_into_speech(tiny, regions)
     assert tiny[0]["start"] == 1.0 and abs(tiny[0]["end"] - 1.1) < 1e-9 and tiny[0]["end"] < tiny[1]["start"]
+
+
+def test_max_chars_counts_spacing_glyphs_not_code_points():
+    # MAX_CHARS counts spacing characters: Thai above/below vowels and tone marks are not
+    # counted, so 'แต่เพื่อนไม่รอดอ่ะ' (18 code points) is 13; a 15-glyph cue always fails.
+    assert len("แต่เพื่อนไม่รอดอ่ะ") == 18 and s.visible_len("แต่เพื่อนไม่รอดอ่ะ") == 13
+    tk = lambda t: [t]  # noqa: E731
+    errs = s.validate_cues([blk(1, 1.0, 2.0, "กขคงจฉชซฌญฎฏฐฑฒ")], tokenizer=tk)
+    assert any("15 chars > 14" in e for e in errs)
+
+
+def test_split_before_forces_break_and_blocks_floor_merge():
+    tk = lambda t: [t]  # noqa: E731
+    a, b = [W("กก", 1.0, 1.2)], [W("ขข", 1.2, 1.6)]
+    assert len(s.build_cues([a, b], tokenizer=tk)) == 1          # joined (gap < PHRASE_JOIN_GAP)
+    b2 = [dict(W("ขขขขขขขข", 1.2, 1.9), split_before=True)]
+    cues = s.build_cues([a, b2], tokenizer=tk)
+    assert [c["text"] for c in cues] == ["กก", "ขขขขขขขข"]  # forced break, no floor merge
+    assert cues[0]["end"] - cues[0]["start"] >= 0.35 - 1e-9        # floor met by delaying the next
+    assert cues[1]["start"] <= 1.2 + s.BORROW_MAX + 1e-9 and cues[1]["start"] - cues[0]["end"] >= s.MIN_GAP - 1e-9
+
+
+def test_vad_clamp_false_drops_vad_speech_start_check(tmp_path):
+    import json
+    (tmp_path / "asr").mkdir()
+    (tmp_path / "srt").mkdir()
+    (tmp_path / "jobs.json").write_text(json.dumps([{"job": 1, "duration_s": 55.0}]), encoding="utf-8")
+    (tmp_path / "asr" / "job1.json").write_text(json.dumps({"passes": {"raw": {"segments": []}}}), encoding="utf-8")
+    (tmp_path / "asr" / "job1_extra.json").write_text(json.dumps(
+        {"passes": {}, "vad_raw": [[10.7, 10.8]], "vad_voice": []}), encoding="utf-8")
+    cur = {"job": 1, "phrases": [{"text": "โอ้ว", "t0": 10.38, "t1": 10.7}],
+           "no_vad_justified": [], "omitted": []}
+    p = tmp_path / "srt" / "job1.curation.json"
+    p.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
+    _, cues, errs = s.build_job(str(tmp_path), 1)
+    assert any("before speech start" in e for e in errs)          # VAD onset 10.7 is the reference
+    cur["vad_clamp"] = False
+    p.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
+    _, cues, errs = s.build_job(str(tmp_path), 1)
+    assert errs == [] and cues[0]["start"] == 10.38
