@@ -126,7 +126,7 @@ def split_words(text, tokenizer=None):
             if not t.strip():
                 continue
             lone = len(t) == 1 and THAI.match(t)
-            if words and (lone or asr.COMBINING_RE.match(t) or asr._is_punct_only(t) or t == "ๆ"):
+            if words and (lone or asr.COMBINING_RE.match(t) or asr._is_punct_only(t) or set(t) == {"ๆ"}):
                 words[-1] += t
             else:
                 words.append(t)

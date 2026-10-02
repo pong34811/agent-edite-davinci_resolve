@@ -290,6 +290,18 @@ def test_count_maiyamok_is_opt_in_and_counts_spoken_repeats():
         s.set_job_rules((), False)
 
 
+def test_multiple_maiyamok_token_stays_on_its_word():
+    # newmm returns 'ไม่ๆๆ' as ['ไม่', 'ๆๆ']; a run of ๆ must join the word, never be a word.
+    assert s.split_words("อ๋อไม่ๆๆ") == ["อ๋อ", "ไม่ๆๆ"]
+    assert s.split_words("ข้าวๆๆๆ") == ["ข้าวๆๆๆ"] and s.split_words("เบาๆ") == ["เบาๆ"]
+    try:
+        s.set_job_rules((), True)
+        assert s.count_words("ไม่ๆๆ") == 3 and s.count_words("อ๋อไม่ๆๆ") == 4
+    finally:
+        s.set_job_rules((), False)
+    assert s.count_words("ไม่ๆๆ") == 1
+
+
 def test_job_rules_precedence_and_custom_words_do_not_leak(tmp_path):
     import json
     (tmp_path / "srt").mkdir()
