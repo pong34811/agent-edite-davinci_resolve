@@ -368,46 +368,6 @@ def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHAR
     return groups[::-1]
 
 
-MIN_READ = 0.5          # floor for a cue inside a back-to-back run (fast speech)
-
-
-def rebalance_short(cues, end_limit=END_LIMIT):
-    """Within runs of back-to-back cues (word-time boundaries are approximate), move
-    shared boundaries so very short cues get MIN_READ seconds, taking time from longer
-    cues of the same run (or up to 0.3 s of the silence after the run)."""
-    k = 0
-    while k < len(cues):
-        j = k
-        while j + 1 < len(cues) and cues[j + 1]["start"] - cues[j]["end"] <= MIN_GAP + 0.25:
-            j += 1
-        run = cues[k:j + 1]
-        k = j + 1
-        if len(run) < 2 or all(c["end"] - c["start"] >= MIN_READ for c in run):
-            continue
-        total = run[-1]["end"] - run[0]["start"] - MIN_GAP * (len(run) - 1)
-        d = [max(c["end"] - c["start"], 0.0) for c in run]
-        need = sum(max(x, MIN_READ) for x in d) - total
-        slack = sum(x - MIN_READ for x in d if x > MIN_READ)
-        if need > slack:  # borrow up to 0.4 s of the silence after the run
-            nxt = cues[k]["start"] - MIN_GAP if k < len(cues) else end_limit
-            room = max(0.0, min(0.4, nxt - run[-1]["end"], end_limit - run[-1]["end"]))
-            total += min(room, need - slack)
-        floor = min(MIN_READ, total / len(run))  # best achievable floor
-        nd = [max(x, floor) for x in d]
-        excess = sum(nd) - total
-        if excess > 0:
-            sl = sum(x - floor for x in nd if x > floor)
-            if sl <= 0:
-                continue
-            nd = [x - (x - floor) * excess / sl if x > floor else x for x in nd]
-        elif excess < 0:
-            nd[-1] += -excess if total > sum(d) else 0
-        t = run[0]["start"]
-        for c, x in zip(run, nd):
-            c["start"], c["end"] = t, t + x
-            t += x + MIN_GAP
-
-
 LINGER = 0.08           # a cue may stay at most this long after its speech end (rule: <= 0.1 s)
 VAD_TAIL = 0.4          # speech end may follow the VAD region past the last word by this much
 
@@ -438,56 +398,24 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None,
         start, end = clamp_to_speech(grp[0], grp[-1], regions)
         se = speech_end(end, start, regions)
         cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": se,
-                     "speech_end": se, "phrases": {w["phrase"] for w in grp}})
+                     "speech_end": se, "speech_start": start,
+                     "phrases": {w["phrase"] for w in grp}})
     cues = sorted((c for c in cues if c["start"] < end_limit - 0.2), key=lambda c: c["start"])
     for k, c in enumerate(cues):
         nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
         c["end"] = min(c["speech_end"] + LINGER, c["start"] + MAX_DUR, nxt - MIN_GAP, end_limit)
         c["start"] = round(c["start"], 3)
         c["end"] = round(c["end"], 3)
+        c["speech_start"] = c["start"]
     if regions:
         attach_adjacent_speech(cues, regions, end_limit)
-    for _ in range(2):  # second round lets a run's last cue extend into silence after water-fill
-        enforce_floor(cues, end_limit, tokenizer)
-        floor_runs(cues)
+    enforce_floor(cues, end_limit, tokenizer)
     return cues
 
 
-def floor_runs(cues):
-    """Cascade for back-to-back runs (gap ~MIN_GAP) where the neighbours of a short cue are
-    short too: water-fill the run so every cue gets min(READ_FLOOR, run_time / n), taking
-    time from the longer cues. The run start never moves; its end may move into following
-    silence only when even an evened-out run is below READ_FLOOR. Cues never overlap."""
-    k = 0
-    while k < len(cues):
-        j = k
-        while j + 1 < len(cues) and cues[j + 1]["start"] - cues[j]["end"] <= MIN_GAP + 0.005:
-            j += 1
-        run, k = cues[k:j + 1], j + 1
-        if len(run) < 2 or all(c["end"] - c["start"] >= READ_FLOOR - 1e-6 for c in run):
-            continue
-        total = run[-1]["end"] - run[0]["start"] - MIN_GAP * (len(run) - 1)
-        d = [c["end"] - c["start"] for c in run]
-        short = READ_FLOOR * len(run) - total
-        if short > 0:  # run too tight even when evened out: let it run into the silence after
-            nxt = cues[k]["start"] - MIN_GAP if k < len(cues) else END_LIMIT
-            total += max(0.0, min(short, nxt - run[-1]["end"]))
-        fl = min(READ_FLOOR, total / len(run))
-        nd = [max(x, fl) for x in d]
-        excess = sum(nd) - total
-        sl = sum(x - fl for x in nd if x > fl)
-        if excess > 0 and sl > 0:
-            nd = [x - (x - fl) * min(1.0, excess / sl) if x > fl else x for x in nd]
-        t = run[0]["start"]
-        for c, x, old in zip(run, nd, d):
-            if x > old + 1e-6:
-                c["floor"] = True
-            c["start"], c["end"] = round(t, 3), round(t + x, 3)
-            t += x + MIN_GAP
-
-
 READ_FLOOR = 0.35       # ruling R6: no cue shorter than this unless neighbours block it
-BORROW_MAX = 0.2        # max boundary shift taken from a neighbouring cue for the floor
+BORROW_MAX = 0.2        # max delay of a neighbour's start past its first word (floor room)
+EARLY_TOL = 0.05        # ruling R7: no cue may start more than this before its speech
 
 
 def _fits(text, span, tokenizer=None):
@@ -495,15 +423,52 @@ def _fits(text, span, tokenizer=None):
             and span <= MAX_DUR + 1e-9)
 
 
+def _end_cap(c, end_limit):
+    """Latest end allowed: speech end + LINGER, or start + READ_FLOOR for a floor cue."""
+    return min(max(c["speech_end"] + LINGER, c["start"] + READ_FLOOR), c["start"] + MAX_DUR, end_limit)
+
+
+def _extend_end(cues, j, amt, end_limit, depth=0):
+    """Move cue j's end later by up to amt (free gap first, then by delaying the next cue's
+    start). Returns the amount gained. A start is never moved earlier (ruling R7)."""
+    c = cues[j]
+    amt = min(amt, _end_cap(c, end_limit) - c["end"])
+    if amt <= 1e-6:
+        return 0.0
+    nxt = cues[j + 1]["start"] if j + 1 < len(cues) else end_limit + MIN_GAP
+    free = nxt - MIN_GAP - c["end"]
+    if free < amt and j + 1 < len(cues) and depth < 4:
+        _delay_start(cues, j + 1, amt - max(free, 0.0), end_limit, depth + 1)
+        free = cues[j + 1]["start"] - MIN_GAP - c["end"]
+    take = max(0.0, min(amt, free))
+    c["end"] = round(c["end"] + take, 3)
+    return take
+
+
+def _delay_start(cues, j, amt, end_limit, depth=0):
+    """Delay cue j's start by up to amt, never more than BORROW_MAX after its first word and
+    never leaving it shorter than READ_FLOOR (its end may move later to compensate)."""
+    c = cues[j]
+    amt = min(amt, c["speech_start"] + BORROW_MAX - c["start"])
+    if amt <= 1e-6:
+        return 0.0
+    slack = (c["end"] - c["start"]) - READ_FLOOR
+    if slack < amt:
+        _extend_end(cues, j, amt - max(slack, 0.0), end_limit, depth)
+        slack = (c["end"] - c["start"]) - READ_FLOOR
+    amt = max(0.0, min(amt, slack))
+    c["start"] = round(c["start"] + amt, 3)
+    return amt
+
+
 def enforce_floor(cues, end_limit=END_LIMIT, tokenizer=None):
-    """Readable floor. A cue shorter than READ_FLOOR is (a) merged with an adjacent cue of
-    the same phrase or across a gap < PHRASE_JOIN_GAP when the merged cue still obeys the
-    word/char/duration caps (the shorter result wins), else (b) its end is extended to
-    start + READ_FLOOR, never closer than MIN_GAP to the next cue; if the next cue blocks
-    it, (c) the shared boundary moves later by <= BORROW_MAX when the next cue stays
-    >= READ_FLOOR, then (d) its start moves earlier the same way at the expense of the
-    previous cue. Cues never overlap. A raised cue is flagged "floor": the linger limit is
-    waived for it (only up to READ_FLOOR total)."""
+    """Readable floor (ruling R6) under the no-early-start rule (ruling R7). A cue shorter than
+    READ_FLOOR is (a) merged with an adjacent cue of the same phrase or across a gap
+    < PHRASE_JOIN_GAP when the merged cue still obeys the word/char/duration caps (the
+    shorter result wins), else (b) its end is extended to start + READ_FLOOR into the free
+    gap, and if the next cue blocks, that cue's start is delayed (<= BORROW_MAX after its
+    first word, keeping it >= READ_FLOOR, cascading). No start ever moves earlier; a cue
+    still short afterwards is blocked on both sides and stays short. Cues never overlap."""
     k = 0
     while k < len(cues):
         c = cues[k]
@@ -525,35 +490,15 @@ def enforce_floor(cues, end_limit=END_LIMIT, tokenizer=None):
             _, j, text = min(opts)
             a, b = (cues[j], c) if j < k else (c, cues[j])
             merged = {"text": text, "start": a["start"], "end": b["end"],
+                      "speech_start": a["speech_start"],
                       "speech_end": max(a["speech_end"], b["speech_end"]),
                       "phrases": a.get("phrases", set()) | b.get("phrases", set())}
             lo = min(j, k)
             cues[lo:lo + 2] = [merged]
             k = max(lo - 1, 0)
             continue
-        nxt = cues[k + 1]["start"] - MIN_GAP if k + 1 < len(cues) else end_limit
-        new = round(min(c["start"] + READ_FLOOR, nxt), 3)
-        if new > c["end"]:
-            c["end"] = new
+        if _extend_end(cues, k, READ_FLOOR - (c["end"] - c["start"]), end_limit) > 0:
             c["floor"] = True
-        need = READ_FLOOR - (c["end"] - c["start"])
-        if need > 1e-6 and k + 1 < len(cues):  # (c) borrow from a long next cue: shift the
-            n = cues[k + 1]                     # shared boundary later by <= BORROW_MAX
-            take = min(need, BORROW_MAX, (n["end"] - n["start"]) - READ_FLOOR)
-            if take > 1e-6:
-                n["start"] = round(n["start"] + take, 3)
-                c["end"] = round(n["start"] - MIN_GAP, 3)
-                c["floor"] = True
-                need = READ_FLOOR - (c["end"] - c["start"])
-        if need > 1e-6 and k > 0:               # (d) borrow from an adjacent long previous
-            p = cues[k - 1]                     # cue: start earlier by <= BORROW_MAX
-            room = c["start"] - MIN_GAP - p["end"]           # free time already between them
-            take = min(need, BORROW_MAX)
-            cut = max(0.0, take - max(room, 0.0))            # part taken from the previous cue
-            if room < BORROW_MAX and (p["end"] - p["start"]) - cut >= READ_FLOOR:
-                c["start"] = round(c["start"] - take, 3)
-                p["end"] = round(min(p["end"], c["start"] - MIN_GAP), 3)
-                c["floor"] = True
         k += 1
 
 
@@ -576,6 +521,7 @@ def attach_adjacent_speech(cues, regions, end_limit=END_LIMIT):
                 nxt = cues[k + 1]["start"] - MIN_GAP if k + 1 < len(cues) else end_limit
                 if 0 <= c["start"] - y <= ATTACH_GAP and c["start"] > prv:
                     c["start"] = round(max(x, prv, c["end"] - MAX_DUR), 3)
+                    c["speech_start"] = min(c.get("speech_start", c["start"]), c["start"])
                     break
                 if 0 <= x - c["end"] <= ATTACH_GAP and c["end"] < nxt:
                     new = round(min(y, nxt, c["start"] + MAX_DUR), 3)
@@ -614,7 +560,9 @@ def uncovered_speech(regions, cues, omitted=(), min_len=0.3):
 
 
 def cue_speech_checks(cues, regions):
-    """Linger and no-speech checks needing the VAD map (build-time, not SRT-only).
+    """Linger, early/late-start and no-speech checks needing word/VAD times (build-time).
+    Start: never > EARLY_TOL before the cue's first word/VAD speech (R7), never > BORROW_MAX
+    after it.
     Linger is strict (<= 0.1 s after speech) for every cue longer than READ_FLOOR; a cue of
     at most READ_FLOOR may linger (ruling R6: the readable floor beats the linger limit, and
     only floor handling can make such a short cue outlast its speech)."""
@@ -624,6 +572,10 @@ def cue_speech_checks(cues, regions):
             errs.append("cue %d lingers %.2fs after speech" % (k, c["end"] - c["speech_end"]))
         if regions and _overlap(c["start"], c["end"], regions) <= 0:
             errs.append("cue %d %r overlaps no VAD speech" % (k, c["text"]))
+        if c["start"] < c["speech_start"] - EARLY_TOL - 1e-6:
+            errs.append("cue %d starts %.2fs before its speech" % (k, c["speech_start"] - c["start"]))
+        if c["start"] > c["speech_start"] + BORROW_MAX + 1e-6:
+            errs.append("cue %d starts %.2fs after its first word" % (k, c["start"] - c["speech_start"]))
     return errs
 
 def write_srt(path, cues):

@@ -112,15 +112,6 @@ def test_build_cues_gap_cap_min_dur_end_limit_and_vad_clamp():
     assert cues[-1]["end"] <= 55.0
 
 
-def test_rebalance_short_gives_min_read_within_run_only():
-    cues = [{"text": "a", "start": 1.0, "end": 1.1}, {"text": "b", "start": 1.134, "end": 1.6},
-            {"text": "c", "start": 1.634, "end": 2.9}, {"text": "d", "start": 5.0, "end": 5.1}]
-    s.rebalance_short(cues)
-    assert all(c["end"] - c["start"] >= s.MIN_READ - 1e-9 for c in cues[:3])
-    assert cues[0]["start"] == 1.0 and abs(cues[2]["end"] - 2.9) < 1e-9
-    assert cues[3]["end"] - cues[3]["start"] < s.MIN_READ  # isolated cue untouched
-
-
 def test_repeated_tokens_count_individually():
     toks = {"ไม่ไม่ไม่ใช่": ["ไม่", "ไม่", "ไม่", "ใช่"], "ไม่มีอะไรอ่ะไม่มี": ["ไม่", "มี", "อะไร", "อ่ะ", "ไม่", "มี"],
             "ไม่มีนะครับ": ["ไม่", "มี", "นะ", "ครับ"]}
@@ -150,19 +141,26 @@ def test_adjacent_vad_speech_attached_far_speech_reported():
     assert logged[0][2] == "laughter"
 
 
-def test_read_floor_merges_same_phrase_else_extends_unless_blocked():
+def C(text, a, b, ph, ss=None):
+    return {"text": text, "start": a, "end": b, "speech_end": b, "speech_start": a if ss is None else ss,
+            "phrases": {ph}}
+
+
+def test_read_floor_merges_same_phrase_else_extends_never_starts_early():
     tk = lambda t: [t[i:i + 2] for i in range(0, len(t), 2)]  # noqa: E731
-    cues = [{"text": "กก", "start": 1.0, "end": 1.15, "speech_end": 1.15, "phrases": {0}},
-            {"text": "ขข", "start": 1.2, "end": 1.8, "speech_end": 1.8, "phrases": {0}}]
+    cues = [C("กก", 1.0, 1.15, 0), C("ขข", 1.2, 1.8, 0)]
     s.enforce_floor(cues, tokenizer=tk)
     assert len(cues) == 1 and cues[0]["text"] == "กกขข" and cues[0]["end"] == 1.8
-    # different phrase, big gap -> extend; blocked by the next cue start -> stays short
-    cues = [{"text": "กก", "start": 1.0, "end": 1.1, "speech_end": 1.1, "phrases": {0}},
-            {"text": "ขข", "start": 1.5, "end": 2.0, "speech_end": 2.0, "phrases": {1}},
-            {"text": "คค", "start": 3.0, "end": 3.1, "speech_end": 3.1, "phrases": {2}},
-            {"text": "งงงงงงงงงงงงงงงง", "start": 3.3, "end": 3.7, "speech_end": 3.7, "phrases": {3}}]
+    long16 = "งงงงงงงงงงงงงงงง"
+    cues = [C("กก", 1.0, 1.1, 0), C("ขข", 1.5, 2.0, 1), C("คค", 3.0, 3.1, 2), C(long16, 3.3, 3.7, 3)]
     s.enforce_floor(cues, tokenizer=tk)
-    assert abs(cues[0]["end"] - 1.35) < 1e-9 and cues[0]["floor"]
-    # next cue can spare only 0.05 s (stays >= 0.35 s); the cue stays short, gap kept, no overlap
-    assert abs(cues[3]["start"] - 3.35) < 1e-9 and abs(cues[2]["end"] - (3.35 - s.MIN_GAP)) < 1e-9
-    assert cues[2]["end"] - cues[2]["start"] < s.READ_FLOOR
+    assert abs(cues[0]["end"] - 1.35) < 1e-9 and cues[0]["floor"]          # free gap extension
+    assert abs(cues[2]["end"] - cues[2]["start"] - 0.35) < 1e-6            # next cue delayed...
+    n = cues[3]
+    assert n["start"] <= n["speech_start"] + s.BORROW_MAX + 1e-9 and n["end"] - n["start"] >= 0.35 - 1e-9
+    assert all(c["start"] >= c["speech_start"] - 1e-9 for c in cues)       # ...no early starts
+    # blocked on both sides: next cue already at its +0.2 s limit -> cue stays short
+    cues = [C("กก", 1.0, 1.1, 0), C(long16, 1.334, 1.9, 1, ss=1.134), C("ขข", 1.934, 2.6, 2)]
+    s.enforce_floor(cues, tokenizer=tk)
+    assert cues[0]["end"] - cues[0]["start"] < 0.35 and cues[0]["start"] == 1.0
+    assert s.cue_speech_checks(cues, None) == []
