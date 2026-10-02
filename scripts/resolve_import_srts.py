@@ -3,7 +3,7 @@
 Designed to be exec'd inside the Resolve MCP `run_script_unsafe` sandbox, where
 `resolve` is pre-injected:
 
-    JOB = 1; PHASE = "import"   # or "verify" / "rollback" / "snapshot"
+    JOB = 1; PHASE = "import"   # or "verify" / "rollback" / "snapshot" / "baseline"
     exec(open(r".../scripts/resolve_import_srts.py", encoding="utf-8").read())
 
 Rules (thai-subtitles-resolve skill): AddTrack("subtitle") first, bare
@@ -22,8 +22,12 @@ import os
 import re
 import time
 
-W = r"C:\Users\warit\Desktop\agent-edite-davinci_resolve\.claude\worktrees\video-transcription-subtitles-d559c9\.superpowers\sdd\2026-10-02-freetalk1-subtitles"
-BACKUP = os.path.join(W, "backup", "FreeTalk_1_before_subs.drp")
+_G = globals()
+# Workspace / backup / expected project can be preset by the caller before exec
+# (WS_DIR, BACKUP_NAME, EXPECTED_PROJECT); defaults target the FreeTalk_2 run.
+W = _G.get("WS_DIR") or r"C:\Users\warit\Desktop\agent-edite-davinci_resolve\.claude\worktrees\video-transcription-subtitles-d559c9\.superpowers\sdd\2026-10-02-freetalk2-subtitles"
+BACKUP = os.path.join(W, "backup", _G.get("BACKUP_NAME") or "FreeTalk_2_before_subs.drp")
+EXPECTED_PROJECT = _G.get("EXPECTED_PROJECT") or "tygarina_2026-09-30_FreeTalk_2"
 SPACING = 1.3
 TOL = 1
 
@@ -87,6 +91,14 @@ def _backup_error():
     return "ABORT: backup .drp missing or empty (%s)" % BACKUP
 
 
+def _project_error(proj):
+    """None if the loaded project is EXPECTED_PROJECT (or an unnamed fake), else a message."""
+    name = proj.GetName() if hasattr(proj, "GetName") else None
+    if EXPECTED_PROJECT and name is not None and name != EXPECTED_PROJECT:
+        return "ABORT: loaded project %r is not %r" % (name, EXPECTED_PROJECT)
+    return None
+
+
 def _timeline(proj, job_info):
     for i in range(1, proj.GetTimelineCount() + 1):
         t = proj.GetTimelineByIndex(i)
@@ -119,6 +131,11 @@ def do_import(job):
         return rec
     pm = resolve.GetProjectManager()
     proj = pm.GetCurrentProject()
+    err = _project_error(proj)
+    if err:
+        rec["status"] = err
+        _merge(job, rec)
+        return rec
     mp = proj.GetMediaPool()
     srt_path = os.path.join(W, "srt", "job%d.srt" % job)
     rec["srt"] = srt_path
@@ -251,6 +268,11 @@ def do_rollback(job):
         return rec
     pm = resolve.GetProjectManager()
     proj = pm.GetCurrentProject()
+    err = _project_error(proj)
+    if err:
+        rec["status"] = err
+        _merge(job, rec)
+        return rec
     tl = _timeline(proj, ji)
     if tl is None:
         rec["status"] = "ABORT: timeline not found"
@@ -344,6 +366,21 @@ def diff_snapshot(base, post):
     return diffs
 
 
+def do_baseline(job=None):
+    """Write baseline.json (refuses to overwrite an existing one). Read-only on Resolve."""
+    err = _project_error(resolve.GetProjectManager().GetCurrentProject())
+    if err:
+        return {"status": err}
+    p = os.path.join(W, "baseline.json")
+    if os.path.exists(p):
+        return {"status": "ABORT: baseline.json already exists"}
+    snap = snapshot_state(resolve)
+    _atomic_write_json(p, snap)
+    return {"status": "baseline written", "project": snap["project"], "page": snap["page"],
+            "cur_tl_id": snap["cur_tl_id"], "folder": snap["folder"],
+            "subtitle_tracks": {t: d["sub"] for t, d in snap["tls"].items()}}
+
+
 def do_snapshot(job=None):
     """Write post-state.json and diff it against baseline.json (read-only on Resolve)."""
     post = snapshot_state(resolve)
@@ -359,4 +396,4 @@ def do_snapshot(job=None):
 
 if "PHASE" in globals():
     result = {"import": do_import, "verify": do_verify, "rollback": do_rollback,
-              "snapshot": do_snapshot}[PHASE](globals().get("JOB"))
+              "snapshot": do_snapshot, "baseline": do_baseline}[PHASE](globals().get("JOB"))

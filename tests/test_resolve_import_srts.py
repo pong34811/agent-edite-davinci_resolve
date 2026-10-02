@@ -164,6 +164,7 @@ def env(tmp_path, monkeypatch):
         json.dumps([{"job": 1, "timeline_id": TL_ID, "fps": 60}]), encoding="utf-8")
     monkeypatch.setattr(mod, "W", str(tmp_path))
     monkeypatch.setattr(mod, "BACKUP", str(tmp_path / "backup" / "b.drp"))
+    monkeypatch.setattr(mod, "EXPECTED_PROJECT", "proj")
     monkeypatch.setattr(mod, "SPACING", 0)
     monkeypatch.setattr(mod.time, "sleep", lambda s: None)
 
@@ -190,6 +191,26 @@ def test_import_happy_path_records_added_track(env):
     assert rec["added_subtitle_track_index"] == 1
     assert mp.appended == [[{"mediaPoolItem": mp.appended[0][0]["mediaPoolItem"]}]]
     assert pm.saves == 1
+
+
+def test_import_aborts_on_wrong_project(env, monkeypatch):
+    tl, mp, pm, _ = env()
+    monkeypatch.setattr(mod, "EXPECTED_PROJECT", "other_project")
+    rec = mod.do_import(1)
+    assert rec["status"].startswith("ABORT: loaded project")
+    assert tl.sub == 0 and mp.appended == [] and pm.saves == 0
+
+
+def test_baseline_written_once_and_guarded(env, monkeypatch):
+    env()
+    rec = mod.do_baseline()
+    assert rec["status"] == "baseline written"
+    assert (env.path / "baseline.json").exists()
+    assert mod.do_baseline()["status"].startswith("ABORT: baseline.json already exists")
+    (env.path / "baseline.json").unlink()
+    monkeypatch.setattr(mod, "EXPECTED_PROJECT", "other_project")
+    assert mod.do_baseline()["status"].startswith("ABORT: loaded project")
+    assert not (env.path / "baseline.json").exists()
 
 
 def test_import_aborts_without_backup(env):
