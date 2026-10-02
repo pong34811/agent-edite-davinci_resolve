@@ -119,3 +119,32 @@ def test_rebalance_short_gives_min_read_within_run_only():
     assert all(c["end"] - c["start"] >= s.MIN_READ - 1e-9 for c in cues[:3])
     assert cues[0]["start"] == 1.0 and abs(cues[2]["end"] - 2.9) < 1e-9
     assert cues[3]["end"] - cues[3]["start"] < s.MIN_READ  # isolated cue untouched
+
+
+def test_repeated_tokens_count_individually():
+    toks = {"ไม่ไม่ไม่ใช่": ["ไม่", "ไม่", "ไม่", "ใช่"], "ไม่มีอะไรอ่ะไม่มี": ["ไม่", "มี", "อะไร", "อ่ะ", "ไม่", "มี"],
+            "ไม่มีนะครับ": ["ไม่", "มี", "นะ", "ครับ"]}
+    tk = lambda t: toks[t]  # noqa: E731
+    assert s.count_words("ไม่ไม่ไม่ใช่", tk) == 4
+    assert s.count_words("ไม่มีอะไรอ่ะไม่มี", tk) == 6
+    assert s.count_words("ไม่มีนะครับ", tk) == 1  # no repetition: natural-word rule
+
+
+def test_build_cues_never_linger_past_speech():
+    tk = lambda t: [t]  # noqa: E731
+    pw = [[W("กก", 1.0, 1.3)], [W("ขข", 3.0, 3.2)]]
+    cues = s.build_cues(pw, regions=[[1.0, 1.3], [3.0, 3.2]], tokenizer=tk)
+    assert all(c["end"] <= c["speech_end"] + 0.1 + 1e-9 for c in cues)
+    assert cues[0]["end"] <= 1.3 + 0.1 and cues[1]["end"] <= 3.2 + 0.1   # no padding to 0.8 s
+    assert s.cue_speech_checks(cues, [[1.0, 1.3], [3.0, 3.2]]) == []
+
+
+def test_adjacent_vad_speech_attached_far_speech_reported():
+    tk = lambda t: [t]  # noqa: E731
+    regions = [[1.0, 1.9], [5.0, 6.0]]
+    cues = s.build_cues([[W("กก", 1.0, 1.4)]], regions=regions, tokenizer=tk)
+    assert cues[0]["end"] >= 1.85            # VAD tail of the same word is shown, not lingering
+    unc = s.uncovered_speech(regions, cues, [])
+    assert [(a, b) for a, b, why in unc] == [(5.0, 6.0)] and unc[0][2] is None
+    logged = s.uncovered_speech(regions, cues, [{"t0": 4.9, "t1": 6.1, "reason": "laughter"}])
+    assert logged[0][2] == "laughter"

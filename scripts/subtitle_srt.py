@@ -120,7 +120,12 @@ def natural_words(text, tokenizer=None):
 
 
 def count_words(text, tokenizer=None):
-    """Natural words (see the rule above SUFFIX_WORDS)."""
+    """Natural words (see the rule above SUFFIX_WORDS). Stutter/repetition rule: if any
+    token occurs more than once in the text (ไม่ไม่ไม่ใช่, ไม่มีอะไรอ่ะไม่มี, ลืมลืม), every
+    token counts individually (no attachment), so repeats are never hidden in one word."""
+    toks = split_words(text, tokenizer)
+    if len(set(toks)) < len(toks):
+        return len(toks)
     return len(natural_words(text, tokenizer))
 
 
@@ -321,8 +326,8 @@ def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHAR
             return 0.0
         prev, cur = words[i - 1]["text"], words[i]["text"]
         cost = 0.0
-        if prev in PREFIX_WORDS or cur in SUFFIX_WORDS:
-            cost += 3.0
+        if (prev in PREFIX_WORDS or cur in SUFFIX_WORDS) and not words[i]["boundary"]:
+            cost += 3.0          # cutting a prefix/particle off its head inside a chunk
         if words[i].get("phrase") == words[i - 1].get("phrase"):
             if not words[i]["boundary"]:
                 cost += 5.0          # inside a curator chunk
@@ -330,8 +335,9 @@ def segment_words(words, tokenizer=None, max_words=MAX_WORDS, max_chars=MAX_CHAR
                 cost += 0.3          # at a space; "|" boundaries are free
         return cost
 
-    def join_cost(grp):  # crossing a curated-phrase boundary inside one cue (rescue only)
-        return 3.5 * sum(1 for a, b in zip(grp, grp[1:]) if a.get("phrase") != b.get("phrase"))
+    def join_cost(grp):  # crossing a curated-phrase boundary (rescue only) or a "|" in one cue
+        return sum(3.5 if a.get("phrase") != b.get("phrase") else 1.5 if b.get("hard") else 0.0
+                   for a, b in zip(grp, grp[1:]))
 
     best = [None] * (n + 1)
     best[0] = (0.0, None)
@@ -402,10 +408,25 @@ def rebalance_short(cues, end_limit=END_LIMIT):
             t += x + MIN_GAP
 
 
-MAX_TAIL = 0.6          # a short cue may stay up to this long after its last word
+LINGER = 0.08           # a cue may stay at most this long after its speech end (rule: <= 0.1 s)
+VAD_TAIL = 0.4          # speech end may follow the VAD region past the last word by this much
+
+
+def speech_end(last, start, regions):
+    """End of the speech of a cue: its (VAD-snapped) last word end, extended to the end of
+    the VAD region containing that word when the region ends within VAD_TAIL."""
+    end = last
+    for r in regions or ():
+        if r[0] <= end <= r[1] + 1e-6:
+            if r[1] - end <= VAD_TAIL:
+                end = r[1]
+            break
+    return max(end, start + 0.05)
 
 
 def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None, omitted=()):
+    """Cues hug the speech: start at the first word (snapped into VAD speech), end at the
+    speech end + LINGER at most. No padding, no minimum duration."""
     words = []
     for pi, pw in enumerate(phrases_words):
         for w in pw:
@@ -415,21 +436,85 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None,
     cues = []
     for grp in segment_words(words, tokenizer, gaps=gaps, omitted=[(o["t0"], o["t1"]) for o in omitted]):
         start, end = clamp_to_speech(grp[0], grp[-1], regions)
-        cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": end})
+        se = speech_end(end, start, regions)
+        cues.append({"text": join_display([w["text"] for w in grp]), "start": start, "end": se,
+                     "speech_end": se})
     cues = sorted((c for c in cues if c["start"] < end_limit - 0.2), key=lambda c: c["start"])
     for k, c in enumerate(cues):
         nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
-        c["end"] = min(c["end"], c["start"] + MAX_DUR, nxt - MIN_GAP, end_limit)
-    rebalance_short(cues, end_limit)
-    for k, c in enumerate(cues):
-        nxt = cues[k + 1]["start"] if k + 1 < len(cues) else end_limit + MIN_GAP
-        c["end"] = min(c["end"], c["start"] + MAX_DUR, nxt - MIN_GAP, end_limit)
-        if c["end"] - c["start"] < TARGET_MIN:  # extend into following silence, bounded
-            c["end"] = max(c["end"], min(c["start"] + TARGET_MIN, c["end"] + MAX_TAIL,
-                                         nxt - MIN_GAP, end_limit))
+        c["end"] = min(c["speech_end"] + LINGER, c["start"] + MAX_DUR, nxt - MIN_GAP, end_limit)
         c["start"] = round(c["start"], 3)
         c["end"] = round(c["end"], 3)
+    if regions:
+        attach_adjacent_speech(cues, regions, end_limit)
     return cues
+
+
+ATTACH_GAP = 0.35       # VAD speech this close to a cue edge belongs to that cue's words
+ATTACH_MAX = 1.0        # ... if the uncaptioned piece is at most this long
+
+
+def attach_adjacent_speech(cues, regions, end_limit=END_LIMIT):
+    """Word times from ASR are approximate at phrase edges. An uncaptioned VAD speech piece
+    that touches (within ATTACH_GAP) a cue start or end and is <= ATTACH_MAX long is that
+    cue's own first/last word: extend the cue edge onto it (start earlier / end later),
+    never past the neighbouring cues, MAX_DUR or end_limit. Pieces further away stay
+    uncovered and must be logged."""
+    for _ in range(2):
+        for x, y, _why in uncovered_speech(regions, cues, (), min_len=0.05):
+            if y - x > ATTACH_MAX:
+                continue
+            for k, c in enumerate(cues):
+                prv = cues[k - 1]["end"] + MIN_GAP if k > 0 else 0.0
+                nxt = cues[k + 1]["start"] - MIN_GAP if k + 1 < len(cues) else end_limit
+                if 0 <= c["start"] - y <= ATTACH_GAP and c["start"] > prv:
+                    c["start"] = round(max(x, prv, c["end"] - MAX_DUR), 3)
+                    break
+                if 0 <= x - c["end"] <= ATTACH_GAP and c["end"] < nxt:
+                    new = round(min(y, nxt, c["start"] + MAX_DUR), 3)
+                    c["speech_end"] = max(c["speech_end"], new)
+                    c["end"] = new
+                    break
+
+
+def uncovered_speech(regions, cues, omitted=(), min_len=0.3):
+    """VAD speech not shown by any cue: [(a, b, logged_reason_or_None)] for pieces >= min_len.
+    A piece counts as logged when an omitted span covers at least half of it."""
+    out = []
+    for a, b in regions or ():
+        pieces = [[a, b]]
+        for c in cues:
+            nxt = []
+            for x, y in pieces:
+                if c["end"] <= x or c["start"] >= y:
+                    nxt.append([x, y])
+                    continue
+                if c["start"] > x:
+                    nxt.append([x, c["start"]])
+                if c["end"] < y:
+                    nxt.append([c["end"], y])
+            pieces = nxt
+        for x, y in pieces:
+            if y - x < min_len:
+                continue
+            why = None
+            for o in omitted:
+                if min(y, o["t1"]) - max(x, o["t0"]) >= 0.5 * (y - x):
+                    why = o["reason"]
+                    break
+            out.append((round(x, 2), round(y, 2), why))
+    return out
+
+
+def cue_speech_checks(cues, regions):
+    """Linger and no-speech checks needing the VAD map (build-time, not SRT-only)."""
+    errs = []
+    for k, c in enumerate(cues, 1):
+        if c["end"] > c["speech_end"] + 0.1 + 1e-6:
+            errs.append("cue %d lingers %.2fs after speech" % (k, c["end"] - c["speech_end"]))
+        if regions and _overlap(c["start"], c["end"], regions) <= 0:
+            errs.append("cue %d %r overlaps no VAD speech" % (k, c["text"]))
+    return errs
 
 def write_srt(path, cues):
     lines = []
@@ -545,9 +630,13 @@ def build_job(ws, n, tokenizer=None):
     speech_start = regions[0][0] if regions else None
     out = os.path.join(ws, "srt", "job%d.srt" % n)
     write_srt(out, cues)
-    errs = validate_file(out, speech_start=None)
-    if speech_start is not None and cues and cues[0]["start"] < speech_start - 1e-6:
-        errs.append("first cue before VAD speech start %.2f" % speech_start)
+    errs = validate_file(out, speech_start=speech_start)
+    ok = {j["text"] for j in cur.get("no_vad_justified", [])}
+    errs += [e for e in cue_speech_checks(cues, regions)
+             if not ("overlaps no VAD" in e and any(repr(t) in e for t in ok))]
+    unc = uncovered_speech(regions, cues, cur.get("omitted", []))
+    errs += ["unlogged uncaptioned VAD speech %.2f-%.2f" % (a, b) for a, b, why in unc if not why]
+    cur["_uncovered"] = unc
     write_curation_md(ws, n, cur, cues, regions, errs)
     return cur, cues, errs
 
@@ -586,6 +675,14 @@ def write_curation_md(ws, n, cur, cues, regions, errs):
     L += ["", "## Cues (%d)" % len(cues), "", "| # | start | end | dur | text |", "|---|---|---|---|---|"]
     for k, c in enumerate(cues, 1):
         L.append("| %d | %.3f | %.3f | %.2f | %s |" % (k, c["start"], c["end"], c["end"] - c["start"], c["text"]))
+    nj = cur.get("no_vad_justified", [])
+    if nj:
+        L += ["", "## Cues outside VAD speech (justified)", ""]
+        L += ["- %s: %s" % (j["text"], j["reason"]) for j in nj]
+    unc = cur.get("_uncovered", [])
+    L += ["", "## VAD speech not covered by cues (>= 0.3 s)", ""]
+    L += ["- [%s-%s] %s" % (_ts(a), _ts(b), ("logged: " + why) if why else "UNLOGGED")
+          for a, b, why in unc] or ["- none"]
     L += ["", "VAD speech regions (raw+voice union): " +
           ", ".join("%.2f-%.2f" % (a, b) for a, b in regions), "",
           "Validator: " + ("PASS" if not errs else "FAIL: " + "; ".join(errs)), ""]
