@@ -422,8 +422,35 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None,
         c["speech_start"] = c["start"]
     if regions:
         attach_adjacent_speech(cues, regions, end_limit)
+        snap_start_into_speech(cues, regions)
     enforce_floor(cues, end_limit, tokenizer)
     return cues
+
+
+SNAP_MAX = 0.3          # ASR may time a word up to this much before the VAD speech onset
+
+
+def snap_start_into_speech(cues, regions, max_shift=SNAP_MAX):
+    """A cue starting in VAD silence (> EARLY_TOL before the next speech onset) whose onset
+    follows within max_shift starts at that onset instead (ruling R7 measured against VAD:
+    Whisper word times run early by ~0.1-0.3 s). Larger offsets are left for curation to
+    resolve or justify. If the cue would then be under 0.1 s its end moves later too (never
+    into the next cue); the readable floor is applied afterwards."""
+    for k, c in enumerate(cues):
+        if any(r[0] - EARLY_TOL <= c["start"] < r[1] for r in regions):
+            continue
+        nxt = [r[0] for r in regions if r[0] > c["start"]]
+        if not nxt or nxt[0] - c["start"] > max_shift + 1e-9:
+            continue
+        limit = cues[k + 1]["start"] - MIN_GAP if k + 1 < len(cues) else c["end"] + max_shift
+        end = min(max(c["end"], nxt[0] + 0.1), limit)
+        if end - nxt[0] < 0.05:
+            continue
+        c["start"] = round(nxt[0], 3)
+        c["speech_start"] = c["start"]
+        if end > c["end"]:
+            c["end"] = round(end, 3)
+            c["speech_end"] = max(c["speech_end"], c["end"])
 
 
 READ_FLOOR = 0.35       # ruling R6: no cue shorter than this unless neighbours block it
@@ -736,6 +763,10 @@ def build_job(ws, n, tokenizer=None, end_limit=None):
             print("  lint job %d: chunk %r exceeds one cue (split mid-chunk)" % (n, bad))
         p["_start"], p["_end"] = words[0]["start"], words[-1]["end"]
         pw.append(words)
+    for a, b in zip(cur["phrases"], cur["phrases"][1:]):
+        if b["_start"] < a["_end"] - 0.05:   # words of two phrases would interleave in the cue order
+            print("  lint job %d: phrase %r overlaps the previous one by %.2f s (narrow t0/t1)"
+                  % (n, b["text"][:20], a["_end"] - b["_start"]))
     use_vad = cur.get("vad_clamp", True)
     cues = build_cues(pw, regions if use_vad else None, end_limit=end_limit, tokenizer=tokenizer,
                       omitted=cur.get("omitted", []))

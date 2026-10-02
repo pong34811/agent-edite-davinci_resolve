@@ -196,3 +196,14 @@ def test_add_custom_words_counts_name_as_one_word():
     s.add_custom_words(["ทดสอบชื่อพิเศษ"])
     assert "ทดสอบชื่อพิเศษ" in s.CUSTOM_WORDS and s._TRIE is None
     assert s.split_words("ทดสอบชื่อพิเศษ") == ["ทดสอบชื่อพิเศษ"]
+
+
+def test_start_snaps_forward_to_nearby_vad_onset_only():
+    regions = [[1.0, 2.0], [5.0, 6.0]]
+    cues = [C("กก", 0.8, 1.5, 0), C("ขข", 3.5, 4.2, 1)]
+    s.snap_start_into_speech(cues, regions)
+    assert cues[0]["start"] == 1.0 and cues[0]["speech_start"] == 1.0   # 0.2 s early -> snapped
+    assert cues[1]["start"] == 3.5                                       # 1.5 s early -> left alone
+    tiny = [C("กก", 0.75, 0.95, 0), C("ขข", 1.5, 2.0, 1)]                # ends before the onset
+    s.snap_start_into_speech(tiny, regions)
+    assert tiny[0]["start"] == 1.0 and abs(tiny[0]["end"] - 1.1) < 1e-9 and tiny[0]["end"] < tiny[1]["start"]
