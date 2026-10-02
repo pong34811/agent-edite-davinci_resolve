@@ -247,3 +247,14 @@ def test_vad_clamp_false_drops_vad_speech_start_check(tmp_path):
     p.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
     _, cues, errs = s.build_job(str(tmp_path), 1)
     assert errs == [] and cues[0]["start"] == 10.38
+
+
+def test_attach_skip_omitted_keeps_cue_off_logged_speech():
+    tk = lambda t: [t]  # noqa: E731
+    regions = [[2.98, 3.94], [4.22, 5.66]]
+    words = [[W("ใครอ่ะ", 4.25, 4.9)]]
+    om = [{"t0": 2.15, "t1": 3.85, "reason": "unresolved"}]
+    base = s.build_cues(words, regions, tokenizer=tk, omitted=om)
+    assert base[0]["start"] < 4.0                      # default: attaches onto the omitted piece
+    skip = s.build_cues(words, regions, tokenizer=tk, omitted=om, attach_skip_omitted=True)
+    assert skip[0]["start"] >= 4.22 - 1e-9

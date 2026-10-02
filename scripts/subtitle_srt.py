@@ -403,9 +403,11 @@ def speech_end(last, start, regions):
     return max(end, start + 0.05)
 
 
-def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None, omitted=()):
+def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None, omitted=(),
+               attach_skip_omitted=False):
     """Cues hug the speech: start at the first word (snapped into VAD speech), end at the
-    speech end + LINGER at most. No padding, no minimum duration."""
+    speech end + LINGER at most. No padding, no minimum duration. attach_skip_omitted: VAD
+    speech logged as omitted is never attached to a neighbouring cue (opt-in per job)."""
     words = []
     for pi, pw in enumerate(phrases_words):
         for w in pw:
@@ -430,7 +432,7 @@ def build_cues(phrases_words, regions=None, end_limit=END_LIMIT, tokenizer=None,
         c["end"] = round(c["end"], 3)
         c["speech_start"] = c["start"]
     if regions:
-        attach_adjacent_speech(cues, regions, end_limit)
+        attach_adjacent_speech(cues, regions, end_limit, omitted if attach_skip_omitted else ())
         snap_start_into_speech(cues, regions)
     enforce_floor(cues, end_limit, tokenizer)
     return cues
@@ -577,15 +579,16 @@ ATTACH_GAP = 0.35       # VAD speech this close to a cue edge belongs to that cu
 ATTACH_MAX = 1.0        # ... if the uncaptioned piece is at most this long
 
 
-def attach_adjacent_speech(cues, regions, end_limit=END_LIMIT):
+def attach_adjacent_speech(cues, regions, end_limit=END_LIMIT, omitted=()):
     """Word times from ASR are approximate at phrase edges. An uncaptioned VAD speech piece
     that touches (within ATTACH_GAP) a cue start or end and is <= ATTACH_MAX long is that
     cue's own first/last word: extend the cue edge onto it (start earlier / end later),
     never past the neighbouring cues, MAX_DUR or end_limit. Pieces further away stay
-    uncovered and must be logged."""
+    uncovered and must be logged. A piece mostly inside an `omitted` span is speech the
+    curator could not resolve, not the cue's own word, and is left alone."""
     for _ in range(2):
-        for x, y, _why in uncovered_speech(regions, cues, (), min_len=0.05):
-            if y - x > ATTACH_MAX:
+        for x, y, why in uncovered_speech(regions, cues, omitted, min_len=0.05):
+            if y - x > ATTACH_MAX or why:
                 continue
             for k, c in enumerate(cues):
                 prv = cues[k - 1]["end"] + MIN_GAP if k > 0 else 0.0
@@ -784,7 +787,8 @@ def build_job(ws, n, tokenizer=None, end_limit=None):
                   % (n, b["text"][:20], a["_end"] - b["_start"]))
     use_vad = cur.get("vad_clamp", True)
     cues = build_cues(pw, regions if use_vad else None, end_limit=end_limit, tokenizer=tokenizer,
-                      omitted=cur.get("omitted", []))
+                      omitted=cur.get("omitted", []),
+                      attach_skip_omitted=cur.get("attach_skip_omitted", False))
     # With vad_clamp false the silero map is known to miss this job's speech, so its first
     # onset is no start reference; subtitle_inspect check runs the energy-onset check instead.
     speech_start = regions[0][0] if regions and use_vad else None
