@@ -61,6 +61,41 @@ CUSTOM_WORDS = {"ไทกะ", "โกโกนอล", "ฟรีทอล์�
 _TRIE = None
 
 
+BASE_CUSTOM_WORDS = frozenset(CUSTOM_WORDS)
+COUNT_MAIYAMOK = False      # opt-in rule, see set_job_rules / job_rules
+RULES_FILE = "subtitle_rules.json"   # optional WORKSPACE/subtitle_rules.json: {"count_maiyamok": true}
+
+
+def set_job_rules(custom_words=(), count_maiyamok=False):
+    """Per-job word-count state: the base proper nouns plus THIS job's custom_words only
+    (no leak from earlier jobs of the same run), and the opt-in count_maiyamok rule."""
+    global _TRIE, COUNT_MAIYAMOK
+    want = set(BASE_CUSTOM_WORDS) | set(custom_words or ())
+    if want != CUSTOM_WORDS:
+        CUSTOM_WORDS.clear()
+        CUSTOM_WORDS.update(want)
+        _TRIE = None
+    COUNT_MAIYAMOK = bool(count_maiyamok)
+
+
+def job_rules(ws, n):
+    """(custom_words, count_maiyamok) of a job. count_maiyamok comes from the job's
+    curation JSON key "count_maiyamok" if present, else from WORKSPACE/subtitle_rules.json,
+    else False (the historical rule)."""
+    rules = {}
+    rp = os.path.join(ws, RULES_FILE)
+    if os.path.exists(rp):
+        with open(rp, encoding="utf-8") as f:
+            rules.update(json.load(f))
+    cp = os.path.join(ws, "srt", "job%d.curation.json" % n)
+    cur = {}
+    if os.path.exists(cp):
+        with open(cp, encoding="utf-8") as f:
+            cur = json.load(f)
+    cm = cur["count_maiyamok"] if "count_maiyamok" in cur else rules.get("count_maiyamok", False)
+    return cur.get("custom_words", []), bool(cm)
+
+
 def add_custom_words(words):
     """Register extra one-word proper nouns (per job curation); rebuilds the tokenizer trie."""
     global _TRIE
@@ -136,10 +171,28 @@ def natural_words(text, tokenizer=None):
     return out
 
 
+def spoken_tokens(text, tokenizer=None):
+    """count_maiyamok view of the tokens: every ๆ repeats its word (ต่อๆ -> ต่อ ต่อ) and a
+    leading negation/auxiliary is split off (ไม่เอา -> ไม่ เอา), so spoken repeats show."""
+    out = []
+    for t in split_words(text, tokenizer):
+        base = t.replace("ๆ", "").replace(" ", "")
+        for _ in range(1 + t.count("ๆ")):
+            pre = [p for p in PREFIX_WORDS if base.startswith(p) and len(base) > len(p)]
+            out += [pre[0], base[len(pre[0]):]] if pre else [base]
+    return out
+
+
 def count_words(text, tokenizer=None):
     """Natural words (see the rule above SUFFIX_WORDS). Stutter/repetition rule: if any
     token occurs more than once in the text (ไม่ไม่ไม่ใช่, ไม่มีอะไรอ่ะไม่มี, ลืมลืม), every
-    token counts individually (no attachment), so repeats are never hidden in one word."""
+    token counts individually (no attachment), so repeats are never hidden in one word.
+    With COUNT_MAIYAMOK (opt-in per job) the check runs on spoken_tokens, so ต่อๆได้ๆ is
+    4 words and ไม่เอาไม่ต้องแล้ว is 5."""
+    if COUNT_MAIYAMOK:
+        sp = spoken_tokens(text, tokenizer)
+        if len(set(sp)) < len(sp):
+            return len(sp)
     toks = split_words(text, tokenizer)
     if len(set(toks)) < len(toks):
         return len(toks)
@@ -762,21 +815,12 @@ def job_end_limit(ws, n, default=END_LIMIT):
     return float(j["duration_s"]) if j and j.get("duration_s") else default
 
 
-def job_custom_words(ws, n):
-    """custom_words of srt/job<N>.curation.json ([] when absent)."""
-    p = os.path.join(ws, "srt", "job%d.curation.json" % n)
-    if not os.path.exists(p):
-        return []
-    with open(p, encoding="utf-8") as f:
-        return json.load(f).get("custom_words", [])
-
-
 def build_job(ws, n, tokenizer=None, end_limit=None):
     with open(os.path.join(ws, "srt", "job%d.curation.json" % n), encoding="utf-8") as f:
         cur = json.load(f)
     if end_limit is None:
         end_limit = job_end_limit(ws, n)
-    add_custom_words(cur.get("custom_words"))
+    set_job_rules(*job_rules(ws, n))
     passes, regions = load_passes(ws, n)
     pw = []
     for p in cur["phrases"]:
@@ -947,7 +991,7 @@ def main():
         if end is None:
             end = job_end_limit(a.workspace, a.job) if a.workspace and a.job else END_LIMIT
         if a.workspace and a.job:   # the job's curated one-word proper nouns count as in build
-            add_custom_words(job_custom_words(a.workspace, a.job))
+            set_job_rules(*job_rules(a.workspace, a.job))
         errs = validate_file(a.srt, a.speech_start, end)
         print("PASS" if not errs else "\n".join(errs))
         sys.exit(1 if errs else 0)

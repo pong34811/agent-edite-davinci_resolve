@@ -275,3 +275,31 @@ def test_validate_cli_uses_job_custom_words(tmp_path):
     (tmp_path / "srt" / "job1.curation.json").write_text(
         json.dumps({"custom_words": ["ทาทาไทการีด้า"]}, ensure_ascii=False), encoding="utf-8")
     assert run().returncode == 0
+
+
+def test_count_maiyamok_is_opt_in_and_counts_spoken_repeats():
+    try:
+        s.set_job_rules((), False)
+        assert s.count_words("ต่อๆได้ๆ") == 2 and s.count_words("ไม่เอาไม่ต้องแล้ว") == 2   # historical
+        s.set_job_rules((), True)
+        assert s.count_words("ต่อๆได้ๆ") == 4
+        assert s.count_words("ไม่เอาไม่ต้องแล้ว") == 5
+        assert s.count_words("ไปต่อๆ") == 3 and s.count_words("เดี๋ยวๆ") == 2
+        assert s.count_words("ไม่เกินเกรดสอง") == 3                                   # no repeat: unchanged
+    finally:
+        s.set_job_rules((), False)
+
+
+def test_job_rules_precedence_and_custom_words_do_not_leak(tmp_path):
+    import json
+    (tmp_path / "srt").mkdir()
+    assert s.job_rules(str(tmp_path), 1) == ([], False)
+    (tmp_path / "subtitle_rules.json").write_text(json.dumps({"count_maiyamok": True}), encoding="utf-8")
+    assert s.job_rules(str(tmp_path), 1) == ([], True)
+    (tmp_path / "srt" / "job1.curation.json").write_text(
+        json.dumps({"count_maiyamok": False, "custom_words": ["ชื่อเฉพาะทดสอบ"]}, ensure_ascii=False), encoding="utf-8")
+    assert s.job_rules(str(tmp_path), 1) == (["ชื่อเฉพาะทดสอบ"], False)
+    s.set_job_rules(["ชื่อเฉพาะทดสอบ"], False)
+    assert "ชื่อเฉพาะทดสอบ" in s.CUSTOM_WORDS
+    s.set_job_rules([], False)
+    assert "ชื่อเฉพาะทดสอบ" not in s.CUSTOM_WORDS and "ไทกะ" in s.CUSTOM_WORDS

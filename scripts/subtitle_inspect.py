@@ -128,7 +128,7 @@ def check_job(ws, n):
     cp = os.path.join(ws, "srt", "job%d.curation.json" % n)
     cur = json.load(open(cp, encoding="utf-8")) if os.path.exists(cp) else {}
     use_vad = cur.get("vad_clamp", True)
-    S.add_custom_words(cur.get("custom_words"))
+    S.set_job_rules(*S.job_rules(ws, n))
     errs = S.validate_cues(cues, speech_start=reg[0][0] if reg and use_vad else None, end_limit=end)
     ok = {j["text"] for j in cur.get("no_vad_justified", [])}
     early, linger = [], []
