@@ -49,3 +49,15 @@ def test_choose_pass():
 def test_repeat_run_regex():
     assert s.REPEAT_RE.search("โทษ" + "ๆ" * 8)
     assert not s.REPEAT_RE.search("ไม่ได้โม้เลย")
+
+
+def test_window_starts_overlap_and_cover_duration():
+    assert s.window_starts(20.0) == [0.0, 4.0, 8.0, 12.0, 16.0]
+    st = s.window_starts(60.0)
+    assert st[-1] + s.EXTRA_WIN >= 60.0 - 1 and all(b - a == s.EXTRA_STEP for a, b in zip(st, st[1:]))
+
+
+def test_load_prompts_optional(tmp_path):
+    assert s.load_prompts(str(tmp_path)) == {}
+    (tmp_path / "prompts.json").write_text('{"3": "ไทกะ"}', encoding="utf-8")
+    assert s.load_prompts(str(tmp_path)) == {3: "ไทกะ"}

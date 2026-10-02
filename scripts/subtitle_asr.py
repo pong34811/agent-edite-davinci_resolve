@@ -1,6 +1,10 @@
 """Draft Thai ASR for subtitle jobs: ffmpeg decode -> faster-whisper -> char-time index.
 
-Usage: python scripts/subtitle_asr.py WORKSPACE [--jobs 1,2] [--model large-v3]
+Usage: python scripts/subtitle_asr.py WORKSPACE [--jobs 1,2] [--model large-v3] [--extra | --extra-only]
+       python scripts/subtitle_asr.py WORKSPACE --probe N T0 T1 [T0 T1 ...]
+WORKSPACE/jobs.json lists jobs (job, source, source_start_s, duration_s); each WAV is
+duration_s long (never a hard-coded length). Optional WORKSPACE/prompts.json maps job ->
+topic initial_prompt for the extra window passes (prompt echoes must be rejected in curation).
 Source media is only read; all outputs are new files under WORKSPACE.
 """
 import argparse
@@ -255,6 +259,82 @@ def transcribe(model, wav, chunk_s=None):
             "chunk_s": chunk_s}
 
 
+EXTRA_WIN, EXTRA_STEP = 8, 4
+
+
+def window_starts(dur, win=EXTRA_WIN, step=EXTRA_STEP):
+    """Start times of overlapping windows covering [0, dur] (last window may be short)."""
+    out, st = [], 0.0
+    while st < dur - 1:
+        out.append(st)
+        st += step
+    return out
+
+
+def run_windows(model, audio, prompt, kw, win=EXTRA_WIN, step=EXTRA_STEP):
+    """Overlapping short-window re-transcription; each record keeps its [start, end] window."""
+    recs = []
+    dur = len(audio) / 16000
+    for st in window_starts(dur, win, step):
+        piece = audio[int(st * 16000):int(min(st + win, dur) * 16000)]
+        segs, _ = model.transcribe(piece, initial_prompt=prompt, **kw)
+        for sg in segs:
+            r = segment_record(_Shift(sg, st))
+            r["window"] = [st, round(min(st + win, dur), 3)]
+            recs.append(r)
+    return recs
+
+
+def vad_map(audio):
+    from faster_whisper.vad import VadOptions, get_speech_timestamps
+    ts = get_speech_timestamps(audio, VadOptions(min_silence_duration_ms=250, speech_pad_ms=0, threshold=0.5))
+    return [[round(t["start"] / 16000, 2), round(t["end"] / 16000, 2)] for t in ts]
+
+
+def extra_passes(model, ws, n, prompt=None):
+    """Evidence for curation: 8 s windows / 4 s step, raw and voice audio, each with an
+    optional topic initial_prompt (VAD on) and with no VAD at temperature 0; plus a silero
+    VAD speech map of both audio versions. Written to asr/job<N>_extra.json."""
+    from faster_whisper.audio import decode_audio
+    kw_greedy = dict(TRANSCRIBE_KW, temperature=0.0, vad_filter=False)
+    out = {"job": n, "win": EXTRA_WIN, "step": EXTRA_STEP, "prompt": prompt, "passes": {}}
+    for sfx in ("", "_voice"):
+        audio = decode_audio(os.path.join(ws, "audio", "job%d%s.wav" % (n, sfx)), sampling_rate=16000)
+        name = "voice" if sfx else "raw"
+        out["passes"][name + "_w8_prompt"] = run_windows(model, audio, prompt, TRANSCRIBE_KW)
+        out["passes"][name + "_w8_novad"] = run_windows(model, audio, None, kw_greedy)
+        out["vad_" + name] = vad_map(audio)
+    with open(os.path.join(ws, "asr", "job%d_extra.json" % n), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    return out
+
+
+def probe(model, ws, n, t0, t1, pad=0.3, prompt=None):
+    """Re-transcribe one short window several ways to resolve a disagreement; prints text."""
+    from faster_whisper.audio import decode_audio
+    kws = {"beam5": dict(TRANSCRIBE_KW, vad_filter=False, temperature=0.0),
+           "beam5_vad": TRANSCRIBE_KW,
+           "beam1": dict(TRANSCRIBE_KW, vad_filter=False, temperature=0.0, beam_size=1)}
+    a = max(0.0, t0 - pad)
+    for sfx in ("", "_voice"):
+        audio = decode_audio(os.path.join(ws, "audio", "job%d%s.wav" % (n, sfx)), sampling_rate=16000)
+        piece = audio[int(a * 16000):int((t1 + pad) * 16000)]
+        for kname, kw in kws.items():
+            for pr in ((None, prompt) if prompt else (None,)):
+                segs, _ = model.transcribe(piece, initial_prompt=pr, **kw)
+                txt = " / ".join("%.2f-%.2f %s" % (s.start + a, s.end + a, s.text.strip()) for s in segs)
+                print("job%d %.2f-%.2f %-6s %-9s %s: %s" % (n, t0, t1, sfx or "raw", kname,
+                                                         "prompt" if pr else "-", txt), flush=True)
+
+
+def load_prompts(ws):
+    p = os.path.join(ws, "prompts.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as f:
+        return {int(k): v for k, v in json.load(f).items()}
+
+
 def load_model(name):
     register_cuda()
     from faster_whisper import WhisperModel
@@ -272,10 +352,22 @@ def main():
     ap.add_argument("workspace")
     ap.add_argument("--jobs")
     ap.add_argument("--model", default="large-v3")
+    ap.add_argument("--extra", action="store_true",
+                    help="also run the overlapping-window evidence passes + VAD map (asr/job<N>_extra.json)")
+    ap.add_argument("--extra-only", action="store_true", help="only the extra passes (base JSON kept)")
+    ap.add_argument("--probe", nargs="+", metavar="N T0 T1",
+                    help="re-transcribe short windows: N t0 t1 [t0 t1 ...] (prints only)")
     a = ap.parse_args()
     ws = a.workspace
     with open(os.path.join(ws, "jobs.json"), encoding="utf-8") as f:
         jobs = json.load(f)
+    prompts = load_prompts(ws)
+    if a.probe:
+        n, ts = int(a.probe[0]), [float(x) for x in a.probe[1:]]
+        model, _, _ = load_model(a.model)
+        for k in range(0, len(ts) - 1, 2):
+            probe(model, ws, n, ts[k], ts[k + 1], prompt=prompts.get(n))
+        return
     if a.jobs:
         want = {int(x) for x in a.jobs.split(",")}
         jobs = [j for j in jobs if j["job"] in want]
@@ -289,6 +381,10 @@ def main():
     print("model", mname, ctype, flush=True)
     for j in jobs:
         n = j["job"]
+        if a.extra_only:
+            ex = extra_passes(model, ws, n, prompts.get(n))
+            print(n, "EXTRA", {k: len(v) for k, v in ex["passes"].items()}, flush=True)
+            continue
         passes = {}
         for name, sfx, ck in (("raw", "", None), ("voice", "_voice", None),
                               ("raw_chunk", "", CHUNK_S), ("voice_chunk", "_voice", CHUNK_S)):
@@ -302,6 +398,9 @@ def main():
             json.dump(rec, f, ensure_ascii=False, indent=1)
         write_txt(os.path.join(ws, "asr", "job%d.txt" % n), j, rec)
         print(n, "CHOSEN", ch, why, flush=True)
+        if a.extra:
+            ex = extra_passes(model, ws, n, prompts.get(n))
+            print(n, "EXTRA", {k: len(v) for k, v in ex["passes"].items()}, flush=True)
 
 
 if __name__ == "__main__":

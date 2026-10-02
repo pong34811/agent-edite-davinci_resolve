@@ -164,3 +164,35 @@ def test_read_floor_merges_same_phrase_else_extends_never_starts_early():
     s.enforce_floor(cues, tokenizer=tk)
     assert cues[0]["end"] - cues[0]["start"] < 0.35 and cues[0]["start"] == 1.0
     assert s.cue_speech_checks(cues, None) == []
+
+
+def test_end_limit_comes_from_jobs_json_duration(tmp_path):
+    import json
+    (tmp_path / "jobs.json").write_text(json.dumps([{"job": 1, "duration_s": 60.0}, {"job": 2, "duration_s": 55.0}]),
+                                        encoding="utf-8")
+    assert s.job_end_limit(str(tmp_path), 1) == 60.0
+    assert s.job_end_limit(str(tmp_path), 2) == 55.0
+    assert s.job_end_limit(str(tmp_path), 9) == s.END_LIMIT          # no entry -> fallback
+    assert s.job_end_limit(str(tmp_path / "none"), 1) == s.END_LIMIT  # no jobs.json
+    # a 60 s job may hold cues past 55 s; the validator honours the passed limit
+    tk = lambda t: [t]  # noqa: E731
+    cues = s.build_cues([[W("กก", 57.0, 57.6)]], regions=[[57.0, 57.6]], end_limit=60.0, tokenizer=tk)
+    blocks = [blk(i + 1, c["start"], c["end"], c["text"]) for i, c in enumerate(cues)]
+    assert len(cues) == 1 and s.validate_cues(blocks, end_limit=60.0, tokenizer=tk) == []
+    assert any("> 55.0" in e for e in s.validate_cues(blocks, tokenizer=tk))
+
+
+def test_blocked_short_cue_records_reason_and_stats():
+    tk = lambda t: [t[i:i + 2] for i in range(0, len(t), 2)]  # noqa: E731
+    long16 = "งงงงงงงงงงงงงงงง"
+    cues = [C("กก", 1.0, 1.1, 0), C(long16, 1.334, 1.9, 1, ss=1.134), C("ขข", 1.934, 2.6, 2)]
+    s.enforce_floor(cues, tokenizer=tk)
+    assert "already delayed" in cues[0]["short_reason"]
+    st = s.cue_stats(cues)
+    assert st["n"] == 3 and st["short"] == 1 and abs(st["max"] - 0.666) < 1e-6
+
+
+def test_add_custom_words_counts_name_as_one_word():
+    s.add_custom_words(["ทดสอบชื่อพิเศษ"])
+    assert "ทดสอบชื่อพิเศษ" in s.CUSTOM_WORDS and s._TRIE is None
+    assert s.split_words("ทดสอบชื่อพิเศษ") == ["ทดสอบชื่อพิเศษ"]

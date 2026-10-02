@@ -3,7 +3,10 @@
 Build (per job, from a hand-curated phrase list aligned onto ASR character times):
     python scripts/subtitle_srt.py build WORKSPACE [--jobs 1,2]
 Validate an SRT:
-    python scripts/subtitle_srt.py validate FILE.srt [--speech-start S] [--end 55]
+    python scripts/subtitle_srt.py validate FILE.srt [--speech-start S] [--end 55 | --workspace WS --job N]
+
+The end limit of every job is its `duration_s` in WORKSPACE/jobs.json (END_LIMIT only
+when jobs.json has no entry), so clips of different lengths need no code change.
 
 Curation input: WORKSPACE/srt/job<N>.curation.json
     {"job": 1,
@@ -11,7 +14,8 @@ Curation input: WORKSPACE/srt/job<N>.curation.json
                   "src": "raw_chunk", "win": null, "note": "..."}],
      "omitted": [{"t0": 0.3, "t1": 3.0, "reason": "..."}],
      "uncertain": [{"term": "...", "t": 12.0, "note": "..."}],
-     "changes": ["..."]}
+     "changes": ["..."],
+     "custom_words": ["..."]}   # optional extra one-word proper nouns for the tokenizer
 A space inside phrase text marks a natural phrase boundary (preferred cue split);
 it is never rendered between Thai characters. `src` names an ASR pass in
 asr/job<N>.json or asr/job<N>_extra.json (`win` selects one overlapping window of
@@ -51,6 +55,15 @@ def visible_len(text):
 # Proper nouns that must count as one caption word (newmm splits them).
 CUSTOM_WORDS = {"ไทกะ", "โกโกนอล", "ฟรีทอล์ค"}
 _TRIE = None
+
+
+def add_custom_words(words):
+    """Register extra one-word proper nouns (per job curation); rebuilds the tokenizer trie."""
+    global _TRIE
+    new = set(words or ()) - CUSTOM_WORDS
+    if new:
+        CUSTOM_WORDS.update(new)
+        _TRIE = None
 
 
 def _tokenize(text):
@@ -499,7 +512,25 @@ def enforce_floor(cues, end_limit=END_LIMIT, tokenizer=None):
             continue
         if _extend_end(cues, k, READ_FLOOR - (c["end"] - c["start"]), end_limit) > 0:
             c["floor"] = True
+        if c["end"] - c["start"] < READ_FLOOR - 1e-9:
+            c["short_reason"] = short_reason(cues, k, end_limit)
         k += 1
+
+
+def short_reason(cues, k, end_limit=END_LIMIT):
+    """Why cue k could not reach READ_FLOOR (it may not start earlier, ruling R7)."""
+    c = cues[k]
+    if k + 1 >= len(cues):
+        return "timeline end %.2f s" % end_limit
+    n = cues[k + 1]
+    why = []
+    if n["start"] >= n.get("speech_start", n["start"]) + BORROW_MAX - 1e-3:
+        why.append("already delayed %.2f s past its first word" % (n["start"] - n["speech_start"]))
+    if n["end"] - n["start"] <= READ_FLOOR + 1e-3:
+        why.append("a %.2f s cue with no room" % (n["end"] - n["start"]))
+    if not why:
+        why.append("its end is capped (linger/1.5 s/next cue)")
+    return "next cue %r at %.3f is %s" % (n["text"], n["start"], " and ".join(why))
 
 
 ATTACH_GAP = 0.35       # VAD speech this close to a cue edge belongs to that cue's words
@@ -673,9 +704,27 @@ def merge_regions(rs):
     return out
 
 
-def build_job(ws, n, tokenizer=None):
+def load_jobs(ws):
+    """{job number: job dict} from WORKSPACE/jobs.json ({} when absent)."""
+    p = os.path.join(ws, "jobs.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as f:
+        return {int(j["job"]): j for j in json.load(f)}
+
+
+def job_end_limit(ws, n, default=END_LIMIT):
+    """A job's last-cue end limit: its duration_s from jobs.json (never a hard-coded 55)."""
+    j = load_jobs(ws).get(n)
+    return float(j["duration_s"]) if j and j.get("duration_s") else default
+
+
+def build_job(ws, n, tokenizer=None, end_limit=None):
     with open(os.path.join(ws, "srt", "job%d.curation.json" % n), encoding="utf-8") as f:
         cur = json.load(f)
+    if end_limit is None:
+        end_limit = job_end_limit(ws, n)
+    add_custom_words(cur.get("custom_words"))
     passes, regions = load_passes(ws, n)
     pw = []
     for p in cur["phrases"]:
@@ -688,11 +737,13 @@ def build_job(ws, n, tokenizer=None):
         p["_start"], p["_end"] = words[0]["start"], words[-1]["end"]
         pw.append(words)
     use_vad = cur.get("vad_clamp", True)
-    cues = build_cues(pw, regions if use_vad else None, tokenizer=tokenizer, omitted=cur.get("omitted", []))
+    cues = build_cues(pw, regions if use_vad else None, end_limit=end_limit, tokenizer=tokenizer,
+                      omitted=cur.get("omitted", []))
     speech_start = regions[0][0] if regions else None
     out = os.path.join(ws, "srt", "job%d.srt" % n)
     write_srt(out, cues)
-    errs = validate_file(out, speech_start=speech_start)
+    errs = validate_file(out, speech_start=speech_start, end_limit=end_limit)
+    cur["_end_limit"] = end_limit
     ok = {j["text"] for j in cur.get("no_vad_justified", [])}
     errs += [e for e in cue_speech_checks(cues, regions)
              if not ("overlaps no VAD" in e and any(repr(t) in e for t in ok))]
@@ -737,6 +788,12 @@ def write_curation_md(ws, n, cur, cues, regions, errs):
     L += ["", "## Cues (%d)" % len(cues), "", "| # | start | end | dur | text |", "|---|---|---|---|---|"]
     for k, c in enumerate(cues, 1):
         L.append("| %d | %.3f | %.3f | %.2f | %s |" % (k, c["start"], c["end"], c["end"] - c["start"], c["text"]))
+    L += ["", "Duration stats: " + fmt_stats(cue_stats(cues))]
+    short = [(k, c) for k, c in enumerate(cues, 1) if c.get("short_reason")]
+    if short:
+        L += ["", "## Cues shorter than %.2f s (blocked)" % READ_FLOOR, ""]
+        L += ["- cue %d %s %.3f-%.3f (%.2f s): %s" % (k, c["text"], c["start"], c["end"],
+                                                    c["end"] - c["start"], c["short_reason"]) for k, c in short]
     nj = cur.get("no_vad_justified", [])
     if nj:
         L += ["", "## Cues outside VAD speech (justified)", ""]
@@ -747,13 +804,56 @@ def write_curation_md(ws, n, cur, cues, regions, errs):
           for a, b, why in unc] or ["- none"]
     L += ["", "VAD speech regions (raw+voice union): " +
           ", ".join("%.2f-%.2f" % (a, b) for a, b in regions), "",
+          "End limit (jobs.json duration_s): %.3f s" % cur.get("_end_limit", END_LIMIT),
           "Validator: " + ("PASS" if not errs else "FAIL: " + "; ".join(errs)), ""]
     with open(os.path.join(ws, "srt", "job%d.curation.md" % n), "w", encoding="utf-8") as f:
         f.write("\n".join(L))
 
 
-def write_transcripts(ws, results):
-    L = ["# Clean transcripts (FreeTalk_1, 10 jobs)", "",
+def cue_stats(cues):
+    import statistics
+    d = [c["end"] - c["start"] for c in cues]
+    if not d:
+        return {"n": 0}
+    return {"n": len(d), "mean": statistics.mean(d), "median": statistics.median(d), "min": min(d),
+            "max": max(d), "short": sum(1 for x in d if x < READ_FLOOR - 1e-3)}
+
+
+def fmt_stats(st):
+    if not st.get("n"):
+        return "no cues"
+    return "%d cues, mean %.2f s, median %.2f s, min %.2f s, max %.2f s, %d < %.2f s" % (
+        st["n"], st["mean"], st["median"], st["min"], st["max"], st["short"], READ_FLOOR)
+
+
+def write_summary(ws, built):
+    """srt/summary.md: per-job cue stats and every cue under READ_FLOOR with its reason."""
+    L = ["# SRT summary", "", "| job | cues | mean | median | min | max | <%.2f s | end limit | validator |"
+         % READ_FLOOR, "|---|---|---|---|---|---|---|---|---|"]
+    alld = []
+    for n, cur, cues, errs in built:
+        st = cue_stats(cues)
+        alld += cues
+        L.append("| %d | %d | %.2f | %.2f | %.2f | %.2f | %d | %.1f | %s |" % (
+            n, st["n"], st["mean"], st["median"], st["min"], st["max"], st["short"],
+            cur.get("_end_limit", END_LIMIT), "PASS" if not errs else "FAIL"))
+    st = cue_stats(alld)
+    if st.get("n"):
+        L.append("| all | %d | %.2f | %.2f | %.2f | %.2f | %d | | |" % (
+            st["n"], st["mean"], st["median"], st["min"], st["max"], st["short"]))
+    L += ["", "## Cues shorter than %.2f s" % READ_FLOOR, ""]
+    rows = ["- job %d cue %d %s %.3f-%.3f (%.2f s): %s" % (n, k, c["text"], c["start"], c["end"],
+                                                         c["end"] - c["start"], c.get("short_reason", "?"))
+            for n, _, cues, _ in built for k, c in enumerate(cues, 1)
+            if c["end"] - c["start"] < READ_FLOOR - 1e-3]
+    L += rows or ["- none"]
+    with open(os.path.join(ws, "srt", "summary.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(L) + "\n")
+
+
+def write_transcripts(ws, results, title=None):
+    title = title or os.path.basename(os.path.normpath(ws))
+    L = ["# Clean transcripts (%s, %d jobs)" % (title, len(results)), "",
          "Curated from 4 draft ASR passes + overlapping-window re-transcription. "
          "`[ไม่ชัด a-b s]` marks speech omitted as unresolvable; see job<N>.curation.md.", ""]
     for n, cur in results:
@@ -776,21 +876,30 @@ def main():
     v = sub.add_parser("validate")
     v.add_argument("srt")
     v.add_argument("--speech-start", type=float)
-    v.add_argument("--end", type=float, default=END_LIMIT)
+    v.add_argument("--end", type=float, help="end limit s (default: job duration_s, else %.0f)" % END_LIMIT)
+    v.add_argument("--workspace", help="read the end limit of --job from WORKSPACE/jobs.json")
+    v.add_argument("--job", type=int)
+    b.add_argument("--title", help="transcripts.md title (default: workspace folder name)")
     a = ap.parse_args()
     if a.cmd == "validate":
-        errs = validate_file(a.srt, a.speech_start, a.end)
+        end = a.end
+        if end is None:
+            end = job_end_limit(a.workspace, a.job) if a.workspace and a.job else END_LIMIT
+        errs = validate_file(a.srt, a.speech_start, end)
         print("PASS" if not errs else "\n".join(errs))
         sys.exit(1 if errs else 0)
-    jobs = range(1, 11) if not a.jobs else [int(x) for x in a.jobs.split(",")]
-    results, bad = [], 0
+    alljobs = sorted(load_jobs(a.workspace)) or list(range(1, 11))
+    jobs = alljobs if not a.jobs else [int(x) for x in a.jobs.split(",")]
+    results, built, bad = [], [], 0
     for n in jobs:
         cur, cues, errs = build_job(a.workspace, n)
         results.append((n, cur))
+        built.append((n, cur, cues, errs))
         bad += bool(errs)
-        print("job %d: %d cues, %s" % (n, len(cues), "PASS" if not errs else "FAIL " + "; ".join(errs)))
-    if not a.jobs:
-        write_transcripts(a.workspace, results)
+        print("job %d: %s, %s" % (n, fmt_stats(cue_stats(cues)), "PASS" if not errs else "FAIL " + "; ".join(errs)))
+    if set(jobs) == set(alljobs):
+        write_transcripts(a.workspace, results, a.title)
+        write_summary(a.workspace, built)
     sys.exit(1 if bad else 0)
 
 
