@@ -1,0 +1,25 @@
+{
+  "vdo": {
+    "source": "Tygarina FreeTalk T5 (original) :: Reaction - Excuse Me What.gif, preset vdo loaded by user",
+    "values": {
+      "ZoomX": 0.42,
+      "ZoomY": 0.42,
+      "Pan": 0.0,
+      "Tilt": 32.28386473655701,
+      "RotationAngle": 0.0,
+      "AnchorPointX": 0.0,
+      "AnchorPointY": 0.0,
+      "Pitch": 0.0,
+      "Yaw": 0.0,
+      "FlipX": false,
+      "FlipY": false,
+      "CropLeft": 0.0,
+      "CropRight": 0.0,
+      "CropTop": 0.0,
+      "CropBottom": 0.0,
+      "CropSoftness": 0.0,
+      "Opacity": 100.0,
+      "CompositeMode": 0
+    }
+  }
+}

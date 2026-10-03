@@ -19,6 +19,8 @@
 - Source-less overlays may still be inventoried by item name, track, and position, but do not claim a verified media path.
 
 ## Python CLI invocation
+- The terminal shell persists exports. Set `PYTHONHOME` (Resolve's bundled-Python route) inline per command, never `export` it: a lingering value breaks every other interpreter with `SRE module mismatch`. Use `uv run --with pillow python` for image diffs because the Resolve interpreter and the system Python lack Pillow.
+- Run Resolve scripts with `TMPDIR` pointing at the scratch workspace and keep shared helpers (activate-by-ID, bin import, apply, audit) in an importable module so each call stays small and idempotent.
 - From the repository root, run the exact documented `--help` or dry-run command in a subprocess test before relying on a Resolve automation CLI. Direct file execution sets `sys.path[0]` to the script directory, so imports such as `from scripts...` can fail before argument handling; either bootstrap the repository root deliberately or invoke the module with `python -m`, and test the chosen form.
 
 ## Active-state discipline
@@ -62,10 +64,19 @@
 - Copy transforms directly only at the same raster; an approved aspect-ratio variant needs new calibration.
 - With explicit reformat approval, duplicate first, set `useCustomSettings=1` and the intended timeline dimensions, then reread both original and duplicate rasters.
 - Fit model for source `w,h` on canvas `W,H`: `fit=min(W/w,H/h)`; fitted raster is `w*fit,h*fit`.
-- Historical transform model: visible X shift is `Pan*fitted_w/W`, visible Y shift is `-Tilt*fitted_h/H`; calculate per source, not one batch constant.
+- Transform model measured by overlay-on/off pixel diff on 21.1 (1920x1080 canvas): on-screen X shift px = `Pan*fitted_w/W`, on-screen Y shift px = `Tilt*fitted_h/H` with positive Tilt moving UP. To place an overlay at a target offset, solve `Pan = dx*W/fitted_w`, `Tilt = dy*H/fitted_h` per source. A full-width landscape source has factor 1, which hides the factor; a portrait or small source needs a very large Pan (thousands) and readback alone looks plausible while the render is wrong.
+- Take source `w,h` for the fit from the Media Pool item's `GetClipProperty("Resolution")`, not from ffprobe: GIF logical-screen sizes differ between the two (and Resolve conforms GIFs to 25 fps with its own `Frames`).
 - The model is a calibration aid, not proof; Zoom/raster changes can alter apparent crop and displacement.
 - Verify rendered head, face, hands, headroom, caption overlap, HUD and game evidence.
 - When needed, capture the same viewer frame with overlay off/on and diff scratch images for a measured bounding box; restore the track state afterward.
+
+## Vertical (9:16) reformat traps
+- Item transform readback (`GetProperty` Pan/Tilt/Crop) on an INACTIVE reformatted timeline is scaled by the project raster (Pan x16/9, Tilt x9/16 seen on a 1080x1920 timeline in a 1920x1080 project). Activate the timeline, then read; otherwise a correct timeline audits as wrong.
+- Calibrate on the live build before computing layout: on observed 21.1 a 1920x1080 source on 1080x1920 had fit 0.5625, Pan 1 canvas px/unit, Tilt = fitted_h/canvas_h px/unit (+ moves up), Crop in pre-zoom units (canvas px = crop x Zoom).
+- `AppendToTimeline` with an inclusive last source frame on a GIF played to its final frame returned one frame short; pass last+1 for that case and compare `GetSourceEndFrame()` with the original.
+- A pure-black-row test must use row MAX, not mean, and apply only where content is guaranteed (dark game scenes are legitimate in the game panel).
+- Reformat batches of ~10 timelines back-to-back froze Resolve twice (Not Responding for many minutes); run 2 per call with pauses, and delete only the exact half-built duplicate by name+id+raster after a read-only check. Force-closing needs the user's approval.
+- Align per-stream facecam framing to one anchor (eye line) read from labelled source stills so a fixed-pivot Fusion focus zoom frames every timeline the same.
 
 ## Audio capability boundaries
 - Enumerate actual item properties; observed level key is `SetProperty('AudioVolume', dB)`.
@@ -81,7 +92,7 @@
 - A missing V2 reaction overlay can turn the entire composite red while V1 is online; inspect overlays before diagnosing the original source.
 - If `GetMediaPoolItem()` is None, no pool entry exists to relink; approved re-import/re-placement must preserve original record frame, track, ranges, and transforms.
 - Follow `references/offline-media-repair.md`; do not silently replace sources as part of delivery.
-- After a crash, a blocking Problem Report modal may prevent bridge calls; do not send a report on the user's behalf.
+- After a crash, a blocking Problem Report modal may prevent bridge calls; do not send a report on the user's behalf. A hang can also appear as `Not Responding` with flat CPU after a long back-to-back mutation run; size each terminal call to finish well inside the tool timeout (a timed-out call orphans the Python client), kill only your own client processes, and ask the user before force-closing Resolve.
 - Use a read-only integrity check and timeline readback before retrying the interrupted batch; success logs from earlier calls are not a live inventory.
 - Never patch an open database. Direct SQL is a separately authorized last resort: verified export, close, database backup, exact rows, transaction, reopen, readback.
 

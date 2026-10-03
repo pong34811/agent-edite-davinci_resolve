@@ -9,6 +9,16 @@ Use this workflow when adding new static images as visual illustrations or overl
 - Check an approved same-project exemplar and current house style before inventing placement, scale, track names, borders, or animation.
 - Protect gameplay evidence, avatar head/face/hands, headroom, subtitles, and important HUD. Keep the original approved aspect ratio; do not convert a horizontal project to vertical by assumption.
 
+### User-designated vertical placement exemplar
+
+- Load `assets/katy404-vertical-reaction-layout.png` with `vision_analyze`, resolving its absolute path from this skill's directory. This is a preserved user-supplied screenshot of the intended placement, not a new render or an extracted reusable cat asset.
+- Visible arrangement: gameplay occupies the upper panel; the large VTuber avatar occupies the lower panel. A rectangular cat reaction image sits horizontally centered within the gameplay panel and reaches down near the panel boundary. Gameplay remains visible above and on both sides of it.
+- The bold white Thai caption with black outline sits at the top of the lower panel, immediately below the gameplay/image area and above the avatar's head. The reaction image stays out of the avatar's face/hands and the caption area in this example.
+- Use this as the user's placement reference for comparable vertical illustration/reaction overlays: preserve the game-above/avatar-below structure, place the reaction visual within the upper gameplay area, and keep captions and avatar unobstructed. Verify that the overlay does not hide the event/HUD needed for the current joke; match its editorial function, not blindly identical coordinates.
+- Do not infer exact Zoom/Pan/Tilt, output raster, panel ratio, hold duration, animation or source transparency from this screenshot. It cannot establish whether the reaction asset is a still or animated GIF. Inspect live settings and motion only in an authorized task.
+- This example does not specify a horizontal layout or require a cat/reaction overlay in every cue. Review horizontal versions separately, preserve existing approved edits, and ask only if a materially different placement needs a user decision.
+- Keep the screenshot as reference evidence; its availability is not permission or a license to extract/reuse the pictured cat asset. No live edit, import, render or timing change is authorized by saving this example.
+
 ## 2. Source and validate the image
 
 - Prefer an authorized, user-provided or appropriately licensed image. Record exact source URL/path, creator, license, attribution requirement, acquisition date if relevant, and intended use. A search result, filename, or "free" label is not proof of reuse rights.
