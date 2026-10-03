@@ -1,0 +1,313 @@
+{
+  "success": true,
+  "tests": [
+    {
+      "name": "Project Connection & ID Verification",
+      "passed": true,
+      "observed": {
+        "name": "KT404_2026-09-29",
+        "id": "7c38045b-c9ae-426c-8b4c-2e2d726d88ff"
+      },
+      "expected": {
+        "name": "KT404_2026-09-29",
+        "id": "7c38045b-c9ae-426c-8b4c-2e2d726d88ff"
+      },
+      "details": ""
+    },
+    {
+      "name": "Target Timeline Existence",
+      "passed": true,
+      "observed": "หนีฝ่าความหนาว_Minecraft-vdo_9x16",
+      "expected": "หนีฝ่าความหนาว_Minecraft-vdo_9x16",
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Existence",
+      "passed": true,
+      "observed": "หนีฝ่าความหนาว_Minecraft-vdo",
+      "expected": "หนีฝ่าความหนาว_Minecraft-vdo",
+      "details": ""
+    },
+    {
+      "name": "Target Resolution (1080x1920 9:16)",
+      "passed": true,
+      "observed": "1080x1920",
+      "expected": "1080x1920",
+      "details": ""
+    },
+    {
+      "name": "Target useCustomSettings == 1",
+      "passed": true,
+      "observed": "1",
+      "expected": "1",
+      "details": ""
+    },
+    {
+      "name": "Target Timeline Frame Rate (60.0 fps)",
+      "passed": true,
+      "observed": 60.0,
+      "expected": 60.0,
+      "details": ""
+    },
+    {
+      "name": "Target Timeline Duration (5880 frames)",
+      "passed": true,
+      "observed": 5880,
+      "expected": 5880,
+      "details": ""
+    },
+    {
+      "name": "Target Video Track Count (4 tracks: V1-V4)",
+      "passed": true,
+      "observed": 4,
+      "expected": 4,
+      "details": ""
+    },
+    {
+      "name": "Target Audio Track Count (3 tracks: A1-A3)",
+      "passed": true,
+      "observed": 3,
+      "expected": 3,
+      "details": ""
+    },
+    {
+      "name": "V1 Item Count >= 1",
+      "passed": true,
+      "observed": 1,
+      "expected": ">= 1",
+      "details": ""
+    },
+    {
+      "name": "V1 Game Top: Zoom == 1.60",
+      "passed": true,
+      "observed": "ZoomX=1.6, ZoomY=1.6",
+      "expected": "Zoom=1.60",
+      "details": ""
+    },
+    {
+      "name": "V1 Game Top: Pan == 0.0",
+      "passed": true,
+      "observed": 0.0,
+      "expected": 0.0,
+      "details": ""
+    },
+    {
+      "name": "V1 Game Top: Tilt == +480.0",
+      "passed": true,
+      "observed": 480.0,
+      "expected": 480.0,
+      "details": ""
+    },
+    {
+      "name": "V1 Game Top: CropBottom == 486.0",
+      "passed": true,
+      "observed": 486.0,
+      "expected": 486.0,
+      "details": ""
+    },
+    {
+      "name": "V2 Item Count >= 1",
+      "passed": true,
+      "observed": 1,
+      "expected": ">= 1",
+      "details": ""
+    },
+    {
+      "name": "V2 VTuber Bottom: Zoom == 2.60",
+      "passed": true,
+      "observed": "ZoomX=2.6, ZoomY=2.6",
+      "expected": "Zoom=2.60",
+      "details": ""
+    },
+    {
+      "name": "V2 VTuber Bottom: Pan == -936.0",
+      "passed": true,
+      "observed": -936.0,
+      "expected": -936.0,
+      "details": ""
+    },
+    {
+      "name": "V2 VTuber Bottom: Tilt == -200.0",
+      "passed": true,
+      "observed": -200.0,
+      "expected": -200.0,
+      "details": ""
+    },
+    {
+      "name": "V2 VTuber Bottom: CropTop == 480.0",
+      "passed": true,
+      "observed": 480.0,
+      "expected": 480.0,
+      "details": ""
+    },
+    {
+      "name": "V3 Adjustment Clip Count == 3",
+      "passed": true,
+      "observed": 3,
+      "expected": 3,
+      "details": ""
+    },
+    {
+      "name": "V3 Adjustment Clip #1 Fusion Transform Center=(0.50, 0.25), Size=2.0",
+      "passed": true,
+      "observed": {
+        "tool_name": "Transform1",
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0,
+        "start": 219265,
+        "end": 219369
+      },
+      "expected": {
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0
+      },
+      "details": "Clip range: 219265..219369"
+    },
+    {
+      "name": "V3 Adjustment Clip #2 Fusion Transform Center=(0.50, 0.25), Size=2.0",
+      "passed": true,
+      "observed": {
+        "tool_name": "Transform1",
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0,
+        "start": 220076,
+        "end": 220184
+      },
+      "expected": {
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0
+      },
+      "details": "Clip range: 220076..220184"
+    },
+    {
+      "name": "V3 Adjustment Clip #3 Fusion Transform Center=(0.50, 0.25), Size=2.0",
+      "passed": true,
+      "observed": {
+        "tool_name": "Transform1",
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0,
+        "start": 220690,
+        "end": 220754
+      },
+      "expected": {
+        "cx": 0.5,
+        "cy": 0.25,
+        "size": 2.0
+      },
+      "details": "Clip range: 220690..220754"
+    },
+    {
+      "name": "V4 Reaction GIF Count >= 1",
+      "passed": true,
+      "observed": 1,
+      "expected": ">= 1",
+      "details": ""
+    },
+    {
+      "name": "V4 Reaction GIF: Zoom == 0.42",
+      "passed": true,
+      "observed": "ZoomX=0.42, ZoomY=0.42",
+      "expected": "Zoom=0.42",
+      "details": ""
+    },
+    {
+      "name": "V4 Reaction GIF: Pan == -300.0",
+      "passed": true,
+      "observed": -300.0,
+      "expected": -300.0,
+      "details": ""
+    },
+    {
+      "name": "V4 Reaction GIF: Tilt == +600.0",
+      "passed": true,
+      "observed": 600.0,
+      "expected": 600.0,
+      "details": ""
+    },
+    {
+      "name": "Zero Media Offline Across All Tracks",
+      "passed": true,
+      "observed": {
+        "offline_count": 0,
+        "checked": 9,
+        "offline_items": []
+      },
+      "expected": {
+        "offline_count": 0
+      },
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Identity Untouched",
+      "passed": true,
+      "observed": {
+        "name": "หนีฝ่าความหนาว_Minecraft-vdo",
+        "id": "7dcaea9a-b19f-4fa4-ac24-9a4f8c12f3ff"
+      },
+      "expected": {
+        "name": "หนีฝ่าความหนาว_Minecraft-vdo",
+        "id": "7dcaea9a-b19f-4fa4-ac24-9a4f8c12f3ff"
+      },
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Resolution Untouched (1920x1080)",
+      "passed": true,
+      "observed": "1920x1080",
+      "expected": "1920x1080",
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Video Tracks Untouched (3 tracks)",
+      "passed": true,
+      "observed": 3,
+      "expected": 3,
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Audio Tracks Untouched (3 tracks)",
+      "passed": true,
+      "observed": 3,
+      "expected": 3,
+      "details": ""
+    },
+    {
+      "name": "Original Timeline Subtitle Cues Untouched (45 cues)",
+      "passed": true,
+      "observed": 45,
+      "expected": 45,
+      "details": ""
+    },
+    {
+      "name": "Locked Subtitle Cues 1:1 Preservation",
+      "passed": true,
+      "observed": {
+        "total_cues": 45,
+        "mismatches": 0
+      },
+      "expected": {
+        "total_cues": 45,
+        "mismatches": 0
+      },
+      "details": ""
+    },
+    {
+      "name": "Locked Audio Tracks 1:1 Preservation",
+      "passed": true,
+      "observed": {
+        "diffs": []
+      },
+      "expected": {
+        "diffs": []
+      },
+      "details": ""
+    }
+  ],
+  "errors": [],
+  "evidence": {}
+}

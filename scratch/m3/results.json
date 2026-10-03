@@ -1,0 +1,1750 @@
+{
+ "2": {
+  "subs": [
+   true,
+   56
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 3,
+    "top_dark_rows": 3,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "คุยกับเพื่อนตั้งนาน ลืมเอาเสียงเข้าไลฟ์_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "3": {
+  "subs": [
+   true,
+   69
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 21,
+    "top_dark_rows": 21,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 2,
+    "top_dark_rows": 2,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ลืมเสบียง จนต้องกินเนื้อซอมบี้_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "4": {
+  "subs": [
+   true,
+   65
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ครีปเปอร์ระเบิดข้างกรง แต่กรงยังรอด_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "5": {
+  "subs": [
+   true,
+   34
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "เห็นแร่จนสงสัยว่าตัวเองมีเอกซเรย์_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "6": {
+  "subs": [
+   true,
+   33
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ออกหาตัวละคร วนกลับมาบ้านตัวเอง_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "7": {
+  "subs": [
+   true,
+   83
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ต้องพายเรือ หรือหิ้วเรือขึ้นเขา_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "8": {
+  "subs": [
+   true,
+   80
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": false,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": false,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "พาชาวบ้านกลับฐาน รอดมาได้ตัวเดียว_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "9": {
+  "subs": [
+   true,
+   87
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ชวนชาวบ้านเพิ่มประชากร ขนมปังหายครึ่งกอง_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "10": {
+  "subs": [
+   true,
+   81
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ทำฟาร์มในหิมะ น้ำแข็งจนต้องทำหลังคา_Minecraft-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "11": {
+  "subs": [
+   true,
+   108
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "ชวนเพื่อนไม่ได้ เพราะเผลอแบล็กลิสต์กัน_Soul Walker-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "12": {
+  "subs": [
+   true,
+   62
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "เสียงสะท้อนสยองขวัญ_Soul Walker-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "13": {
+  "subs": [
+   true,
+   37
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "กองทัพโอลด์วัน_Terraria-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": []
+ },
+ "14": {
+  "subs": [
+   true,
+   97
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 78,
+    "top_dark_rows": 78,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 226,
+    "top_dark_rows": 226,
+    "bottom_dark_rows": 0
+   },
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 293,
+    "top_dark_rows": 193,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "name": "แพ้มูนลอร์ด_Terraria-vdo_9x16",
+  "saved": true,
+  "needs_eyeball": [
+   "gif"
+  ]
+ },
+ "15": {
+  "subs": [
+   true,
+   95
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 212,
+    "top_dark_rows": 212,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 345,
+    "top_dark_rows": 345,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 309,
+    "top_dark_rows": 309,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [
+   "normal",
+   "gif",
+   "focus"
+  ],
+  "name": "ปราบมูนลอร์ดได้ครั้งแรก_Terraria-vdo_9x16",
+  "saved": true
+ },
+ "16": {
+  "subs": [
+   true,
+   81
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 130,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 153,
+    "top_dark_rows": 153,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 149,
+    "top_dark_rows": 149,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "ปราบมูนลอร์ดได้ครั้งที่สอง_Terraria-vdo_9x16",
+  "saved": true
+ },
+ "17": {
+  "subs": [
+   true,
+   58
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 210,
+    "top_dark_rows": 210,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [
+   "focus"
+  ],
+  "name": "คืนจันทร์ฟักทอง_Terraria-vdo_9x16",
+  "saved": true
+ },
+ "18": {
+  "subs": [
+   true,
+   81
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 28,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "ตัวละครโผล่ตอนสู้บอส_Terraria-vdo_9x16",
+  "saved": true
+ },
+ "19": {
+  "subs": [
+   true,
+   114
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "สุ่มปี่สก็อตเหล็ก_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "20": {
+  "subs": [
+   true,
+   44
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "เกรตจากราส_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "21": {
+  "subs": [
+   true,
+   51
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "คูลูยาคู_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "22": {
+  "subs": [
+   true,
+   63
+  ],
+  "audio": [
+   true,
+   4
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "พูเคพูเค_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "23": {
+  "subs": [
+   true,
+   29
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "บาร์รอธ_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "24": {
+  "subs": [
+   true,
+   127
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "จูราทอดัส_Monster Hunter World-vdo_9x16",
+  "saved": true
+ },
+ "25": {
+  "subs": [
+   true,
+   97
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "บอสมังกร_Soul Walker-vdo_9x16",
+  "saved": true
+ },
+ "27": {
+  "subs": [
+   true,
+   59
+  ],
+  "audio": [
+   true,
+   3
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "ปราบโกเล็มสำเร็จ_Soul Walker-vdo_9x16",
+  "saved": true
+ },
+ "28": {
+  "subs": [
+   true,
+   108
+  ],
+  "audio": [
+   true,
+   3
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "นับถอยหลังในห้องโล่_Soul Walker-vdo_9x16",
+  "saved": true
+ },
+ "29": {
+  "subs": [
+   true,
+   39
+  ],
+  "audio": [
+   true,
+   3
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "เคลียร์เมืองนรก_Soul Walker-vdo_9x16",
+  "saved": true
+ },
+ "30": {
+  "subs": [
+   true,
+   32
+  ],
+  "audio": [
+   true,
+   3
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "โดนบอสจับจนต้องใช้ท่าพิเศษสองครั้ง_Soul Walker-vdo_9x16",
+  "saved": true
+ },
+ "1": {
+  "subs": [
+   true,
+   51
+  ],
+  "audio": [
+   true,
+   5
+  ],
+  "v1_range": true,
+  "range": true,
+  "raster": [
+   "1080",
+   "1920"
+  ],
+  "offline": [],
+  "v3_ranges": true,
+  "gif_ranges": true,
+  "v2_range": true,
+  "tracks": [
+   4,
+   3,
+   1
+  ],
+  "original_untouched": true,
+  "ok": true,
+  "stills": {
+   "normal": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "gif": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   },
+   "focus": {
+    "size": [
+     1080,
+     1920
+    ],
+    "dark_rows": 0,
+    "top_dark_rows": 0,
+    "bottom_dark_rows": 0
+   }
+  },
+  "stills_ok": true,
+  "needs_eyeball": [],
+  "name": "ขุดมั่วเจอเหล็กกองใหญ่_Minecraft-vdo_9x16",
+  "saved": true
+ }
+}

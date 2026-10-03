@@ -1,0 +1,543 @@
+{
+  "timestamp": "2026-10-02T09:45:02.411323",
+  "resolve_connection": {
+    "product": "DaVinci Resolve Studio",
+    "version": "21.1.0.17"
+  },
+  "project_audit": {
+    "name": "tygarina_2026-09-30",
+    "timeline_count": 7,
+    "timeline_fps": 60.0,
+    "playback_fps": "24",
+    "resolution": "1920x1080"
+  },
+  "timeline_audits": [
+    {
+      "id": "H1",
+      "name": "Highlight_Gaming_REPO_Jumpscare",
+      "category": "Gaming",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_seconds": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+        "duration": 3900,
+        "source_start": 403200,
+        "source_end": 407100,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "audio_clip": {
+        "name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+        "duration": 3900,
+        "source_start": 403200,
+        "source_end": 407100,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H2",
+      "name": "Highlight_Gaming_Climbing_Clutch",
+      "category": "Gaming",
+      "start_frame": 0,
+      "end_frame": 3600,
+      "duration_frames": 3600,
+      "duration_seconds": 60.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+        "duration": 3600,
+        "source_start": 351300,
+        "source_end": 354900,
+        "record_start": 0,
+        "record_end": 3600
+      },
+      "audio_clip": {
+        "name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+        "duration": 3600,
+        "source_start": 351300,
+        "source_end": 354900,
+        "record_start": 0,
+        "record_end": 3600
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H3",
+      "name": "Highlight_Gaming_Ib_Horror",
+      "category": "Gaming",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "IB - สำรวจโลกภาพวาด P1.mp4",
+        "duration": 3300,
+        "source_start": 268500,
+        "source_end": 271800,
+        "record_start": 0,
+        "record_end": 3300
+      },
+      "audio_clip": {
+        "name": "IB - สำรวจโลกภาพวาด P1.mp4",
+        "duration": 3300,
+        "source_start": 268500,
+        "source_end": 271800,
+        "record_start": 0,
+        "record_end": 3300
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H4",
+      "name": "Highlight_Fun_DnD_Bard",
+      "category": "Fun",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+        "duration": 3300,
+        "source_start": 58800,
+        "source_end": 62100,
+        "record_start": 0,
+        "record_end": 3300
+      },
+      "audio_clip": {
+        "name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+        "duration": 3300,
+        "source_start": 58800,
+        "source_end": 62100,
+        "record_start": 0,
+        "record_end": 3300
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H5",
+      "name": "Highlight_Meme_GarticPhone_Art",
+      "category": "Meme",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_seconds": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+        "duration": 3900,
+        "source_start": 150600,
+        "source_end": 154500,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "audio_clip": {
+        "name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+        "duration": 3900,
+        "source_start": 150600,
+        "source_end": 154500,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H6",
+      "name": "Highlight_Meme_FreeTalk_Tiger",
+      "category": "Meme",
+      "start_frame": 0,
+      "end_frame": 3600,
+      "duration_frames": 3600,
+      "duration_seconds": 60.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+        "duration": 3600,
+        "source_start": 134100,
+        "source_end": 137700,
+        "record_start": 0,
+        "record_end": 3600
+      },
+      "audio_clip": {
+        "name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+        "duration": 3600,
+        "source_start": 134100,
+        "source_end": 137700,
+        "record_start": 0,
+        "record_end": 3600
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    },
+    {
+      "id": "H7",
+      "name": "Highlight_Fun_Overcooked_KitchenFire",
+      "category": "Fun/Gaming",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_seconds": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "subtitle_tracks": 0,
+      "video_clip": {
+        "name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+        "duration": 3900,
+        "source_start": 458400,
+        "source_end": 462300,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "audio_clip": {
+        "name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+        "duration": 3900,
+        "source_start": 458400,
+        "source_end": 462300,
+        "record_start": 0,
+        "record_end": 3900
+      },
+      "checks": {
+        "name_ok": true,
+        "duration_exact": true,
+        "duration_in_window": true,
+        "v_clip_count_1": true,
+        "v_clip_source_ok": true,
+        "v_src_start_ok": true,
+        "v_src_end_ok": true,
+        "v_dur_ok": true,
+        "a_clip_count_1": true,
+        "a_clip_source_ok": true,
+        "a_src_start_ok": true,
+        "a_src_end_ok": true,
+        "a_dur_ok": true,
+        "av_sync_ok": true
+      },
+      "pass": true
+    }
+  ],
+  "media_integrity_audit": {
+    "media_dir": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30",
+    "entry_count": 32,
+    "mp4_file_count": 32,
+    "non_mp4_entries": [],
+    "total_bytes": 74624842819,
+    "total_gib": 69.4998,
+    "expected_bytes": 74624842819,
+    "files_unmodified_before_task": true,
+    "intact": true,
+    "file_stats": [
+      {
+        "name": "After DnD EP.4 ตอน เมื่อไทกะนอนไม่หลับเพราะความรัก.mp4",
+        "size": 999472111,
+        "modified": "2026-09-30T11:51:45.904154",
+        "modified_ts": 1790743905.9041536
+      },
+      {
+        "name": "After DnD ： หลอนครั้งแรกแต่จบดาร์กขั้นสุด.mp4",
+        "size": 513274431,
+        "modified": "2026-09-30T11:44:04.251581",
+        "modified_ts": 1790743444.2515807
+      },
+      {
+        "name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+        "size": 1848479820,
+        "modified": "2026-09-30T11:37:29.720064",
+        "modified_ts": 1790743049.7200637
+      },
+      {
+        "name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+        "size": 5113354666,
+        "modified": "2026-09-30T16:50:27.687430",
+        "modified_ts": 1790761827.6874304
+      },
+      {
+        "name": "Free Talk - ปิดคาสิโนแล้วบอสไปทำไรต่อ.mp4",
+        "size": 449415778,
+        "modified": "2026-09-30T09:12:11.932817",
+        "modified_ts": 1790734331.932817
+      },
+      {
+        "name": "Free Talk ติดเกาะกับเธอ จ้างเท่าไหร่ก็ไม่ออก.mp4",
+        "size": 4291613794,
+        "modified": "2026-09-30T11:26:33.977857",
+        "modified_ts": 1790742393.9778569
+      },
+      {
+        "name": "Free Talk ： จีบ 10 ปี แถมฟรีหนี้ 200 ล้าน.mp4",
+        "size": 1469459866,
+        "modified": "2026-09-30T09:15:20.221914",
+        "modified_ts": 1790734520.2219138
+      },
+      {
+        "name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+        "size": 1663858183,
+        "modified": "2026-09-30T09:08:03.710465",
+        "modified_ts": 1790734083.7104654
+      },
+      {
+        "name": "Free Talk ：สอนไทกะเป็นโจรสลัดที.mp4",
+        "size": 1156370547,
+        "modified": "2026-09-30T11:47:40.714063",
+        "modified_ts": 1790743660.7140627
+      },
+      {
+        "name": "Free Talk ：เมื่อได้เป็นตัวโดนประจำตี้.mp4",
+        "size": 2464871171,
+        "modified": "2026-09-30T16:27:44.329904",
+        "modified_ts": 1790760464.3299036
+      },
+      {
+        "name": "Free Talk ：เมื่อไทกะเล่น เกย์กับชายใน DnD โดยไม่รู้ตัว.mp4",
+        "size": 1725759048,
+        "modified": "2026-09-30T11:41:55.548705",
+        "modified_ts": 1790743315.548705
+      },
+      {
+        "name": "Free Talk： ลูกน้องไม่ตอบก็จะคุย!.mp4",
+        "size": 1116168616,
+        "modified": "2026-09-30T11:33:47.605854",
+        "modified_ts": 1790742827.6058538
+      },
+      {
+        "name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+        "size": 605910585,
+        "modified": "2026-09-30T11:19:32.026855",
+        "modified_ts": 1790741972.0268545
+      },
+      {
+        "name": "IB - สำรวจโลกภาพวาด P1.mp4",
+        "size": 690561423,
+        "modified": "2026-09-30T11:30:59.398763",
+        "modified_ts": 1790742659.3987632
+      },
+      {
+        "name": "IB - สำรวจโลกภาพวาด P2 @caramellatte710.mp4",
+        "size": 1388770469,
+        "modified": "2026-09-30T16:21:17.344444",
+        "modified_ts": 1790760077.3444438
+      },
+      {
+        "name": "MEET BOSS ： บอสเราเจอผู้หญิงไม่ได้เลย.mp4",
+        "size": 2282103116,
+        "modified": "2026-09-30T00:18:28.358074",
+        "modified_ts": 1790702308.3580742
+      },
+      {
+        "name": "R.E.P.O @ballkarozumar1238 @F4RC14  @momomewmoi @Mikhail_Cerise.mp4",
+        "size": 3213919096,
+        "modified": "2026-09-30T00:10:18.212354",
+        "modified_ts": 1790701818.2123537
+      },
+      {
+        "name": "R.E.P.O @ballkarozumar1238 @F4RC14  @momomewmoi @mitsuki_mayu@NANOZEROO.mp4",
+        "size": 2977277878,
+        "modified": "2026-09-29T23:26:54.303902",
+        "modified_ts": 1790699214.303902
+      },
+      {
+        "name": "R.E.P.O @Luche_Sinclair @Kungphaokung @RahhatemPSM @Salika_SaharasCh.mp4",
+        "size": 1841476760,
+        "modified": "2026-09-29T23:51:28.921477",
+        "modified_ts": 1790700688.921477
+      },
+      {
+        "name": "ฉลอง 800 ซับ! วงล้อเสี่ยงท้าย!!.mp4",
+        "size": 986454198,
+        "modified": "2026-09-30T09:02:51.750963",
+        "modified_ts": 1790733771.7509627
+      },
+      {
+        "name": "บอสทำไรตอนตี 2？？.mp4",
+        "size": 1088866277,
+        "modified": "2026-09-30T16:37:37.275800",
+        "modified_ts": 1790761057.2758
+      },
+      {
+        "name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+        "size": 3098811557,
+        "modified": "2026-09-30T16:33:57.201821",
+        "modified_ts": 1790760837.2018206
+      },
+      {
+        "name": "ฝึกเล่น LoL.mp4",
+        "size": 1187640016,
+        "modified": "2026-09-30T16:17:06.923038",
+        "modified_ts": 1790759826.9230375
+      },
+      {
+        "name": "รายการ ： Q&A คุยกับนกแก้ว.mp4",
+        "size": 1334961523,
+        "modified": "2026-09-30T11:54:45.273054",
+        "modified_ts": 1790744085.2730536
+      },
+      {
+        "name": "สอนไทกะเล่น LoL ที.mp4",
+        "size": 1656157440,
+        "modified": "2026-09-30T16:12:52.406270",
+        "modified_ts": 1790759572.40627
+      },
+      {
+        "name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+        "size": 2972002707,
+        "modified": "2026-09-30T00:01:10.517807",
+        "modified_ts": 1790701270.5178065
+      },
+      {
+        "name": "เสืออยากคุย [ns0I3EihIUI].mp4",
+        "size": 4151180459,
+        "modified": "2026-10-02T06:45:50.181481",
+        "modified_ts": 1790898350.1814806
+      },
+      {
+        "name": "เสืออยากคุย [qZVnCXIjfzo].mp4",
+        "size": 2802616697,
+        "modified": "2026-10-02T06:52:54.387099",
+        "modified_ts": 1790898774.3870993
+      },
+      {
+        "name": "เสืออยากคุย [VqELVP2u2oU].mp4",
+        "size": 3271872647,
+        "modified": "2026-09-30T16:42:30.512991",
+        "modified_ts": 1790761350.5129907
+      },
+      {
+        "name": "ใช้ชีวิตไปกับไทกะ 101 (ไม่ชินกล้องเลย).mp4",
+        "size": 2907011758,
+        "modified": "2026-10-02T06:11:53.502990",
+        "modified_ts": 1790896313.5029905
+      },
+      {
+        "name": "ไลฟ์คุยไปเรื่อยแบบเสือขี้เบื่อ.mp4",
+        "size": 2782422655,
+        "modified": "2026-09-30T17:32:14.231750",
+        "modified_ts": 1790764334.23175
+      },
+      {
+        "name": "ไลฟ์นี้จะเล่น Fallout 4 Nuka-world P1.mp4",
+        "size": 10572727527,
+        "modified": "2026-10-02T06:30:43.782907",
+        "modified_ts": 1790897443.7829072
+      }
+    ]
+  },
+  "adversarial_checks": {
+    "zero_offline_media": true,
+    "track_purity": true,
+    "frame_rate_consistency": true,
+    "adversarial_findings": []
+  },
+  "verdict": "APPROVE"
+}

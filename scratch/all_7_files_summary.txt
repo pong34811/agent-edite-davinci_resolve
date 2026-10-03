@@ -1,0 +1,287 @@
+
+=======================================================
+FILE 1/7: After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4
+=======================================================
+Total Duration: 9053.400s | Total Frames: 543204 | Resolution: 1280x720
+Clips in chronological order:
+  1. [PRIOR] Highlight_Fun_DnD_Bard
+     Frames: [58,800 .. 62,100] (3300 frames)
+     Seconds: [980.00s .. 1035.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 543204]: True
+  2. [CANDIDATE] ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo
+     Frames: [209,400 .. 212,700] (3300 frames)
+     Seconds: [3490.00s .. 3545.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 543204]: True
+  3. [CANDIDATE] เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo
+     Frames: [262,920 .. 266,220] (3300 frames)
+     Seconds: [4382.00s .. 4437.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 543204]: True
+  4. [CANDIDATE] ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo
+     Frames: [286,800 .. 290,100] (3300 frames)
+     Seconds: [4780.00s .. 4835.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 543204]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs PRIOR]
+    Highlight_Fun_DnD_Bard [58,800..62,100] vs ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo [209,400..212,700]
+    Overlap: 0 frames (0.0s) | Gap: 147,300 frames (2455.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Fun_DnD_Bard [58,800..62,100] vs เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo [262,920..266,220]
+    Overlap: 0 frames (0.0s) | Gap: 200,820 frames (3347.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Fun_DnD_Bard [58,800..62,100] vs ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo [286,800..290,100]
+    Overlap: 0 frames (0.0s) | Gap: 224,700 frames (3745.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo [209,400..212,700] vs เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo [262,920..266,220]
+    Overlap: 0 frames (0.0s) | Gap: 50,220 frames (837.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo [209,400..212,700] vs ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo [286,800..290,100]
+    Overlap: 0 frames (0.0s) | Gap: 74,100 frames (1235.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo [262,920..266,220] vs ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo [286,800..290,100]
+    Overlap: 0 frames (0.0s) | Gap: 20,580 frames (343.00s) | PASS: True
+
+=======================================================
+FILE 2/7: Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4
+=======================================================
+Total Duration: 10259.300s | Total Frames: 615558 | Resolution: 1920x1080
+Clips in chronological order:
+  1. [CANDIDATE] เปิดตี้แจกความฮากับเพื่อน_REPO-vdo
+     Frames: [21,000 .. 24,300] (3300 frames)
+     Seconds: [350.00s .. 405.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 615558]: True
+  2. [CANDIDATE] วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo
+     Frames: [275,280 .. 278,580] (3300 frames)
+     Seconds: [4588.00s .. 4643.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 615558]: True
+  3. [PRIOR] Highlight_Gaming_REPO_Jumpscare
+     Frames: [403,200 .. 407,100] (3900 frames)
+     Seconds: [6720.00s .. 6785.00s] (65.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 615558]: True
+  4. [CANDIDATE] จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo
+     Frames: [574,680 .. 577,980] (3300 frames)
+     Seconds: [9578.00s .. 9633.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 615558]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    เปิดตี้แจกความฮากับเพื่อน_REPO-vdo [21,000..24,300] vs วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo [275,280..278,580]
+    Overlap: 0 frames (0.0s) | Gap: 250,980 frames (4183.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    เปิดตี้แจกความฮากับเพื่อน_REPO-vdo [21,000..24,300] vs Highlight_Gaming_REPO_Jumpscare [403,200..407,100]
+    Overlap: 0 frames (0.0s) | Gap: 378,900 frames (6315.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    เปิดตี้แจกความฮากับเพื่อน_REPO-vdo [21,000..24,300] vs จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo [574,680..577,980]
+    Overlap: 0 frames (0.0s) | Gap: 550,380 frames (9173.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo [275,280..278,580] vs Highlight_Gaming_REPO_Jumpscare [403,200..407,100]
+    Overlap: 0 frames (0.0s) | Gap: 124,620 frames (2077.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo [275,280..278,580] vs จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo [574,680..577,980]
+    Overlap: 0 frames (0.0s) | Gap: 296,100 frames (4935.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Gaming_REPO_Jumpscare [403,200..407,100] vs จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo [574,680..577,980]
+    Overlap: 0 frames (0.0s) | Gap: 167,580 frames (2793.00s) | PASS: True
+
+=======================================================
+FILE 3/7: Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4
+=======================================================
+Total Duration: 7704.017s | Total Frames: 462241 | Resolution: 1280x720
+Clips in chronological order:
+  1. [CANDIDATE] อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo
+     Frames: [91,080 .. 94,380] (3300 frames)
+     Seconds: [1518.00s .. 1573.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 462241]: True
+  2. [CANDIDATE] ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo
+     Frames: [104,040 .. 107,340] (3300 frames)
+     Seconds: [1734.00s .. 1789.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 462241]: True
+  3. [CANDIDATE] จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo
+     Frames: [116,760 .. 120,060] (3300 frames)
+     Seconds: [1946.00s .. 2001.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 462241]: True
+  4. [PRIOR] Highlight_Meme_FreeTalk_Tiger
+     Frames: [134,100 .. 137,700] (3600 frames)
+     Seconds: [2235.00s .. 2295.00s] (60.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 462241]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo [91,080..94,380] vs ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo [104,040..107,340]
+    Overlap: 0 frames (0.0s) | Gap: 9,660 frames (161.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo [91,080..94,380] vs จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo [116,760..120,060]
+    Overlap: 0 frames (0.0s) | Gap: 22,380 frames (373.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo [91,080..94,380] vs Highlight_Meme_FreeTalk_Tiger [134,100..137,700]
+    Overlap: 0 frames (0.0s) | Gap: 39,720 frames (662.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo [104,040..107,340] vs จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo [116,760..120,060]
+    Overlap: 0 frames (0.0s) | Gap: 9,420 frames (157.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo [104,040..107,340] vs Highlight_Meme_FreeTalk_Tiger [134,100..137,700]
+    Overlap: 0 frames (0.0s) | Gap: 26,760 frames (446.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo [116,760..120,060] vs Highlight_Meme_FreeTalk_Tiger [134,100..137,700]
+    Overlap: 0 frames (0.0s) | Gap: 14,040 frames (234.00s) | PASS: True
+
+=======================================================
+FILE 4/7: Gartic phone - ไทกะสกิลวาดรูป 999999.mp4
+=======================================================
+Total Duration: 8435.200s | Total Frames: 506112 | Resolution: 1280x720
+Clips in chronological order:
+  1. [CANDIDATE] ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo
+     Frames: [50,040 .. 53,340] (3300 frames)
+     Seconds: [834.00s .. 889.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 506112]: True
+  2. [CANDIDATE] วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo
+     Frames: [134,880 .. 138,180] (3300 frames)
+     Seconds: [2248.00s .. 2303.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 506112]: True
+  3. [PRIOR] Highlight_Meme_GarticPhone_Art
+     Frames: [150,600 .. 154,500] (3900 frames)
+     Seconds: [2510.00s .. 2575.00s] (65.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 506112]: True
+  4. [CANDIDATE] เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo
+     Frames: [157,800 .. 161,100] (3300 frames)
+     Seconds: [2630.00s .. 2685.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 506112]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo [50,040..53,340] vs วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo [134,880..138,180]
+    Overlap: 0 frames (0.0s) | Gap: 81,540 frames (1359.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo [50,040..53,340] vs Highlight_Meme_GarticPhone_Art [150,600..154,500]
+    Overlap: 0 frames (0.0s) | Gap: 97,260 frames (1621.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo [50,040..53,340] vs เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo [157,800..161,100]
+    Overlap: 0 frames (0.0s) | Gap: 104,460 frames (1741.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo [134,880..138,180] vs Highlight_Meme_GarticPhone_Art [150,600..154,500]
+    Overlap: 0 frames (0.0s) | Gap: 12,420 frames (207.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo [134,880..138,180] vs เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo [157,800..161,100]
+    Overlap: 0 frames (0.0s) | Gap: 19,620 frames (327.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Meme_GarticPhone_Art [150,600..154,500] vs เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo [157,800..161,100]
+    Overlap: 0 frames (0.0s) | Gap: 3,300 frames (55.00s) | PASS: True
+
+=======================================================
+FILE 5/7: IB - สำรวจโลกภาพวาด P1.mp4
+=======================================================
+Total Duration: 8768.300s | Total Frames: 526098 | Resolution: 1280x720
+Clips in chronological order:
+  1. [CANDIDATE] ประตูมิติชวนขนหัวลุก_Ib-vdo
+     Frames: [125,280 .. 128,580] (3300 frames)
+     Seconds: [2088.00s .. 2143.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 526098]: True
+  2. [CANDIDATE] เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo
+     Frames: [249,480 .. 252,780] (3300 frames)
+     Seconds: [4158.00s .. 4213.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 526098]: True
+  3. [PRIOR] Highlight_Gaming_Ib_Horror
+     Frames: [268,500 .. 271,800] (3300 frames)
+     Seconds: [4475.00s .. 4530.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 526098]: True
+  4. [CANDIDATE] ไขปริศนาภาพวาดมรณะ_Ib-vdo
+     Frames: [456,840 .. 460,140] (3300 frames)
+     Seconds: [7614.00s .. 7669.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 526098]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    ประตูมิติชวนขนหัวลุก_Ib-vdo [125,280..128,580] vs เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo [249,480..252,780]
+    Overlap: 0 frames (0.0s) | Gap: 120,900 frames (2015.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    ประตูมิติชวนขนหัวลุก_Ib-vdo [125,280..128,580] vs Highlight_Gaming_Ib_Horror [268,500..271,800]
+    Overlap: 0 frames (0.0s) | Gap: 139,920 frames (2332.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ประตูมิติชวนขนหัวลุก_Ib-vdo [125,280..128,580] vs ไขปริศนาภาพวาดมรณะ_Ib-vdo [456,840..460,140]
+    Overlap: 0 frames (0.0s) | Gap: 328,260 frames (5471.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo [249,480..252,780] vs Highlight_Gaming_Ib_Horror [268,500..271,800]
+    Overlap: 0 frames (0.0s) | Gap: 15,720 frames (262.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo [249,480..252,780] vs ไขปริศนาภาพวาดมรณะ_Ib-vdo [456,840..460,140]
+    Overlap: 0 frames (0.0s) | Gap: 204,060 frames (3401.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Gaming_Ib_Horror [268,500..271,800] vs ไขปริศนาภาพวาดมรณะ_Ib-vdo [456,840..460,140]
+    Overlap: 0 frames (0.0s) | Gap: 185,040 frames (3084.00s) | PASS: True
+
+=======================================================
+FILE 6/7: ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4
+=======================================================
+Total Duration: 6945.067s | Total Frames: 416704 | Resolution: 1920x1080
+Clips in chronological order:
+  1. [CANDIDATE] แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo
+     Frames: [14,280 .. 17,580] (3300 frames)
+     Seconds: [238.00s .. 293.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 416704]: True
+  2. [CANDIDATE] เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo
+     Frames: [257,760 .. 261,060] (3300 frames)
+     Seconds: [4296.00s .. 4351.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 416704]: True
+  3. [CANDIDATE] จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo
+     Frames: [301,200 .. 304,500] (3300 frames)
+     Seconds: [5020.00s .. 5075.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 416704]: True
+  4. [PRIOR] Highlight_Gaming_Climbing_Clutch
+     Frames: [351,300 .. 354,900] (3600 frames)
+     Seconds: [5855.00s .. 5915.00s] (60.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 416704]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo [14,280..17,580] vs เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo [257,760..261,060]
+    Overlap: 0 frames (0.0s) | Gap: 240,180 frames (4003.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo [14,280..17,580] vs จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo [301,200..304,500]
+    Overlap: 0 frames (0.0s) | Gap: 283,620 frames (4727.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo [14,280..17,580] vs Highlight_Gaming_Climbing_Clutch [351,300..354,900]
+    Overlap: 0 frames (0.0s) | Gap: 333,720 frames (5562.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo [257,760..261,060] vs จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo [301,200..304,500]
+    Overlap: 0 frames (0.0s) | Gap: 40,140 frames (669.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo [257,760..261,060] vs Highlight_Gaming_Climbing_Clutch [351,300..354,900]
+    Overlap: 0 frames (0.0s) | Gap: 90,240 frames (1504.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo [301,200..304,500] vs Highlight_Gaming_Climbing_Clutch [351,300..354,900]
+    Overlap: 0 frames (0.0s) | Gap: 46,800 frames (780.00s) | PASS: True
+
+=======================================================
+FILE 7/7: เมื่อไทกะคือความชิบหายในครัว!.mp4
+=======================================================
+Total Duration: 12215.133s | Total Frames: 732908 | Resolution: 1280x720
+Clips in chronological order:
+  1. [CANDIDATE] เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo
+     Frames: [25,800 .. 29,100] (3300 frames)
+     Seconds: [430.00s .. 485.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 732908]: True
+  2. [CANDIDATE] ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo
+     Frames: [231,000 .. 234,300] (3300 frames)
+     Seconds: [3850.00s .. 3905.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 732908]: True
+  3. [PRIOR] Highlight_Fun_Overcooked_KitchenFire
+     Frames: [458,400 .. 462,300] (3900 frames)
+     Seconds: [7640.00s .. 7705.00s] (65.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 732908]: True
+  4. [CANDIDATE] จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo
+     Frames: [541,800 .. 545,100] (3300 frames)
+     Seconds: [9030.00s .. 9085.00s] (55.00s)
+     Duration in [30s, 180s]: True | Boundary in [0, 732908]: True
+Pairwise Collision Checks (6 pairs):
+  * [CANDIDATE vs CANDIDATE]
+    เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo [25,800..29,100] vs ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo [231,000..234,300]
+    Overlap: 0 frames (0.0s) | Gap: 201,900 frames (3365.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo [25,800..29,100] vs Highlight_Fun_Overcooked_KitchenFire [458,400..462,300]
+    Overlap: 0 frames (0.0s) | Gap: 429,300 frames (7155.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo [25,800..29,100] vs จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo [541,800..545,100]
+    Overlap: 0 frames (0.0s) | Gap: 512,700 frames (8545.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo [231,000..234,300] vs Highlight_Fun_Overcooked_KitchenFire [458,400..462,300]
+    Overlap: 0 frames (0.0s) | Gap: 224,100 frames (3735.00s) | PASS: True
+  * [CANDIDATE vs CANDIDATE]
+    ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo [231,000..234,300] vs จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo [541,800..545,100]
+    Overlap: 0 frames (0.0s) | Gap: 307,500 frames (5125.00s) | PASS: True
+  * [CANDIDATE vs PRIOR]
+    Highlight_Fun_Overcooked_KitchenFire [458,400..462,300] vs จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo [541,800..545,100]
+    Overlap: 0 frames (0.0s) | Gap: 79,500 frames (1325.00s) | PASS: True

@@ -1,0 +1,228 @@
+{
+  "timestamp_utc": "2026-10-02T02:44:47.773935+00:00",
+  "resolve_connectivity": {
+    "product": "DaVinci Resolve Studio",
+    "version": [
+      21,
+      1,
+      0,
+      17,
+      ""
+    ]
+  },
+  "database_info": {
+    "DbType": "Disk",
+    "DbName": "google drive"
+  },
+  "project_info": {
+    "name": "tygarina_2026-09-30",
+    "id": "c0d08784-1fd9-4675-921b-d77a6b5cccdf",
+    "timeline_count": 7,
+    "timeline_fps": 60.0,
+    "timeline_playback_fps": "24"
+  },
+  "timeline_audits": [
+    {
+      "name": "Highlight_Gaming_REPO_Jumpscare",
+      "id": "d27a0b25-f0d2-40b9-bd8b-63d1382f56df",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_sec": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "video_item_duration": 3900,
+      "video_source_start": 403200,
+      "video_source_end": 407100,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "audio_item_name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "audio_source_start": 403200,
+      "audio_source_end": 407100,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Gaming_Climbing_Clutch",
+      "id": "2855ef77-dbe2-43ee-a5d9-0b1338158e67",
+      "start_frame": 0,
+      "end_frame": 3600,
+      "duration_frames": 3600,
+      "duration_sec": 60.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "video_item_duration": 3600,
+      "video_source_start": 351300,
+      "video_source_end": 354900,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "audio_item_name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "audio_source_start": 351300,
+      "audio_source_end": 354900,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Gaming_Ib_Horror",
+      "id": "3aa2003a-846b-4f47-92f0-63b9f2705b2c",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_sec": 55.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "video_item_duration": 3300,
+      "video_source_start": 268500,
+      "video_source_end": 271800,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4",
+      "audio_item_name": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "audio_source_start": 268500,
+      "audio_source_end": 271800,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Fun_DnD_Bard",
+      "id": "8cdd0c49-f569-45f3-a6c9-1150c5eb1ef9",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_sec": 55.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "video_item_duration": 3300,
+      "video_source_start": 58800,
+      "video_source_end": 62100,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "audio_item_name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "audio_source_start": 58800,
+      "audio_source_end": 62100,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Meme_GarticPhone_Art",
+      "id": "29ce2285-67a7-44bc-a2dc-a177cd87e67a",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_sec": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "video_item_duration": 3900,
+      "video_source_start": 150600,
+      "video_source_end": 154500,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "audio_item_name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "audio_source_start": 150600,
+      "audio_source_end": 154500,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Meme_FreeTalk_Tiger",
+      "id": "4acb6f81-c870-4d3e-b82a-6e971a3a4af8",
+      "start_frame": 0,
+      "end_frame": 3600,
+      "duration_frames": 3600,
+      "duration_sec": 60.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "video_item_duration": 3600,
+      "video_source_start": 134100,
+      "video_source_end": 137700,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "audio_item_name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "audio_source_start": 134100,
+      "audio_source_end": 137700,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    },
+    {
+      "name": "Highlight_Fun_Overcooked_KitchenFire",
+      "id": "c62ea0c3-79dd-4bd4-835b-82d487e5717a",
+      "start_frame": 0,
+      "end_frame": 3900,
+      "duration_frames": 3900,
+      "duration_sec": 65.0,
+      "video_tracks": 1,
+      "audio_tracks": 1,
+      "video_item_name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "video_item_duration": 3900,
+      "video_source_start": 458400,
+      "video_source_end": 462300,
+      "video_file_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "audio_item_name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "audio_source_start": 458400,
+      "audio_source_end": 462300,
+      "checks": {
+        "duration_exact_match": true,
+        "duration_within_30s_180s": true,
+        "source_file_match": true,
+        "source_start_match": true,
+        "source_end_match": true,
+        "has_video_track": true,
+        "has_audio_track": true
+      }
+    }
+  ],
+  "source_media_integrity": {
+    "directory": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30",
+    "total_files": 32,
+    "total_bytes": 74624842819,
+    "total_gib": 69.4998,
+    "non_mp4_files": [],
+    "modified_recently": []
+  },
+  "violations": [],
+  "database_paths_found": [
+    "C:\\Users\\warit\\AppData\\Roaming\\Blackmagic Design\\DaVinci Resolve\\Support\\Resolve Project Library"
+  ],
+  "clean": true
+}

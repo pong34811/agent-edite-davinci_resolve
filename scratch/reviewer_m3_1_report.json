@@ -1,0 +1,720 @@
+{
+  "connected": true,
+  "project_name": "tygarina_2026-09-30",
+  "fps": 60.0,
+  "timeline_count": 28,
+  "prior_timelines_found": [
+    "Highlight_Gaming_REPO_Jumpscare",
+    "Highlight_Gaming_Climbing_Clutch",
+    "Highlight_Gaming_Ib_Horror",
+    "Highlight_Fun_DnD_Bard",
+    "Highlight_Meme_GarticPhone_Art",
+    "Highlight_Meme_FreeTalk_Tiger",
+    "Highlight_Fun_Overcooked_KitchenFire"
+  ],
+  "prior_timelines_missing": [],
+  "new_timelines_found": [
+    "วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo",
+    "จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo",
+    "เปิดตี้แจกความฮากับเพื่อน_REPO-vdo",
+    "เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo",
+    "จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo",
+    "แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo",
+    "เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo",
+    "ประตูมิติชวนขนหัวลุก_Ib-vdo",
+    "ไขปริศนาภาพวาดมรณะ_Ib-vdo",
+    "เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo",
+    "ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo",
+    "ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo",
+    "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo",
+    "ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo",
+    "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo",
+    "ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo",
+    "จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo",
+    "อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo",
+    "เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo",
+    "ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo",
+    "จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo"
+  ],
+  "new_timelines_missing": [],
+  "naming_checks": [
+    {
+      "name": "วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดตี้แจกความฮากับเพื่อน_REPO-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ประตูมิติชวนขนหัวลุก_Ib-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ไขปริศนาภาพวาดมรณะ_Ib-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo",
+      "passed": true,
+      "issue": null
+    }
+  ],
+  "duration_checks": [
+    {
+      "name": "วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดตี้แจกความฮากับเพื่อน_REPO-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ประตูมิติชวนขนหัวลุก_Ib-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ไขปริศนาภาพวาดมรณะ_Ib-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo",
+      "start_frame": 0,
+      "end_frame": 3300,
+      "duration_frames": 3300,
+      "duration_seconds": 55.0,
+      "passed": true,
+      "issue": null
+    }
+  ],
+  "track_item_checks": [
+    {
+      "name": "วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo",
+      "video_item_duration": 3300,
+      "source_start": 275280,
+      "source_end": 278580,
+      "media_pool_name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo",
+      "video_item_duration": 3300,
+      "source_start": 574680,
+      "source_end": 577980,
+      "media_pool_name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดตี้แจกความฮากับเพื่อน_REPO-vdo",
+      "video_item_duration": 3300,
+      "source_start": 21000,
+      "source_end": 24300,
+      "media_pool_name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo",
+      "video_item_duration": 3300,
+      "source_start": 257760,
+      "source_end": 261060,
+      "media_pool_name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo",
+      "video_item_duration": 3300,
+      "source_start": 301200,
+      "source_end": 304500,
+      "media_pool_name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo",
+      "video_item_duration": 3300,
+      "source_start": 14280,
+      "source_end": 17580,
+      "media_pool_name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo",
+      "video_item_duration": 3300,
+      "source_start": 249480,
+      "source_end": 252780,
+      "media_pool_name": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ประตูมิติชวนขนหัวลุก_Ib-vdo",
+      "video_item_duration": 3300,
+      "source_start": 125280,
+      "source_end": 128580,
+      "media_pool_name": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ไขปริศนาภาพวาดมรณะ_Ib-vdo",
+      "video_item_duration": 3300,
+      "source_start": 456840,
+      "source_end": 460140,
+      "media_pool_name": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo",
+      "video_item_duration": 3300,
+      "source_start": 262920,
+      "source_end": 266220,
+      "media_pool_name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo",
+      "video_item_duration": 3300,
+      "source_start": 286800,
+      "source_end": 290100,
+      "media_pool_name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo",
+      "video_item_duration": 3300,
+      "source_start": 209400,
+      "source_end": 212700,
+      "media_pool_name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo",
+      "video_item_duration": 3300,
+      "source_start": 157800,
+      "source_end": 161100,
+      "media_pool_name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo",
+      "video_item_duration": 3300,
+      "source_start": 50040,
+      "source_end": 53340,
+      "media_pool_name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo",
+      "video_item_duration": 3300,
+      "source_start": 134880,
+      "source_end": 138180,
+      "media_pool_name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo",
+      "video_item_duration": 3300,
+      "source_start": 104040,
+      "source_end": 107340,
+      "media_pool_name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo",
+      "video_item_duration": 3300,
+      "source_start": 116760,
+      "source_end": 120060,
+      "media_pool_name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo",
+      "video_item_duration": 3300,
+      "source_start": 91080,
+      "source_end": 94380,
+      "media_pool_name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo",
+      "video_item_duration": 3300,
+      "source_start": 25800,
+      "source_end": 29100,
+      "media_pool_name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo",
+      "video_item_duration": 3300,
+      "source_start": 231000,
+      "source_end": 234300,
+      "media_pool_name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "passed": true,
+      "issue": null
+    },
+    {
+      "name": "จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo",
+      "video_item_duration": 3300,
+      "source_start": 541800,
+      "source_end": 545100,
+      "media_pool_name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "media_pool_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "passed": true,
+      "issue": null
+    }
+  ],
+  "overlap_checks": [
+    {
+      "source_file": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 3: เปิดตี้แจกความฮากับเพื่อน_REPO-vdo and Cand 1: วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo",
+          "gap_frames": 250980,
+          "gap_seconds": 4183.0
+        },
+        {
+          "between": "Cand 1: วิ่งหนีปีศาจแทบไม่ทัน_REPO-vdo and Prior: Highlight_Gaming_REPO_Jumpscare",
+          "gap_frames": 124620,
+          "gap_seconds": 2077.0
+        },
+        {
+          "between": "Prior: Highlight_Gaming_REPO_Jumpscare and Cand 2: จังหวะเอาชีวิตรอดเฉียดฉิว_REPO-vdo",
+          "gap_frames": 167580,
+          "gap_seconds": 2793.0
+        }
+      ]
+    },
+    {
+      "source_file": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 6: แกล้งเพื่อนตั้งแต่จุดสตาร์ท_Climbing-vdo and Cand 4: เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo",
+          "gap_frames": 240180,
+          "gap_seconds": 4003.0
+        },
+        {
+          "between": "Cand 4: เหลือสองชีวิตเกาะหน้าผาไว้_Climbing-vdo and Cand 5: จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo",
+          "gap_frames": 40140,
+          "gap_seconds": 669.0
+        },
+        {
+          "between": "Cand 5: จังหวะกระโดดข้ามหุบเหวสุดเสียว_Climbing-vdo and Prior: Highlight_Gaming_Climbing_Clutch",
+          "gap_frames": 46800,
+          "gap_seconds": 780.0
+        }
+      ]
+    },
+    {
+      "source_file": "IB - สำรวจโลกภาพวาด P1.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 8: ประตูมิติชวนขนหัวลุก_Ib-vdo and Cand 7: เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo",
+          "gap_frames": 120900,
+          "gap_seconds": 2015.0
+        },
+        {
+          "between": "Cand 7: เจอตัวละครใหม่ตกใจจนร้องลั่น_Ib-vdo and Prior: Highlight_Gaming_Ib_Horror",
+          "gap_frames": 15720,
+          "gap_seconds": 262.0
+        },
+        {
+          "between": "Prior: Highlight_Gaming_Ib_Horror and Cand 9: ไขปริศนาภาพวาดมรณะ_Ib-vdo",
+          "gap_frames": 185040,
+          "gap_seconds": 3084.0
+        }
+      ]
+    },
+    {
+      "source_file": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Prior: Highlight_Fun_DnD_Bard and Cand 12: ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo",
+          "gap_frames": 147300,
+          "gap_seconds": 2455.0
+        },
+        {
+          "between": "Cand 12: ทอยเต๋าพลาดจนแผนพังยับ_DnD-vdo and Cand 10: เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo",
+          "gap_frames": 50220,
+          "gap_seconds": 837.0
+        },
+        {
+          "between": "Cand 10: เล่าวินาทีบอสแพ้แบบอนาถ_DnD-vdo and Cand 11: ฉากโรลเพลย์สุดกาวในห้องน้ำ_DnD-vdo",
+          "gap_frames": 20580,
+          "gap_seconds": 343.0
+        }
+      ]
+    },
+    {
+      "source_file": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 14: ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo and Cand 15: วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo",
+          "gap_frames": 81540,
+          "gap_seconds": 1359.0
+        },
+        {
+          "between": "Cand 15: วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo and Prior: Highlight_Meme_GarticPhone_Art",
+          "gap_frames": 12420,
+          "gap_seconds": 207.0
+        },
+        {
+          "between": "Prior: Highlight_Meme_GarticPhone_Art and Cand 13: เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo",
+          "gap_frames": 3300,
+          "gap_seconds": 55.0
+        }
+      ]
+    },
+    {
+      "source_file": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 18: อ่านคอมเมนต์สุดกาวขำจนตัวโยก_FreeTalk-vdo and Cand 16: ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo",
+          "gap_frames": 9660,
+          "gap_seconds": 161.0
+        },
+        {
+          "between": "Cand 16: ตอบแชทเรื่องสู้เสือด้วยมือเปล่า_FreeTalk-vdo and Cand 17: จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo",
+          "gap_frames": 9420,
+          "gap_seconds": 157.0
+        },
+        {
+          "between": "Cand 17: จำลองเหตุการณ์ถ้าเจอเสือของจริง_FreeTalk-vdo and Prior: Highlight_Meme_FreeTalk_Tiger",
+          "gap_frames": 14040,
+          "gap_seconds": 234.0
+        }
+      ]
+    },
+    {
+      "source_file": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+      "total_clips_checked": 4,
+      "overlaps": [],
+      "passed": true,
+      "gaps": [
+        {
+          "between": "Cand 19: เปิดครัววันแรกก็วุ่นวายซะแล้ว_Overcooked-vdo and Cand 20: ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo",
+          "gap_frames": 201900,
+          "gap_seconds": 3365.0
+        },
+        {
+          "between": "Cand 20: ออเดอร์ล้นครัวสั่งความวิกฤต_Overcooked-vdo and Prior: Highlight_Fun_Overcooked_KitchenFire",
+          "gap_frames": 224100,
+          "gap_seconds": 3735.0
+        },
+        {
+          "between": "Prior: Highlight_Fun_Overcooked_KitchenFire and Cand 21: จานตกน้ำหมดครัวนาทีสุดท้าย_Overcooked-vdo",
+          "gap_frames": 79500,
+          "gap_seconds": 1325.0
+        }
+      ]
+    }
+  ],
+  "media_pool_checks": [],
+  "non_destructive_storage": {
+    "total_mp4_files": 32,
+    "missing_sources": []
+  },
+  "failures": [],
+  "warnings": []
+}

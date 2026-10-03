@@ -1,0 +1,457 @@
+{
+  "timestamp": "2026-10-02T09:45:47.457982",
+  "resolve_connected": true,
+  "active_project": {
+    "name": "tygarina_2026-09-30",
+    "unique_id": "c0d08784-1fd9-4675-921b-d77a6b5cccdf",
+    "timeline_count": 7,
+    "timeline_fps": 60.0,
+    "playback_fps": "24"
+  },
+  "timelines_audit": [
+    {
+      "name": "Highlight_Gaming_REPO_Jumpscare",
+      "expected": {
+        "category": "Gaming",
+        "source_file": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+        "exp_start_s": 6720.0,
+        "exp_end_s": 6785.0,
+        "exp_dur_s": 65.0,
+        "exp_start_f": 403200,
+        "exp_end_f": 407100,
+        "exp_dur_f": 3900
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3900,
+        "duration_frames": 3900,
+        "duration_seconds": 65.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 403200,
+            "source_end": 407100,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 403200,
+            "source_end": 407100,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Collab R.E.P.O - เก็บของไว้ให้ไกลเสือ.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Gaming_Climbing_Clutch",
+      "expected": {
+        "category": "Gaming",
+        "source_file": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+        "exp_start_s": 5855.0,
+        "exp_end_s": 5915.0,
+        "exp_dur_s": 60.0,
+        "exp_start_f": 351300,
+        "exp_end_f": 354900,
+        "exp_dur_f": 3600
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3600,
+        "duration_frames": 3600,
+        "duration_seconds": 60.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+            "start": 0,
+            "end": 3600,
+            "duration": 3600,
+            "source_start": 351300,
+            "source_end": 354900,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4",
+            "start": 0,
+            "end": 3600,
+            "duration": 3600,
+            "source_start": 351300,
+            "source_end": 354900,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\ปืนเขาที่เราหมดแรง @KRATOI_26  @Mixzy21PM  @Pleiades_Frontier.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Gaming_Ib_Horror",
+      "expected": {
+        "category": "Gaming",
+        "source_file": "IB - สำรวจโลกภาพวาด P1.mp4",
+        "exp_start_s": 4475.0,
+        "exp_end_s": 4530.0,
+        "exp_dur_s": 55.0,
+        "exp_start_f": 268500,
+        "exp_end_f": 271800,
+        "exp_dur_f": 3300
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3300,
+        "duration_frames": 3300,
+        "duration_seconds": 55.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "IB - สำรวจโลกภาพวาด P1.mp4",
+            "start": 0,
+            "end": 3300,
+            "duration": 3300,
+            "source_start": 268500,
+            "source_end": 271800,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "IB - สำรวจโลกภาพวาด P1.mp4",
+            "start": 0,
+            "end": 3300,
+            "duration": 3300,
+            "source_start": 268500,
+            "source_end": 271800,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\IB - สำรวจโลกภาพวาด P1.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Fun_DnD_Bard",
+      "expected": {
+        "category": "Fun",
+        "source_file": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+        "exp_start_s": 980.0,
+        "exp_end_s": 1035.0,
+        "exp_dur_s": 55.0,
+        "exp_start_f": 58800,
+        "exp_end_f": 62100,
+        "exp_dur_f": 3300
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3300,
+        "duration_frames": 3300,
+        "duration_seconds": 55.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+            "start": 0,
+            "end": 3300,
+            "duration": 3300,
+            "source_start": 58800,
+            "source_end": 62100,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4",
+            "start": 0,
+            "end": 3300,
+            "duration": 3300,
+            "source_start": 58800,
+            "source_end": 62100,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\After DnD ： เมื่อบาร์ดด่าจนมังกรตาย!.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Meme_GarticPhone_Art",
+      "expected": {
+        "category": "Meme",
+        "source_file": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+        "exp_start_s": 2510.0,
+        "exp_end_s": 2575.0,
+        "exp_dur_s": 65.0,
+        "exp_start_f": 150600,
+        "exp_end_f": 154500,
+        "exp_dur_f": 3900
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3900,
+        "duration_frames": 3900,
+        "duration_seconds": 65.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 150600,
+            "source_end": 154500,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "Gartic phone - ไทกะสกิลวาดรูป 999999.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 150600,
+            "source_end": 154500,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Gartic phone - ไทกะสกิลวาดรูป 999999.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Meme_FreeTalk_Tiger",
+      "expected": {
+        "category": "Meme",
+        "source_file": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+        "exp_start_s": 2235.0,
+        "exp_end_s": 2295.0,
+        "exp_dur_s": 60.0,
+        "exp_start_f": 134100,
+        "exp_end_f": 137700,
+        "exp_dur_f": 3600
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3600,
+        "duration_frames": 3600,
+        "duration_seconds": 60.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+            "start": 0,
+            "end": 3600,
+            "duration": 3600,
+            "source_start": 134100,
+            "source_end": 137700,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4",
+            "start": 0,
+            "end": 3600,
+            "duration": 3600,
+            "source_start": 134100,
+            "source_end": 137700,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\Free Talk ： หยุดเสือด้วยมือเปล่า？？.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Highlight_Fun_Overcooked_KitchenFire",
+      "expected": {
+        "category": "Fun/Gaming",
+        "source_file": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+        "exp_start_s": 7640.0,
+        "exp_end_s": 7705.0,
+        "exp_dur_s": 65.0,
+        "exp_start_f": 458400,
+        "exp_end_f": 462300,
+        "exp_dur_f": 3900
+      },
+      "actual": {
+        "start_frame": 0,
+        "end_frame": 3900,
+        "duration_frames": 3900,
+        "duration_seconds": 65.0,
+        "video_tracks": 1,
+        "audio_tracks": 1,
+        "video_items": [
+          {
+            "name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 458400,
+            "source_end": 462300,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4"
+          }
+        ],
+        "audio_items": [
+          {
+            "name": "เมื่อไทกะคือความชิบหายในครัว!.mp4",
+            "start": 0,
+            "end": 3900,
+            "duration": 3900,
+            "source_start": 458400,
+            "source_end": 462300,
+            "has_media_pool_item": true,
+            "media_pool_item_path": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30\\เมื่อไทกะคือความชิบหายในครัว!.mp4"
+          }
+        ]
+      },
+      "checks": {
+        "exists": true,
+        "duration_exact_frames": true,
+        "duration_in_bounds": true,
+        "video_track_count_ok": true,
+        "audio_track_count_ok": true,
+        "single_video_item": true,
+        "single_audio_item": true,
+        "video_item_matches_source": true,
+        "video_source_start_match": true,
+        "video_source_end_match": true,
+        "video_record_placement_zero": true,
+        "media_pool_item_valid": true
+      },
+      "passed": true
+    }
+  ],
+  "media_pool_audit": {},
+  "source_files_audit": {
+    "directory": "C:\\Users\\warit\\SynologyDrive\\Tygarina\\2026-09-30",
+    "entry_count": 32,
+    "mp4_count": 32,
+    "non_mp4_entries": [],
+    "total_bytes": 74624842819,
+    "total_gib": 69.4998,
+    "modified_during_run_count": 0,
+    "modified_during_run": [],
+    "is_intact": true
+  },
+  "adversarial_findings": [],
+  "gate_checks": {
+    "resolve_connected": true,
+    "correct_project": true,
+    "timeline_count_is_7": true,
+    "all_timelines_conforming": true,
+    "durations_within_30s_180s": true,
+    "source_media_non_destructive_preserved": true,
+    "categories_covered_gaming_fun_meme": true,
+    "no_adversarial_findings": true
+  },
+  "final_verdict": "APPROVE"
+}

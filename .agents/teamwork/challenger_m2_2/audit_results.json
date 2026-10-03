@@ -1,0 +1,815 @@
+{
+  "timestamp_utc": "2026-10-01T10:44:03.247511+00:00",
+  "challenger": "challenger_m2_2",
+  "verdict": "APPROVE",
+  "tests": {
+    "durations": [
+      {
+        "test": "Original start frame is 216000",
+        "passed": true,
+        "details": 216000
+      },
+      {
+        "test": "Vertical start frame is 216000",
+        "passed": true,
+        "details": 216000
+      },
+      {
+        "test": "Original end frame is 221880",
+        "passed": true,
+        "details": 221880
+      },
+      {
+        "test": "Vertical end frame is 221880",
+        "passed": true,
+        "details": 221880
+      },
+      {
+        "test": "Original duration is 5880 frames",
+        "passed": true,
+        "details": 5880
+      },
+      {
+        "test": "Vertical duration is 5880 frames",
+        "passed": true,
+        "details": 5880
+      },
+      {
+        "test": "Exact frame equality between orig and vert",
+        "passed": true,
+        "details": "orig=5880, vert=5880"
+      },
+      {
+        "test": "Original FPS is 60.0",
+        "passed": true,
+        "details": 60.0
+      },
+      {
+        "test": "Vertical FPS is 60.0",
+        "passed": true,
+        "details": 60.0
+      },
+      {
+        "test": "Frame rate equality",
+        "passed": true,
+        "details": "orig=60.0, vert=60.0"
+      }
+    ],
+    "subtitles": [
+      {
+        "test": "Original subtitle track count is 1",
+        "passed": true,
+        "details": 1
+      },
+      {
+        "test": "Vertical subtitle track count is 1",
+        "passed": true,
+        "details": 1
+      },
+      {
+        "test": "Original subtitle cue count is 45",
+        "passed": true,
+        "details": 45
+      },
+      {
+        "test": "Vertical subtitle cue count is 45",
+        "passed": true,
+        "details": 45
+      },
+      {
+        "test": "Baseline subtitle cue count is 45",
+        "passed": true,
+        "details": 45
+      },
+      {
+        "test": "Cue count 1:1 equality (orig == vert == baseline)",
+        "passed": true,
+        "details": "45==45==45"
+      },
+      {
+        "test": "Orig vs Vert subtitle cues 1:1 verbatim match",
+        "passed": true,
+        "details": "Mismatches: 0"
+      },
+      {
+        "test": "Vert vs Baseline subtitle cues 1:1 verbatim match",
+        "passed": true,
+        "details": "Mismatches: 0"
+      },
+      {
+        "test": "Orig vs Baseline subtitle cues 1:1 verbatim match",
+        "passed": true,
+        "details": "Mismatches: 0"
+      },
+      {
+        "test": "All cues within timeline boundary [216000, 221880]",
+        "passed": true,
+        "details": "Out of bounds: 0"
+      },
+      {
+        "test": "Zero inverted cues (start < end strictly)",
+        "passed": true,
+        "details": "Inverted: 0"
+      },
+      {
+        "test": "Zero overlapping cues (strictly chronological)",
+        "passed": true,
+        "details": "Overlaps: 0"
+      },
+      {
+        "test": "All 45 cue durations match baseline 1:1 (R3 locked)",
+        "passed": true,
+        "details": "Mismatches: 0"
+      },
+      {
+        "test": "Source cut has 10 pre-existing long cues (>1.5s) preserved identically",
+        "passed": true,
+        "details": "source=10, vert=10"
+      },
+      {
+        "test": "No empty or whitespace-only cues",
+        "passed": true,
+        "details": "Empty cues: 0"
+      }
+    ],
+    "audio": [
+      {
+        "test": "Original audio track count is 3",
+        "passed": true,
+        "details": 3
+      },
+      {
+        "test": "Vertical audio track count is 3",
+        "passed": true,
+        "details": 3
+      },
+      {
+        "test": "Audio track count equality (orig == vert == 3)",
+        "passed": true,
+        "details": "3==3"
+      },
+      {
+        "test": "Audio track names match baseline",
+        "passed": true,
+        "details": "Mismatches: []"
+      },
+      {
+        "test": "All 3 audio tracks are Stereo sub-type",
+        "passed": true,
+        "details": [
+          "stereo",
+          "stereo",
+          "stereo"
+        ]
+      },
+      {
+        "test": "Audio clip counts and timings 100% match orig and baseline",
+        "passed": true,
+        "details": "Mismatches: []"
+      },
+      {
+        "test": "All audio clip volumes are strictly 0.0 dB",
+        "passed": true,
+        "details": "Mismatches: []"
+      }
+    ],
+    "original_untouched": [
+      {
+        "test": "Original timeline name unchanged",
+        "passed": true,
+        "details": "หนีฝ่าความหนาว_Minecraft-vdo"
+      },
+      {
+        "test": "Original timeline ID unchanged",
+        "passed": true,
+        "details": "7dcaea9a-b19f-4fa4-ac24-9a4f8c12f3ff"
+      },
+      {
+        "test": "Original resolution remains 1920x1080 (16:9)",
+        "passed": true,
+        "details": "1920x1080"
+      },
+      {
+        "test": "Original useCustomSettings remains '1' (baseline match)",
+        "passed": true,
+        "details": "useCustomSettings=1"
+      },
+      {
+        "test": "Original video track count remains 3",
+        "passed": true,
+        "details": 3
+      },
+      {
+        "test": "Original video tracks V1-V3 clips identical to baseline",
+        "passed": true,
+        "details": "Mismatches: []"
+      },
+      {
+        "test": "Original V3 Adjustment Clips retained baseline Fusion transforms Center=(0.38, 0.81), Size=1.3",
+        "passed": true,
+        "details": "Errors: []"
+      }
+    ],
+    "media_offline": [
+      {
+        "test": "Zero media offline in original timeline",
+        "passed": true,
+        "details": "Offline: []"
+      },
+      {
+        "test": "Zero media offline in vertical timeline",
+        "passed": true,
+        "details": "Offline: []"
+      }
+    ],
+    "vertical_specs": [
+      {
+        "test": "Vertical timeline width is 1080",
+        "passed": true,
+        "details": "1080"
+      },
+      {
+        "test": "Vertical timeline height is 1920",
+        "passed": true,
+        "details": "1920"
+      },
+      {
+        "test": "Vertical useCustomSettings is '1'",
+        "passed": true,
+        "details": "1"
+      },
+      {
+        "test": "Vertical video track count is 4",
+        "passed": true,
+        "details": 4
+      }
+    ]
+  },
+  "summary": {
+    "total_checks": 45,
+    "passed_checks": 45,
+    "failed_checks": 0,
+    "failures": []
+  },
+  "subtitle_audit": {
+    "cue_count": 45,
+    "all_match": true,
+    "cues": [
+      {
+        "cue_index": 1,
+        "text": "เฮ้",
+        "start_frame": 216000,
+        "end_frame": 216039,
+        "duration_frames": 39,
+        "start_tc": "01:00:00:00",
+        "end_tc": "01:00:00:39",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 2,
+        "text": "เฮ้",
+        "start_frame": 216300,
+        "end_frame": 216336,
+        "duration_frames": 36,
+        "start_tc": "01:00:05:00",
+        "end_tc": "01:00:05:36",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 3,
+        "text": "เฮ้",
+        "start_frame": 216450,
+        "end_frame": 216486,
+        "duration_frames": 36,
+        "start_tc": "01:00:07:30",
+        "end_tc": "01:00:08:06",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 4,
+        "text": "เฮ้",
+        "start_frame": 216608,
+        "end_frame": 216643,
+        "duration_frames": 35,
+        "start_tc": "01:00:10:08",
+        "end_tc": "01:00:10:43",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 5,
+        "text": "เฮ้",
+        "start_frame": 216749,
+        "end_frame": 216785,
+        "duration_frames": 36,
+        "start_tc": "01:00:12:29",
+        "end_tc": "01:00:13:05",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 6,
+        "text": "เฮ้",
+        "start_frame": 216858,
+        "end_frame": 216922,
+        "duration_frames": 64,
+        "start_tc": "01:00:14:18",
+        "end_tc": "01:00:15:22",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 7,
+        "text": "เฮ้",
+        "start_frame": 217033,
+        "end_frame": 217067,
+        "duration_frames": 34,
+        "start_tc": "01:00:17:13",
+        "end_tc": "01:00:17:47",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 8,
+        "text": "เฮ้",
+        "start_frame": 217180,
+        "end_frame": 217216,
+        "duration_frames": 36,
+        "start_tc": "01:00:19:40",
+        "end_tc": "01:00:20:16",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 9,
+        "text": "ถึงแล้วใช่ไหม",
+        "start_frame": 217440,
+        "end_frame": 217548,
+        "duration_frames": 108,
+        "start_tc": "01:00:24:00",
+        "end_tc": "01:00:25:48",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 10,
+        "text": "ถึงคืออิสรภาพ",
+        "start_frame": 218621,
+        "end_frame": 218729,
+        "duration_frames": 108,
+        "start_tc": "01:00:43:41",
+        "end_tc": "01:00:45:29",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 11,
+        "text": "เยสส์",
+        "start_frame": 218738,
+        "end_frame": 218787,
+        "duration_frames": 49,
+        "start_tc": "01:00:45:38",
+        "end_tc": "01:00:46:27",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 12,
+        "text": "ถึงเฮ้ออิสรภาพ",
+        "start_frame": 218880,
+        "end_frame": 218988,
+        "duration_frames": 108,
+        "start_tc": "01:00:48:00",
+        "end_tc": "01:00:49:48",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 13,
+        "text": "เยส",
+        "start_frame": 219006,
+        "end_frame": 219042,
+        "duration_frames": 36,
+        "start_tc": "01:00:50:06",
+        "end_tc": "01:00:50:42",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 14,
+        "text": "คิมวายุคิโซะกล่าวว่า",
+        "start_frame": 219071,
+        "end_frame": 219179,
+        "duration_frames": 108,
+        "start_tc": "01:00:51:11",
+        "end_tc": "01:00:52:59",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 15,
+        "text": "เด็กเน้นฟาร์มเรา",
+        "start_frame": 219179,
+        "end_frame": 219265,
+        "duration_frames": 86,
+        "start_tc": "01:00:52:59",
+        "end_tc": "01:00:54:25",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 16,
+        "text": "เน้นอยู่ห้าร้อยห้าสิบ",
+        "start_frame": 219265,
+        "end_frame": 219369,
+        "duration_frames": 104,
+        "start_tc": "01:00:54:25",
+        "end_tc": "01:00:56:09",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 17,
+        "text": "ห้า",
+        "start_frame": 219372,
+        "end_frame": 219408,
+        "duration_frames": 36,
+        "start_tc": "01:00:56:12",
+        "end_tc": "01:00:56:48",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 18,
+        "text": "ไม่อยู่ไม่ได้",
+        "start_frame": 219408,
+        "end_frame": 219453,
+        "duration_frames": 45,
+        "start_tc": "01:00:56:48",
+        "end_tc": "01:00:57:33",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 19,
+        "text": "จริงถ้าแบบไม่",
+        "start_frame": 219453,
+        "end_frame": 219515,
+        "duration_frames": 62,
+        "start_tc": "01:00:57:33",
+        "end_tc": "01:00:58:35",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 20,
+        "text": "ฟาร์มโหงอะ",
+        "start_frame": 219515,
+        "end_frame": 219562,
+        "duration_frames": 47,
+        "start_tc": "01:00:58:35",
+        "end_tc": "01:00:59:22",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 21,
+        "text": "อันนี้คือแบบผมลงมา",
+        "start_frame": 219562,
+        "end_frame": 219636,
+        "duration_frames": 74,
+        "start_tc": "01:00:59:22",
+        "end_tc": "01:01:00:36",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 22,
+        "text": "เอาแร่ก่อนเว้ย",
+        "start_frame": 219636,
+        "end_frame": 219694,
+        "duration_frames": 58,
+        "start_tc": "01:01:00:36",
+        "end_tc": "01:01:01:34",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 23,
+        "text": "ผมเอาเอาไว้ที่",
+        "start_frame": 219694,
+        "end_frame": 219785,
+        "duration_frames": 91,
+        "start_tc": "01:01:01:34",
+        "end_tc": "01:01:03:05",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 24,
+        "text": "เดี๋ยวนะ",
+        "start_frame": 219785,
+        "end_frame": 219837,
+        "duration_frames": 52,
+        "start_tc": "01:01:03:05",
+        "end_tc": "01:01:03:57",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 25,
+        "text": "เอาสารามมา",
+        "start_frame": 219837,
+        "end_frame": 219927,
+        "duration_frames": 90,
+        "start_tc": "01:01:03:57",
+        "end_tc": "01:01:05:27",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 26,
+        "text": "ส่งแล้วครับ",
+        "start_frame": 219927,
+        "end_frame": 220026,
+        "duration_frames": 99,
+        "start_tc": "01:01:05:27",
+        "end_tc": "01:01:07:06",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 27,
+        "text": "ผมเอาไว้กล่องที่",
+        "start_frame": 220076,
+        "end_frame": 220184,
+        "duration_frames": 108,
+        "start_tc": "01:01:07:56",
+        "end_tc": "01:01:09:44",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 28,
+        "text": "มันใกล้กับโต๊ะ",
+        "start_frame": 220211,
+        "end_frame": 220319,
+        "duration_frames": 108,
+        "start_tc": "01:01:10:11",
+        "end_tc": "01:01:11:59",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 29,
+        "text": "เอาไว้กล่องที่มัน",
+        "start_frame": 220320,
+        "end_frame": 220369,
+        "duration_frames": 49,
+        "start_tc": "01:01:12:00",
+        "end_tc": "01:01:12:49",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 30,
+        "text": "โต๊ะครามนะพี่",
+        "start_frame": 220369,
+        "end_frame": 220436,
+        "duration_frames": 67,
+        "start_tc": "01:01:12:49",
+        "end_tc": "01:01:13:56",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 31,
+        "text": "ใกล้กับโต๊ะ",
+        "start_frame": 220436,
+        "end_frame": 220472,
+        "duration_frames": 36,
+        "start_tc": "01:01:13:56",
+        "end_tc": "01:01:14:32",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 32,
+        "text": "โต๊ะคาม",
+        "start_frame": 220472,
+        "end_frame": 220508,
+        "duration_frames": 36,
+        "start_tc": "01:01:14:32",
+        "end_tc": "01:01:15:08",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 33,
+        "text": "นะพี่",
+        "start_frame": 220508,
+        "end_frame": 220544,
+        "duration_frames": 36,
+        "start_tc": "01:01:15:08",
+        "end_tc": "01:01:15:44",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 34,
+        "text": "เอ้ย",
+        "start_frame": 220544,
+        "end_frame": 220580,
+        "duration_frames": 36,
+        "start_tc": "01:01:15:44",
+        "end_tc": "01:01:16:20",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 35,
+        "text": "ไว้นี้แล้วกันเอาไว้",
+        "start_frame": 220690,
+        "end_frame": 220754,
+        "duration_frames": 64,
+        "start_tc": "01:01:18:10",
+        "end_tc": "01:01:19:14",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 36,
+        "text": "ใกล้กับอาหารซอมบี้",
+        "start_frame": 220754,
+        "end_frame": 220811,
+        "duration_frames": 57,
+        "start_tc": "01:01:19:14",
+        "end_tc": "01:01:20:11",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 37,
+        "text": "อ่ะ",
+        "start_frame": 220811,
+        "end_frame": 220847,
+        "duration_frames": 36,
+        "start_tc": "01:01:20:11",
+        "end_tc": "01:01:20:47",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 38,
+        "text": "ตารา",
+        "start_frame": 220847,
+        "end_frame": 220883,
+        "duration_frames": 36,
+        "start_tc": "01:01:20:47",
+        "end_tc": "01:01:21:23",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 39,
+        "text": "ม่า",
+        "start_frame": 220883,
+        "end_frame": 220919,
+        "duration_frames": 36,
+        "start_tc": "01:01:21:23",
+        "end_tc": "01:01:21:59",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 40,
+        "text": "แล้วก็เดี๋ยว",
+        "start_frame": 220924,
+        "end_frame": 221032,
+        "duration_frames": 108,
+        "start_tc": "01:01:22:04",
+        "end_tc": "01:01:23:52",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 41,
+        "text": "แร่",
+        "start_frame": 221032,
+        "end_frame": 221068,
+        "duration_frames": 36,
+        "start_tc": "01:01:23:52",
+        "end_tc": "01:01:24:28",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 42,
+        "text": "แร่เดี๋ยว",
+        "start_frame": 221068,
+        "end_frame": 221104,
+        "duration_frames": 36,
+        "start_tc": "01:01:24:28",
+        "end_tc": "01:01:25:04",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 43,
+        "text": "เผาก่อน",
+        "start_frame": 221104,
+        "end_frame": 221140,
+        "duration_frames": 36,
+        "start_tc": "01:01:25:04",
+        "end_tc": "01:01:25:40",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 44,
+        "text": "สวัสดี",
+        "start_frame": 221760,
+        "end_frame": 221796,
+        "duration_frames": 36,
+        "start_tc": "01:01:36:00",
+        "end_tc": "01:01:36:36",
+        "orig_match": true,
+        "base_match": true
+      },
+      {
+        "cue_index": 45,
+        "text": "ครับ",
+        "start_frame": 221796,
+        "end_frame": 221832,
+        "duration_frames": 36,
+        "start_tc": "01:01:36:36",
+        "end_tc": "01:01:37:12",
+        "orig_match": true,
+        "base_match": true
+      }
+    ]
+  },
+  "audio_audit": {
+    "track_count": 3,
+    "all_match": true,
+    "tracks": [
+      {
+        "track_index": 1,
+        "track_name": "Original stream audio",
+        "track_type": "stereo",
+        "clip_count": 1,
+        "clips": [
+          {
+            "clip_index": 1,
+            "name": "【🔴 LIVE】Minecraft - 003  ｜ 21⧸09⧸2569 ｜ #katy404live.mp4",
+            "start_frame": 216000,
+            "end_frame": 221880,
+            "duration_frames": 5880,
+            "start_tc": "01:00:00:00",
+            "end_tc": "01:01:38:00",
+            "volume_db": 0.0
+          }
+        ]
+      },
+      {
+        "track_index": 2,
+        "track_name": "SFX",
+        "track_type": "stereo",
+        "clip_count": 1,
+        "clips": [
+          {
+            "clip_index": 1,
+            "name": "3. WINK _DING_.mp3",
+            "start_frame": 218621,
+            "end_frame": 218707,
+            "duration_frames": 86,
+            "start_tc": "01:00:43:41",
+            "end_tc": "01:00:45:07",
+            "volume_db": 0.0
+          }
+        ]
+      },
+      {
+        "track_index": 3,
+        "track_name": "BGM",
+        "track_type": "stereo",
+        "clip_count": 1,
+        "clips": [
+          {
+            "clip_index": 1,
+            "name": "NCSน่ารัก.mp3",
+            "start_frame": 216000,
+            "end_frame": 221880,
+            "duration_frames": 5880,
+            "start_tc": "01:00:00:00",
+            "end_tc": "01:01:38:00",
+            "volume_db": 0.0
+          }
+        ]
+      }
+    ]
+  }
+}

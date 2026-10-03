@@ -1,0 +1,90 @@
+{
+  "all_passed": true,
+  "checks": {
+    "target_timeline_identity": {
+      "passed": true,
+      "details": "Name: หนีฝ่าความหนาว_Minecraft-vdo_9x16, ID: 2b0779e3-6b5d-4fd2-91b3-2d55ffaed2a3"
+    },
+    "resolution_9x16": {
+      "passed": true,
+      "details": "Resolution: 1080x1920, useCustomSettings=1"
+    },
+    "framerate_preserved": {
+      "passed": true,
+      "details": "FPS: 60.0 (expected 60.0)"
+    },
+    "duration_preserved": {
+      "passed": true,
+      "details": "Duration: 5880 frames (Start: 216000, End: 221880)"
+    },
+    "subtitles_1to1_preserved": {
+      "passed": true,
+      "details": "Total Cues: 45/45 (Diff count: 0)"
+    },
+    "audio_tracks_and_levels_preserved": {
+      "passed": true,
+      "details": "Audio Tracks: 3, Details: [{'track': 1, 'item_name': '【🔴 LIVE】Minecraft - 003  ｜ 21⧸09⧸2569 ｜ #katy404live.mp4', 'timing_match': True, 'vol': 0.0, 'base_vol': 0.0, 'vol_match': True}, {'track': 2, 'item_name': '3. WINK _DING_.mp3', 'timing_match': True, 'vol': 0.0, 'base_vol': 0.0, 'vol_match': True}, {'track': 3, 'item_name': 'NCSน่ารัก.mp3', 'timing_match': True, 'vol': 0.0, 'base_vol': 0.0, 'vol_match': True}]"
+    },
+    "video_track_count": {
+      "passed": true,
+      "details": "Video Tracks: 4 (expected 4: V1 Game, V2 VTuber, V3 Focus, V4 GIF)"
+    },
+    "v1_game_top_transforms": {
+      "passed": true,
+      "details": "ZoomX=1.6, Pan=0.0, Tilt=480.0, CropBottom=486.0"
+    },
+    "v2_vtuber_bottom_transforms": {
+      "passed": true,
+      "details": "ZoomX=2.6, Pan=-936.0, Tilt=-200.0, CropTop=480.0"
+    },
+    "v4_reaction_gif_repositioned": {
+      "passed": true,
+      "details": "ZoomX=0.42, Pan=-300.0, Tilt=600.0"
+    },
+    "v3_adjustment_focus_transforms": {
+      "passed": true,
+      "details": "3 Cues: [{'clip_index': 1, 'center': [0.5, 0.25], 'size': 2.0, 'passed': True}, {'clip_index': 2, 'center': [0.5, 0.25], 'size': 2.0, 'passed': True}, {'clip_index': 3, 'center': [0.5, 0.25], 'size': 2.0, 'passed': True}]"
+    },
+    "zero_media_offline": {
+      "passed": true,
+      "details": "Offline Count: 0"
+    },
+    "original_timeline_untouched": {
+      "passed": true,
+      "details": "Original: หนีฝ่าความหนาว_Minecraft-vdo, Resolution: 1920x1080, V tracks: 3, Subtitles: 45"
+    }
+  },
+  "failures": [],
+  "qc_stills": [
+    {
+      "name": "split_screen_normal",
+      "description": "Normal Split Screen (Game top + VTuber bottom)",
+      "frame": 216500,
+      "timecode": "01:00:08:20",
+      "exported": true,
+      "file_path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.agents\\teamwork\\worker_m2\\qc_stills\\split_screen_normal_216500.png",
+      "file_size_bytes": 6232857
+    },
+    {
+      "name": "reaction_gif_safe",
+      "description": "Reaction GIF Upper Flank Placement",
+      "frame": 218650,
+      "timecode": "01:00:44:10",
+      "exported": true,
+      "file_path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.agents\\teamwork\\worker_m2\\qc_stills\\reaction_gif_safe_218650.png",
+      "file_size_bytes": 6232857
+    },
+    {
+      "name": "vtuber_focus_zoom",
+      "description": "V3 Full-Screen VTuber Close-Up",
+      "frame": 219300,
+      "timecode": "01:00:55:00",
+      "exported": true,
+      "file_path": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.agents\\teamwork\\worker_m2\\qc_stills\\vtuber_focus_zoom_219300.png",
+      "file_size_bytes": 6232857
+    }
+  ],
+  "timestamp_utc": "2026-10-01T10:34:59.308207+00:00",
+  "pilot_timeline_name": "หนีฝ่าความหนาว_Minecraft-vdo",
+  "target_timeline_name": "หนีฝ่าความหนาว_Minecraft-vdo_9x16"
+}
