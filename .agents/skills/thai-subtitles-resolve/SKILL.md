@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
-description: Thai/CJK subtitles into Resolve timelines via Whisper ASR.
-version: 0.3.0
+description: Insert native Thai subtitles and load saved font presets.
+version: 0.4.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -87,6 +87,39 @@ an old font/style plan, copy a style blob, or write SQL on their behalf.
 
 
 
+
+## Existing SRT insertion and saved font presets
+
+Use this skill when an SRT is already in the Media Pool, when the user asks
+“ใส่ subtitle track”, “จัดฟอนต์”, or “โหลด preset”. Do not retranscribe audio
+or regenerate cues for an insertion/style-only request.
+
+Read `references/srt-insertion-and-presets.md` for the complete procedure:
+
+1. Discover the live project/timeline IDs, exact build, timeline and playback
+   FPS, resolution, pool item path/type, and all existing track coverage.
+2. Reuse the exact imported Subtitle item. Create an empty subtitle track if
+   needed, then use the BARE `{"mediaPoolItem": item}` append payload. Wait at
+   least ~1.2s between structural mutations and read back every cue.
+3. Resolve the requested preset by its exact saved name and source library.
+   `Mitr-Font` and `Mitr Font` are different identifiers; ask before substituting.
+   Prefer the user-approved saved preset over guessed font/size/position values.
+4. On observed Resolve 21.1.0.17, subtitle preset loading has no public Python
+   API. `scripts/load_subtitle_preset.py` is a Python **database workaround**,
+   not a native API setter. Require separate explicit database-write approval;
+   save, verify a DRP backup, close the project, snapshot SQLite, update exact
+   subtitle rows transactionally, reopen, save, and verify.
+5. Compare every cue's text and absolute start/end frames, video/audio coverage,
+   timeline format, track states, and exact preset style bytes. Restore the
+   active project/timeline, fresh playhead/page and Media Pool folder. Inspect
+   the Viewer for caption visibility and HUD/avatar overlap.
+
+The preset helper verifies style bytes and cue counts, not complete cue text,
+frames, video/audio coverage or the Media Pool folder. Capture and compare those
+separately; do not describe its success message as full editorial verification.
+If a script fails after append, re-read the live track before retrying: the
+subtitles may already be present. `SetCurrentTimeline` belongs to `Project`,
+not `ProjectManager`.
 
 ## The three findings that matter
 

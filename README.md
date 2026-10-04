@@ -2,9 +2,9 @@
 
 รวบรวม skills จากงานเดิมมาไว้ในโปรเจกต์นี้ โดยไม่ย้ายหรือลบต้นฉบับ ไม่แก้คลิป ไทม์ไลน์ หรือฐานข้อมูล Resolve และไม่เปลี่ยน config ของ Hermes
 
-รุ่นของชุด skills: **v0.2.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
+รุ่นของชุด skills: **v0.6.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
 
-## ชุดหลัก — 16 skills
+## ชุดหลัก — 17 skills
 
 อยู่ที่ `.agents/skills/` พร้อม references และคู่มือ Resolve ที่อ้างถึง
 
@@ -20,14 +20,15 @@
 | `resolve-tighten-recording` | วางแผนตัด dead air จากคลิปยาว และสร้าง variant |
 | `resolve-edit` | ตัด ย้าย คัดลอกช่วง ปรับ pacing และโครงสร้างไทม์ไลน์ |
 | `resolve-audio` | เสียง Fairlight การมิกซ์ การถอดเสียง และขอบเขต API |
-| `thai-subtitles-resolve` | ถอดเสียงไทย จัดคำและเวลา SRT นำเข้าและตรวจ subtitle |
+| `thai-subtitles-resolve` | ถอดเสียงไทย ใส่ SRT ลง Subtitle track และจัดฟอนต์ด้วย saved preset พร้อมตรวจ readback |
+| `thai-proofread` | ตรวจคำผิดภาษาไทย การสะกด และน้ำเสียงก่อนนำเข้าซับ |
 | `resolve-video-enrichment` | ตัดคลิป VTuber ไทย วางจังหวะมุก/ซับ/เสียง เติม SFX/BGM/GIF จัดเฟรม และวัดผล YouTube |
 | `resolve-fusion` | Fusion composition / Transform / title / VFX |
 | `resolve-color` | ปรับสีและ matching แบบ frame-first |
 | `resolve-conform` | Conform/interchange ตรวจ source range และการ relink |
 | `resolve-delivery` | Render และตรวจไฟล์ส่งมอบตามสเปก |
 
-ประวัติที่เข้าถึงได้พบการโหลด **14 จาก 16 skills หลัก** ใน sessions ที่เกี่ยวข้องกับ Resolve ส่วน `resolve-color` และ `resolve-conform` รวมไว้ให้ชุดงานครบ แต่ไม่อ้างว่าเคยโหลดจริงจากประวัติที่ตรวจครั้งนี้ การโหลด skill ไม่ได้แปลว่าใช้งานกับทุกคลิปหรือทำงานเสร็จแล้ว
+ประวัติที่เข้าถึงได้พบการโหลด **14 จาก 17 skills หลัก** ใน sessions ที่เกี่ยวข้องกับ Resolve ส่วน `resolve-color`, `resolve-conform` และ `thai-proofread` รวมไว้ให้ชุดงานครบ แต่ไม่อ้างว่าเคยโหลดจริงจากประวัติที่ตรวจครั้งนี้ การโหลด skill ไม่ได้แปลว่าใช้งานกับทุกคลิปหรือทำงานเสร็จแล้ว
 
 ## Skills เสริมที่เก็บแยก — 13 ชุด
 
@@ -53,7 +54,7 @@
 
 ## ฐานความรู้คลิป VTuber ไทยและ YouTube
 
-`resolve-video-enrichment` มีแกนงานสั้น พร้อม references 11 ไฟล์และ template 1 ไฟล์ใน `.agents/skills/resolve-video-enrichment/` เรียกอ่านเฉพาะหัวข้อผ่าน `skill_view` ได้:
+`resolve-video-enrichment` มีแกนงานสั้น พร้อม references 15 ไฟล์และ template 1 ไฟล์ใน `.agents/skills/resolve-video-enrichment/` เรียกอ่านเฉพาะหัวข้อผ่าน `skill_view` ได้:
 
 - `resolve-editing-workflow.md` — เลือกช่วง ตัด/trim และลำดับการเก็บงาน
 - `vtuber-story-and-pacing.md` — hook จังหวะมุก reaction และบุคลิกของผู้พูด
@@ -67,6 +68,31 @@
 เนื้อหาแยกข้อเท็จจริงจากคู่มือ Blackmagic Design/YouTube Help ออกจากแนวทางสร้างสรรค์ที่ต้องทดลองกับผู้ชม ไม่รับประกันยอดวิว และคำขอเรียนรู้ไม่ใช่การอนุญาตให้แก้โปรเจกต์หรือเผยแพร่คลิป
 
 ผลรีวิว ข้อบกพร่องที่แก้ และประเด็นค้างของงานตัดต่อแยกอยู่ที่ `docs/REVIEW.md`
+
+## Python script สำหรับ Video/GIF style
+
+`scripts/apply_video_style.py` จับค่าคลิปต้นแบบเป็น JSON แล้วใช้กับ video items ที่ระบุ ID
+โดยเริ่มจาก dry-run และต้องตรวจ DRP backup ก่อน `--apply` สคริปต์ตรวจ property readback,
+เปรียบเทียบ timeline ส่วนที่ต้องคงเดิม, rollback เมื่อผิดพลาด และคืน UI state
+คู่มือ: [video-style-script.md](docs/guides/video-style-script.md)
+
+นี่เป็น reference-style fallback **ไม่ใช่การโหลด native Video Preset `vdo`** และไม่เขียน SQL
+ตัวอย่างใน `presets/video/approved-gif-style.json` เก็บเฉพาะ property values
+โดยตัด ID/ชื่อคลิปจริงออก ต้อง capture จากคลิปที่อนุมัติสำหรับงานจริง
+
+## ใส่ Subtitle และโหลด font preset
+
+อ่าน workflow ที่ `.agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md`:
+ใช้ SRT item ที่มีอยู่ใน Media Pool, empty Subtitle track และ bare append payload
+ตรวจทุกข้อความ/เฟรม และอ่าน track กลับก่อน retry หาก script ล้มหลัง append
+
+เริ่มค้นชื่อ preset จริงด้วย `scripts/load_subtitle_preset.py --list` และใช้ dry run;
+ถ้า preset อยู่คนละ library ให้ตรวจ `--user-db` ที่ค้นพบจริง อย่าแทน `Mitr-Font`
+ด้วย `Mitr Font` เอง
+
+บน Resolve 21.1.0.17 helper โหลด subtitle preset เป็น Python/SQLite workaround
+**ไม่ใช่ native preset API** จึงต้องอนุมัติ database write แยกต่างหาก สำรองและปิด project
+ก่อนเขียน แล้วเปิดกลับตรวจ style bytes, ข้อความ/เฟรม และ coverage
 
 ## ใช้กับ Hermes
 

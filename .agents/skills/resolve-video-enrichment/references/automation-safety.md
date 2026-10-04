@@ -32,6 +32,14 @@
 6. A False transform setter immediately after append may already have applied: wait and reread before retrying.
 7. Use `ProjectManager.SaveProject()` and check its return; do not assume `Project.Save()` exists.
 8. Restore the captured active timeline/timecode/page/folder/track states and reread each at exit.
+   Activate each original/variant separately and wait for switching before full
+   signature comparisons: property reads on an inactive timeline have reflected
+   active-timeline state on 21.1.0.17, causing false preservation failures.
+   After switching, wait before setting the playhead and reread it after the
+   setter; an immediate True/readback can precede the completed UI switch.
+   Put protected-track unlock/restoration in the failure path as well as the
+   success path. Restore independent state components separately, retain an
+   incomplete variant, and record failures without masking the original error.
 9. Wait for `GetCurrentPage()` after `OpenPage()`; a True return can precede the visible page switch.
 10. If an explicitly removed active variant no longer exists, restore its surviving paired original at the captured timecode and report the substitution.
 

@@ -489,6 +489,17 @@ instead of dropping words, shortening holds, or splitting cues automatically.
 
 
 
+## Saved subtitle font presets
+
+When the user requests subtitle font styling by preset, load the exact approved
+saved Subtitle-track preset instead of manually guessing font, size, stroke or
+position. Discover the saved name and source library; ask before substituting
+`Mitr Font` for `Mitr-Font` or borrowing a preset from another library. This
+keeps the user's established style intact. Python-based SQL workarounds still
+require explicit database-write approval and a verified backup; a font request
+alone does not authorize SQL. Preserve every cue's text/timing and all original
+video/audio ranges.
+
 ## Shot selection
 
 

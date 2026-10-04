@@ -4,6 +4,7 @@ Requires PyYAML. Hermes's own scanner is used when importable.
 """
 from pathlib import Path
 import ast
+import fnmatch
 import hashlib
 import json
 import re
@@ -11,6 +12,7 @@ import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_CORE_SKILLS = 17
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -47,8 +49,8 @@ def validate():
     for name, count in counts.items():
         if manifest['counts'].get(name) != count:
             errors.append('Manifest count mismatch: ' + name)
-    if len(active) != 16 or len(declared) != len(active):
-        errors.append('Core skill count does not match expected 16 / manifest')
+    if len(active) != EXPECTED_CORE_SKILLS or len(declared) != len(active):
+        errors.append(f'Core skill count does not match expected {EXPECTED_CORE_SKILLS} / manifest')
     active_paths = {path.relative_to(ROOT).as_posix() for path in active}
     if {s['path'] for s in declared} != active_paths:
         errors.append('Core skill declarations do not match active paths')
@@ -113,6 +115,16 @@ def validate():
     listed_files = {record['path'] for record in manifest['files']}
     if len(listed_files) != len(manifest['files']):
         errors.append('Duplicate manifest file paths')
+    excluded_rules = {}
+    for record in manifest.get('excluded_repository_paths', []):
+        if not isinstance(record, dict) or not record.get('path') or not record.get('reason'):
+            errors.append('Invalid excluded repository path declaration')
+            continue
+        excluded_rules[record['path']] = record['reason']
+    def exclusion_for(relative):
+        return next((pattern for pattern in excluded_rules
+                     if fnmatch.fnmatchcase(relative, pattern)), None)
+
     # The manifest is not its own checksum authority; reports are generated.
     excluded = {'docs/skills-manifest.json', 'docs/validation-report.json'}
     for directory in ['.agents', 'docs', 'resolve-advanced', 'scripts', 'tests']:
@@ -120,7 +132,13 @@ def validate():
             if not path.is_file() or '__pycache__' in path.parts:
                 continue
             relative = path.relative_to(ROOT).as_posix()
-            if relative not in excluded and relative not in listed_files:
+            if relative in excluded:
+                continue
+            exclusion = exclusion_for(relative)
+            if exclusion is not None:
+                if relative in listed_files:
+                    errors.append('Manifest file also excluded from bundle: ' + relative)
+            elif relative not in listed_files:
                 errors.append('Unlisted bundle file: ' + relative)
     for relative in ['.gitignore', 'AGENTS.md', 'README.md']:
         if relative not in listed_files:
@@ -131,7 +149,9 @@ def validate():
             errors.append('Missing manifest file: ' + record['path'])
         elif not checksum_matches(dst, record['sha256']):
             errors.append('Checksum mismatch: ' + record['path'])
-    for path in [ROOT/'scripts/contact_sheet.py', ROOT/'scripts/verify_skill_bundle.py', ROOT/'tests/test_skill_bundle.py']:
+    for path in [ROOT/'scripts/contact_sheet.py', ROOT/'scripts/verify_skill_bundle.py',
+                 ROOT/'scripts/apply_video_style.py', ROOT/'tests/test_skill_bundle.py',
+                 ROOT/'tests/test_apply_video_style.py']:
         ast.parse(path.read_text(encoding='utf-8'), filename=str(path))
     scans = []
     try:
@@ -145,7 +165,7 @@ def validate():
             scans.append({'name':path.parent.name, 'verdict':result.verdict, 'findings':[{'pattern_id':f.pattern_id,'severity':f.severity,'file':f.file,'line':f.line,'description':f.description} for f in result.findings]})
             if result.verdict == 'dangerous':
                 errors.append('Quarantined core skill: '+path.parent.name)
-    return {'ok':not errors, 'core_skill_count':len(active), 'related_archive_count':len(archives), 'history_evidenced_core_count':sum(s['history_loads']>0 for s in declared), 'manifest_file_count':len(manifest['files']), 'local_reference_count':len(checked_links), 'scanner':scanner, 'security_scans':scans, 'errors':errors, 'live_resolve_tested':False, 'project_trust_changed':False}
+    return {'ok':not errors, 'core_skill_count':len(active), 'related_archive_count':len(archives), 'history_evidenced_core_count':sum(s['history_loads']>0 for s in declared), 'manifest_file_count':len(manifest['files']), 'excluded_repository_path_count':len(excluded_rules), 'local_reference_count':len(checked_links), 'scanner':scanner, 'security_scans':scans, 'errors':errors, 'live_resolve_tested':False, 'project_trust_changed':False}
 
 if __name__ == '__main__':
     result = validate()

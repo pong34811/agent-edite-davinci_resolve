@@ -26,6 +26,21 @@ metadata:
 
 # Resolve Timeline Edit
 
+## Approved reference video styling via Python
+
+For "เขียน Python script ใช้สไตล์ GIF/Video" or an explicitly approved
+reference-clip fallback, use `scripts/apply_video_style.py`; read
+`docs/guides/video-style-script.md` first. Capture the reference's exposed video
+properties to JSON, dry-run exact project/timeline/target IDs, then apply only
+with an approved backup directory. Require per-property and protected-content
+readback, successful save, and a repeat no-op dry run.
+
+This is not a native named Video Preset loader. Do not invent LoadVideoPreset,
+label captured values as a loaded `vdo`, substitute `short`, or patch SQL without
+separate approval. Preserve source/media/timing/audio/subtitles; visually check
+every different GIF raster after applying the same numeric style.
+
+
 
 
 

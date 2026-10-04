@@ -38,6 +38,22 @@ These are historical exemplar settings, not universal audience preferences or re
 - On resume, identify an existing GIF by target track, record start, and asset; then validate its actual duration is within the approved range and timeline bounds. Do not require an exact planned end as the identity key, because source FPS conversion can change record duration; reject duplicate or out-of-range matches before appending.
 - Leave `V1`, `A1` source ranges, and the subtitle track untouched; enrichment is additive.
 
+## Build-measured metadata and source-end guards
+
+- On Studio 21.1.0.17, imported MP3 `Frames` can be empty while `FPS` and
+  `Duration` are populated. Read the pool's own FPS and duration timecode to
+  derive available source frames; validate its timebase first. Do not cast an
+  empty Frames string to float or assume a WAV/MP3 always follows timeline FPS.
+- Verify source-end convention with an isolated approved placement before a
+  batch. On this build an MP3 append with startFrame=0, endFrame=10377 produced
+  10377 record frames; endFrame=10378 produced the intended 10378-frame bed.
+  Historical inclusive-end guidance is not proof on the current build. Compare
+  GetStart(True)/GetEnd(True), source start/end and actual conformed duration;
+  require BGM to cover the exact approved timeline, not merely within one frame.
+- Probe GIF alpha by inspecting the actual Resolve composite. Some GIFs retain
+  transparency on this build; neither a historical alpha-loss observation nor
+  a Media Pool Alpha mode label proves current pixel behavior.
+
 ## Batch recipe for talk/chat (non-gameplay) timelines
 
 Proven order for "add SFX + BGM + GIF to every timeline, copies first, then originals":

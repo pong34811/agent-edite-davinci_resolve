@@ -38,7 +38,11 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 
 ## Database boundaries
 
-Subtitle track style has no supported scripting setter in the observed workflow. A style-copy database operation must export/verify `.drp`, save and close the project, take a SQLite backup, update only exact subtitle-track rows, reopen, then verify cue text/frames and style blob equality. Do not guess Inspector size from QFont pointSize. Prefer an already-matching live style and leave the database unchanged when it matches.
+On observed Resolve 21.1.0.17, Subtitle track preset loading has no public scripting setter. Prefer the exact user-approved saved preset over guessed font/size/position values. `scripts/load_subtitle_preset.py` loads saved preset bytes with a Python/SQLite workaround, not a native preset API; require explicit database-write authorization. Dry-run the exact target timeline, export/verify `.drp`, save and close the project, take a SQLite backup, update only exact subtitle-track rows, reopen, then verify every cue text/absolute frame, video/audio coverage, track states and style-byte equality. The helper itself checks style bytes and cue counts only; perform the other checks separately and restore Media Pool folder as well as timeline/playhead/page. Do not guess Inspector size from QFont pointSize. Leave already-matching styles unchanged.
+
+Preset names are exact: `Mitr-Font` and `Mitr Font` are not interchangeable without approval. An empty `--list` can mean the preset lives in another library's User.db; discover/read that source and use an approved `--user-db` rather than switching the project's active library. Do not use `--orientation` without `--timeline` for a single-timeline request: it implies all timelines. Full workflow: `.agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md`.
+
+After any insertion-script failure, re-read the live subtitle track before retrying; append may already have succeeded. Use `Project.SetCurrentTimeline`, not `ProjectManager.SetCurrentTimeline`.
 
 ## Evidence and scope
 

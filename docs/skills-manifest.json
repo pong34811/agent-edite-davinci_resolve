@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-09-30T04:23:40.056108+00:00",
+  "collected_at": "2026-10-04T01:10:40+00:00",
   "scope": "Current default Hermes profile and local Resolve skill copies; past sessions mentioning Resolve, not a per-clip execution ledger.",
   "sources": {
     "resolve_repository": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp",
@@ -357,6 +357,15 @@
       "history_sessions": 20
     },
     {
+      "name": "thai-proofread",
+      "tier": "editing",
+      "path": ".agents/skills/thai-proofread/SKILL.md",
+      "source": "project-local copy; upstream provenance was not recorded",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "thai-subtitles-resolve",
       "tier": "editing",
       "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
@@ -706,56 +715,56 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "7ec4c803f89b8f5a8561bedc6984f1adff50fd7372128bd124e095aabc62ff3a"
+      "sha256": "ae904a61309ffb8ee74c374b9e6fad25d32ea92911b85344781e5662b60cbe6a"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb"
+      "sha256": "6152755d8c9172b61616811b648859aed5a19d7b98c2d92f13ed92c878fb7cfc"
     },
     {
       "path": ".agents/skills/resolve-color/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-color\\SKILL.md",
       "source_sha256": "5a14db0b06c97e63fc2f18c857f03ec8cc5f92e2d1f6ca8b1225c3ebcc374310",
       "kind": "editing_skill",
-      "sha256": "5a14db0b06c97e63fc2f18c857f03ec8cc5f92e2d1f6ca8b1225c3ebcc374310"
+      "sha256": "00dde0e913aaf8cfccd5ce8f48f28ce0af3278e55cafb82e6500b429630c21ca"
     },
     {
       "path": ".agents/skills/resolve-conform/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-conform\\SKILL.md",
       "source_sha256": "4b78ad0092111cbefa153be2b4a60e85cfde5f664be69bb0ddfe5c2429c3a0e0",
       "kind": "editing_skill",
-      "sha256": "4b78ad0092111cbefa153be2b4a60e85cfde5f664be69bb0ddfe5c2429c3a0e0"
+      "sha256": "7fe09fcef9d25073e4a9040265b45411d5064358e97c4c8b5bcf4d7380b9cefe"
     },
     {
       "path": ".agents/skills/resolve-delivery/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8"
+      "sha256": "ad7473e7c131806021c131af7206d5791c9efc9d95fb47de5dd79d7c5fbdbf13"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63"
+      "sha256": "169eb37963d6c136f4f6fac07fb98f39690b5601312cc4390f36cc948071618d"
     },
     {
       "path": ".agents/skills/resolve-fusion/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-fusion\\SKILL.md",
       "source_sha256": "ed18e1b025ef9b27afbc9115327df54bfc287c591d7948e8403390ec59280b4b",
       "kind": "editing_skill",
-      "sha256": "ed18e1b025ef9b27afbc9115327df54bfc287c591d7948e8403390ec59280b4b"
+      "sha256": "fc52fea04a9f6ff527546a4e8ca4349020f52456477b3293b93df9c12314f697"
     },
     {
       "path": ".agents/skills/resolve-mcp/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6"
+      "sha256": "81465ac569c7a00974d0e5ec3760e8579606f8a9e86a29b854059fbe05d05789"
     },
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
@@ -763,14 +772,14 @@
       "source_sha256": "98359bc82e20de38dcabb0d6ce330ed9209ff735d097fde5599d001ebf63e743",
       "kind": "editing_skill",
       "local_amendment": "Agent-neutral wording; mechanics unchanged.",
-      "sha256": "25d95d83b72da816213503d1eac659322f8c58a7f86d3501ff86ff5251814e91"
+      "sha256": "72c96fab393d6ac864339eca7d72b2471b2b08bec54e7a5edbd2da4b44e3c954"
     },
     {
       "path": ".agents/skills/resolve-media-pool/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-pool\\SKILL.md",
       "source_sha256": "2ede4db63c156a2899c85bae8ea11db7bf83f71e79246b49d00149f305f0f3f6",
       "kind": "editing_skill",
-      "sha256": "2ede4db63c156a2899c85bae8ea11db7bf83f71e79246b49d00149f305f0f3f6"
+      "sha256": "f0a9f9e9f9fc88900f67b34795e9c26f9927fc970c73a1edfe4110a18cd645d8"
     },
     {
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
@@ -778,7 +787,7 @@
       "source_sha256": "aee1ffd3e2c0a539466f1fc7be4346f67f2845a0cbb6e24a0eb117dad0523ba4",
       "kind": "editing_skill",
       "local_amendment": "Windows python command; authorized dependency installs; permission-gated archive cleanup; contact-sheet collision and vision-index safeguards.",
-      "sha256": "4facc14753c6fd56580d6200b4ad819e897928712c9fbfe82f123c4c123459bc"
+      "sha256": "ab2252cab7167637c42d5ed95089f1f11220a1480b03d7648fcc931821de20fe"
     },
     {
       "path": ".agents/skills/resolve-session/agents/openai.yaml",
@@ -792,14 +801,14 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session\\SKILL.md",
       "source_sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c",
       "kind": "editing_skill",
-      "sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c"
+      "sha256": "19b984eec5ef5eed924d90a573ba30d4a1c128e69db2fd7c7b26ebf9101fc85a"
     },
     {
       "path": ".agents/skills/resolve-tighten-recording/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-tighten-recording\\SKILL.md",
       "source_sha256": "3ffa4d3fcb8a136c450a5aa4379e8d937ced440b6e0abbb207c8315bd5ba4243",
       "kind": "editing_skill",
-      "sha256": "3ffa4d3fcb8a136c450a5aa4379e8d937ced440b6e0abbb207c8315bd5ba4243"
+      "sha256": "3bf72c7b5640c15a1d07d7243e5f07122bc5d0e2d5ad335a2df0c934818d20a4"
     },
     {
       "path": ".agents/skills/video-footage-review/SKILL.md",
@@ -807,7 +816,7 @@
       "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
       "kind": "editing_skill",
       "local_amendment": "Hermes search_files inventory instead of ls; supplied missing Whisper reference.",
-      "sha256": "79f95eeb0d666db6809314659ac230d66ae402f8a284e4100700da00824a09d1"
+      "sha256": "911db48dd3d38a2883fe60778f90010d15442381d9bbc976d52ed687fc4e33de"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/SKILL.md",
@@ -815,7 +824,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "561f6a581099dc2e96427e8fb3245d64370614d7f898e172b80af239615e2adb"
+      "sha256": "4e947a6139c49a6e6826aff8ed5d5d94c1a48e5853b0ee0c058eb4eb52980cc2"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
@@ -836,7 +845,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
       "source_sha256": "4b34d3e949dcff3f372c23ca97d47e658d102ee3b3f051683af4a09e99397232",
       "kind": "editing_skill",
-      "sha256": "4b34d3e949dcff3f372c23ca97d47e658d102ee3b3f051683af4a09e99397232"
+      "sha256": "c2fbe174b6c5df8c55f14744678f50c6c363c4a5967df0e1b7d5a5c017a10518"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/offline-media-repair.md",
@@ -858,84 +867,84 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575"
+      "sha256": "0dfcca40424d88e2e53a983c6f63886dad66bc11ad432d8a518564e54cc10dd5"
     },
     {
       "path": "docs/related-skills/computer-use/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use\\SKILL.md",
       "source_sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf",
       "kind": "related_skill_archive",
-      "sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf"
+      "sha256": "f8cb7fdfe65d7ef1b3f6147f2fd99b122861f9382322614c0acd44dc4cc3ba33"
     },
     {
       "path": "docs/related-skills/songsee/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\songsee\\SKILL.md",
       "source_sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07",
       "kind": "related_skill_archive",
-      "sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07"
+      "sha256": "d399b3f6a85ba7f14bf59e7954013142c3f3737119e5e4a5c3470d1a13db36b1"
     },
     {
       "path": "docs/related-skills/codex/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex\\SKILL.md",
       "source_sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d",
       "kind": "related_skill_archive",
-      "sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d"
+      "sha256": "3c25152d36a0267e2945aa2199975b83230233fa2685c72131c181fe14af1705"
     },
     {
       "path": "docs/related-skills/systematic-debugging/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging\\SKILL.md",
       "source_sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a",
       "kind": "related_skill_archive",
-      "sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a"
+      "sha256": "5fa3dd44dc59ad0fdbd4178433e2dbe87327738100135121e441cc80966885c8"
     },
     {
       "path": "docs/related-skills/grounded-citations/references/citation-formats.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\citation-formats.md",
       "source_sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04",
       "kind": "related_skill_archive",
-      "sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04"
+      "sha256": "d074b32150b024ced76b0b13734e99f3199ee4dba0be5adddea597dc4d6c6371"
     },
     {
       "path": "docs/related-skills/grounded-citations/references/grounding-rationale.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\grounding-rationale.md",
       "source_sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1",
       "kind": "related_skill_archive",
-      "sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1"
+      "sha256": "43b22746313ba0480b747391dfb6b8891d8e4d69e768f4b3646e51eecaee63ea"
     },
     {
       "path": "docs/related-skills/grounded-citations/scripts/_hermes_home.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\_hermes_home.py",
       "source_sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4",
       "kind": "related_skill_archive",
-      "sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4"
+      "sha256": "6c2486b262f1ce8334a43d3c9b280f5d59f41e0c8da01cb7b85a65c371c92fa4"
     },
     {
       "path": "docs/related-skills/grounded-citations/scripts/sources.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\sources.py",
       "source_sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c",
       "kind": "related_skill_archive",
-      "sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c"
+      "sha256": "82084892b12b27a5406aa44d139d121ffb9ab1e1b77cf63372ed78a968fc8e5f"
     },
     {
       "path": "docs/related-skills/grounded-citations/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\SKILL.md",
       "source_sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
       "kind": "related_skill_archive",
-      "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6"
+      "sha256": "c7991dbe56bc358436207946da5f8f3ebca689935695ee0ebe66a6bd98e300bb"
     },
     {
       "path": "docs/related-skills/blocked-page-recovery/scripts/recover_page.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\scripts\\recover_page.py",
       "source_sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6",
       "kind": "related_skill_archive",
-      "sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6"
+      "sha256": "109168d3757c0133d68c073ab4a1168baaf493983c5da96bddc5b73d5bd03cbf"
     },
     {
       "path": "docs/related-skills/blocked-page-recovery/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\SKILL.md",
       "source_sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061",
       "kind": "related_skill_archive",
-      "sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061"
+      "sha256": "757dc7f5c8597633a0fcad9d1ddc0919a1fe97ffa2c11bce32445062cba38a62"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/frame-template.html",
@@ -949,7 +958,7 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\helper.js",
       "source_sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
       "kind": "related_skill_archive",
-      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
+      "sha256": "78c3a22dd5e799623cab8908b0b03e764404efde2d2edc94a8814cf450a09e81"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/server.cjs",
@@ -963,133 +972,133 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\start-server.sh",
       "source_sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
       "kind": "related_skill_archive",
-      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
+      "sha256": "526f3fc34bbdc56d97532d84bf861a1113f9f08fec6479c3553c13ec627c2448"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/stop-server.sh",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\stop-server.sh",
       "source_sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
       "kind": "related_skill_archive",
-      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
+      "sha256": "6a2f3f3b7ca84fde8ef3c43825d392e1f12126b52a93b42c4d4940779bac884d"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\SKILL.md",
       "source_sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72",
       "kind": "related_skill_archive",
-      "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72"
+      "sha256": "8b883cc136d60e304dbc2cc3c2e024f5416bb9d805b4ea3c1aec5b5012da3442"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/spec-document-reviewer-prompt.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\spec-document-reviewer-prompt.md",
       "source_sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457",
       "kind": "related_skill_archive",
-      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457"
+      "sha256": "793f2546815a28f2712f0dcb926ab96dc4a60145fbea6f9a08d88287ec8e15bc"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/visual-companion.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\visual-companion.md",
       "source_sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2",
       "kind": "related_skill_archive",
-      "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
+      "sha256": "95a58903eeac8e247f75335d46d5cbbe29e041e1731a15ff89aec82e96a7c989"
     },
     {
       "path": "docs/related-skills/superpowers-test-driven-development/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\SKILL.md",
       "source_sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
       "kind": "related_skill_archive",
-      "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
+      "sha256": "90fa0021a53360948fd1eb67799821d549ebef036ffad0ad5ceb7d8585abf159"
     },
     {
       "path": "docs/related-skills/superpowers-test-driven-development/writing-good-tests.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\writing-good-tests.md",
       "source_sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1",
       "kind": "related_skill_archive",
-      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
+      "sha256": "87f56d0a4236f804165149ec038787d20062afc9b37aa240a167c394b39d2065"
     },
     {
       "path": "docs/related-skills/superpowers-dispatching-parallel-agents/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\dispatching-parallel-agents\\SKILL.md",
       "source_sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
       "kind": "related_skill_archive",
-      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
+      "sha256": "fc9875393a1dcd6b649bf22d9ff62f3a02080c0ce365932451bc73e63d87ddab"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting-example.ts",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting-example.ts",
       "source_sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e",
       "kind": "related_skill_archive",
-      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
+      "sha256": "0602407671f97439acc9e3cc2fe27ad42a22eb0dbca62f56d610fb223daadb0f"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting.md",
       "source_sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
       "kind": "related_skill_archive",
-      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
+      "sha256": "02aa854bd9e761f275e1450d7136ba60f1a4d103fe94b552fdce822dd3c99506"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/CREATION-LOG.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\CREATION-LOG.md",
       "source_sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789",
       "kind": "related_skill_archive",
-      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
+      "sha256": "397f122f115f994372a1805e30071fc0ad86c0dc1e427fbf5b5f1b14143399f5"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/defense-in-depth.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\defense-in-depth.md",
       "source_sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
       "kind": "related_skill_archive",
-      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
+      "sha256": "9407efcbd028a5ec45edfdf6692b988716c0a7b34d1fb5e05d60146171d8041e"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/find-polluter.sh",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\find-polluter.sh",
       "source_sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
       "kind": "related_skill_archive",
-      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
+      "sha256": "31aa8bbab625ffae398c357de90fe3f4cb8f6dd39b23101bf81ef6dd53638b7c"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/root-cause-tracing.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\root-cause-tracing.md",
       "source_sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8",
       "kind": "related_skill_archive",
-      "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
+      "sha256": "f6359a35f1c695f789fac7b08d46ae0bb74f9a24123f9add96a7de053019b9bb"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\SKILL.md",
       "source_sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
       "kind": "related_skill_archive",
-      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
+      "sha256": "23f249e47a3a4b06c3a5030e37aaf3ced12a54f406782766b384ed127d21eca4"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-academic.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-academic.md",
       "source_sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486",
       "kind": "related_skill_archive",
-      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
+      "sha256": "51e07c1c56052a6c46cde8e7d42d6612598ea076f128086fd85911f4d2d3e8dd"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-1.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-1.md",
       "source_sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a",
       "kind": "related_skill_archive",
-      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
+      "sha256": "fbf04219c44460e76d96642d7dc16960a2390936e0a6937d0b133e013fa55afb"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-2.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-2.md",
       "source_sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016",
       "kind": "related_skill_archive",
-      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
+      "sha256": "fc6b2594bed3f2a15ece75d0a211b55cb9a4668d85b9873f2bab5ee54ed31cbf"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-3.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-3.md",
       "source_sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708",
       "kind": "related_skill_archive",
-      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
+      "sha256": "69ed6a5a59dac92d58d284519991a46b90978bc40a229776dac0ffa3a6123bfe"
     },
     {
       "path": "docs/related-skills/superpowers-executing-plans/scripts/task-done",
@@ -1110,70 +1119,70 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans\\SKILL.md",
       "source_sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71",
       "kind": "related_skill_archive",
-      "sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71"
+      "sha256": "9e0cf3924324bd93d2e3d5cbd242d623579c80b3d7fc9c9bfcd4c8240e5595df"
     },
     {
       "path": "docs/related-skills/superpowers-verification-before-completion/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\verification-before-completion\\SKILL.md",
       "source_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
       "kind": "related_skill_archive",
-      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+      "sha256": "8f15b9f67e566f286d531b7da77052f4009b5065fd8edfcb659c9f837eebb4a4"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/antigravity-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\antigravity-tools.md",
       "source_sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0",
       "kind": "related_skill_archive",
-      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
+      "sha256": "343af08abab2936a4063399ec0908a0d3a129f66a54a42ef1f14e9b9edc0b8fa"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/claude-code-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\claude-code-tools.md",
       "source_sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b",
       "kind": "related_skill_archive",
-      "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
+      "sha256": "fc455de197f1ca60fceeb620b8118815cae16b2b42900aff86036c1715b994b6"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/codex-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\codex-tools.md",
       "source_sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7",
       "kind": "related_skill_archive",
-      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
+      "sha256": "51d2e878aac90809bfdd0358c974281e2fb88c7d46571e6310587d9df6cd55ea"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/gemini-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\gemini-tools.md",
       "source_sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965",
       "kind": "related_skill_archive",
-      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
+      "sha256": "3e0e732356eaf1780da7cfd93773723a68ff1fe03dbc519aaac38cd7e9b62e87"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/hermes-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\hermes-tools.md",
       "source_sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190",
       "kind": "related_skill_archive",
-      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
+      "sha256": "32c262e22da268ac1bc33f2b318e597e78539f10be170a7453dee07ff432f36b"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/muse-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\muse-tools.md",
       "source_sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3",
       "kind": "related_skill_archive",
-      "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
+      "sha256": "7fc9b703682c55b453b1ed56a498d99df2293242cdbd9b53af15f8982e513969"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/pi-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\pi-tools.md",
       "source_sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5",
       "kind": "related_skill_archive",
-      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
+      "sha256": "fb6db6991508e958b0117861b6107fb1cafcc752210c7cfe66def13f1e34d371"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\SKILL.md",
       "source_sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
       "kind": "related_skill_archive",
-      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
+      "sha256": "c460d4e164f6583dd980a65ac4d27c963de4fe13061a170c10e73eac8ab0b52e"
     },
     {
       "path": "docs/authoring/fuse-dctl-authoring.md",
@@ -1803,79 +1812,79 @@
       "path": ".agents/skills/video-footage-review/references/whisper-transcription.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "db6ac0b9cefae228dac78e466e55533bdd53f81225962985c0f8823cf0fa65d1"
+      "sha256": "47ce4ab0ad1529e375b2ba240709313420bcb2e761c82a364b704580535d9478"
     },
     {
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fc9a94d5c8b4a8c13b10ff23558a5d90f87d93f9a9e0ee3154d702c7b506408d"
+      "sha256": "5764c13bd6a4fb844be816e1d6e5981d3a7b668412c86e3ba2760fa27091c13b"
     },
     {
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7757ee1f71490dcb4d116f8253b93652e6700bec3e637c7aa686abed5d5539a4"
+      "sha256": "4ce68e9af36f62038505756eaead8c1f107de484e8b2199d845d5ae2f55b7039"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f87302aacc161841f8f63e50cbfc489049a65cdddd52636baf80c55d415fe3bd"
+      "sha256": "bed46ca711054da76f56b7726d3b45a6de7692b9cb9e1bdf1ce40e4ae0b345c3"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "11d1b9cdac74124f17cd4b6d12c63680273fe48a4463bde0f0a679db848fff93"
+      "sha256": "87aad473b83e5fa7d92687d9f3aa3ba8058eb7c13f0ab29e7a214425b057e45a"
     },
     {
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7d9dee24d4f5928d45c05ec894d178eb62f2066bea87b9983440bcb300b6437a"
+      "sha256": "ad269aae7dd756ca2b43d163ec65141bc10e581c1441e6a77fe87a0cf64c1ff9"
     },
     {
       "path": "tests/test_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "83957964f38e0cbd816b9d58c12524cdd63f5f0fb7fe1fd491ddcca946346043"
+      "sha256": "feaa2e01e308a3742bedc742b2574f2dc00d65086a9f64936d15581d40709fc2"
     },
     {
       "path": "tests/test_validation_regressions.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3c8f10bf553bf151efb317ff22ca7396a7f1dc472bd1d1df66651fcc278f40b2"
+      "sha256": "6a3ed126b75abc5a4e1131f06623949634cebc6eb5eb5d1442c06a122431fa6b"
     },
     {
       "path": "tests/test_contact_sheet.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "995ab9f7865e63fe249f308b69a331fff299268de87b23a83d0b1c9f7c3c6e56"
+      "sha256": "addadc497e4c640d96ee2be114076c88a76ecbec90856a93b0af230b18888216"
     },
     {
       "path": "docs/REVIEW.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d342bf75d4a3a4b008cb287258f072e25ea66738ca0eeb90285fa3690a800ba6"
+      "sha256": "e197749e6417628df9e2a5f8786e71be1cdd2736655b3239b9ca0e6fa8c098a1"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "af61dfa83102b6a06967be3aaf3e5e59641df272d33fa6152cd26730056aa688"
+      "sha256": "02a4b9eea264f2455fd7a4d721e5b367e37b7c4236d17de81421885efb67d324"
     },
     {
       "path": "tests/test_subtitle_workflow_rules.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a6345f3e6d1a3dd08a27d81204481e509fe453952d8b7aebf9db81688413f00c"
+      "sha256": "458577265c3375bcc8d5bdf48d57797643e8f8f0d1374c5840745bad9d556eba"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/automation-safety.md",
       "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/automation-safety.md",
       "source_sha256": "cd3ba9f635dfc50b7ab791248a9a9feb3444b820e54c8b73abb3936b19e3b8b8",
-      "sha256": "cd3ba9f635dfc50b7ab791248a9a9feb3444b820e54c8b73abb3936b19e3b8b8",
+      "sha256": "641f3ccbbba30b645e85ee303ab63dad361f285a17c7e4c1af8ccc66085ee678",
       "kind": "editing_skill",
       "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
     },
@@ -1930,13 +1939,13 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9",
+      "sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
       "kind": "integration_or_validation"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "cf751a488c7b8b5c8d470fabf331b35150c0f94d92f53157472a1008a2d66ec2",
+      "sha256": "02e97e0d8d9af7cee67f17014a9e018e06d5785b454f40d8c4736b2bf4ba785f",
       "kind": "integration_or_validation"
     },
     {
@@ -1944,61 +1953,145 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82"
+      "sha256": "48668fc800e0f4c3e1c55a075dbc9ea1c8367213b6069b28d7d12d7f0574a904"
     },
     {
       "path": "docs/superpowers/plans/2026-09-30-kt404-video-enrichment.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a956f34c8c6ca658ef6b7086719e9478e14acec882816814531c17ef86cf4269"
+      "sha256": "b135cee90cdf357b055750562dc303c99b9bf61044ede29f2bd30de1e5ff8225"
     },
     {
       "path": "docs/superpowers/plans/2026-09-30-resolve-placement-fix.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a3277c3f273b6cea4e6d3ec5a78b60437e4093067cbe9c8c7742f1220b2f597e"
+      "sha256": "7f1f5a82140f0f01660d7a6acf596008a53e6621e55395a8d0f8dea24bee3efb"
     },
     {
       "path": "docs/superpowers/specs/2026-09-30-kt404-video-enrichment-design.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ec516c6abfa4e8c5df56b43c9b3506351f5a748c05531b58251c2817ba9dd367"
+      "sha256": "bb008f2a33d918ab36fbff66b321b9080a86314a01b96e0f5dda49e83f1b3089"
     },
     {
       "path": "scripts/enrichment_assets.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ef3fdab964de144a848279945ce870e1a38a123dca8d34886fec791079740761"
+      "sha256": "e8a77068d1f6c67ac3c63e338ae461992d0ec5cfc49e96973406430ba4d2cf03"
     },
     {
       "path": "scripts/enrichment_engine.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6bb02bced3975b22f60e2438234e25319565cd1d60fb745c5c60d1e1baf10847"
+      "sha256": "fad54968a46c5803c1320885e6a824d1fed921e0fd2880cdadaa58a4a94993f1"
     },
     {
       "path": "scripts/run_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "4a5a7ddd43beb97b398acedef1bffa09704770b5132b49213de6154774a90b37"
+      "sha256": "7d5a8019349e366546235efb15c6b34a97d84ec077789ed85995cc779bc6db16"
     },
     {
       "path": "tests/test_enrichment_assets.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "1321d59fdf12576962de23e03b61d1256debb04a9bda8ea826422431dcaffd2a"
+      "sha256": "5a6e416a5488d495efa174faa09b5a02fee61ddde46a145048cfc2e3fd303565"
     },
     {
       "path": "tests/test_enrichment_engine.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "00720c7d265f715de723da7d0ec4406b9ca3ad096e725ae9839c1c30bf9079e1"
+      "sha256": "371224896c9c51ab07aeee93471a43ca18f7c4edae427e87c70e14f7c5895034"
     },
     {
       "path": "tests/test_pilot_readback.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "4b0ebd5addc86d0c444a91ddb73d60f3e8e4239dd77827ed3c790a05ae27d313"
+      "sha256": "fcd11614c55d4b6b8a307aaef5aa2d0f639d0d26eb431027272d9ac717f80291"
+    },
+    {
+      "path": ".agents/skills/thai-proofread/SKILL.md",
+      "source": "project-local copy",
+      "kind": "editing_skill",
+      "sha256": "88e1bbe1b524156aa0edebff92e21ca481b222aae209c0c7a6fc8aacf42da62f"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
+      "source": "project-authored",
+      "kind": "editing_skill_asset",
+      "sha256": "25ab0b20e20034390ac667f322073fa23f21355a6c7720383ce13c23dff3ffd3"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/horizontal-gif-placement.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "48a6508f8e0d4c3b4e129ac9e127dbfca29301389786eb283848ab000cc46f9d"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "f04d3875bc959ab4acebd9cac20d8a0097d6ed0785ba47aae83d57b411a2d062"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "1d319d1345cad887f16f8c8e989a1320004c5bbb3a2ec3a65b22b56d913efb01"
+    },
+    {
+      "path": ".agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "bf98cbe5f3f5e5083d4aec6336cab83067f91c93ec05327d6234432d91c97840"
+    },
+    {
+      "path": "scripts/apply_video_style.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "380cdbe5a8673a1d723539aaf48a19937d0618e3367863844e51ca2886ca9fcb"
+    },
+    {
+      "path": "tests/test_apply_video_style.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "d3aa67499dc03fa85c118696326efbe56fb386475f05ef4c2ee520bda836e612"
+    },
+    {
+      "path": "docs/guides/video-style-script.md",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "ed7a02367da9e4a1b82f3581e1c587ab8c0aab1067c1156e2ce729507e52dbfe"
+    },
+    {
+      "path": "presets/video/approved-gif-style.json",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "f464f342bd5c13fc7499d912de9725b6da45d23ce88109619f6f6e9fd8336fee"
+    },
+    {
+      "path": "scripts/apply_vdo_preset.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "34c0d881b7e6219f7d10dee080cb2367a9e8d0579ec0db7c0817fd3bf83c9771"
+    },
+    {
+      "path": "scripts/load_subtitle_preset.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "874d83eb33b9ad3074844312e68b320b319a17e68301f39d0533b6f6bcd41a82"
+    },
+    {
+      "path": "scripts/video_presets.json",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "890db2fb298ba67488398eea322bd8b144d3677a51dab80bf9fbd67775b9f7db"
+    },
+    {
+      "path": "tests/test_load_subtitle_preset.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "ee8083623feafeab4918dc2b053e4d95f81b34262d1e84db8ee9ba1090ffa639"
     }
   ],
   "historical_variants": [
@@ -2053,10 +2146,180 @@
     }
   ],
   "counts": {
-    "editing_skills": 16,
+    "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 187
+    "manifest_files": 201
   },
-  "bundle_version": "0.2.0"
+  "bundle_version": "0.6.0",
+  "excluded_repository_paths": [
+    {
+      "path": ".agents/teamwork/**",
+      "reason": "Internal orchestration briefs, audit notes, and project-specific coordination records are not installable skills."
+    },
+    {
+      "path": "scripts/analyze_all_timelines.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/apply_pilot_layout.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/calibrate_crop.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/calibrate_zoom.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/challenger_m2_1_results.json",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/check_t20_live.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/compare_invariants.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/dbg_active_readback.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/dbg_transform.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/diagnose_challenger.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/diagnose_v1.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/experiment_framing.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/export_source_stills.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/export_split_drp.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/inspect_avatar_features.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/inspect_gif_idx.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/inspect_gif_ranges.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/iris_detect.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/layout9x16.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/m1_backup_and_baseline.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/m2_convert_pilot.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/m3_convert.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/m4_audit.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/preflight_readonly.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/recover_check.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/reverify_pilot.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/split_projects.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/survey_sources.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_challenger_m2_1.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_challenger_m2_2.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_framing_live.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_v1_tilt.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_v3_fusion.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/test_v4_gif.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "scripts/verify_pilot_pixels.py",
+      "reason": "Project-specific pilot or empirical Resolve audit; not part of the reusable skill bundle."
+    },
+    {
+      "path": "tests/test_m1_backup_empirical.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    },
+    {
+      "path": "tests/test_m1_baseline_validation.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    },
+    {
+      "path": "tests/test_m2_empirical_stress.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    },
+    {
+      "path": "tests/test_m2_timeline_construction_challenger.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    },
+    {
+      "path": "tests/test_m3_adversarial_deep_audit.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    },
+    {
+      "path": "tests/test_m3_timeline_construction_challenger.py",
+      "reason": "Project-specific empirical Resolve audit; not an offline bundle test."
+    }
+  ]
 }
