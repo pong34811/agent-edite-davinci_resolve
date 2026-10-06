@@ -10,6 +10,18 @@ This repository packages the user's existing DaVinci Resolve editing skills. It 
 - Discover the live project, timeline IDs, exact Resolve build, resolution, both frame-rate settings, media paths, and existing video/audio/subtitle coverage before writing.
 - Preserve the project's approved aspect ratio. Do not automatically turn a 16:9 project into 9:16 or assume settings from another project.
 
+## Tool selection: MCP first, scripting API second (mandatory)
+
+For any task that touches Resolve, follow this order. Do not skip to a script.
+
+1. **Check the `davinci-resolve` MCP first.** Read the attached tool catalog and the schema of the tool matching the task. Run `resolve_control get_version`, `check_version_support`, and `api_truth "<topic>"` for build-specific capability.
+2. **Use the MCP when a tool/action covers the task.** Try a read-only/probe call first. `python scripts/resolve_preflight.py --need <tool[.action]>` gives a `USE_MCP` / `FALLBACK_SCRIPT` / `BLOCKED` verdict from the saved schemas and server config; it cannot see the live catalog, so it does not replace step 1.
+3. **Write a Resolve Python scripting-API script only after the MCP is shown not to cover it:** no matching tool/action in the catalog, or the MCP call failed with a recorded error. Confirm the method exists with `name in dir(obj)` (never bare `hasattr`), e.g. `resolve_preflight.py --need <Method> --probe-api`.
+4. **Before writing the script, state one line:** `MCP-GAP: <tool/action checked> -> <result>`.
+5. Put the script in `scripts/`, connect through `scripts/resolve_common.py` (`connect_resolve`), and do not copy another `get_resolve()`. All safety rules below still apply to the script.
+6. If neither the MCP nor the scripting API has the capability, report `BLOCKED` with the evidence. Do not guess method names.
+7. End the task by reporting which path was used (MCP or script) and why.
+
 ## Safety and house style
 
 - Never overwrite or alter source footage. Requested analysis may decode sources into new scratch frames/WAVs; editing references originals. Relinking/replacing/transcoding sources needs explicit authorization for that operation.

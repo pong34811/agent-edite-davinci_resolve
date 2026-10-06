@@ -6,12 +6,13 @@ These rules reconcile the imported skills; they preserve previously observed beh
 
 Core editing skills live under `.agents/skills/`. Hermes officially supports this project-local directory, with project > profile-local > external precedence. The repository must be trusted before automatic discovery. From this directory, the supported command is `hermes skills trust`; then start a new session. Trust was intentionally not changed by the collection task. Reading a local SKILL.md with `read_file` works without pretending that it is already registered. No global skills/configuration or other profiles were modified.
 
-The backend remains the existing `davinci-resolve-mcp` installation. This repository includes skills, manuals and the source-safe contact-sheet helper, not `src/server.py`, its Python environment, Node server or MCP credentials. A command in an imported backend manual must be run from the backend installation, not assumed available here. Probe the actual attached MCP tool catalog or Resolve scripting bridge before any live use.
+The backend remains the existing `davinci-resolve-mcp` installation. This repository includes skills, manuals and the source-safe contact-sheet helper, not `src/server.py`, its Python environment, Node server or MCP credentials. A command in an imported backend manual must be run from the backend installation, not assumed available here. Probe the actual attached MCP tool catalog first; use the Resolve scripting bridge only when the MCP is shown not to cover the task (see `AGENTS.md` "Tool selection" and `scripts/resolve_preflight.py`).
 
 ## Reconciled rules
 
 | Topic | This project's rule | Why |
 |---|---|---|
+| Tool selection | MCP catalog first; scripting-API script only after a stated `MCP-GAP:` line; shared `scripts/resolve_common.py` | Agents skipped the MCP and wrote ad-hoc scripts, each with its own copy of the connect code. |
 | Thai cue duration | At most 1.5s, three short words / about 14 Thai characters | Current house style is stricter than the imported subtitle skill's generic 2.2s example. |
 | Thai typography | No inter-word spaces; preserve only appropriate Latin boundaries | Token grouping is for timing, not displayed spacing. |
 | SRT placement | Empty subtitle track, bare mediaPoolItem payload | Extra placement fields can shift cues to timeline-end plus SRT offsets. |
@@ -27,6 +28,11 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | Playhead readback | Activate each timeline before GetCurrentTimecode; capture fresh state on resume | Inactive timeline reads can return the active timeline's playhead. |
 | Page restoration | Serialize live calls; wait and read GetCurrentPage after OpenPage | A True return can precede completion of the page switch. |
 | Adjustment Clip | Scripted pilot; lock all original video/audio/subtitle tracks; full range audit and rendered frames | Generator insertion can ripple other track types even when V1 looks unchanged. |
+| Enrichment sequence | Draft on copies first, verify, then promote into originals; keep one idempotent apply path | Direct-to-original batch edits leave no reviewable stage and cannot be re-run safely. |
+| Promotion identity | Match an existing placement by (asset name, record frame) and skip verified items | A rerun after a partial failure would otherwise duplicate clips. |
+| GIF conform | Read the appended range and enforce 1.5–2.5s on the real range, allowing a few frames of conform drift | Resolve conformed a GIF 2 frames shorter than the requested hold and a strict equality check aborted a good promotion. |
+| Subtitle items | Native subtitle items have no Media Pool entry; never flag them as offline | Treating a legitimate null as a media fault produced ~960 false "high" findings. |
+| Archive deletion | Export one fresh verified `.drp`, report the exact files and bytes removed, and say there is no longer a rollback point | Deleting archives on request is fine; deleting them silently is not. |
 
 ## Transform and offline-media traps
 
@@ -77,6 +83,29 @@ In the separate editing plan, keep the sample-approval gate authoritative.
 `PLAN.md` Task 2's all-timeline font heading must not be used to bypass Task 3's
 explicit sample approval. Review/reorder that plan with its owner before any
 batch writes; this skill-package review does not approve the remaining clips.
+
+## Offline review and enrichment tooling
+
+The reusable scripts added by the enrichment work, all run from the repository root with `python -m`:
+
+| Script | Purpose |
+|---|---|
+| `scripts/resolve_preflight.py` | MCP-first verdict (`USE_MCP`/`FALLBACK_SCRIPT`/`BLOCKED`) for a needed tool or API method. |
+| `scripts/review_enrichment_readonly.py` | Read-only inventory of every timeline, track, item and asset library. |
+| `scripts/build_offline_review.py` | Per-timeline ffprobe/ffmpeg packets: caption map, mixed-audio metrics, sampled frames, HTML contact sheet. |
+| `scripts/build_offline_asset_draft.py` | Subtitle-keyed SFX/GIF/BGM shortlist plus a local human review page. |
+| `scripts/apply_vdo_python.py` | Capture an approved `vdo` GIF's exposed values and apply them by exact project/timeline/clip IDs. |
+| `scripts/enrich_timelines_python.py` | Native Python batch enrichment onto copies; dry-run default, BGM-only when no cue is defensible. |
+| `scripts/promote_drafts_to_originals.py` | Idempotent promotion of verified drafts into originals by exact IDs. |
+| `scripts/anomaly_sweep.py` | Read-only structural sweep over every timeline. |
+| `scripts/cleanup_backups.py` | Export one fresh verified `.drp`, then delete the named archives. |
+
+Media-analysis APIs stay out of this path: the offline route is ffprobe/ffmpeg plus the saved native
+subtitle map, so no provider quota or key is involved. Local ASR (faster-whisper) is a hint only —
+Thai speech over game audio transcribed unreliably and must not be treated as a caption or beat source.
+
+The `.hermes/` directory holds this project's working artifacts (review packets, drafts, reports,
+renders, `.drp` archives) and is gitignored; it is not part of the installable bundle.
 
 ## Imported references that are not prerequisites
 

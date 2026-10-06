@@ -102,3 +102,7 @@ Turn source moments or existing DaVinci Resolve edits into clear, personality-le
 
 ## Verification
 Use one acceptance-record check: every requested item in the task-owned `templates/vtuber-edit-brief.md` copy must have an evidence-backed Pass, or an explicitly reported Fail/Deferred, and no out-of-scope change. An edit additionally needs saved-state readback and restoration; a render needs actual file/stream/pixel/audio evidence; a learning-only deliverable needs a loadable skill, valid frontmatter, and every indexed reference/template present without claiming live editing or audience results.
+
+## Tool selection (MCP first)
+
+Before any script, check the davinci-resolve MCP catalog; write a Resolve Python scripting-API script only after a stated `MCP-GAP:` line shows the MCP lacks the tool/action. Follow `AGENTS.md` "Tool selection" and run `python scripts/resolve_preflight.py --need <tool[.action]>`.

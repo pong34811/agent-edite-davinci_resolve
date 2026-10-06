@@ -3,11 +3,341 @@
   "core_skill_count": 17,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 201,
+  "manifest_file_count": 237,
   "excluded_repository_path_count": 42,
   "local_reference_count": 65,
-  "scanner": "unavailable; structural/checksum checks only",
-  "security_scans": [],
+  "scanner": "Hermes tools.skills_guard.scan_skill",
+  "security_scans": [
+    {
+      "name": "house-style",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-audio",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 142,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 148,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-color",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 76,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 94,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 216,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-conform",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 223,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 233,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-delivery",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 218,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 228,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-edit",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 268,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 278,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-fusion",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 48,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 52,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-mcp",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 132,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 152,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 158,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-media-analysis",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 115,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-media-pool",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 43,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 77,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-rough-cut",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 103,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 348,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 360,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-session",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-tighten-recording",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 250,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 262,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-video-enrichment",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "oversized_file",
+          "severity": "medium",
+          "file": "assets\\katy404-vertical-reaction-layout.png",
+          "line": 0,
+          "description": "file is 317KB (limit: 256KB)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 33,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 108,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "uv_run",
+          "severity": "medium",
+          "file": "references\\automation-safety.md",
+          "line": 22,
+          "description": "uv run (may auto-install unpinned dependencies)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\automation-safety.md",
+          "line": 6,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\resolve-editing-workflow.md",
+          "line": 7,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "thai-proofread",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "thai-subtitles-resolve",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "unicode_escape_chain",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 265,
+          "description": "chain of unicode escapes (possible obfuscation)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 532,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\srt-insertion-and-presets.md",
+          "line": 16,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "video-footage-review",
+      "verdict": "safe",
+      "findings": []
+    }
+  ],
   "errors": [],
   "live_resolve_tested": false,
   "project_trust_changed": false

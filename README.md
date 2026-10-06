@@ -80,6 +80,28 @@
 ตัวอย่างใน `presets/video/approved-gif-style.json` เก็บเฉพาะ property values
 โดยตัด ID/ชื่อคลิปจริงออก ต้อง capture จากคลิปที่อนุมัติสำหรับงานจริง
 
+## เพิ่ม SFX / BGM / GIF ให้ทุก Timeline (offline + Resolve Python)
+
+ขั้นตอนที่ผ่านการทดสอบจริงกับ 49 timelines — **ทำสำเนาก่อน แล้วค่อยย้ายเข้าต้นฉบับ**:
+
+| ขั้น | คำสั่ง |
+|---|---|
+| ตรวจว่าควรใช้ MCP หรือ script | `python -m scripts.resolve_preflight --need <tool>` |
+| สำรวจ timeline/asset แบบอ่านเท่านั้น | `python -m scripts.review_enrichment_readonly` |
+| สร้างหลักฐานต่อ timeline (ซับ/เสียง/ภาพตัวอย่าง) | `python -m scripts.build_offline_review --first 1 --last 49` |
+| ร่างจุด SFX/GIF + หน้าให้คนตรวจ | `python -m scripts.build_offline_asset_draft` |
+| จับค่า preset `vdo` แล้วใช้กับ GIF | `python -m scripts.apply_vdo_python --capture-from-clip-id ...` |
+| เพิ่มเอฟเฟกต์บนสำเนา (dry-run ก่อน) | `python -m scripts.enrich_timelines_python --all --project-id ...` |
+| ย้ายเข้าต้นฉบับแบบทำซ้ำได้ | `python -m scripts.promote_drafts_to_originals --all --project-id ... --apply` |
+| ตรวจความผิดปกติทั้งโปรเจกต์ | `python -m scripts.anomaly_sweep` |
+| สำรองใหม่แล้วลบ archive เก่า | `python -m scripts.cleanup_backups --confirm` |
+
+**ไม่ใช้ API วิเคราะห์วิดีโอ** ในเส้นทางนี้: ใช้ ffprobe/ffmpeg + แผนที่ซับ native ที่บันทึกไว้ จึงไม่ติดโควตา
+Whisper ในเครื่องใช้เป็นเพียงตัวช่วย — ภาษาไทยทับเสียงเกมถอดได้ไม่น่าเชื่อถือ ห้ามใช้เป็นแหล่งซับหรือจังหวะมุก
+
+ข้อจำกัดที่ต้องรายงานเสมอ: จุดจากซับไม่ใช่จังหวะมุกที่ตรวจรับแล้ว, ระดับเสียงอ้างจากเสียงรวมไม่ใช่ LUFS แบบ gated,
+และ `vdo` คือการคัดลอกค่าที่จับได้ ไม่ใช่การเรียก native named-preset loader
+
 ## ใส่ Subtitle และโหลด font preset
 
 อ่าน workflow ที่ `.agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md`:

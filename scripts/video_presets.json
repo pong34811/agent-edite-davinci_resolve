@@ -1,4 +1,12 @@
 {
+  "short": {
+    "source": "User.db VideoPresetsBA 'short' (zstd protobuf: ids 42/43 = Zoom X/Y 0.42, id 41 = Position Y 0.21 x canvas height 1920 = 403.2); cross-checked against GIF items in the vertical timelines that carry the preset",
+    "values": {
+      "ZoomX": 0.42,
+      "ZoomY": 0.42,
+      "Tilt": 403.2
+    }
+  },
   "vdo": {
     "source": "Tygarina FreeTalk T5 (original) :: Reaction - Excuse Me What.gif, preset vdo loaded by user",
     "values": {

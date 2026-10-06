@@ -12,3 +12,12 @@ __pycache__/
 *.mov
 renders/
 footage/
+
+# Working artifacts: keep on disk, not in the skill bundle
+reference/
+scratch/
+exports/
+.agents/teamwork/
+.hermes/
+.pytest_cache/
+*.tmp

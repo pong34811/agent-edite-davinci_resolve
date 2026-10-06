@@ -162,8 +162,7 @@ def main() -> int:
             if not k:
                 print(f"- {tl.GetName()[:40]}: no '{args.track_name}' track, skipped")
                 continue
-            if args.apply:
-                activate(project, tl)
+            activate(project, tl)  # inactive timelines read Pan/Tilt scaled by the project raster; always read active
             for it in tl.GetItemListInTrack("video", k) or []:
                 mpi = it.GetMediaPoolItem()
                 path = (mpi.GetClipProperty("File Path") if mpi else "") or ""
@@ -181,7 +180,7 @@ def main() -> int:
         if args.apply:
             print("SaveProject:", pm.SaveProject())
     finally:
-        if args.apply:  # restore working state and read it back
+        if True:  # restore working state and read it back (also after a dry run, which activates each timeline)
             back = next((t for t in timelines(project) if t.GetUniqueId() == saved["id"]), None)
             if back:
                 project.SetCurrentTimeline(back)

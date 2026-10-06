@@ -35,29 +35,10 @@ EXPECTED_SUBTITLE_COUNT = 45
 
 
 def get_resolve():
-    """Connect to live DaVinci Resolve Studio instance."""
-    if sys.platform == "win32":
-        os.environ.setdefault(
-            "RESOLVE_SCRIPT_LIB",
-            r"C:\Program Files\Blackmagic Design\DaVinci Resolve\fusionscript.dll",
-        )
-        resolve_dir = r"C:\Program Files\Blackmagic Design\DaVinci Resolve"
-        if hasattr(os, "add_dll_directory") and os.path.isdir(resolve_dir):
-            try:
-                os.add_dll_directory(resolve_dir)
-            except Exception:
-                pass
-        script_module_dir = (
-            r"C:\Program Files\Blackmagic Design\DaVinci Resolve\ResolvePython\lib\modules"
-        )
-        if os.path.isdir(script_module_dir) and script_module_dir not in sys.path:
-            sys.path.append(script_module_dir)
-    try:
-        import DaVinciResolveScript as dvr_script
-        return dvr_script.scriptapp("Resolve")
-    except Exception as exc:
-        print(f"Error importing DaVinciResolveScript: {exc}", file=sys.stderr)
-        return None
+    """Obtain the running DaVinci Resolve instance via the shared helper."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from resolve_common import connect_resolve
+    return connect_resolve()
 
 
 def get_prop(item: Any, key: str, default: Any = None) -> Any:
