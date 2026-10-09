@@ -1,0 +1,909 @@
+{
+  "scope": "Read-only source layout suggestions T30–T49 joinedexactcanonicalnames",
+  "not_final_QC": true,
+  "rows": [
+    {
+      "ordinal": 30,
+      "name": "ดับเบิลคิลแล้วโดนฝัง-League of Legends-vdo",
+      "start": 1140,
+      "end": 1377,
+      "subtitle": "มึงน่าจะรู้ว่าหนูแพ้วันมีโครอยู่ตลอดเวลา",
+      "source_inventory": 31,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260911_หงุดหงิด ฉุนเฉียว_[hskX-AdzKFw].mp4",
+      "source_in_seconds": 4589.0,
+      "motion_samples": 32,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T30_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T30_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.5,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.95,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears.",
+        "Noticeable sourcehorizontal headmotion; uniform transform holds head in frame but not exactcenter everyframe."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.55,
+          2.45
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 31,
+      "name": "ไฟต์หน้าป้อม-League of Legends-vdo",
+      "start": 1020,
+      "end": 1183,
+      "subtitle": "โอ๊ยเหี้ยเหี้ยอะไรวะเนี่ยไอ้เหี้ยเหี้ยอะไร",
+      "source_inventory": 32,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260911_หงุดหงิด ฉุนเฉียว_[hskX-AdzKFw].mp4",
+      "source_in_seconds": 6287.0,
+      "motion_samples": 22,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T31_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T31_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49666666666666665,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.94,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears.",
+        "Noticeable sourcehorizontal headmotion; uniform transform holds head in frame but not exactcenter everyframe."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.56,
+          2.44
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 32,
+      "name": "เมาท์เรื่องสายเล่นเกม-League of Legends-vdo",
+      "start": 4680,
+      "end": 5040,
+      "subtitle": "โอ้โหนะนะคะช่วยเยอะสุดบอกเลยนะฮะ",
+      "source_inventory": 33,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260911_หงุดหงิด ฉุนเฉียว_[hskX-AdzKFw].mp4",
+      "source_in_seconds": 6848.0,
+      "motion_samples": 48,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T32_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T32_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49333333333333335,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.93,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.57,
+          2.43
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 33,
+      "name": "เพนตาคิลแล้วพ่ายแพ้-League of Legends-vdo",
+      "start": 150,
+      "end": 312,
+      "subtitle": "เอาเลเวลสู้หรอ",
+      "source_inventory": 34,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260911_หงุดหงิด ฉุนเฉียว_[hskX-AdzKFw].mp4",
+      "source_in_seconds": 8383.983333333334,
+      "motion_samples": 22,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T33_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T33_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.5,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.95,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.55,
+          2.45
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 34,
+      "name": "ไฟต์ท้ายเกมสุดมัน-League of Legends-vdo",
+      "start": 360,
+      "end": 540,
+      "subtitle": "โอ๊ยเหี้ยไม่ได้ขยับเลย",
+      "source_inventory": 35,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260911_หงุดหงิด ฉุนเฉียว_[hskX-AdzKFw].mp4",
+      "source_in_seconds": 9006.0,
+      "motion_samples": 24,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T34_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T34_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49333333333333335,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.93,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears.",
+        "Noticeable sourcehorizontal headmotion; uniform transform holds head in frame but not exactcenter everyframe."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.57,
+          2.43
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 35,
+      "name": "ลืมเปิดเสียงเพื่อน คุยกับผีมาตั้งนาน-Minecraft-vdo",
+      "start": 600,
+      "end": 777,
+      "subtitle": "โอ้โหเหมือนผีเลยดิอย่างงั้นน่ะ",
+      "source_inventory": 36,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 1625.0,
+      "motion_samples": 24,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T35_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T35_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49966666666666665,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.949,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.45099999999999996,
+          2.3489999999999998
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 36,
+      "name": "ลืมเอาอาหาร ต้องกินเนื้อซอมบี้-Minecraft-vdo",
+      "start": 1818,
+      "end": 1998,
+      "subtitle": "ชิบหายแม่งลืมเอาของกินมาอู๊หูย",
+      "source_inventory": 37,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 1829.3,
+      "motion_samples": 24,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T36_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T36_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49966666666666665,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.949,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.45099999999999996,
+          2.3489999999999998
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 37,
+      "name": "ซอมบี้มาได้ไงวะ!-Minecraft-vdo",
+      "start": 1031,
+      "end": 1138,
+      "subtitle": "เฮ้ยมันมาได้ไงวะ",
+      "source_inventory": 38,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 2257.1833333333334,
+      "motion_samples": 14,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T37_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T37_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49533333333333335,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.936,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.46399999999999986,
+          2.336
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 38,
+      "name": "อยากเปลี่ยนร่าง เอาคนไม่มีเสียงในหัวมาเล่นแทน-Minecraft-vdo",
+      "start": 1560,
+      "end": 1737,
+      "subtitle": "กูไปเอากูไปเอากูไปเอาเซฟแป๊บนึงไม่ไหวละ",
+      "source_inventory": 39,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 4171.0,
+      "motion_samples": 24,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T38_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T38_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.497,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.941,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.45899999999999996,
+          2.3409999999999997
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 39,
+      "name": "พี่จ๋าช่วยด้วย เรือไปไหนวะ-Minecraft-vdo",
+      "start": 1740,
+      "end": 1917,
+      "subtitle": "พี่ตาช่วยด้วย",
+      "source_inventory": 40,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 5180.366666666667,
+      "motion_samples": 24,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T39_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T39_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.498,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.944,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.45599999999999996,
+          2.344
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 40,
+      "name": "วิ่งหนีมอนตอนมืดจนเห็นบ้าน-Minecraft-vdo",
+      "start": 627,
+      "end": 742,
+      "subtitle": "ใครจะไปยอมใครจะไปยอมไอ้เหี้ย",
+      "source_inventory": 41,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 5478.633333333333,
+      "motion_samples": 15,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T40_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T40_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49000000000000005,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.92,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.47999999999999987,
+          2.32
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 41,
+      "name": "ออกไม่ได้เลยวะ ฮ่าๆๆ-Minecraft-vdo",
+      "start": 2560,
+      "end": 3004,
+      "subtitle": "ฮ่าๆๆพี่เนี่ยมันเอาไม่ได้เล่ห์ฮ่าๆๆ",
+      "source_inventory": 42,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260914_【LIVE】Minecraft Server Dreamlight - 002 #aomimama_[x4NRaygzFc4].mp4",
+      "source_in_seconds": 7392.666666666667,
+      "motion_samples": 59,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T41_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T41_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49333333333333335,
+      "transform": {
+        "Size": 2.8,
+        "Center": {
+          "1": 1.39,
+          "2": 0.93,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.010000000000000009,
+          2.79
+        ],
+        "y": [
+          -0.46999999999999986,
+          2.33
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 42,
+      "name": "ไฟต์ในเลนกับเสียงร้องเฮ้ย-League of Legends-vdo",
+      "start": 1740,
+      "end": 1964,
+      "subtitle": "ไอ้เหี้ยทำไมกูต้องมาซ่อมด้วยวะซ่อมเพื่อมาเนี่ย",
+      "source_inventory": 43,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 2195.0,
+      "motion_samples": 30,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T42_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T42_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.5,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.95,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.55,
+          2.45
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 43,
+      "name": "ทีมไฟต์ถูกชัตดาวน์-League of Legends-vdo",
+      "start": 781,
+      "end": 1050,
+      "subtitle": "โอ๊ยเหี้ยหมากvanguardเมื่อกี้นี้ถ้าหมาไม่โดน",
+      "source_inventory": 44,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 2573.016666666667,
+      "motion_samples": 36,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T43_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T43_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49333333333333335,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.93,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.57,
+          2.43
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 44,
+      "name": "เริ่มเกมแล้วเจอไฟต์-League of Legends-vdo",
+      "start": 3384,
+      "end": 3594,
+      "subtitle": "เฮ้ยอย่าไปโดน",
+      "source_inventory": 45,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 3186.4,
+      "motion_samples": 28,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T44_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T44_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49333333333333335,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.93,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.57,
+          2.43
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 45,
+      "name": "หัวยังไม่ฟู ตายก่อนเลย-League of Legends-vdo",
+      "start": 7560,
+      "end": 7761,
+      "subtitle": "เข้าไปมันก็นะฮ่าๆๆอะไรอ่ะไม่น่า",
+      "source_inventory": 46,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 8716.0,
+      "motion_samples": 27,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T45_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T45_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49666666666666665,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.94,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.56,
+          2.44
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 46,
+      "name": "ออกเมื่อไหร่มีตายเมื่อนั้น-League of Legends-vdo",
+      "start": 2710,
+      "end": 2792,
+      "subtitle": "อ๋อเมื่อไหร่มึงตายเมื่อนั้น",
+      "source_inventory": 47,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 10856.216666666667,
+      "motion_samples": 11,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T46_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T46_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.499,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.947,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.553,
+          2.447
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 47,
+      "name": "ด่าทีมรัวๆ ไอ้เชี่ยทีมตาก-League of Legends-vdo",
+      "start": 1050,
+      "end": 1257,
+      "subtitle": "เป็นออกเหี้ยอะไรอ่ะ",
+      "source_inventory": 48,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 14467.5,
+      "motion_samples": 28,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T47_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T47_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.02,
+        "x_max": 0.34,
+        "y_top": 0.49,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.49666666666666665,
+      "transform": {
+        "Size": 3.0,
+        "Center": {
+          "1": 1.46,
+          "2": 0.94,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Estimates from source decode, not live final composite. Require rendered subtitles/GIF/trackQC.",
+        "Exact3–5%headroom and exactcenter throughout natural headmotion may need keyframes; conservative fixedtransform favors protected ears."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.040000000000000036,
+          2.96
+        ],
+        "y": [
+          -0.56,
+          2.44
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 48,
+      "name": "ลาสตรีม ขอบคุณทุกคน-League of Legends-vdo",
+      "start": 1381,
+      "end": 1538,
+      "subtitle": "เดี๋ยววันนี้ขอบคุณทุกคนที่ไม่ที่มารับ",
+      "source_inventory": 49,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260915_【LIVE】League of Legends - 003_[dKPqq7UGwuA].mp4",
+      "source_in_seconds": 17308.016666666666,
+      "motion_samples": 21,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T48_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T48_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.43,
+        "x_max": 0.96,
+        "y_top": 0.196,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.196,
+      "transform": {
+        "Size": 1.5,
+        "Center": {
+          "1": 0.25,
+          "2": 0.49,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Require renderedsubtitleQC; finalcomposite notchecked.",
+        "Historicalfootage onV2 withV1empty; nativegeneratorV2 must notoverwritefootage."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -0.5,
+          1.0
+        ],
+        "y": [
+          -0.26,
+          1.24
+        ],
+        "no_new_blank_geometrically": true
+      }
+    },
+    {
+      "ordinal": 49,
+      "name": "กดเล่นแล้วเกมเด้ง ลบโหลดใหม่เลย-alien shooter 2-vdo",
+      "start": 4806,
+      "end": 5100,
+      "subtitle": "แอนตี้ไวรัสแม่งยิ่งเอ๋อๆอยู่",
+      "source_inventory": 25,
+      "source_path": "G:\\My Drive\\Projects\\Aomi-mama\\2026-09-aomimama\\20260910_【LIVE】alien shooter 2_[M0oO81RLbA8].mp4",
+      "source_in_seconds": 4172.1,
+      "motion_samples": 39,
+      "evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T49_new_sheet.jpg",
+      "motion_evidence": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\docs\\superpowers\\reports\\layout-30-49-evidence\\T49_new_motion.jpg",
+      "status": "SOURCE_LAYOUT_CANDIDATE_REQUIRES_NATIVE_RENDER_QC",
+      "source_visual_review": "start-quarter-middle-threequarters-end plus8fps throughout selectedinterval viewed",
+      "bbox_estimate": {
+        "x_min": 0.73,
+        "x_max": 1.0,
+        "y_top": 0.55,
+        "y_bottom": 1.0
+      },
+      "ear_top_min_estimate": 0.55,
+      "transform": {
+        "Size": 3.6,
+        "Center": {
+          "1": -0.8,
+          "2": 1.12,
+          "3": 0
+        }
+      },
+      "limitations": [
+        "Require renderedsubtitleQC; finalcomposite notchecked.",
+        "Selectedlatercue because candidate1 rightedgepositioncannotcenterwithoutblank orheadcrop. Existing Steamgameblackwindow is sourcecontent."
+      ],
+      "calculated_image_coverage": {
+        "x": [
+          -2.6,
+          1.0
+        ],
+        "y": [
+          -0.6799999999999999,
+          2.92
+        ],
+        "no_new_blank_geometrically": true
+      }
+    }
+  ]
+}

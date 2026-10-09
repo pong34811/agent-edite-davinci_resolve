@@ -156,3 +156,23 @@ offer the call and let it fail.
 ## Tool selection (MCP first)
 
 Before any script, check the davinci-resolve MCP catalog; write a Resolve Python scripting-API script only after a stated `MCP-GAP:` line shows the MCP lacks the tool/action. Follow `AGENTS.md` "Tool selection" and run `python scripts/resolve_preflight.py --need <tool[.action]>`.
+
+### Live tool map (davinci-resolve MCP)
+
+Use the tool that matches the object you are touching; read its schema, then probe read-only before writing.
+
+| Object / task | MCP tool |
+|---|---|
+| Build, version, capability gates, `api_truth` | `resolve_control`, `knowledge` |
+| Projects, databases, folders | `project_manager`, `project_manager_database`, `project_manager_folders`, `project_settings` |
+| Timelines, tracks, subtitles, generators | `timeline`, `timeline_frame`, `timeline_markers`, `timeline_versioning`, `timeline_ai` |
+| Clips: transform, crop, speed, properties | `timeline_item`, `timeline_item_markers`, `timeline_item_takes` |
+| Clip color / Fusion | `timeline_item_color`, `graph`, `color_group`, `timeline_item_fusion`, `fusion_comp` |
+| Media pool and sources | `media_pool`, `media_pool_item`, `media_pool_item_markers`, `media_storage`, `media_analysis` |
+| Stills and look assets | `gallery`, `gallery_stills`, `lut`, `dctl` |
+| Render | `render`, `render_presets` |
+| Compound edit helpers | `edit_engine` |
+
+### Official Resolve scripting MCP (second line, before a hand-written script)
+
+If the `davinci-resolve` tool has no matching action, check the official Resolve MCP before writing a file in `scripts/`: `get_whats_new` (features newer than your training), `search_scripting_api` / `get_scripting_api` (confirm the method exists on this build), then `run_script` for a one-off. Use `run_script_unsafe` only with explicit user approval. Record the result in the `MCP-GAP:` line.

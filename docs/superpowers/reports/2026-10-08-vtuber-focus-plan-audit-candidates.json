@@ -1,0 +1,4636 @@
+{
+  "created": "2026-10-08",
+  "scope": "49 canonical main-project timelines",
+  "read_only_plan_audit": true,
+  "fresh_live_project_or_timeline_coverage": false,
+  "candidate_status": "Subtitle scan candidates only. Exact names join historical sources; re-read live cues and inspect full rendered interval.",
+  "stale_source_findings": [
+    "batch-plan project ID differs from live main project; all IDs require refresh",
+    "batch-plan chosen longest contiguous speech clusters; not reaction selection",
+    "refs plan-final formula mixes inverse size with multiplied avatar height, claims centered-safe despite height_after >1",
+    "48 no-op conclusions are not actual focus work; one-second representative preview insufficient to reject timeline",
+    "historical source ordinals after25 shift relative current canonical; join names"
+  ],
+  "rows": [
+    {
+      "canonical_ordinal": 1,
+      "name": "เปิดสตรีมทักทายก่อนเริ่มเกม-alien shooter last hope-vdo",
+      "historical_last_main_id": "772b4c2e-758d-4d1d-9899-1f894630f00d",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 1,
+      "record_fps": 60.0,
+      "timeline_end": 5436,
+      "candidate_cues": [
+        {
+          "start_frame": 630,
+          "end_frame": 750,
+          "subtitle_text": "ฮัลโหล",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            630,
+            690,
+            749
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 780,
+          "end_frame": 930,
+          "subtitle_text": "ฮัลโหล",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            780,
+            855,
+            929
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 990,
+          "end_frame": 1350,
+          "subtitle_text": "วันนี้พยายามทำฟิล์มได้เวลา 2 ทุ่มด้วยนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            990,
+            1170,
+            1349
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; อวตารกินพื้นที่ด้านขวาเกือบครึ่งเฟรม; ซูมเพิ่มจะตัดฉากและแชต",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 1,
+        "name": "เปิดสตรีมทักทายก่อนเริ่มเกม-alien shooter last hope-vdo",
+        "timeline_id": "4ccf78cf-8992-4c05-a744-a5529129a539",
+        "cue": [
+          630,
+          930
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T01",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ฮัลโหล",
+          "ฮัลโหล",
+          "วันนี้พยายามทำฟิล์มได้เวลา 2 ทุ่มด้วยนะ",
+          "อืม"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 2,
+      "name": "ตามหาห้องที่หายไป-alien shooter last hope-vdo",
+      "historical_last_main_id": "35228b83-310f-47e2-bccc-2fb8e8f66d46",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 2,
+      "record_fps": 60.0,
+      "timeline_end": 5529,
+      "candidate_cues": [
+        {
+          "start_frame": 126,
+          "end_frame": 270,
+          "subtitle_text": "เฮ้ยกุญแจหายหาไม่เจอ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            126,
+            198,
+            269
+          ],
+          "gif_overlaps": [
+            {
+              "start": 54,
+              "end": 174,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 54,
+          "end_frame": 123,
+          "subtitle_text": "เฮ้ยหาไม่เจอ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            54,
+            88,
+            122
+          ],
+          "gif_overlaps": [
+            {
+              "start": 54,
+              "end": 174,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1206,
+          "end_frame": 1410,
+          "subtitle_text": "เฮ้ยแถวกำแพงก็ไม่มีนะไม่เห็นเลยอะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1206,
+            1308,
+            1409
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 2,
+        "name": "ตามหาห้องที่หายไป-alien shooter last hope-vdo",
+        "timeline_id": "9a448a94-dd7f-4e2e-981e-7f225a74e86e",
+        "cue": [
+          4506,
+          4806
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T02",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เฮ้ยห้องนั้นเข้าไม่ได้นี่",
+          "มันมีความเป็นไปได้อยู่สองอย่างก็คือหนึ่งห้าหิน",
+          "ประดับ",
+          "กับสองห้องหน้าเป็นห้องที่โดนล็อกไปแล้ว",
+          "ก็คือเข้าไปไม่ได้อีกแล้ว"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 3,
+      "name": "ฝูงเอเลี่ยนบุกจนร้องลั่น-alien shooter last hope-vdo",
+      "historical_last_main_id": "ac6ef68b-8b3b-454e-bf04-59335d5e6ef3",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 3,
+      "record_fps": 60.0,
+      "timeline_end": 4368,
+      "candidate_cues": [
+        {
+          "start_frame": 2100,
+          "end_frame": 2220,
+          "subtitle_text": "มันเป็นกฎอะนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2100,
+            2160,
+            2219
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 240,
+          "end_frame": 330,
+          "subtitle_text": "ขอบคุณที่ทักมานะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            240,
+            285,
+            329
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1740,
+          "end_frame": 1857,
+          "subtitle_text": "เฮ้ยเรามาคุยกันแบบว่า",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1740,
+            1798,
+            1856
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1740,
+              "end": 1860,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 3,
+        "name": "ฝูงเอเลี่ยนบุกจนร้องลั่น-alien shooter last hope-vdo",
+        "timeline_id": "b0eaa14c-bba0-4950-9dde-244566a7803b",
+        "cue": [
+          1410,
+          1710
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T03",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ถ้าทักคนอื่นไว้แบบว่า",
+          "เฉยๆอะมันไม่มีปัญหาหรอก",
+          "แต่ถ้าเกิดว่า",
+          "เฮ้ยเรามาคุยกันแบบว่า",
+          "จะเล่นด้วยกันตอนไหนดีกันอย่างเงี้ย",
+          "อันเนี้ยยังไงก็ต้องติดต่อเรามา",
+          "มันเป็นกฎอะนะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 4,
+      "name": "คุยเรื่องอายุและเด็กรุ่นหลาน-alien shooter last hope-vdo",
+      "historical_last_main_id": "edd47d49-696d-46db-bbf3-f06cf293aadd",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 4,
+      "record_fps": 60.0,
+      "timeline_end": 6508,
+      "candidate_cues": [
+        {
+          "start_frame": 2592,
+          "end_frame": 2730,
+          "subtitle_text": "มีเพื่อนที่แม่งมีหลานแล้ว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2592,
+            2661,
+            2729
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 192,
+          "end_frame": 270,
+          "subtitle_text": "เหี้ยฉิบหาย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            192,
+            231,
+            269
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 732,
+          "end_frame": 828,
+          "subtitle_text": "ไอ้เหี้ยเอ๊ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            732,
+            780,
+            827
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 4,
+        "name": "คุยเรื่องอายุและเด็กรุ่นหลาน-alien shooter last hope-vdo",
+        "timeline_id": "abf8fddb-12e2-466f-a9ea-0a0bc5975239",
+        "cue": [
+          2232,
+          2532
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T04",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "กูเนี่ยอายุยังไม่ถึงเลข 3 อะ",
+          "แต่กูมีแบบว่า",
+          "มีเพื่อนที่แม่งมีหลานแล้ว",
+          "ให้กูรู้สึกยังไงวะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 5,
+      "name": "ซื้อปืนไม่พอเงินขาดไปพันเดียว-alien shooter last hope-vdo",
+      "historical_last_main_id": "631c31c1-592b-4190-89f1-f0ecb88d4961",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 5,
+      "record_fps": 60.0,
+      "timeline_end": 4780,
+      "candidate_cues": [
+        {
+          "start_frame": 1020,
+          "end_frame": 1197,
+          "subtitle_text": "โอ้โหงกจัดเลยอ่ะเงินขาดเท่าไหร่คะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1020,
+            1108,
+            1196
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 105,
+          "subtitle_text": "เฮ้ยเจอแล้ว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            52,
+            104
+          ],
+          "gif_overlaps": [
+            {
+              "start": 0,
+              "end": 120,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 108,
+          "end_frame": 210,
+          "subtitle_text": "อ๋อยัยนั่นขอแรงด้วยเหรอ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            108,
+            159,
+            209
+          ],
+          "gif_overlaps": [
+            {
+              "start": 0,
+              "end": 120,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; VTuber เด่นอยู่แล้ว; เมนูร้านอาวุธเป็นแกนของมุก",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 5,
+        "name": "ซื้อปืนไม่พอเงินขาดไปพันเดียว-alien shooter last hope-vdo",
+        "timeline_id": "9a680e01-b9bb-45e0-85fa-f49c5da78484",
+        "cue": [
+          2520,
+          2820
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T05",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เอาไอเทมนี้ดีกว่าเอ้ยคุณไม่อยากได้เหรอคะถ้า",
+          "เติมไป 24,000 ได้ตั้ง 20,000 แหนะ",
+          "ผมไม่มี",
+          "ไม่มีทางเลือกว่ะ",
+          "อย่างน้อยเอาเอาปืนเขียวมาเล่นป่ะ",
+          "แต่ปืนน่าหาทางแบบได้เลย",
+          "เอาปืนเขียวมาเล่นก่อน"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 6,
+      "name": "เตรียมป้อมสู้ศึกใหญ่-alien shooter last hope-vdo",
+      "historical_last_main_id": "c38ec787-755c-4179-93e2-f4ad51288746",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 6,
+      "record_fps": 60.0,
+      "timeline_end": 5497,
+      "candidate_cues": [
+        {
+          "start_frame": 4452,
+          "end_frame": 4590,
+          "subtitle_text": "ฮ่าๆๆ",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4452,
+            4521,
+            4589
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 384,
+          "end_frame": 612,
+          "subtitle_text": "มีแค่ทำทีมเหรอวะทำไมไม่มีที่ทำพีซ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            384,
+            498,
+            611
+          ],
+          "gif_overlaps": [
+            {
+              "start": 384,
+              "end": 494,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 690,
+          "end_frame": 876,
+          "subtitle_text": "มันมีแค่ทำทีมเหรอวะยังเหลือไอ้เหี้ยนี่อยู่คนเดียว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            690,
+            783,
+            875
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; Reviewer พบ crop ตัดตัวละครเกม/เมนูและส่วนล่างของอวตาร",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 6,
+        "name": "เตรียมป้อมสู้ศึกใหญ่-alien shooter last hope-vdo",
+        "timeline_id": "e30f45cd-3f9b-442a-8156-9598bc1887b2",
+        "cue": [
+          4452,
+          4752
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T06",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ฮ่าๆๆ",
+          "แค่อยากรู้ว่ามันฆ่าได้ไหมก็น่าจะได้นะ",
+          "แต่ว่ารอบนี้เราลองเก็บลองไอ้ตัวป้อมเอาไว้",
+          "เยอะๆเลย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 7,
+      "name": "ล่อบอสตัวเหนียวจนเหนื่อย-alien shooter last hope-vdo",
+      "historical_last_main_id": "a4d799e9-600b-46df-a812-e13cbe820285",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 7,
+      "record_fps": 60.0,
+      "timeline_end": 8951,
+      "candidate_cues": [
+        {
+          "start_frame": 2880,
+          "end_frame": 3000,
+          "subtitle_text": "ย้าาาาา",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2880,
+            2940,
+            2999
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 3360,
+          "end_frame": 3540,
+          "subtitle_text": "เอามาสู้เอามาให้ตายไอ้เหี้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3360,
+            3450,
+            3539
+          ],
+          "gif_overlaps": [
+            {
+              "start": 3360,
+              "end": 3480,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 4620,
+          "end_frame": 4919,
+          "subtitle_text": "เพิ่งทำเองโหคลิปมันเยอะอ่ะไม่ถึงไม่ไหวอ่ะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4620,
+            4769,
+            4918
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "Existing Focus; คง Adjustment Clip เดิม 2880–3000; preview 120 frames ผ่าน QC",
+      "prior_noop_acceptable_as_completion": true,
+      "noop_audit": "Existing focus must be freshly QC checked",
+      "prior_batch_plan": {
+        "ordinal": 7,
+        "name": "ล่อบอสตัวเหนียวจนเหนื่อย-alien shooter last hope-vdo",
+        "timeline_id": "d956f090-cbcb-48c3-bec0-f5a13778b390",
+        "cue": [
+          4620,
+          4920
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T07",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เพิ่งทำเองโหคลิปมันเยอะอ่ะไม่ถึงไม่ไหวอ่ะ",
+          "มันเพิ่งทำอ่ะดูดิมันเยอะฉิบหายเลยอ่ะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 8,
+      "name": "จบเกมในครั้งเดียว-alien shooter last hope-vdo",
+      "historical_last_main_id": "17d7f65e-9d3a-49c5-bca4-2df5b31329c8",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 8,
+      "record_fps": 60.0,
+      "timeline_end": 3478,
+      "candidate_cues": [
+        {
+          "start_frame": 1681,
+          "end_frame": 1727,
+          "subtitle_text": "อ้าวเป็นไง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1681,
+            1704,
+            1726
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 743,
+          "end_frame": 839,
+          "subtitle_text": "อีตายายจบแล้ว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            743,
+            791,
+            838
+          ],
+          "gif_overlaps": [
+            {
+              "start": 743,
+              "end": 863,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1552,
+          "end_frame": 1660,
+          "subtitle_text": "ฮะโหลเออฮัลโหลพี่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1552,
+            1606,
+            1659
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 8,
+        "name": "จบเกมในครั้งเดียว-alien shooter last hope-vdo",
+        "timeline_id": "29d7e351-f409-4730-81fa-dc38942f9e8b",
+        "cue": [
+          1402,
+          1702
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T08",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "อื้อ",
+          "ฮะโหลเออฮัลโหลพี่",
+          "อ้าวเป็นไง",
+          "อื้อ",
+          "เขาบอกเขาว่าลืมลืมพากย์เอ้ยถ่ายพากย์",
+          "ลืมเปิดเนี่ยลืมพากย์ทางนั้นมีเคหุด้วย",
+          "ไอ้เหี้ยจบไปได้ไลฟ์เดียวว่ะพี่"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 9,
+      "name": "คุยกับแชทช่วงต้นไลฟ์ เล่าว่าเล่นเกมนี้มาหล-alien shooter-vdo",
+      "historical_last_main_id": "ffe3411b-d215-4b25-9f09-03a4fcd2856d",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 9,
+      "record_fps": 60.0,
+      "timeline_end": 5602,
+      "candidate_cues": [
+        {
+          "start_frame": 1200,
+          "end_frame": 1500,
+          "subtitle_text": "โอ๊ยปวด... เมื่อยวันนี้วิ่งเยอะไปหน่อย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1200,
+            1350,
+            1499
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 180,
+          "end_frame": 300,
+          "subtitle_text": "ฮัลโหลเทส 1 2 3 4",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            180,
+            240,
+            299
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 540,
+          "end_frame": 840,
+          "subtitle_text": "โอเคทุกคนก็สวัสดียามค่ำคืนในเวลาของ...",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            540,
+            690,
+            839
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; VTuber ครองพื้นที่ฝั่งขวาอยู่แล้ว; punch-in เพิ่มไม่ได้ประโยชน์",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 9,
+        "name": "คุยกับแชทช่วงต้นไลฟ์ เล่าว่าเล่นเกมนี้มาหล-alien shooter-vdo",
+        "timeline_id": "5f30f58e-c7b6-46cc-826f-cb5aa9f05766",
+        "cue": [
+          2820,
+          3120
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T09",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ซึ่งนั่นแหละนะเดี๋ยววันนี้มาเล่นกันถือว่าเป็น",
+          "เอ่อ...",
+          "ถ้าจะมาตัดเลี่ยนจากพวกแบบเกมแบบว่ายากๆ",
+          "อย่าง Resident Evil ภาค 4",
+          "อะไรประมาณนั้นเกมนี้ก็จะค่อนข้างจะธรรมดาๆ",
+          "อยู่",
+          "มั้งนะส่วนตัวหนูว่าเคยเล่นเกมนี้มา",
+          "ก็เล่นจบไปหลายรอบแล้ว",
+          "ซึ่งอาจจะไม่มีอะไรพิเศษมากนัก",
+          "ธรรมดาๆเล่นกันไป"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 10,
+      "name": "ตั้งค่าหน้าจอไลฟ์ เจอวิธีใหม่-alien shooter-vdo",
+      "historical_last_main_id": "ccd044da-b172-4b63-8e1c-600481ce50ce",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 10,
+      "record_fps": 60.0,
+      "timeline_end": 5453,
+      "candidate_cues": [
+        {
+          "start_frame": 2670,
+          "end_frame": 2772,
+          "subtitle_text": "อุ๊ยลืมใช้ของพรีเมียม",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2670,
+            2721,
+            2771
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 3210,
+          "end_frame": 3348,
+          "subtitle_text": "เฮ้ยจีเนียส",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3210,
+            3279,
+            3347
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 3432,
+          "end_frame": 3570,
+          "subtitle_text": "ทำไมคิดไม่ได้ตอนนั้นนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3432,
+            3501,
+            3569
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 10,
+        "name": "ตั้งค่าหน้าจอไลฟ์ เจอวิธีใหม่-alien shooter-vdo",
+        "timeline_id": "7a5f17ae-5f8c-4a73-8038-bf9e65eb0a40",
+        "cue": [
+          1950,
+          2250
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T10",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "อืมอือ",
+          "ทำหน้าใหม่เลยเหรอคะ",
+          "ทำหน้าใหม่เลยเหรอคะขณะที่เจมส์ทำเนี่ยเพราะ",
+          "โอ้อย่างงั้น",
+          "อุ๊ยลืมใช้ของพรีเมียม"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 11,
+      "name": "กวาดห้องจนจบภารกิจ-alien shooter-vdo",
+      "historical_last_main_id": "d4791fb3-26e3-4594-bd07-2b8b3637b809",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 11,
+      "record_fps": 60.0,
+      "timeline_end": 3970,
+      "candidate_cues": [
+        {
+          "start_frame": 2772,
+          "end_frame": 2910,
+          "subtitle_text": "โอเคเพื่อนเดี๋ยวมานะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2772,
+            2841,
+            2909
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 11,
+        "name": "กวาดห้องจนจบภารกิจ-alien shooter-vdo",
+        "timeline_id": "e345ef2c-6ce3-479c-be91-671ed3281f33",
+        "cue": [
+          2772,
+          2910
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T11",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "โอเคเพื่อนเดี๋ยวมานะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 12,
+      "name": "ตอบแชทว่าเกมยากไหมระหว่างเล่น-alien shooter-vdo",
+      "historical_last_main_id": "b8418b0b-0db3-4396-b51a-43853bfcfc92",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 12,
+      "record_fps": 60.0,
+      "timeline_end": 5399,
+      "candidate_cues": [
+        {
+          "start_frame": 450,
+          "end_frame": 567,
+          "subtitle_text": "อะไรนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            450,
+            508,
+            566
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 300,
+          "end_frame": 447,
+          "subtitle_text": "ออกเสียงอะไรเนี่ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            300,
+            373,
+            446
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 570,
+          "end_frame": 810,
+          "subtitle_text": "อ๋ออันนี้มันเป็นสกินของ...",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            570,
+            690,
+            809
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 12,
+        "name": "ตอบแชทว่าเกมยากไหมระหว่างเล่น-alien shooter-vdo",
+        "timeline_id": "c74e0ea8-4bd1-4ff1-a877-1739a33cd341",
+        "cue": [
+          4020,
+          4320
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T12",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "คือไม่รู้นะส่วนตัวพี่พี่จำได้หมดแล้วว่าตรงไหนมี",
+          "อะไรบ้าง",
+          "มันก็เลยแบบว่านั่นแหละ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 13,
+      "name": "ด่านเขียวสุดท้ายก่อนจอดับ-alien shooter-vdo",
+      "historical_last_main_id": "1ed937ce-eda6-4c6b-a04f-b89250222102",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 13,
+      "record_fps": 60.0,
+      "timeline_end": 6960,
+      "candidate_cues": [
+        {
+          "start_frame": 4890,
+          "end_frame": 5028,
+          "subtitle_text": "เฮ้ยเดี๋ยวนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4890,
+            4959,
+            5027
+          ],
+          "gif_overlaps": [
+            {
+              "start": 4890,
+              "end": 5010,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 5070,
+          "end_frame": 5208,
+          "subtitle_text": "เฮ้ยเดี๋ยวนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            5070,
+            5139,
+            5207
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 624,
+          "end_frame": 681,
+          "subtitle_text": "ฮึมฮึมฮึมฮึมฮึม",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            624,
+            652,
+            680
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 13,
+        "name": "ด่านเขียวสุดท้ายก่อนจอดับ-alien shooter-vdo",
+        "timeline_id": "825bc1f6-b2ab-451f-8fd5-ec2aebf9e726",
+        "cue": [
+          4890,
+          5190
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T13",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เฮ้ยเดี๋ยวนะ",
+          "เฮ้ยเดี๋ยวนะ",
+          "เอามะแพง"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 14,
+      "name": "คุยสรุปเกมหลังเล่นจบ ก่อนปิดไลฟ์-alien shooter-vdo",
+      "historical_last_main_id": "c6b55364-8cd2-4302-ac4c-0aa0cba0d902",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 14,
+      "record_fps": 60.0,
+      "timeline_end": 7681,
+      "candidate_cues": [
+        {
+          "start_frame": 4200,
+          "end_frame": 4437,
+          "subtitle_text": "ฮ่าๆๆๆๆๆ",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4200,
+            4318,
+            4436
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 660,
+          "end_frame": 1017,
+          "subtitle_text": "ฮ่าๆๆๆๆๆ",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            660,
+            838,
+            1016
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 240,
+          "end_frame": 477,
+          "subtitle_text": "เหนื่อยจบซะทีแยกย้ายแยกย้ายเหี้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            240,
+            358,
+            476
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ช่วงหัวเราะมี VTuber ขนาดใหญ่และเห็นสีหน้าชัดอยู่แล้ว",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 14,
+        "name": "คุยสรุปเกมหลังเล่นจบ ก่อนปิดไลฟ์-alien shooter-vdo",
+        "timeline_id": "ec849062-6f4d-4245-8c19-fa5765b0bab7",
+        "cue": [
+          1560,
+          1860
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T14",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ก็สำหรับชุดนี้นะตัวเกมพูดตามตรงนะ",
+          "สำหรับหนูมันง่ายมากเลยเพราะว่าเล่นมาบ่อย",
+          "มากๆ",
+          "จนมันจำได้เกือบหมดแล้วอ่ะ",
+          "ซึ่งด่านที่ให้มีภาคต่อๆไปนะฮะสำหรับด่านหน้าๆ",
+          "ซึ่งด่านหลังๆเนี่ยมันจะเริ่มยากขึ้นมาแล้ว",
+          "เพราะเขาเริ่มปรับ",
+          "ตามเริ่มมีการปรับสมดุล",
+          "แล้วก็เริ่มมีความกวนส้นตีนผู้เล่นเพิ่มขึ้นเรื่อยๆนะ",
+          "ก็หวังว่าจะรอ",
+          "ติดตามกันต่อไปนะฮะผมคิดว่าภาคหลังมันคงไม่จบ",
+          "เร็วอย่างนี้หรอก",
+          "อันนี้มันภาคแรกไงแล้วเตรียมมาสั้นด้วยมันก็เลย",
+          "แบบตกไปนิดนึง",
+          "ฮ่าๆๆๆๆๆ",
+          "อันนี้ที่หนูไม่ค่อยพูดนะเพราะว่าเกมมันค่อนข้างใช้",
+          "สมาธินิดนึง",
+          "หนึ่งยูนิตในแมพมันค่อนข้างเยอะ",
+          "แล้วสเตตัสของยูนิตมันก็แตกต่างกันด้วย",
+          "เราต้องโฟกัสด้วยว่าเฮ้ยเราอ่ะตอนนี้ยืน",
+          "ตรงไหน",
+          "มันมีความเสี่ยงว่าเราจะโดนดาเมจมากน้อยแค่",
+          "ไหนอยู่",
+          "มันก็เลยแบบว่าต้องใช้สมาธิในการเล่นมากๆ",
+          "เลยทีเดียวนะ",
+          "เป็นเกมหนึ่งที่รู้สึกว่ามันเล่นแบบจริงจังอ่ะสนุกดี",
+          "ได้มาทดสอบสมองด้วยนะฮะอย่างที่เขียนต่อให้",
+          "ตายไปถ้ามีตัวแถม 5 ตัว",
+          "มันไม่ได้ยากขนาดนั้นนะมองว่าอย่างนั้นเถอะ",
+          "ทุกคน"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 15,
+      "name": "ลืมแชร์จอ จบของวีทูปเบอร์ที่ไม่เตรียมตัว-Minecraft-vdo",
+      "historical_last_main_id": "173308df-3d72-4e6b-87b8-934c3f1636b1",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 15,
+      "record_fps": 60.0,
+      "timeline_end": 4800,
+      "candidate_cues": [
+        {
+          "start_frame": 600,
+          "end_frame": 837,
+          "subtitle_text": "สมควรไอ้เหี้ยนี่จุดจบคนไม่ยอมแชร์จอตั้งแต่แรก",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            600,
+            718,
+            836
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2460,
+          "end_frame": 2877,
+          "subtitle_text": "โอเคโค้ดไอ้โค้ดแอนเชอร์ตอนนี้ผมตายพอดี",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2460,
+            2668,
+            2876
+          ],
+          "gif_overlaps": [
+            {
+              "start": 2460,
+              "end": 2580,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 123,
+          "subtitle_text": "อันล่างมันเป็นอีกเซิร์ฟนึงพี่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            61,
+            122
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 15,
+        "name": "ลืมแชร์จอ จบของวีทูปเบอร์ที่ไม่เตรียมตัว-Minecraft-vdo",
+        "timeline_id": "0d116761-7486-4fca-8ad5-8cbc70ca12d7",
+        "cue": [
+          2010,
+          2310
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T15",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "คุณพรสนใจไหมคุณพร",
+          "หืม",
+          "Minecraft",
+          "โอเคโค้ดไอ้โค้ดแอนเชอร์ตอนนี้ผมตายพอดี",
+          "Minecraft Launcher ก็เข้าได้นะ",
+          "แค่เนโกะแค่เนโกะมันมันแบบมันเป็นแบบ",
+          "Launcher ที่แบบมันลงปลั๊กอินของเซิร์ฟไว้ให้",
+          "แล้วอ่ะ",
+          "ไม่ต้องไปนั่งหา",
+          "พี่พี่นัทมองเสียงคนนี้ดินี่เสียงคนนี้",
+          "นี่นะครับจุดจบของ Vtuber ที่ลืมเตรียม",
+          "ความพร้อมนะครับ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 16,
+      "name": "หนาวติดลบ 16 ต้องถือลาวา-Minecraft-vdo",
+      "historical_last_main_id": "6a763b2d-6b4c-425e-9e58-e056164acb07",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 16,
+      "record_fps": 60.0,
+      "timeline_end": 6480,
+      "candidate_cues": [
+        {
+          "start_frame": 810,
+          "end_frame": 960,
+          "subtitle_text": "โอ้โหเหี้ยบ้านพี่นี่แม่งจนสมชื่อจริงๆ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            810,
+            885,
+            959
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 4716,
+          "end_frame": 4813,
+          "subtitle_text": "ไอ้เหี้ยจะหนาวตายของแท้เลยนี่ติด",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4716,
+            4764,
+            4812
+          ],
+          "gif_overlaps": [
+            {
+              "start": 4716,
+              "end": 4836,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 594,
+          "end_frame": 751,
+          "subtitle_text": "แม่งจะหนาวตายของแท้เลยติดลบ 12",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            594,
+            672,
+            750
+          ],
+          "gif_overlaps": [
+            {
+              "start": 594,
+              "end": 714,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; inventory/lava และตัวบอกอุณหภูมิเล่าเหตุการณ์; avatar มีขนาดเด่น",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 16,
+        "name": "หนาวติดลบ 16 ต้องถือลาวา-Minecraft-vdo",
+        "timeline_id": "b5606f3b-c9c4-4827-bead-96d811d52060",
+        "cue": [
+          4116,
+          4416
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T16",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เออเยี่ยมพี่จ๋า",
+          "ได้อะไรวะไหนพี่ไม้อะไรมา",
+          "เออมีกางเกงมีมีกางเกงมีไอ้หมวก",
+          "ใช้ถือว่ามีอนาคตแล้วกัน",
+          "ไอ้เหี้ยจะหนาวตายของแท้เลยนี่ติด",
+          "ลบ 15",
+          "โอ้โหคนเราต้องทําบาปทํากรรมมา",
+          "ขนาดไหนวะเนี่ย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 17,
+      "name": "ถือถังลาวาไว้กันหนาว-Minecraft-vdo",
+      "historical_last_main_id": "9f5efe15-abf1-429f-a21f-d44f943ce72f",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 17,
+      "record_fps": 60.0,
+      "timeline_end": 5068,
+      "candidate_cues": [
+        {
+          "start_frame": 2100,
+          "end_frame": 2280,
+          "subtitle_text": "เฮ้ยแล้วมันมีปุ่มตายเลยอ่ะมันเดินไม่ออกเลย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2100,
+            2190,
+            2279
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 117,
+          "subtitle_text": "อุ๊ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            58,
+            116
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 120,
+          "end_frame": 237,
+          "subtitle_text": "เฮ้ยมันมันปรับอันนี้ยังไงวะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            120,
+            178,
+            236
+          ],
+          "gif_overlaps": [
+            {
+              "start": 120,
+              "end": 240,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; reaction GIF ขนาดใหญ่ทับภาพ; crop จะชิงจุดสนใจ",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 17,
+        "name": "ถือถังลาวาไว้กันหนาว-Minecraft-vdo",
+        "timeline_id": "0e8f75b1-d142-4687-9ac8-4f0cb93e2fc5",
+        "cue": [
+          960,
+          1260
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T17",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไอ้เหี้ยไอ้เหี้ย",
+          "มือห้ามมาหรอ",
+          "แม่งกดคลิกขวาไปไอ้เหี้ยลาวาร่วงพี่",
+          "ฉิบหาย",
+          "บอกอยู่ว่าอุบัติเหตุไอ้เหี้ยลาวานี่แม่งทำพิษจริงๆ",
+          "ไอ้สัสแม่งถือมานี่คือแบบแม่งถือไว้ดีกว่าไอ้เหี้ย",
+          "กูไม่เชื่อใจมึงละ",
+          "เฮ้ยแล้วมันมีปุ่มตายเลยอ่ะมันเดินไม่ออกเลย",
+          "อ่ะอะไรวะเนี่ย",
+          "ใช่พี่แม่งไม่ถือลาวาอยู่ไม่ได้ผมว่ารีบเดินไป",
+          "เหอะไอ้เหี้ยเดี๋ยวเราจะฉิบหายวายวอดกันหมด",
+          "อ่ะ",
+          "แม่งติดลบฉิบหายวายวอดเลย",
+          "เดี๋ยวสิมันมันอันนี้ยังไงอ่ะแต่ว่าปรับ",
+          "อะไรพี่",
+          "ปรับอันเนี้ย",
+          "เออเค้าเรียกว่าอะไรวะไอ้ที่พี่หมายถึงแบบซูม",
+          "เอาท์เยอะๆใช่ป่ะกับซูมอินอ่ะ",
+          "ไม่ใช่ไม่ใช่พี่หมายถึง",
+          "ปุ่มหาไอ้ปุ่มปรับคีย์บอร์ดไม่ได้อ่ะพี่อยากเปลี่ยน",
+          "ปุ่ม",
+          "เออกดคอนเออเดี๋ยวนะผมดูแป๊บนึง",
+          "พี่พี่พี่ไปที่ Option พี่พี่กด ESC ไป Option",
+          "แล้วก็ไปที่ Control",
+          "ไหนพี่นะ Control พี่ดูว่าทำไมมีแค่นี้วะ",
+          "Keyboard Bind มันก็มีแค่นี้แหละพี่ Minecraft",
+          "ใช่ๆอยู่หัวข้อ Key Bind",
+          "พี่เอาไรมากกับเกมที่เด็กเค้าเล่นกันวะพี่พี่อย่าทำ",
+          "เหมือนเกมที่เพื่อนเอ็ดดี้ดิ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 18,
+      "name": "พี่น้องไม่เคยช่วยอะไรเลย-Minecraft-vdo",
+      "historical_last_main_id": "c7d46560-0c62-4d3b-b944-e2514c205c05",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 18,
+      "record_fps": 60.0,
+      "timeline_end": 4188,
+      "candidate_cues": [
+        {
+          "start_frame": 3967,
+          "end_frame": 4118,
+          "subtitle_text": "ผู้ใหญ่บ้านชอบมาตอนสายเสมอฮ่าๆ",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3967,
+            4042,
+            4117
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 133,
+          "end_frame": 224,
+          "subtitle_text": "ไอ้เหี้ยเอ๊ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            133,
+            178,
+            223
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 227,
+          "end_frame": 383,
+          "subtitle_text": "พี่แม่งมาได้โคตรถูกเวลาเลยไอ้เหี้ยมาตอนตี",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            227,
+            305,
+            382
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ซอมบี้/การลืมดาบและ HUD เป็นแกนของมุก; avatar ชัดล่างซ้าย",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 18,
+        "name": "พี่น้องไม่เคยช่วยอะไรเลย-Minecraft-vdo",
+        "timeline_id": "9a2e5b41-ac0a-4e12-a477-c929c981df4e",
+        "cue": [
+          133,
+          433
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T18",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไอ้เหี้ยเอ๊ย",
+          "พี่แม่งมาได้โคตรถูกเวลาเลยไอ้เหี้ยมาตอนตี",
+          "ซอมบี้เสร็จแล้วโอ้โหรักฉิบหายเลย",
+          "แม่งคำว่าคำว่าพี่น้องแม่งไม่เคยช่วยเหี้ยอะไร",
+          "เลยอะตอนนี้",
+          "เฮ้ยพี่มาอีกแล้วพี่",
+          "อะไรของมึงวิ่งขอขวานไงวะ",
+          "ไม่เอาไม่เอาดาบมาไอ้เหี้ยลืมคราฟต์ดาบมา",
+          "เนี่ยไอ้เหี้ยเอ๊ยเดี๋ยวรีบขุดเหล็กหาแล้วหาเพิ่ม",
+          "ว่ะ",
+          "เนี่ยสว่างเอ๊ย",
+          "แม่งก็ต้องมีอะโอ้โหไม่งั้นไม่มานั่งร้องหาพี่",
+          "หรอกพี่ไปดูข้างล่างมั้ยด้านล่างมีถ่านนะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 19,
+      "name": "อย่าใส่ร้ายผม เกือบจมลาวา-Minecraft-vdo",
+      "historical_last_main_id": "2916d238-8951-4b71-8b22-0289e314e79f",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 19,
+      "record_fps": 60.0,
+      "timeline_end": 6960,
+      "candidate_cues": [
+        {
+          "start_frame": 2394,
+          "end_frame": 2542,
+          "subtitle_text": "เฮ้ยอย่าใส่ร้ายผมนะโอ้โหผมผมผม",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2394,
+            2468,
+            2541
+          ],
+          "gif_overlaps": [
+            {
+              "start": 2394,
+              "end": 2514,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 5742,
+          "end_frame": 5888,
+          "subtitle_text": "โอ้โหแถวนี้แร่เยอะชิบหายเลยไม่มี",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            5742,
+            5815,
+            5887
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1104,
+          "end_frame": 1170,
+          "subtitle_text": "อุดแล้วทำไม",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1104,
+            1137,
+            1169
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1104,
+              "end": 1214,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; ฉากลาวาและเพื่อนร่วมฉากเป็นบริบท; avatar ชัดพอแล้ว",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 19,
+        "name": "อย่าใส่ร้ายผม เกือบจมลาวา-Minecraft-vdo",
+        "timeline_id": "aed4673e-19ac-4328-8b92-a09104cfa9a8",
+        "cue": [
+          3216,
+          3516
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T19",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "สัมผัสได้แล้วไอ้เหี้ยฉันได้กลิ่น",
+          "ไอ้สัตว์เอ้ยสเกเลตัน",
+          "เก่งหรอ",
+          "เก่งหรอเก่งหรอ",
+          "ให้มันอยู่ในลาวาได้ด้วยดิ",
+          "มึงลงไปอย่างงั้นเดี๋ยวมึงลืมทางขึ้น",
+          "มาทำไงวะ",
+          "พี่พี่คาดหวังอะไรกับผมมากพี่ก็รู้อยู่",
+          "ว่าผมอ่ะจำทางกลับบ้านไม่ได้อยู่",
+          "แล้วถ้าเราลงมาถ้ำแล้วอ่ะ",
+          "Minecraft เวอร์ชั่นไหนเหรอ",
+          "ตอนนี้เล่น Minecraft เวอร์ชั่น 1.21.1",
+          "ครับ",
+          "เอ้ย.11 ครับ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 20,
+      "name": "เจอเพชรแล้ว! ยิส!-Minecraft-vdo",
+      "historical_last_main_id": "cfceaef3-9594-4243-8a11-67fd3b0f7f54",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 20,
+      "record_fps": 60.0,
+      "timeline_end": 4800,
+      "candidate_cues": [
+        {
+          "start_frame": 3696,
+          "end_frame": 3732,
+          "subtitle_text": "เฮ้ยนี่มัน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            3696,
+            3714,
+            3731
+          ],
+          "gif_overlaps": [
+            {
+              "start": 3696,
+              "end": 3816,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 120,
+          "end_frame": 144,
+          "subtitle_text": "เฮ้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            120,
+            132,
+            143
+          ],
+          "gif_overlaps": [
+            {
+              "start": 120,
+              "end": 240,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 792,
+          "end_frame": 931,
+          "subtitle_text": "เฮ้ยนี่ 54 ไม่ดงทีรู้สึกทีดงหมายัง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            792,
+            861,
+            930
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ผู้เล่นอื่น/การขุดและ debug text สำคัญ; avatar เด่นอยู่แล้ว",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 20,
+        "name": "เจอเพชรแล้ว! ยิส!-Minecraft-vdo",
+        "timeline_id": "f4620325-d3ae-4f45-b76b-80645da7e890",
+        "cue": [
+          402,
+          702
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T20",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "50 ลบ 53 มึงไป",
+          "ถ้าเจอเยอะสุดจะเป็น 50 ลบ 58",
+          "อ่าฮะ",
+          "เฮ้ยนี่ 54 ไม่ดงทีรู้สึกทีดงหมายัง",
+          "อ่ะคุณดู",
+          "นี่ขุดตรงมากเลยนะ",
+          "โหพี่จ๋าสุดยอดมากเลยแม่งอยู่ขุด",
+          "ข้างๆอ่ะ",
+          "สาธุขอให้เจอนะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 21,
+      "name": "เจอทางกลับบ้านแต่เพื่อนไปห้องน้ำ-Minecraft-vdo",
+      "historical_last_main_id": "d863d8e5-f21e-4ff3-9224-5a54f8de6edb",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 21,
+      "record_fps": 60.0,
+      "timeline_end": 5400,
+      "candidate_cues": [
+        {
+          "start_frame": 4128,
+          "end_frame": 4212,
+          "subtitle_text": "พี่จ๋าเจอทางกลับบ้านแล้ว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4128,
+            4170,
+            4211
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1208,
+          "end_frame": 1325,
+          "subtitle_text": "นะโอ้โหร้อยวันพันปีไอ้เหี้ยไม่คิดจะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1208,
+            1266,
+            1324
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 90,
+          "end_frame": 132,
+          "subtitle_text": "โอ้โหน่าจะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            90,
+            111,
+            131
+          ],
+          "gif_overlaps": [
+            {
+              "start": 90,
+              "end": 210,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 21,
+        "name": "เจอทางกลับบ้านแต่เพื่อนไปห้องน้ำ-Minecraft-vdo",
+        "timeline_id": "20e6d584-a3a6-400b-a766-642fd617fa31",
+        "cue": [
+          3540,
+          3840
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T21",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ทรัพยากรขุดได้เยอะชิบหายเลยบล็อก",
+          "หินเนี่ยไม่ทําเหี้ยอะไรเลยบล็อกนี้",
+          "ไม่ได้ใช้ด้วยคุณดูอย่างแย่เลย",
+          "หัวใจแม่งแตกสลายไอ้เหี้ยไดมอนด์แม่",
+          "งได้ 19 อัน",
+          "โอ้ยเลิฟยู",
+          "พี่จ๋าเจอทางกลับบ้านแล้ว",
+          "เจอทางกลับบ้านแล้วพี่",
+          "เจอทางกลับบ้านแล้วพี่มาหาผม",
+          "มันบังเอิญมากเลยเว้ยไอ้ถ้ําที่เราอยู่",
+          "ไอ้สัตว์เสือกเสือกเชื่อมกับตอนที่เรา",
+          "ลงมาครั้งแรกเลยพี่",
+          "พี่ๆๆเห็นผมมั้ย",
+          "พี่ดูตาม GPS อ่ะแล้วพี่เดินเดินมาเดิน",
+          "มาตามพิกัดสีผมได้เลย",
+          "แม่งบังเอิญมากเลยไอ้เหี้ยขุดแร่ไป"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 22,
+      "name": "ลุยฐานใต้ดิน เข้าได้สองทาง-alien shooter 2-vdo",
+      "historical_last_main_id": "11d79353-7379-4799-bc59-8427f6991b37",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 22,
+      "record_fps": 60.0,
+      "timeline_end": 5100,
+      "candidate_cues": [
+        {
+          "start_frame": 852,
+          "end_frame": 960,
+          "subtitle_text": "มันมี 2 ทางหรอ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            852,
+            906,
+            959
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 91,
+          "subtitle_text": "to the base, but the entrance gate",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            45,
+            90
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 91,
+          "end_frame": 120,
+          "subtitle_text": "is blocked.",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            91,
+            105,
+            119
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 22,
+        "name": "ลุยฐานใต้ดิน เข้าได้สองทาง-alien shooter 2-vdo",
+        "timeline_id": "92fa4538-4216-4ae6-91c4-41b00374919b",
+        "cue": [
+          2550,
+          2850
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T22",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "มันรูอะไรคือถ้าเราเข้าไปแล้วมัน",
+          "ทางตันหมดเลยนะ",
+          "เข้าไปเลยมั้ย",
+          "มันต้องมันต้องตักขึ้นมาได้",
+          "ไม่ได้",
+          "ไม่ได้ไม่ได้ถ้าเข้าก็เข้าเลย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 23,
+      "name": "กวาดศัตรูในฐานมืด-alien shooter 2-vdo",
+      "historical_last_main_id": "280dfcd8-933a-4188-b2f5-7bff7591f706",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 23,
+      "record_fps": 60.0,
+      "timeline_end": 6600,
+      "candidate_cues": [
+        {
+          "start_frame": 1800,
+          "end_frame": 1830,
+          "subtitle_text": "อือหือ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            1800,
+            1815,
+            1829
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2610,
+          "end_frame": 2670,
+          "subtitle_text": "ยิงหลายตัวมาก",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2610,
+            2640,
+            2669
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2700,
+          "end_frame": 2760,
+          "subtitle_text": "ขอเดินเพิ่มอีกหน่อยนะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2700,
+            2730,
+            2759
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 23,
+        "name": "กวาดศัตรูในฐานมืด-alien shooter 2-vdo",
+        "timeline_id": "2fbd5be7-d142-4304-b3e3-647a68bf252b",
+        "cue": [
+          2610,
+          2760
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T23",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ยิงหลายตัวมาก",
+          "ขอเดินเพิ่มอีกหน่อยนะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 24,
+      "name": "เช็กของ เซฟยัง แล้วลุยต่อ-alien shooter 2-vdo",
+      "historical_last_main_id": "cae89ca0-3c45-4186-b876-91ff8b44ee3b",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 24,
+      "record_fps": 60.0,
+      "timeline_end": 6000,
+      "candidate_cues": [
+        {
+          "start_frame": 5232,
+          "end_frame": 5280,
+          "subtitle_text": "โอ้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            5232,
+            5256,
+            5279
+          ],
+          "gif_overlaps": [
+            {
+              "start": 5232,
+              "end": 5352,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 174,
+          "subtitle_text": "เดี๋ยวขอให้เก็บมาผ่านง่าย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            87,
+            173
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 186,
+          "end_frame": 348,
+          "subtitle_text": "ตาที่ไม่ใช่ก็หายอยู่ดี",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            186,
+            267,
+            347
+          ],
+          "gif_overlaps": [
+            {
+              "start": 186,
+              "end": 296,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 24,
+        "name": "เช็กของ เซฟยัง แล้วลุยต่อ-alien shooter 2-vdo",
+        "timeline_id": "c5b7fcc9-3eb1-4903-9012-02942a0c57d7",
+        "cue": [
+          2238,
+          2538
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T24",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เดี๋ยวสั่งให้ไอ้นั่นเดี๋ยวเก็บปืนก่อน",
+          "The base quarters are down the",
+          "corridor on the left side."
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 25,
+      "name": "Windows XP  Vista  8  ลองหมด-alien shooter 2-vdo",
+      "historical_last_main_id": "ff8546d6-362e-41a5-a433-7b2b4fc3755d",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 26,
+      "record_fps": 60.0,
+      "timeline_end": 6532,
+      "candidate_cues": [
+        {
+          "start_frame": 2526,
+          "end_frame": 2658,
+          "subtitle_text": "พิซซ่าเอ้ย Vista แม่งเลยพี่ของจริง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2526,
+            2592,
+            2657
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 69,
+          "end_frame": 112,
+          "subtitle_text": "ไม่ได้ใช้ไม่ได้ใช้ไม่ได้ใช้ DG กูดูการนะเนี่ยเฮ้ย Windows 8 ยังไม่ลองเลยนะพี่ไล่ไปเหี้ยอันกด Play เลยพี่กด Play เลยนี่น่าจะเกมเด้งเป็นไงผมรู้ผมผมนี่โคตรเก่งเลยไอ้เหี้ยคลิกขวา Windows 8 พี่ Windows 8 รอบนี้ Windows 8 อือจิ้มไปไอ้เหี้ยนําไปใช้ตกลงปื๊ดไม่ได้ไอ้เหี้ยไอ้นี่เด้ง [หัวเราะ] การแสดงผลเกมนั่งคําคุณสมบัติ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            69,
+            90,
+            111
+          ],
+          "gif_overlaps": [
+            {
+              "start": 69,
+              "end": 189,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 42,
+          "end_frame": 66,
+          "subtitle_text": "โคตรเหี้ยเลยไอ้เหี้ยเอ้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            42,
+            54,
+            65
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; properties dialog คือมุก; VTuber ชัดที่มุมล่างขวา",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 26,
+        "name": "Windows XP  Vista  8  ลองหมด-alien shooter 2-vdo",
+        "timeline_id": "e8cfd81d-6284-4269-8a41-23651fb153d1",
+        "cue": [
+          1812,
+          2112
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T26",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไม่ใช่",
+          "ยังไม่เปลี่ยนยังไม่เปลี่ยนพี่พี่คลิกขวา",
+          "ไป",
+          "แสดงการคิดเห็นเออคุณสมบัติการเข้า",
+          "ถึง",
+          "เปลี่ยนเป็น Windows XP",
+          "XP แพ็คแพ็ค 1 มั้ย",
+          "พิซซ่าเอ้ย Vista แม่งเลยพี่ของจริง",
+          "เหี้ย Vista แพ็ค 1",
+          "1 ไม่ได้ก็ 2 ต่ออ่ะไอ้เหี้ย",
+          "ไม่ต้องเล่นแอลแล้วไอ้เหี้ย",
+          "มานั่งมานั่งมานั่งผาหาแบบหาหา",
+          "Windows โหมดเปิดเกมได้โคตรเหี้ยเลย",
+          "ไม่ได้",
+          "ไม่ได้",
+          "ใช้ Windows เลยว่ะ",
+          "Vista ปกติพี่"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 26,
+      "name": "ในที่สุดแชร์จอเหมือนคนปกติได้แล้ว-alien shooter 2-vdo",
+      "historical_last_main_id": "5f7ae05a-b35d-4c0f-bf9f-570f9f73b862",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 27,
+      "record_fps": 60.0,
+      "timeline_end": 5108,
+      "candidate_cues": [
+        {
+          "start_frame": 1200,
+          "end_frame": 1403,
+          "subtitle_text": "เลิศเนี่ยในที่สุดไอ้เหี้ยเราก็แชร์แบบแชร์จอแบบคน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1200,
+            1301,
+            1402
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 120,
+          "subtitle_text": "ตั้งชื่อเองได้แท้ว่าเกมไร",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            60,
+            119
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 180,
+          "end_frame": 270,
+          "subtitle_text": "นั่นน่ะพี่เออดับเบิลคลิกไป",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            180,
+            225,
+            269
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ภาพ desktop/หน้าจอเปิดเกมคือบริบทของมุก",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 27,
+        "name": "ในที่สุดแชร์จอเหมือนคนปกติได้แล้ว-alien shooter 2-vdo",
+        "timeline_id": "af36136d-15cf-4b98-b49c-68c7f091a2bd",
+        "cue": [
+          1200,
+          1500
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T27",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เลิศเนี่ยในที่สุดไอ้เหี้ยเราก็แชร์แบบแชร์จอแบบคน",
+          "ปกติเขาก็ได้สักที",
+          "พี่ไม่ต้องพี่ไม่ต้องไอ้นี่หรอก",
+          "เอาไว้ตรงโห"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 27,
+      "name": "ปรับความละเอียด 1024x768 ไอ้เฮีย-alien shooter 2-vdo",
+      "historical_last_main_id": "182c76c6-10fd-4d13-bf3c-928845f1fe2d",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 28,
+      "record_fps": 60.0,
+      "timeline_end": 7550,
+      "candidate_cues": [
+        {
+          "start_frame": 5280,
+          "end_frame": 5460,
+          "subtitle_text": "เออขำขำเฮ้ยไม่หายโอเค",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            5280,
+            5370,
+            5459
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 720,
+          "end_frame": 1077,
+          "subtitle_text": "เฮ้ยเฮ้ยเฮ้ยโอ๊ยไม่รอดอ่ะพี่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            720,
+            898,
+            1076
+          ],
+          "gif_overlaps": [
+            {
+              "start": 720,
+              "end": 840,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 291,
+          "subtitle_text": "ไอ้เหี้ยทำเหมือนพี่มีซีดีรอมอ่ะเห็นไหม 1,600",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            145,
+            290
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; เมนู resolution เป็นใจความ; crop จะซ่อนตัวเลือก",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 28,
+        "name": "ปรับความละเอียด 1024x768 ไอ้เฮีย-alien shooter 2-vdo",
+        "timeline_id": "0971b3fb-a66b-4fc6-9e46-c89bc4570b68",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T28",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไอ้เหี้ยทำเหมือนพี่มีซีดีรอมอ่ะเห็นไหม 1,600",
+          "1,600 1,600 ใช้ได้พี่เฮ็ดไง",
+          "ยุคนั้นมันอาจจะยังไม่มีความละเอียด 1,000",
+          "1,080 อยู่ไงพี่",
+          "เฮ้ยเฮ้ยเฮ้ยโอ๊ยไม่รอดอ่ะพี่",
+          "ไอ้เหี้ยกลับกลับคืนสู่สามัญไอ้เหี้ย 1 0 1",
+          "อะไรวะ 1 1 0 1 0 2 4 คูณ 7 6 8",
+          "กูเข็ดแล้วไอ้เหี้ยเอ๊ยไอ้เหี้ยหัวหมอทุกวิถีทาง",
+          "สุดท้ายไม่ได้เหี้ยอะไรเลย",
+          "เออปรับเป็น 0 ก็ได้พี่แต่ว่าถ้าปรับเป็น 0",
+          "เอ้ยเออปรับปรับเออ",
+          "เท่าไหร่นะ",
+          "1,000 1,024",
+          "ฮะเท่าไหร่",
+          "1 0 2 4 1 0 2 4",
+          "โหพี่นี่ไม่ผ่านเลยแม่งต้องคุยต้องบอกเลขทีละ",
+          "ตัวเออ 7 7 6 8",
+          "เซฟ",
+          "เออพี่เชื่อผมผมไม่หักหลังพี่หรอก",
+          "พี่ย้ำด้วย",
+          "ถ้ามันบูทไม่ได้เออ",
+          "พี่พี่พี่ปรับพี่ปรับฟูลสกรีนแล้วเหรอ",
+          "ดูดิปรับ 1,600 แล้วมันไม่เลือกว่ะ",
+          "อุ๊ยผมไม่โกหกพี่หรอกโหรู้จักกันมาตั้งนาน",
+          "อือๆ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 28,
+      "name": "ไฟต์ใหญ่ในอารีนา-League of Legends-vdo",
+      "historical_last_main_id": "1fd9051c-555d-405a-8764-11335d900aa2",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 29,
+      "record_fps": 60.0,
+      "timeline_end": 4846,
+      "candidate_cues": [
+        {
+          "start_frame": 61,
+          "end_frame": 95,
+          "subtitle_text": "อื้ออื้ออื้ออื้ออื้ออื้อ enemy slain อื้อ frag down",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            61,
+            78,
+            94
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2,
+          "end_frame": 59,
+          "subtitle_text": "อื้ออื้ออื้ออื้ออื้อ My name [ฟังไม่ชัด] อื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้ออื้อ enemy slain อื้ออื้ออื้ออื้อ enemy slain อื้ออื้อ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2,
+            30,
+            58
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": null,
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 29,
+      "name": "เสียงร้องโอ๊ยๆ-League of Legends-vdo",
+      "historical_last_main_id": "d782d9e5-becf-4d19-85ac-393722b5d8d2",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 30,
+      "record_fps": 60.0,
+      "timeline_end": 4771,
+      "candidate_cues": [
+        {
+          "start_frame": 1530,
+          "end_frame": 1590,
+          "subtitle_text": "โคตรแย่เลย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1530,
+            1560,
+            1589
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 630,
+          "end_frame": 810,
+          "subtitle_text": "An ally has been slain.",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            630,
+            720,
+            809
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 984,
+          "end_frame": 1050,
+          "subtitle_text": "An ally has been slain.",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            984,
+            1017,
+            1049
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ภาพต้นทางช่วง cue ไม่มี VTuber; GIF อยู่คนละช่วง",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 30,
+        "name": "เสียงร้องโอ๊ยๆ-League of Legends-vdo",
+        "timeline_id": "2d1e8196-9845-4a6d-8fb1-2b52db46f3f9",
+        "cue": [
+          1890,
+          2190
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T30",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไอ้กูแม่งสูงนี่พอดี",
+          "แม่งโคตรโดนหลบเลยโคตรแย่เลย",
+          "Some lessons cannot be passed from",
+          "teacher to student.",
+          "They must be experienced."
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 30,
+      "name": "ดับเบิลคิลแล้วโดนฝัง-League of Legends-vdo",
+      "historical_last_main_id": "741c0758-51c3-4cc7-993e-fd8e55bf95e4",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 31,
+      "record_fps": 60.0,
+      "timeline_end": 6313,
+      "candidate_cues": [
+        {
+          "start_frame": 1140,
+          "end_frame": 1377,
+          "subtitle_text": "มึงน่าจะรู้ว่าหนูแพ้วันมีโครอยู่ตลอดเวลา",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1140,
+            1258,
+            1376
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 420,
+          "end_frame": 600,
+          "subtitle_text": "ไม่น่ามีลูกน้องน่ารักคนนึงเลยที่เหลือแม่งทำ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            420,
+            510,
+            599
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 600,
+          "end_frame": 660,
+          "subtitle_text": "อะไรไม่ได้เลย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            600,
+            630,
+            659
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; การต่อสู้และ death feed เป็นแกนของช็อต",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 31,
+        "name": "ดับเบิลคิลแล้วโดนฝัง-League of Legends-vdo",
+        "timeline_id": "2e444262-d453-4736-938e-e2fe0e609352",
+        "cue": [
+          1140,
+          1440
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T31",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "มึงน่าจะรู้ว่าหนูแพ้วันมีโครอยู่ตลอดเวลา",
+          "ไม่น่าคุยเลย",
+          "หนูรู้แล้วดิคนนี้เขาเก่งนะวะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 31,
+      "name": "ไฟต์หน้าป้อม-League of Legends-vdo",
+      "historical_last_main_id": "706d3f08-13b3-4e44-9275-13aa4887aed8",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 32,
+      "record_fps": 60.0,
+      "timeline_end": 5917,
+      "candidate_cues": [
+        {
+          "start_frame": 1020,
+          "end_frame": 1183,
+          "subtitle_text": "โอ๊ยเหี้ยเหี้ยอะไรวะเนี่ยไอ้เหี้ยเหี้ยอะไร",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1020,
+            1101,
+            1182
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1260,
+          "end_frame": 1497,
+          "subtitle_text": "มึงไม่ทันแบบกลัวชิบหายเลยแบบ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1260,
+            1378,
+            1496
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1260,
+              "end": 1370,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 2100,
+          "end_frame": 2637,
+          "subtitle_text": "กูไม่ได้แบบกูไอ้เหี้ยนี่เว้ยตัวมันหนา",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2100,
+            2368,
+            2636
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; fight และ health/HUD ต้องเห็นครบ",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 32,
+        "name": "ไฟต์หน้าป้อม-League of Legends-vdo",
+        "timeline_id": "86c62a2e-e059-4733-a3c6-40dc4d8ee23c",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T32",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "[ฟังไม่ชัด]",
+          "สุดยอด",
+          "[ฟังไม่ชัด]",
+          "โอ๊ยเหี้ยเหี้ยอะไรวะเนี่ยไอ้เหี้ยเหี้ยอะไร",
+          "เนี่ยไม่ได้ทำไรไอนี่",
+          "มึงไม่ทันแบบกลัวชิบหายเลยแบบ",
+          "ไม่ได้ลาภอยู่นะ [ฟังไม่ชัด]",
+          "[ฟังไม่ชัด]",
+          "กูไม่ได้แบบกูไอ้เหี้ยนี่เว้ยตัวมันหนา",
+          "ไอ้เหี้ยหนีได้หนีได้หนีได้หนีได้หมดเลยดิไอ้",
+          "เหี้ย",
+          "ถ้าเสือกเล่นพี่ตัววะ",
+          "Dark in my blood queen",
+          "ไม่สู้ไม่สู้ไม่เหมือนมาแบบไม่เล่นกันแบบ",
+          "ไม่ทำอะไรอ่ะ",
+          "[ฟังไม่ชัด]",
+          "Strike the wind",
+          "[ฟังไม่ชัด]",
+          "[ฟังไม่ชัด]",
+          "ไม่เคลียร์มันเล่นย่างเดียววะเอาข้าม่ะไม่ทำ",
+          "ยังไงล่ะวะทีมมันย่างเดียวอ่ะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 32,
+      "name": "เมาท์เรื่องสายเล่นเกม-League of Legends-vdo",
+      "historical_last_main_id": "1da6d7df-f272-4c21-a8d6-f76a6b546712",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 33,
+      "record_fps": 60.0,
+      "timeline_end": 6000,
+      "candidate_cues": [
+        {
+          "start_frame": 4680,
+          "end_frame": 5040,
+          "subtitle_text": "โอ้โหนะนะคะช่วยเยอะสุดบอกเลยนะฮะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4680,
+            4860,
+            5039
+          ],
+          "gif_overlaps": [
+            {
+              "start": 4680,
+              "end": 4800,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 2580,
+          "end_frame": 2820,
+          "subtitle_text": "อื้อหือคิลเลอร์ของนี่นี่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2580,
+            2700,
+            2819
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; scoreboard/tooltip เป็นข้อมูลที่กำลังพูดถึง",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 33,
+        "name": "เมาท์เรื่องสายเล่นเกม-League of Legends-vdo",
+        "timeline_id": "0bdb8222-6bda-4a34-828d-ce89bdd8e410",
+        "cue": [
+          4680,
+          4980
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T33",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "โอ้โหนะนะคะช่วยเยอะสุดบอกเลยนะฮะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 33,
+      "name": "เพนตาคิลแล้วพ่ายแพ้-League of Legends-vdo",
+      "historical_last_main_id": "8771077c-cb83-4ae2-a63e-f51f31a2ae6c",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 34,
+      "record_fps": 60.0,
+      "timeline_end": 5311,
+      "candidate_cues": [
+        {
+          "start_frame": 150,
+          "end_frame": 312,
+          "subtitle_text": "เอาเลเวลสู้หรอ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            150,
+            231,
+            311
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 147,
+          "subtitle_text": "เอ้าเราไม่มีเซมิเอเลีย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            73,
+            146
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; scoreboard แสดงผลแพ้ชนะและเป็นบริบทของเรื่อง",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 34,
+        "name": "เพนตาคิลแล้วพ่ายแพ้-League of Legends-vdo",
+        "timeline_id": "c018cc30-8d5e-46fe-9508-50aff5537c67",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T34",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เอ้าเราไม่มีเซมิเอเลีย",
+          "เอาเลเวลสู้หรอ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 34,
+      "name": "ไฟต์ท้ายเกมสุดมัน-League of Legends-vdo",
+      "historical_last_main_id": "81aaa8d4-171a-44f3-a7eb-ae122252e9ed",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 35,
+      "record_fps": 60.0,
+      "timeline_end": 4800,
+      "candidate_cues": [
+        {
+          "start_frame": 360,
+          "end_frame": 540,
+          "subtitle_text": "โอ๊ยเหี้ยไม่ได้ขยับเลย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            360,
+            450,
+            539
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 840,
+          "end_frame": 996,
+          "subtitle_text": "จะตีให้ 2 อันนะแต่ไม่ทีมแบบน่า",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            840,
+            918,
+            995
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 996,
+          "end_frame": 1020,
+          "subtitle_text": "เกลียด",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            996,
+            1008,
+            1019
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ทีมไฟต์และ HUD เป็นจุดสนใจ; avatar ชัดล่างซ้าย",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 35,
+        "name": "ไฟต์ท้ายเกมสุดมัน-League of Legends-vdo",
+        "timeline_id": "4a337617-161b-4bfc-9170-fe85c4586256",
+        "cue": [
+          1620,
+          1920
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T35",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "[ฟังไม่ชัด]"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 35,
+      "name": "ลืมเปิดเสียงเพื่อน คุยกับผีมาตั้งนาน-Minecraft-vdo",
+      "historical_last_main_id": "39fcd2b4-edcf-40f4-9d8a-a2b7d9fd2674",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 36,
+      "record_fps": 60.0,
+      "timeline_end": 3300,
+      "candidate_cues": [
+        {
+          "start_frame": 600,
+          "end_frame": 777,
+          "subtitle_text": "โอ้โหเหมือนผีเลยดิอย่างงั้นน่ะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            600,
+            688,
+            776
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 330,
+          "end_frame": 477,
+          "subtitle_text": "อ้าวโอเคดังลั่นละ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            330,
+            403,
+            476
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2160,
+          "end_frame": 2337,
+          "subtitle_text": "โอ้พี่ก็เหมือนกันแหละโอ้โห",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2160,
+            2248,
+            2336
+          ],
+          "gif_overlaps": [
+            {
+              "start": 2160,
+              "end": 2280,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; ภาพตัวอย่าง source ไม่มี VTuber ให้โฟกัส",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 36,
+        "name": "ลืมเปิดเสียงเพื่อน คุยกับผีมาตั้งนาน-Minecraft-vdo",
+        "timeline_id": "6646307a-b200-407f-8c99-e45cb386bc6a",
+        "cue": [
+          1590,
+          1890
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T36",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เจอปัญหาหน้างานไง",
+          "ที่พี่ชอบโม้ว่าคอนเทนต์อะเนี่ยคอนเทนต์ไงคุยกับ",
+          "ผีมาตั้งนานละ",
+          "ไม่ๆอันนี้ไม่ได้อันนี้ไม่ใช่คอนเทนต์อันนี้ซุ่มซ่าม",
+          "โอ้พี่ก็เหมือนกันแหละโอ้โห",
+          "ไอ้ไอ้การกระทำที่มันรู้อยู่แล้วว่ามันคือการกระทำ",
+          "อะไรแต่พี่ก็บอกว่าคอนเทนต์อะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 36,
+      "name": "ลืมเอาอาหาร ต้องกินเนื้อซอมบี้-Minecraft-vdo",
+      "historical_last_main_id": "d4183dd8-dc9a-4a9f-b572-28f5be9be9ff",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 37,
+      "record_fps": 60.0,
+      "timeline_end": 7200,
+      "candidate_cues": [
+        {
+          "start_frame": 1818,
+          "end_frame": 1998,
+          "subtitle_text": "ชิบหายแม่งลืมเอาของกินมาอู๊หูย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1818,
+            1908,
+            1997
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1818,
+              "end": 1928,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 2010,
+          "end_frame": 2172,
+          "subtitle_text": "อะไรก็ได้โอ้โหแม่งไม่มีของกิน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2010,
+            2091,
+            2171
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2178,
+          "end_frame": 2396,
+          "subtitle_text": "ได้ได้เวลาอยู่แบบแบร์กริลส์แล้วไอ้เหี้ยแดก",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2178,
+            2287,
+            2395
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; avatar เด่นแล้ว; การหาอาหาร/กินเป็น visual gag",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 37,
+        "name": "ลืมเอาอาหาร ต้องกินเนื้อซอมบี้-Minecraft-vdo",
+        "timeline_id": "d95527f7-a740-4204-8991-aec85f74c52a",
+        "cue": [
+          1818,
+          2118
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T37",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ชิบหายแม่งลืมเอาของกินมาอู๊หูย",
+          "อะไรก็ได้โอ้โหแม่งไม่มีของกิน",
+          "ได้ได้เวลาอยู่แบบแบร์กริลส์แล้วไอ้เหี้ยแดก",
+          "เนื้อซอมบี้แล้ว",
+          "เฮ้อชีวิต",
+          "เนี่ยทุกคนรู้ไว้ซะ",
+          "สภาพคนที่มันเตรียมตัวไม่พร้อมอ่ะเป็นอย่างเนี้ย",
+          "มันจะทำอะไรอ่ะ",
+          "วันนี้มาทำอะไรครับตอนแรกอาจจะมาขุด",
+          "ดินเหนียวครับคนดูพอดีเจอดินเหนียวจำนวนเยอะ",
+          "มากเลย",
+          "แต่ว่าอยู่ไปอยู่มาก็มันอยู่นี่แล้วครับ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 37,
+      "name": "ซอมบี้มาได้ไงวะ!-Minecraft-vdo",
+      "historical_last_main_id": "af798c11-61ea-4818-b2af-25e492ed52c7",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 38,
+      "record_fps": 60.0,
+      "timeline_end": 3900,
+      "candidate_cues": [
+        {
+          "start_frame": 1031,
+          "end_frame": 1138,
+          "subtitle_text": "เฮ้ยมันมาได้ไงวะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1031,
+            1084,
+            1137
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 373,
+          "end_frame": 480,
+          "subtitle_text": "หนูลงมือคือทำไม่ค่อยเหมือน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            373,
+            426,
+            479
+          ],
+          "gif_overlaps": [
+            {
+              "start": 373,
+              "end": 483,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1163,
+          "end_frame": 1265,
+          "subtitle_text": "เฮ้ยมันมาได้ไงอะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1163,
+            1214,
+            1264
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; crop adds little or removes gameplay/UI context",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 38,
+        "name": "ซอมบี้มาได้ไงวะ!-Minecraft-vdo",
+        "timeline_id": "cdb2ed7d-f465-408e-8f0b-dbf35b6509d2",
+        "cue": [
+          2641,
+          2941
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T38",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เฮ้ยซอมบี้มาจากไหนอะคนดูหรือว่ามันสปอว์น",
+          "ออกมาวะ",
+          "แป๊บนะแป๊บนะไม่ใช่อะไม่ใช่อะ",
+          "มันมีที่มืดหรือเปล่าพี่ตอนนี้มันกลางคืนอะซอมบี้มัน",
+          "สปอว์นมันสปอว์นเรื่อยๆเนี่ย",
+          "ไม่พี่ระยะมันแปลกๆอะผมน่าจะกะระยะผิดเว้ย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 38,
+      "name": "อยากเปลี่ยนร่าง เอาคนไม่มีเสียงในหัวมาเล่นแทน-Minecraft-vdo",
+      "historical_last_main_id": "3307a9de-30fb-4655-87be-265a79ebc98e",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 39,
+      "record_fps": 60.0,
+      "timeline_end": 3300,
+      "candidate_cues": [
+        {
+          "start_frame": 1560,
+          "end_frame": 1737,
+          "subtitle_text": "กูไปเอากูไปเอากูไปเอาเซฟแป๊บนึงไม่ไหวละ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1560,
+            1648,
+            1736
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1020,
+          "end_frame": 1204,
+          "subtitle_text": "เดี๋ยวมึงนะมึงนะแสบหัวชิบหายเลยแทนที่แบบมึง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1020,
+            1112,
+            1203
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1020,
+              "end": 1130,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1204,
+          "end_frame": 1383,
+          "subtitle_text": "จะเอาเลเวลที่มึงใช้ไปไปทารูเมนดี้เนี่ยทำไม",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1204,
+            1293,
+            1382
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; reaction GIF เป็นจุดสนใจ; crop จะชน overlay",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 39,
+        "name": "อยากเปลี่ยนร่าง เอาคนไม่มีเสียงในหัวมาเล่นแทน-Minecraft-vdo",
+        "timeline_id": "80a5738b-ffe7-43b3-b0e7-5a263d530e3b",
+        "cue": [
+          1020,
+          1320
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T39",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เดี๋ยวมึงนะมึงนะแสบหัวชิบหายเลยแทนที่แบบมึง",
+          "จะเอาเลเวลที่มึงใช้ไปไปทารูเมนดี้เนี่ยทำไม",
+          "มึงไม่เอาไปซ่อมแซมร่างใหญ่วะ",
+          "กูไปเอากูไปเอากูไปเอาเซฟแป๊บนึงไม่ไหวละ",
+          "แม่งบ่นไม่หยุดเลยไอ้เหี้ย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 39,
+      "name": "พี่จ๋าช่วยด้วย เรือไปไหนวะ-Minecraft-vdo",
+      "historical_last_main_id": "5ec86ac2-b9b7-4308-b00e-88e6eeb82248",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 40,
+      "record_fps": 60.0,
+      "timeline_end": 5618,
+      "candidate_cues": [
+        {
+          "start_frame": 1740,
+          "end_frame": 1917,
+          "subtitle_text": "พี่ตาช่วยด้วย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1740,
+            1828,
+            1916
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 177,
+          "subtitle_text": "อ้าวชิบหายละเมื่อกี้ยังกดออกได้อยู่เลยโอเค",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            88,
+            176
+          ],
+          "gif_overlaps": [
+            {
+              "start": 0,
+              "end": 110,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 705,
+          "end_frame": 750,
+          "subtitle_text": "ฮัลโหลยังไม่ได้ทำอะไรเลยเคมึงอ่ะมึงมึงทำตัวมึงเองอ่ะกด Shift ขวานั่งหน้าแล้วพายพายไอ้เหี้ยเอ๊ยเกือบละ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            705,
+            727,
+            749
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; Reviewer คงภาพกว้างเพื่อรักษาฉากหิมะและบริบทการหาเรือ",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 40,
+        "name": "พี่จ๋าช่วยด้วย เรือไปไหนวะ-Minecraft-vdo",
+        "timeline_id": "3b28056a-8981-4987-ba6e-eb216c37776e",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T40",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "อ้าวชิบหายละเมื่อกี้ยังกดออกได้อยู่เลยโอเค",
+          "โอเค",
+          "แล้วเราทำไง",
+          "มันต้องดันหรือต้องพายวะพี่",
+          "ต้องพายดิว่าแต่เอาเรือมาทำไมเนี่ย",
+          "คุมเรือเป็นไหมเนี่ยนี่พี่ขี่อันนี้ดิผมขี่เรือมันก็โดดไม่ได้",
+          "เนี่ยเออผมจะไปทางนี้เฮ้ยๆพี่ใจเย็นเฮ้ยๆๆๆคุยคุยค่อยฆ่ากัน",
+          "ฮัลโหลยังไม่ได้ทำอะไรเลยเคมึงอ่ะมึงมึงทำตัวมึงเองอ่ะกด Shift ขวานั่งหน้าแล้วพายพายไอ้เหี้ยเอ๊ยเกือบละ",
+          "แง้นๆไปละไอ้เหี้ยเจอกัน",
+          "โอ้โหแม่งทางแม่งโคตรไม่สมประกอบอ่ะ",
+          "ได้โตเกียวดริฟต์ละเจอกันแง้นๆ",
+          "ไอ้เหี้ยเอ๊ยแม่งทางโคตรทรหดอ่ะ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 40,
+      "name": "วิ่งหนีมอนตอนมืดจนเห็นบ้าน-Minecraft-vdo",
+      "historical_last_main_id": "25c0438d-de3a-4ce6-a9e9-e828f2f2b783",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 41,
+      "record_fps": 60.0,
+      "timeline_end": 9157,
+      "candidate_cues": [
+        {
+          "start_frame": 627,
+          "end_frame": 742,
+          "subtitle_text": "ใครจะไปยอมใครจะไปยอมไอ้เหี้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            627,
+            684,
+            741
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 775,
+          "end_frame": 937,
+          "subtitle_text": "ตายต้องใช้โคบาร์นิดนึงคนดู 3 เซ็นแม่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            775,
+            856,
+            936
+          ],
+          "gif_overlaps": [
+            {
+              "start": 775,
+              "end": 895,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 937,
+          "end_frame": 978,
+          "subtitle_text": "งเลยเหี้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            937,
+            957,
+            977
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; เส้นทาง/หมู่บ้านเป็นบริบท; หน้า VTuber ไม่ได้แสดงปฏิกิริยาชัด",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 41,
+        "name": "วิ่งหนีมอนตอนมืดจนเห็นบ้าน-Minecraft-vdo",
+        "timeline_id": "42c49452-b87c-4a54-ac96-c52d92308ccd",
+        "cue": [
+          4263,
+          4563
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T41",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เอ้าเหี้ยเอ้ยโยน 1 มาถึง 2",
+          "แบบ",
+          "มานี่มานี่มานี่มานี่ครับบนบุ",
+          "follow me you can see เออ"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 41,
+      "name": "ออกไม่ได้เลยวะ ฮ่าๆๆ-Minecraft-vdo",
+      "historical_last_main_id": "82a34a3d-835b-4ebd-9d05-af70c9f47635",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 42,
+      "record_fps": 60.0,
+      "timeline_end": 4500,
+      "candidate_cues": [
+        {
+          "start_frame": 2560,
+          "end_frame": 3004,
+          "subtitle_text": "ฮ่าๆๆพี่เนี่ยมันเอาไม่ได้เล่ห์ฮ่าๆๆ",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2560,
+            2782,
+            3003
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1015,
+          "end_frame": 1598,
+          "subtitle_text": "ไอ้เหี้ยอ้าวเอาเฮ้ยๆๆ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1015,
+            1306,
+            1597
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1015,
+              "end": 1135,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 3007,
+          "end_frame": 3257,
+          "subtitle_text": "ไอ้เหี้ยอ้าวเหี้ยอะไรวะเนี่ยออกละ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3007,
+            3132,
+            3256
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; VTuber หัวเราะแต่ interaction Minecraft ยังสำคัญ",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 42,
+        "name": "ออกไม่ได้เลยวะ ฮ่าๆๆ-Minecraft-vdo",
+        "timeline_id": "02fd5c4a-3087-46af-8f9a-3dcbc812f691",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T42",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ไอ้เหี้ยผมน่ะเอาเอเมอรัลด์แรกผมได้",
+          "ผมซ่อมจากใกล้พังแม่งกลายมาครึ่งนึง",
+          "อันนี้คือพี่จะวางบล็อกหรือพี่จะไป",
+          "ทำอะไร",
+          "ฮึ้ยอ่ามันทำตาม",
+          "อ๋อ",
+          "มึงทำมันทำ",
+          "ไอ้เหี้ยอ้าวเอาเฮ้ยๆๆ",
+          "เออๆมันมาอย่างนี้มึงเอาผ่านทาง",
+          "หัวมึงใช่มั้ยไอ้เหี้ย",
+          "เอ้อเอ้อเอ้อไอ้เหี้ย",
+          "อันนี้เอ็นนี้",
+          "อ่าผมบอกแล้วนะว่าตะกรรมพี่มันมี",
+          "ปัญหานี่",
+          "ฮ่าๆๆพี่เนี่ยมันเอาไม่ได้เล่ห์ฮ่าๆๆ",
+          "ไอ้เหี้ยอ้าวเหี้ยอะไรวะเนี่ยออกละ",
+          "เอ้อเหี้ยเหลือเหลือครับวกทำไมมัน",
+          "ทำไมมาโจมมาเว้ยมาโจมไม้มาเดิน",
+          "ออกหน้ามาอีกเหรอ",
+          "ใช่ต้องหาบล็อกอะไรมาปิดอ่า",
+          "เดี๋ยวผมเอาเอาไอ้เอาไอ้เอาแตงโม",
+          "มาแลกแป๊บ",
+          "ไหนดูซิ 35 อันที่คุณผมจะปิด"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "zero/negative-area measured bbox"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 42,
+      "name": "ไฟต์ในเลนกับเสียงร้องเฮ้ย-League of Legends-vdo",
+      "historical_last_main_id": "7039875a-bdbf-446d-961e-46115836f1e9",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 43,
+      "record_fps": 60.0,
+      "timeline_end": 4200,
+      "candidate_cues": [
+        {
+          "start_frame": 1740,
+          "end_frame": 1964,
+          "subtitle_text": "ไอ้เหี้ยทำไมกูต้องมาซ่อมด้วยวะซ่อมเพื่อมาเนี่ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1740,
+            1852,
+            1963
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 780,
+          "end_frame": 955,
+          "subtitle_text": "ไอ้เหี้ยทำไมอารมณ์เปลี่ยนได้ไงวะป่าแม่มก็",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            780,
+            867,
+            954
+          ],
+          "gif_overlaps": [
+            {
+              "start": 780,
+              "end": 890,
+              "name": "Reaction - Excuse Me What.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1260,
+          "end_frame": 1437,
+          "subtitle_text": "แล้วไอ้ครูอยู่ด้านไหนเหี้ย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1260,
+            1348,
+            1436
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ภาพต้นทางไม่เห็น VTuber และมี reaction GIF ตรง cue",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 43,
+        "name": "ไฟต์ในเลนกับเสียงร้องเฮ้ย-League of Legends-vdo",
+        "timeline_id": "c7087a47-1b34-4e4f-8a17-d3b14166ef18",
+        "cue": [
+          0,
+          300
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T43",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เลเวลสูงสุดแล้ว",
+          "[ฟังไม่ชัด]",
+          "ไอ้เหี้ยทำไมอารมณ์เปลี่ยนได้ไงวะป่าแม่มก็",
+          "ไม่ค่อยอยากจะเล่นไอ้สัตว์ไอ้ครูอยู่ซัพเลนแต่กู",
+          "เหมือนเจอสองหนึ่งตลอดเวลา",
+          "แล้วไอ้ครูอยู่ด้านไหนเหี้ย",
+          "นั่นแหละคุณเซียน",
+          "ไอ้เหี้ยทำไมกูต้องมาซ่อมด้วยวะซ่อมเพื่อมาเนี่ย",
+          "สัส",
+          "ตัวลูกเนี่ยสิแม่นะเหี้ยสามารถไปหาแม่โดน",
+          "ดูดนมแม่ไปคุยมือแม่เล่นเหี้ยสัส",
+          "ขึ้นท็อปเลยมึงอย่าทำรูดตูดดิ้วะ",
+          "[ฟังไม่ชัด]"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 43,
+      "name": "ทีมไฟต์ถูกชัตดาวน์-League of Legends-vdo",
+      "historical_last_main_id": "aa07a8e3-36e2-422b-bb5b-79f679e6546c",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 44,
+      "record_fps": 60.0,
+      "timeline_end": 3823,
+      "candidate_cues": [
+        {
+          "start_frame": 781,
+          "end_frame": 1050,
+          "subtitle_text": "โอ๊ยเหี้ยหมากvanguardเมื่อกี้นี้ถ้าหมาไม่โดน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            781,
+            915,
+            1049
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2218,
+          "end_frame": 2440,
+          "subtitle_text": "สัตว์ไหนโตไรต่อไปอ้าวไอ้เหี้ยเดี๋ยวป้อมเธ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2218,
+            2329,
+            2439
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1050,
+          "end_frame": 1161,
+          "subtitle_text": "เคลียร์เมื่อตายห่าละ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1050,
+            1105,
+            1160
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1050,
+              "end": 1170,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; LoL fight และ interface อธิบาย shutdown",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 44,
+        "name": "ทีมไฟต์ถูกชัตดาวน์-League of Legends-vdo",
+        "timeline_id": "b7cb70ae-3a0e-49dd-9777-87d081236852",
+        "cue": [
+          781,
+          1081
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T44",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "โอ๊ยเหี้ยหมากvanguardเมื่อกี้นี้ถ้าหมาไม่โดน",
+          "เคลียร์เมื่อตายห่าละ",
+          "เมื่อกี้เมื่อเผลอเราไปตีป้อมเพลินเสียหมาเยอะ",
+          "เกินไม่มีดาเมจพอข้ามแม่ม",
+          "ถ้าผมเป็นหนึ่งอยู่ดูดิผมเป็นดิเห็นผมเดินไปกด",
+          "สกิล 2 ทีไปกอดแล้วก็ตายกันไปแพ้เกม",
+          "ไอ้เหี้ยมึงแทงกูก่อนดิไอ้สัตว์มึงแทงกูเจ็บว่ะไอ้",
+          "สัตว์ไหนโตไรต่อไปอ้าวไอ้เหี้ยเดี๋ยวป้อมเธ",
+          "ลอนไอ้เหี้ยหรอป้อมเธอชิพหายป้อมตัวชิพหายไอ้",
+          "ควาย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 44,
+      "name": "เริ่มเกมแล้วเจอไฟต์-League of Legends-vdo",
+      "historical_last_main_id": "59c29caf-6222-4c52-af3b-40cf74d61143",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 45,
+      "record_fps": 60.0,
+      "timeline_end": 4200,
+      "candidate_cues": [
+        {
+          "start_frame": 3384,
+          "end_frame": 3594,
+          "subtitle_text": "เฮ้ยอย่าไปโดน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            3384,
+            3489,
+            3593
+          ],
+          "gif_overlaps": [
+            {
+              "start": 3384,
+              "end": 3504,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 4105,
+          "end_frame": 4163,
+          "subtitle_text": "ตายแล้ว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            4105,
+            4134,
+            4162
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 130,
+          "end_frame": 422,
+          "subtitle_text": "ของมันมีมั้ยไม่ไม่ใช่ของแฮกแมน",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            130,
+            276,
+            421
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; render cue จริงไม่พบ VTuber ในภาพ จึงไม่มีตัวละครให้ Zoom Focus; คงเกม/HUD และ subtitle เดิม",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 45,
+        "name": "เริ่มเกมแล้วเจอไฟต์-League of Legends-vdo",
+        "timeline_id": "c79870d5-593f-47b9-87af-059ec5ef29c4",
+        "cue": [
+          2366,
+          2666
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T45",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เดี๋ยวผมจะตีพันธุ์พื้น",
+          "เดี๋ยวผมจะสกิลดักดักไม่ใช่ไม่ใช่ดัก",
+          "เป็นไอ",
+          "เดี๋ยวผมจะกั๊กระยะตรงที่มันดิ่งมานะ",
+          "แบบคนเด่งเลย",
+          "แมพแล้วฝนตกด้วยนะ",
+          "เรียบร้อย",
+          "เฮ้ยอย่าไปโดน",
+          "อื้อหือบวิกเหรอบวิกอยู่",
+          "กลางกำลังเดินลงมาล่างกัดใส่ล้า",
+          "ตายแล้ว"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 45,
+      "name": "หัวยังไม่ฟู ตายก่อนเลย-League of Legends-vdo",
+      "historical_last_main_id": "abbb0657-7187-4d31-b7e0-646512cc04d2",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 46,
+      "record_fps": 60.0,
+      "timeline_end": 8700,
+      "candidate_cues": [
+        {
+          "start_frame": 7560,
+          "end_frame": 7761,
+          "subtitle_text": "เข้าไปมันก็นะฮ่าๆๆอะไรอ่ะไม่น่า",
+          "editorial_basis": "laughter",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            7560,
+            7660,
+            7760
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1728,
+          "end_frame": 1752,
+          "subtitle_text": "เฮ้ยตายจริง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            1728,
+            1740,
+            1751
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1686,
+              "end": 1806,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 1770,
+          "end_frame": 1806,
+          "subtitle_text": "เฮ้ยตายจริง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            1770,
+            1788,
+            1805
+          ],
+          "gif_overlaps": [
+            {
+              "start": 1686,
+              "end": 1806,
+              "name": "Anime - Shocked Reaction.gif"
+            }
+          ]
+        }
+      ],
+      "prior_noop_decision": "No-op; Reviewer เห็น fight/HUD จะหายไปหาก crop",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 46,
+        "name": "หัวยังไม่ฟู ตายก่อนเลย-League of Legends-vdo",
+        "timeline_id": "14053766-4f6e-44d6-ad73-599a42b51848",
+        "cue": [
+          6420,
+          6720
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T46",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "หรือไม่ทันใจมาฮาโยนิตี้ดีกว่าเค้าต่อ",
+          "ฮาอ่าเอาไปหาด้วย",
+          "แต่ไม่เอาไม่เอา",
+          "เดี๋ยวเดี๋ยวเดี๋ยวบูลลี่เยอะเกินก็ได้",
+          "ไม่ๆคือมันมันไม่ควรให้อยู่เยอะไง",
+          "มันมือถือไม่ได้",
+          "หรอคิดว่าจะแบบอยู่นี้ไปเลย",
+          "เข้าไปมันก็นะฮ่าๆๆอะไรอ่ะไม่น่า",
+          "ไปหรอก",
+          "เฮ้ยๆรวยรวยเฮ้ยไม่ได้ขยับเลยเว้ย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 46,
+      "name": "ออกเมื่อไหร่มีตายเมื่อนั้น-League of Legends-vdo",
+      "historical_last_main_id": "827878be-8522-4164-9634-4aa9a68f7392",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 47,
+      "record_fps": 60.0,
+      "timeline_end": 3590,
+      "candidate_cues": [
+        {
+          "start_frame": 2710,
+          "end_frame": 2792,
+          "subtitle_text": "อ๋อเมื่อไหร่มึงตายเมื่อนั้น",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2710,
+            2751,
+            2791
+          ],
+          "gif_overlaps": [
+            {
+              "start": 2710,
+              "end": 2830,
+              "name": "Reaction - Crying Anime Boy.gif"
+            }
+          ]
+        },
+        {
+          "start_frame": 110,
+          "end_frame": 210,
+          "subtitle_text": "ยิงเซตก็โดนเซตกระทืบ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            110,
+            160,
+            209
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 246,
+          "end_frame": 355,
+          "subtitle_text": "ยิงการเรียนก็โดนหมุนแน่ๆ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            246,
+            300,
+            354
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; death/scoreboard คือบริบทของมุก",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 47,
+        "name": "ออกเมื่อไหร่มีตายเมื่อนั้น-League of Legends-vdo",
+        "timeline_id": "e2bbd9c9-0d94-45a1-947f-e1f2c1c263c8",
+        "cue": [
+          110,
+          410
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T47",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "ยิงเซตก็โดนเซตกระทืบ",
+          "ยิงการเรียนก็โดนหมุนแน่ๆ",
+          "ยิงแฟนก็ไม่ได้อีกติดโล่",
+          "ยิงดาวินไม่ได้ติดโซน่า",
+          "มีใครได้บ้างเนี่ย",
+          "หนีไปไม่เป็นแล้วตอนนี้สั่นไป"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 47,
+      "name": "ด่าทีมรัวๆ ไอ้เชี่ยทีมตาก-League of Legends-vdo",
+      "historical_last_main_id": "a7ef2e35-5d01-4cc2-8e2f-ec91f669f08f",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 48,
+      "record_fps": 60.0,
+      "timeline_end": 4200,
+      "candidate_cues": [
+        {
+          "start_frame": 1050,
+          "end_frame": 1257,
+          "subtitle_text": "เป็นออกเหี้ยอะไรอ่ะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1050,
+            1153,
+            1256
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1560,
+          "end_frame": 1690,
+          "subtitle_text": "ไอ้เหี้ยออกของไม่ดูทางเปรี้ยวเลย",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1560,
+            1625,
+            1689
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 1690,
+          "end_frame": 1740,
+          "subtitle_text": "ไอ้เหี้ยโง่สัตว์",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1690,
+            1715,
+            1739
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; gameplay ที่กำลังวิจารณ์เป็นบริบท; avatar ชัดแล้ว",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 48,
+        "name": "ด่าทีมรัวๆ ไอ้เชี่ยทีมตาก-League of Legends-vdo",
+        "timeline_id": "12fa4ea2-95ee-4522-b84c-4223cd665fa2",
+        "cue": [
+          1050,
+          1350
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T48",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "เป็นออกเหี้ยอะไรอ่ะ",
+          "มึงตัวๆอย่างเนี้ยมันไม่ออกก้านเว้ย",
+          "มึงอ่ะ",
+          "ไอ้เหี้ยออกของไม่ดูทางเปรี้ยวเลย",
+          "ไอ้เหี้ยโง่สัตว์"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 48,
+      "name": "ลาสตรีม ขอบคุณทุกคน-League of Legends-vdo",
+      "historical_last_main_id": "11db333c-d4be-4a44-873d-bcc4f13836fe",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 49,
+      "record_fps": 60.0,
+      "timeline_end": 4293,
+      "candidate_cues": [
+        {
+          "start_frame": 1381,
+          "end_frame": 1538,
+          "subtitle_text": "เดี๋ยววันนี้ขอบคุณทุกคนที่ไม่ที่มารับ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            1381,
+            1459,
+            1537
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 0,
+          "end_frame": 196,
+          "subtitle_text": "อ่ามีอาการที่อ่าเป็นไมโครซานิดนึง",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            0,
+            98,
+            195
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 196,
+          "end_frame": 225,
+          "subtitle_text": "นะคะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": true,
+          "suggested_motion_samples": [
+            196,
+            210,
+            224
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; ภาพปิดสตรีมมี VTuber ใหญ่ชัด",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": null,
+      "prior_measurement_flaws": [
+        "reported avatar height_after > frame; claimed centered-safe zoom contradicted"
+      ],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    },
+    {
+      "canonical_ordinal": 49,
+      "name": "กดเล่นแล้วเกมเด้ง ลบโหลดใหม่เลย-alien shooter 2-vdo",
+      "historical_last_main_id": "4a06230e-9c8b-48d5-842f-ec97aa31e7fd",
+      "id_status": "MATCH_CURRENT_LIVE_NAME_DO_NOT_USE_HISTORICAL_ID",
+      "source_inventory_ordinal": 25,
+      "record_fps": 60.0,
+      "timeline_end": 6466,
+      "candidate_cues": [
+        {
+          "start_frame": 990,
+          "end_frame": 1170,
+          "subtitle_text": "ลบเกมลบเกมโหลดใหม่แม่งเลยพี่",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            990,
+            1080,
+            1169
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 623,
+          "end_frame": 814,
+          "subtitle_text": "มาแล้วเป็นไงโหพี่อย่างหรูดูน้องดูน้องอ้าว",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            623,
+            718,
+            813
+          ],
+          "gif_overlaps": []
+        },
+        {
+          "start_frame": 2106,
+          "end_frame": 2303,
+          "subtitle_text": "อ้าวแล้วรู้อยู่เปลี่ยนยังไงตัวตั้งค่ามันยังไงอะ",
+          "editorial_basis": "reaction/interjection or important line",
+          "status": "SCAN_REQUIRED_NOT_VISUALLY_APPROVED",
+          "too_short_for_full_focus": false,
+          "suggested_motion_samples": [
+            2106,
+            2204,
+            2302
+          ],
+          "gif_overlaps": []
+        }
+      ],
+      "prior_noop_decision": "No-op; Steam/window และ reaction meme อธิบายมุก",
+      "prior_noop_acceptable_as_completion": false,
+      "noop_audit": "Reopen: game/UI-context loss is expected for reaction punch-in and alone does not justify no focus; single representative still cannot prove avatar absent across timeline.",
+      "prior_batch_plan": {
+        "ordinal": 25,
+        "name": "กดเล่นแล้วเกมเด้ง ลบโหลดใหม่เลย-alien shooter 2-vdo",
+        "timeline_id": "c2802f01-1f6e-4940-b81e-5993b582c63e",
+        "cue": [
+          2670,
+          2970
+        ],
+        "layout_key": "left",
+        "track_name": "VTUBER_FOCUS_T25",
+        "transform": {
+          "Size": 2.3,
+          "Edges": 0.0,
+          "Center": {
+            "1": 1.15,
+            "2": 0.95,
+            "3": 0.0
+          }
+        },
+        "subtitle_text": [
+          "วิธีวิธีคุณพอลอะลองแล้วเหมือนกันแต่ว่า",
+          "ไม่เอ่อแล้วพี่กดกดเริ่มเลย",
+          "อึ้กผมมองไม่เห็นด้วยไงว่าเป็นยังไงบ้างดูไม่ได้",
+          "ทำไมมันถึงแครชวะ",
+          "เออบอกว่าเล่นเวอร์ชันนี้แล้วแครชด้วยนะ",
+          "พี่แอนตี้ไวรัสไหมเออปิดแม่งเลยดิ",
+          "เผื่อมันมองเผื่อมันมองเผื่อมันมองว่าเกมอินดี้ชู",
+          "ตเตอร์อาจจะเป็นสแกมเมอร์ก็ได้นะพี่ปิดไปสักวัน",
+          "นึงอะ",
+          "เป็นไปได้ไอ้เพอนั่นแหละแล้วก็เลือก 1 day",
+          "ไปเลย",
+          "แอนตี้ไวรัสแม่งยิ่งเอ๋อๆอยู่",
+          "ตัวของพี่เค้าอะสมควรอะ",
+          "ไม่กำลังกำลังนึกอยู่ทำทำไมเกมแครชวะ",
+          "แล้วพี่เคก็เพิ่งจะหอนว่าเกมนี้แม่งไม่ถึงวัน",
+          "อืออะน่ออะน่อ",
+          "ไปทำอะไรมาไหมเนี่ย"
+        ],
+        "cue_reason": "longest contiguous speech cluster"
+      },
+      "prior_measurement_flaws": [],
+      "implementation_policy": "V2 native Adjustment Clip; original GIF track V3; visual render motion QC required before promotion",
+      "transform_status": "DO_NOT_REUSE_OLD_VALUES_WITHOUT_RENDER_CALIBRATION"
+    }
+  ]
+}

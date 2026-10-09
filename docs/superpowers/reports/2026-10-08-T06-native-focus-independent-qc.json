@@ -1,0 +1,28 @@
+{
+  "timeline": "เตรียมป้อมสู้ศึกใหญ่-alien shooter last hope-vdo",
+  "canonical_ordinal": 6,
+  "render_path": "C:\\Users\\warit\\AppData\\Local\\Temp\\VTuberNativeDRT_20261008\\T06-focus-centered-v3.mp4",
+  "reviewed": "all 138 frames in three contact sheets; f0/f69/f137 full resolution; source start/end",
+  "visual_result": "PASS",
+  "head_face_ears": "kept throughout",
+  "framing": "centered head-to-chest; dominant avatar",
+  "subtitle": "ฮ่าๆๆ below face over neck/upper chest",
+  "blank_edges_duplicate_image_stretch": "none visible",
+  "hands": "no important hand gesture visible in cue",
+  "headroom": "roughly 3–5%; near end approximately 2.8–3%, marginal strict threshold",
+  "verification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "frames": 138,
+    "video": "h264",
+    "audio": "aac",
+    "duration": 2.304,
+    "bytes": 4420980
+  },
+  "limits": [
+    "no listening-based audio QC",
+    "no frame outside focus interval for in/out transition check"
+  ],
+  "no_resolve_mutations": true
+}

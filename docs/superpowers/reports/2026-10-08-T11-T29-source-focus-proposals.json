@@ -1,0 +1,997 @@
+{
+  "scope": "T11–T29 canonical names from current49 list",
+  "all_source_paths_exist": true,
+  "no_resolve_calls_or_mutations": true,
+  "source_review": "three exact source samples per candidate; not continuous motion/rendered QC",
+  "rows": [
+    {
+      "canonical_ordinal": 11,
+      "name": "กวาดห้องจนจบภารกิจ-alien shooter-vdo",
+      "selected_cue": {
+        "start_frame": 2772,
+        "end_frame": 2910,
+        "subtitle_text": "โอเคเพื่อนเดี๋ยวมานะ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.8,
+        0.5556,
+        1.0,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.56,
+        0.040000000000000036,
+        1.0,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T11-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T11-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T11-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T11-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T11-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 12,
+      "name": "ตอบแชทว่าเกมยากไหมระหว่างเล่น-alien shooter-vdo",
+      "selected_cue": {
+        "start_frame": 450,
+        "end_frame": 567,
+        "subtitle_text": "อะไรนะ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.7875,
+        0.5556,
+        1.0,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.5324999999999999,
+        0.040000000000000036,
+        1.0,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T12-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T12-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T12-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T12-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T12-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 13,
+      "name": "ด่านเขียวสุดท้ายก่อนจอดับ-alien shooter-vdo",
+      "selected_cue": {
+        "start_frame": 4890,
+        "end_frame": 5028,
+        "subtitle_text": "เฮ้ยเดี๋ยวนะ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.7953,
+        0.5556,
+        1.0,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.5496599999999999,
+        0.040000000000000036,
+        1.0,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T13-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T13-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T13-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T13-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T13-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 14,
+      "name": "คุยสรุปเกมหลังเล่นจบ ก่อนปิดไลฟ์-alien shooter-vdo",
+      "selected_cue": {
+        "start_frame": 4200,
+        "end_frame": 4437,
+        "subtitle_text": "ฮ่าๆๆๆๆๆ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.5359,
+        0.1917,
+        0.9219,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.1917,
+      "transform": {
+        "Size": 1.4,
+        "Center": {
+          "1": 0.3,
+          "2": 0.52838,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.3,
+          0.52838,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.35026,
+        0.040000000000000036,
+        0.89066,
+        1.1716199999999999
+      ],
+      "layout": "large-right",
+      "notes": "Large avatar becomes head-to-chest; face drifts near x.56-.70 across cue. Background room/chat crop is intended reaction emphasis.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T14-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T14-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T14-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T14-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T14-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 15,
+      "name": "ลืมแชร์จอ จบของวีทูปเบอร์ที่ไม่เตรียมตัว-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 600,
+        "end_frame": 837,
+        "subtitle_text": "สมควรไอ้เหี้ยนี่จุดจบคนไม่ยอมแชร์จอตั้งแต่แรก"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.5328,
+        0.1972,
+        0.8641,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.1972,
+      "transform": {
+        "Size": 1.4,
+        "Center": {
+          "1": 0.3,
+          "2": 0.53608,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.3,
+          0.53608,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.34592000000000006,
+        0.040000000000000036,
+        0.8097399999999999,
+        1.1639199999999998
+      ],
+      "layout": "large-right",
+      "notes": "Large avatar becomes head-to-chest; face drifts near x.56-.70 across cue. Background room/chat crop is intended reaction emphasis.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T15-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T15-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T15-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T15-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T15-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 16,
+      "name": "หนาวติดลบ 16 ต้องถือลาวา-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 810,
+        "end_frame": 960,
+        "subtitle_text": "โอ้โหเหี้ยบ้านพี่นี่แม่งจนสมชื่อจริงๆ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0766,
+        0.4944,
+        0.3219,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.4944,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.94925,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.94925,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.14707199999999998,
+        0.040000000000000036,
+        0.618048,
+        1.010752
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T16-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T16-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T16-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T16-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T16-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 17,
+      "name": "ถือถังลาวาไว้กันหนาว-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 2100,
+        "end_frame": 2280,
+        "subtitle_text": "เฮ้ยแล้วมันมีปุ่มตายเลยอ่ะมันเดินไม่ออกเลย"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0922,
+        0.492,
+        0.4,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.492,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.94464,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.94464,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.17702399999999996,
+        0.040000000000000036,
+        0.768,
+        1.01536
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T17-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T17-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T17-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T17-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T17-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 18,
+      "name": "พี่น้องไม่เคยช่วยอะไรเลย-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 3967,
+        "end_frame": 4118,
+        "subtitle_text": "ผู้ใหญ่บ้านชอบมาตอนสายเสมอฮ่าๆ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0922,
+        0.4944,
+        0.3375,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.4944,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.94925,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.94925,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.17702399999999996,
+        0.040000000000000036,
+        0.648,
+        1.010752
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T18-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T18-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T18-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T18-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T18-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 19,
+      "name": "อย่าใส่ร้ายผม เกือบจมลาวา-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 2394,
+        "end_frame": 2542,
+        "subtitle_text": "เฮ้ยอย่าใส่ร้ายผมนะโอ้โหผมผมผม"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.1047,
+        0.4944,
+        0.3406,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.4944,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.94925,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.94925,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.20102399999999998,
+        0.040000000000000036,
+        0.653952,
+        1.010752
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T19-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T19-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T19-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T19-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T19-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 20,
+      "name": "เจอเพชรแล้ว! ยิส!-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 3696,
+        "end_frame": 3732,
+        "subtitle_text": "เฮ้ยนี่มัน"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.1094,
+        0.4972,
+        0.3344,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.4972,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.95462,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.95462,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.210048,
+        0.040000000000000036,
+        0.642048,
+        1.005376
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T20-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T20-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T20-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T20-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T20-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 21,
+      "name": "เจอทางกลับบ้านแต่เพื่อนไปห้องน้ำ-Minecraft-vdo",
+      "selected_cue": {
+        "start_frame": 4128,
+        "end_frame": 4212,
+        "subtitle_text": "พี่จ๋าเจอทางกลับบ้านแล้ว"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.1172,
+        0.5,
+        0.3484,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.96,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.96,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.2250239999999999,
+        0.040000000000000036,
+        0.668928,
+        1.0
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T21-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T21-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T21-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T21-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T21-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 22,
+      "name": "ลุยฐานใต้ดิน เข้าได้สองทาง-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 852,
+        "end_frame": 960,
+        "subtitle_text": "มันมี 2 ทางหรอ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.8156,
+        0.5556,
+        1.0,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.59432,
+        0.040000000000000036,
+        1.0,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T22-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T22-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T22-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T22-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T22-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 23,
+      "name": "กวาดศัตรูในฐานมืด-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 1800,
+        "end_frame": 1830,
+        "subtitle_text": "อือหือ"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.7922,
+        0.5556,
+        1.0,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.54284,
+        0.040000000000000036,
+        1.0,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T23-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T23-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T23-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T23-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T23-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 24,
+      "name": "เช็กของ เซฟยัง แล้วลุยต่อ-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 5232,
+        "end_frame": 5280,
+        "subtitle_text": "โอ้ย"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.8266,
+        0.5556,
+        0.9922,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5556,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08232,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08232,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.61852,
+        0.040000000000000036,
+        0.9828399999999999,
+        1.0176800000000001
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T24-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T24-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T24-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T24-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T24-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 25,
+      "name": "Windows XP  Vista  8  ลองหมด-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 2526,
+        "end_frame": 2658,
+        "subtitle_text": "พิซซ่าเอ้ย Vista แม่งเลยพี่ของจริง"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.7953,
+        0.5583,
+        0.9625,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5583,
+      "transform": {
+        "Size": 2.2,
+        "Center": {
+          "1": -0.1,
+          "2": 1.08826,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          -0.1,
+          1.08826,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.5496599999999999,
+        0.040000000000000036,
+        0.9175,
+        1.01174
+      ],
+      "layout": "far-right",
+      "notes": "Avatar lies near right source edge. Exact horizontal centering with blank-free head-to-chest is infeasible at this moment. Safe recommended focus keeps face about x.75-.81; more centered would crop anatomy or reveal blank. Source avatar hair can already touch right edge.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T25-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T25-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T25-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T25-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T25-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 26,
+      "name": "ในที่สุดแชร์จอเหมือนคนปกติได้แล้ว-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 1200,
+        "end_frame": 1403,
+        "subtitle_text": "เลิศเนี่ยในที่สุดไอ้เหี้ยเราก็แชร์แบบแชร์จอแบบคน"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0719,
+        0.5,
+        0.3125,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.96,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.96,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.13804800000000006,
+        0.040000000000000036,
+        0.6,
+        1.0
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T26-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T26-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T26-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T26-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T26-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 27,
+      "name": "ปรับความละเอียด 1024x768 ไอ้เฮีย-alien shooter 2-vdo",
+      "selected_cue": {
+        "start_frame": 5280,
+        "end_frame": 5460,
+        "subtitle_text": "เออขำขำเฮ้ยไม่หายโอเค"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0719,
+        0.5,
+        0.3047,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.5,
+      "transform": {
+        "Size": 1.92,
+        "Center": {
+          "1": 0.96,
+          "2": 0.96,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          0.96,
+          0.96,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.13804800000000006,
+        0.040000000000000036,
+        0.585024,
+        1.0
+      ],
+      "layout": "left",
+      "notes": "Face near x.38-.45, close to center; baked donation overlay appears across lower chest. Caption/fingers need Resolve render validation.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T27-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T27-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T27-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T27-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T27-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 28,
+      "name": "ไฟต์ใหญ่ในอารีนา-League of Legends-vdo",
+      "selected_cue": {
+        "start_frame": 61,
+        "end_frame": 95,
+        "subtitle_text": "อื้ออื้ออื้ออื้ออื้ออื้อ enemy slain อื้อ frag down"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0141,
+        0.4889,
+        0.2938,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.4889,
+      "transform": {
+        "Size": 2.15,
+        "Center": {
+          "1": 1.075,
+          "2": 0.93613,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          1.075,
+          0.93613,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.030315000000000092,
+        0.040000000000000036,
+        0.63167,
+        1.138865
+      ],
+      "layout": "far-left-lol",
+      "notes": "Safe no-blank transform keeps face around left third x.31-.34 rather than exact center; horizontally centering would need stronger crop and lose chest. Upper ears/face protected.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T28-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T28-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T28-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T28-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T28-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    },
+    {
+      "canonical_ordinal": 29,
+      "name": "เสียงร้องโอ๊ยๆ-League of Legends-vdo",
+      "selected_cue": {
+        "start_frame": 1530,
+        "end_frame": 1590,
+        "subtitle_text": "โคตรแย่เลย"
+      },
+      "avatar_present_all_three_source_samples": true,
+      "bbox_xyxy_top_origin_norm": [
+        0.0297,
+        0.475,
+        0.3078,
+        1.0
+      ],
+      "bbox_method": "manually reviewed triple plus blue-hair connected component approximate silhouette; bottom fixed1 because source avatar extends to frame edge; no caption assessment from source",
+      "ear_top_norm": 0.475,
+      "transform": {
+        "Size": 2.15,
+        "Center": {
+          "1": 1.075,
+          "2": 0.90625,
+          "3": 0.0
+        },
+        "Edges": 0.0,
+        "CenterArray": [
+          1.075,
+          0.90625,
+          0.0
+        ]
+      },
+      "source_to_output_formula": "x=Cx+Size*(x-.5); yBottom=Cy+Size*(yBottom-.5)",
+      "no_blank_coverage_verified_by_math": true,
+      "predicted_bbox_top_origin": [
+        0.063855,
+        0.040000000000000036,
+        0.66177,
+        1.1687500000000002
+      ],
+      "layout": "far-left-lol",
+      "notes": "Safe no-blank transform keeps face around left third x.31-.34 rather than exact center; horizontally centering would need stronger crop and lose chest. Upper ears/face protected.",
+      "caption_risk": "Fresh Resolve render with burned live subtitle required; source triples omit timeline caption/GIF overlays.",
+      "framing_status": "SOURCE_PROPOSAL_ONLY_NOT_RENDER_QC",
+      "source_evidence_images": [
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T29-0.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T29-1.jpg",
+        "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T29-2.jpg"
+      ],
+      "source_contact_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T29-triple.jpg",
+      "synthetic_focus_sheet": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\.hermes\\artifacts\\vtuber-focus-review-2026-10-07\\source-prep-T11-T29-20261008\\T29-synthetic-focus.jpg",
+      "mcp_center_payload_note": "set_input Center must receive array [cx,cy,0], not string-index dict. Verify returned values."
+    }
+  ],
+  "synthetic_review": "All 19 synthetic start/mid/end triples visually reviewed; source-simulation only, not Resolve rendered QC."
+}

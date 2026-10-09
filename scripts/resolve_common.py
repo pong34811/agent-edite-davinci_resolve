@@ -10,11 +10,13 @@ default Windows install paths.
 """
 from __future__ import annotations
 
+import contextlib
 import os
 import sys
 
 DEFAULT_RESOLVE_DIR = r"C:\Program Files\Blackmagic Design\DaVinci Resolve"
 DEFAULT_MODULES_DIR = os.path.join(DEFAULT_RESOLVE_DIR, "ResolvePython", "lib", "modules")
+DEFAULT_SCRIPT_API = r"C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting"
 
 
 def _prepare_environment() -> None:
@@ -32,6 +34,7 @@ def _prepare_environment() -> None:
     candidates = []
     if api:
         candidates.append(os.path.join(api, "Modules"))
+    candidates.append(os.path.join(DEFAULT_SCRIPT_API, "Modules"))
     candidates.append(DEFAULT_MODULES_DIR)
     for path in candidates:
         if os.path.isdir(path) and path not in sys.path:
@@ -46,6 +49,49 @@ def connect_resolve():
         return dvr_script.scriptapp("Resolve")
     except Exception:
         return None
+
+
+def require_resolve():
+    """Return the Resolve object or exit with one clear message (for CLI scripts)."""
+    resolve = connect_resolve()
+    if not resolve:
+        raise SystemExit("Cannot connect to DaVinci Resolve (is it running with external scripting enabled?)")
+    return resolve
+
+
+@contextlib.contextmanager
+def preserved_state(resolve):
+    """Restore active project, timeline, playhead and page on exit.
+
+    AGENTS.md handoff rule: leave the user's session as found. Restoration
+    is best-effort and never masks an exception raised in the body.
+    """
+    pm = resolve.GetProjectManager()
+    project = pm.GetCurrentProject()
+    name = project.GetName() if project else None
+    timeline = project.GetCurrentTimeline() if project else None
+    tl_id = timeline.GetUniqueId() if timeline else None
+    tc = timeline.GetCurrentTimecode() if timeline else None
+    page = resolve.GetCurrentPage()
+    try:
+        yield
+    finally:
+        try:
+            cur = pm.GetCurrentProject()
+            if name and (not cur or cur.GetName() != name):
+                cur = pm.LoadProject(name)
+            if cur and tl_id:
+                for i in range(1, cur.GetTimelineCount() + 1):
+                    tl = cur.GetTimelineByIndex(i)
+                    if tl.GetUniqueId() == tl_id:
+                        cur.SetCurrentTimeline(tl)
+                        if tc:
+                            tl.SetCurrentTimecode(tc)
+                        break
+            if page:
+                resolve.OpenPage(page)
+        except Exception:
+            pass
 
 
 def api_has_method(name: str, resolve=None) -> bool:

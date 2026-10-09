@@ -8,8 +8,8 @@ The original project is never modified. Usage:
 import os, sys, json, re, time, collections
 
 sys.stdout.reconfigure(encoding='utf-8')
-os.environ['RESOLVE_SCRIPT_LIB'] = r'C:\Program Files\Blackmagic Design\DaVinci Resolve\fusionscript.dll'
-sys.path.append(r'C:\Program Files\Blackmagic Design\DaVinci Resolve\ResolvePython\lib\modules')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from resolve_common import require_resolve  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'scratch', 'split_timelines.json')
@@ -52,11 +52,10 @@ def groups():
 
 
 def build(key):
-    import DaVinciResolveScript as dvr
     G = groups()
     items = G[key]
     pname = f'{BASE}_{key}'
-    resolve = dvr.scriptapp('Resolve')
+    resolve = require_resolve()
     pm = resolve.GetProjectManager()
     resume = pname in (pm.GetProjectListInCurrentFolder() or [])
     if resume:

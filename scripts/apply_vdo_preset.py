@@ -44,14 +44,9 @@ GAP = 0.45  # s between property writes (transform setters can return False if h
 
 
 def connect():
-    os.environ.setdefault("RESOLVE_SCRIPT_API", SCRIPT_API)
-    os.environ.setdefault("RESOLVE_SCRIPT_LIB", SCRIPT_LIB)
-    sys.path.append(os.path.join(SCRIPT_API, "Modules"))
-    import DaVinciResolveScript as dvr  # noqa: E402
-    resolve = dvr.scriptapp("Resolve")
-    if not resolve:
-        sys.exit("Resolve is not running / scripting is not enabled")
-    return resolve
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from resolve_common import require_resolve
+    return require_resolve()
 
 
 def load_presets() -> dict:

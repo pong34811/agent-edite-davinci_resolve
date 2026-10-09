@@ -778,7 +778,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "1bcbc7072925f4fd734be4d600424cef607166a6c9224fdd40364647e9264363"
+      "sha256": "1e80a787016f78e3a3bad73f9efd466ed38765ffb27ae21b9d710ae3743f51df"
     },
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
@@ -1930,6 +1930,1002 @@
       "sha256": "a3277c3f273b6cea4e6d3ec5a78b60437e4093067cbe9c8c7742f1220b2f597e"
     },
     {
+      "path": "docs/superpowers/plans/2026-10-08-vtuber-focus-position-audit.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9be2f704dcfe7f54e281d5a8da5342397fe4af793beb3d574295f7a9e04f008b"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-T06-native-focus-independent-qc.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "71cce271be8114c3e3020ae69bd618042148261dff2fd19a7a6a9752558ecea8"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-T11-T29-source-focus-proposals.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a541b18756eec535f441ae13fc3e68051016963cca80c6230c1c33cdc541e8df"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "62b8e62cd562f100f1c5f2fca3075c3a4ac690ccc87f44196664bcd1c7a93104"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-plan-audit-candidates.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7d411ccc884950c03f7c02e7e91d12e86f657d8a70c0e315e24e5df7bea048f3"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-plan-audit-candidates.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d0b362dfc77945ebc40b642efa42a57419429a49e89bda1311228c11323dfb3d"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-vtuber-source-layout-30-49.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c4c4ec26182e1485b58f76bf8e2f5a3dfc0626d061d1d26742862db99e3b9a32"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4b8adb8fc44269177b35a3cde952a9fc9a84ee9998322474ae9620b10fb5b089"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d6cfa485a61ec5f9c31bdd1261a9806d275679d8647779d9a1c2e15970a34aba"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fa2f58618923c6900f3998b9858819f7981f3876029e41c7e679e94a551b4aa5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8630cb54ef4d3d604dae7d47ec06e7a9e4f44347ad9d08e6d2e0328c9cf1c9de"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0000e2cd4fa2b6dc65fab637c8005298399a87665d0f14f0f8881f6898a6481a"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "81dcb3a002a9d963c3526bc46be702cc9b1e19ad8620aec2ddb29cffde0e852a"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T30_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "123f90b757575a5716f3fdf2a3f4d6e59c980db50d35b8cf645adc97b4a8a39a"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8d629de486b831f725ebe2f9b579c791458f20e967c2c158d0efdcb095db1d1b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1a731a6aa839a8dc9f27ace866a96210125d10fc9ba5f3f28dfeb5f26c4286d1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b4a8dcd4d3ce48aea8d185060f8dfde13c04e29a91fa8c677bb9d1177a533c7b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3a498dc6b534bdac9947036c2871449ba5f4c07b2b0ccf81f48d0c8dd6dfc6a6"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "49ac4de59101500d20ed234df1869dd076aad387a277488dd7d0933ab3a3fd4d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "29b9a528bbfbb7bd137f0661cb6db3a4945a6c560b00cbff9416fd7d9543250d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T31_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9bdbd7464b2933dbe7f5e4dd69d45349ab74af63a7e4331b7a8b1cd273616018"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7ef6cf5ef4256e8c015dd5f3c10c10048e151e9dd06089a75c87427d4a329fb0"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "dce959a4a427714a2e1a06b84236ab9142efec298885b31e5f15966d73cd2525"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3b7dbf58420e1952a00a02305ff801b4b7f08707c96046527f16e96e8626e658"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0bb8075127eded6af72ecfb1317d121a4f1865a4313f045ff5b47d40141cff07"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "82f67c140348f527c512b627b44e751a23580df55371285f223d3dfebbc7848f"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "967dec848c6acaf0c83cd368e9046634e3fc1daea7be0781b40bf048f7d18cb3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T32_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2edb3cb2ee28fa5606e72b09d0c4212bda3785e0714982d5570054749a499e20"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c016b5e2ef26c3b28513ef530f32839c7356bb0b9ab4e79599b85dfd7fdfab36"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c8ffe3d764e3254cf11b1233c5a1c4bcf23d2c7329f5d6cf0c38963d803e43d3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "85a9aa1a46c662baaa1b51cd2f7501f90ca27e554c2b2db1c879aa8c8b93d310"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0f7ed3062c260f6f5cb91bd7370242228881a928ae303a287b34c20c6e7d6dcf"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "26979d91731492f1a2b3bd4f1a76e0a37304efa6e4c896be8cd408b1920c67d4"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "65200c4b18db52ad2cabc712b5e26ea8b97e9a181953c0588462b606d87170b6"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T33_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a8b2d08456ad8b7c452a97ffda82aea87f9834384b980b010a2af8bb11b25050"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d019c91e3fe137b2a3dfcdf891bff03866a99225f348cd5c0fc07494e21bb8c3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3b367b834c2a71e3717d8503ab98579266b11f380a39b69994d178d196a48a3f"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3a125d31c64df54bb5c9c1261d60a3adbc3af3a7587ffbefd745afd7e526405a"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6ea3f3de6bb9f27dfcb3995909bd53cc77baa4bff4c37a1e9e245ef091e1e439"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8cd365566102c766188f4c5e64cf1bdfdf269ae253aa3427808770da99a77f62"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4e0b703cd1ecd16c74352a230742cc07e93322d13079ea25bbd6bf77f9c138fe"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T34_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e272883d13fda80d7c5fa693483931b4e004c6d2737681ff709d27106f5c8f9c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "df1908a575efa7be4ec49241b370da7cb6ceac35b403cb1028619d47f44d09c9"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "987c2b9a6a21695d32adde860a9824f1ac063e52e21e2b9905071f1e0c6f3854"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5bc62226e11dad409b232e689c08969537406bd8e0f01f470a929ccc7f07d067"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5e01a57db5df6ac75b90393277b9c288468fe261efd8927cdfc7ccba181183b0"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4bcffa9909f0b4975879e691602c782249592660ab822bcb1ff19f777e098007"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "363d93ed01924aee0208d8fd058a6491b8efb9ee6ea37cad8983256523fe28f3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T35_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "79c0d4c372281a9ed3997723dd7969aea81455a0bd615a487c877348c57599e4"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fd7d68054a03341701b1c96f84a4da703db59ecd6a78b1fb2493860a31b9edba"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ad6f928a120124c61186ea555b78dac6812a68ccaff46fe1a822531fcc83a95c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "42aabc7869e659a39f3abb5c9a728718202604bf0627cfe26ae2cd59bff422d8"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8d2b8a125a153c66c7c2a5065513f0da3594823a267424b6366d9d805facba9b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "91390f205cd075f164c3f2bb6bcce24e27e106ceba2f43c9b4f24ae214d82329"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ef19dd73b3f2d9191d6554148362bfba67c1632515e0ad09d930bfd475190b62"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T36_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "41f3a0d972467d37279fa573aac936b2cf128b9a7938799a9b691da85d341ee1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9a18c8e9e8104b30b02338eb85924fd4c39cad5fe2cf36a67a6aca4faf7a71e7"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a04f851b711c2a665bc64b3818541aa8d4f99c88532b9a3336b3804d1feb2f67"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f8a0887b5621fb658f0d4968afaeff4fc5bd7acd9ba03a3622d95e4cc0d17f7c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f0bad6454ffb6b335672b52179b0f97c2e7784b2a9548220f5e0a2f6cedd8b91"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "27e2861f0574ae2bc59ed88715bf4b9480de52d02e7c8de5590112e019725059"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0ed0893bd2e4b50f657e3fca7f01b8cc5f752f1292dd9d91868bf04c00be8ec1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T37_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4a863a3be982757f3046ac35a95f4e170cb5645200b986a6809ff6695e81a73c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1382cc91bc999b25366000d337178bbd8f7d892227f2f817e4f0926fb5702891"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6be51f8b0cd3b8c8f6e2a515e4f141af3ff2fe0118d01662680117b29ce74dcc"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "dfe0721915848335d8233292d5f0823626e795fb5465235c9b4062acbd933dfd"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4d9ba44ed3b670f46bcdcd74df4cb14983842a0e2bef1c0b8483c8107e7044a5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7325597e43e7245bc1946856690cc66f25e08b0042bf3c8817c8b4f499d34280"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7a6bd92eda3047ef14df44a25cec007efa5b45ad74f88dbb151a05e4c396b15c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T38_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "abf90f663ba10ac4fa54054dcfc170d4a6d4fef13aa13ca6f2ecdfc9f41aefdf"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ebeb15aad59b345abb147d7ef553d1dbd65c6ecf2be019a8d87b95f30821f7f6"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "73496e65bd1429b549b442ac21b831a59a495358a0233cc4dcedd65594653f20"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3bfab4533cf4fee92249fa8691b3d7579b58c8ef1cbb45992d5a8624caada30c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f276a447c518a0780724a76891947fba6b8982555b78d1405b58f059e6a20ed5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fb15e3cf4cf209122133039304c4245d3f99eb70455538fc002c454868d30f25"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f95b97cc2b8d4c018e57b785ccc349250b7a6edfb1bf1bd6a3769004d22ff059"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T39_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "518f5d20b44e9930c8da984f25be277a7fed5fc0b88f7925e36f310f635e30ce"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9c67a66cc10c9d97dc2e6fd925f943458e8ed99ee56b60f1d6262dccfc524103"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "38ae44d9cf57c6677f6d596d4b2ddaa3480e6deb8cc59e073ad72f71ac04e45e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "093d35512f18fc7e70098421d17209d181b469e5a5023d1b53fea61ffc10b31b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c018be62080cd82ff4387df0f929d81758eaaac15b3db9fc5748e381b826a405"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "29dcb63f1baa4a9c9735441ada554a1419a2b632677d9329f23361fdb486bd45"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f0f4437f4326d5ba6461dc97b10ad50515b59fe4914e73f89620c4fc6547cf5e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T40_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "948facbae3cb20b208515c321e485e1f0f38e00dd5b7d5e8a60201d1465756e3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6276b2c10ef536c8e52b3f0487b4ca117feecff1f7a4e41cc73dbb16b060677e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1bcd37644fccbb85628ac3b275cc70e32c97c19ecd7d1c82e4050330124519e2"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4e503d1bfb265cc70ef21227e84deef58fca5a218b48b4a8b0710f6dc5fe303d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "01886ed76bad6a41a145f642b4249c34c827c8cfa2fa6a0a2929795cd655b660"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8c10c64c24fc871db88a019fa75fd09a48386ea55a46c4b44699f006ff2656e5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "21b334601782aa7be166b02f4872a604d7c85f0a5c533d520bf1e280805388b4"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T41_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8927d51457fe055470dda7e5a851ae186cbd7fc3dcba2630ad27a5278730bc95"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1d9767f0a344f9e6366ce9e2ac05889f9f8a2bd237a7d0000fc3435c76bb86bd"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6f97d09d6632fa38b87cee61bc945d3a49a6161cd2b6ea6953dcd2acccea9f54"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "dc0e204de5f9699ced4971a0ab6e13191ba56313c1c6da73b7f4fdcc982bbb6e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "dac3d3a7686e225a684b96154cbc0d464a950ca8e758b00e8521f78874c13bd5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "71ddad9e35d735b5cc84b5856921650a990233d156133351b454b26b2771aec1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "21abe3570762445040de17517aa7744c27c0f8b6ebe864d93cae6ad0ca445a46"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T42_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "bb805d7e56981aad60b91f4b39e55d62456e925fdc9c925af99df150cde06209"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0a7cfe9c947b9b04820799f28e3b510041de3750a4d90e9f424e0e5512d5f149"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "66b6253db3bdfaf8db1621e6714ba47d0f194376cea9fe5bb4f91c515ff69159"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "152cd4dc83de8c26b5693b05ff3f8924004edefd0871a0b5ada45ff86635ce5d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e6ab5669ec86330a0a3baa615357bdccbfdc37307c815e7d76ae5960dfec91b9"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e5b5597996c0a100855dcb5e92048d9511eaa9870912fb0919573c56d9600e5e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3d9cf0f0870f73e7c75a99081a3e8b69ced97f7c19384d0bd3b8da743d5fefff"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T43_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c1f5679d2aff6578ed50d598116d54f776817106a049fbe9fe607979e01bf4c1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f028bf30f1fbf95b038d0295a1251acae138cd95c1bd3fc00c71f6dd7a353973"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "086fee06fee1527fdf0a2ddfe1d566db8f79c79b0003a42154cef7966ee0aa13"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d58830868ff67cf3dd626ddb5db3e54afc55bf87fb323d66c9cef7e0733f1b10"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0f46859f43feeb17a48c5016b864b8be5c329c898a508b0ae23e8f0c6153fd28"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "da044263dd2a586a9855e6f7e9dea9368f70ff69eb88f5b8aaaf3dd9eea469cf"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d0a0c80af6279fd4929945f6e5bca3430ee22d54bab830c69d0ae42e99fc35ca"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T44_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1cc46e603719855d74f89f4275675f48f28e12388e70c9077b40bc1a2d95301d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "73964e4a459c9b3ebe705812981b29bdbf5a4fd4e127075a1481660f91f7a2c4"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a09ff7a263bd542cfef88414fa7014baa1682506c67e6b1d73d9aabbc3a47beb"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "83a59e2fbfddf4521b68e2359df923f75e021d38def2c15104e6b5761b69c72b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1da1cbca8b2974749dee9ba29562f1ec0bd3fa39ec7d1f096bd7f5a4f905e817"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6e7be2f12e22f086f90060017f823467e51ac3031d1f94a634dbe9baa21153c7"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9e4bb725c2471802bad834679e4fcd3d3cf8df2a52abf4651da3a895adf25377"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T45_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "22b795bf14c83bd07059f8ece77df786a09c387c2d719f31f4bd68b27370423d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ab02a94fa81f75bedbea2f48567823d5b7c527908f6241f9ef8c163ab17dc958"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "494a75decb59d1847a5bc943602d8eeee7151367d5a596aeb16b9ab0b1afe3d0"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f9520cad0e2497338544872cf4dc995f3b0f57a5674fa03884f1f5ff23dea133"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5039c50124f8779925ace3799c94fac48258164645a32aced0709b58ed8cc2e9"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a17ab57439ee7f54b2e8b5091a0df2d195b88bb832fd6c360bb829ecfcf0bd41"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "06e24f404fe95c176d6d15786b408410ff3ba84b5d6cc4fd049a98a7e70982fe"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T46_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1bc2f806e3bb35249fb7e40e0b2db9e09a7f450f060fd2701e7e6c517abc1cad"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "08bff0ed9b5db648f5c0c141f7c02987a780ef516614075f4b81bc829ccc5620"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "07374bc7bdf55e4f65020afc96b1838565034e3e547ded2847b5693a85fb43d2"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a04e5407ac313df7c4aa7d9ffb2867e456ec6b9da0b32273f1716177a10132cc"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "df3a7094902de4edac881e649bcebdc1ed9193d75d1a1338b5b89683914d5aef"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b258c131e9691835c828d3aaa5a3191ed03d317e1c70bcf28e0a681f3b4a79ee"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ea271d57b4c240c711f73dc2da058b5e472685b144d0707d6e9d2340f6d9c57b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T47_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ba2ac9c24ad1e3eaf1187c1d42895c981aa72a07f2e89cb4787bfbe249f8a9af"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e5b971d76ca4f1d62c83da1aba5f09bbc5803f91acfdcae2f1408052a7c98d6e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ed67ffa3816de51d749b38b4460c80a5a29ee580e2ac43c06d8c3f9d10318aee"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f6bb8afca6f3901eae95f6b61e4a303a10db024e395d1a23ee2c79abafe0e1a4"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "68572dd81d2c935f25e9b586f8d85ec9b2287273feafa69c8e5f8e17f50fb808"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e1f27117103f66b8eaf59cdf49720c0894e01a774967eb13ccd9c92175c86a49"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "65b787b1fa6a178579c45ac74786b6bd02ed5fad98a800d37b5a115262e27ad2"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T48_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b181c08cf40e00d7edb6b9186b884265d9b3b4178206baea34bb25e0ec19643c"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3baa4c4493bdc743d22877474ee2fff0d642c69b7d7e86a197bf453790080400"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a907ad426e29876dd439453907886d2ac64c63ee5b2968fe0de3ca5bdc031795"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "cc4a7de47b33f5d308ec4c961a623ecd1689e9638142848eb5df696232201ff3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c0728a0fca8edf96b1d4100556b2cd330f4d90aecde23a63557dad953ce2577b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "69302371833061e3a2bd35a4ec65ae3abf532c5535df293c88b0819ee474739e"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "af371c8c63fe41d03884e4ebe180c016d2cb8356f7cb9d63960de66c9a51a0f2"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_1200.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0920b19f03edca729e012e19122e8bb6699c3be5c94096e2f06b1fc8282bf9a2"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_2106.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "744ea3906dd8ba9c9361d65f2f4005a07cc5636f48d492860868b97d9881a7f3"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_2302.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9608cbf181b9d7d182554f8c2cabf8807fede602fbba44b2297cb047ba7d77ff"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_2400.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "dd4fabe0197f29cbd21aa47364ccfef5f86e2e31ddcfe719b3a41bce04469ec0"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_3600.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "917cb232149d3fa994cf5d23c80cfcfbcf52289f7eb75b8f2a89dfc3f8708af5"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_4800.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "41dbf29b061e95bff64c24efce7231a11055b3cd12b2b90b050b8637cb2f3f90"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_6000.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "40be3a01751486413d461c3bd62e31144294e01d07316393d1db399c36e3a4cb"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_623.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8541687f140fd20bd43260f697f98beb1584242e607be0b609267890a080face"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alt_814.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2eba765dea93b19784ca8f83f58a40bddfd6cadeab8463b2bd411217bb14d174"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_alternatives.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "992f3d34e09147c9e99c210133f05f1239cef6404e7ff47e5787b331ed414726"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7d2297369bf42c3a69f2609fc106506c242955593f33c9663544375dce72dc40"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_0.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6364fc5a301e097f8c6b9e55231c8cbc25dd29d6809823839b6f766c857be70d"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_1.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9ca7fc5a91d6f88721ec729f8056dfc6dab4a1e88ed710422a372a26bb113819"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_2.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "97d3625d37be41fddee614123a7d2b802692b70da3c95d1296e5cc7f6b9f9b4b"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_3.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "81c8c47b126d902b9aefb1c959c20baeb75f69125406f9e06b5f210e41331fc1"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_4.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d38a75f90810dd6795e6499cff0ade3283e746795552c9737db3b39a5755193a"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_motion.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d3cc1997a6486c056ff337e7b46c17e728e42b00e154aa9709aee0b2f45b64d8"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_new_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6fc623a7b3931e43666428721277167fef45330ddfc48233534cd872ee784749"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/T49_sheet.jpg",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "74ceeead20a4249639724a0abd113e9701c0d2561f3ea832e86d0402fb842e6f"
+    },
+    {
+      "path": "docs/superpowers/reports/layout-30-49-evidence/manifest.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ea502c6b5320b89d96f47fe3bcfbfc5ac0a1f3160ecbf30f5972cc8e100e6b13"
+    },
+    {
       "path": "docs/superpowers/specs/2026-09-30-kt404-video-enrichment-design.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -1984,6 +2980,12 @@
       "sha256": "c942d6dd81816e09e52c41f08ab80c76f5add3d610f9054cdc94c8512cc02f92"
     },
     {
+      "path": "scripts/README.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0b169e98ffd9209805eef65646a61f30394ab1b13b2645de8469e6205d715579"
+    },
+    {
       "path": "scripts/analyze_review_previews.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -1996,6 +2998,18 @@
       "sha256": "97c22f72e5133994da52b3c8a3e9674a7228b025a35b17a897b54f1a3455bae2"
     },
     {
+      "path": "scripts/apply_bottomleft_candidates.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "87ab30916c64fb32a57b8f01c5dfea640b4235398bb9b58ffbaad905d3f1f60a"
+    },
+    {
+      "path": "scripts/apply_focus_candidate.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a65a5f04dd138036e50f6e02f359a465914b74346443d26ea1d1d16a7fecc87d"
+    },
+    {
       "path": "scripts/apply_offline_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -2005,7 +3019,7 @@
       "path": "scripts/apply_vdo_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6c159b21ed044bbb6ebe8b6166d3e8d4f7450ac3a0ee4552a47c120039d3f7af"
+      "sha256": "d07196e0e5e0f2c17971e35697aa306352f331b23f0b7ab14138049cce522c59"
     },
     {
       "path": "scripts/apply_vdo_python.py",
@@ -2018,18 +3032,6 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "091a4ec86b3f76367660933a3bd9776af7501d715849608327bf34ab183a6055"
-    },
-    {
-      "path": "scripts/audit_draft_copies.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "8e60893117e51cfd1389a1a3dc31970b5f962ba9ad4cc3dadfd2cf103a7aba4e"
-    },
-    {
-      "path": "scripts/audit_promotion.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "0c408b237d388fed38399f8865c9981f2ed876b8617533530c863a489c750ad4"
     },
     {
       "path": "scripts/build_offline_asset_draft.py",
@@ -2058,12 +3060,6 @@
       "sha256": "ba5b017830b598feb7991340f24d34ee10a36c8c6cc4e272760015c74980dbb5"
     },
     {
-      "path": "scripts/delete_draft_copies.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "ca31301d713eb4dd8228841246f035e088da691e55eb726d51e8f36cf3d9b6c8"
-    },
-    {
       "path": "scripts/enrich_timelines_python.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -2082,22 +3078,28 @@
       "sha256": "6bb02bced3975b22f60e2438234e25319565cd1d60fb745c5c60d1e1baf10847"
     },
     {
-      "path": "scripts/export_enrichment_backup.py",
+      "path": "scripts/focus_apply_batch.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0a89b10df1143780e0b4427128993bd3896b2805ef86a7b15cb6f9ec334e042b"
+      "sha256": "4a9f2699bef81988b60dfdbc4685ea98831670f12515c65bf0c35b86c4eed855"
     },
     {
-      "path": "scripts/finish_timeline1.py",
+      "path": "scripts/focus_set_transform.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5fb3e0ef46f5226c52fcd5ed69b4ebff87ff6b0602513a1ba6f1af6bd5c77cda"
+      "sha256": "f31fbd8310919d0f13d5e171e10fe2389c058938392cdaadc46fcfa2307c4af8"
+    },
+    {
+      "path": "scripts/focus_tune.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3c210b3932fdb32d6ec0cee9ce8ff9ba8f8f605e8d4d37197083fda38fbfb60e"
     },
     {
       "path": "scripts/load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "dcfe0059b1b276ceeb81230183aa0b9b7fb6f7df28b4e8fe5d6121e424daf2b6"
+      "sha256": "a1b34772fca8c08906ef425a8dc3c3f571a4d3aafbd910a7a746301f9137911c"
     },
     {
       "path": "scripts/promote_drafts_to_originals.py",
@@ -2106,16 +3108,16 @@
       "sha256": "b0830814e5fc3802f953d648724f5ffc53e1701ecd0be1ec4497878b61ed4ff4"
     },
     {
-      "path": "scripts/reapply_pilot_original.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "58aac2d069530294676b36b3609b926ebd669a1b3a27405cc96dc25d8177d18c"
-    },
-    {
       "path": "scripts/refresh_skill_manifest.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "4bdb818530f04509b687e6ed11f38b213f02dd9a8bcc0d69eeabb2f87887878e"
+      "sha256": "ff56d11085666de64266b42536f2095e5e3317aa565daedc951cdc4f89d05cac"
+    },
+    {
+      "path": "scripts/render_bottomleft_batch.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c1a57f92e78570535d491e08f801c8c7ace61d286c5a3f1bbaf5d365a82f22d4"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -2124,22 +3126,40 @@
       "sha256": "e4b8f8dd133beaeb12d7c77670a15ab2b34129980cf0071150d222e24fef13e0"
     },
     {
+      "path": "scripts/render_headroom_tune.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6e99edf9873865b74a8cc039f0d5fc16ce3917457077e3301559d387772a3b5d"
+    },
+    {
+      "path": "scripts/render_lowerleft_16_42.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f22664678787fdcfa69dfa7bbf69bc70ba379e4ede59d6d7e123564aa659c6d9"
+    },
+    {
       "path": "scripts/render_review_previews.py",
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "241c09b2ad7046dad2cd2220028bfbbb64a05b3473fa3b1816fbb3cf46fd1a1a"
     },
     {
+      "path": "scripts/render_t02_candidate.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ae71aae6a47421549103b5dc294f673729d587d02fdf427d619eec832056ba2d"
+    },
+    {
       "path": "scripts/resolve_common.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f8a5efcb0591879dd97a8d7b78fa31d073552893ff14a0fc2754cc04265bbb77"
+      "sha256": "5aedfdb295b40555eeeaed91d2250a58bbfc677c9c52a2970c7da92dd385c6c1"
     },
     {
       "path": "scripts/resolve_preflight.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "05eb598d340d2ab03a4977d11a1ea12b4a14381f82a3b9706cad99e69004d60d"
+      "sha256": "85c9620fc6ab81f1f093be823f54868dd94d3c62f952b8270a91e4f067c54b90"
     },
     {
       "path": "scripts/review_enrichment_readonly.py",
@@ -2148,34 +3168,16 @@
       "sha256": "969b37fb1089701d3670877953d592e8dc3d6fe5d184950f49fb1d37db1c617d"
     },
     {
-      "path": "scripts/run_draft_batches.sh",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "e315933067bbfdbe6b41e66dcbc97d7c0886fe7329ee881eb8449ef654a24df9"
-    },
-    {
       "path": "scripts/run_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "4a5a7ddd43beb97b398acedef1bffa09704770b5132b49213de6154774a90b37"
     },
     {
-      "path": "scripts/run_promotion_batches.sh",
+      "path": "scripts/tune_focus_headroom.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f488283936982c81be635fe5227c75fabc55ca2d095c9c78ae30bc5807b6717a"
-    },
-    {
-      "path": "scripts/smoke_alternative_video.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "1e24c3137db2ab4673009c23679c91b2381f801d0fac02d1cf01a8d0084a30c1"
-    },
-    {
-      "path": "scripts/smoke_offline_review.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "eef502c23d894298aeb2b9efd448acaff426db96aafeceb3f45a59146805e07e"
+      "sha256": "2a66b0f603cd435e7d90370dd8e0d519b8193581a8bcfe9c99682d627b979dfa"
     },
     {
       "path": "scripts/verify_review_resume.py",
@@ -2266,6 +3268,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "5a65d10b208a1267ceb91ebe410006e1337f6c265c8c0da8a8a7ae7aef567029"
+    },
+    {
+      "path": "tests/test_resolve_common.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "d513efc8f40980b3c4236017e62db535b2dde4be5924e8d62253a29564784beb"
     },
     {
       "path": "tests/test_resolve_preflight.py",
@@ -2479,13 +3487,93 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 237
+    "manifest_files": 405
   },
   "bundle_version": "0.7.0",
   "excluded_repository_paths": [

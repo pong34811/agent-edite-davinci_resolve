@@ -111,12 +111,24 @@ def evaluate(need, mcp_config=DEFAULT_MCP_CONFIG, catalog_dir=None,
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--need", required=True, help="MCP 'tool' or 'tool.action', or an API method name")
+    ap.add_argument("--list-tools", action="store_true", help="list MCP tools in the saved catalog and exit")
+    ap.add_argument("--need", help="MCP 'tool' or 'tool.action', or an API method name")
     ap.add_argument("--catalog-dir", help="dir of MCP tool schemas (env RESOLVE_MCP_CATALOG)")
     ap.add_argument("--mcp-config", default=str(DEFAULT_MCP_CONFIG))
     ap.add_argument("--probe-api", action="store_true", help="connect to Resolve and probe the scripting API")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args(argv)
+
+    if args.list_tools:
+        cat = Path(args.catalog_dir) if args.catalog_dir else default_catalog_dir()
+        if not cat.is_dir():
+            print(f"MCP catalog directory not found: {cat}")
+            return 2
+        for f in sorted(cat.glob("*.json")):
+            print(f.stem)
+        return 0
+    if not args.need:
+        ap.error("--need is required unless --list-tools is used")
 
     api_has = None
     if args.probe_api:

@@ -341,20 +341,9 @@ def verify_db(project_db: Path, timeline_ids: list[str], style: bytes, expected_
 # Resolve bridge
 # --------------------------------------------------------------------------
 def connect_resolve():
-    os.environ.setdefault("RESOLVE_SCRIPT_API", SCRIPT_API)
-    os.environ.setdefault("RESOLVE_SCRIPT_LIB", SCRIPT_LIB)
-    mod = os.path.join(os.environ["RESOLVE_SCRIPT_API"], "Modules")
-    if mod not in sys.path:
-        sys.path.insert(0, mod)
-    lib_dir = os.path.dirname(os.environ["RESOLVE_SCRIPT_LIB"])
-    if hasattr(os, "add_dll_directory") and os.path.isdir(lib_dir):
-        os.add_dll_directory(lib_dir)
-    import DaVinciResolveScript as dvr  # noqa: E402
-
-    resolve = dvr.scriptapp("Resolve")
-    if not resolve:
-        raise SystemExit("Cannot connect to DaVinci Resolve (is it running with scripting enabled?)")
-    return resolve
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from resolve_common import require_resolve
+    return require_resolve()
 
 
 def timelines_by_id(project) -> dict[str, object]:
