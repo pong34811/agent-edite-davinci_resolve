@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.9.0
+
+### Added
+- `scripts/caption_lint.py`: ตรวจ SRT ภาษาไทยแบบ read-only ตามกฎซับสั้น (ไม่เกิน 14 อักษรไทยและ 1.5 วินาทีต่อ cue, ไม่เว้นวรรคระหว่างอักษรไทย, ไม่เกิน 2 บรรทัด) คืน exit code 1 เมื่อมีข้อผิดกฎ; ชี้จาก `thai-subtitles-resolve`
+- `scripts/backup_drp.py`: `export_verified` / `verify_drp` สำหรับ export `.drp` แล้วตรวจว่าไฟล์ไม่ว่างและเป็น zip ที่สมบูรณ์
+- `tests/conftest.py`: ข้ามเทสต์ `test_m1_*` ที่ต้องมี Resolve จริง เว้นแต่ใส่ `--live`
+- `tests/test_caption_lint.py`, `tests/test_backup_cleanup.py`
+
+### Fixed
+- `scripts/cleanup_backups.py`: เดิมลบ `.drp` ทุกไฟล์ในโฟลเดอร์ รวมถึงไฟล์ rollback (`pre-enrichment`, `before_promotion_`) เพราะ `KEEP_MARKERS` / `DELETE_PREFIXES` ไม่ถูกใช้และ `--keep-rollback` ไม่ทำอะไร; ตอนนี้ลบเฉพาะชื่อที่ขึ้นต้นด้วย `before_python_batch_` / `before_python_vdo_` เท่านั้น ไฟล์อื่นรายงานเป็น kept / skipped_unmatched (ยังเป็น dry-run ถ้าไม่ใส่ `--confirm`)
+- `scripts/promote_drafts_to_originals.py`: เดิมเขียน report ทับก่อนอ่านสถานะรอบก่อน ทำให้ตรวจ "promoted_verified" ไม่เคยได้ผล; ตอนนี้อ่านก่อน, คงรายการ `added` เดิม และ dry-run ไม่ลบบันทึกการ promote ที่ยืนยันแล้ว
+- `scripts/focus_apply_batch.py`, `scripts/focus_tune.py`: เพิ่ม bootstrap path ให้รันตรงด้วย `python scripts/<ชื่อ>.py` ได้ (เดิมได้ `ModuleNotFoundError`; `python -m scripts.<ชื่อ>` ใช้ได้อยู่แล้ว)
+- `scripts/resolve_common.py`: `preserved_state` คืน Media Pool folder ด้วย และรายงานบน stderr เมื่อคืนค่าขั้นใดไม่สำเร็จ แทนการกลืน exception เงียบๆ
+- ลบ import / ตัวแปรที่ไม่ใช้ (pyflakes สะอาด)
+
+### Removed
+- ย้ายออกไป `Desktop/_archive-davinci-cleanup-2026-10-09/scripts-review-2026-10-09/` (ไม่ได้ลบ): สคริปต์งานครั้งเดียว `render_t02_candidate`, `render_lowerleft_16_42`, `render_bottomleft_batch`, `render_headroom_tune`, `apply_focus_candidate`, `apply_bottomleft_candidates`, `tune_focus_headroom`, `focus_set_transform`; ชุดย้าย 9:16 รอบ M2/M3 `m2_convert_pilot`, `m3_convert`, `calibrate_crop`, `calibrate_zoom`, `compare_invariants`, `survey_sources`, `export_source_stills`, `layout9x16`, `split_projects`, `challenger_m2_1_results.json`; และเทสต์ live `test_m2_*`, `test_m3_*`
+- `AGENTS.md`: เพิ่มหมวด Allowed tools (เฉพาะ Resolve MCP และ Resolve Python) พร้อม tool inventory
+
+### Validation
+- `python scripts/verify_skill_bundle.py` — `errors: []`
+- เทสต์: 114 ผ่าน, 21 ข้าม (live), 1 ล้ม (`test_review_analysis_budget` ต้องใช้โมดูล `agent` ที่ไม่มีในเครื่อง ล้มอยู่ก่อนหน้านี้แล้ว)
+- ยังไม่ได้ทดสอบสคริปต์ที่แก้กับ Resolve จริง
+
 ## v0.8.0
 
 ### Added

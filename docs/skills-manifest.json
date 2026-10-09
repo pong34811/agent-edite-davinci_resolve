@@ -966,7 +966,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "a434cc496496c5bb6cb3e0dcf9f440d6b0b0bc4263e7c7ca75bb651bb5c89119"
+      "sha256": "48244cda0f7b9faf2b155637e50b1bf5f284f2613bac4b9b294b7992a1e045c5"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -1004,12 +1004,12 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e11b44a5a4c9e0be369458feab5e48d2298dd8e5218e3b8143b9d169225f6b57"
+      "sha256": "b6071645aed60f4351699ccba2cc19e1d72a4acadb20660d008b58eefdc36e5a"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "20f00828a040a1f102bdba06a2dee6d42a963815af0b5bd6b846683c25b639b4",
+      "sha256": "7f769227441c52cca4261fcf7977e63e0f8d1527da8a7bcc9007ab7458dc33de",
       "kind": "integration_or_validation"
     },
     {
@@ -1021,7 +1021,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef",
+      "sha256": "03627dfd7695e0e68ca0cb329b30582a35c49384d98227536edca14080eea08b",
       "kind": "integration_or_validation"
     },
     {
@@ -2983,7 +2983,7 @@
       "path": "scripts/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0b169e98ffd9209805eef65646a61f30394ab1b13b2645de8469e6205d715579"
+      "sha256": "3578d76f79999a71da40cc22a5b61571ca424d1d8535bc93b1418c04368b5649"
     },
     {
       "path": "scripts/analyze_review_previews.py",
@@ -2998,18 +2998,6 @@
       "sha256": "97c22f72e5133994da52b3c8a3e9674a7228b025a35b17a897b54f1a3455bae2"
     },
     {
-      "path": "scripts/apply_bottomleft_candidates.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "87ab30916c64fb32a57b8f01c5dfea640b4235398bb9b58ffbaad905d3f1f60a"
-    },
-    {
-      "path": "scripts/apply_focus_candidate.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "a65a5f04dd138036e50f6e02f359a465914b74346443d26ea1d1d16a7fecc87d"
-    },
-    {
       "path": "scripts/apply_offline_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3019,7 +3007,7 @@
       "path": "scripts/apply_vdo_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d07196e0e5e0f2c17971e35697aa306352f331b23f0b7ab14138049cce522c59"
+      "sha256": "cbc8c95132fcc259cf88f7d4fdb2dd269b49e9078563977172a784cd32df75d7"
     },
     {
       "path": "scripts/apply_vdo_python.py",
@@ -3034,6 +3022,12 @@
       "sha256": "091a4ec86b3f76367660933a3bd9776af7501d715849608327bf34ab183a6055"
     },
     {
+      "path": "scripts/backup_drp.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "93ec0d1e98b5e8c9f59af87c6ad48e885a2c2e7fcff2e66d4988713f176219ed"
+    },
+    {
       "path": "scripts/build_offline_asset_draft.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3046,10 +3040,16 @@
       "sha256": "03f6cfe937983ce69eb0923517def9953597cc6b1a7f2cb3c7c2e37233b93e8b"
     },
     {
+      "path": "scripts/caption_lint.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ed1996f5b7c67d4bc0ff51d5c83f5d2b86538d4266b2ed0029dc14048d802e46"
+    },
+    {
       "path": "scripts/cleanup_backups.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a5efbc6234a016793403537679b3a8d38e2af71a7a84a4344b6f35db208fcceb"
+      "sha256": "6ec1cfab9e4e1dce08faf7e87e72ea88ff972ac9a5867c101b2582f8673f50b7"
     },
     {
       "path": "scripts/contact_sheet.py",
@@ -3069,55 +3069,43 @@
       "path": "scripts/enrichment_assets.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "48e75f3ad1e49e626489f230e107860c48630c821c64f34d1176c61c48a3ed72"
+      "sha256": "cbe8eea044725a2325fed3defe35818373925b92eb256c488b9174708a4483fd"
     },
     {
       "path": "scripts/enrichment_engine.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6bb02bced3975b22f60e2438234e25319565cd1d60fb745c5c60d1e1baf10847"
+      "sha256": "f90dee082c99e64e44d5779012b793a746f811be2aa2db0934bdc6360cf4fda5"
     },
     {
       "path": "scripts/focus_apply_batch.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "4a9f2699bef81988b60dfdbc4685ea98831670f12515c65bf0c35b86c4eed855"
-    },
-    {
-      "path": "scripts/focus_set_transform.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "f31fbd8310919d0f13d5e171e10fe2389c058938392cdaadc46fcfa2307c4af8"
+      "sha256": "fba2e7fef493b47ffc34c4bc6993db5252f95c92c4c3c1221ce2919ee09b92f3"
     },
     {
       "path": "scripts/focus_tune.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3c210b3932fdb32d6ec0cee9ce8ff9ba8f8f605e8d4d37197083fda38fbfb60e"
+      "sha256": "2984b4f5358d1c861cfda8806753ecbd1dc4c07ba3459ab9b04d5304c1ddedfa"
     },
     {
       "path": "scripts/load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a1b34772fca8c08906ef425a8dc3c3f571a4d3aafbd910a7a746301f9137911c"
+      "sha256": "6b97a6c5fa806a84fd06c499679079d179596ce36337d46effff6a32aa0cdcfe"
     },
     {
       "path": "scripts/promote_drafts_to_originals.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0830814e5fc3802f953d648724f5ffc53e1701ecd0be1ec4497878b61ed4ff4"
+      "sha256": "cb392f6ac2b65ce108e7ec984a39e152cbe6cc5735085a13c8d27051b17aabd2"
     },
     {
       "path": "scripts/refresh_skill_manifest.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ef1e620283732db5e648329a328a8e84638d25663902e7f744418355f008c087"
-    },
-    {
-      "path": "scripts/render_bottomleft_batch.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "c1a57f92e78570535d491e08f801c8c7ace61d286c5a3f1bbaf5d365a82f22d4"
+      "sha256": "5c06d2d7432b20297164b00575084ba74e6aa052aca8e4ff9670924589dcdaf8"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -3126,34 +3114,16 @@
       "sha256": "e4b8f8dd133beaeb12d7c77670a15ab2b34129980cf0071150d222e24fef13e0"
     },
     {
-      "path": "scripts/render_headroom_tune.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "6e99edf9873865b74a8cc039f0d5fc16ce3917457077e3301559d387772a3b5d"
-    },
-    {
-      "path": "scripts/render_lowerleft_16_42.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "f22664678787fdcfa69dfa7bbf69bc70ba379e4ede59d6d7e123564aa659c6d9"
-    },
-    {
       "path": "scripts/render_review_previews.py",
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "241c09b2ad7046dad2cd2220028bfbbb64a05b3473fa3b1816fbb3cf46fd1a1a"
     },
     {
-      "path": "scripts/render_t02_candidate.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "ae71aae6a47421549103b5dc294f673729d587d02fdf427d619eec832056ba2d"
-    },
-    {
       "path": "scripts/resolve_common.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5aedfdb295b40555eeeaed91d2250a58bbfc677c9c52a2970c7da92dd385c6c1"
+      "sha256": "3cc4e7cbff8d9c9d65cdc0b5df6307398a59ac3a02ccc13cc7ad96f67ba6dbcd"
     },
     {
       "path": "scripts/resolve_preflight.py",
@@ -3171,13 +3141,7 @@
       "path": "scripts/run_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "4a5a7ddd43beb97b398acedef1bffa09704770b5132b49213de6154774a90b37"
-    },
-    {
-      "path": "scripts/tune_focus_headroom.py",
-      "source": "project-authored",
-      "kind": "project_helper",
-      "sha256": "2a66b0f603cd435e7d90370dd8e0d519b8193581a8bcfe9c99682d627b979dfa"
+      "sha256": "70a0e558f9447379b40b1c0065d3d3a534263859ee6a25c5f3eac456081bb792"
     },
     {
       "path": "scripts/verify_review_resume.py",
@@ -3198,6 +3162,12 @@
       "sha256": "b74789981a314023d8166b2326d75a1ca0dc86e2ef7948978042f5bafc409e15"
     },
     {
+      "path": "tests/conftest.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "5175c765a491e2633e6cc4a2e78d9a36b9a586693459df1d230844e35141e1da"
+    },
+    {
       "path": "tests/test_apply_vdo_python.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -3208,6 +3178,18 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "2a82e46deedf67e3876415bef6928d5a5dd581ee14ddaff80bd1987df89506f2"
+    },
+    {
+      "path": "tests/test_backup_cleanup.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "3d8e114e44f1901fa2c557d1546e28b08484887d481e326f923f8baf47cfb9fb"
+    },
+    {
+      "path": "tests/test_caption_lint.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "c7c372353cf5ffb11a4a0d614e7ec415e4868dbb962bfd4d91cc1d33996d83a3"
     },
     {
       "path": "tests/test_contact_sheet.py",
@@ -3627,15 +3609,95 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 405
+    "manifest_files": 402
   },
-  "bundle_version": "0.8.0",
+  "bundle_version": "0.9.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",

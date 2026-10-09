@@ -286,7 +286,7 @@ def run_pilot(
     }
 
     plan = plan_timeline_enrichment(tl_info, catalog)
-    print(f"Plan generated:")
+    print("Plan generated:")
     print(f"  BGM: {plan.bgm_item.asset_name if plan.bgm_item else 'None'} on A{plan.bgm_item.track_index if plan.bgm_item else 'N/A'}")
     print(f"  SFX: {len(plan.sfx_items)} cues on A2")
     print(f"  GIF: {len(plan.gif_items)} overlays on V2")

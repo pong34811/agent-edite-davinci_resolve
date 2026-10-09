@@ -6,8 +6,6 @@ Enforces video parameters (V2, ZoomX=0.55, ZoomY=0.55, Pan=0, Tilt=0)
 and audio parameters (A2 SFX=-11.0 dB, A3 BGM=-23.0 dB with fades).
 """
 
-import os
-import sys
 import time
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Tuple

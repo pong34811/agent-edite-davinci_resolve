@@ -33,7 +33,6 @@ import datetime as _dt
 import glob
 import json
 import os
-import shutil
 import sqlite3
 import struct
 import sys

@@ -10,7 +10,6 @@ Provides functions to:
 
 import os
 import sys
-from pathlib import Path
 from typing import Dict, List, Optional, Any
 
 SFX_ROOT = r"G:\My Drive\Projects\2.1_sfx"

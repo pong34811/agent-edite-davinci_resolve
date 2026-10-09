@@ -42,6 +42,11 @@ Use this skill when an SRT is already in the Media Pool, when the user asks
 “ใส่ subtitle track”, “จัดฟอนต์”, or “โหลด preset”. Do not retranscribe audio
 or regenerate cues for an insertion/style-only request.
 
+Before importing a Thai SRT, lint it offline: `python scripts/caption_lint.py <file.srt>`
+(at most 14 Thai characters and 1.5 s per cue, no spaces between Thai characters;
+exit code 1 on any violation). It only reports; splitting or flagging text stays an
+editorial decision.
+
 Read `references/srt-insertion-and-presets.md` for the complete procedure:
 
 1. Discover the live project/timeline IDs, exact build, timeline and playback

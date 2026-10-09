@@ -70,6 +70,8 @@ def activate(project, timeline):
 
 def promote(r, project, row, copy_tl, dry_run):
     report_path = ART / 'promotion' / f'{row["ordinal"]:02d}.json'
+    # Read the previous run BEFORE this run overwrites the report file.
+    previous = json.loads(report_path.read_text(encoding='utf-8')) if report_path.exists() else {}
     original = next(project.GetTimelineByIndex(i) for i in range(1, project.GetTimelineCount() + 1)
                     if project.GetTimelineByIndex(i).GetUniqueId() == row['timeline_id'])
     report = {'ordinal': row['ordinal'], 'original_id': row['timeline_id'], 'original_name': row['name'],
@@ -94,18 +96,17 @@ def promote(r, project, row, copy_tl, dry_run):
     report['plan'] = plan
     report['status'] = 'dry_run' if dry_run else 'applying'
     report_path.parent.mkdir(parents=True, exist_ok=True)
+    if dry_run and previous.get('status') == 'promoted_verified':
+        return report  # a dry run must not erase the record of a verified promotion
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     if dry_run:
         return report
-    before = contents(original, counts)
     # Idempotent rerun: reuse only a fully promoted, verified original.
-    already = {(a['name'], a['record']) for a in report.get('added', [])} if report.get('status') == 'promoted_verified' else set()
-    if report_path.exists():
-        previous = json.loads(report_path.read_text(encoding='utf-8'))
-        if previous.get('status') == 'promoted_verified':
-            already = {(a['name'], a['record']) for a in previous.get('added', [])}
+    already_added = previous.get('added', []) if previous.get('status') == 'promoted_verified' else []
+    already = {(a['name'], a['record']) for a in already_added}
     plan = [p for p in plan if (p['name'], p['record']) not in already]
     report['plan'] = plan
+    report['added'] = list(already_added)
     pool_media = project.GetMediaPool()
     locks = []
     try:

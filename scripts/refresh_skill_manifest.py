@@ -105,7 +105,7 @@ def main():
         {'path': '.gitignore',
          'reason': 'Ignore the local .hermes working-artifact tree alongside other scratch dirs.'},
     ])
-    manifest['bundle_version'] = '0.8.0'
+    manifest['bundle_version'] = '0.9.0'
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'files': len(manifest['files']), 'changed': len(changed),
                       'changes': changed[:40]}, ensure_ascii=False, indent=2))

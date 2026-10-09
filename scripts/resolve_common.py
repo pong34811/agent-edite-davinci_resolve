@@ -59,12 +59,17 @@ def require_resolve():
     return resolve
 
 
+def _warn(message: str) -> None:
+    print("WARNING (preserved_state): " + message, file=sys.stderr, flush=True)
+
+
 @contextlib.contextmanager
 def preserved_state(resolve):
-    """Restore active project, timeline, playhead and page on exit.
+    """Restore active project, timeline, playhead, Media Pool folder and page on exit.
 
     AGENTS.md handoff rule: leave the user's session as found. Restoration
-    is best-effort and never masks an exception raised in the body.
+    never masks an exception raised in the body, but a step that cannot be
+    restored is reported on stderr instead of being swallowed silently.
     """
     pm = resolve.GetProjectManager()
     project = pm.GetCurrentProject()
@@ -72,6 +77,12 @@ def preserved_state(resolve):
     timeline = project.GetCurrentTimeline() if project else None
     tl_id = timeline.GetUniqueId() if timeline else None
     tc = timeline.GetCurrentTimecode() if timeline else None
+    folder = None
+    try:
+        folder = project.GetMediaPool().GetCurrentFolder() if project else None
+    except Exception as exc:
+        _warn("cannot read Media Pool folder: %r" % (exc,))
+    folder_id = folder.GetUniqueId() if folder is not None and "GetUniqueId" in dir(folder) else None
     page = resolve.GetCurrentPage()
     try:
         yield
@@ -80,18 +91,26 @@ def preserved_state(resolve):
             cur = pm.GetCurrentProject()
             if name and (not cur or cur.GetName() != name):
                 cur = pm.LoadProject(name)
+                if not cur:
+                    _warn("could not reload project %r" % (name,))
             if cur and tl_id:
+                restored = False
                 for i in range(1, cur.GetTimelineCount() + 1):
                     tl = cur.GetTimelineByIndex(i)
                     if tl.GetUniqueId() == tl_id:
-                        cur.SetCurrentTimeline(tl)
+                        restored = bool(cur.SetCurrentTimeline(tl))
                         if tc:
                             tl.SetCurrentTimecode(tc)
                         break
-            if page:
+                if not restored:
+                    _warn("timeline %s not restored" % (tl_id,))
+            if cur and folder is not None:
+                if not cur.GetMediaPool().SetCurrentFolder(folder):
+                    _warn("Media Pool folder %s not restored" % (folder_id,))
+            if page and resolve.GetCurrentPage() != page:
                 resolve.OpenPage(page)
-        except Exception:
-            pass
+        except Exception as exc:
+            _warn("restore failed: %r" % (exc,))
 
 
 def api_has_method(name: str, resolve=None) -> bool:

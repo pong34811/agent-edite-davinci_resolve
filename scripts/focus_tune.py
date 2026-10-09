@@ -20,7 +20,12 @@ import subprocess
 import time
 from pathlib import Path
 
-from scripts.resolve_common import connect_resolve
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from scripts.resolve_common import connect_resolve  # noqa: E402
 
 PROJECT = "aomimama-2026-09-p1"
 ART = Path(".hermes/artifacts/vtuber-focus-review-2026-10-07").resolve()
