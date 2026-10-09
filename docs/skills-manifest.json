@@ -3084,6 +3084,24 @@
       "sha256": "fba2e7fef493b47ffc34c4bc6993db5252f95c92c4c3c1221ce2919ee09b92f3"
     },
     {
+      "path": "scripts/focus_apply_p2.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e79144960b6d8713095af489d784f05034973e0348db87cc47b4904cd10352c9"
+    },
+    {
+      "path": "scripts/focus_qc_all.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "961a91ae8e02afb6e4040f729f989536de2b088e5af278764cbb9984ff5ff9fb"
+    },
+    {
+      "path": "scripts/focus_qc_frames.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "bd9ee0c03c8e01d292fdad7c8cb9e41e5d80f6b36fa3a07741c29fde9d41b8ef"
+    },
+    {
       "path": "scripts/focus_tune.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3094,6 +3112,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "6b97a6c5fa806a84fd06c499679079d179596ce36337d46effff6a32aa0cdcfe"
+    },
+    {
+      "path": "scripts/plan_p2_focus.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1438b245030ad22769190f4387316c01184ca2d03669eba53a9c5ad885832a2a"
     },
     {
       "path": "scripts/promote_drafts_to_originals.py",
@@ -3142,6 +3166,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "70a0e558f9447379b40b1c0065d3d3a534263859ee6a25c5f3eac456081bb792"
+    },
+    {
+      "path": "scripts/scan_p2_vtuber_presence.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d2c36f8dd9df601116ed4080d8d88f8baf8e74bced2caecce4cb1ab43d7cd049"
     },
     {
       "path": "scripts/verify_review_resume.py",
@@ -3689,13 +3719,33 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 402
+    "manifest_files": 407
   },
   "bundle_version": "0.9.0",
   "excluded_repository_paths": [
