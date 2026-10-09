@@ -70,6 +70,9 @@ def read_protected(p, ids):
     return out
 
 
+SLOW_RASTER = "--slow-raster" in sys.argv
+
+
 class Flag(Exception):
     """Timeline needs separate handling (not a failure of a built timeline)."""
 
@@ -200,6 +203,22 @@ def build(r, pm, p, orig, pl, log, existing=None, late_activate=False):
         activate(p, new)
         step("active: protected read-back")
         check(protected(new) == base, "duplicate protected content differs")
+    elif SLOW_RASTER:
+        # idx 27/33 variation: activate first, then one raster key at a time, HEIGHT before width, 3 s pause + read-back.
+        step("activate copy")
+        activate(p, new)
+        step("active: protected read-back")
+        check(protected(new) == base, "duplicate protected content differs")
+        check([rng(new, n, False) for n in range(1, nv + 1)] == orig_v, "duplicate video tracks differ")
+        order = ["useCustomSettings", "timelineResolutionHeight", "timelineResolutionWidth",
+                 "timelineOutputResMatchTimelineRes", "timelineOutputResolutionHeight", "timelineOutputResolutionWidth",
+                 "timelinePixelAspectRatio", "timelineInputResMismatchBehavior", "timelineOutputResMismatchBehavior"]
+        want = dict(RASTER)
+        for k in order:
+            step(f"active: SetSetting {k}={want[k]}")
+            new.SetSetting(k, want[k])
+            time.sleep(3)
+            step(f"read-back {k}={new.GetSetting(k)}")
     else:
         activate(p, new)
         check(protected(new) == base, "duplicate protected content differs")
@@ -466,7 +485,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     rc = 0
     with preserved_state(r):
-        protect_ids = [PILOT_ID, RETAINED_ID]
+        protect_ids = [PILOT_ID]  # _FAILED_BUILD_RETAINED (RETAINED_ID) was deleted at the user's request
         prot_before = read_protected(p, protect_ids)
         if apply:
             r.OpenPage("edit")
