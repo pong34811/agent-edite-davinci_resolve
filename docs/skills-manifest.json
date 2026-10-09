@@ -920,7 +920,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1d319d1345cad887f16f8c8e989a1320004c5bbb3a2ec3a65b22b56d913efb01"
+      "sha256": "88dfb8c6f7fcb68738f2a7e9e05a4dbaee2efa34a67cd2674b8c9140a3f8e940"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
@@ -3114,6 +3114,108 @@
       "sha256": "6b97a6c5fa806a84fd06c499679079d179596ce36337d46effff6a32aa0cdcfe"
     },
     {
+      "path": "scripts/p2_9x16_build.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "08179540097004a1459a80f3d92174489b4b5f2b993fc0b4af6734c309e5c219"
+    },
+    {
+      "path": "scripts/p2_9x16_charscene.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fb7fdc64abbd09861bb10b88f71e4ca44f26eaf0f7eb56c940988a7c7b070944"
+    },
+    {
+      "path": "scripts/p2_9x16_common.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a66968e60e786d530bc08efb9e1472e38e5cc033e575f0759b7a486054a520f1"
+    },
+    {
+      "path": "scripts/p2_9x16_convert.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7651428f24f330e366caf768f220a1105353b07d99395fa9bf2ac81d687d3ac0"
+    },
+    {
+      "path": "scripts/p2_9x16_cutscan.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "77b156342fbff5dce3805e0c37adee5b198540f15073b1ca85690f4dd3fc53b1"
+    },
+    {
+      "path": "scripts/p2_9x16_inventory.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5e885a9bc09a637bcf57aa2e2dcd621c349f226612d75d139df7e99a2f718d84"
+    },
+    {
+      "path": "scripts/p2_9x16_layout.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6dcc5bf4c8dd8ed73abffc9fda217a0a45c55e2fb9ee7b7cefcfe725c94a1bac"
+    },
+    {
+      "path": "scripts/p2_9x16_sections.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "cb0b5129a313ce8ac91ea3d8bd244eedfd313e5232f4df30993850094eabb550"
+    },
+    {
+      "path": "scripts/p2_9x16_sources.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "336df028c7d78cade858f22f3703277234c1a5daf8e67a055c54a6c271990f99"
+    },
+    {
+      "path": "scripts/p2_9x16_verify.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c8d149a9b2f7ba3601d8543057746b62484e983a010602916abab9f65cfa7944"
+    },
+    {
+      "path": "scripts/p2_apply_cues.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b2dbfec2558b66be1efbbc62fd0ba563a1fe39d0dce7e63eab9d188a00738302"
+    },
+    {
+      "path": "scripts/p2_build_all_cues.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6ecb1e6018c2dfda38a067fa47bb247335161cd4e70db92417af730dd46dbd2e"
+    },
+    {
+      "path": "scripts/p2_build_sample_cues.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "efe87f54a0a4326c0e8b28b20d679db36343bf38454ca6bcf19544ee1cac347e"
+    },
+    {
+      "path": "scripts/p2_delete_stray_copy.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "71c0ffb5b3692ec753bec3442f532ed834034a038203472ae839a9d9bc4f3a3a"
+    },
+    {
+      "path": "scripts/p2_dump_cue_inputs.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d31fbb3ca222bcedb11d179d6a7af9ad9993d91a021def73b4df0f4609e3f386"
+    },
+    {
+      "path": "scripts/p2_inventory_readonly.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8a599480af4062e16c9fb660b7720b348c3c6c953e8b7658c29992dd19e76b92"
+    },
+    {
+      "path": "scripts/p2_verify_all.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b68c1c258a3d54c2cf39bc5515233feefeb45bfd9caec5601d30881ba710d6cf"
+    },
+    {
       "path": "scripts/plan_p2_focus.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3739,13 +3841,33 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 407
+    "manifest_files": 424
   },
   "bundle_version": "0.9.0",
   "excluded_repository_paths": [
