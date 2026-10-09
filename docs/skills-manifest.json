@@ -1009,7 +1009,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "a19b9e083287ebfe8294408accfc50fe3594bd1e26ef6df2e13e67417bc3231f",
+      "sha256": "20f00828a040a1f102bdba06a2dee6d42a963815af0b5bd6b846683c25b639b4",
       "kind": "integration_or_validation"
     },
     {
@@ -1021,7 +1021,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "966d87547cf763b2acac8723db5c1615c6a41fcc63adfce50a13f106b6311188",
+      "sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef",
       "kind": "integration_or_validation"
     },
     {
@@ -3111,7 +3111,7 @@
       "path": "scripts/refresh_skill_manifest.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ff56d11085666de64266b42536f2095e5e3317aa565daedc951cdc4f89d05cac"
+      "sha256": "ef1e620283732db5e648329a328a8e84638d25663902e7f744418355f008c087"
     },
     {
       "path": "scripts/render_bottomleft_batch.py",
@@ -3567,6 +3567,66 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
@@ -3575,7 +3635,7 @@
     "history_evidenced_editing_skills": 14,
     "manifest_files": 405
   },
-  "bundle_version": "0.7.0",
+  "bundle_version": "0.8.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",

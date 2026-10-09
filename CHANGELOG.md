@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.8.0
+
+### Added
+- `scripts/resolve_common.py`: เพิ่ม `require_resolve()` ที่จบโปรแกรมพร้อมข้อความชัดเจนเมื่อเชื่อมต่อ Resolve ไม่ได้ และ `preserved_state(resolve)` ที่คืนโปรเจกต์ ไทม์ไลน์ playhead และเพจให้เหมือนเดิมเมื่อจบงาน (คืนค่าได้แม้เนื้อหาข้างในล้มเหลว)
+- `scripts/resolve_preflight.py`: เพิ่มตัวเลือก `--list-tools` สำหรับดูรายชื่อ tool ใน catalog ของ MCP; ไม่ต้องใส่ `--need` เมื่อใช้ตัวนี้
+- `scripts/README.md`: จัดกลุ่มเครื่องมือทั้งหมด พร้อมลำดับการใช้งาน (MCP ก่อน แล้ว preflight แล้วค่อยสคริปต์)
+- `tests/test_resolve_common.py`: ทดสอบ `preserved_state` และ `require_resolve` ด้วย Resolve จำลอง
+- `.agents/skills/resolve-mcp/SKILL.md`: เพิ่มตาราง "Live tool map" ที่บอกว่างานแต่ละอย่างใช้ tool ของ `davinci-resolve` MCP ตัวไหน และขั้นตอนตรวจ MCP ทางการของ Resolve (`get_whats_new`, `search_scripting_api`, `run_script`) ก่อนเขียนสคริปต์เอง
+
+### Updated
+- `scripts/resolve_common.py`: ค้นหาโมดูล Resolve จาก `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting\Modules` ด้วย
+- `scripts/apply_vdo_preset.py`, `scripts/load_subtitle_preset.py`, `scripts/split_projects.py`: เลิกเขียนตัวเชื่อมต่อเอง ใช้ตัวกลางใน `resolve_common` แทน (คงชื่อ `connect_resolve` ใน `load_subtitle_preset.py` เพราะ `apply_video_style.py` เรียกใช้)
+- `scripts/apply_bottomleft_candidates.py`, `render_bottomleft_batch.py`, `render_headroom_tune.py`, `render_lowerleft_16_42.py`, `render_t02_candidate.py`, `tune_focus_headroom.py`: แตกคำสั่งบรรทัดเดียวที่ต่อกันด้วย `;` ให้เป็นบรรทัดแยก ตรรกะเหมือนเดิม (ตรวจโครงสร้างโค้ดตรงกันทุกไฟล์) ยังไม่ได้ทดสอบกับ Resolve จริง
+- `scripts/refresh_skill_manifest.py`: `bundle_version` เป็น 0.8.0
+- `docs/skills-manifest.json` และ `docs/validation-report.json`: สร้างใหม่หลังจัดระเบียบไฟล์
+
+### Removed
+- ย้ายสคริปต์ทดลอง/ใช้ครั้งเดียวที่ไม่มีเอกสาร สกิล หรือเทสต์อ้างถึง 73 ไฟล์ออกจาก repo ไปไว้ที่ `Desktop/_archive-davinci-cleanup-2026-10-09/scripts/` (ไม่ได้ลบทิ้ง) รวมถึงชุด VTuber focus เก่า ไฟล์ `dbg_*`, `diagnose_*`, `probe_*`, `test_v*`, `test_challenger_*` และ `aomimama_*`
+- ย้ายสกิลทั่วไปสำหรับงานเขียนโค้ด 38 ตัว (จาก `mattpocock/skills` เช่น `tdd`, `wizard`, `teach`) ออกจาก `.agents/skills/` ไปไว้นอกโปรเจกต์ ทำให้เหลือสกิลของ Resolve, house-style และสกิลภาษาไทย 17 ตัว
+- ลบโฟลเดอร์ `scratch/` (ไฟล์ทดลองและภาพนิ่ง ไม่เคยอยู่ใน git)
+- ลบ `skills-lock.json` ที่ว่างเปล่า
+
+### Validation
+- `python scripts/verify_skill_bundle.py` — `ok: true`
+- เทสต์ที่ไม่ต้องใช้ Resolve จริง — ผ่าน 105 รายการ ล้มเหลว 1 รายการ (`test_review_analysis_budget.py` ต้องใช้โมดูล `agent` ของ Hermes ที่ไม่มีในเครื่อง)
+- `tests/test_m1_*`, `test_m2_*`, `test_m3_*` ไม่ได้รัน; `test_m1_backup_empirical` และ `test_m1_baseline_validation` ล้มเหลวเพราะไฟล์เก่ากว่า 24 ชั่วโมงและผูกกับโปรเจกต์ KT404
+- ยังไม่ได้ทดสอบสคริปต์ที่แก้กับ Resolve จริง
+
 ## v0.7.0
 
 ### Added

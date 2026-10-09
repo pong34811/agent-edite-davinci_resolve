@@ -13,7 +13,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'docs/skills-manifest.json'
 DIRS = ('.agents', 'docs', 'resolve-advanced', 'scripts', 'tests')
-TOP = ('.gitignore', 'AGENTS.md', 'README.md')
+TOP = ('.gitignore', 'AGENTS.md', 'README.md', 'CHANGELOG.md', 'VERSION')
 NEW_KIND = {
     'scripts/': 'project_helper',
     'tests/': 'integration_or_validation',
@@ -105,7 +105,7 @@ def main():
         {'path': '.gitignore',
          'reason': 'Ignore the local .hermes working-artifact tree alongside other scratch dirs.'},
     ])
-    manifest['bundle_version'] = '0.7.0'
+    manifest['bundle_version'] = '0.8.0'
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'files': len(manifest['files']), 'changed': len(changed),
                       'changes': changed[:40]}, ensure_ascii=False, indent=2))
