@@ -6,7 +6,7 @@ track, add an empty one, import the SRT, bare append, read back every cue (text 
 Stops at the first failed timeline. Old cues are kept in exports/captions-fixed/old/<index>.json.
 The subtitle PRESET is reloaded afterwards with scripts/load_subtitle_preset.py (not done here).
 
-Run from repo root: python -m scripts.p2_apply_fixed_captions 88 [87 86 ...] [--apply]
+Run from repo root: python -m scripts.p2_apply_fixed_captions 88 [87 86 ...] [--apply] [--horizontal]
 """
 from __future__ import annotations
 
@@ -22,7 +22,8 @@ if str(ROOT) not in sys.path:
 from scripts.resolve_common import connect_resolve, preserved_state  # noqa: E402
 
 DATA = ROOT / "exports" / "publish-qc" / "data.json"
-FIX = ROOT / "exports" / "captions-fixed"
+HORIZONTAL = "--horizontal" in sys.argv  # 1920x1080 timelines: SRTs from captions-fixed-h, names without _9x16
+FIX = ROOT / "exports" / ("captions-fixed-h" if HORIZONTAL else "captions-fixed")
 PROJECT = "aomimama-2026-09-p2"
 GAP = 1.3
 TIME = re.compile(r"(\d+):(\d\d):(\d\d)[,.](\d{3})\s*-->\s*(\d+):(\d\d):(\d\d)[,.](\d{3})")
@@ -69,7 +70,8 @@ def find_pool_srt(folder, name):
 
 def one(r, p, idx, planned, apply):
     tl = p.GetTimelineByIndex(idx)
-    check(tl is not None and tl.GetName().endswith("_9x16"), f"index {idx} is not a _9x16 timeline")
+    check(tl is not None and tl.GetName().endswith("_9x16") != HORIZONTAL,
+          f"index {idx} is not a {'horizontal' if HORIZONTAL else '_9x16'} timeline")
     fps = float(tl.GetSetting("timelineFrameRate"))
     row = next(x for x in planned if x["index"] == idx)
     check(row["name"] == tl.GetName(), f"name mismatch at {idx}")
