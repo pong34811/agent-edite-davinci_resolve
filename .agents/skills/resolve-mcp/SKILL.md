@@ -158,22 +158,63 @@ offer the call and let it fail.
 
 Before any script, check the davinci-resolve MCP catalog; write a Resolve Python scripting-API script only after a stated `MCP-GAP:` line shows the MCP lacks the tool/action. Follow `AGENTS.md` "Tool selection" and run `python scripts/resolve_preflight.py --need <tool[.action]>`.
 
-### Live tool map (davinci-resolve MCP)
+### Complete 37 Compound Tools Catalog (davinci-resolve MCP v4.10.3)
 
-Use the tool that matches the object you are touching; read its schema, then probe read-only before writing.
+All 37 compound tools grouped by domain:
 
-| Object / task | MCP tool |
-|---|---|
-| Build, version, capability gates, `api_truth` | `resolve_control`, `knowledge` |
-| Projects, databases, folders | `project_manager`, `project_manager_database`, `project_manager_folders`, `project_settings` |
-| Timelines, tracks, subtitles, generators | `timeline`, `timeline_frame`, `timeline_markers`, `timeline_versioning`, `timeline_ai` |
-| Clips: transform, crop, speed, properties | `timeline_item`, `timeline_item_markers`, `timeline_item_takes` |
-| Clip color / Fusion | `timeline_item_color`, `graph`, `color_group`, `timeline_item_fusion`, `fusion_comp` |
-| Media pool and sources | `media_pool`, `media_pool_item`, `media_pool_item_markers`, `media_storage`, `media_analysis` |
-| Stills and look assets | `gallery`, `gallery_stills`, `lut`, `dctl` |
-| Render | `render`, `render_presets` |
-| Compound edit helpers | `edit_engine` |
+| Domain | MCP Tools | Key Actions & Responsibilities |
+|---|---|---|
+| **Session & Meta (5)** | `resolve_control` | `get_version`, `check_version_support`, `api_truth`, `report_issue`, `open_page`, `quit` |
+| | `setup` | Client environment checks and automated setup |
+| | `knowledge` | Built-in post-production craft guidance and manuals (`topics`, `get`, `search`) |
+| | `layout_presets` | Save, load, list, export, import, delete UI layout presets |
+| | `script_plugin` | Lua and Python script plugin installation and management |
+| **Projects & Settings (5)** | `project_manager` | CRUD on projects (`create`, `load`, `save`, `close`, `delete`, `export_project`, `import_project`, `snapshot`) |
+| | `project_manager_folders` | Create, open, delete project manager folders |
+| | `project_manager_cloud` | Cloud project libraries and collaboration |
+| | `project_manager_database` | Disk/PostgreSQL database management and switching |
+| | `project_settings` | Get/set project-level settings and preset defaults |
+| **Media & Analysis (6)** | `media_storage` | Mounted volume inspection, folder walk, and import |
+| | `media_pool` | Root/current folder navigation, import media, create timelines |
+| | `folder` | Media pool subfolder CRUD and clip organization |
+| | `media_pool_item` | Metadata, clip properties, proxy linking, audio mapping |
+| | `media_pool_item_markers` | Clip-level markers and cues |
+| | `media_analysis` | Audio loudness measurement, dialogue mix plans, and offline video/still QC |
+| **Timeline & Edit (6)** | `timeline` | Active timeline properties, track count, export DRT/EDL/OTIO, duplicate |
+| | `timeline_frame` | Playhead positioning, timecode reads, and frame grabs |
+| | `timeline_markers` | Timeline-level markers, scene cut detection, review reports |
+| | `timeline_versioning` | Timeline version management and snapshotting |
+| | `timeline_ai` | AI-assisted scene detection and audio transcription |
+| | `edit_engine` | Compound editing plans, silence ripple, selects, dialogue-driven cuts |
+| **Timeline Items (5)** | `timeline_item` | Transform, crop, pan, tilt, composite modes, speed, Fusion comp count |
+| | `timeline_item_markers` | Item-level markers and annotations |
+| | `timeline_item_fusion` | Direct Fusion comp access on timeline clips |
+| | `timeline_item_color` | Grade versions, CDL, PowerGrade apply, node graph |
+| | `timeline_item_takes` | Multitake and take selection management |
+| **Color & Look (4)** | `graph` | Node graph inspection, LUT assignment, CDL application |
+| | `color_group` | Color group assignments and group-level grades |
+| | `gallery` | Still album management and DRX grade import/export |
+| | `gallery_stills` | Grabbing, exporting, and deleting gallery stills |
+| **Fusion (2)** | `fusion_comp` | Add tools, connect inputs, set parameters, keyframes, modifiers |
+| | `fuse_plugin` | Custom Fuse plugin management and loading |
+| **Delivery & Assets (5)** | `render` | Add render jobs, start/stop rendering, query job status |
+| | `render_presets` | Load and manage delivery presets and burn-in data |
+| | `lut` | LUT file inspection, export, and verification |
+| | `dctl` | DCTL template creation, verification, and encryption |
+
+### Key Capabilities in v4.10.3
+
+1. **Advanced Subtitle Engine & Formatting**:
+   - The upstream server's subtitle database module (subtitle-db.mjs) and subtitle track editing guide provide dedicated subtitle parsing, styling, and track safety.
+   - Presets and caption styles are governed by subtitle format modules (subtitle-captions.js, subtitle-preset.js, subtitle-style.js).
+   - Subtitle property guards prevent inadvertent mutations to audio and video tracks during subtitle editing.
+2. **Conform QC Suite & Synthetic Oracles**:
+   - Automated verification against synthetic edit fixtures in conform-qc, enabling offline conform verification before rendering or live delivery.
+3. **Execution Lifecycle & Thread-Safe Dispatch**:
+   - Multi-threaded tool dispatching with schema null-default safeguards.
+   - Robust Windows child-process text encoding and stdin discipline.
 
 ### Official Resolve scripting MCP (second line, before a hand-written script)
 
 If the `davinci-resolve` tool has no matching action, check the official Resolve MCP before writing a file in `scripts/`: `get_whats_new` (features newer than your training), `search_scripting_api` / `get_scripting_api` (confirm the method exists on this build), then `run_script` for a one-off. Use `run_script_unsafe` only with explicit user approval. Record the result in the `MCP-GAP:` line.
+

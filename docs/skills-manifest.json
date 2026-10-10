@@ -764,7 +764,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "76bdde24f8b24e282e38b31f610dbad6aea243e8392b5079bf24e3427e259b90"
+      "sha256": "f9e1615a0a67deb40e15e4765e07342ab18bf636fb2fffdb6aab317bad023451"
     },
     {
       "path": ".agents/skills/resolve-fusion/SKILL.md",
@@ -778,7 +778,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "13d5ab6b6975d568ed018e6424d861ea9a6e75eb300ff5f73ff51c6c315b48ab"
+      "sha256": "ee64ce8e18f65e7217685c9f8b0f0a13a5a67700c1a8e346bdab396b4d8c6d30"
     },
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
@@ -3252,6 +3252,18 @@
       "sha256": "34fcd417153013295b2508c84f42817f4e72410584d85a000a6bd9685729a10a"
     },
     {
+      "path": "scripts/p2_loudnorm_worker.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0d4e4027f07939ed41e981adbdda89f7f8ac20c79b38e46ee73386ed3c7aeb07"
+    },
+    {
+      "path": "scripts/p2_loudnorm_worker_h.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9edb481727662f3509fba1b51656db39c67d2a7431617c4877888d7d664bbf24"
+    },
+    {
       "path": "scripts/p2_publish_audio_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3268,6 +3280,24 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "67bbc5a0fa46a5ceb7b738c93349c10ba904891d96865a7c9fd5d4932511c292"
+    },
+    {
+      "path": "scripts/p2_render_horizontal.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "368f36b5507f6b6f2046322b70f91ff66893126bcd7e90fcf42627f9301c6cc3"
+    },
+    {
+      "path": "scripts/p2_render_vertical.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fdee3cd57d584f3ae280ca7e924bf03e918359ebbbe97c51b3fdf2aec4234a1d"
+    },
+    {
+      "path": "scripts/p2_trim_bad_gif_tail.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "92483117191bbda15c3c79681c1d2409076330ec5bf2d857712cc996ea8ed573"
     },
     {
       "path": "scripts/p2_verify_all.py",
@@ -3999,13 +4029,53 @@
     {
       "path": ".gitignore",
       "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 437
+    "manifest_files": 442
   },
   "bundle_version": "0.9.0",
   "excluded_repository_paths": [
