@@ -177,16 +177,26 @@ def build(r, pm, p, orig, pl, log, existing=None, late_activate=False):
         # unless it is exactly the target name, still 16:9 and track-for-track identical (checked below).
         new = find_id(p, existing)
         check(new is not None and new.GetName() == pl["target"], "existing copy not found by id+name")
-        check([new.GetSetting("timelineResolutionWidth"), new.GetSetting("timelineResolutionHeight")] == ["1920", "1080"]
-              and new.GetTrackCount("video") == nv, "existing copy is not an untouched duplicate")
+        res = [new.GetSetting("timelineResolutionWidth"), new.GetSetting("timelineResolutionHeight")]
+        check(res in (["1920", "1080"], ["1080", "1920"]) and new.GetTrackCount("video") == nv,
+              "existing copy is not an untouched duplicate")
         log["existing"] = True
+        manual_raster = res == ["1080", "1920"]  # raster set by hand in Timeline Settings: never SetSetting it (hangs Resolve)
     else:
         new = orig.DuplicateTimeline(pl["target"])
         check(new is not None and new.GetName() == pl["target"], "DuplicateTimeline failed")
         time.sleep(DELAY)
     log["new_id"] = new.GetUniqueId()
     print("DUPLICATED", log["new_id"], flush=True)
-    if late_activate:
+    if existing and manual_raster:
+        step("activate copy (raster already 1080x1920, set by hand)")
+        activate(p, new)
+        check(protected(new) == base, "duplicate protected content differs")
+        check([rng(new, n, False) for n in range(1, nv + 1)] == orig_v, "duplicate video tracks differ")
+        for k, v in RASTER:
+            if str(new.GetSetting(k)) != v:
+                step(f"manual raster: {k}={new.GetSetting(k)} (want {v}); not set by script")
+    elif late_activate:
         # idx 27: the hang came right after DuplicateTimeline (activate copy + read-back). Verify the copy's ranges
         # and set its raster while it is still INACTIVE (both are activation-independent reads/writes), then activate.
         step("inactive: video ranges of copy")
@@ -393,7 +403,12 @@ def stills(p, new, pl, reuse=False):
         frames.append(("gif", (pl["gifs"][0][1] + pl["gifs"][0][2]) // 2))
     if pl["focus"]:
         s, e = pl["focus"][0]
-        frames.append(("focus", (s + e) // 2))
+        mid = (s + e) // 2
+        # the gate compares the top panel with the clean-source layout, which a GIF overlay covers: sample a
+        # focus frame outside every GIF when one exists (#33: the midpoint sat inside the GIF)
+        clear = [f for f in (mid, (mid + e) // 2, (s + mid) // 2, e - 5, s + 5)
+                 if s <= f < e and not any(g[1] <= f < g[2] for g in pl["gifs"])]
+        frames.append(("focus", clear[0] if clear else mid))
     if len(pl["v1src"]) > 1:  # several V1 items: one still inside each item and one on each side of every cut
         for k, it in enumerate(pl["v1src"]):
             frames.append((f"v1item{k + 1}", (it[1] + it[2]) // 2))
