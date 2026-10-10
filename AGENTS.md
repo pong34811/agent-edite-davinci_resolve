@@ -27,7 +27,7 @@ All DaVinci Resolve editing, cutting, conforming, grading, audio mixing, track m
 
 ### Tool Inventory & Capabilities
 
-**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp` v4.9.2, at `Desktop\davinci-resolve-mcp`, configured in `.mcp.json`). Tools are grouped by domain; each takes an `action`:
+**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp` v4.10.3, at `D:\davinci-resolve-mcp`, configured in `.mcp.json`). Tools are grouped by domain; each takes an `action`:
 
 | Domain | Tools & Primary Actions |
 |---|---|

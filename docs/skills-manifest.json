@@ -1004,7 +1004,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ad940505fae53e45f5db638fc7587cb5ecdd5729dc9b9f083b3e8fc59074dd77"
+      "sha256": "b7d3a75376f840725718a7dd39b36e6cd11dd9d3172aeef169ffb05f3400471e"
     },
     {
       "path": "CHANGELOG.md",
@@ -3559,6 +3559,26 @@
     {
       "path": ".agents/skills/resolve-video-enrichment/SKILL.md",
       "reason": "Source-backed Thai VTuber/YouTube knowledge base, 11 on-demand references and one brief template; retained state-dependent readback, native captions and separate legibility/audio/restore verification. Documentation only; no live Resolve test."
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python vdo reference capture/apply, draft-copy then promote-to-original sequence, idempotent promotion, anomaly sweep, and backup-cleanup rules."
+    },
+    {
+      "path": "scripts/enrich_timelines_python.py",
+      "reason": "Native Python batch enrichment: dry-run by default, explicit inventory IDs, BGM-only when no cue is defensible, GIF overlap preservation, per-item caps."
+    },
+    {
+      "path": "scripts/promote_drafts_to_originals.py",
+      "reason": "Promotes verified drafts into originals by exact IDs, reusing existing items and re-verifying baseline tracks; refuses when an original drifted."
+    },
+    {
+      "path": "scripts/anomaly_sweep.py",
+      "reason": "Read-only structural sweep across every timeline; native subtitle items are correctly treated as having no Media Pool entry."
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore the local .hermes working-artifact tree alongside other scratch dirs."
     },
     {
       "path": "docs/OPERATING-NOTES.md",
