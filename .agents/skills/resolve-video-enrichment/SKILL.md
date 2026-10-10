@@ -31,9 +31,10 @@ Turn source moments or existing DaVinci Resolve edits into clear, personality-le
 - For learning/advice: no credentials, environment variables, installs, or live Resolve connection are required.
 - For an edit: authorized sources, exact project/timeline targets, current house style, output scope, and recoverability plan.
 - Read `AGENTS.md`, `.agents/skills/house-style/SKILL.md`, and `docs/OPERATING-NOTES.md` through `read_file` when working in this repository.
+- **Allowed Tools (Strict Mandate)**: All video editing, cutting, timeline modification, track management, audio mixing, and grading MUST be performed exclusively through **DaVinci Resolve MCP** (`davinci-resolve` community server or `DaVinci Resolve Studio` MCP) and **Python Scripting API** (`scripts/resolve_common.py` or verified repo scripts). NEVER use GUI click automation, screenshots/keystroke macros, computer-use, or third-party video editors.
 - Discover the running Resolve product/build, installed scripting reference, raster, timeline FPS, playback FPS, media paths, and existing video/audio/subtitle items before any write.
-- Use the existing verified bridge. This skill does not require installing an MCP server; a manual or archived skill is not proof a server/tool exists.
-- Windows scripting examples use Resolve's bundled `ResolvePython.exe`; confirm actual interpreter/module paths with `search_files` before invoking through `terminal`.
+- Use the existing verified bridge (`scripts/resolve_common.py:connect_resolve`) or MCP server. Follow the MCP-first, script-second rule.
+- Windows scripting examples use Resolve's bundled `ResolvePython.exe` or local Python with `DaVinciResolveScript` module; confirm actual interpreter/module paths before invoking.
 - Delivery QC requires available `ffprobe`; scratch frame extraction may also require `ffmpeg`. Do not install tools or transcode sources as an unapproved setup side effect.
 - Analytics needs a user-provided export or an authorized account session. Do not fabricate missing data or request secrets in chat.
 - Source rights, selected asset licenses, and creator/agency clipping terms must be checked before publication.

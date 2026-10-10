@@ -8,8 +8,8 @@ Fallback tools for work the `davinci-resolve` MCP does not cover. Order of use (
 | Subtitles / style | `caption_lint.py` (offline Thai caption rule check), `load_subtitle_preset.py`, `apply_video_style.py`, `apply_vdo_python.py`, `apply_vdo_preset.py`, `video_presets.json` |
 | Enrichment | `enrichment_engine.py`, `enrichment_assets.py`, `enrich_timelines_python.py`, `run_pilot.py`, `apply_offline_enrichment_pilot.py`, `render_enrichment_pilot.py`, `build_offline_*.py`, `review_enrichment_readonly.py`, `anomaly_sweep.py` |
 | Review / contact sheets | `contact_sheet.py`, `render_review_previews.py`, `analyze_review_previews.py`, `verify_review_resume.py` |
-| Focus / framing | `focus_apply_batch.py`, `focus_tune.py` (run from the repo root as `python -m scripts.focus_apply_batch`, or directly) |
-| Project operations | `promote_drafts_to_originals.py`, `cleanup_backups.py` (dry-run unless `--confirm`; never deletes rollback archives) |
+| Focus / framing | `focus_apply_batch.py`, `focus_tune.py`, `drt_focus_track.py` (DRT track inject), `focus_frame_qc.py` (multi-frame visual & framing QC) |
+| Project operations | `promote_drafts_to_originals.py`, `cleanup_backups.py`, `deploy_climbing_focus.py` (DRT timeline focus deployment), `cleanup_and_rename_timelines.py` (backup deletion and standard Thai naming) |
 | Bundle upkeep | `verify_skill_bundle.py`, `refresh_skill_manifest.py` |
 
 New scripts connect through `resolve_common` (never a private `get_resolve()`), wrap session changes in `preserved_state(resolve)`, and read back every write. Retired one-off scripts live outside the repo in `Desktop/_archive-davinci-cleanup-2026-10-09/` (`scripts/` and `scripts-review-2026-10-09/`). Tests that need a running Resolve (`tests/test_m1_*`) are skipped unless `pytest --live` is passed.

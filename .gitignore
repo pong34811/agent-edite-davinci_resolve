@@ -21,3 +21,8 @@ exports/
 .hermes/
 .pytest_cache/
 *.tmp
+qc_stills/
+crop_*.jpg
+temp_frame.jpg
+pair*.txt
+

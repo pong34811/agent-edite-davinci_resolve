@@ -20,19 +20,20 @@ Open the one that matches, or use this when a task spans several domains. This
 
 skill does not auto-load the others; it points at them.
 
+## Allowed Channels: Resolve MCP and Resolve Python API ONLY
+
+All DaVinci Resolve editing, cutting, timeline modification, grading, and rendering must go through exactly two authorized channels:
+1. **DaVinci Resolve MCP Servers** (`davinci-resolve` live server / `DaVinci Resolve Studio` built-in MCP)
+2. **Resolve Python Scripting API** (`scripts/resolve_common.py:connect_resolve`)
+
+**Strictly forbidden**: GUI click automation, computer-use, keystroke emulation/macros, browser automation, or non-Resolve video editors.
+
 ## Two servers — compute offline, apply live
 
-- **Live** — `davinci-resolve` (Python): drives a *running* Resolve via the
+- **Live** — `davinci-resolve` (Python): drives a *running* Resolve via the scripting API.
+- **Advanced / offline** — `davinci-resolve-advanced` (Node): authors `.drp`/`.drt`/`.drx` files and patches the project DB with **no Resolve open**.
 
-  scripting API.
-
-- **Advanced / offline** — `davinci-resolve-advanced` (Node): authors
-
-  `.drp`/`.drt`/`.drx` files and patches the project DB with **no Resolve open**.
-
-Rule of thumb: compute grades, QC, and conform math offline; apply the result
-
-live. Node never drives Resolve.
+Rule of thumb: compute grades, QC, and conform math offline; apply the result live. Node never drives Resolve.
 
 ## Domains
 

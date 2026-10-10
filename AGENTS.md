@@ -10,58 +10,107 @@ This repository packages the user's existing DaVinci Resolve editing skills. It 
 - Discover the live project, timeline IDs, exact Resolve build, resolution, both frame-rate settings, media paths, and existing video/audio/subtitle coverage before writing.
 - Preserve the project's approved aspect ratio. Do not automatically turn a 16:9 project into 9:16 or assume settings from another project.
 
-## Allowed tools: Resolve MCP and Resolve Python only
+## Allowed tools: Resolve MCP and Resolve Python ONLY (Strict Mandate)
 
-All Resolve work goes through exactly two channels: the DaVinci Resolve MCP servers and Python that uses the Resolve scripting API. Do not drive Resolve through screenshots/GUI automation, computer-use, a browser, keystroke macros, or third-party editing tools. Exceptions that are not Resolve control: `ffprobe`/`ffmpeg` for read-only media analysis and render verification (see Verification), and the explicit last-resort SQLite task below.
+All DaVinci Resolve editing, cutting, conforming, grading, audio mixing, track modification, and rendering work MUST go through exactly two authorized channels:
+1. **DaVinci Resolve MCP servers** (`davinci-resolve` community MCP and `DaVinci Resolve Studio` built-in MCP)
+2. **Python scripting API** utilizing `scripts/resolve_common.py` (`connect_resolve`, `require_resolve`, `preserved_state`) or standalone verified scripts in `scripts/`.
 
-### Tool inventory
+### STRICTLY PROHIBITED:
+- **NO screenshots/GUI automation** (e.g. `pyautogui`, `pynput`, `win32gui` mouse/keyboard clicking, computer-use).
+- **NO keystroke macros or hotkey emulation**.
+- **NO browser automation** to manipulate Resolve.
+- **NO external non-Resolve video editing software** (e.g. Premiere, CapCut, ffmpeg-only assembly when timeline editing is requested).
+- **Exceptions that are not Resolve control**:
+  - `ffprobe`/`ffmpeg` for **read-only** media analysis, probe, and render QC verification (see Verification section).
+  - Last-resort offline SQLite database inspection/patching when Resolve is completely closed and a verified `.drp` backup exists.
 
-**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp` v4.9.2, at `Desktop\davinci-resolve-mcp`, configured in `.mcp.json`). Tools are grouped by domain; each takes an `action`, so read the schema of the one you need.
+### Tool Inventory & Capabilities
 
-| Domain | Tools |
+**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp` v4.9.2, at `Desktop\davinci-resolve-mcp`, configured in `.mcp.json`). Tools are grouped by domain; each takes an `action`:
+
+| Domain | Tools & Primary Actions |
 |---|---|
 | Session / meta | `resolve_control` (`get_version`, `check_version_support`, `api_truth`, `report_issue`), `setup`, `knowledge`, `layout_presets`, `script_plugin` |
-| Projects | `project_manager`, `project_manager_folders`, `project_manager_database`, `project_manager_cloud`, `project_settings` |
-| Media | `media_storage`, `media_pool`, `media_pool_item`, `media_pool_item_markers`, `folder`, `media_analysis` |
-| Timeline / edit | `timeline`, `timeline_frame`, `timeline_markers`, `timeline_versioning`, `timeline_ai`, `edit_engine` |
-| Timeline items | `timeline_item`, `timeline_item_markers`, `timeline_item_takes`, `timeline_item_color`, `timeline_item_fusion` |
+| Projects | `project_manager` (`get_current_project`, `load_project`, `create_project`, `save_project`, `export_project`, `import_project`, `close_project`), `project_manager_folders`, `project_manager_database`, `project_manager_cloud`, `project_settings` (`get_project_settings`, `set_project_setting`) |
+| Media | `media_storage`, `media_pool` (`get_root_folder`, `get_current_folder`, `set_current_folder`, `import_media`, `import_timeline_from_file`, `create_empty_timeline`), `media_pool_item` (`get_clip_property`, `set_clip_property`), `media_pool_item_markers`, `folder`, `media_analysis` |
+| Timeline / edit | `timeline` (`get_timeline_by_name`, `set_current_timeline`, `get_track_count`, `get_item_list_in_track`, `export`, `duplicate_timeline`, `create_sub_timeline`, `delete_timeline`), `timeline_frame`, `timeline_markers`, `timeline_versioning`, `timeline_ai`, `edit_engine` (`duplicate_clips`, `copy_clips`, `move_clips`, `insert_generator`) |
+| Timeline items | `timeline_item` (`get_name`, `get_start`, `get_end`, `get_duration`, `get_property`, `set_property`, `get_fusion_comp_count`, `add_fusion_comp`), `timeline_item_markers`, `timeline_item_takes`, `timeline_item_color`, `timeline_item_fusion` |
 | Color | `graph`, `color_group`, `gallery`, `gallery_stills`, `lut`, `dctl` |
-| Fusion | `fusion_comp`, `fuse_plugin` |
-| Delivery | `render`, `render_presets` |
+| Fusion | `fusion_comp` (`get_tool_list`, `add_tool`, `connect_tool`, `set_tool_input`), `fuse_plugin` |
+| Delivery | `render` (`add_render_job`, `start_rendering`, `get_render_job_status`, `delete_all_render_jobs`), `render_presets` |
 
-Matching skills live in `.agents/skills/` (`resolve-edit`, `resolve-color`, `resolve-audio`, `resolve-fusion`, `resolve-media-pool`, `resolve-media-analysis`, `resolve-conform`, `resolve-delivery`, `resolve-rough-cut`, `resolve-tighten-recording`, `resolve-mcp` as the index). Load the one that matches the request.
+Matching domain skills in `.agents/skills/`: `resolve-edit`, `resolve-color`, `resolve-audio`, `resolve-fusion`, `resolve-media-pool`, `resolve-media-analysis`, `resolve-conform`, `resolve-delivery`, `resolve-rough-cut`, `resolve-tighten-recording`, `resolve-video-enrichment`, with `resolve-mcp` as the index.
 
-**B. `DaVinci Resolve Studio` MCP** (Blackmagic's built-in server, Resolve 21.1+). Use it for build-truth and scripting, not as a second editor:
-- Discovery (read-only, use first): `get_resolve_status`, `get_whats_new`, `search_scripting_api`, `get_scripting_api`, `get_scripting_docs`.
-- Execution: `run_script` (sandboxed Python); `run_script_unsafe` only when `run_script` is shown insufficient and the user's request covers the effect.
-- Assets: `list_luts`, `generate_lut`, `delete_lut`, `list_dctls`, `update_dctl`, `delete_dctl` (deletes need explicit authorization).
-- `launch_resolve` only when the user asks to start Resolve.
+**B. `DaVinci Resolve Studio` MCP** (Blackmagic's built-in server, Resolve 21.1+):
+- Discovery (read-only): `get_resolve_status`, `get_whats_new`, `search_scripting_api`, `get_scripting_api`, `get_scripting_docs`.
+- Execution: `run_script` (sandboxed Python for execution on the running host); `run_script_unsafe` only when `run_script` is demonstrated insufficient and explicitly authorized.
+- Assets: `list_luts`, `generate_lut`, `delete_lut`, `list_dctls`, `update_dctl`, `delete_dctl`.
+- `launch_resolve`: only when the user explicitly requests starting Resolve.
 
-**C. Python scripting API** via `scripts/` (see `scripts/README.md`): `resolve_common.py` (`connect_resolve`, `require_resolve`, `preserved_state`, `api_has_method`), `resolve_preflight.py` (`--need`, `--list-tools`, `--probe-api`), `backup_drp.py` (verified `.drp` export), `caption_lint.py` (offline Thai caption rule check — run before any SRT import), plus the task scripts for subtitles/style, enrichment, review, focus/framing, project operations, and bundle upkeep (`verify_skill_bundle.py`, `refresh_skill_manifest.py`).
+**C. Python Scripting API via `scripts/`** (see `scripts/README.md`):
+- Connect via `scripts/resolve_common.py` (`connect_resolve()`, `require_resolve()`, `preserved_state()`, `api_has_method()`).
+- Verification & Preflight: `resolve_preflight.py` (`--need`, `--list-tools`, `--probe-api`), `backup_drp.py` (`export_verified`), `caption_lint.py`.
+- Timeline & Track Engineering:
+  - `scripts/drt_focus_track.py`: Build and inject dedicated Adjustment Clip / Zoom tracks into `.drt` timeline files safely without track-targeting insertion bugs.
+  - `scripts/focus_frame_qc.py`: Multi-frame visual and geometry QC for VTuber framing (headroom, centering, scale, crop prevention).
+  - `scripts/deploy_climbing_focus.py`: Seamless DRT transfer of focus tracks into master production projects.
+  - `scripts/cleanup_and_rename_timelines.py`: Safe timeline cleanup, archiving, and standardized Thai title renaming.
+- Styling & Enrichment: `apply_video_style.py`, `enrichment_engine.py`, `enrich_timelines_python.py`, `focus_apply_batch.py`.
 
-Which server supplies a tool, and the exact tool catalog, must be confirmed live; this inventory is a map, not proof a tool is available on the running build.
+## Tool Selection Hierarchy: MCP First, Scripting API Second (Mandatory)
 
-## Tool selection: MCP first, scripting API second (mandatory)
+For any task touching DaVinci Resolve, follow this exact sequence:
+1. **Check the `davinci-resolve` MCP first** (Inventory A). Read the tool schema. Use `resolve_control get_version` and `check_version_support`.
+2. **Execute via MCP** when a tool/action covers the task. Always test with a read-only probe call first.
+3. **Fallback to Resolve Python Scripting API** only when:
+   - No matching MCP tool or action exists in the current version.
+   - An MCP call fails due to a recorded build limitation or bug.
+4. **Mandatory Documentation Line before script writing:**
+   `MCP-GAP: <tool/action checked> -> <result/reason for script fallback>`
+5. Script location and standards:
+   - Place all scripts in `scripts/`.
+   - Always connect using `scripts/resolve_common.py:connect_resolve`.
+   - Wrap state mutations in `preserved_state(resolve)`.
+   - Read back and verify every modification.
+6. If neither MCP nor Python Scripting API supports the feature, mark task as `BLOCKED` with evidence. Never invent method names.
+7. Always end each task by reporting the path used (`davinci-resolve` MCP, Studio MCP, or Python script) and the rationale.
 
-For any task that touches Resolve, follow this order. Do not skip to a script.
+## Editing Architecture and House Rules
 
-1. **Check the `davinci-resolve` MCP first** (inventory A; use B's discovery tools to confirm build-specific API facts). Read the attached tool catalog and the schema of the tool matching the task. Run `resolve_control get_version`, `check_version_support`, and `api_truth "<topic>"` for build-specific capability.
-2. **Use the MCP when a tool/action covers the task.** Try a read-only/probe call first. `python scripts/resolve_preflight.py --need <tool[.action]>` gives a `USE_MCP` / `FALLBACK_SCRIPT` / `BLOCKED` verdict from the saved schemas and server config; it cannot see the live catalog, so it does not replace step 1.
-3. **Write a Resolve Python scripting-API script only after the MCP is shown not to cover it:** no matching tool/action in the catalog, or the MCP call failed with a recorded error. Confirm the method exists with `name in dir(obj)` (never bare `hasattr`), e.g. `resolve_preflight.py --need <Method> --probe-api`.
-4. **Before writing the script, state one line:** `MCP-GAP: <tool/action checked> -> <result>`.
-5. Put the script in `scripts/`, connect through `scripts/resolve_common.py` (`connect_resolve`), and do not copy another `get_resolve()`. All safety rules below still apply to the script.
-6. If neither the MCP nor the scripting API has the capability, report `BLOCKED` with the evidence. Do not guess method names.
-7. End the task by reporting which path was used (`davinci-resolve` MCP, Studio MCP, or Python script) and why.
+### 1. Track Architecture Standards
+- **16:9 Landscape Video:**
+  - `Video 1`: Base Footage (Gameplay + VTuber webcam)
+  - `Video 2`: `VTuber Zoom` (Adjustment Clip track with Fusion Transform)
+  - `Video 3`: `REACTIONS` (Overlays, GIFs, popups, illustrations)
+  - `Subtitle 1`: Native Thai Subtitles (always on top, unaffected by Adjustment Clips)
+- **9:16 Vertical Shorts / TikTok:**
+  - `Video 1`: `Game Top` (Cropped & panned gameplay in top frame)
+  - `Video 2`: `REACTIONS` (GIFs / popups)
+  - `Video 3`: `VTuber Bottom` (Framed avatar in bottom frame)
+  - `Video 4`: `VTuber Zoom` (Adjustment Clip track zooming the avatar)
+  - `Subtitle 1`: Native Thai Subtitles (always on top)
 
-## Safety and house style
+### 2. VTuber Zoom Focus Guidelines
+- **Target Adjustment Clips only**: Never modify underlying Video 1/3 clips or audio/subtitle tracks.
+- **Focal Point**: Avatar centered (`Center X / Y`), scale adjusted so avatar is the dominant subject.
+- **Framing**: Frame from head to chest/hands.
+- **Headroom**: Maintain ~5–8% headroom above the head.
+- **Crop Prohibition**: NEVER cut off the head, face, ears/hair ornaments, or hands. If tight framing risks cropping, reduce zoom level.
+- **Subtitle & HUD Safety**: Ensure no critical HUD or subtitle overlap.
 
-- Never overwrite or alter source footage. Requested analysis may decode sources into new scratch frames/WAVs; editing references originals. Relinking/replacing/transcoding sources needs explicit authorization for that operation.
-- Thai short-form captions: at most three short words / about 14 Thai characters, at most 1.5s per cue; no spaces between Thai words, spaces around Latin names only. Split or flag text rather than silently dropping speech to meet a limit.
-- For subtitle import, use an empty subtitle track and a bare `{"mediaPoolItem": item}` payload. Re-importing a corrected SRT at the same path requires removal of the stale cached pool item. Verify count, text, absolute frames, and approved style.
-- Adjustment Clip / VTuber focus: prefer Resolve scripting; change only approved adjustment clips, preserve all underlying video/audio/subtitle ranges, and render-check framing including head, face, hands, headroom, and caption overlap.
-- Work in recoverable variants unless the user explicitly approves edits to originals behind a fresh verified `.drp`. Keep backups/archived timelines; deleting them is a separate authorized action.
-- Start structural mutations with at least ~1.2s spacing, then save and read back. Numeric transform values must be numeric, not strings; re-read after a false setter return before retrying.
-- Direct SQLite writes are a last-resort, explicit task: verify/export backup, close the project, target exact rows, use a transaction, reopen and read back. Never patch an open database.
+### 3. DRT Transfer Pattern for Safe Track Injections
+Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across track indices on complex timelines. The verified bulletproof pattern:
+1. Export timeline to DRT: `timeline.Export(drt_path, resolve.EXPORT_DRT, resolve.EXPORT_NONE)`
+2. Parse and inject target track/clips via `scripts/drt_focus_track.py`
+3. Import back into project: `media_pool.ImportTimelineFromFile(drt_path)`
+4. Read back and verify all original tracks against baseline.
+
+### 4. Safety and Recoverability
+- Never overwrite source footage.
+- Always export a verified `.drp` backup before running batch operations (`backup_drp.py`).
+- Work in recoverable variants (`_focus_variant`, `_bak`). Only update original master timelines upon explicit user instruction.
+- Always save via `project_manager.SaveProject()` and read back all modified items.
 
 ## Verification and handoff
 
