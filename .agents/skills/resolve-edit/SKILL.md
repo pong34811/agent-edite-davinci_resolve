@@ -272,6 +272,10 @@ accurate change list **without** opening either timeline in Resolve. For carryin
 
 a *conform* across a re-edit, see the `resolve-conform` skill.
 
+## Trimming a timeline tail (no MCP trim setter)
+
+No MCP action trims a timeline item's source range or razors. `scripts/p2_trim_tail_150s.py <index> [--apply] [--seconds 150]` makes a `<name>_150s` copy via DuplicateTimeline + DeleteClips + AppendToTimeline with a reduced `endFrame`: items past the cut are deleted, subtitle cues starting at/after or straddling the cut are deleted (not re-timed), originals untouched. Same pattern as `p2_trim_bad_gif_tail.py`.
+
 ## Source-media safety (AGENTS.md)
 
 Edit operations reference existing Media Pool items — they never transcode,

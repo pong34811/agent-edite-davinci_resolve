@@ -56,6 +56,11 @@ Matching domain skills in `.agents/skills/`: `resolve-edit`, `resolve-color`, `r
   - `scripts/focus_frame_qc.py`: Multi-frame visual and geometry QC for VTuber framing (headroom, centering, scale, crop prevention).
   - `scripts/deploy_climbing_focus.py`: Seamless DRT transfer of focus tracks into master production projects.
   - `scripts/cleanup_and_rename_timelines.py`: Safe timeline cleanup, archiving, and standardized Thai title renaming.
+- p2 production pipeline:
+  - `scripts/p2_9x16_*.py`: build/convert/verify vertical timelines; `p2_9x16_gif_relayout.py` keeps V2 GIFs inside the game panel above the avatar seam (V3 draws over V2).
+  - `scripts/p2_trim_tail_150s.py`: `<name>_150s` variant cut at 150 s (originals untouched; subtitle cues past/straddling the cut are deleted, not re-timed).
+  - `scripts/p2_export_final.py`: final export of every p2 timeline to the Drive `vdo` folder with the `H.264 Master` preset (preset loaded per job, vertical gets a temporary cover frame, dry-run unless `--apply`); loudness via `p2_loudnorm_worker*.py`.
+  - `scripts/armigon_focus_pilot.py`: disposable Adjustment Clip pilot on a temporary duplicate.
 - Styling & Enrichment: `apply_video_style.py`, `enrichment_engine.py`, `enrich_timelines_python.py`, `focus_apply_batch.py`.
 
 ## Tool Selection Hierarchy: MCP First, Scripting API Second (Mandatory)
