@@ -1,0 +1,71 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "b86bab41-fcb6-41b9-9649-4f480c90ccd0",
+   "timeline_id": "619c942c-452a-4689-8532-2d75a45fb292",
+   "timeline": "ปะทะกันบนกำแพงหิมะ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "c511a2c2-dfba-4bbf-a65e-5c0bf3c14cde",
+   "timeline_id": "f05b5098-a846-4d13-ae83-63baaf9ab639",
+   "timeline": "สตรีมเปิดตัว ทักทายและเล่าปัญหาเครื่อง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "b87bdc77-765a-4595-b55d-960b6dc2dfc3",
+   "timeline_id": "f502c2e7-1208-44a7-b388-48c5d6a640e8",
+   "timeline": "เปิดเกม Becastled เริ่มสตรีม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "d3ee7f28-74d3-448b-ac87-7b7f57ba6a2b",
+   "timeline_id": "ecdb7842-ba62-46b5-8044-2e091a1b47f7",
+   "timeline": "เฮ้ย! ชมูท่าด้วยหรอ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "29a28fbb-6b7a-4da4-b37f-c18faf1241b0",
+   "timeline_id": "67c89b21-0b9a-4217-85d7-2d77351955b2",
+   "timeline": "แพ้เกม! ปราสาทแตก-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "cb90461d-9992-4de1-ab0c-deb3c5997df7",
+   "timeline_id": "4395d77d-35bf-4e90-a5ea-918396701f8c",
+   "timeline": "ไม้ไม่พอ งบไม่พอ-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 6,
+ "changed_tracks": 6,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-204551",
+ "cue_counts": {
+  "f05b5098-a846-4d13-ae83-63baaf9ab639": [
+   78
+  ],
+  "619c942c-452a-4689-8532-2d75a45fb292": [
+   38
+  ],
+  "67c89b21-0b9a-4217-85d7-2d77351955b2": [
+   6
+  ],
+  "f502c2e7-1208-44a7-b388-48c5d6a640e8": [
+   70
+  ],
+  "4395d77d-35bf-4e90-a5ea-918396701f8c": [
+   23
+  ],
+  "ecdb7842-ba62-46b5-8044-2e091a1b47f7": [
+   19
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:42:34"
+}

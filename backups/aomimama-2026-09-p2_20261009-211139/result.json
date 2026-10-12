@@ -1,0 +1,26 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "49bec690-ed41-4fc9-b297-a969c0f6ad37",
+   "timeline_id": "ea7e2e33-d573-4907-b9e4-281966c3c74a",
+   "timeline": "คุยส่งท้ายสตรีมก่อนไปนอน-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 1,
+ "changed_tracks": 1,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-211139",
+ "cue_counts": {
+  "ea7e2e33-d573-4907-b9e4-281966c3c74a": [
+   54
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:59:12"
+}

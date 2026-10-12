@@ -1,0 +1,134 @@
+diff --git a/src/utils/api_truth.py b/src/utils/api_truth.py
+index 6588b07..1499868 100644
+--- a/src/utils/api_truth.py
++++ b/src/utils/api_truth.py
+@@ -1718,7 +1718,7 @@ API_TRUTH: List[Dict[str, Any]] = [
+         "submit": "missing",
+     },
+     {
+-        "symbol": "Speech recognition engine selection and SRT import",
++        "symbol": "Speech recognition engine selection",
+         "object": "Timeline",
+         "reality": "Timeline.CreateSubtitlesFromAudio(autoCaptionSettings) "
+                    "always uses the built-in Resolve speech recognition "
+@@ -1726,16 +1726,114 @@ API_TRUTH: List[Dict[str, Any]] = [
+                    "provider (e.g. whisper-cli, Google Speech, AWS Transcribe). "
+                    "The language selection via resolve.AUTO_CAPTION_LANGUAGE_* "
+                    "is the only customization; the engine itself cannot be "
+-                   "changed. Furthermore, there is no API method to import an "
+-                   "SRT file into a subtitle track programmatically — "
+-                   "File -> Import -> Subtitle is UI-only.",
+-        "recommended": "No workaround exists for provider selection or SRT "
+-                       "import. External transcripts must be converted to SRT "
+-                       "and imported through the Resolve UI.",
++                   "changed.",
++        "recommended": "No workaround exists for provider selection. To use an "
++                       "external ASR engine, transcribe offline, write an SRT, "
++                       "and import it with the MediaPool.ImportMedia route "
++                       "recorded under 'SRT import into a subtitle track'.",
+         "tags": ["missing-method", "subtitle", "transcription",
+                  "speech-recognition", "asr"],
+         "submit": "missing",
+     },
++    {
++        "symbol": "SRT import into a subtitle track",
++        "object": "MediaPool",
++        "signature": "ImportMedia([srt_path]) -> [MediaPoolItem]",
++        "reality": "SRT import IS scriptable, contrary to the long-standing "
++                   "assumption that File -> Import -> Subtitle is UI-only. "
++                   "MediaPool.ImportMedia([path.srt]) returns a MediaPoolItem "
++                   "whose Type property is 'Subtitle', and "
++                   "MediaPool.AppendToTimeline([{'mediaPoolItem': item}]) "
++                   "places one timeline item per caption at the timecodes "
++                   "written in the file. Three traps make it look broken: "
++                   "(1) AppendToTimeline returns a non-empty list but places "
++                   "NOTHING while the timeline has no subtitle track — call "
++                   "Timeline.AddTrack('subtitle') first; (2) appending to a "
++                   "track that already holds captions stacks the whole file "
++                   "AFTER them instead of at its own timecodes, so a track "
++                   "must never be appended to twice; (3) "
++                   "Timeline.ImportIntoTimeline(path.srt) returns False — it "
++                   "is AAF-only and is not the route. Verified live on Studio "
++                   "21.1.0.17 by importing a Thai SRT into a scratch timeline "
++                   "and reading the placed items back: text and frame-accurate "
++                   "start times matched the source file.",
++        "recommended": "AddTrack('subtitle') on a timeline with no subtitle "
++                       "track, then ImportMedia + AppendToTimeline, then read "
++                       "GetItemListInTrack('subtitle', idx) back and compare "
++                       "item count and GetStart()/fps against the SRT.",
++        "tags": ["subtitle", "import", "srt", "undocumented", "readback"],
++    },
++    {
++        "symbol": "MediaPool.ImportMedia (re-import of a changed file)",
++        "object": "MediaPool",
++        "signature": "ImportMedia([path]) -> [MediaPoolItem]",
++        "reality": "ImportMedia is PATH-CACHED. Re-importing a path that is "
++                   "already in the media pool returns the EXISTING item with "
++                   "the content parsed at first import, silently ignoring "
++                   "newer bytes on disk — and it reports success, so nothing "
++                   "signals the staleness. Measured on Studio 21.1.0.17 with "
++                   "subtitles: a corrected SRT rewritten to the same path and "
++                   "re-imported left the bin at 12 items instead of 24, and "
++                   "the timeline still carried the ORIGINAL caption text at "
++                   "the original timecodes. Deleting the subtitle track and "
++                   "re-appending does not help, because the stale media pool "
++                   "item is the source.",
++        "recommended": "Before re-importing a changed file, delete the cached "
++                       "item: match on GetClipProperty('File Path') and call "
++                       "MediaPool.DeleteClips([...]), then ImportMedia. "
++                       "Alternatively write to a new path. Always verify by "
++                       "reading content back, never by the return value.",
++        "tags": ["silent-failure", "media-pool", "import", "cache", "subtitle"],
++        "submit": "bug",
++    },
++    {
++        "symbol": "MediaPool.AppendToTimeline (rapid successive calls)",
++        "object": "MediaPool",
++        "reality": "A tight loop of AppendToTimeline calls CRASHES Resolve. "
++                   "Measured on Studio 21.1.0.17: placing 3 SFX, 1 BGM and 1 "
++                   "GIF onto a timeline with no pause between calls killed the "
++                   "process mid-sequence (only a 'Problem Report for DaVinci "
++                   "Resolve' window left; the scripting handle then returns "
++                   "None). Each individual operation was proven survivable in "
++                   "isolation against a duplicated real timeline — GIF over a "
++                   "live V1, BGM sub-range append, AudioVolume write — so the "
++                   "trigger is the RATE, not any one call. davinci_resolve.log "
++                   "shows back-to-back 'Start saving project' and timeline-"
++                   "backup lines: Resolve is still committing the previous "
++                   "edit when the next append arrives. The log's last lines "
++                   "('Video decoder is destroyed with live file handle', "
++                   "'Unsupported clip format for audio decoding ... GIF') are "
++                   "a red herring — the identical pair appears in runs that "
++                   "succeed.",
++        "recommended": "Sleep ~0.35s between AppendToTimeline calls in a batch, "
++                       "print progress per item so a crash names the step it "
++                       "died on, and verify placement by reading the track "
++                       "back afterwards rather than trusting the return value.",
++        "tags": ["crash", "media-pool", "timeline", "rate-limit", "batch"],
++        "submit": "bug",
++    },
++    {
++        "symbol": "TimelineItem audio level ('Volume' vs 'AudioVolume')",
++        "object": "TimelineItem",
++        "signature": "SetProperty('AudioVolume', dB) -> bool",
++        "reality": "The obvious spelling does not work and does not say so: "
++                   "SetProperty('Volume', -12.0) returns False and "
++                   "GetProperty('Volume') returns False, as do 'Gain', "
++                   "'Level', 'AudioGain' and 'ClipVolume'. The working key is "
++                   "'AudioVolume', in dB, which sets and reads back exactly "
++                   "(-18, -24.5, +6 all verified on Studio 21.1.0.17). "
++                   "GetProperty() with no arguments lists the real audio keys: "
++                   "AudioVolume, AudioPan, AudioPitch*, AudioVoiceIsolation*, "
++                   "AudioDialogueLeveler*. Note Timeline.SetTrackProperty / "
++                   "GetTrackProperty do NOT exist on this build, so level is "
++                   "per item; and there is no keyframe/fade API, so a music "
++                   "bed can only be a flat level, never ducked under speech.",
++        "recommended": "Use SetProperty('AudioVolume', dB) and confirm with "
++                       "GetProperty('AudioVolume'). Enumerate GetProperty() "
++                       "with no arguments before guessing a property name.",
++        "tags": ["silent-failure", "audio", "timeline-item", "property"],
++        "submit": "bug",
++    },
+     {
+         "symbol": "Media Pool folder rename",
+         "object": "MediaPool",

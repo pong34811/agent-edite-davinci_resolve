@@ -1,0 +1,53 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "2b9d1ee0-f24f-4396-94a3-88f6d33ecb17",
+   "timeline_id": "87761551-a70d-4b65-a09e-d52e40839d89",
+   "timeline": "คุยสรุปเกมก่อนจบสตรีม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "a32449d1-b27d-4645-91fe-fee757f14caa",
+   "timeline_id": "1db94611-6fbc-44b9-99d6-04e2ef7a3a9f",
+   "timeline": "ด่านหิมะศัตรูเต็มจอ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "706060b9-c6e5-45ce-98fb-14da4642c197",
+   "timeline_id": "725fe999-2530-4e1f-b8b9-df6b0d85018f",
+   "timeline": "ศึกกลางคืนรุกเข้ากำแพง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "61a0f56b-65ad-4dd6-9cbd-58f5539c8572",
+   "timeline_id": "00466e4e-0016-46ea-a4a4-09f0c864c101",
+   "timeline": "สร้างกำแพงเมืองใน Becastled-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 4,
+ "changed_tracks": 4,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-202923",
+ "cue_counts": {
+  "1db94611-6fbc-44b9-99d6-04e2ef7a3a9f": [
+   6
+  ],
+  "87761551-a70d-4b65-a09e-d52e40839d89": [
+   13
+  ],
+  "00466e4e-0016-46ea-a4a4-09f0c864c101": [
+   28
+  ],
+  "725fe999-2530-4e1f-b8b9-df6b0d85018f": [
+   11
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:44:30"
+}

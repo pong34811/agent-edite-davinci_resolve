@@ -1,0 +1,89 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "6767461b-a288-4093-ab88-bddd0d788d2b",
+   "timeline_id": "db55fffc-a73b-4699-ae3e-8e5917f33b9b",
+   "timeline": "ขุดถ้ำเกือบตก-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "29fa4b0a-c24f-43cd-bf9a-57c5c1a1048b",
+   "timeline_id": "1de8c369-472b-454a-adb3-e0d3e6ece41f",
+   "timeline": "คุยเรื่องนอนกับเพื่อนร่วมเซิร์ฟ-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "a6452953-7ce0-49f9-9aab-b82da0aca3fd",
+   "timeline_id": "8fb159e8-1ce3-47c1-87c7-180a716d80d6",
+   "timeline": "ตกลาวาตายกลางเกม-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "3b55b771-8597-4cab-930a-4fd5c0fb24de",
+   "timeline_id": "44a97e66-42d9-41d1-a3c4-05a11b087d10",
+   "timeline": "ถ้ำเสียวสันหลังแล้วสู้มอนสเตอร์-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "2a65391c-47d4-4931-ba3d-354bf8ccee1d",
+   "timeline_id": "43c57f73-1bc7-41db-aa22-00fcfae4c256",
+   "timeline": "พูดคุยช่วงเริ่มไลฟ์-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "86d4b0b6-445f-4860-984d-47ede81348b0",
+   "timeline_id": "9e56cff8-f914-4406-9e1d-b28341ca384c",
+   "timeline": "มุกหมู่กับเพื่อนในเซิร์ฟ-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "8b5b7c53-9678-484c-b369-d2be86c647fe",
+   "timeline_id": "1d265537-2dcb-454d-8982-4ba114d7e2a0",
+   "timeline": "หนาวตายหรือความตายเอง-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "09d64c60-6058-4171-9ed9-63749e5c3459",
+   "timeline_id": "ccf5184c-6b0f-4a2a-b647-01f73d958bb8",
+   "timeline": "ใช้พลังแอดมินโกงเวลา-Minecraft-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 8,
+ "changed_tracks": 8,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-173232",
+ "cue_counts": {
+  "43c57f73-1bc7-41db-aa22-00fcfae4c256": [
+   36
+  ],
+  "8fb159e8-1ce3-47c1-87c7-180a716d80d6": [
+   40
+  ],
+  "1de8c369-472b-454a-adb3-e0d3e6ece41f": [
+   67
+  ],
+  "ccf5184c-6b0f-4a2a-b647-01f73d958bb8": [
+   51
+  ],
+  "1d265537-2dcb-454d-8982-4ba114d7e2a0": [
+   45
+  ],
+  "db55fffc-a73b-4699-ae3e-8e5917f33b9b": [
+   40
+  ],
+  "44a97e66-42d9-41d1-a3c4-05a11b087d10": [
+   36
+  ],
+  "9e56cff8-f914-4406-9e1d-b28341ca384c": [
+   34
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:07:22"
+}

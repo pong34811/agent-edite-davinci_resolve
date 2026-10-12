@@ -1,0 +1,90 @@
+{
+ "project": "tygarina_2026-09-30_GarticPhone_VTuberFocus",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Tygarina\\2026-09-30\\tygarina_2026-09-30_GarticPhone_VTuberFocus\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "font=Mitr Bold (weight 75), 144 bytes",
+ "tracks": [
+  {
+   "track_id": "a0f171aa-b392-4ee2-92a4-84384dffc9d4",
+   "timeline_id": "27f6eae9-cac8-4353-8f32-cb9be567f163",
+   "timeline": "Highlight_Meme_GarticPhone_Art_9x16",
+   "already_matches": true
+  },
+  {
+   "track_id": "b271681f-4818-4d51-bb4d-e332ee2442eb",
+   "timeline_id": "3479c519-630b-443b-b3bc-621ecfeca88e",
+   "timeline": "ทายคำตอบผิดจนเนื้อเรื่องออกทะเล_GarticPhone-vdo_9x16",
+   "already_matches": true
+  },
+  {
+   "track_id": "7b23175b-ed7e-4f1f-a222-d3e327bc4a62",
+   "timeline_id": "3479c519-630b-443b-b3bc-621ecfeca88e",
+   "timeline": "ทายคำตอบผิดจนเนื้อเรื่องออกทะเล_GarticPhone-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "a8e7dedc-8aff-4c6f-8d40-b6d1863bf2df",
+   "timeline_id": "3479c519-630b-443b-b3bc-621ecfeca88e",
+   "timeline": "ทายคำตอบผิดจนเนื้อเรื่องออกทะเล_GarticPhone-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "379bdbfb-f5d8-48f9-8ca4-785c7fc4adf8",
+   "timeline_id": "4c979fda-d86f-46ca-85d2-639238b7feac",
+   "timeline": "ลืมปิดไมค์วาดรูปไฟลนก้น_GarticPhone-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "edf0b03f-9ad7-4c7e-b68c-34dab1b7ccbc",
+   "timeline_id": "681eacf0-249b-4e60-a9b1-5ef405ddf3b0",
+   "timeline": "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo_9x16",
+   "already_matches": true
+  },
+  {
+   "track_id": "bca091bb-4926-4b8a-bed5-cc065b1825c7",
+   "timeline_id": "681eacf0-249b-4e60-a9b1-5ef405ddf3b0",
+   "timeline": "วาดรูปเพี้ยนจนกลายเป็นมีม_GarticPhone-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "10fbcffa-a78e-425a-ad78-559ca22265a5",
+   "timeline_id": "96ea35ef-a73c-4581-ba66-0b5cad3303fb",
+   "timeline": "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo_9x16",
+   "already_matches": true
+  },
+  {
+   "track_id": "ca2d6436-b603-4e82-9903-7b0ec04836a0",
+   "timeline_id": "96ea35ef-a73c-4581-ba66-0b5cad3303fb",
+   "timeline": "เฉลยภาพวาดจนเพื่อนอึ้งทั้งห้อง_GarticPhone-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 9,
+ "changed_tracks": 5,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\subtitle-preset\\tygarina_2026-09-30_GarticPhone_VTuberFocus_20261010-205046",
+ "cue_counts": {
+  "4c979fda-d86f-46ca-85d2-639238b7feac": [
+   2
+  ],
+  "27f6eae9-cac8-4353-8f32-cb9be567f163": [
+   10
+  ],
+  "681eacf0-249b-4e60-a9b1-5ef405ddf3b0": [
+   12,
+   6
+  ],
+  "96ea35ef-a73c-4581-ba66-0b5cad3303fb": [
+   2,
+   1
+  ],
+  "3479c519-630b-443b-b3bc-621ecfeca88e": [
+   9,
+   1,
+   1
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:35:06"
+}

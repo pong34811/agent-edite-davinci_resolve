@@ -1,0 +1,413 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "49f730c2-20ce-4a59-820d-3780350e6c3e",
+   "timeline_id": "01c9b1e6-514f-4810-b42c-a4f47bd7eec1",
+   "timeline": "กำแพงถูกบุกจนมีคนตาย-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "513e38bb-05fb-490d-88fb-66771bb0ae62",
+   "timeline_id": "d511be7d-e54e-470b-9adc-3cf1578d007a",
+   "timeline": "กำแพงโดนตี ตายไปดูหน่อย-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "a92f3f8e-6825-4371-899f-d4dd720112ce",
+   "timeline_id": "db55fffc-a73b-4699-ae3e-8e5917f33b9b",
+   "timeline": "ขุดถ้ำเกือบตก-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "24303255-68fe-48c4-8b04-b05dc180d355",
+   "timeline_id": "87761551-a70d-4b65-a09e-d52e40839d89",
+   "timeline": "คุยสรุปเกมก่อนจบสตรีม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "823dce95-4461-4fdf-b16b-b5a7c451660e",
+   "timeline_id": "ea7e2e33-d573-4907-b9e4-281966c3c74a",
+   "timeline": "คุยส่งท้ายสตรีมก่อนไปนอน-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "e908f13b-b9a1-43cb-bc4d-b26059cbb884",
+   "timeline_id": "1de8c369-472b-454a-adb3-e0d3e6ece41f",
+   "timeline": "คุยเรื่องนอนกับเพื่อนร่วมเซิร์ฟ-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "28a0543c-c33a-4419-bf00-52bdfcf58d5e",
+   "timeline_id": "cb9768ed-bbc1-4df1-bfe0-e47ac26f0e51",
+   "timeline": "คุยเรื่องเกมตอนรอเมนู-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "dff47890-8d26-46b7-8f1c-3e0938bac3e1",
+   "timeline_id": "1d5238ed-414a-45b7-8458-7310de771be3",
+   "timeline": "ชนะรอบแล้วบ่นเหนื่อย-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "f84efaf7-aae9-46a6-8c8c-9c171bd85051",
+   "timeline_id": "3db406e7-c1bc-45e3-85d4-53f593a99d82",
+   "timeline": "ดีเฟนด์รอบสุดท้ายจนแพ้-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "4c9d134b-df40-495e-b9b1-7473f4ea9992",
+   "timeline_id": "1db94611-6fbc-44b9-99d6-04e2ef7a3a9f",
+   "timeline": "ด่านหิมะศัตรูเต็มจอ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "8361046e-dac9-451a-b13c-1eb9516e23a7",
+   "timeline_id": "02d52548-f20c-4c72-bcd9-e798c63392c8",
+   "timeline": "ด่าเพื่อนยืนหลังคนแพน-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "aa812854-1402-4ae2-bdde-5194292d3ba6",
+   "timeline_id": "8fb159e8-1ce3-47c1-87c7-180a716d80d6",
+   "timeline": "ตกลาวาตายกลางเกม-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "3c049e87-2553-4f0a-81e8-7bede3beaeae",
+   "timeline_id": "44a97e66-42d9-41d1-a3c4-05a11b087d10",
+   "timeline": "ถ้ำเสียวสันหลังแล้วสู้มอนสเตอร์-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "d79bb91b-0976-4011-8ffc-39a515d21f70",
+   "timeline_id": "e66259d2-d42e-4518-a71d-8d116fbdc0d3",
+   "timeline": "ทีมโหวตยอมแพ้-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "72ffc937-72c7-4af5-9c52-c11e177ec6a9",
+   "timeline_id": "7c48238e-a476-44f0-867f-ab51409994d0",
+   "timeline": "บ่นทำไมชอบสู้ในทางแคบ-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "e3727803-47e9-458d-ab59-98ec2220323e",
+   "timeline_id": "e6e64eff-c154-4923-862f-75079ce8566d",
+   "timeline": "บ่นเพื่อนร่วมทีมยิงหลัง-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "50c7a114-7673-49b7-b5da-90a7fdd27e35",
+   "timeline_id": "619c942c-452a-4689-8532-2d75a45fb292",
+   "timeline": "ปะทะกันบนกำแพงหิมะ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "af51bc77-2af1-4081-bffd-6af195e37624",
+   "timeline_id": "43c57f73-1bc7-41db-aa22-00fcfae4c256",
+   "timeline": "พูดคุยช่วงเริ่มไลฟ์-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "44b0b36f-9a14-479d-971f-ed30f085d6d5",
+   "timeline_id": "9e56cff8-f914-4406-9e1d-b28341ca384c",
+   "timeline": "มุกหมู่กับเพื่อนในเซิร์ฟ-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "1093822d-2285-4560-ac68-47f4e473caca",
+   "timeline_id": "f2ef905d-1509-4d3d-bd51-134c87b46c6e",
+   "timeline": "ระบายเกลียดการโดนโฟกัสคนเดียว-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "df728cb5-ecd4-48d8-94d7-a583711807d5",
+   "timeline_id": "f6eada7e-9d6e-4552-8915-8f973219f281",
+   "timeline": "ลองเล่นครั้งแรกแล้วงงกับเกม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "dce78d0c-3844-4ee6-a181-af366673be67",
+   "timeline_id": "f509b224-3f32-4f86-94aa-f2ae8ffb07df",
+   "timeline": "ลุ้นยิงปะทะในรอบ Strinova-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "9902d784-0bd0-485d-80e8-aac70b4c2de5",
+   "timeline_id": "16a4e06a-310e-4871-b164-858609093378",
+   "timeline": "ศัตรูบุกสะพานต้องรีบป้องกัน-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "de304f86-b303-482a-9939-0946d8461e72",
+   "timeline_id": "725fe999-2530-4e1f-b8b9-df6b0d85018f",
+   "timeline": "ศึกกลางคืนรุกเข้ากำแพง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "dce9ff1d-eb5c-41a7-bd91-e3a73ab20a5d",
+   "timeline_id": "14c5abc1-8112-4328-a656-2ed9e9b46f7e",
+   "timeline": "ศึกบอสสุดท้ายหน้ากำแพง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "394da6b8-076c-4e46-aed9-296d0c908fd2",
+   "timeline_id": "dd01cf75-107c-40bd-b491-ee213a77943f",
+   "timeline": "สงสัยโดนโกงจนต้องกดรีพอร์ต-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "bea5c9e8-7ebf-45a3-b016-dddc7d936cc0",
+   "timeline_id": "f05b5098-a846-4d13-ae83-63baaf9ab639",
+   "timeline": "สตรีมเปิดตัว ทักทายและเล่าปัญหาเครื่อง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "794f7b25-3927-4d4a-9b55-a791fe1bf19b",
+   "timeline_id": "00466e4e-0016-46ea-a4a4-09f0c864c101",
+   "timeline": "สร้างกำแพงเมืองใน Becastled-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "db8f5652-fb2c-4ab1-9b17-dd7be55ad6b0",
+   "timeline_id": "1d265537-2dcb-454d-8982-4ba114d7e2a0",
+   "timeline": "หนาวตายหรือความตายเอง-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "9d547297-dc20-4d18-bce1-ffba5d4a32ea",
+   "timeline_id": "1a464eb3-4736-4666-9f7c-eab7cbb8f768",
+   "timeline": "หลบหนีรอบสุดท้ายแล้วร้องโอ้ย-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "22ad5e25-b4d1-4e56-b531-37768bad75b0",
+   "timeline_id": "eb5ab589-039b-4855-b68a-69d2bc923ae3",
+   "timeline": "เก็บระเบิดแล้วบ่นทีมไม่ช่วย-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "164a756e-2435-468c-8398-48aa5cb86b29",
+   "timeline_id": "daeceb1a-988f-4bd5-a3a6-f45900ba49db",
+   "timeline": "เปิดสตรีมทักทายแล้วแนะนำเกมวันนี้-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "24b5291a-1da8-4143-afc1-37c95fd2f544",
+   "timeline_id": "f502c2e7-1208-44a7-b388-48c5d6a640e8",
+   "timeline": "เปิดเกม Becastled เริ่มสตรีม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "78feb132-d5b1-46a1-a8a9-a36757a4ab53",
+   "timeline_id": "876fe2ef-6c90-4161-a4f4-f69db3f30511",
+   "timeline": "เพื่อนตายในรูอีกแล้ว-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "fdd02327-6b89-47e6-9a86-9b1fe83b4eb0",
+   "timeline_id": "dca4e7a2-8d90-4f05-9690-38ed8a85726d",
+   "timeline": "เสียงหลุดตอนโดนยิงรัว-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "06167ff2-15c9-412d-8574-17de08ef7a39",
+   "timeline_id": "ecdb7842-ba62-46b5-8044-2e091a1b47f7",
+   "timeline": "เฮ้ย! ชมูท่าด้วยหรอ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "837d43b9-3d6b-42c7-bcb3-27244af583aa",
+   "timeline_id": "67c89b21-0b9a-4217-85d7-2d77351955b2",
+   "timeline": "แพ้เกม! ปราสาทแตก-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "454bf8f2-2932-41dc-a492-db9d27c6c24d",
+   "timeline_id": "53acd4aa-1d36-47bf-a67e-9556308ace48",
+   "timeline": "ใครเนี่ย แล้วก็งงในเกม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "cbc7cc61-e574-41f7-b5f0-3705508eac27",
+   "timeline_id": "ccf5184c-6b0f-4a2a-b647-01f73d958bb8",
+   "timeline": "ใช้พลังแอดมินโกงเวลา-Minecraft-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "ef9713ff-d80e-46a1-8316-ccbce8e4ada7",
+   "timeline_id": "41354709-559f-4b8e-b636-e42686d179d4",
+   "timeline": "ไฟลุกกลางศึกป้อมปราการ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "5dbf1783-8e67-447e-ab19-0b6d2cef356d",
+   "timeline_id": "07ba4f43-4659-418f-8f50-26e9e05b41e6",
+   "timeline": "ไม่มีไม้ขาย ศัตรูบุกมาแล้ว-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "a04de796-47da-4994-b4ba-89f2363f45d1",
+   "timeline_id": "4395d77d-35bf-4e90-a5ea-918396701f8c",
+   "timeline": "ไม้ไม่พอ งบไม่พอ-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "c53bd737-14f6-414e-8d6c-2790586e7e08",
+   "timeline_id": "4b8ea6f6-6bfc-439c-baa1-31635ab77e7b",
+   "timeline": "ไล่ล่าและโดนฮิตกลางแมป-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "065174c1-183d-4800-aef9-6bfdc1ca6d8f",
+   "timeline_id": "d15f289c-e41b-4b7e-b902-028cc8bcd05c",
+   "timeline": "ไล่เคลียร์หมากแล้วบ่นยับ-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 44,
+ "changed_tracks": 44,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261010-111515",
+ "cue_counts": {
+  "1d5238ed-414a-45b7-8458-7310de771be3": [
+   39
+  ],
+  "cb9768ed-bbc1-4df1-bfe0-e47ac26f0e51": [
+   119
+  ],
+  "7c48238e-a476-44f0-867f-ab51409994d0": [
+   46
+  ],
+  "eb5ab589-039b-4855-b68a-69d2bc923ae3": [
+   58
+  ],
+  "876fe2ef-6c90-4161-a4f4-f69db3f30511": [
+   36
+  ],
+  "e66259d2-d42e-4518-a71d-8d116fbdc0d3": [
+   4
+  ],
+  "02d52548-f20c-4c72-bcd9-e798c63392c8": [
+   39
+  ],
+  "f509b224-3f32-4f86-94aa-f2ae8ffb07df": [
+   26
+  ],
+  "4b8ea6f6-6bfc-439c-baa1-31635ab77e7b": [
+   44
+  ],
+  "dd01cf75-107c-40bd-b491-ee213a77943f": [
+   56
+  ],
+  "dca4e7a2-8d90-4f05-9690-38ed8a85726d": [
+   11
+  ],
+  "e6e64eff-c154-4923-862f-75079ce8566d": [
+   46
+  ],
+  "1a464eb3-4736-4666-9f7c-eab7cbb8f768": [
+   42
+  ],
+  "f2ef905d-1509-4d3d-bd51-134c87b46c6e": [
+   50
+  ],
+  "3db406e7-c1bc-45e3-85d4-53f593a99d82": [
+   49
+  ],
+  "43c57f73-1bc7-41db-aa22-00fcfae4c256": [
+   46
+  ],
+  "8fb159e8-1ce3-47c1-87c7-180a716d80d6": [
+   48
+  ],
+  "1de8c369-472b-454a-adb3-e0d3e6ece41f": [
+   67
+  ],
+  "ccf5184c-6b0f-4a2a-b647-01f73d958bb8": [
+   64
+  ],
+  "1d265537-2dcb-454d-8982-4ba114d7e2a0": [
+   45
+  ],
+  "db55fffc-a73b-4699-ae3e-8e5917f33b9b": [
+   50
+  ],
+  "44a97e66-42d9-41d1-a3c4-05a11b087d10": [
+   43
+  ],
+  "9e56cff8-f914-4406-9e1d-b28341ca384c": [
+   42
+  ],
+  "daeceb1a-988f-4bd5-a3a6-f45900ba49db": [
+   44
+  ],
+  "f6eada7e-9d6e-4552-8915-8f973219f281": [
+   2
+  ],
+  "01c9b1e6-514f-4810-b42c-a4f47bd7eec1": [
+   6
+  ],
+  "16a4e06a-310e-4871-b164-858609093378": [
+   74
+  ],
+  "1db94611-6fbc-44b9-99d6-04e2ef7a3a9f": [
+   6
+  ],
+  "87761551-a70d-4b65-a09e-d52e40839d89": [
+   17
+  ],
+  "00466e4e-0016-46ea-a4a4-09f0c864c101": [
+   28
+  ],
+  "725fe999-2530-4e1f-b8b9-df6b0d85018f": [
+   13
+  ],
+  "619c942c-452a-4689-8532-2d75a45fb292": [
+   38
+  ],
+  "67c89b21-0b9a-4217-85d7-2d77351955b2": [
+   7
+  ],
+  "f05b5098-a846-4d13-ae83-63baaf9ab639": [
+   78
+  ],
+  "f502c2e7-1208-44a7-b388-48c5d6a640e8": [
+   86
+  ],
+  "4395d77d-35bf-4e90-a5ea-918396701f8c": [
+   24
+  ],
+  "ecdb7842-ba62-46b5-8044-2e091a1b47f7": [
+   21
+  ],
+  "d511be7d-e54e-470b-9adc-3cf1578d007a": [
+   13
+  ],
+  "d15f289c-e41b-4b7e-b902-028cc8bcd05c": [
+   12
+  ],
+  "07ba4f43-4659-418f-8f50-26e9e05b41e6": [
+   27
+  ],
+  "14c5abc1-8112-4328-a656-2ed9e9b46f7e": [
+   29
+  ],
+  "ea7e2e33-d573-4907-b9e4-281966c3c74a": [
+   71
+  ],
+  "53acd4aa-1d36-47bf-a67e-9556308ace48": [
+   16
+  ],
+  "41354709-559f-4b8e-b636-e42686d179d4": [
+   17
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:01:45:36"
+}

@@ -1,0 +1,89 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "099c0d7f-e880-4be1-b2bf-45c5f99e3e90",
+   "timeline_id": "3db406e7-c1bc-45e3-85d4-53f593a99d82",
+   "timeline": "ดีเฟนด์รอบสุดท้ายจนแพ้-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "eccfdef7-ef58-4407-b327-22b1c740729f",
+   "timeline_id": "e6e64eff-c154-4923-862f-75079ce8566d",
+   "timeline": "บ่นเพื่อนร่วมทีมยิงหลัง-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "7d4b897a-570c-4364-bf86-c481ab7e08f7",
+   "timeline_id": "f2ef905d-1509-4d3d-bd51-134c87b46c6e",
+   "timeline": "ระบายเกลียดการโดนโฟกัสคนเดียว-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "8e70269d-e7ce-45e2-93ee-b938689446ce",
+   "timeline_id": "f509b224-3f32-4f86-94aa-f2ae8ffb07df",
+   "timeline": "ลุ้นยิงปะทะในรอบ Strinova-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "3378600d-30df-45da-8bd8-dd45eaaacb1d",
+   "timeline_id": "dd01cf75-107c-40bd-b491-ee213a77943f",
+   "timeline": "สงสัยโดนโกงจนต้องกดรีพอร์ต-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "b3ffc641-6a46-4b23-b235-7ad949b936ab",
+   "timeline_id": "1a464eb3-4736-4666-9f7c-eab7cbb8f768",
+   "timeline": "หลบหนีรอบสุดท้ายแล้วร้องโอ้ย-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "03802767-387b-491b-8d08-46e68a50b7bf",
+   "timeline_id": "dca4e7a2-8d90-4f05-9690-38ed8a85726d",
+   "timeline": "เสียงหลุดตอนโดนยิงรัว-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "8cc29496-b9fc-466c-a681-bc01c45066d5",
+   "timeline_id": "4b8ea6f6-6bfc-439c-baa1-31635ab77e7b",
+   "timeline": "ไล่ล่าและโดนฮิตกลางแมป-strinova-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 8,
+ "changed_tracks": 8,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-171756",
+ "cue_counts": {
+  "f509b224-3f32-4f86-94aa-f2ae8ffb07df": [
+   25
+  ],
+  "4b8ea6f6-6bfc-439c-baa1-31635ab77e7b": [
+   44
+  ],
+  "dd01cf75-107c-40bd-b491-ee213a77943f": [
+   45
+  ],
+  "dca4e7a2-8d90-4f05-9690-38ed8a85726d": [
+   9
+  ],
+  "e6e64eff-c154-4923-862f-75079ce8566d": [
+   38
+  ],
+  "1a464eb3-4736-4666-9f7c-eab7cbb8f768": [
+   42
+  ],
+  "f2ef905d-1509-4d3d-bd51-134c87b46c6e": [
+   43
+  ],
+  "3db406e7-c1bc-45e3-85d4-53f593a99d82": [
+   48
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:07:22"
+}

@@ -1,0 +1,53 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "fb1cda6f-e05e-4a5a-aec1-bd876ba5f90a",
+   "timeline_id": "01c9b1e6-514f-4810-b42c-a4f47bd7eec1",
+   "timeline": "กำแพงถูกบุกจนมีคนตาย-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "999c8686-70f3-40c1-9c14-c0ca75c9b704",
+   "timeline_id": "f6eada7e-9d6e-4552-8915-8f973219f281",
+   "timeline": "ลองเล่นครั้งแรกแล้วงงกับเกม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "adf212c6-cbe6-4f00-bc9c-9071a5982fe9",
+   "timeline_id": "16a4e06a-310e-4871-b164-858609093378",
+   "timeline": "ศัตรูบุกสะพานต้องรีบป้องกัน-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "07935e7c-1606-41b4-b3d0-674281414536",
+   "timeline_id": "daeceb1a-988f-4bd5-a3a6-f45900ba49db",
+   "timeline": "เปิดสตรีมทักทายแล้วแนะนำเกมวันนี้-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 4,
+ "changed_tracks": 4,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-200349",
+ "cue_counts": {
+  "daeceb1a-988f-4bd5-a3a6-f45900ba49db": [
+   37
+  ],
+  "f6eada7e-9d6e-4552-8915-8f973219f281": [
+   2
+  ],
+  "01c9b1e6-514f-4810-b42c-a4f47bd7eec1": [
+   6
+  ],
+  "16a4e06a-310e-4871-b164-858609093378": [
+   69
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:59:12"
+}

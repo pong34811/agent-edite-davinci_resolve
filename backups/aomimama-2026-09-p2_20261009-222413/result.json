@@ -1,0 +1,35 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "97bede4c-31eb-4d34-815e-72bf75966bfb",
+   "timeline_id": "53acd4aa-1d36-47bf-a67e-9556308ace48",
+   "timeline": "ใครเนี่ย แล้วก็งงในเกม-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "1d56b938-92ac-42ca-9950-be31f18cc5c1",
+   "timeline_id": "41354709-559f-4b8e-b636-e42686d179d4",
+   "timeline": "ไฟลุกกลางศึกป้อมปราการ-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 2,
+ "changed_tracks": 2,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-222413",
+ "cue_counts": {
+  "53acd4aa-1d36-47bf-a67e-9556308ace48": [
+   16
+  ],
+  "41354709-559f-4b8e-b636-e42686d179d4": [
+   16
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:44:39"
+}

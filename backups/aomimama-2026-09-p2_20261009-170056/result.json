@@ -1,0 +1,71 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "3b293e06-e9e3-440b-8328-962ff4b227a7",
+   "timeline_id": "cb9768ed-bbc1-4df1-bfe0-e47ac26f0e51",
+   "timeline": "คุยเรื่องเกมตอนรอเมนู-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "80636386-b971-4a90-a6b4-e08c437ec567",
+   "timeline_id": "02d52548-f20c-4c72-bcd9-e798c63392c8",
+   "timeline": "ด่าเพื่อนยืนหลังคนแพน-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "e4a8cb5d-87c7-417a-b012-c50fd7f9d255",
+   "timeline_id": "e66259d2-d42e-4518-a71d-8d116fbdc0d3",
+   "timeline": "ทีมโหวตยอมแพ้-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "35d6349f-f3cc-4652-a4a7-a01e84202895",
+   "timeline_id": "7c48238e-a476-44f0-867f-ab51409994d0",
+   "timeline": "บ่นทำไมชอบสู้ในทางแคบ-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "03140273-b9c3-4dc1-9f88-c9f409be8e19",
+   "timeline_id": "eb5ab589-039b-4855-b68a-69d2bc923ae3",
+   "timeline": "เก็บระเบิดแล้วบ่นทีมไม่ช่วย-strinova-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "1c4c622f-dab6-479b-a572-3eedf2d09ca1",
+   "timeline_id": "876fe2ef-6c90-4161-a4f4-f69db3f30511",
+   "timeline": "เพื่อนตายในรูอีกแล้ว-strinova-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 6,
+ "changed_tracks": 6,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-170056",
+ "cue_counts": {
+  "cb9768ed-bbc1-4df1-bfe0-e47ac26f0e51": [
+   119
+  ],
+  "7c48238e-a476-44f0-867f-ab51409994d0": [
+   35
+  ],
+  "eb5ab589-039b-4855-b68a-69d2bc923ae3": [
+   58
+  ],
+  "876fe2ef-6c90-4161-a4f4-f69db3f30511": [
+   36
+  ],
+  "e66259d2-d42e-4518-a71d-8d116fbdc0d3": [
+   3
+  ],
+  "02d52548-f20c-4c72-bcd9-e798c63392c8": [
+   33
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:07:22"
+}

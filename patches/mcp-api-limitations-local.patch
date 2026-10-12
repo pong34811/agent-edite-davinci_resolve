@@ -1,0 +1,58 @@
+diff --git a/docs/reference/api-limitations.md b/docs/reference/api-limitations.md
+index a439bd7..7a3cefe 100644
+--- a/docs/reference/api-limitations.md
++++ b/docs/reference/api-limitations.md
+@@ -12,7 +12,7 @@ that none exists).
+ 
+ **Verified on:** DaVinci Resolve Studio 21.0.2
+ 
+-**Totals:** 42 missing capabilities, 56 bugs / unreliable behaviors.
++**Totals:** 42 missing capabilities, 59 bugs / unreliable behaviors.
+ 
+ The authoritative source is the runtime-queryable `api_truth` ledger
+ (`resolve_control api_truth "<query>"`); this document is generated from
+@@ -178,11 +178,11 @@ equivalent, blocking full automation.
+ - **Workaround / current handling:** No API workaround exists, but the style IS reachable below the API: it lives in Sm2TiTrack.FieldsBlob for Type=2 tracks, as an EffectFiltersBA payload whose effect 136 carries a Qt QFont descriptor (param 18) and a normalised position vector (param 17). Exposed as project_db list_subtitle_styles / set_subtitle_style (font family/size/weight/italic + position). Confirmed live on BOTH editions 2026-08-06 — Studio 19.1.3 and free 21.0.3, identical behaviour: Resolve opens a patched track and re-serialises it back to its own zstd form with the patched values intact, so it genuinely parses the write. Caveats: whole-TRACK style not per-caption, project must be CLOSED, Resolve must be fully quit and relaunched afterwards, and the track must already carry a style blob (a freshly added subtitle track has none until it is styled once in the UI). Burn-in overlays via Fusion titles remain a visual alternative but do not produce subtitle tracks.
+ - **Tags:** missing-method, subtitle, style, preset
+ 
+-### Speech recognition engine selection and SRT import
++### Speech recognition engine selection
+ 
+ - **Object:** `Timeline`
+-- **Behavior:** Timeline.CreateSubtitlesFromAudio(autoCaptionSettings) always uses the built-in Resolve speech recognition engine. There is no API parameter to select an alternative provider (e.g. whisper-cli, Google Speech, AWS Transcribe). The language selection via resolve.AUTO_CAPTION_LANGUAGE_* is the only customization; the engine itself cannot be changed. Furthermore, there is no API method to import an SRT file into a subtitle track programmatically — File -> Import -> Subtitle is UI-only.
+-- **Workaround / current handling:** No workaround exists for provider selection or SRT import. External transcripts must be converted to SRT and imported through the Resolve UI.
++- **Behavior:** Timeline.CreateSubtitlesFromAudio(autoCaptionSettings) always uses the built-in Resolve speech recognition engine. There is no API parameter to select an alternative provider (e.g. whisper-cli, Google Speech, AWS Transcribe). The language selection via resolve.AUTO_CAPTION_LANGUAGE_* is the only customization; the engine itself cannot be changed.
++- **Workaround / current handling:** No workaround exists for provider selection. To use an external ASR engine, transcribe offline, write an SRT, and import it with the MediaPool.ImportMedia route recorded under 'SRT import into a subtitle track'.
+ - **Tags:** missing-method, subtitle, transcription, speech-recognition, asr
+ 
+ ### Media Pool folder rename
+@@ -565,6 +565,29 @@ values, or automation-hostile modal prompts.
+ - **Reference:** [issue #123](https://github.com/samuelgursky/davinci-resolve-mcp/issues/123)
+ - **Tags:** render, subtitle, silent-failure, unverified-cause, deliver
+ 
++### MediaPool.ImportMedia (re-import of a changed file)
++
++- **Object:** `MediaPool`
++- **Signature:** `ImportMedia([path]) -> [MediaPoolItem]`
++- **Behavior:** ImportMedia is PATH-CACHED. Re-importing a path that is already in the media pool returns the EXISTING item with the content parsed at first import, silently ignoring newer bytes on disk — and it reports success, so nothing signals the staleness. Measured on Studio 21.1.0.17 with subtitles: a corrected SRT rewritten to the same path and re-imported left the bin at 12 items instead of 24, and the timeline still carried the ORIGINAL caption text at the original timecodes. Deleting the subtitle track and re-appending does not help, because the stale media pool item is the source.
++- **Workaround / current handling:** Before re-importing a changed file, delete the cached item: match on GetClipProperty('File Path') and call MediaPool.DeleteClips([...]), then ImportMedia. Alternatively write to a new path. Always verify by reading content back, never by the return value.
++- **Tags:** silent-failure, media-pool, import, cache, subtitle
++
++### MediaPool.AppendToTimeline (rapid successive calls)
++
++- **Object:** `MediaPool`
++- **Behavior:** A tight loop of AppendToTimeline calls CRASHES Resolve. Measured on Studio 21.1.0.17: placing 3 SFX, 1 BGM and 1 GIF onto a timeline with no pause between calls killed the process mid-sequence (only a 'Problem Report for DaVinci Resolve' window left; the scripting handle then returns None). Each individual operation was proven survivable in isolation against a duplicated real timeline — GIF over a live V1, BGM sub-range append, AudioVolume write — so the trigger is the RATE, not any one call. davinci_resolve.log shows back-to-back 'Start saving project' and timeline-backup lines: Resolve is still committing the previous edit when the next append arrives. The log's last lines ('Video decoder is destroyed with live file handle', 'Unsupported clip format for audio decoding ... GIF') are a red herring — the identical pair appears in runs that succeed.
++- **Workaround / current handling:** Sleep ~0.35s between AppendToTimeline calls in a batch, print progress per item so a crash names the step it died on, and verify placement by reading the track back afterwards rather than trusting the return value.
++- **Tags:** crash, media-pool, timeline, rate-limit, batch
++
++### TimelineItem audio level ('Volume' vs 'AudioVolume')
++
++- **Object:** `TimelineItem`
++- **Signature:** `SetProperty('AudioVolume', dB) -> bool`
++- **Behavior:** The obvious spelling does not work and does not say so: SetProperty('Volume', -12.0) returns False and GetProperty('Volume') returns False, as do 'Gain', 'Level', 'AudioGain' and 'ClipVolume'. The working key is 'AudioVolume', in dB, which sets and reads back exactly (-18, -24.5, +6 all verified on Studio 21.1.0.17). GetProperty() with no arguments lists the real audio keys: AudioVolume, AudioPan, AudioPitch*, AudioVoiceIsolation*, AudioDialogueLeveler*. Note Timeline.SetTrackProperty / GetTrackProperty do NOT exist on this build, so level is per item; and there is no keyframe/fade API, so a music bed can only be a flat level, never ducked under speech.
++- **Workaround / current handling:** Use SetProperty('AudioVolume', dB) and confirm with GetProperty('AudioVolume'). Enumerate GetProperty() with no arguments before guessing a property name.
++- **Tags:** silent-failure, audio, timeline-item, property
++
+ ### hasattr() / getattr() on Resolve API objects (attribute fabrication)
+ 
+ - **Object:** `(all Resolve scripting objects)`

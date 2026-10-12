@@ -1,0 +1,53 @@
+{
+ "project": "aomimama-2026-09-p2",
+ "project_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\Projects\\Aommi-mama\\2026-09\\aomimama-2026-09-p2\\Project.db",
+ "user_db": "G:\\My Drive\\Projects\\Resolve Project Library\\Resolve Projects\\Users\\guest\\User.db",
+ "preset": "Mitr-short-001",
+ "style": "144 bytes",
+ "tracks": [
+  {
+   "track_id": "0af5e47a-567c-4da8-a73a-f4f42090f296",
+   "timeline_id": "d511be7d-e54e-470b-9adc-3cf1578d007a",
+   "timeline": "กำแพงโดนตี ตายไปดูหน่อย-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "64f0c1be-f7f4-4aec-9658-b76603075e34",
+   "timeline_id": "14c5abc1-8112-4328-a656-2ed9e9b46f7e",
+   "timeline": "ศึกบอสสุดท้ายหน้ากำแพง-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "476e3a87-c382-4897-afbb-d04e92e82d45",
+   "timeline_id": "07ba4f43-4659-418f-8f50-26e9e05b41e6",
+   "timeline": "ไม่มีไม้ขาย ศัตรูบุกมาแล้ว-Becastled-vdo_9x16",
+   "already_matches": false
+  },
+  {
+   "track_id": "5a7d44ba-331d-4120-8ba2-bd1c4c0662c3",
+   "timeline_id": "d15f289c-e41b-4b7e-b902-028cc8bcd05c",
+   "timeline": "ไล่เคลียร์หมากแล้วบ่นยับ-Becastled-vdo_9x16",
+   "already_matches": false
+  }
+ ],
+ "verified_tracks": 4,
+ "changed_tracks": 4,
+ "backup_dir": "C:\\Users\\warit\\Desktop\\agent-edite-davinci_resolve\\backups\\aomimama-2026-09-p2_20261009-210015",
+ "cue_counts": {
+  "d511be7d-e54e-470b-9adc-3cf1578d007a": [
+   13
+  ],
+  "d15f289c-e41b-4b7e-b902-028cc8bcd05c": [
+   12
+  ],
+  "07ba4f43-4659-418f-8f50-26e9e05b41e6": [
+   24
+  ],
+  "14c5abc1-8112-4328-a656-2ed9e9b46f7e": [
+   28
+  ]
+ },
+ "page": "edit",
+ "active_timeline_restored": true,
+ "playhead": "00:00:43:04"
+}
