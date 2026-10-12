@@ -34,6 +34,14 @@ When the request says to use the Adjustment Clip already selected on the timelin
 8. Overlap: the result doesn't hide the caption, critical HUD, or gameplay evidence, and shows no blank, stretched, or duplicated edge.
 9. Scope audit: every original video/audio/subtitle range, and the selected template clip, matches the pre-edit snapshot.
 
+## QC สำหรับ zoom focus ที่ใช้ซ้ำได้
+
+1. **ยืนยันตัวตนในทุกช่วง** อ่านภาพที่อยู่ใต้ `Adjustment Clip` และยืนยันว่า VTuber เป็นคนที่ผู้ใช้ระบุ หากเป็นคนอื่น ให้ทำ focus ของช่วงนั้นเป็นกลางหรือส่งกลับให้ตัดสินใจ อย่าตัดสินจากชื่อ Timeline หรือ subtitle อย่างเดียว
+2. **ตรวจเต็มเฟรมและความคมชัด** ดูภาพต้น กลาง และท้ายช่วงที่ zoom พร้อมขอบทั้งสี่ด้าน ตรวจว่าไม่มีขอบดำ พื้นที่ว่าง การยืด/ทำซ้ำขอบ หรือ blur ที่ focus เพิ่มขึ้น อ่านค่า `MotionBlur` กลับและเทียบรายละเอียดภาพกับเฟรมต้นทาง; ค่า 0 อย่างเดียวไม่ใช่หลักฐานภาพว่าไม่มี blur
+3. **ตรวจการเคลื่อนของ transform** อ่าน `Center` และ `Size` ตลอดช่วง รวมถึง keyframe ของ input เหล่านี้และ `MotionBlur` ถ้ามี keyframe ให้ตรวจเฟรมระหว่างจุดและช่วงเคลื่อนไหวเพื่อหาการสั่นหรือ crop ระหว่างทาง ถ้ามีเพียงภาพนิ่ง ให้รายงานว่าไม่พบ keyframe ในค่าที่ตรวจ และยังไม่ได้พิสูจน์การเคลื่อนไหวทั้งช่วง
+4. **เทียบ A/B ที่เวลาเดียวกัน** บันทึก timecode/record frame แล้วเทียบภาพขณะเปิดกับปิดเฉพาะ `Adjustment Clip` โดยคง source และ overlay เดิมไว้ หากส่วนศีรษะ/มือถูกตัดหรือถูก overlay บังอยู่ทั้งสองภาพ ให้ระบุว่าเป็นข้อจำกัดของ source/ภาพประกอบเดิม หากเกิดเฉพาะตอนเปิด ให้ปรับ focus หรือลด zoom แล้วตรวจซ้ำ
+5. **บันทึกขอบเขตหลักฐาน** ระบุจำนวน clip/input ที่อ่านกลับ เฟรมที่ดู สถานะของ track และสิ่งที่ยังไม่ได้ตรวจ แยกผลภาพ still/A-B ออกจากผลดูวิดีโอ render เต็มช่วง ห้ามสรุปเรื่อง motion ทั้งหมดจากภาพนิ่ง
+
 ## Safe insertion and composition workflow
 
 1. **Scope and recoverability.** Inventory every video, audio, and subtitle track's name, item name, start/end and lock state. Save/export a nonempty `.drp`, preferably work in a separately named import of a known-clean backup, and verify that import against the inventory before editing. Do not use a pilot copy as a clean base merely because its video tracks match; audio and subtitles can have been shifted. Capture the active timeline/timecode/page for restoration. Record the planned subtitle cue, exact half-open focus interval, target new track, and per-timeline pre-edit ranges so "only Adjustment Clip" can be audited.

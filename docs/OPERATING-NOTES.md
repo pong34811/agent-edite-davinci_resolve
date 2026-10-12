@@ -28,6 +28,7 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | Playhead readback | Activate each timeline before GetCurrentTimecode; capture fresh state on resume | Inactive timeline reads can return the active timeline's playhead. |
 | Page restoration | Serialize live calls; wait and read GetCurrentPage after OpenPage | A True return can precede completion of the page switch. |
 | Adjustment Clip | Scripted pilot; lock all original video/audio/subtitle tracks; full range audit and rendered frames | Generator insertion can ripple other track types even when V1 looks unchanged. |
+| Zoom Focus QC | ยืนยัน Armigon ทุกช่วง; ตรวจภาพเต็มเฟรม/ขอบดำ/blur; อ่าน `Center`/`Size` keyframe และ `MotionBlur`; เทียบเฟรมเดียวกันเมื่อเปิด/ปิด `Adjustment Clip` | ต้องแยก source crop หรือ overlay ที่บังอยู่เดิมออกจากผลของ zoom และห้ามสรุปว่า motion ไม่มีอาการสั่นจากภาพ still เพียงอย่างเดียว |
 | Enrichment sequence | Draft on copies first, verify, then promote into originals; keep one idempotent apply path | Direct-to-original batch edits leave no reviewable stage and cannot be re-run safely. |
 | Promotion identity | Match an existing placement by (asset name, record frame) and skip verified items | A rerun after a partial failure would otherwise duplicate clips. |
 | GIF conform | Read the appended range and enforce 1.5–2.5s on the real range, allowing a few frames of conform drift | Resolve conformed a GIF 2 frames shorter than the requested hold and a strict equality check aborted a good promotion. |

@@ -70,21 +70,44 @@ def main():
             duplicate = base.DuplicateTimeline(base.GetName() + "_focus_pilot_TEMP")
             require(duplicate is not None, "could not make disposable timeline")
             require(project.SetCurrentTimeline(duplicate), "could not activate disposable timeline")
+            time.sleep(1.25)
             require(resolve.OpenPage("edit"), "could not switch to Edit page")
+            time.sleep(2.0)
             counts = {k: duplicate.GetTrackCount(k) for k in ("video", "audio", "subtitle")}
             original_locks = {(k, i): duplicate.GetIsTrackLocked(k, i)
                               for k, n in counts.items() for i in range(1, n + 1)}
             for k, i in original_locks:
                 require(duplicate.SetTrackLock(k, i, True), f"could not lock {k}{i}")
+            time.sleep(1.25)
             require(duplicate.AddTrack("video"), "AddTrack failed")
+            time.sleep(1.25)
             track = counts["video"] + 1
             require(duplicate.GetTrackCount("video") == track, "video track count mismatch")
             require(duplicate.SetTrackName("video", track, "VTuber Zoom PILOT"), "track naming failed")
             require(duplicate.SetTrackLock("video", track, False), "could not unlock focus track")
+            time.sleep(1.25)
             require(duplicate.SetMarkInOut(start, end - 1), "SetMarkInOut failed")
             require(duplicate.SetCurrentTimecode(tc(start, fps)), "could not set pilot playhead")
+            time.sleep(1.25)
             item = duplicate.InsertGeneratorIntoTimeline("Adjustment Clip")
-            require(item is not None, "Adjustment Clip insertion failed")
+            if item is None:
+                diagnostic = {
+                    "page": resolve.GetCurrentPage(),
+                    "current_timeline": project.GetCurrentTimeline().GetName(),
+                    "current_timecode": duplicate.GetCurrentTimecode(),
+                    "mark_in_out": duplicate.GetMarkInOut(),
+                    "video_track_count": duplicate.GetTrackCount("video"),
+                    "track_lock_states": {f"video{i}": duplicate.GetIsTrackLocked("video", i)
+                                          for i in range(1, duplicate.GetTrackCount("video") + 1)},
+                    "track_items": {f"V{i}": [
+                        {"name": x.GetName(), "start": int(x.GetStart()), "end": int(x.GetEnd())}
+                        for x in (duplicate.GetItemListInTrack("video", i) or [])]
+                        for i in range(1, duplicate.GetTrackCount("video") + 1)},
+                    "current_video_item": (duplicate.GetCurrentVideoItem().GetName()
+                                           if duplicate.GetCurrentVideoItem() else None),
+                }
+                require(False, "Adjustment Clip insertion returned None: " +
+                        json.dumps(diagnostic, ensure_ascii=False, default=str))
             duplicate.ClearMarkInOut()
             time.sleep(1.0)
             actual_track = item.GetTrackTypeAndIndex()

@@ -104,6 +104,8 @@ For any task touching DaVinci Resolve, follow this exact sequence:
 - **Crop Prohibition**: NEVER cut off the head, face, ears/hair ornaments, or hands. If tight framing risks cropping, reduce zoom level.
 - **Subtitle & HUD Safety**: Ensure no critical HUD or subtitle overlap.
 
+**QC gate สำหรับ Zoom Focus:** ยืนยันว่าตัวละครในทุกช่วงเป็น Armigon ก่อนซูม; ตรวจภาพเต็มเฟรม ไม่มีขอบดำหรือ blur ที่เพิ่มจาก `Adjustment Clip`; อ่าน `Center`/`Size` และ keyframe ของ transform พร้อม `MotionBlur` เพื่อประเมินความเสี่ยงการสั่น แล้วตรวจภาพเคลื่อนไหวเมื่อจำเป็น เทียบภาพเฟรมเดียวกันเมื่อเปิด/ปิด `Adjustment Clip` เพื่อแยกการตัดเขา/มือหรือ overlay ที่มีอยู่ใน source ออกจากผลของ zoom ภาพ still และการไม่พบ keyframe ใน input ที่ตรวจไม่ใช่หลักฐานว่า motion ทุกเฟรมไม่มีอาการสั่น บันทึกผลและขอบเขตหลักฐานตาม `.agents/skills/resolve-video-enrichment/references/adjustment-focus.md`.
+
 ### 3. DRT Transfer Pattern for Safe Track Injections
 Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across track indices on complex timelines. The verified bulletproof pattern:
 1. Export timeline to DRT: `timeline.Export(drt_path, resolve.EXPORT_DRT, resolve.EXPORT_NONE)`
