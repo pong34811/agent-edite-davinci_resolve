@@ -104,6 +104,24 @@ require explicit database-write approval and a verified backup; a font request
 alone does not authorize SQL. Preserve every cue's text/timing and all original
 video/audio ranges.
 
+## Names, numerals and cue length (Katy404 / KT)
+
+Write the channel name spoken as "เคที" in Thai captions as **เคที่** (with the
+tone mark), never as Latin "KT". The user corrected this by hand. Show a spoken
+numeral as digits ("1,950", "10,000"), but give it its real spoken duration: a
+digits-only cue defaulted to a 0.3 s hold while the speaker needed ~1.5 s, so
+the caption vanished mid-word. The trap is trusting a length formula that only
+counts Thai letters; check each cue's end against the audio and set it explicitly.
+
+## Reaction GIFs and VTuber zoom framing
+
+Reaction GIFs get the saved **"vdo"** Inspector values (`scripts/apply_vdo_preset.py`),
+not a computed corner slot. Place GIFs outside VTuber Zoom ranges. For a corner
+avatar, prefer a frame with no black band and a slightly off-centre avatar over a
+perfectly centred frame with a visible black strip; keep the hair tip (ahoge)
+inside the frame with a few percent of headroom. Delete only the copy/variant
+timelines you created or that the user names; a backup `.drp` comes first.
+
 ## Shot selection
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->

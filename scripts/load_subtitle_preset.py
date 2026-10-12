@@ -476,7 +476,8 @@ def main(argv=None) -> int:
     cues_before = cue_counts(project, target_ids)
 
     stamp = _dt.datetime.now().strftime("%Y%m%d-%H%M%S")
-    backup_dir = args.backup_dir / f"{project_name}_{stamp}"
+    # Resolve's ExportProject silently fails on a relative path ("DRP backup failed; nothing written").
+    backup_dir = args.backup_dir.resolve() / f"{project_name}_{stamp}"
     backup_dir.mkdir(parents=True, exist_ok=True)
 
     if not pm.SaveProject():

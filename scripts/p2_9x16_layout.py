@@ -89,11 +89,19 @@ STREAMS = {
                         "evidence": "exports/9x16-batch/sources/bc2_grid_32.png; range sheet contact_31_34_range.png; "
                                     "hair-mask top 569-578"},
     # Becastled 003 (p2 idx 37-43 game layout; idx 36 is a room scene -> charscene): facecam bottom-left, eye y ~760,
-    # eye-mid x 250..300, ear tips ~530, hair x 12..617 -> game_x0 660.
-    "Becastled - 003": {"eye_y": 760.0, "eye_x": 270.0, "game_x0": 660.0, "focus": FOCUS, "head_top_src": 530,
-                        "evidence": "exports/9x16-batch/sources/bc3_grid_40.png; range sheets contact_36_39/40_43_range.png;"
-                                    " hair-mask top 569-578"},
-}
+        # eye-mid x 250..300, ear tips ~530, hair x 12..617 -> game_x0 660.
+        "Becastled - 003": {"eye_y": 760.0, "eye_x": 270.0, "game_x0": 660.0, "focus": FOCUS, "head_top_src": 530,
+                            "evidence": "exports/9x16-batch/sources/bc3_grid_40.png; range sheets contact_36_39/40_43_range.png;"
+                                        " hair-mask top 569-578"},
+        # Sakuyako 2026-09 (sakuyako-2026-09 project): facecam bottom-left, user-approved defaults
+        # (eye_y=755, eye_x=340, game_x0=660) from strinova - 005. V3 must be 7 Adjustment Clips matching
+        # original V2 ranges (11-204, 240-300, 335-408, 458-556, 609-669, 732-932, 1013-1289).
+        "คุยเรื่องโมเดล VTuber 2D บนมือถือ-vdo": {
+            "eye_y": 755.0, "eye_x": 340.0, "game_x0": 660.0, "focus": FOCUS, "head_top_src": 575,
+            "evidence": "user-approved defaults from strinova - 005 (facecam bottom-left); V3 must be "
+                        "Adjustment Clips matching original V2 ranges"
+        },
+    }
 
 
 def stream_for(clip_name):

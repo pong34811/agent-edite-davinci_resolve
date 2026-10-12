@@ -50,6 +50,26 @@ When the request says to use the Adjustment Clip already selected on the timelin
 4. **Review before batch and on retries.** Export a Resolve-rendered frame near the beginning, middle, and end of the pilot interval. After changing Fusion inputs, step the playhead to an adjacent frame and back before exporting the target frame, then inspect the pixels: a successful export and an identical file byte count do not prove the new graph rendered. Confirm the face/head/hands are intact, the avatar is prominent with headroom, and no blank or distracting repeated edge is visible. A still export may omit subtitle overlays; render a short range when caption overlap matters. Only after pilot and whole-track audit pass should the script insert remaining cues. On a retry, require existing focus ranges to be an exact prefix of planned ranges, skip insertion for those clips, and compare the *whole* present V3 range list against the plan prefix of length `max(current_cue_index, preexisting_count)` after each cue; comparing only through the current cue falsely fails when later clips were already present. Persist per-timeline progress, render-check at least one frame for every new focus cue and boundaries for motion-sensitive cues, and re-audit *all* original tracks after each insertion and final save.
 5. **Validate the handoff.** Export the finished project as a portable `.drp` and check archive integrity. Perform a restore-test import only when authorized: import under a disposable project name and read back timeline/track inventories, all planned adjustment ranges, and Fusion input values. Restore the intended active project/timeline/timecode; remove the disposable import only if its cleanup was explicitly included in scope. If no restore test was authorized, retain the backup and report archive validation separately from untested restoration. A nonempty export alone does not prove the recipient can open the edited project.
 
+## Single-timeline scripted route and framing geometry (verified 21.1.0.17)
+
+`python -m scripts.apply_vtuber_zoom --plan plan.json --backup pre.drp [--in-place] --apply` adds
+one track `VTuber Zoom` and N Adjustment Clips on a duplicate (or in place on explicit user
+instruction), with a before/after signature of every original track. `scripts.retune_vtuber_zoom`
+re-sets only those clips' Fusion Transform; `scripts.zoom_variant_stills` exports Resolve-rendered
+stills (start/mid/end of each clip) for pixel QC.
+
+Fusion Transform maths (Pivot 0.5): output `u` shows composite `0.5 + (u - Center)/Size`. For a
+window `[top, bottom]` (fractions of frame height, 0 = top) centred at column `wx`:
+`Size = 1/(bottom-top)`, `Center_x = 0.5 - Size*(wx-0.5)`, `Center_y = 0.5 - Size*((1-(top+bottom)/2)-0.5)`.
+Window width equals its height in frame fractions (same aspect), so `wx <= 1 - (bottom-top)/2`
+or a black band appears on the right.
+
+A corner avatar cannot be centred without a band. Measured on a 16:9 facecam in the bottom-right:
+source rows below ~96.6% are a black bar, so `bottom <= 0.964`; hair tip at ~57% of frame
+height, so `top ~0.545` (Size ~2.39, `wx ~0.785`) kept head, ears, ahoge, mic and hand inside with a
+few percent headroom. A first pass with `top 0.577` clipped the ahoge against the top edge: check
+the hair tip, not just the face. Pixel-check stills for dark edge bands.
+
 ## DRT Track Injection & Automated Framing QC Tools
 
 When timeline-item insertion via API is constrained or prone to track-offset bugs:

@@ -74,6 +74,27 @@ If a script fails after append, re-read the live track before retrying: the
 subtitles may already be present. `SetCurrentTimeline` belongs to `Project`,
 not `ProjectManager`.
 
+## Verified end-to-end route (Resolve Studio 21.1.0.17, 60 fps, 16:9)
+
+Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (faster-whisper
+`large-v3` on the RAW audio, char-level times + pythainlp) -> hand-curated cue starts ->
+`scripts/build_dynamic_srt.py` -> `scripts/caption_lint.py` -> import.
+
+- `large-v3` beat `large-v3-turbo` on this material: turbo invented text for ~20 s of gameplay
+  audio (`lp` -1.9). Re-transcribe a doubtful 20-30 s window alone with `beam_size=8`; the
+  voice-band-filtered pass can merge a whole window into one unusable segment, so use it only
+  as a corroborating reading.
+- The davinci-resolve MCP route works: `media_pool.import_media` -> `timeline.add_track`
+  (`track_type: subtitle`) -> `media_pool.append_to_timeline` with `clip_ids` (95 cues, read-back
+  verified). It auto-archives a copy `Timeline N_archived_vNN` per mutating call and may leave
+  the Media Pool folder on `Archive`; report both and clean up only on request.
+- Read back with `scripts/verify_srt_on_timeline.py <srt>`. It reads the CURRENT timeline, so
+  activate the target first (another timeline's copy can differ, e.g. an extended cue).
+- Digits-only cues need an explicit end (see house-style); numbers spoken as words are long.
+- `scripts/load_subtitle_preset.py --backup-dir` is now resolved to an absolute path; a relative
+  path made Resolve's `ExportProject` fail ("DRP backup failed; nothing written").
+- Preset names are exact: `Mitr Font` exists, `Mitr-Font` does not. Ask, never substitute.
+
 ## The three findings that matter
 
 ### 1. SRT import IS scriptable (most guides, and this repo's own api_truth, said it is not)

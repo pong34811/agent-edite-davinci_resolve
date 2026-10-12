@@ -22,6 +22,23 @@ The GIF folder is pre-categorised by the Thai emotion prefix before the dash: �
 
 Treat these paths and counts as historical examples, not live inventory or license evidence. Discover the current authorized library with `search_files`, persist a manifest through `write_file`, and search that manifest rather than re-enumerating per cue. Never import the whole library into the Media Pool to use a handful of files. A filename or folder label such as no-copyright/NCS does not prove permission; verify each selected asset's current license and attribution requirements.
 
+## Drive library notes and the scripted enrichment route (verified)
+
+- BGM root is now `G:\My Drive\Projects\1.1 bgm` (28 WAV plus `README.md` and `bgm_catalog.json` with
+  title, duration, mood, best_for). Pick from the catalog; it does NOT state licences, so report
+  every chosen asset as licence-unverified. SFX (~1.75k mp3) and GIF (~165) roots are unchanged.
+  Directory listing on Drive can stall `ls`; use a Python `os.scandir` manifest.
+- GIF holds: Resolve conforms a GIF to 25 fps, so frames = duration x 25. Check with PIL:
+  `n_frames x frame_duration >= 1.5 s` (one-second GIFs such as `confused-cat` fail). Validate every GIF
+  BEFORE touching the timeline; `scripts/apply_enrichment_d22.py` now does.
+- `python -m scripts.apply_enrichment_d22 --plan plan.json --backup pre.drp [--in-place] --apply` builds A2 `SFX`,
+  A3 `BGM`, V3 `REACTIONS` on an `[ENHANCED]` copy (or in place when the user says so), imports only the chosen
+  files into one bin, sets `AudioVolume`, and audits original tracks. Levels from measured loudness:
+  BGM = speech - 20 LU - BGM LUFS, SFX = speech - 3 LU - SFX LUFS (cap 0). BGM `endFrame` = timeline length
+  gave exactly the timeline length on this build.
+- Order on a 16:9 timeline with a zoom track: V1 base, V2 `VTuber Zoom`, V3 `REACTIONS`. GIFs sit above the
+  zoom so they are not magnified; keep them out of zoom ranges. Then `scripts/apply_vdo_preset.py --timeline <name> --apply`.
+
 ## Track convention on this user's shorts projects
 
 `V1` gameplay · `V2` reaction overlays · `A1` dialogue/game audio · `A2` SFX · `A3` BGM · `ST1` Thai subtitles. Inspect an already-finished timeline in the same project to confirm the names before creating tracks — an existing exemplar timeline is the spec.

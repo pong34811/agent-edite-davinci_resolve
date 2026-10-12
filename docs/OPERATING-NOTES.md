@@ -33,6 +33,12 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | Promotion identity | Match an existing placement by (asset name, record frame) and skip verified items | A rerun after a partial failure would otherwise duplicate clips. |
 | GIF conform | Read the appended range and enforce 1.5–2.5s on the real range, allowing a few frames of conform drift | Resolve conformed a GIF 2 frames shorter than the requested hold and a strict equality check aborted a good promotion. |
 | Subtitle items | Native subtitle items have no Media Pool entry; never flag them as offline | Treating a legitimate null as a media fault produced ~960 false "high" findings. |
+| Thai cue length | Check every cue's end against the audio; numerals and digits-only cues need an explicit end | A "1,950" cue defaulted to 0.3 s while spoken for ~1.5 s. |
+| MCP timeline mutators | Expect an auto-archived `Timeline N_archived_vNN` per mutating call; report it, delete only on request | `timeline.add_track` created a copy and left the Media Pool on `Archive`. |
+| Preset backup path | Pass `--backup-dir` as an absolute path (now resolved in the helper) | Resolve's ExportProject fails silently on a relative path. |
+| Whisper model | `large-v3` on the raw audio; distrust `large-v3-turbo` on game audio | Turbo invented ~20 s of text; check `avg_logprob` and re-run the window alone. |
+| GIF hold | Validate every GIF (Resolve 25 fps, >= 1.5 s) before mutating the timeline | A 1-second GIF aborted a run after BGM/SFX were already placed. |
+| Zoom framing | Corner avatar: no black band, slight off-centre; keep the hair tip inside | Centre-exact framing shows a band; the first pass clipped the ahoge. |
 | Archive deletion | Export one fresh verified `.drp`, report the exact files and bytes removed, and say there is no longer a rollback point | Deleting archives on request is fine; deleting them silently is not. |
 
 ## Transform and offline-media traps
