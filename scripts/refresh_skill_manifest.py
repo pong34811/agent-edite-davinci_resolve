@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'docs/skills-manifest.json'
@@ -19,6 +20,7 @@ NEW_KIND = {
     'scripts/': 'project_helper',
     'tests/': 'integration_or_validation',
 }
+CORE_SKILL_COUNT = 17
 
 
 def sha(path):
@@ -36,6 +38,43 @@ def kind_for(relative):
         if relative.startswith(prefix):
             return kind
     return 'project_helper'
+
+
+def sync_skill_declarations(manifest):
+    """Keep the curated core and supporting active skills distinct in the manifest."""
+    existing = {record['path']: record for record in manifest.get('skills', [])}
+    for skill_file in sorted((ROOT / '.agents/skills').glob('*/SKILL.md')):
+        relative = skill_file.relative_to(ROOT).as_posix()
+        if relative in existing:
+            continue
+        parts = skill_file.read_text(encoding='utf-8').split('---', 2)
+        if len(parts) != 3:
+            raise ValueError(f'Invalid skill frontmatter: {relative}')
+        metadata = yaml.safe_load(parts[1]) or {}
+        if not metadata.get('name') or not metadata.get('description'):
+            raise ValueError(f'Missing skill name/description: {relative}')
+        if skill_file.parent.name.startswith('superpowers-'):
+            source = 'superpowers plugin v7.0.0 (commit 7df7bd9)'
+        else:
+            source = 'profile skill sync (commit 10370a1)'
+        existing[relative] = {
+            'name': metadata['name'], 'tier': 'supporting', 'path': relative,
+            'source': source, 'history_evidence': [], 'history_loads': 0,
+            'history_sessions': 0,
+        }
+    manifest['skills'] = [existing[key] for key in sorted(existing)]
+    core = sum(record['tier'] == 'editing' for record in manifest['skills'])
+    supporting = sum(record['tier'] == 'supporting' for record in manifest['skills'])
+    manifest['counts']['editing_skills'] = core
+    manifest['counts']['supporting_skills'] = supporting
+    manifest['counts']['active_skills'] = core + supporting
+    manifest['counts']['related_archive_skills'] = sum(
+        record['tier'] == 'related_archive' for record in manifest['skills'])
+    manifest['counts']['history_evidenced_editing_skills'] = sum(
+        record.get('history_loads', 0) > 0 for record in manifest['skills']
+        if record['tier'] == 'editing')
+    if core != CORE_SKILL_COUNT:
+        raise ValueError(f'Expected {CORE_SKILL_COUNT} curated editing skills, found {core}')
 
 
 def main():
@@ -93,6 +132,7 @@ def main():
             changed.append({'action': 'rechecksummed', 'path': relative})
     manifest['files'] = [records[key] for key in sorted(records)]
     manifest['counts']['manifest_files'] = len(manifest['files'])
+    sync_skill_declarations(manifest)
     edits = []
     seen = set()
     for record in [*manifest.get('edits', []),

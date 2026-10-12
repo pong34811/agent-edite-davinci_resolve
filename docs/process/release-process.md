@@ -4,7 +4,7 @@
 
 ## เตรียมรุ่น
 
-1. ตรวจ `git status` และ `git log <tag ก่อนหน้า>..HEAD` เพื่อรวบรวมสิ่งที่ส่งมอบจริง เว้นไฟล์ส่วนตัวหรือ artifact ที่ไม่เกี่ยวข้อง
+1. ตรวจ `git status`, tag สูงสุด และ `git log <tag ก่อนหน้า>..HEAD` เพื่อรวบรวมสิ่งที่ส่งมอบจริง เว้นไฟล์ส่วนตัวหรือ artifact ที่ไม่เกี่ยวข้อง ใช้เลขรุ่น minor ถัดไปจาก tag สูงสุด เว้นแต่ผู้ดูแลกำหนดไว้เป็นอย่างอื่น
 2. ตั้งเลขรุ่นใน `VERSION` และบรรทัดรุ่นปัจจุบันใน `README.md` ให้ตรงกัน ใช้ `v<เลขรุ่น>` เป็นหัวข้อใหม่ใน `CHANGELOG.md`
 3. เขียน changelog จากหลักฐานใน commit และรายงาน QC ที่มีจริง แยกผลตรวจแบบ static, ผลตรวจใน Resolve และข้อจำกัด ห้ามกล่าวว่าตรวจ render หรือพฤติกรรมจริงแล้วถ้าไม่มีหลักฐาน
 4. อัปเดตไฟล์สกิลหรือคู่มือที่เกี่ยวข้องตามขอบเขตงาน และบันทึกเหตุผลการแก้ใน manifest ด้วย `--edit` ซ้ำได้หลายรายการ:
@@ -29,9 +29,9 @@
 git add VERSION README.md CHANGELOG.md docs/skills-manifest.json docs/validation-report.json docs/process/release-process.md
 git commit -m "chore(release): prepare skill bundle vX.Y.Z"
 git push origin main
-git tag -a vX.Y.Z -m "Skill bundle vX.Y.Z"
+git tag -a vX.Y.Z -m "ชุดสกิล vX.Y.Z"
 git push origin vX.Y.Z
-gh release create vX.Y.Z --title "Skill bundle vX.Y.Z" --notes-file release-notes.md
+gh release create vX.Y.Z --verify-tag --latest --title "vX.Y.Z — <สรุปภาษาไทย>" --notes-file release-notes.md
 ```
 
-เพิ่มไฟล์สกิล/สคริปต์ที่เปลี่ยนจริงลงใน commit ด้วย และตรวจชื่อ remote/repository ก่อน push สร้าง `release-notes.md` จาก changelog รุ่นเดียวกัน พร้อมข้อจำกัดการตรวจที่สำคัญ จากนั้นตรวจ tag และ GitHub Release ที่สร้างแล้ว การเตรียมเอกสารหรือ bump `VERSION` เพียงอย่างเดียวไม่ถือว่าออกรีลีสแล้ว
+เพิ่มไฟล์สกิล/สคริปต์ที่เปลี่ยนจริงลงใน commit ด้วย และตรวจชื่อ remote/repository ก่อน push สร้าง `release-notes.md` ภาษาไทยจาก changelog รุ่นเดียวกัน พร้อมข้อจำกัดการตรวจที่สำคัญ จากนั้นตรวจ remote tag, ค่า `VERSION` ใน tag และสถานะ GitHub Release ด้วย `gh release list`/`gh release view` การเตรียมเอกสารหรือ bump `VERSION` เพียงอย่างเดียวไม่ถือว่าออกรีลีสแล้ว

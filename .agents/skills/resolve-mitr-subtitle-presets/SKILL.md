@@ -13,7 +13,7 @@ metadata:
 # Mitr Subtitle Presets for Horizontal and Vertical Timelines
 
 Loads the user's saved Subtitle *track* presets (Inspector > Load Preset) onto
-DaVinci Resolve subtitle tracks by script, picking the Mitr preset by timeline
+DaVinci Resolve subtitle tracks by script, picking the exact approved preset by timeline
 orientation: landscape 16:9 vs portrait 9:16 Shorts. It does NOT create cues,
 retime captions, or invent styles. It only copies an existing preset. Uses the
 stdlib plus Resolve's own scripting bridge. Resolve has no preset API, so the
@@ -35,14 +35,21 @@ write goes into the disk-database `Project.db` while the project is closed.
 - The preset must already be saved in Resolve (Inspector > Save Track as Preset).
 - Scripting paths used: `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting`
   and `C:\Program Files\Blackmagic Design\DaVinci Resolve\fusionscript.dll`.
-- Explicit user approval for `--apply` (it closes/reopens the project and
-  writes SQLite). A request like "load preset X" for named timelines counts.
+- For any future write-enabled implementation: a verified `.drp` backup and
+  explicit user approval after showing the dry-run plan and exact affected
+  timeline/track list. Merely naming a preset or timeline is not authorization.
+- Resolve must be fully closed before any offline `Project.db` patch. If the
+  helper cannot guarantee that condition, do not run `--apply`; use a supported
+  Resolve action or stop as `BLOCKED` and report the limitation.
 
 ## How to Run
 
-Invoke `scripts/load_subtitle_preset.py` (in this skill's dir; repo copy at
-`scripts/load_subtitle_preset.py` of agent-edite-davinci_resolve) through the
-`terminal` tool. Always dry-run first, read the plan, then re-run with `--apply`.
+Use only the repository helper `scripts/load_subtitle_preset.py`, after checking
+the Resolve MCP catalog and recording an `MCP-GAP:` if it lacks preset loading.
+The nested skill copy is a compatibility wrapper, not an independent database
+writer. Always dry-run first and present the exact plan. `--apply` remains
+blocked unless the approved backup and fully-closed Resolve requirements above
+are satisfied.
 
 ## Quick Reference
 
@@ -62,26 +69,31 @@ python load_subtitle_preset.py --preset "Mitr Font" --orientation horizontal
 python load_subtitle_preset.py --preset "Mitr-short-001" --orientation vertical
 python load_subtitle_preset.py --preset "Mitr Font" --all-timelines
 python load_subtitle_preset.py --preset "Mitr Font" --timeline "TL name" --timeline "TL 2"
-... add --apply --backup-dir "C:/Users/<you>/Documents/davinci-resolve-mcp-analysis/subtitle-preset-backups"
 ```
+
+`--apply` currently exits before writing any database bytes. Use this helper
+for read-only discovery and dry-run planning only.
 
 Other flags: `--user` (default guest), `--project-db`, `--user-db` overrides.
 No target flag = current timeline only.
 
 ## Procedure
 
-1. `--list` and confirm the exact preset name. The menu shows `Mitr Font` with a
-   space; users often type `Mitr-Font`. Map to the real name, don't guess others.
+1. `--list` and confirm the exact preset name. Preset names are case- and
+   punctuation-sensitive. If the user's requested name differs from the saved
+   name (for example `Mitr-Font` vs `Mitr Font`), do not silently substitute;
+   show both names and ask which exact preset they intend.
 2. Dry run per orientation. Output lists every subtitle track and
    `already_matches`, then `N of M subtitle track(s) would change.`
    A mixed project (16:9 + `_9x16` copies) needs **two** runs: horizontal with
    `Mitr Font`, vertical with `Mitr-short-001`. Never `--all-timelines` one
    preset over a mixed project.
-3. Re-run with `--apply` and a durable `--backup-dir` (the default under
-   `TMPDIR` is pruned after 24h). The script: SaveProject -> ExportProject `.drp`
-   -> CloseProject -> sqlite snapshot of `Project.db` -> one transaction on the
-   exact `Sm2TiTrack` rows (Type=2), readback -> LoadProject -> restore active
-   timeline, playhead, page -> SaveProject -> verify blobs + cue counts.
+3. Treat `--apply` as unavailable: it deliberately stops before writing because
+   it cannot verify that Resolve fully exited. A future writer must be updated
+   and reviewed to enforce that condition, and must create and verify a durable
+   `.drp` backup, save/close the project, confirm no Resolve process holds the
+   database, and verify every changed row. Never bypass this gate by calling
+   the nested copy or a direct SQLite command.
 4. Report `verified_tracks`, `changed_tracks`, cue counts, backup dir; ask the
    user to eyeball one horizontal and one vertical timeline in the viewer.
 
@@ -110,13 +122,12 @@ colon stripped, e.g. `G\My Drive\...`). Orientation comes from
   fails. Don't hand-edit `pointSize` to change Inspector Size (8.14286 is the
   descriptor, not the UI size). Save a new preset in the UI instead.
 - Running with a preset that already matches is a no-op (`Nothing to do`).
-- Before `--apply`, snapshot every target timeline (cue name + start/end per subtitle track, video/audio items, track enable/lock, range) to JSON and diff after; the script's own check covers only style bytes and cue counts. Read it under `preserved_state` and activate each timeline first (inactive reads give False enables).
-- The `Project.db.before_preset.sqlite` snapshot has been seen with 0 tables (unusable); the `.drp` exported first is the real rollback point. Open the snapshot and check `sqlite_master` right after `--apply`.
-- The active timeline restored after `--apply` can differ from the one open before. Record the original timeline id and timecode first, then re-activate it and read it back, and park the playhead on a cue: a playhead past the last cue shows no subtitle and reads as 'subtitles vanished'.
+- Any future approved writer must snapshot each target timeline (cue text and frames, video/audio items, track states, range) and diff after. The current helper is dry-run only and has no live-write verification.
 - This agent cannot reliably read Inspector/viewer screenshots and viewer capture is prohibited by the repo rules; ask the user to eyeball one vertical timeline at a stated cue timecode.
 - In this repo the SQLite write needs explicit approval after the dry-run plan is shown (house-style); naming the preset alone is not enough.
 
 ## Verification
 
-Re-run the same dry run after `--apply`. It must print
-`0 of N subtitle track(s) would change.` (every track `already_matches: true`).
+For the current helper, preserve the dry-run report and state that the preset
+was not applied. A later implementation must define and verify its own
+post-write acceptance checks before enabling database mutation.

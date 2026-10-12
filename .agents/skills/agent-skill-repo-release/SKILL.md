@@ -60,12 +60,18 @@ current task. Uses `git` and an authenticated `gh` CLI.
    scan for tokens/keys, commit without a tag, push, and tell the user what was
    held back and why; offer Git LFS or a `.gitignore` entry rather than
    deciding either alone.
-5c. Stage release-evidence artifacts when the user asks to "git add release":
-   this means the `backups/` and `patches/` directories (SQLite snapshots,
-   result JSON, local patches). These are usually untracked because a broad
-   `.gitignore` pattern (e.g. `*.drp`) also matches files inside them. Fix the
-   pattern to root-only (`/*.drp`) so tracked evidence dirs are no longer
-   shadowed, then `git add backups/ patches/`. Check with `git add -n` first.
+5c. Stage release-evidence artifacts only when they are part of the requested
+   release and contain reviewable, non-sensitive files. A broad `.gitignore`
+   pattern such as `*.drp` also matches files inside subdirectories. To keep
+   `.drp` files ignored while allowing selected evidence directories, add
+   `!backups/` and explicit file exceptions such as `!backups/*.drp` (plus
+   `!backups/**/*.drp` only when deeper levels are intended). Add `!patches/`
+   and matching file exceptions only when that directory is explicitly part
+   of the release. Verify each exact file with `git check-ignore -v` and
+   `git add -n <path>`; unignoring a directory alone does not unignore its
+   contents. Never stage database snapshots, media,
+   credentials, or private project data by default; confirm the exact file list
+   and size before adding evidence.
 6. **Before tagging, run `git diff --cached --stat` and confirm `VERSION` is
    staged with the new number.** If an edit was refused, the release commit
    ships the old version, and fixing it later means rewriting a pushed tag.
@@ -73,7 +79,7 @@ current task. Uses `git` and an authenticated `gh` CLI.
    `git push origin main && git push origin vX.Y.Z`.
 8. Publish the release. Write the notes to a scratch file with `write_file`, then
    `gh release create vX.Y.Z -R <owner>/<repo> --verify-tag --latest
-   --title "vX.Y.Z — <English summary>" --notes-file <file>`.
+   --title "vX.Y.Z — <สรุปภาษาไทย>" --notes-file <file>`.
    Notes style, which is the user's house format: Thai prose with English for
    code/paths, a `## 🚀 Release vX.Y.Z — …` heading, then `### 🛠️ สิ่งที่เปลี่ยนแปลง`
    (numbered `####` subsections), `### ✅ ผลการตรวจสอบ`, and
@@ -84,7 +90,7 @@ current task. Uses `git` and an authenticated `gh` CLI.
 
 - A working tree can carry staged deletions that arrived with an earlier checkout, and `git commit` of a path-scoped `git add` still picks them up. Run `git diff --cached --name-only --diff-filter=D | wc -l` and group the paths by top directory BEFORE committing; if they are work artifacts already covered by `.gitignore` (audit/teamwork records, scratch, reference stills), say so in the release notes rather than pretending the commit was only this task's files.
 - Never stage raster stills or media. Verify with a count of staged `png/jpg/mp4/mov/drp` files and a >1 MB sweep over staged additions; report 0/0 in the notes.
-- A `.gitignore` pattern like `*.drp` matches at any depth, not just the repo root. If the repo needs to track a specific subdirectory of `.drp`/`.drt`/etc. files (e.g. `backups/`), a root-only pattern (`/*.drp`) is NOT sufficient — it still ignores files inside subdirectories. Use a negation instead: `*.drp` + `!backups/`. Confirm with `git add -n <dir>` that the intended files are staged.
+- A `.gitignore` pattern like `*.drp` matches at any depth, not just the repo root. A root-only pattern (`/*.drp`) ignores only root files but does not express that nested evidence is intentionally allowed. To allow selected files in a nested evidence directory, use `*.drp`, `!backups/`, and `!backups/*.drp` (add `!backups/**/*.drp` only when deeper files are intended), then verify the exact file with `git check-ignore -v` and `git add -n <path>`.
 - Scan the staged additions for tokens/keys before committing, not the whole repo — `gho_`, `ghp_`, `sk-`, `AKIA`, private-key headers.
 - A local skill file may legitimately differ from its manifest `source` copy. Compare them with line endings normalised before claiming drift; if the local file only gains frontmatter and reformatted prose, name it as a local amendment, not as "synced with the live copy".
 - `gh release view --json` rejects unknown fields and exits non-zero; `isLatest` is not a field — use `gh release list` to confirm the Latest marker.

@@ -149,44 +149,90 @@ def _probe(path):
     return json.loads(out.stdout)
 
 
+def _output_matches(out_name):
+    return sorted(p for p in Path(VDO).glob(out_name + ".*")
+                  if p.is_file() and p.suffix.lower() not in (".jpg", ".ini", ".db"))
+
+
 def _find_output(out_name):
-    hits = [p for p in Path(VDO).glob(out_name + ".*") if p.suffix.lower() not in (".jpg", ".ini", ".db")]
+    hits = _output_matches(out_name)
     return hits[0] if len(hits) == 1 else None
+
+
+def verify_one(j, covers=VDO, scratch=None):
+    """Return read-only output-QC errors for one planned export."""
+    hits = _output_matches(j["out_name"])
+    if not hits:
+        return ["missing/empty"]
+    if len(hits) > 1:
+        return ["ambiguous outputs: " + ", ".join(p.name for p in hits)]
+    f = hits[0]
+    if f.stat().st_size == 0:
+        return ["missing/empty"]
+    try:
+        info = _probe(f)
+        kinds = {s["codec_type"] for s in info["streams"]}
+        v = next((s for s in info["streams"] if s["codec_type"] == "video"), {})
+        dims = (v.get("width"), v.get("height"))
+        want = (1080, 1920) if j["vertical"] else (1920, 1080)
+        dur = float(info["format"]["duration"])
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        return [f"ffprobe failed: {exc}"]
+    errs = []
+    if not {"video", "audio"} <= kinds:  # .mov also carries a "data" timecode stream
+        errs.append(f"streams {kinds}")
+    if dims != want:
+        errs.append(f"dims {dims} != {want}")
+    if abs(dur - j["dur_s"]) > 0.15:
+        errs.append(f"dur {dur:.2f} != {j['dur_s']:.2f}")
+    if j["vertical"] and not errs:
+        cover = Path(cover_path_for(j["out_name"], covers))
+        if not cover.is_file():
+            return ["cover missing"]
+        scratch = Path(scratch or OUT / "verify")
+        scratch.mkdir(parents=True, exist_ok=True)
+        png = scratch / f"{safe(j['out_name'])}_first.png"
+        try:
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f), "-map", "0:v:0", "-frames:v", "1", str(png)],
+                           check=True, capture_output=True)
+            r = subprocess.run(["ffmpeg", "-i", str(png), "-i", str(cover), "-lavfi",
+                                "[0:v]scale=1080:1920[a];[1:v]scale=1080:1920[b];[a][b]ssim", "-f", "null", "-"],
+                               capture_output=True, text=True, encoding="utf-8", check=True)
+        except (OSError, subprocess.CalledProcessError) as exc:
+            return [f"cover comparison failed: {exc}"]
+        m = re.search(r"All:([\d.]+)", r.stderr)
+        ssim = float(m.group(1)) if m else 0.0
+        if ssim < 0.9:
+            errs.append(f"cover ssim {ssim:.3f}")
+    return errs
+
+
+def verified_completed_names(done_file, jobs, covers=VDO):
+    """Only trust an output when its recorded Resolve job completed and its media passes QC."""
+    completed = set()
+    if not done_file.is_file():
+        return set()
+    for line in done_file.read_text(encoding="utf-8").splitlines():
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if record.get("status") == "Complete" and record.get("out_name"):
+            completed.add(record["out_name"])
+    scratch = OUT / "verify"
+    verified = set()
+    for job in jobs:
+        if job["out_name"] in completed and not verify_one(job, covers, scratch):
+            verified.add(job["out_name"])
+    return verified
 
 
 def verify(jobs_file, covers=VDO):
     jobs = json.loads(jobs_file.read_text(encoding="utf-8"))
     scratch = OUT / "verify"
-    scratch.mkdir(parents=True, exist_ok=True)
     bad = 0
     for j in jobs:
-        f = _find_output(j["out_name"])
-        errs = []
-        if not f or f.stat().st_size == 0:
-            errs.append("missing/empty")
-        else:
-            info = _probe(f)
-            kinds = {s["codec_type"] for s in info["streams"]}
-            v = next((s for s in info["streams"] if s["codec_type"] == "video"), {})
-            dims = (v.get("width"), v.get("height"))
-            want = (1080, 1920) if j["vertical"] else (1920, 1080)
-            dur = float(info["format"]["duration"])
-            if not {"video", "audio"} <= kinds:  # .mov also carries a "data" timecode stream
-                errs.append(f"streams {kinds}")
-            if dims != want:
-                errs.append(f"dims {dims} != {want}")
-            if abs(dur - j["dur_s"]) > 0.15:
-                errs.append(f"dur {dur:.2f} != {j['dur_s']:.2f}")
-            if j["vertical"] and not errs:
-                png = scratch / "first.png"
-                subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(f), "-frames:v", "1", str(png)], check=True)
-                r = subprocess.run(["ffmpeg", "-i", str(png), "-i", cover_path_for(j["out_name"], covers), "-lavfi",
-                                    "[0:v]scale=1080:1920[a];[1:v]scale=1080:1920[b];[a][b]ssim", "-f", "null", "-"],
-                                   capture_output=True, text=True, encoding="utf-8")
-                m = re.search(r"All:([\d.]+)", r.stderr)
-                ssim = float(m.group(1)) if m else 0.0
-                if ssim < 0.9:
-                    errs.append(f"cover ssim {ssim:.3f}")
+        errs = verify_one(j, covers, scratch)
         print(("PASS " if not errs else "FAIL ") + j["out_name"], errs or "", flush=True)
         bad += bool(errs)
     print(f"{len(jobs) - bad}/{len(jobs)} pass")
@@ -236,7 +282,17 @@ def _run(r, argv, covers):
         jobs = jobs[:limit]
     print(f"{len(jobs)} jobs ({sum(j['vertical'] for j in jobs)} vertical)", flush=True)
     prev = {x["out_name"]: x for x in json.loads(jobs_file.read_text(encoding="utf-8"))} if jobs_file.exists() else {}
-    skipped = [j["out_name"] for j in jobs if _find_output(j["out_name"])]
+    completed = verified_completed_names(OUT / "done.jsonl", jobs, covers)
+    ambiguous = [j["out_name"] for j in jobs if len(_output_matches(j["out_name"])) > 1]
+    if ambiguous:
+        raise RuntimeError("Multiple output files share a planned stem; resolve the ambiguity manually before rerunning: "
+                           + ", ".join(ambiguous))
+    existing = [j for j in jobs if _output_matches(j["out_name"])]
+    unverified = [j["out_name"] for j in existing if j["out_name"] not in completed]
+    if unverified:
+        raise RuntimeError("Existing output(s) lack a recorded Complete job or failed QC; inspect and move/delete them manually before rerunning: "
+                           + ", ".join(unverified))
+    skipped = [j["out_name"] for j in existing if j["out_name"] in completed]
     jobs = [j for j in jobs if j["out_name"] not in skipped]  # already rendered earlier (resume)
     print("skipping existing outputs:", len(skipped), flush=True)
     for j in jobs:

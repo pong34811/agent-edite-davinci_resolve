@@ -13,6 +13,18 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_CORE_SKILLS = 17
+EXPECTED_ARCHIVE_SKILLS = 13
+# The imported writing-skills reference contains hyperlinks in illustrative
+# sample packages for unrelated skills. These are not local dependencies of
+# this bundle; keep the narrow, source-specific allowlist visible in reports.
+DOCUMENTED_EXAMPLE_LINKS = {
+    '.agents/skills/superpowers-writing-skills/anthropic-best-practices.md': {
+        'DOCX-JS.md', 'EXAMPLES.md', 'FORMS.md', 'OOXML.md', 'REDLINING.md',
+        'REFERENCE.md', 'advanced.md', 'details.md', 'examples.md', 'reference.md',
+        'reference/finance.md', 'reference/marketing.md',
+        'reference/product.md', 'reference/sales.md',
+    },
+}
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -39,24 +51,29 @@ def validate():
     manifest = json.loads((ROOT / 'docs/skills-manifest.json').read_text(encoding='utf-8'))
     errors = []
     active = sorted((ROOT / '.agents/skills').glob('*/SKILL.md'))
-    declared = [s for s in manifest['skills'] if s['tier'] == 'editing']
+    declared = [s for s in manifest['skills'] if s['tier'] in ('editing', 'supporting')]
+    core = [s for s in declared if s['tier'] == 'editing']
+    supporting = [s for s in declared if s['tier'] == 'supporting']
     counts = {
-        'editing_skills': len(declared),
+        'editing_skills': len(core),
+        'supporting_skills': len(supporting),
+        'active_skills': len(declared),
         'related_archive_skills': sum(s['tier'] == 'related_archive' for s in manifest['skills']),
-        'history_evidenced_editing_skills': sum(s['history_loads'] > 0 for s in declared),
+        'history_evidenced_editing_skills': sum(s['history_loads'] > 0 for s in core),
         'manifest_files': len(manifest['files']),
     }
     for name, count in counts.items():
         if manifest['counts'].get(name) != count:
             errors.append('Manifest count mismatch: ' + name)
-    if len(active) != EXPECTED_CORE_SKILLS or len(declared) != len(active):
-        errors.append(f'Core skill count does not match expected {EXPECTED_CORE_SKILLS} / manifest')
+    if len(core) != EXPECTED_CORE_SKILLS or len(declared) != len(active):
+        errors.append(f'Active skill count does not match {EXPECTED_CORE_SKILLS} core / manifest')
     active_paths = {path.relative_to(ROOT).as_posix() for path in active}
     if {s['path'] for s in declared} != active_paths:
         errors.append('Core skill declarations do not match active paths')
     declarations = {s['path']: s for s in declared}
     names = []
     checked_links = []
+    documented_example_links = []
     for path in active:
         text = path.read_text(encoding='utf-8')
         parts = text.split('---', 2)
@@ -68,7 +85,8 @@ def validate():
             errors.append(f'Missing name/description: {path}')
             continue
         names.append(fm['name'])
-        if fm['name'] != path.parent.name:
+        expected_directory_name = path.parent.name.removeprefix('superpowers-')
+        if fm['name'] != expected_directory_name:
             errors.append(f'Skill name/directory mismatch: {path}')
         declaration = declarations.get(path.relative_to(ROOT).as_posix())
         if declaration is not None and declaration['name'] != fm['name']:
@@ -79,7 +97,7 @@ def validate():
     archive_declarations = [s for s in manifest['skills'] if s['tier'] == 'related_archive']
     on_disk = {(p.parent.name, p.relative_to(ROOT).as_posix()) for p in archives}
     declared_archives = {(s['name'], s['path']) for s in archive_declarations}
-    if len(archives) != 13 or len(archive_declarations) != len(archives) or declared_archives != on_disk:
+    if len(archives) != EXPECTED_ARCHIVE_SKILLS or len(archive_declarations) != len(archives) or declared_archives != on_disk:
         errors.append('Archive skill declarations do not match disk')
     for path in archives:
         parts = path.read_text(encoding='utf-8').split('---', 2)
@@ -95,13 +113,20 @@ def validate():
     for path in sorted((ROOT / '.agents/skills').rglob('*.md')):
         text = path.read_text(encoding='utf-8')
         refs = set(re.findall(r'\]\(([^)]+)\)', text))
-        refs.update(re.findall(r'`((?:docs/|references/|resolve-advanced/|scripts/|\.agents/)[^`\s]+\.(?:md|py|txt|pyi))`', text))
+        # Code-span paths in supporting reference documents are often examples,
+        # not links. Check those only in SKILL.md entry points.
+        if path.name == 'SKILL.md':
+            refs.update(re.findall(r'`((?:docs/|references/|resolve-advanced/|scripts/|\.agents/)[^`\s]+\.(?:md|py|txt|pyi))`', text))
         # Bare kernel filenames are deliberate table shorthand.
-        refs.update(re.findall(r'`([a-z-]+-kernel\.md)`', text))
+        if path.name == 'SKILL.md':
+            refs.update(re.findall(r'`([a-z-]+-kernel\.md)`', text))
         for ref in sorted(refs):
             if '://' in ref or ref.startswith('#'):
                 continue
             ref = ref.split('#')[0]
+            if ('<' in ref or '>' in ref or 'YYYY-MM-DD' in ref or '...' in ref
+                    or ('/' not in ref and '\\' not in ref and '.' not in ref)):
+                continue  # illustrative path or placeholder, not a local dependency
             candidates = [path.parent / ref, ROOT / ref, ROOT / 'docs/kernels' / ref, ROOT / 'docs/guides' / ref]
             # Reference files cite siblings skill-root-relative (skill_view file_path style).
             skill_root = next((p for p in path.parents if (p / 'SKILL.md').is_file()), None)
@@ -109,7 +134,12 @@ def validate():
                 candidates.append(skill_root / ref)
             found = next((c for c in candidates if c.is_file()), None)
             if found is None:
-                errors.append(f'Missing local reference: {path.relative_to(ROOT)} -> {ref}')
+                source = path.relative_to(ROOT).as_posix()
+                if ref in DOCUMENTED_EXAMPLE_LINKS.get(source, set()):
+                    documented_example_links.append({'from':source, 'to':ref,
+                        'reason':'Illustrative link in an imported reference describing an unrelated sample skill package.'})
+                else:
+                    errors.append(f'Missing local reference: {source} -> {ref}')
             else:
                 checked_links.append({'from':path.relative_to(ROOT).as_posix(), 'to':found.relative_to(ROOT).as_posix()})
     listed_files = {record['path'] for record in manifest['files']}
@@ -164,8 +194,8 @@ def validate():
             result = scan_skill(path.parent, source='community')
             scans.append({'name':path.parent.name, 'verdict':result.verdict, 'findings':[{'pattern_id':f.pattern_id,'severity':f.severity,'file':f.file,'line':f.line,'description':f.description} for f in result.findings]})
             if result.verdict == 'dangerous':
-                errors.append('Quarantined core skill: '+path.parent.name)
-    return {'ok':not errors, 'core_skill_count':len(active), 'related_archive_count':len(archives), 'history_evidenced_core_count':sum(s['history_loads']>0 for s in declared), 'manifest_file_count':len(manifest['files']), 'excluded_repository_path_count':len(excluded_rules), 'local_reference_count':len(checked_links), 'scanner':scanner, 'security_scans':scans, 'errors':errors, 'live_resolve_tested':False, 'project_trust_changed':False}
+                errors.append('Quarantined active skill: '+path.parent.name)
+    return {'ok':not errors, 'core_skill_count':len(core), 'supporting_skill_count':len(supporting), 'active_skill_count':len(active), 'related_archive_count':len(archives), 'history_evidenced_core_count':sum(s['history_loads']>0 for s in core), 'manifest_file_count':len(manifest['files']), 'excluded_repository_path_count':len(excluded_rules), 'local_reference_count':len(checked_links), 'documented_example_link_exception_count':len(documented_example_links), 'documented_example_link_exceptions':documented_example_links, 'scanner':scanner, 'security_scans':scans, 'errors':errors, 'live_resolve_tested':False, 'project_trust_changed':False}
 
 if __name__ == '__main__':
     result = validate()

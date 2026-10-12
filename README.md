@@ -2,7 +2,7 @@
 
 รวบรวม skills จากงานเดิมมาไว้ในโปรเจกต์นี้ โดยไม่ย้ายหรือลบต้นฉบับ ไม่แก้คลิป ไทม์ไลน์ หรือฐานข้อมูล Resolve และไม่เปลี่ยน config ของ Hermes
 
-รุ่นของชุด skills: **v0.9.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
+รุ่นของชุด skills: **v0.10.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
 
 ## ชุดหลัก — 17 skills
 
@@ -30,7 +30,16 @@
 
 ประวัติที่เข้าถึงได้พบการโหลด **14 จาก 17 skills หลัก** ใน sessions ที่เกี่ยวข้องกับ Resolve ส่วน `resolve-color`, `resolve-conform` และ `thai-proofread` รวมไว้ให้ชุดงานครบ แต่ไม่อ้างว่าเคยโหลดจริงจากประวัติที่ตรวจครั้งนี้ การโหลด skill ไม่ได้แปลว่าใช้งานกับทุกคลิปหรือทำงานเสร็จแล้ว
 
-## Skills เสริมที่เก็บแยก — 13 ชุด
+## Skills เสริมที่เปิดใช้งาน — 29 ชุด
+
+แยกออกจากชุดหลักเพื่อให้ค้นพบ workflow และเครื่องมือประกอบได้ โดยไม่ถือเป็นหลักฐานว่าเคยใช้หรือตรวจงาน Resolve จริง:
+
+- Workflow/เครื่องมือ: `agent-skill-repo-release`, `gif-search`, `resolve-batch-export`, `resolve-folder-cover-batch`, `resolve-mitr-subtitle-presets`, `resolve-offline-media-repair`, `resolve-trim-to-length`, `video-provider-smoke-qc`, `vtuber-content-curriculum`, `vtuber-cover-batch-pipeline`, `vtuber-thumbnail-layout`, `vtuber-thumbnail-qc`, `youtube-content`, `youtube-downloader`
+- Superpowers 7.0.0: `brainstorming`, `diagnosing-superpowers`, `dispatching-parallel-agents`, `executing-plans`, `finishing-a-development-branch`, `receiving-code-review`, `requesting-code-review`, `subagent-driven-development`, `systematic-debugging`, `test-driven-development`, `using-git-worktrees`, `using-superpowers`, `verification-before-completion`, `writing-plans`, `writing-skills`
+
+รวม `.agents/skills/` ทั้งหมด **46 ชุด**: ชุดหลัก 17 และชุดเสริม 29 รายละเอียดแหล่งที่มาและ checksum อยู่ใน `docs/skills-manifest.json`
+
+## Skills เสริมที่เก็บเป็นเอกสารอ้างอิง — 13 ชุด
 
 อยู่ที่ `docs/related-skills/` เป็นเอกสารอ้างอิง ไม่เปิดเป็น skills ตัดต่ออัตโนมัติ:
 
@@ -112,9 +121,9 @@ Whisper ในเครื่องใช้เป็นเพียงตัว
 ถ้า preset อยู่คนละ library ให้ตรวจ `--user-db` ที่ค้นพบจริง อย่าแทน `Mitr-Font`
 ด้วย `Mitr Font` เอง
 
-บน Resolve 21.1.0.17 helper โหลด subtitle preset เป็น Python/SQLite workaround
-**ไม่ใช่ native preset API** จึงต้องอนุมัติ database write แยกต่างหาก สำรองและปิด project
-ก่อนเขียน แล้วเปิดกลับตรวจ style bytes, ข้อความ/เฟรม และ coverage
+บน Resolve 21.1.0.17 helper อ่าน preset ด้วย Python/SQLite workaround
+**ไม่ใช่ native preset API** ปัจจุบันรองรับการค้นหาและ dry run เท่านั้น โดย `--apply`
+จะหยุดก่อนเขียนเพราะยังยืนยันการปิด Resolve ได้ไม่ครบ
 
 ## ใช้กับ Hermes
 
@@ -135,7 +144,7 @@ python -m unittest discover -s tests -v
 python scripts/verify_skill_bundle.py
 ```
 
-Validator ต้องมี PyYAML; ใช้ Python environment ที่ตรวจแล้วว่ามีแพ็กเกจนี้ หากมี Hermes ใน interpreter เดียวกัน จะสแกน core skills ด้วย security scanner จริงของ Hermes ด้วย ผลตรวจชุดปัจจุบันอยู่ที่ `docs/validation-report.json`
+Validator ต้องมี PyYAML; ใช้ Python environment ที่ตรวจแล้วว่ามีแพ็กเกจนี้ หากมี Hermes ใน interpreter เดียวกัน จะสแกน active skills ทั้ง core และ supporting ด้วย security scanner จริงของ Hermes ผลตรวจชุดปัจจุบันอยู่ที่ `docs/validation-report.json`
 
 Tests ของ contact sheet ต้องมี Pillow ด้วย ใช้ environment ที่ตรวจว่ามีแล้ว; ไม่ติดตั้งแพ็กเกจอัตโนมัติ ตัวตรวจสอบตรวจทั้งไฟล์ที่ตกหล่นจาก manifest และการจับคู่รายการ skills กับไฟล์จริง ไม่ใช่ตรวจเพียงจำนวนเท่ากัน
 
@@ -149,4 +158,4 @@ Checksum ตรวจไบต์จริงก่อน และยอมร�
 
 นี่คือ **ชุด skills และคู่มือ ไม่ใช่ MCP server ตัวใหม่** ต้องใช้ backend `davinci-resolve-mcp` ที่มีอยู่หรือ scripting bridge ที่ตรวจการเชื่อมต่อจริงก่อนลงมือ คำสั่งเกี่ยวกับ `src/server.py` ในคู่มือต้นทางให้รันจาก installation ของ backend ไม่ใช่จากโปรเจกต์นี้
 
-ไม่ได้รวม `release-check` ซึ่งใช้ปล่อยเวอร์ชัน server, งาน Canva thumbnail/YouTube downloader ที่เป็นคนละ workflow, source footage, ไฟล์ SRT ของคลิป, render, หรือ Project.db รุ่นนี้เผยแพร่ชุดเอกสาร/skills ไม่ใช่การปล่อย MCP server หรือหลักฐานว่าตัดต่อคลิปเสร็จแล้ว
+ไม่ได้รวม `release-check` สำหรับปล่อยเวอร์ชัน server, implementation/package ของ YouTube downloader หรือเครื่องมือ Canva (มีเฉพาะคู่มือสกิลที่อยู่ใน `.agents/skills/`), source footage, ไฟล์ SRT ของคลิป, render หรือ Project.db รุ่นนี้เผยแพร่ชุดเอกสาร/skills ไม่ใช่การปล่อย MCP server หรือหลักฐานว่าตัดต่อคลิปเสร็จแล้ว

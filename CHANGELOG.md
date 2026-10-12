@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.10.0
+
+### เพิ่ม
+- เพิ่มสกิลเสริม 29 ชุดใน `.agents/skills/` (workflow จากโปรไฟล์ 14 ชุด และ Superpowers v7.0.0 จำนวน 15 ชุด) โดยแยก `supporting` ออกจากสกิลตัดต่อหลัก 17 ชุดใน manifest
+- เพิ่มคำอธิบายจำนวนสกิลและขอบเขตการเปิดใช้งานใน README/operating notes และปรับคู่มือการเผยแพร่ให้ใช้ tag สูงสุดเป็นฐาน พร้อม release title ภาษาไทย
+
+### ปรับปรุง
+- ปรับกฎ Resolve ให้ตรงกับ `AGENTS.md`: ไม่ใช้ FFmpeg แปลงสื่อหรือ API ที่ยังไม่ยืนยัน, ระบุ dependency ภายนอก, ขออนุญาตก่อนส่งภาพ/วิดีโอไปผู้ให้บริการภายนอก และจำกัดการเขียน preset ลงฐานข้อมูลจนกว่าจะรับประกันได้ว่า Resolve ปิดสนิท
+- ให้ helper preset ใต้สกิลส่งต่อไปยัง helper กลางของโปรเจกต์ และบล็อกการเขียน Project.db ที่ยังไม่มี shutdown guard
+- ทำให้การ resume export เชื่อถือเฉพาะงาน Resolve สถานะ `Complete` ที่ไฟล์ผ่านการตรวจ stream/ขนาด/ระยะเวลา และการเทียบ cover สำหรับแนวตั้ง พร้อมหยุดเมื่อพบไฟล์ output หลายชนิดที่ใช้ชื่อฐานเดียวกัน
+- แก้ลิงก์ข้ามสกิล Superpowers ให้สัมพันธ์กับโฟลเดอร์จริง และปรับแนวทางล้าง worktree ให้เก็บหลักฐาน review/ledger ไว้
+- อัปเดตแผนผัง community MCP จาก v4.10.3 เป็น v4.10.4 ตามข้อมูลในโปรเจกต์
+
+### ผลการตรวจ
+- `scripts/verify_skill_bundle.py` ผ่านโดยไม่มี errors: manifest 559 ไฟล์, ลิงก์ภายใน 90 จุด, สกิล active 17 core + 29 supporting = 46 และ archive 13 ชุด; รายงาน 14 ลิงก์ตัวอย่างจากคู่มือภายนอกเป็น exception ที่บันทึกเหตุผลไว้
+- ตัวสแกน Hermes ใช้งานไม่ได้ใน environment นี้ จึงตรวจเฉพาะโครงสร้าง/frontmatter, references และ checksums; ไม่มีการรัน unit tests, เชื่อมต่อ Resolve, แก้ project database หรือทดสอบ render ในการเตรียมรีลีสนี้
+- ผล validator ไม่ใช่หลักฐานว่า Resolve scripts หรือภาพที่ render ทำงานถูกต้อง
+
 ## v0.9.0
 
 ชุดสกิลและสคริปต์ช่วยงานตัดต่อรุ่นนี้แยกเลขรุ่นจาก DaVinci Resolve และ MCP server
@@ -23,7 +41,7 @@
 - เพิ่มชุด render แนวตั้ง/แนวนอน, ตัวช่วย loudness ของแต่ละสัดส่วน และ `p2_export_final.py` สำหรับเตรียม export หลาย timeline ด้วย `H.264 Master` พร้อม readback/การตรวจผลที่สคริปต์กำหนด; การมีสคริปต์ไม่ใช่หลักฐานว่าไฟล์ส่งออกทุกชิ้นผ่าน QC แล้ว
 
 ### ขอบเขตเครื่องมือและสกิล
-- ปรับ `AGENTS.md` และสกิล Resolve ให้บังคับใช้ Resolve MCP ก่อน แล้วจึงใช้ Python Scripting API เมื่อมีหลักฐานช่องว่าง; เพิ่มแผนผังเครื่องมือ MCP v4.10.3 และคำแนะนำ subtitle/conform/focus QC ล่าสุด
+- ปรับ `AGENTS.md` และสกิล Resolve ให้บังคับใช้ Resolve MCP ก่อน แล้วจึงใช้ Python Scripting API เมื่อมีหลักฐานช่องว่าง; เพิ่มแผนผังเครื่องมือ MCP v4.10.4 และคำแนะนำ subtitle/conform/focus QC ล่าสุด
 - เพิ่มกฎ house style และ `adjustment-focus.md` ให้ยืนยันตัว Armigon, อ่าน transform/`MotionBlur`, เทียบเฟรมเดียวกันเมื่อเปิด/ปิด focus และแยกปัญหา source ออกจากผล zoom
 
 ### เพิ่มเติม

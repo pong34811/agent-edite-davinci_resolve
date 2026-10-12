@@ -5,16 +5,27 @@ description: Use when making covers for a whole Resolve project.
 
 # VTuber cover batch pipeline (Resolve project -> 16:9 + 9:16 JPGs)
 
-Recipe for building covers for every timeline of an open Resolve project in the agent-thumbnail repo. Design rules live in `davinci-thumbnails`, `vtuber-thumbnail-layout`, `vtuber-thumbnail-qc`; repo gotchas in AGENTS.md. Reference implementation: `.agents/skills/davinci-thumbnails/scripts/{gen,aomi_p1_extract_frames,build}_aomi_p1_*.py` (copy and rename for a new batch).
+Recipe for building covers for every timeline of an open Resolve project in the separate agent-thumbnail repository. Design rules live in `davinci-thumbnails`, `vtuber-thumbnail-layout`, and `vtuber-thumbnail-qc`; repository-specific requirements live in that repository's `AGENTS.md`. Its referenced implementation is external and is not bundled here.
+
+## External dependency and project rules
+
+This bundle does not include the agent-thumbnail repository, its CLI, assets,
+or scripts. Locate that repository and read its `AGENTS.md` before using this
+workflow; verify every referenced file exists there. If the dependency is
+unavailable, stop before mutation and report the missing prerequisite.
+
+For Resolve operations in this repository, follow its `AGENTS.md`: inspect
+Resolve through MCP first and use Python only after a documented `MCP-GAP:`
+with the shared Resolve helpers. Do not use screenshots or GUI automation.
 
 ## Steps
 0. Check for an existing batch first: `ls outputs/<ch>/*`, `reports/<ch>/*/delivery-manifest.json`, `projects/*/mapping.py`, `.hermes/plans/`. If the open project's timeline names already equal a mapping's `name`/`tl_short` set and every `<name>.jpg` exists, do NOT rebuild: re-run `cli.verify`, report, and move to QC/fixes. Prompt typos (folder name, character name) are resolved against what is actually on disk (`ls` the folder; character = the asset set in `1.picture`), and the assumption is stated in the report.
 1. `python -m cli.doctor`; if numpy/Pillow are missing, install `requirements.txt` into the interpreter behind `python`.
 2. Inventory the CURRENTLY OPEN project read-only (no save, no project switch): per timeline `name, res, frames, fps, src (File Path of first video item), srcstart (GetLeftOffset), subs [(start - tl_start, text)]` -> `reports/<ch>/<date>/timeline-inventory*.json`. Landscape = width 1920. The 9:16 twin's name already ends in `_9x16`, so the twin check is `name in portrait_names`, never `name + '_9x16'`.
-3. Take timeline names from the inventory, never from OCR of a UI screenshot (vision garbles Thai); a screenshot only defines scope. If the user says hooks follow the Timeline name, shorten the inventory name to 1-4 words; never put ASR profanity on a cover.
+3. Take timeline names from the live inventory, never from OCR of a UI screenshot (vision garbles Thai). If the user says hooks follow the Timeline name, shorten the inventory name to 1-4 words; never put ASR profanity on a cover.
 4. Coverage check: distinct `src` in the inventory vs mp4s in the footage folder vs existing `projects/*/mapping.py`.
 5. Generator script: dict `id -> (hook, sec, frame_tl_sec, model_no, talk, evidence, flag)`; assert counts and that every model number exists on disk; write `projects/<name>/mapping.py` + `__init__.py`; flag rows whose subtitle does not back the title.
-6. Extract one frame per timeline at `src_start + frame_tl` (ffmpeg `-ss` before `-i`; sources are multi-GB, run in background). Make a contact sheet, have vision list menu / inventory / black / loading / dark frames, re-sample those clips at ~6 offsets on one sheet, update `frame_tl`. A shop/inventory screen is acceptable only when it is the clip's subject; flag it.
+6. Extract one frame per timeline at `src_start + frame_tl` (ffmpeg `-ss` before `-i`; sources are multi-GB, run in background) for local, read-only review. Do not upload source frames to an external provider unless the user explicitly authorizes that transfer. Make a contact sheet, review menu / inventory / black / loading / dark frames, re-sample those clips at ~6 offsets on one sheet, update `frame_tl`. A shop/inventory screen is acceptable only when it is the clip's subject; flag it.
 7. Measure each source's stream-overlay layout (below), build all, `python -m cli.verify`, QC sheets (<=25 covers per sheet, landscape and Shorts separately), fix, FULL rebuild, verify, write `reports/<ch>/<date>/qc-summary.md`, `cli.package`, `python -m cli.organize` (re-syncs `_LATEST`; `cli.open` alone leaves it on the previous batch), `cli.open <channel>`.
 
 ## Delivery to a user-named folder

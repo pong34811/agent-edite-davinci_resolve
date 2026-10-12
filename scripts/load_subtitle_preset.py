@@ -10,21 +10,15 @@ reproduces the GUI's "Load Preset" at the database level, verified on build
   ``EffectFiltersBA`` in ``Sm2TiTrack.FieldsBlob`` (``Type = 2``) of the
   project's ``Project.db``.  Loading a preset = copying those bytes.
 
-Default mode is a read-only dry run.  ``--apply`` writes, following the
-project's database rules: save, export a ``.drp`` backup, close the project,
-snapshot ``Project.db``, one transaction on the exact track rows, readback,
-reopen, restore timeline/playhead/page, save, then verify blobs and cue
-counts again.
+Default mode is a read-only dry run. The legacy ``--apply`` flag is retained
+for compatibility but deliberately exits before any SQLite write: this helper
+cannot verify that Resolve has fully exited and released the database.
 
 Usage::
 
     python scripts/load_subtitle_preset.py --list
     python scripts/load_subtitle_preset.py --preset "Mitr-short-001"            # dry run, current timeline
-    python scripts/load_subtitle_preset.py --preset "Mitr-short-001" --apply
-    python scripts/load_subtitle_preset.py --preset mitr --timeline "TL A" --timeline "TL B" --apply
-    python scripts/load_subtitle_preset.py --preset mitr --all-timelines --apply
-    python scripts/load_subtitle_preset.py --preset "Mitr Font" --orientation horizontal --apply
-    python scripts/load_subtitle_preset.py --preset "Mitr-short-001" --orientation vertical --apply
+    # --apply currently reports the safety block and makes no database changes.
 """
 from __future__ import annotations
 
@@ -392,7 +386,7 @@ def main(argv=None) -> int:
     ap.add_argument("--project-db", type=Path, help="override Project.db path")
     ap.add_argument("--user-db", type=Path, help="override User.db path")
     ap.add_argument("--backup-dir", type=Path, default=Path(os.environ.get("TMPDIR", ".")) / "subtitle_preset_backups")
-    ap.add_argument("--apply", action="store_true", help="actually write (default: dry run)")
+    ap.add_argument("--apply", action="store_true", help="request a write (currently blocked before any database change)")
     args = ap.parse_args(argv)
 
     resolve = connect_resolve()
@@ -462,11 +456,17 @@ def main(argv=None) -> int:
     print(json.dumps(report, ensure_ascii=False, indent=1))
     print(f"{to_change} of {len(plan)} subtitle track(s) would change.")
     if not args.apply:
-        print("Dry run only. Re-run with --apply to write.")
+        print("Dry run only. --apply is currently blocked before any database write.")
         return 0
     if to_change == 0:
         print("Nothing to do; all target tracks already use this preset.")
         return 0
+
+    raise SystemExit(
+        "--apply is blocked: this helper cannot verify that Resolve has fully exited "
+        "before its SQLite write. No database changes were made. Use an approved "
+        "offline workflow with a verified .drp backup and explicit authorization."
+    )
 
     # ---- capture state ---------------------------------------------------
     page = resolve.GetCurrentPage()
