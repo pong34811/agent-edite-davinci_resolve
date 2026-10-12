@@ -7,6 +7,7 @@ __pycache__/
 *.db-wal
 *.db-shm
 *.drp
+!backups/
 *.drt
 *.mp4
 *.mov
