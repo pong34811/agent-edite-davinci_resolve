@@ -2,27 +2,48 @@
 
 ## v0.9.0
 
-### Added
+ชุดสกิลและสคริปต์ช่วยงานตัดต่อรุ่นนี้แยกเลขรุ่นจาก DaVinci Resolve และ MCP server
+
+### P2 และการจัดภาพ 9:16
+- เพิ่มชุด `p2_9x16_*` สำหรับสำรวจ source, สร้างและแปลง timeline, จัดส่วนเกม/ตัวละคร, ตรวจ cut และตรวจโครงสร้างหลังแปลง รวมถึงการรับสำเนา 1080×1920 ที่ตั้งค่าด้วยมือหรือ MCP และโหมด raster ช้า
+- เพิ่มตัวลบ stray copy ตามขอบเขตที่ระบุ และการตรวจทุก timeline หลังเปลี่ยนเพื่อช่วยจับการคลาดเคลื่อนของแทร็กและช่วงภาพ
+
+### ซับไทยและ QC ก่อนเผยแพร่
+- เพิ่มเครื่องมือสร้าง cue จากข้อมูลต้นทางและ sample, ใช้ cue กับ native subtitle track, แก้กฎข้อความ/ช่วงเวลา และใช้ซับที่แก้แล้วได้ทั้งแนวตั้งและแนวนอน
+- เพิ่ม `p2_publish_qc.py`, การตรวจซับหลังแก้, still และ audio QC เพื่อจัดหลักฐานก่อนเผยแพร่; `caption_lint.py` ตรวจข้อกำหนดซับไทยแบบอ่านอย่างเดียว
+
+### VTuber focus และ QC
+- เพิ่มตัววางแผน/ใช้ zoom focus ของ P2 พร้อม rollback, เครื่องมือสร้างและย้ายแทร็ก `Adjustment Clip` ผ่าน DRT, ตัวตรวจเฟรม/โครงสร้าง focus และ pilot Armigon บนสำเนา
+- รายงาน QC Armigon ใน Resolve Studio 21.1.0.17 ที่ 1920×1080/60 fps ตรวจ `Adjustment Clip` 48 รายการ พบ `MotionBlur=0` ทั้งหมด; อ่าน `Center`/`Size` รวม 192 input โดยไม่พบ keyframe ใน input ที่ตรวจ
+- T74–T77 เป็น VTuber ผมชมพูอีกคน จึงคืนค่าเฉพาะ V2 focus ให้เป็นกลางและอ่านค่ากลับแล้ว; T1 เฟรม 2261 และ T70 เฟรม 1839 มีภาพ still A/B เปิด/ปิด V2 ในเวลาเดียวกัน เขาด้านขวาถูกตัดใน source อยู่แล้ว และสติกเกอร์ผมขาวใน source ของ T70 บังมือ/ลำตัวบางส่วน การลอง `X=-0.06` ไม่แก้เขา จึงคืน T70 เป็น `X=-0.03`
+- ภาพ still ที่ตรวจไม่พบขอบดำหรือ blur ที่ zoom เพิ่มขึ้น แต่ไม่ใช่หลักฐานว่า motion ทุกเฟรมไม่มีอาการสั่น และไม่ได้ตรวจวิดีโอ render เต็มช่วง รายละเอียดและขอบเขตหลักฐานอยู่ที่ `docs/superpowers/reports/2026-10-12-armigon-focus-qc-th.md`
+
+### GIF, การตัดท้าย และการส่งออก
+- เพิ่มการย้าย GIF บน V2 ให้อยู่ในแผงเกมเหนือรอยต่อ avatar ของ 9:16 โดยคำนึงถึง V3 ที่วาดทับ V2; เพิ่มเครื่องมือตัด GIF ท้ายที่ผิดและสร้าง timeline รุ่น `_150s` โดยลบ cue ที่เลยหรือคร่อมจุดตัดตามนโยบายสคริปต์
+- เพิ่มชุด render แนวตั้ง/แนวนอน, ตัวช่วย loudness ของแต่ละสัดส่วน และ `p2_export_final.py` สำหรับเตรียม export หลาย timeline ด้วย `H.264 Master` พร้อม readback/การตรวจผลที่สคริปต์กำหนด; การมีสคริปต์ไม่ใช่หลักฐานว่าไฟล์ส่งออกทุกชิ้นผ่าน QC แล้ว
+
+### ขอบเขตเครื่องมือและสกิล
+- ปรับ `AGENTS.md` และสกิล Resolve ให้บังคับใช้ Resolve MCP ก่อน แล้วจึงใช้ Python Scripting API เมื่อมีหลักฐานช่องว่าง; เพิ่มแผนผังเครื่องมือ MCP v4.10.3 และคำแนะนำ subtitle/conform/focus QC ล่าสุด
+- เพิ่มกฎ house style และ `adjustment-focus.md` ให้ยืนยันตัว Armigon, อ่าน transform/`MotionBlur`, เทียบเฟรมเดียวกันเมื่อเปิด/ปิด focus และแยกปัญหา source ออกจากผล zoom
+
+### เพิ่มเติม
 - `scripts/caption_lint.py`: ตรวจ SRT ภาษาไทยแบบ read-only ตามกฎซับสั้น (ไม่เกิน 14 อักษรไทยและ 1.5 วินาทีต่อ cue, ไม่เว้นวรรคระหว่างอักษรไทย, ไม่เกิน 2 บรรทัด) คืน exit code 1 เมื่อมีข้อผิดกฎ; ชี้จาก `thai-subtitles-resolve`
 - `scripts/backup_drp.py`: `export_verified` / `verify_drp` สำหรับ export `.drp` แล้วตรวจว่าไฟล์ไม่ว่างและเป็น zip ที่สมบูรณ์
 - `tests/conftest.py`: ข้ามเทสต์ `test_m1_*` ที่ต้องมี Resolve จริง เว้นแต่ใส่ `--live`
 - `tests/test_caption_lint.py`, `tests/test_backup_cleanup.py`
 
-### Fixed
+### แก้ไข
 - `scripts/cleanup_backups.py`: เดิมลบ `.drp` ทุกไฟล์ในโฟลเดอร์ รวมถึงไฟล์ rollback (`pre-enrichment`, `before_promotion_`) เพราะ `KEEP_MARKERS` / `DELETE_PREFIXES` ไม่ถูกใช้และ `--keep-rollback` ไม่ทำอะไร; ตอนนี้ลบเฉพาะชื่อที่ขึ้นต้นด้วย `before_python_batch_` / `before_python_vdo_` เท่านั้น ไฟล์อื่นรายงานเป็น kept / skipped_unmatched (ยังเป็น dry-run ถ้าไม่ใส่ `--confirm`)
 - `scripts/promote_drafts_to_originals.py`: เดิมเขียน report ทับก่อนอ่านสถานะรอบก่อน ทำให้ตรวจ "promoted_verified" ไม่เคยได้ผล; ตอนนี้อ่านก่อน, คงรายการ `added` เดิม และ dry-run ไม่ลบบันทึกการ promote ที่ยืนยันแล้ว
 - `scripts/focus_apply_batch.py`, `scripts/focus_tune.py`: เพิ่ม bootstrap path ให้รันตรงด้วย `python scripts/<ชื่อ>.py` ได้ (เดิมได้ `ModuleNotFoundError`; `python -m scripts.<ชื่อ>` ใช้ได้อยู่แล้ว)
 - `scripts/resolve_common.py`: `preserved_state` คืน Media Pool folder ด้วย และรายงานบน stderr เมื่อคืนค่าขั้นใดไม่สำเร็จ แทนการกลืน exception เงียบๆ
 - ลบ import / ตัวแปรที่ไม่ใช้ (pyflakes สะอาด)
 
-### Removed
+### ย้ายออก
 - ย้ายออกไป `Desktop/_archive-davinci-cleanup-2026-10-09/scripts-review-2026-10-09/` (ไม่ได้ลบ): สคริปต์งานครั้งเดียว `render_t02_candidate`, `render_lowerleft_16_42`, `render_bottomleft_batch`, `render_headroom_tune`, `apply_focus_candidate`, `apply_bottomleft_candidates`, `tune_focus_headroom`, `focus_set_transform`; ชุดย้าย 9:16 รอบ M2/M3 `m2_convert_pilot`, `m3_convert`, `calibrate_crop`, `calibrate_zoom`, `compare_invariants`, `survey_sources`, `export_source_stills`, `layout9x16`, `split_projects`, `challenger_m2_1_results.json`; และเทสต์ live `test_m2_*`, `test_m3_*`
-- `AGENTS.md`: เพิ่มหมวด Allowed tools (เฉพาะ Resolve MCP และ Resolve Python) พร้อม tool inventory
-
-### Validation
-- `python scripts/verify_skill_bundle.py` — `errors: []`
-- เทสต์: 114 ผ่าน, 21 ข้าม (live), 1 ล้ม (`test_review_analysis_budget` ต้องใช้โมดูล `agent` ที่ไม่มีในเครื่อง ล้มอยู่ก่อนหน้านี้แล้ว)
-- ยังไม่ได้ทดสอบสคริปต์ที่แก้กับ Resolve จริง
+### การตรวจ
+- ในการเตรียมรีลีสครั้งนี้ รัน `python scripts/verify_skill_bundle.py` ได้ `ok: true`, `errors: []`, 449 ไฟล์ใน manifest และ 73 ลิงก์ภายใน; ผลอยู่ใน `docs/validation-report.json` (ตัวสแกน Hermes ไม่พร้อม จึงเป็นการตรวจโครงสร้าง/checksum) รัน `git diff --check` ผ่านด้วย
+- รายงาน Armigon ข้างต้นเป็นหลักฐาน QC ที่บันทึกไว้ก่อนหน้านี้ ไม่ใช่การทดสอบสดของสคริปต์ทั้งหมดในรีลีสนี้ ไม่มีการเชื่อมต่อ Resolve หรือตรวจวิดีโอ render เต็มช่วงในการเตรียมรีลีสครั้งนี้
 
 ## v0.8.0
 

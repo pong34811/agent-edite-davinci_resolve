@@ -1,8 +1,9 @@
 """Refresh docs/skills-manifest.json after repository changes, then re-validate.
 
-Adds new bundle files, drops deleted ones, records this session's edits, and
+Adds new bundle files, drops deleted ones, records supplied edits, and
 recomputes checksums. Requires PyYAML only. Does not commit or push.
 """
+import argparse
 import hashlib
 import fnmatch
 import json
@@ -38,6 +39,10 @@ def kind_for(relative):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--edit', nargs=2, action='append', metavar=('PATH', 'REASON'),
+                        default=[], help='Record a changed file and reason (repeatable)')
+    args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
     records = {record['path']: record for record in manifest['files']}
     excluded_rules = {record['path']: record['reason']
@@ -88,24 +93,16 @@ def main():
             changed.append({'action': 'rechecksummed', 'path': relative})
     manifest['files'] = [records[key] for key in sorted(records)]
     manifest['counts']['manifest_files'] = len(manifest['files'])
-    manifest['edits'].extend([
-        {'path': 'docs/OPERATING-NOTES.md',
-         'reason': 'Offline review workflow (ffprobe/ffmpeg + saved subtitle map), native Python '
-                   'vdo reference capture/apply, draft-copy then promote-to-original sequence, '
-                   'idempotent promotion, anomaly sweep, and backup-cleanup rules.'},
-        {'path': 'scripts/enrich_timelines_python.py',
-         'reason': 'Native Python batch enrichment: dry-run by default, explicit inventory IDs, '
-                   'BGM-only when no cue is defensible, GIF overlap preservation, per-item caps.'},
-        {'path': 'scripts/promote_drafts_to_originals.py',
-         'reason': 'Promotes verified drafts into originals by exact IDs, reusing existing items '
-                   'and re-verifying baseline tracks; refuses when an original drifted.'},
-        {'path': 'scripts/anomaly_sweep.py',
-         'reason': 'Read-only structural sweep across every timeline; native subtitle items are '
-                   'correctly treated as having no Media Pool entry.'},
-        {'path': '.gitignore',
-         'reason': 'Ignore the local .hermes working-artifact tree alongside other scratch dirs.'},
-    ])
-    manifest['bundle_version'] = '0.9.0'
+    edits = []
+    seen = set()
+    for record in [*manifest.get('edits', []),
+                   *({'path': path, 'reason': reason} for path, reason in args.edit)]:
+        key = (record['path'], record['reason'])
+        if key not in seen:
+            edits.append(record)
+            seen.add(key)
+    manifest['edits'] = edits
+    manifest['bundle_version'] = (ROOT / 'VERSION').read_text(encoding='utf-8').strip()
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'files': len(manifest['files']), 'changed': len(changed),
                       'changes': changed[:40]}, ensure_ascii=False, indent=2))
