@@ -1002,7 +1002,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "1d066a5f72292bada28cfe7916ae04c9358705bbdf5fc13a5b8b667ca4cfd3ee"
+      "sha256": "a82798203a26064e4eed347155d962e2196d9b4e8a2a00ca76136ca914320c8f"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -1930,19 +1930,19 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "9bf902d5502ce7ad3c41421e7d577c55d3327adc8b9533015487938abcb22350",
+      "sha256": "e841a2f4e328e2fa83bc38ff982356b0f7e6ce487fcd5573831e55f413086a67",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "38a32125bd1931b6ac820aa1b292bcd873162a40645852d43994b2a6044009f7"
+      "sha256": "0f5320ce4d3eb33b305406d4887172af420f4f9dac04e68f39c41b27179b3f40"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "79370f5fc166b688207f169f7f80fb31e0646a55ac956637a579688986aa0f91",
+      "sha256": "795d6bc79574d2aec03ad9cfec404bb95083c9dd210e6521e0d4199772d28d44",
       "kind": "integration_or_validation"
     },
     {
@@ -3937,6 +3937,12 @@
       "sha256": "2a1cdbaf3efc2ecaf503838f22031c3be076204f8c76dd213993585c003dece0"
     },
     {
+      "path": "scripts/apply_group_fix.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "50120bd61e358f0ea32de9301c927a611403c8044fbb13bc898bfca574df027c"
+    },
+    {
       "path": "scripts/apply_offline_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -3967,10 +3973,70 @@
       "sha256": "b3ecf580ded77dc4714ebc34011a3d56bfdf9422cd5125348fb402a1f5aaa09e"
     },
     {
+      "path": "scripts/armigon_9x16_batch_one.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7c4ceccd8cfa6f35cb8e12454d1945fd4016d5fe0020037d508647e62ef44fce"
+    },
+    {
+      "path": "scripts/armigon_9x16_focus_retarget.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "346bdbe11d746734b72bc106a7b4a4868ba8d462ea06ab1d1811f47f3914a287"
+    },
+    {
+      "path": "scripts/armigon_9x16_fractional_probe.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c9d72491fbedf103fdcd02b5dbcd07fb608ff3087ce7579b97d123e3d3474d6e"
+    },
+    {
+      "path": "scripts/armigon_9x16_pilot.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "67b61626541c7f1c87e02047b76e22c0f118d538710cabef9b68b9f6958bf1e5"
+    },
+    {
+      "path": "scripts/armigon_9x16_reframe_target.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1adbcee34a0d8b378751465f3768bb7f8e6226c2a40b0a45d72520e1727e7b37"
+    },
+    {
+      "path": "scripts/armigon_9x16_snapshot.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e0abebda9e8fe60a4a3af92ff34802d5a56433537e58d0b558c58703fc9c7496"
+    },
+    {
+      "path": "scripts/armigon_audio_qc.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4407955d4bc2b6d0c6210e55af1ebda41d3acf229275976f74d23046b450d39e"
+    },
+    {
+      "path": "scripts/armigon_fix_captions.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d58ae24b3f361ad17b2263f1283d8caa4c9898edbcb1e48b9f2cc2c897173a13"
+    },
+    {
       "path": "scripts/armigon_focus_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "7010e85736afaf6a2330f4974ca1208bd9ed5de036bb0d2485224efd2f228feb"
+    },
+    {
+      "path": "scripts/armigon_publish_qc.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6911e6c5cc71c4cbaefcb719e19a5ab5216278cdeff737621f4f90a654b99515"
+    },
+    {
+      "path": "scripts/armigon_source_ranges.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "149d5da16d3d1b89f596ac77f3d1b0f826e1002abcb7fe49a52b90e075a9413b"
     },
     {
       "path": "scripts/asr_words_th.py",
@@ -4033,6 +4099,12 @@
       "kind": "analysis_helper",
       "local_amendment": "Refuse output overwrites, preserve pending vision indices by failing on missing frames, validate positive grid dimensions with CLI usage errors, and use the Windows python command.",
       "sha256": "ba5b017830b598feb7991340f24d34ee10a36c8c6cc4e272760015c74980dbb5"
+    },
+    {
+      "path": "scripts/create_and_fix.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "90c508fc6bacce8c33e73240c21e766d19a9205de98e39229b9a45b23b1b696f"
     },
     {
       "path": "scripts/deploy_climbing_focus.py",
@@ -4452,13 +4524,19 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "034fd7da4e32bbd036a8c33caf5726cae85c13b0253dee393596671465da6d82"
+      "sha256": "ce3a21ccd6a95d7ccb2c34db173cc7e7884917b2b4bed0d2e0cea42bd5797fd9"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "41882ea83c5a5cc1891acb59c88cd9f3ae2658514eddc4f72b3954a6e5c00aa0"
+    },
+    {
+      "path": "scripts/vertical_layout_repair_pilot.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c17b396aec4c5eb66539faadf2c556d4f5b49f579f9f623a4329721a1702610b"
     },
     {
       "path": "scripts/video_presets.json",
@@ -4639,6 +4717,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "6a3ed126b75abc5a4e1131f06623949634cebc6eb5eb5d1442c06a122431fa6b"
+    },
+    {
+      "path": "tests/test_vertical_layout_repair_pilot.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "1b3fea9b0d5b6706c1997c407435799851d5caca065a300af705a88e4f50f1ea"
     }
   ],
   "historical_variants": [
@@ -4850,17 +4934,21 @@
     {
       "path": "scripts/verify_skill_bundle.py",
       "reason": "แก้ป้าย error ให้ครอบคลุมสกิล active ทั้งหมด"
+    },
+    {
+      "path": ".agents/skills/house-style/SKILL.md",
+      "reason": "ยึด subject ที่ผู้ใช้ระบุหรือชี้ในภาพอ้างอิงเป็น focus target แทนการสมมติว่าเป็น VTuber"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 582,
+    "manifest_files": 596,
     "supporting_skills": 29,
     "active_skills": 46
   },
-  "bundle_version": "0.10.0",
+  "bundle_version": "0.11.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",

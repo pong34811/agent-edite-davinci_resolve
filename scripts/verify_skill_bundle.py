@@ -32,7 +32,7 @@ def sha(path):
 def checksum_matches(path, expected):
     if sha(path) == expected:
         return True
-    text_suffixes = {'', '.cjs', '.html', '.js', '.json', '.md', '.py',
+    text_suffixes = {'', '.cjs', '.dot', '.html', '.js', '.json', '.md', '.py',
                      '.pyi', '.sh', '.ts', '.txt', '.yaml', '.yml'}
     data = path.read_bytes()
     if path.suffix.lower() not in text_suffixes or bytes([0]) in data:

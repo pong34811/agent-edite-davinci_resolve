@@ -130,6 +130,7 @@ _Not yet captured._
 
 ## VTuber Zoom Focus
 
+- Use the subject explicitly identified by the user as the focus target; do not assume every focus request means the VTuber. This project can use an in-game character shown in the user's reference image. The trap is letting the familiar lower-panel avatar override a different subject in the reference.
 - เมื่อผู้ใช้ขอโฟกัส Armigon ให้ยืนยันตัวตนของ VTuber ในแต่ละช่วงก่อนปรับ `Adjustment Clip`; ถ้าภาพเป็นตัวละครอื่น ให้คืนค่า focus ของช่วงนั้นเป็นกลางและบันทึกเหตุผล อย่าใช้การซูมกับตัวละครผิดคน
 - คงภาพเต็มเฟรมโดยไม่เพิ่มขอบดำหรือ blur และไม่สร้างการเคลื่อน/สั่นจากค่า transform ที่เปลี่ยนตามเวลา ตรวจค่า keyframe ของ `Center` และ `Size` รวมถึง `MotionBlur` แล้วดูภาพจริงหลายจุดเมื่อจำเป็น ภาพนิ่งเพียงภาพเดียวไม่พิสูจน์ว่าไม่มีอาการสั่นตลอดช่วง
 - จัด Armigon ให้เด่นและอยู่ใกล้กลางเฟรม เห็นตั้งแต่ศีรษะถึงอก/มือ เว้น headroom ราว 5–8% โดยไม่ตัดศีรษะ ใบหน้า เขา หู เครื่องประดับ หรือมือที่จำเป็นต่อปฏิกิริยา ถ้าจัดไม่ได้ให้ลด zoom หรือค้างช่วงนั้นไว้เพื่อตรวจเพิ่ม

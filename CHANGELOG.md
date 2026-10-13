@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.11.0
+
+### เพิ่ม
+- เพิ่มกฎใน `house-style` ให้ยึด subject ที่ผู้ใช้ระบุหรือชี้ในภาพอ้างอิงเป็น focus target แทนการสมมติว่าเป็น VTuber เสมอ
+- เพิ่มชุด helper สำหรับ pilot/ปรับ layout 9:16 ของ Armigon, retarget/reframe focus, ตรวจ source range/audio/publish แบบอ่านอย่างเดียว และเตรียมแผนแก้ caption แบบ offline พร้อม geometry test
+- ปรับ bundle validator ให้ normalize line ending ของไฟล์ Graphviz `.dot` เพื่อให้ checksum ผ่านเหมือนกันข้ามระบบปฏิบัติการ
+
+### ขอบเขต
+- สคริปต์ชุดนี้ผูกกับ project/timeline IDs เฉพาะและยังไม่ได้รันหรือ QC ใน Resolve ในการเตรียมรีลีสนี้; ไม่ได้เชื่อมต่อหรือแก้ project, render หรือฐานข้อมูล Resolve
+
 ## v0.10.0
 
 ### เพิ่ม
