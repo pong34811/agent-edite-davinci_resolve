@@ -1,7 +1,7 @@
 ---
 name: resolve-video-enrichment
 description: Use when editing Thai VTuber clips for YouTube.
-version: 0.1.0
+version: 0.2.0
 author: Hermes
 license: MIT
 platforms: [windows]
@@ -25,6 +25,7 @@ Turn source moments or existing DaVinci Resolve edits into clear, personality-le
 - A YouTube clip needs accurate packaging or a testable retention-improvement plan.
 - "ใช้ Hermes subagent delegation แบ่งงานดูคลิปแนวตั้งและแนวนอนทั้งหมดของ katy404 / KT404" — review disjoint evidence batches and select timestamped exemplars; if the user says all clips already exist as Resolve timelines, prioritize that corpus over public uploads.
 - "ตอนนี้เป็น DaVinci Resolve ทุก Timeline ไว้แล้ว" — inventory existing timelines for an authorized review; do not recreate, convert, enrich or render them implicitly.
+- "update project อื่นต่อทั้งหมด / ทำทุก project เหมือนเดิม" — run the authorized per-project pipeline (ASR subtitles, subtitle preset, SFX/BGM/GIF, GIF preset, 9:16 copies with the vertical presets) over several projects; load `references/batch-project-pipeline.md`.
 - Do not treat research, a cutlist, an assembly, enrichment, caption migration, and publication as the same authorization.
 
 ## Prerequisites
@@ -60,6 +61,7 @@ Turn source moments or existing DaVinci Resolve edits into clear, personality-le
 - `skill_view(name="resolve-video-enrichment", file_path="references/horizontal-gif-placement.md")` — load for 16:9 GIF placement on V2, the Pan/Tilt-to-pixel model, applying the user's "vdo" Inspector preset by script (`scripts/apply_vdo_preset.py` in the project repo), GIF import timing, and per-timeline audio levels.
 - `skill_view(name="resolve-video-enrichment", file_path="references/adjustment-focus.md")` — load for subtitle-led VTuber focus using Adjustment Clips only, a selected-clip template, safe new-track insertion, the per-cue framing checklist, and per-timeline verification.
 - `skill_view(name="resolve-video-enrichment", file_path="references/vertical-9x16-conversion.md")` — load only for an explicitly authorized 16:9 → 9:16 split-screen conversion: calibration of Crop/Zoom/Pan/Tilt, layout, pilot gate, per-timeline batch.
+- `skill_view(name="resolve-video-enrichment", file_path="references/batch-project-pipeline.md")` — load for a multi-project batch: per-project order (backup, ASR, SRT checks incl. hallucination loops and U+FFFD, subtitle import and preset, planned SFX/BGM/GIF, `vdo` preset, 9:16 copies, `short` and `Mitr-short-001` presets), project-level pitfalls (offline VP9 sources, raster-dependent Pan/Tilt, Resolve restarts), and the scripts in `scripts/pipeline/`.
 - `skill_view(name="resolve-video-enrichment", file_path="references/offline-media-repair.md")` — load for explicitly approved repair of items missing Media Pool entries.
 - `skill_view(name="resolve-video-enrichment", file_path="references/render-qc.md")` — load for Windows bridge/render examples and per-output QC; replace illustrative settings with the approved target.
 - `skill_view(name="resolve-video-enrichment", file_path="templates/vtuber-edit-brief.md")` — load the editable brief, cutlist, experiment, and acceptance-record template.
@@ -94,6 +96,8 @@ Turn source moments or existing DaVinci Resolve edits into clear, personality-le
 - Example rasters, frame rates, Windows paths, library sizes, gains, and cue densities are not live state or universal defaults.
 - When the user asks to enrich copies first and then update the originals, that sequence is the promotion approval: still export a fresh `.drp` first, finish and verify every copy, then apply the same idempotent plan to the originals and compare against both the pre-edit dump and the copy. Pixel-measure overlay position on a real frame; Inspector numbers alone were wrong for non-full-width sources.
 - When the user pastes an Inspector screenshot showing a Video Preset (e.g. `vdo`), they are choosing that preset as the GIF placement: read the already-loaded clip's properties, apply them to every target GIF, and say plainly that the preset itself was not loaded because no scripting API exists. See `references/asset-library-and-cues.md` step 7.
+- Vertical conversion has two layouts: talk-only (face crop fills the canvas) and game + facecam (game panel on top, facecam panel below); pick by looking at a frame, not by project name. A VP9 mp4 source showed Media Offline in Resolve; report it instead of converting. See `references/vertical-9x16-conversion.md`.
+- Pan/Tilt reads and writes depend on the active timeline's raster; activate the target timeline first. Subtitles are only visible in a render with `ExportSubtitle` + `BurnIn`; restore that setting afterwards.
 - A source-less title/generator can legitimately have no Media Pool item; scope offline repair to the exact expected media-backed targets.
 - Repeated views, raw starts, engaged views, CTR, and watch depth answer different questions. A retention spike can reflect confusion rather than delight.
 - Public content, attribution, editing, and permission do not by themselves guarantee either copyright clearance or YouTube monetization.

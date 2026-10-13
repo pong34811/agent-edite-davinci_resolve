@@ -42,3 +42,10 @@ For a clip with Resolution rw x rh on a 1920x1080 canvas:
 - Exporting stills moves the playhead and active timeline; restore both after QC.
 - On Windows, an exported `PYTHONHOME` for the Resolve interpreter breaks other Python versions in the same shell (`SRE module mismatch`); set it per command.
 - Do not call a reported layout "problem" if the user chose it; ask whether the preset layout is intended before proposing moves.
+
+## Addendum (Oct 2026 batch)
+- Second captured preset `short` (vertical 9:16 GIF placement): Zoom 0.42 gang, Pan 0, Tilt 403.2, others default, read from `ตกใจ - shocked-cat.gif` on a `_9x16` timeline after the user loaded it. Inspector "Position Y" is the API `Tilt`. `--capture` reads the clip under the playhead: verify the stored values equal the preset clip's, because a capture taken on another GIF silently stores that GIF's own values.
+- `Pan`/`Tilt` reads and writes depend on the active timeline's raster (a 1080p item read while a 1080x1920 timeline is current reports 1.78x). `apply_vdo_preset.py` activates each timeline before writing; ad-hoc readers must too.
+- `apply_vdo_preset.py` without `--timeline` touches every timeline. When a project holds both horizontals and verticals, pass the ids of one orientation together with the matching `--preset`.
+- A pasted Inspector menu with "Load Preset" greyed out means no clip was selected: ask the user to select the GIF on the timeline first, then read the clip's properties yourself.
+- The 31-GIF-per-project batches applied with 0 failures and a repeat dry run of 0 changes; keep that as the acceptance check.

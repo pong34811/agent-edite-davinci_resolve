@@ -27,6 +27,11 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | Playhead readback | Activate each timeline before GetCurrentTimecode; capture fresh state on resume | Inactive timeline reads can return the active timeline's playhead. |
 | Page restoration | Serialize live calls; wait and read GetCurrentPage after OpenPage | A True return can precede completion of the page switch. |
 | Adjustment Clip | Scripted pilot; lock all original video/audio/subtitle tracks; full range audit and rendered frames | Generator insertion can ripple other track types even when V1 looks unchanged. |
+| Pan/Tilt readback | Activate the target timeline before reading or writing transforms | Values are scaled by the active timeline's raster (1.78x between 1080p and 1080x1920 contexts). |
+| Subtitle preset loader | Absolute `--backup-dir`; if `CloseProject failed` and Resolve restarts, reopen, verify cue counts, rerun | A relative path failed the `.drp` export; the first attempt wrote nothing. |
+| ASR output | Run `scripts/pipeline/check_srt.py`; drop hallucination loops, never leave U+FFFD on screen, report what was left out | Whisper loops on ambient/lobby noise and can split a Thai token inside a byte sequence. |
+| Burn-in preview | `ExportSubtitle` + `SubtitleFormat=BurnIn`, then restore the setting and delete your render jobs | Renders and stills omit native subtitles by default; render QC changes project render settings. |
+| Offline sources | `ffprobe` the codec; report Media Offline sources (VP9 mp4 on this build) instead of transcoding | Transcoding or relinking needs explicit authorization. |
 
 ## Transform and offline-media traps
 

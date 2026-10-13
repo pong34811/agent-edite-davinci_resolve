@@ -21,5 +21,28 @@
       "Opacity": 100.0,
       "CompositeMode": 0
     }
+  },
+  "short": {
+    "source": "Tygarina FreeTalk_3 T8_9x16 :: ตกใจ - shocked-cat.gif, preset 'short' loaded by user (vertical 9:16 GIF placement)",
+    "values": {
+      "ZoomX": 0.42,
+      "ZoomY": 0.42,
+      "Pan": 0.0,
+      "Tilt": 403.19997151692706,
+      "RotationAngle": 0.0,
+      "AnchorPointX": 0.0,
+      "AnchorPointY": 0.0,
+      "Pitch": 0.0,
+      "Yaw": 0.0,
+      "FlipX": false,
+      "FlipY": false,
+      "CropLeft": 0.0,
+      "CropRight": 0.0,
+      "CropTop": 0.0,
+      "CropBottom": 0.0,
+      "CropSoftness": 0.0,
+      "Opacity": 100.0,
+      "CompositeMode": 0
+    }
   }
 }

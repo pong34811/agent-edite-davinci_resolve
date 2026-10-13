@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Thai/CJK subtitles into Resolve timelines via Whisper ASR.
-version: 0.3.0
+version: 0.4.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -1165,6 +1165,16 @@ genuine improvements (`Jr . 2` -> `Jr. 2`). Verify the surprise, do not assume
 
 
 it is either fine or broken.
+
+## Batch notes (66 clips across 10 projects, Oct 2026)
+
+- Run `scripts/pipeline/check_srt.py <asr dir>` before import. Besides the caption contract it flags U+FFFD, `หาๆๆๆๆๆ`-style repeats and hallucination loops (>=40% of cues share the same first 3 characters).
+- Whisper loops on game-lobby or ambient noise (one phrase repeated for 20+ s). Import only the clean later part, shorten a repeated tail to the contract limit, and report what was left out; do not caption a loop as speech.
+- A cue containing U+FFFD (a Thai token split inside a multi-byte sequence) cannot be repaired by guessing: re-transcribe the window once, otherwise delete that cue after import (`Timeline.DeleteClips([item], False)`) and report it.
+- Collab clips caption the other players too; say so, since a single-speaker contract cannot be verified without listening.
+- Clips with no recoverable speech stay without a subtitle track (do not import an empty SRT); sparse clips (2-5 cues) are normal for game streams where the VTuber is quiet.
+- Presets: `scripts/load_subtitle_preset.py --preset "Mitr Font" --orientation horizontal` and `--preset "Mitr-short-001" --orientation vertical`, always with an absolute `--backup-dir`. If it reports `CloseProject failed; nothing written` and Resolve restarts, reopen the project, confirm the cue counts, and run it again.
+- Full order and Resolve pitfalls: `.agents/skills/resolve-video-enrichment/references/batch-project-pipeline.md`.
 
 
 

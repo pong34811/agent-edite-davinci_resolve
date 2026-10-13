@@ -20,3 +20,19 @@ Load only when the user explicitly authorizes reformatting existing finished 16:
 - Guessing Crop/Tilt values from the Inspector without calibration produced a large black void and a cropped head; measure first.
 - A scripted still export has no subtitles; subtitle-vs-avatar overlap needs a viewer capture of Resolve itself (an OS screenshot may capture another window), so report it as unverified until seen.
 - Keep docstrings, constants and verification thresholds in one module; a script whose docstring and code disagree sends the next agent down the wrong path.
+
+## Variants used in the Oct 2026 batch (scripts: `scripts/convert_talk_9x16.py`, `scripts/convert_game_9x16.py`, `scripts/delete_9x16.py`)
+Classify the source first (one frame per clip). Both converters duplicate the original, set 1080x1920, never touch subtitles/audio/V1-V2 ranges, snapshot-compare them, export QC stills with `ExportCurrentFrameAsStill` and save; run 3-4 timelines per call. Pipeline context: `references/batch-project-pipeline.md`.
+
+**A. Talk-only (VTuber + chat, no game).** V1 only: a full-height window of the source (607 px wide at Zoom 3.16) centred on the eyes fills the canvas; `--cx` per timeline. Eye x comes from teal-iris pixels on 1920x1080 frames (sample ~20 frames, take the median). Mascots/parrots with green parts fool the detector, so confirm with stills of the converted timeline and shift Pan by (mean eye x - 540) per timeline, with the timeline active. A further 1.075x zoom with Tilt -167 crops the stream's bottom status bar (below source y ~1015). Faces then sit ~45-65% down the frame; the top third is background (room for GIFs). No facecam track is needed.
+
+**B. Game + facecam.** V1 = game panel on top, V3 (new track, named VTuber Bottom) = the same clip cropped to the facecam: `convert_game_9x16.face_panel(scale, cx, top)` returns Zoom/Pan/Tilt/CropTop so the panel covers canvas y `top..1920`, eyes land near y 1456-1540. Measure the facecam first (eye x,y on 1920x1080 frames): `scale = (1920-1456)/(1080-eye_y)`, capped at ~2.2-3.0 for sources whose facecam is small (above that the upscale is visibly soft). Choices:
+- Default game panel = `layout9x16.game_params()` (source x 255..1380) with `--top 960` when the facecam lies outside that range (right edge: Fallout4, Climbing, LoL).
+- If friends' facecams or HUD sit in the lower strip, use `--game-scale 0.85-0.9 --top 700-780` (whole width centred at `--game-cx`, rows 0..~860) so the avatar panel covers the strip and the game panel stays clean; GarticPhone needed `--game-cx 1180` to keep the drawing area.
+- Facecam position can differ per clip even within one source file (LoL: bottom-left in one clip); measure each timeline and group identical ones.
+- A facecam against the frame edge (Overcooked, Ib) cannot be centred; accept right-biased and state it.
+- Reaction GIFs stay on V2 under V3; V3 is transparent above `CropTop`, so GIFs placed in the game panel remain visible.
+
+**Presets after conversion.** GIFs: `scripts/apply_vdo_preset.py --preset short --timeline <id> ...` with the ids of the 1920-high timelines only (the default run touches the horizontals too). Subtitles: `scripts/load_subtitle_preset.py --preset "Mitr-short-001" --orientation vertical --all-timelines`. The `short` values (Zoom 0.42, Position 0 / 403.2, rest default) were read from a GIF the user had loaded the preset onto; a screenshot of the Inspector menu is not enough, ask them to load it on one selected clip and read its properties.
+
+**Checks that caught real problems.** A contact sheet of 6 stills per vertical timeline with a centre guide; mean eye x within ~30 px of 540; a "Media Offline" still (VP9 source) means the clip cannot be viewed, not that the layout is wrong; render one sample with burn-in before reporting caption/GIF overlap (Mitr-short-001 puts captions mid-frame, over the lower face in talk layouts).

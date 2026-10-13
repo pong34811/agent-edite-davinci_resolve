@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.6.0
+
+### Added
+- `scripts/pipeline/`: the batch pipeline used on 10 projects (inventory + `.drp` backup, ASR with Whisper large-v3, SRT import and read-back, cue files, plan validation + loudness-based gains, enrichment placement with protected-range check) with a README; `check_srt.py` (caption contract, U+FFFD, repeats, hallucination loops) and `make_ids.py`. Paths are env-driven (`PW`, `TMPDIR`, `SFX_DIR`, `GIF_DIR`, `BGM_DIR`, `FFMPEG`, `FFMPEG_DIR`, `EXPORT_DIR`, `PROJECT_FOLDER`).
+- `scripts/convert_talk_9x16.py` (talk-only: face crop fills 1080x1920, bottom status bar cropped) and `scripts/convert_game_9x16.py` (game panel on top + facecam panel on a new V3; `--scale/--cx/--top/--game-scale/--game-cx`), `scripts/delete_9x16.py` (remove only exact `_9x16` copies).
+- `scripts/video_presets.json`: preset `short` (vertical GIF placement: Zoom 0.42, Position 0 / 403.2).
+- `tests/test_convert_9x16_layout.py`: offline tests for the face-crop and facecam-panel maths and the SRT checker.
+- `resolve-video-enrichment/references/batch-project-pipeline.md` (new); additions to `vertical-9x16-conversion.md` (variants A/B, presets, checks) and `horizontal-gif-placement.md` (`short`, raster-dependent Pan/Tilt); `resolve-video-enrichment` 0.2.0 and `thai-subtitles-resolve` 0.4.0 (batch ASR notes); new rows in `docs/OPERATING-NOTES.md`.
+
+### Run (live, Resolve Studio 21.1.0.17, folder of 2026-09-30 projects)
+- FreeTalk_3, FreeTalk_4, Fallout4, Overcooked, GarticPhone, Climbing, LoL, Ib, DnD, REPO: subtitles (`Mitr Font`) and enrichment on 66 horizontal timelines, then 66 `_9x16` copies with `Mitr-short-001` and GIF `short`; protected V1/A1/subtitle ranges compared on every timeline, repeat dry runs of both presets report 0 changes, `.drp` backups exported before each project.
+- Two 9:16 samples from FreeTalk_3 were rendered with burn-in and checked frame by frame.
+
+### Scope
+- ASR text is unproofed (no listening QC). Skipped for lack of usable speech: FreeTalk_3 T5, GarticPhone T1, LoL T2, Ib T3, REPO T8; REPO T1 imports only the clean part after ~30 s; FreeTalk_3 T6 and FreeTalk_4 T2 each lost one corrupted cue. LoL T3-T5 use a VP9 source that is Media Offline in Resolve, so those clips (and their verticals) were not viewed. Facecams at the frame edge (Overcooked, Ib) cannot be centred in 9:16. FreeTalk_3 T4/T5 speech is ~20 dB quieter than the other clips and was not normalized.
+- `tests/test_skill_bundle.py` still fails as before v0.6.0 (core skill count 17 on disk vs 16 expected, manifest not refreshed); not changed here.
+
 ## v0.5.0
 
 ### Added
