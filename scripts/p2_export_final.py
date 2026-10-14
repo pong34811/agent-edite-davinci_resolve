@@ -11,6 +11,11 @@ the original name). Starts ONLY the jobs it creates (the project queue holds old
 Run from repo root (dry-run by default):
   python -m scripts.p2_export_final [--project NAME] [--covers DIR] [--out DIR] [--preset NAME] [--require-cover]
                                     [--apply] [--only "out_name,out_name"] [--limit N] [--verify]
+                                    [--prepend-cover-frames N]
+
+With --prepend-cover-frames, export/import DRT on a disposable copy shifts every
+video/audio/subtitle item by N frames before placing the cover. Requires zstandard.
+The original one-frame overlay behavior remains the default for other jobs.
 """
 from __future__ import annotations
 
@@ -19,6 +24,7 @@ import re
 import subprocess
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -127,6 +133,46 @@ def _arg(argv, flag, default=None):
     return argv[argv.index(flag) + 1] if flag in argv else default
 
 
+def content_signature(tl, offset=0):
+    """Read back every item's record range, source range, properties and track state."""
+    result = {}
+    for kind in ("video", "audio", "subtitle"):
+        result[kind] = []
+        for n in range(1, tl.GetTrackCount(kind) + 1):
+            rows = []
+            for x in tl.GetItemListInTrack(kind, n) or []:
+                m = x.GetMediaPoolItem()
+                rows.append((x.GetName(), x.GetStart()-offset, x.GetEnd()-offset,
+                             (x.GetSourceStartFrame(), x.GetSourceEndFrame()) if m else None,
+                             x.GetProperty() if kind != "subtitle" else None))
+            result[kind].append((tl.GetTrackName(kind,n), tl.GetIsTrackEnabled(kind,n), rows))
+    return result
+
+
+def shifted_cover_timeline(r, p, mp, src, name, frames):
+    from scripts.drt_prepend_cover import shift_drt
+    before = content_signature(src)
+    drt_dir = OUT / "drt"
+    drt_dir.mkdir(parents=True, exist_ok=True)
+    raw, shifted = drt_dir / (safe(name)+"_source.drt"), drt_dir / (safe(name)+"_shifted.drt")
+    assert src.Export(str(raw), r.EXPORT_DRT, r.EXPORT_NONE), "DRT export failed"
+    shift_drt(raw, shifted, frames)
+    tl = mp.ImportTimelineFromFile(str(shifted))
+    assert tl, "DRT import failed"
+    time.sleep(GAP)
+    assert tl.SetName(name), "temporary timeline rename failed"
+    assert p.SetCurrentTimeline(tl)
+    time.sleep(GAP)
+    assert content_signature(tl,frames) == before, "shift changed content or properties"
+    assert tl.GetEndFrame() == src.GetEndFrame()+frames, "shifted extent wrong"
+    assert p.SetCurrentTimeline(src)
+    time.sleep(GAP)
+    assert content_signature(src) == before, "source timeline changed"
+    assert p.SetCurrentTimeline(tl)
+    time.sleep(GAP)
+    return tl
+
+
 def ensure_project(pm, name):
     cur = pm.GetCurrentProject()
     if cur is not None and cur.GetName() == name:
@@ -183,6 +229,9 @@ def verify_one(j, covers=VDO, scratch=None):
         errs.append(f"streams {kinds}")
     if dims != want:
         errs.append(f"dims {dims} != {want}")
+    from fractions import Fraction
+    if Fraction(v.get("r_frame_rate", "0/1")) != Fraction(str(j.get("fps",30))):
+        errs.append("frame rate mismatch")
     if abs(dur - j["dur_s"]) > 0.15:
         errs.append(f"dur {dur:.2f} != {j['dur_s']:.2f}")
     if j["vertical"] and not errs:
@@ -263,6 +312,7 @@ def _run(r, argv, covers):
     apply = "--apply" in argv
     limit = int(_arg(argv, "--limit")) if "--limit" in argv else None
     only = set(_arg(argv, "--only").split(",")) if "--only" in argv else None
+    prepend = int(_arg(argv, "--prepend-cover-frames", "0"))
     jobs_file = OUT / "jobs.json"
     pm = r.GetProjectManager()
     p = ensure_project(pm, PROJECT)
@@ -282,6 +332,11 @@ def _run(r, argv, covers):
         jobs = jobs[:limit]
     print(f"{len(jobs)} jobs ({sum(j['vertical'] for j in jobs)} vertical)", flush=True)
     prev = {x["out_name"]: x for x in json.loads(jobs_file.read_text(encoding="utf-8"))} if jobs_file.exists() else {}
+    for j in jobs:
+        src=tls[j["timeline"]]
+        j["fps"]=float(src.GetSetting("timelineFrameRate"))
+        j["prepend_frames"]=prepend if j["vertical"] else 0
+        j["dur_s"]=(src.GetEndFrame()-src.GetStartFrame()+j["prepend_frames"])/j["fps"]
     completed = verified_completed_names(OUT / "done.jsonl", jobs, covers)
     ambiguous = [j["out_name"] for j in jobs if len(_output_matches(j["out_name"])) > 1]
     if ambiguous:
@@ -310,7 +365,7 @@ def _run(r, argv, covers):
         return
     assert PRESET in (p.GetRenderPresetList() or []), f"preset {PRESET} missing"
     OUT.mkdir(parents=True, exist_ok=True)
-    bk = ROOT / "backups" / f"2026-10-10-before-final-export-{safe(PROJECT)}.drp"
+    bk = ROOT / "backups" / f"{datetime.now():%Y%m%d-%H%M%S}-before-final-export-{safe(PROJECT)}.drp"
     if not bk.exists():
         print("backup bytes:", export_verified(pm, p, bk), flush=True)
 
@@ -340,11 +395,13 @@ def _run(r, argv, covers):
         cur = j
         src = tls[j["timeline"]]
         tl = src
-        j["dur_s"] = (src.GetEndFrame() - src.GetStartFrame()) / float(src.GetSetting("timelineFrameRate"))
         p.SetCurrentTimeline(src)
         time.sleep(GAP)
         bad = _bad_gifs(src)
-        if j["vertical"] or bad:
+        if j["vertical"] and prepend:
+            tl=shifted_cover_timeline(r,p,mp,src,j["out_name"]+TMP,prepend)
+            j["tmp"]=tl.GetName()
+        elif j["vertical"] or bad:
             tl = src.DuplicateTimeline(j["out_name"] + TMP)
             assert tl, "DuplicateTimeline failed"
             time.sleep(GAP)
@@ -361,19 +418,25 @@ def _run(r, argv, covers):
             start = tl.GetStartFrame()
             # stills ignore startFrame/endFrame (land as 300 frames); pool mark in/out sets the real length
             cov = pool_covers[j["out_name"]]
-            assert cov.SetMarkInOut(0, COVER_FRAMES - 1, "video"), "SetMarkInOut failed"
-            assert mp.AppendToTimeline([{"mediaPoolItem": cov, "mediaType": 1, "trackIndex": top,
-                                         "recordFrame": start}]), "cover append failed"
-            cov.ClearMarkInOut("all")
+            cover_frames=prepend or COVER_FRAMES
+            assert cov.SetMarkInOut(0, cover_frames - 1, "video"), "SetMarkInOut failed"
+            try:
+                assert mp.AppendToTimeline([{"mediaPoolItem": cov, "mediaType": 1, "trackIndex": top,
+                                             "recordFrame": start}]), "cover append failed"
+            finally:
+                cov.ClearMarkInOut("all")
             time.sleep(GAP)
             it = tl.GetItemListInTrack("video", top) or []
-            assert len(it) == 1 and it[0].GetStart() == start and it[0].GetEnd() == start + COVER_FRAMES, \
+            assert len(it) == 1 and it[0].GetStart() == start and it[0].GetEnd() == start + cover_frames, \
                 f"cover placement wrong: {[(x.GetStart(), x.GetEnd()) for x in it]}"
             after = {n: len(tl.GetItemListInTrack("video", n) or []) for n in before}
             assert after == before, "existing video tracks changed"
         assert p.GetCurrentTimeline().GetUniqueId() == tl.GetUniqueId(), "activate failed"
         assert p.LoadRenderPreset(PRESET), "LoadRenderPreset failed"
         assert p.SetRenderSettings({"SelectAllFrames": True, "TargetDir": VDO, "CustomName": j["out_name"],
+                                    "FormatWidth":1080 if j["vertical"] else 1920,
+                                    "FormatHeight":1920 if j["vertical"] else 1080,
+                                    "FrameRate":j["fps"],
                                     **SUBTITLE_BURN_IN}), "SetRenderSettings failed"
         jid = p.AddRenderJob()
         assert jid, f"AddRenderJob failed {j['out_name']}"
@@ -406,16 +469,21 @@ def _run(r, argv, covers):
             if s in ("Complete", "Failed", "Cancelled"):
                 j = pending.pop(jid)
                 j["status"] = s
+                j["render_status"] = st
                 with done.open("a", encoding="utf-8") as fh:
                     fh.write(json.dumps(j, ensure_ascii=False) + "\n")
                 print("DONE", j["out_name"], s, flush=True)
     for j in queued:
-        if j.get("tmp") and j["status"] == "Complete":
+        errors=verify_one(j,covers) if j["status"] == "Complete" else [j.get("render_status")]
+        j["qc_errors"]=errors
+        if j.get("tmp") and j["status"] == "Complete" and not errors:
             t = _find_timeline(p, j["tmp"])
             if t:
                 mp.DeleteTimelines([t])
                 time.sleep(GAP)
     assert pm.SaveProject(), "SaveProject failed"
+    jobs_file.write_text(json.dumps(list({**prev, **{q["out_name"]: q for q in queued}}.values()),ensure_ascii=False,indent=1),encoding="utf-8")
+    assert all(j["status"]=="Complete" and not j["qc_errors"] for j in queued), "render or output QC failed; inspect jobs.json"
     print("ALL DONE", len(queued), flush=True)
 
 

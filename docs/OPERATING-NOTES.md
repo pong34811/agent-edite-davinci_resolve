@@ -40,6 +40,8 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 | GIF hold | Validate every GIF (Resolve 25 fps, >= 1.5 s) before mutating the timeline | A 1-second GIF aborted a run after BGM/SFX were already placed. |
 | Zoom framing | Corner avatar: no black band, slight off-centre; keep the hair tip inside | Centre-exact framing shows a band; the first pass clipped the ahoge. |
 | Archive deletion | Export one fresh verified `.drp`, report the exact files and bytes removed, and say there is no longer a rollback point | Deleting archives on request is fine; deleting them silently is not. |
+| Enrichment re-run | After an aborted `apply_enrichment_d22` reset the Media Pool folder and pre-validate GIFs with PIL (>= 1.5 s after conform) | The script imports into its bin and leaves the current folder there before it checks GIF length. |
+| Drive manifests | Enumerate `G:` asset roots with `os.scandir` into a manifest | `ls` on Drive stalled over 2 minutes. |
 
 ## Transform and offline-media traps
 

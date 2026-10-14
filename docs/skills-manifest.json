@@ -1002,7 +1002,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "a82798203a26064e4eed347155d962e2196d9b4e8a2a00ca76136ca914320c8f"
+      "sha256": "0e71878e0f3d5031f29bc1556fd249d81844138a70e6f9a69e00e6172938c45f"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -1158,7 +1158,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
       "source_sha256": "e817a4f7285c6edd7150429dd6cf322cadfdb2eeb57ce56993bdb78e354ead8b",
       "kind": "editing_skill",
-      "sha256": "2b66b801b58948d929c87cc022e7b39023c2600b257c16cb778494e8b846509f"
+      "sha256": "38d940331c095b408846eb4cf38aca52bacf6912fd3d9c0fba60d934c9553c1a"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
@@ -1172,7 +1172,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
       "source_sha256": "4b34d3e949dcff3f372c23ca97d47e658d102ee3b3f051683af4a09e99397232",
       "kind": "editing_skill",
-      "sha256": "2744dd0c54fb63cb54db4fd0c72042d11525d2ed465bab628fe08cc6cec419a8"
+      "sha256": "81f5529ec28ac1a30843e66cb73b3bddd1c4bdca153d4dd989722c2f262a7948"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/automation-safety.md",
@@ -1235,7 +1235,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "88dfb8c6f7fcb68738f2a7e9e05a4dbaee2efa34a67cd2674b8c9140a3f8e940"
+      "sha256": "e5a2a4789074401176b17676ac946430be5c1571f6115417aa83b24c41240687"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
@@ -1930,26 +1930,26 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "e841a2f4e328e2fa83bc38ff982356b0f7e6ce487fcd5573831e55f413086a67",
+      "sha256": "6a8d4d6bfe3a8052e99e06b029de8d5dfaf73f24cb02972222908e1b927d111b",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "0f5320ce4d3eb33b305406d4887172af420f4f9dac04e68f39c41b27179b3f40"
+      "sha256": "a9e2d388c97098f1d34b96ea440d6553a3fcbf4fe22443cf317f249f8fda3949"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "795d6bc79574d2aec03ad9cfec404bb95083c9dd210e6521e0d4199772d28d44",
+      "sha256": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
       "kind": "integration_or_validation"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b1df20b93429c2220dc4b9346ebb83408cbe25bf9cbf3bcd2cba30c6ec2cf86c"
+      "sha256": "5de06fb150e40d5eac16a453d70790f72f76bc1a3095e51dcfc061c5a032cfed"
     },
     {
       "path": "docs/README.md",
@@ -3916,7 +3916,7 @@
       "path": "scripts/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e52ff893ff2aedff338e5ec97002e9138aebc4cef6999a78729ca9e176b4951b"
+      "sha256": "14eeff1e435a763f385a11159a7e4b9dca324da62b989a4ca60d31964007d0db"
     },
     {
       "path": "scripts/analyze_review_previews.py",
@@ -3940,7 +3940,7 @@
       "path": "scripts/apply_group_fix.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "50120bd61e358f0ea32de9301c927a611403c8044fbb13bc898bfca574df027c"
+      "sha256": "ec54d0995c35c5c251d9902d9f8a139380799b658341b1e091e3f1b6885c6f5a"
     },
     {
       "path": "scripts/apply_offline_enrichment_pilot.py",
@@ -3976,49 +3976,49 @@
       "path": "scripts/armigon_9x16_batch_one.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7c4ceccd8cfa6f35cb8e12454d1945fd4016d5fe0020037d508647e62ef44fce"
+      "sha256": "02210b5d61b3fb12b1a54ea5c29f214539d6c79b71434e7f60daf2c94fd02084"
     },
     {
       "path": "scripts/armigon_9x16_focus_retarget.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "346bdbe11d746734b72bc106a7b4a4868ba8d462ea06ab1d1811f47f3914a287"
+      "sha256": "39457d62933595a4540e77a67829c7f95a7befefda7eff6203edd4b2683b1956"
     },
     {
       "path": "scripts/armigon_9x16_fractional_probe.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c9d72491fbedf103fdcd02b5dbcd07fb608ff3087ce7579b97d123e3d3474d6e"
+      "sha256": "16302c62107e8065803a585f4ac12c0c3e7db55b4b45a5298029efd062a13cea"
     },
     {
       "path": "scripts/armigon_9x16_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "67b61626541c7f1c87e02047b76e22c0f118d538710cabef9b68b9f6958bf1e5"
+      "sha256": "252172ef6541ee64cb89cc56882d7584bd948f39de51a95d8b689fb09e731ebd"
     },
     {
       "path": "scripts/armigon_9x16_reframe_target.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1adbcee34a0d8b378751465f3768bb7f8e6226c2a40b0a45d72520e1727e7b37"
+      "sha256": "338c479bf76d5c3b6ab7095145fb8b1b383291b29642ec1eec5d29457e1888fc"
     },
     {
       "path": "scripts/armigon_9x16_snapshot.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e0abebda9e8fe60a4a3af92ff34802d5a56433537e58d0b558c58703fc9c7496"
+      "sha256": "fb80ffb442710fcc784dbd73652fcd15f0282967b679002116fd8df4b6b7c094"
     },
     {
       "path": "scripts/armigon_audio_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "4407955d4bc2b6d0c6210e55af1ebda41d3acf229275976f74d23046b450d39e"
+      "sha256": "d3c5ddaba21ef30b35f35b0ee1eee91567bd5f987a7b8f612ca465de6a5697c5"
     },
     {
       "path": "scripts/armigon_fix_captions.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d58ae24b3f361ad17b2263f1283d8caa4c9898edbcb1e48b9f2cc2c897173a13"
+      "sha256": "16d2d77cf55f83078d5488b96579b3d4aa4ecb4a68b49b5458e69dd0373b6d7a"
     },
     {
       "path": "scripts/armigon_focus_pilot.py",
@@ -4030,13 +4030,13 @@
       "path": "scripts/armigon_publish_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6911e6c5cc71c4cbaefcb719e19a5ab5216278cdeff737621f4f90a654b99515"
+      "sha256": "2bc30e7c9e5936c838216aeb221a80c1c44a0d4341cca273a1f65e1ec12338e7"
     },
     {
       "path": "scripts/armigon_source_ranges.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "149d5da16d3d1b89f596ac77f3d1b0f826e1002abcb7fe49a52b90e075a9413b"
+      "sha256": "4b9616236b5c6fc8c043bc9f0b334a296462ce95cd91673023c0bf1ad84bc9f6"
     },
     {
       "path": "scripts/asr_words_th.py",
@@ -4055,6 +4055,18 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "9a24af9697976b3438d445250e7d9672a915c0d36b69318bf041ff27f9f030fd"
+    },
+    {
+      "path": "scripts/build_9x16_day22.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "69756d344c1d5d1ecac4ac6d81533192aee34906ea58acbbe0db8d46ae888e8f"
+    },
+    {
+      "path": "scripts/build_9x16_day24.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e4a5d02e123940cbd485668eb6ec32744a6bc1dcef0c5ea9f9115051e8ddefd6"
     },
     {
       "path": "scripts/build_dynamic_srt.py",
@@ -4104,7 +4116,7 @@
       "path": "scripts/create_and_fix.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "90c508fc6bacce8c33e73240c21e766d19a9205de98e39229b9a45b23b1b696f"
+      "sha256": "a84b360e4c5e5acda22e56086b418d1a6e2e6c103ff570d141b977cf29386a31"
     },
     {
       "path": "scripts/deploy_climbing_focus.py",
@@ -4123,6 +4135,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "6d7336a20b7855b08d7dea4e35d47ffb376c3963304994262da467fecb3775bc"
+    },
+    {
+      "path": "scripts/drt_prepend_cover.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "40cda003bf57d8bec1958eb5ba09ec3ffa344dc48a9f9f51a8f4e6c04e5de39a"
     },
     {
       "path": "scripts/drt_shift_subtitles.py",
@@ -4225,6 +4243,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "0da81c6045d5744398226b0a254b74fc067e260a9b59aa4d4324e6fd78ef2bd2"
+    },
+    {
+      "path": "scripts/load_subtitle_preset_auto.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6fce4febf0d93dc76b886ea5beb201e5833901477a23cd97372b563f52d8b75a"
     },
     {
       "path": "scripts/p2_9x16_build.py",
@@ -4338,7 +4362,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "19e95c4352a3dc3ff06304e372ebefb959fb7d0a39b14ad2b4e843770037db9f"
+      "sha256": "f3bac044bc7f07c924b2ee564f26a68eeec6310d8365ae432498f0f01dff1c12"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -4425,6 +4449,12 @@
       "sha256": "82be311ae260b2b18532fd31d85a3f00a2b7e60619d508c36c87560f51484e0b"
     },
     {
+      "path": "scripts/patch_subtitle_preset_offline.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7e385f907a24835d1fb1b99f72e5bbcb88d8aebedc2c4d5834a0e0c61c08d449"
+    },
+    {
       "path": "scripts/plan_p2_focus.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4509,6 +4539,36 @@
       "sha256": "a0abadb6d49278f42771a078b85694a8b3526d32f6273c0dbe9f75b6674c9ef2"
     },
     {
+      "path": "scripts/sakuyako_export_final_audit.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e32d7bb4a6d9a504b7c1de4e0db184e5c442a6f883c5b5e7af28272e6d998632"
+    },
+    {
+      "path": "scripts/sakuyako_export_preflight.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c40be09814c15cc7863b939d968f2017d2406ca036d29fb969376222f5874969"
+    },
+    {
+      "path": "scripts/sakuyako_export_qc.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "46e74206680d5af103e7dbb089ca3256add99bba37d0c69fc5e59d1dca0ba248"
+    },
+    {
+      "path": "scripts/sakuyako_export_resume.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "05423945595188feeccf7a95aaf16d148c3d07e3638473c664a135f4f6cd942f"
+    },
+    {
+      "path": "scripts/sakuyako_update_vertical_masters.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a451fc5fe61d326370f3a4027cb2884fe6c2fb8724ee479ad60eaf54b21e721f"
+    },
+    {
       "path": "scripts/scan_p2_vtuber_presence.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4524,7 +4584,7 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ce3a21ccd6a95d7ccb2c34db173cc7e7884917b2b4bed0d2e0cea42bd5797fd9"
+      "sha256": "0d7a7a0ab3e8980919aff5477c0f43c8648b4b150897cf3fb9ae15f357db81f7"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -4536,7 +4596,7 @@
       "path": "scripts/vertical_layout_repair_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c17b396aec4c5eb66539faadf2c556d4f5b49f579f9f623a4329721a1702610b"
+      "sha256": "dd79deeecc4e9cb1830df850821610ea9486722e68bf15c8b252ab4a41e45016"
     },
     {
       "path": "scripts/video_presets.json",
@@ -4603,6 +4663,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "eb7151786110b23ef94fb8f39a4b414d19dbc94b6ad69f4e21502ebeb3fa911e"
+    },
+    {
+      "path": "tests/test_drt_prepend_cover.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "9e4cce8d3958fc27240137f867321d822cade320de7f9ad1c9bceda3ea7d3cbb"
     },
     {
       "path": "tests/test_enrich_timelines_python.py",
@@ -4722,7 +4788,7 @@
       "path": "tests/test_vertical_layout_repair_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "1b3fea9b0d5b6706c1997c407435799851d5caca065a300af705a88e4f50f1ea"
+      "sha256": "f68bcde3d438c65ab3a23eaf271b1e5b557c0973735ae22b25b9348d025748c3"
     }
   ],
   "historical_variants": [
@@ -4938,17 +5004,37 @@
     {
       "path": ".agents/skills/house-style/SKILL.md",
       "reason": "ยึด subject ที่ผู้ใช้ระบุหรือชี้ในภาพอ้างอิงเป็น focus target แทนการสมมติว่าเป็น VTuber"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
+      "reason": "บันทึกผลรัน focus zoom วันที่ 24"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/asset-library-and-cues.md",
+      "reason": "บันทึกผลรัน enrichment และข้อควรระวัง GIF/Drive"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
+      "reason": "บันทึกการนำ builder day22 มาใช้กับวันที่ 24"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "เพิ่มกฎ re-run enrichment และ manifest ไดรฟ์"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "ปรับขอบเขตรีลีส v0.12.0"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 596,
+    "manifest_files": 607,
     "supporting_skills": 29,
     "active_skills": 46
   },
-  "bundle_version": "0.11.0",
+  "bundle_version": "0.12.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",
