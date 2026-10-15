@@ -3,6 +3,15 @@
 ## Unreleased
 
 ### เพิ่ม
+- `scripts/check_mcp_update.py` เทียบเวอร์ชัน MCP ชุมชนที่ติดตั้งกับ tag ล่าสุดของ samuelgursky/davinci-resolve-mcp และอัปเดตด้วย `--apply`; เป็นขั้นตอนที่ 0 ของ checklist เริ่มงานใน `AGENTS.md` (อัปเดตจริง v4.10.3 -> v4.13.1)
+- `docs/channels/` โปรไฟล์ช่อง 7 ช่อง (Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael) พร้อม test ตรวจหัวข้อ; ข้อมูลที่ไม่มีหลักฐานเขียนว่า 'ยังไม่ทราบ'
+- `patches/README.md` ระบุว่า patch เดิมใช้กับ v4.13.x ไม่ได้
+
+### เปลี่ยน
+- `.mcp.json` ชี้ MCP ที่ติดตั้งจริงบน Desktop
+- ย้ายหลักฐานภาพหนักของ Aomi-mama 881MB จาก `reference/` ไปที่เก็บถาวรนอกโปรเจค
+
+### เพิ่ม
 - `CLAUDE.md` ชี้ไป `AGENTS.md` เพื่อให้ Claude Code, Codex และ Hermes ใช้กฎชุดเดียวกัน
 - `scripts/INDEX.md` จัดรายการ script ทั้งหมดตามงานและขอบเขต (`ใช้ซ้ำ` / `p2` / `armigon` / `sakuyako` / `ครั้งเดียว`) และ `scripts/scratch/` สำหรับ script ชั่วคราวในโปรเจค
 - skill `project-learning` กำหนดขั้นตอนค้นเครื่องมือเดิมก่อนเขียนใหม่ และบันทึกกฎ/script/คำแก้ไขเมื่อจบงาน

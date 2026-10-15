@@ -1940,12 +1940,12 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "52e3706779425eb3ace6001347b20ad9b4ed0f028c2982fd1495ec7a587dab1f"
+      "sha256": "60bf4ad4fb0fa4a2926215429379b2ae75bc1147d246d0dfa39096fff8eb5f37"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "e2d4c3bd72eaa5370644f370f6fe30f65d7d8eb36977936055ed162a57aecaff",
+      "sha256": "cef751b78fda1f616501c9b2a15ebbd8bdc3c42d433355b71157e4ada5181908",
       "kind": "integration_or_validation"
     },
     {
@@ -2041,6 +2041,54 @@
       "source_sha256": "8acfe8f01e617e2314d5138bf3c7c6633ea92a536efc3d474ea607df60f2542f",
       "kind": "mcp_reference",
       "sha256": "8acfe8f01e617e2314d5138bf3c7c6633ea92a536efc3d474ea607df60f2542f"
+    },
+    {
+      "path": "docs/channels/README.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "da4f75abf00cb73c24091e621fab38c640c1384ea864eab1512abbe064ce733a"
+    },
+    {
+      "path": "docs/channels/aomimama.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c0caea10eb54ca3d0556819ec3b24c733e847508cdb84d89ad7eee705cb3e95f"
+    },
+    {
+      "path": "docs/channels/armigon.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "88777a6a974c32d170a7ddced6cba69151a7d196e13533a4cf0f429966b582fc"
+    },
+    {
+      "path": "docs/channels/kael.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "84c4416e2fd774463bd74bb06520b430fd707b7456289f57c91606b47ef33165"
+    },
+    {
+      "path": "docs/channels/katy404.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1e7e4b34aaf315f761e68f47440f29a193e8752be58a8ee22d3328b0e3462c48"
+    },
+    {
+      "path": "docs/channels/laffy.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2c642be7511a856dc62d37fcf0d8c5d8f4b103f832ab9d61955e6dd064950166"
+    },
+    {
+      "path": "docs/channels/sakuyako-cheris.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d9c4c5c9cd6de0e607b5c0b05ccbf2be8ffb77d5ac9d09375ed30f9fd23566bb"
+    },
+    {
+      "path": "docs/channels/tygarina.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0f87b5627ab4782a98719d24b8bc7221cd450ef452a1f38a57f3690f93c2b779"
     },
     {
       "path": "docs/contributing.md",
@@ -3931,7 +3979,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b26f0f52f47ed4b4af95f94507aa54c54ea585a081c9b5d968e38dbf77203ba8"
+      "sha256": "696528c24681dfac0df2e996bda528fde6d611e95297df2930e73a2af7a82d36"
     },
     {
       "path": "scripts/README.md",
@@ -4112,6 +4160,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "ed1996f5b7c67d4bc0ff51d5c83f5d2b86538d4266b2ed0029dc14048d802e46"
+    },
+    {
+      "path": "scripts/check_mcp_update.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8c4681b2454e29877041d0ec1e9500c38f0c391ceb4f43bdb288aea17422b650"
     },
     {
       "path": "scripts/cleanup_and_rename_timelines.py",
@@ -4680,6 +4734,18 @@
       "sha256": "c7c372353cf5ffb11a4a0d614e7ec415e4868dbb962bfd4d91cc1d33996d83a3"
     },
     {
+      "path": "tests/test_channel_profiles.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "bd3e7ea87ca890bf6775c17f2a2e47fcc4dacfed51ec4dfa70c7e19c97b4202c"
+    },
+    {
+      "path": "tests/test_check_mcp_update.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "447af9b96c4ba751423aaec80206016fc56b0173c34f1f629f8fd0956a0e8241"
+    },
+    {
       "path": "tests/test_contact_sheet.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -5065,13 +5131,25 @@
     {
       "path": "AGENTS.md",
       "reason": "Correct community MCP path and version"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "Step 0 MCP update check; channel profiles"
+    },
+    {
+      "path": "scripts/INDEX.md",
+      "reason": "check_mcp_update row"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "MCP update check, channel profiles"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 611,
+    "manifest_files": 622,
     "supporting_skills": 30,
     "active_skills": 47
   },

@@ -6,7 +6,8 @@ This repository packages the user's existing DaVinci Resolve editing skills. It 
 
 Entry points: Claude Code reads `CLAUDE.md` (a thin pointer to this file); Codex and Hermes read this file; skills live in `.agents/skills/`. Keep the rules here only.
 
-1. Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`; load the domain skill that matches the request (`resolve-mcp` is the index).
+0. Run `python scripts/check_mcp_update.py` (compares the installed community MCP with the newest tag of https://github.com/samuelgursky/davinci-resolve-mcp). If it says `UPDATE`, read the upstream `CHANGELOG.md` for the new versions, run it with `--apply`, tell the user to restart the agent session so the MCP reloads, and continue with the Studio MCP / scripts until then. `BLOCKED` (local changes in the install) or `UNKNOWN` (offline): report it, do not force.
+1. Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`; load the domain skill that matches the request (`resolve-mcp` is the index). If the user names a channel or project (Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael), read its profile in `docs/channels/` first.
 2. Check the attached MCP tool catalog and run a read-only probe (`resolve_control get_version`; Studio MCP `get_resolve_status`). If the `davinci-resolve` MCP is disabled or unreachable, say so before falling back.
 3. Search `scripts/INDEX.md` and `grep -r` in `scripts/` for an existing tool. **Never create a tool outside this repository** (no new folders on the Desktop, no temp scripts under `%TEMP%` or the home directory).
 4. Only if nothing exists, print the `MCP-GAP:` line and write the script in `scripts/scratch/` (gitignored, no approval needed). Promote it to `scripts/` only when it is reusable: use `resolve_common`, add a test, add a row to `scripts/INDEX.md`.
@@ -36,7 +37,7 @@ All DaVinci Resolve editing, cutting, conforming, grading, audio mixing, track m
 
 ### Tool Inventory & Capabilities
 
-**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp` v4.10.3, at `C:\Users\warit\Desktop\davinci-resolve-mcp`, configured in `.mcp.json`). Tools are grouped by domain; each takes an `action`:
+**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp`, at `C:\Users\warit\Desktop\davinci-resolve-mcp`, configured in `.mcp.json`; the installed version is whatever `scripts/check_mcp_update.py` prints). Tools are grouped by domain; each takes an `action`:
 
 | Domain | Tools & Primary Actions |
 |---|---|
@@ -121,6 +122,7 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 
 Follow `.agents/skills/project-learning/SKILL.md`. In short, before reporting done:
 
+- Channel facts (project names, presets the user confirmed, traps, open work) -> the channel's profile in `docs/channels/`.
 - New rule or trap learned from a failure → one row in `docs/OPERATING-NOTES.md` (rule, why).
 - New or promoted script → row in `scripts/INDEX.md`; delete or leave in `scripts/scratch/` anything that was a one-off.
 - A correction the user gave about taste (cut rhythm, subtitles, framing) → `.agents/skills/house-style/SKILL.md`.

@@ -12,6 +12,7 @@
 |---|---|---|
 | `resolve_common.py` | `connect_resolve`, `require_resolve`, `preserved_state`, `api_has_method` — import เท่านั้น | ใช้ซ้ำ |
 | `resolve_preflight.py` | ตัดสิน `USE_MCP` / `FALLBACK_SCRIPT` / `BLOCKED` (`--need`, `--list-tools`, `--probe-api`) | ใช้ซ้ำ |
+| `check_mcp_update.py` | เทียบเวอร์ชัน MCP ชุมชนที่ติดตั้งกับ tag ล่าสุดของ samuelgursky/davinci-resolve-mcp (`--apply` อัปเดตให้) — รันก่อนเริ่มทุกงาน | ใช้ซ้ำ |
 | `backup_drp.py` | export + verify `.drp` ก่อนแก้เป็นชุด | ใช้ซ้ำ |
 | `cleanup_backups.py` | export `.drp` ใหม่ที่ตรวจแล้ว แล้วลบ archive ที่ระบุ (ต้องได้รับอนุญาต) | ใช้ซ้ำ |
 | `review_enrichment_readonly.py` | inventory read-only ของทุก timeline/track/item | ใช้ซ้ำ |
