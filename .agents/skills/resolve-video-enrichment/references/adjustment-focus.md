@@ -82,3 +82,11 @@ For a subtitle-led focus batch, the final acceptance record must cover **every t
 
 Never infer success from a successful generator return, an Inspector screenshot, or a video-only comparison: all three can coexist with shifted captions/audio or a visually unusable frame.
 
+## Verified run: day 24 (Katy404, 2560x1440 source on a 1920x1080 @ 60 fps timeline, 21.1.0.17)
+
+One real timeline, no pre-selected Adjustment Clip (the Inspector showed the V1 video clip): per the template rule above, ask, then insert fresh generators. User chose in-place on the original after a verified `.drp`.
+
+- Plan: `{"window_top": 0.545, "window_bottom": 0.964, "window_cx": 0.785}` -> Size 2.387, Center (-0.180, 1.107). Source black bar starts at row ~0.9625 of frame height, ahoge tip ~0.569, head x ~0.77-0.91. Window centre 0.785 puts the face ~12% right of centre; centring it would show a black band on the right, so the off-centre frame is the accepted result (see house-style). Headroom measured ~4% to the ahoge tip, slightly under the 5-8% target.
+- Cue selection: 7 ranges (4-6 s each, ~38% of a 90 s clip) on number/goal/thanks/call-to-action/goodbye beats, not every cue. Ranges need `>= 90` frames and strict gaps (`e < next s`).
+- Run: `python -m scripts.apply_vtuber_zoom --plan <plan.json> --backup <pre.drp> --in-place --apply`, then `python -m scripts.zoom_variant_stills "<timeline>" <out_dir>`. Readback matched all 7 ranges; V1/A1/subtitle signatures unchanged.
+- Evidence limit: 8 of 21 exported stills were viewed; no A/B with the Adjustment Clip off and no rendered range, so motion stability is unproven (no keyframes were set).

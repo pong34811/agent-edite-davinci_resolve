@@ -2,7 +2,7 @@
 
 รวบรวม skills จากงานเดิมมาไว้ในโปรเจกต์นี้ โดยไม่ย้ายหรือลบต้นฉบับ ไม่แก้คลิป ไทม์ไลน์ หรือฐานข้อมูล Resolve และไม่เปลี่ยน config ของ Hermes
 
-รุ่นของชุด skills: **v0.11.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
+รุ่นของชุด skills: **v0.12.0** — ดู [CHANGELOG.md](CHANGELOG.md) และ [GitHub Releases](https://github.com/pong34811/agent-edite-davinci_resolve/releases) เลขรุ่นนี้ไม่ใช่เวอร์ชัน Resolve หรือ MCP server
 
 ## ชุดหลัก — 17 skills
 

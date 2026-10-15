@@ -20,6 +20,8 @@
 | `refresh_skill_manifest.py` | อัปเดต `docs/skills-manifest.json` และตรวจซ้ำหลังแก้ repo | ใช้ซ้ำ |
 
 ## 2. ซับไตเติลภาษาไทย
+| `load_subtitle_preset_auto.py` | คำสั่งเดียวโหลด Subtitle preset ลง timeline ตามชื่อ (Resolve 21.1 ไม่มี API) | ใช้ซ้ำ |
+| `patch_subtitle_preset_offline.py` | แพตช์ Project.db ตอน Resolve ปิด เพื่อโหลด preset 1 timeline (ต้องมี `.drp` สำรอง + ได้รับอนุญาต) | ใช้ซ้ำ |
 
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
@@ -57,6 +59,9 @@
 | `scan_p2_vtuber_presence.py` | ดึงเฟรมกลางของแต่ละ timeline ดูว่ามี VTuber ไหม | p2 |
 
 ## 4. แปลง 16:9 → 9:16
+| `build_9x16_day22.py` | สร้าง `<name>_9x16` โปรเจค Katy404 Minecraft day 22 (60 fps, อวาตาร์ขวาล่าง) | ครั้งเดียว |
+| `build_9x16_day24.py` | เหมือนกันสำหรับ day 24 | ครั้งเดียว |
+| `sakuyako_update_vertical_masters.py` | โปรโมตตัวแปรแนวตั้งที่ใส่ cover แล้วเป็น master | sakuyako |
 
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
@@ -134,6 +139,11 @@
 | `armigon_source_ranges.py` | dump source/range ของ V1 | armigon |
 
 ## 7. Render / Export
+| `drt_prepend_cover.py` | เลื่อนเนื้อหาใน DRT ชั่วคราว N เฟรมเพื่อเติม cover (ใช้กับ `p2_export_final.py --prepend-cover-frames`) | ใช้ซ้ำ |
+| `sakuyako_export_preflight.py` | จับ baseline ก่อน export (Resolve Python + JSON) | sakuyako |
+| `sakuyako_export_final_audit.py` | เทียบไฟล์ที่ export กับ baseline | sakuyako |
+| `sakuyako_export_qc.py` | QC ไฟล์ export ด้วย ffmpeg/ffprobe + contact sheet (read-only) | sakuyako |
+| `sakuyako_export_resume.py` | ทำต่อเฉพาะ job ที่ manifest เป็นเจ้าของและสถานะ Ready หลังถูกขัดจังหวะ | sakuyako |
 
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|

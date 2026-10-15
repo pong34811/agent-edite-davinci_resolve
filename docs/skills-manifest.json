@@ -1017,7 +1017,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "cce4cfe7dff0e1cdaff736bc1e3a096e14b6f82e8759df5762be5e55b7500d2b"
+      "sha256": "60ed0e1d8658f4ec3c1da2d60a15d5a4800de65baf889cd582b05738c047ec4a"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -1173,7 +1173,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
       "source_sha256": "e817a4f7285c6edd7150429dd6cf322cadfdb2eeb57ce56993bdb78e354ead8b",
       "kind": "editing_skill",
-      "sha256": "2b66b801b58948d929c87cc022e7b39023c2600b257c16cb778494e8b846509f"
+      "sha256": "38d940331c095b408846eb4cf38aca52bacf6912fd3d9c0fba60d934c9553c1a"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
@@ -1187,7 +1187,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
       "source_sha256": "4b34d3e949dcff3f372c23ca97d47e658d102ee3b3f051683af4a09e99397232",
       "kind": "editing_skill",
-      "sha256": "2744dd0c54fb63cb54db4fd0c72042d11525d2ed465bab628fe08cc6cec419a8"
+      "sha256": "81f5529ec28ac1a30843e66cb73b3bddd1c4bdca153d4dd989722c2f262a7948"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/automation-safety.md",
@@ -1250,7 +1250,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "88dfb8c6f7fcb68738f2a7e9e05a4dbaee2efa34a67cd2674b8c9140a3f8e940"
+      "sha256": "e5a2a4789074401176b17676ac946430be5c1571f6115417aa83b24c41240687"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
@@ -1934,7 +1934,7 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ecd4714e8fe180524e966827b8213483df85e4d7e37cba10163ae34ec889b9f5"
+      "sha256": "2156036888adbe235f496702c2da3e3517d7c42817037227604c12e52ecd5536"
     },
     {
       "path": "AGENTS.md",
@@ -1945,26 +1945,26 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "7715726ddd0bfe277360c86d36c1511b3dc48c0404dcd4f22f6e75f2d897da1a",
+      "sha256": "e2d4c3bd72eaa5370644f370f6fe30f65d7d8eb36977936055ed162a57aecaff",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "23ab415b24577657f7998fb36b91902c266b0cea59fb7b542d60f2fcfa8c6625"
+      "sha256": "b833d00bfff9d4cb7cc759745298d59e32f10baad287596bb4852a914ec7357e"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "6a9b524a9fd4f1f95f08a1db768ade6b9ef841e66ecf4893ff9393dafc33c13e",
+      "sha256": "2e96a20da8a104d70c9ec1698a354bc2be73d95090bee82c891219446f35acbd",
       "kind": "integration_or_validation"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f9a439afd715c40e6121cf664e0ce01334d2c56bf6c50a6cebe16d74eacc2bb6"
+      "sha256": "923fc37ec44376694e0cf4b5c5162a2c5b2da1be5a9cb378c7b15357d321d526"
     },
     {
       "path": "docs/README.md",
@@ -1977,7 +1977,7 @@
       "path": "docs/REVIEW.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "322753258fa3f8e8dbe5ec0c39f3a844ca06b31c50f3f21dcf72290dc972de94"
+      "sha256": "d3afa1d7a117a8072ebbc780ee3522b305e26107fac221dbd6509f3a786adc16"
     },
     {
       "path": "docs/SKILL.md",
@@ -3931,13 +3931,13 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5d919a0e765dc699de38cafdd0eef8f3a69f77d09283669e186d458ba04aeeff"
+      "sha256": "b26f0f52f47ed4b4af95f94507aa54c54ea585a081c9b5d968e38dbf77203ba8"
     },
     {
       "path": "scripts/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "29ff102674c205b65135083f906c8f31eda48998cc475c8508bd690fff966821"
+      "sha256": "ce9e6f53533f12ec8b747144d528c93ed3717d5272f129a9146fef610ad14550"
     },
     {
       "path": "scripts/analyze_review_previews.py",
@@ -4078,6 +4078,18 @@
       "sha256": "9a24af9697976b3438d445250e7d9672a915c0d36b69318bf041ff27f9f030fd"
     },
     {
+      "path": "scripts/build_9x16_day22.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "69756d344c1d5d1ecac4ac6d81533192aee34906ea58acbbe0db8d46ae888e8f"
+    },
+    {
+      "path": "scripts/build_9x16_day24.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0252fdffdfefa21c3bebe8e50cc0ecb47e9169485548d5259677b580c231577f"
+    },
+    {
       "path": "scripts/build_dynamic_srt.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4144,6 +4156,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "b0a7c5e70c6a4d605dd080eb7da57747b0a632dc04b640f00252446107f93161"
+    },
+    {
+      "path": "scripts/drt_prepend_cover.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "15a987145d3e3f359846721e98e4544441b0d14ddaf1b2785211ce95df3ce3df"
     },
     {
       "path": "scripts/drt_shift_subtitles.py",
@@ -4246,6 +4264,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "0da81c6045d5744398226b0a254b74fc067e260a9b59aa4d4324e6fd78ef2bd2"
+    },
+    {
+      "path": "scripts/load_subtitle_preset_auto.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6fce4febf0d93dc76b886ea5beb201e5833901477a23cd97372b563f52d8b75a"
     },
     {
       "path": "scripts/p2_9x16_build.py",
@@ -4359,7 +4383,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "19e95c4352a3dc3ff06304e372ebefb959fb7d0a39b14ad2b4e843770037db9f"
+      "sha256": "f3bac044bc7f07c924b2ee564f26a68eeec6310d8365ae432498f0f01dff1c12"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -4446,6 +4470,12 @@
       "sha256": "82be311ae260b2b18532fd31d85a3f00a2b7e60619d508c36c87560f51484e0b"
     },
     {
+      "path": "scripts/patch_subtitle_preset_offline.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ed877b09284f5f8d69dbfd301a70c04d578471aa691279656ef617df54a0d557"
+    },
+    {
       "path": "scripts/plan_p2_focus.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4530,6 +4560,36 @@
       "sha256": "70a0e558f9447379b40b1c0065d3d3a534263859ee6a25c5f3eac456081bb792"
     },
     {
+      "path": "scripts/sakuyako_export_final_audit.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "05625aa8b38077a604378885989db5895062da0f1437a88404548400f0797d07"
+    },
+    {
+      "path": "scripts/sakuyako_export_preflight.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ec32fd8df71266e1eb823d93383e44c40c90747a38cad5eeb3a547b2243edd53"
+    },
+    {
+      "path": "scripts/sakuyako_export_qc.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2754cb6e15dad778819e15233000fdc4993d8f5bf7ca7b1d492ec8746fa93c89"
+    },
+    {
+      "path": "scripts/sakuyako_export_resume.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5db35ed443f3bb4db0abf9ba9b08ad58544301b2a22d62f988e1a5a20841f1c7"
+    },
+    {
+      "path": "scripts/sakuyako_update_vertical_masters.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1d6470dab118259bd9065bcb465f86c4e5d4eea2cc47be58430022b1b5325dff"
+    },
+    {
       "path": "scripts/scan_p2_vtuber_presence.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4587,7 +4647,7 @@
       "path": "tests/test_agent_entrypoints.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "15c10b7c4cd21841c626b059aac19b33e0a0b366a72a7e497e2192bab06b8022"
+      "sha256": "198bc8591743233fccfe2a815345f8f637fbc039cc587d38e140e52dba697010"
     },
     {
       "path": "tests/test_apply_vdo_python.py",
@@ -4636,6 +4696,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "8d58fade39568b4c71791b2384513efdbfaa15ffa3289a7551eb5bd9f2e7bb28"
+    },
+    {
+      "path": "tests/test_drt_prepend_cover.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "a9bb9288c76edf6af2359cc940aaab7cbfd597bd31583f1ae87e63923047fcc2"
     },
     {
       "path": "tests/test_enrich_timelines_python.py",
@@ -4973,55 +5039,39 @@
       "reason": "ยึด subject ที่ผู้ใช้ระบุหรือชี้ในภาพอ้างอิงเป็น focus target แทนการสมมติว่าเป็น VTuber"
     },
     {
-      "path": "AGENTS.md",
-      "reason": "Add start/finish checklists, point to scripts/INDEX.md"
+      "path": ".agents/skills/resolve-video-enrichment/references/adjustment-focus.md",
+      "reason": "บันทึกผลรัน focus zoom วันที่ 24"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/asset-library-and-cues.md",
+      "reason": "บันทึกผลรัน enrichment และข้อควรระวัง GIF/Drive"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
+      "reason": "บันทึกการนำ builder day22 มาใช้กับวันที่ 24"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
-      "reason": "Pointer to project-learning and scripts/INDEX.md"
-    },
-    {
-      "path": "scripts/README.md",
-      "reason": "Pointer to INDEX.md and scratch/"
+      "reason": "เพิ่มกฎ re-run enrichment และ manifest ไดรฟ์"
     },
     {
       "path": "CHANGELOG.md",
-      "reason": "Unreleased entry for agent entrypoints"
+      "reason": "ปรับขอบเขตรีลีส v0.12.0"
     },
     {
-      "path": ".gitignore",
-      "reason": "Ignore backups/**/*.sqlite and scripts/scratch"
-    },
-    {
-      "path": "README.md",
-      "reason": "work/ links"
-    },
-    {
-      "path": "docs/REVIEW.md",
-      "reason": "work/ links"
-    },
-    {
-      "path": "docs/OPERATING-NOTES.md",
-      "reason": "work/ links"
-    },
-    {
-      "path": ".agents/skills/project-learning/SKILL.md",
-      "reason": "work/ link"
-    },
-    {
-      "path": "CHANGELOG.md",
-      "reason": "work/ move"
+      "path": "scripts/INDEX.md",
+      "reason": "index v0.12.0 scripts"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 600,
+    "manifest_files": 611,
     "supporting_skills": 30,
     "active_skills": 47
   },
-  "bundle_version": "0.11.0",
+  "bundle_version": "0.12.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",

@@ -87,3 +87,12 @@ Proven order for "add SFX + BGM + GIF to every timeline, copies first, then orig
    - A fixed centered zoom covers the face for tall (portrait) GIFs; flag that to the user instead of silently moving them.
 8. Pilot one timeline end to end (copy), fix calibration, run the remaining copies 2-4 per call (~30s each), then promote to originals with the same idempotent function and a full readback comparison against the pre-edit dump and against the copy.
 9. Finish by restoring the captured active timeline, playhead (re-set after any still export, which moves it), page and Media Pool folder.
+
+## Verified run: day 24 in-place enrichment (21.1.0.17)
+
+- Drive listings: `ls` on `G:\My Drive\Projects\*` stalled >2 min; `os.scandir` returned in seconds (SFX 1749, BGM 30 = 28 WAV + README + `bgm_catalog.json`, GIF 164). Build the manifest once and search it.
+- GIF choice: filter with PIL BEFORE running `apply_enrichment_d22`. Its Resolve check is `min(frames, round(2*fps))/fps >= 1.5`; `ดีใจ - mochi-cat-glomp` (26 frames @ 25 fps = 1.04 s) aborted the run. Single-frame GIFs (`งง - cat-huh`, `เท่ - omg-cute-cool`) and `ทักทาย - cat-kitty-hi` (0.6 s) are unusable; `cat-joy`, `happy-cat-day`, `mochi-cat-what`, `hi-there`, `peachcat-cool` hold 1.9-2.0 s after conform (47-50 frames).
+- Side effect of an aborted run: the script has already imported the chosen files into its bin and left the Media Pool current folder on that bin. Reset it (`media_pool set_current_folder Master`) before re-running, or the re-run restores the wrong folder. Clips imported for the rejected GIFs stay in the bin; list them, do not delete silently.
+- Placement: keep GIFs outside VTuber Zoom ranges (the 5 chosen sat in the gaps); a second SFX on the same track starting inside a 3 s SFX is pushed to the earlier one's end (requested 3079, landed 3121), so space SFX >= 3 s apart or accept the shift and report it.
+- Levels measured from the source: speech -33.8 LUFS integrated -> BGM gain -40.1 dB for Blossom Day (-13.7 LUFS), SFX -16 to -30 dB each. `apply_vdo_preset --timeline <name> --apply` then moved the 5 GIFs to Zoom 0.42 / Tilt 32.3, clear of the corner avatar in the 16:9 frame.
+- Verified: readback of 8 SFX / 1 BGM / 5 GIF items and 4 rendered stills; not verified: listening QC or a rendered range. Licences stay unverified.

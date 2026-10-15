@@ -17,3 +17,13 @@ Fallback tools for work the `davinci-resolve` MCP does not cover. Order of use (
 | Bundle upkeep | `verify_skill_bundle.py`, `refresh_skill_manifest.py` |
 
 New scripts connect through `resolve_common` (never a private `get_resolve()`), wrap session changes in `preserved_state(resolve)`, and read back every write. Retired one-off scripts from 2026-10-09 were archived outside the repo in `Desktop/_archive-davinci-cleanup-2026-10-09/`; new throwaway scripts stay in `scratch/`, never outside the repository. Tests that need a running Resolve (`tests/test_m1_*`) are skipped unless `pytest --live` is passed.
+
+`p2_export_final.py --prepend-cover-frames 30` adds a silent one-second cover to
+30-fps vertical exports. `drt_prepend_cover.py` shifts record starts in exported
+DRT files, including native subtitle and Adjustment Clip metadata; live readback
+checks all source ranges, clip properties and cue text after import. Install
+`zstandard` for DRT compression. The option is explicit; without it, prior batches
+retain the one-frame cover overlay. `sakuyako_export_preflight.py` and
+`sakuyako_export_final_audit.py` capture/compare the Sakuyako source timelines;
+`sakuyako_export_qc.py` uses read-only ffmpeg analysis plus Pillow/NumPy to check
+cover boundaries, silence, paired audio and produce visual review contact sheets.

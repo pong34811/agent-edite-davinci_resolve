@@ -12,6 +12,18 @@
 - ย้าย `PLAN.md`, `PLAN-9x16.md`, `PROJECT.md`, `WORKLOG.md` ไป `work/` และอัปเดตลิงก์; เลิกติดตาม `backups/**/*.sqlite` (ไฟล์ยังอยู่บนดิสก์)
 - `AGENTS.md` เพิ่ม checklist เริ่มและจบงาน แทนรายการ script ยาวด้วยตัวชี้ไป INDEX
 
+## v0.12.0
+
+### เพิ่ม
+- เพิ่ม `scripts/build_9x16_day22.py` และ `scripts/build_9x16_day24.py` สำหรับสร้าง `<ชื่อเดิม>_9x16` (1080x1920) จาก timeline 16:9 ที่มี V1 / V2 Adjustment Clip / V3 GIF: เกมครึ่งบน, VTuber ขยายครึ่งล่าง, ช่วง focus เดิมเป็นหน้า VTuber เต็มจอ, GIF คงเวลาเดิม; dry run เป็นค่าเริ่มต้น และเทียบ subtitle/เสียง/ช่วง V1 กับต้นฉบับก่อนและหลังบันทึก
+- บันทึกผลรันจริงวันที่ 24 ลงสกิล `resolve-video-enrichment` (focus zoom, enrichment BGM/SFX/GIF, แปลง 9:16) และ `docs/OPERATING-NOTES.md`: ค่า window ของ avatar มุมขวาล่าง, การคัด GIF ด้วย PIL ก่อนรัน, ผลข้างเคียงเมื่อรัน `apply_enrichment_d22` แล้วหยุดกลางคัน, การ list ไดรฟ์ Drive ด้วย `os.scandir`
+
+### ผลการตรวจ
+- ตรวจใน Resolve Studio 21.1.0.17 กับโปรเจกต์วันที่ 24 (1 timeline): แทรก Adjustment Clip 7 ช่วงและอ่านค่ากลับตรงแผน; เพิ่ม SFX 8, BGM 1, GIF 5 พร้อมอ่านค่ากลับ; สร้าง `_9x16` และเทียบ subtitle 105 cue, เสียง และ V1 กับต้นฉบับได้ตรงกัน; ต้นฉบับยังเป็น 1920x1080
+- ตรวจภาพ still ที่ Resolve render: 8 จาก 21 เฟรม (focus), 4 เฟรม (GIF), 5 เฟรม (9:16) ไม่พบแถบดำ ใบหน้าและผมส่วนโด่งอยู่ในเฟรม
+- ข้อจำกัด: ไม่ได้ฟังเสียงหรือ render ช่วงเต็ม, ภาพ still ไม่มี subtitle จึงยังไม่ยืนยันการทับของ subtitle บนจอแนวตั้ง, ไม่ได้เทียบเปิด/ปิด Adjustment Clip, ไม่ยืนยัน license ของไฟล์ SFX/BGM/GIF
+- รวมสคริปต์จากงานอื่นที่ค้างใน working tree ด้วย (`sakuyako_*`, `drt_prepend_cover`, helper subtitle preset, การแก้ `scripts/README.md` และ `p2_export_final.py`) เพื่อให้ manifest ตรงกับไฟล์จริง; มีเฉพาะ `tests/test_drt_prepend_cover.py` (3 เทสต์ผ่าน) ที่ได้รัน ส่วนสคริปต์เหล่านี้ยังไม่ได้ QC ใน Resolve ในรีลีสนี้
+
 ## v0.11.0
 
 ### เพิ่ม
