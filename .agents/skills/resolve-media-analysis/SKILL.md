@@ -100,6 +100,11 @@ Analysis informs Resolve actions. At no point do we create intermediate files th
 
 ## Setup
 
+For offline folder intake, the repository helper `scripts/prepare_edit.py`
+reuses probe results and can call the existing Thai caption lint/contact-sheet
+helpers. See [offline intake and edit contracts](../../../docs/EDIT-WORKFLOW.md).
+Its `prepared` status is an inventory result, not audiovisual QC.
+
 On first use, ask the user the three setup questions documented in the guide:
 
 1. Where to save analysis files (alongside / directory / project)

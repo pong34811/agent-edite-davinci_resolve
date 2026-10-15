@@ -221,6 +221,12 @@ Two things that bite when hand-writing specs, both handled by the projections:
 
 ## Source-media safety (AGENTS.md)
 
+The shared [acceptance workflow](../../../docs/EDIT-WORKFLOW.md) and
+`scripts/edit_workflow.py` reconcile reviewer claims, required lanes and evidence
+hashes. Missing checks remain unverified. A passed gate does not independently
+verify evidence content, live timeline freshness, render status or audiovisual
+quality; provide those actual checks from the tools above.
+
 Render probes may render derivatives of *synthetic* fixtures, never user source
 
 media. `media.rename_plan` refuses camera originals by design — do not override

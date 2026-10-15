@@ -15,6 +15,8 @@ When you learn a new rule, add a row here (see `.agents/skills/project-learning/
 | Topic | This project's rule | Why |
 |---|---|---|
 | Tool selection | MCP catalog first; scripting-API script only after a stated `MCP-GAP:` line; shared `scripts/resolve_common.py` | Agents skipped the MCP and wrote ad-hoc scripts, each with its own copy of the connect code. |
+| Offline intake and gates | Use `prepare_edit.py` and `edit_workflow.py`; see `docs/EDIT-WORKFLOW.md`. Prepared intake, valid plans and reconciled reviewer evidence are separate verdicts; never promote them to live audiovisual QC. | Reusing one manifest and explicit gate reduces repeated probes and prevents missing measurements being treated as passes. |
+| Intake cache and coverage | Reject malformed cache/probe/receipt JSON; `--refresh` bypasses probe cache; fingerprint actual selected frame paths; skip Windows symlinks/junctions while allowing cloud placeholders; reject unparsed SRT blocks. | Review reproduced stale sheets for external frame paths, skipped broken cues and junction traversal outside the source tree. |
 | Thai cue duration | At most 1.5s, three short words / about 14 Thai characters | Current house style is stricter than the imported subtitle skill's generic 2.2s example. |
 | Thai typography | No inter-word spaces; preserve only appropriate Latin boundaries | Token grouping is for timing, not displayed spacing. |
 | SRT placement | Empty subtitle track, bare mediaPoolItem payload | Extra placement fields can shift cues to timeline-end plus SRT offsets. |

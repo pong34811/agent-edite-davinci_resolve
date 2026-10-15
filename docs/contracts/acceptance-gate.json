@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "scope": "Evidence reconciliation for the named target; never an automatic audiovisual verdict",
+  "caption_rules": {
+    "track": "native_subtitle",
+    "max_thai_characters": 14,
+    "max_short_words": 3,
+    "max_duration_seconds": 1.5,
+    "spaces_between_thai_words": false,
+    "preset": "exact user-approved saved preset"
+  },
+  "checks": [
+    {"id": "scope", "lane": "direction", "requirement": "Approved target IDs, aspect ratio, resolution, timeline and playback FPS; original protected ranges preserved"},
+    {"id": "story", "lane": "craft", "requirement": "Review complete phrases, setup/payoff, cut boundaries and meaningful reactions against picture and sound"},
+    {"id": "picture", "lane": "visual", "requirement": "Review requested framing, safe areas and motion; samples alone do not establish continuous coverage"},
+    {"id": "audio", "lane": "audio", "requirement": "Measure against the approved mix spec and listen for intelligibility, masking and cut artifacts; missing loudness metrics are unverified"},
+    {"id": "captions", "lane": "visual", "requirement": "If requested, native Subtitle text/frame readback, Thai lint and burned-in review; otherwise document captions outside scope in evidence"},
+    {"id": "timeline", "lane": "handoff", "requirement": "Read back every modified target, source path/ID, ranges and actual track enabled states; save and restore entry state"},
+    {"id": "delivery", "lane": "handoff", "requirement": "For requested renders: owned job Complete, nonempty output, ffprobe video/audio and audiovisual QC; for edit-only work document no render requested"}
+  ]
+}

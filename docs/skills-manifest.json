@@ -1057,14 +1057,14 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "df671543dadc08c86c8d87856f683153b2337a14c1351a6557fd8aa8901407c5"
+      "sha256": "fb936108c62c9251207a4e951239ef9bc1c80c67f0e474e14faf371e71130eda"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "e7b4352b0b6f4ec8bafb753c78f2c69a9f3670bc30f9612362e66aeb29c0d10b"
+      "sha256": "494ea630d0a2893ebab6fb4bbcea06d54e1da5338b136c4f53eb57d128828934"
     },
     {
       "path": ".agents/skills/resolve-folder-cover-batch/SKILL.md",
@@ -1092,7 +1092,7 @@
       "source_sha256": "98359bc82e20de38dcabb0d6ce330ed9209ff735d097fde5599d001ebf63e743",
       "kind": "editing_skill",
       "local_amendment": "Agent-neutral wording; mechanics unchanged.",
-      "sha256": "4170c1255551967304b0a21a1c16e9c5e76c1c31f69460f0dab6c399c8885694"
+      "sha256": "2246bf65dac41dd4acef4ecc48a497c7b7d7ef81309f3eb995b35932e390b70e"
     },
     {
       "path": ".agents/skills/resolve-media-pool/SKILL.md",
@@ -1111,7 +1111,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9c19fcf9e9d890c338c04320c758c55a05cc19307e9818c95dea5509c5672b36"
+      "sha256": "661c1aa6951ae30392ca01f712054c7896b0f7ca5c18321411abf719a805f13d"
     },
     {
       "path": ".agents/skills/resolve-offline-media-repair/SKILL.md",
@@ -1760,7 +1760,7 @@
       "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
       "kind": "editing_skill",
       "local_amendment": "Hermes search_files inventory instead of ls; supplied missing Whisper reference.",
-      "sha256": "724061ac2c5f02308267621eb7c6c5af8c3a2ad236a4e9a4b34160cae6baa46a"
+      "sha256": "b7a15f0ce116404737ace8643466ea0d2ec46df5dc9b376b5940678bd5fe223b"
     },
     {
       "path": ".agents/skills/video-footage-review/references/whisper-transcription.md",
@@ -1945,26 +1945,32 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "bfe06352f495e801c76207a87c36a971749963e9bb96273db1fc6a1b9f9525fd",
+      "sha256": "54da87fbda50a1090e05484bb895726c0d9c57d6489d1d93c09035858a279f48",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b617cc89947667813889ac34c41aa25536ea08feb7afc04a5992431a5875540e"
+      "sha256": "50dfb0c57b33874c782b2acd0734af0a22d0a2d3686a4aaae0d22b4061e80bdb"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "4337d69e5c4ad7696e749ffb28b5b798e3143ee5001da9b5c85ab52b7e30de2d",
+      "sha256": "f8405a7330c287028d470c3ee3506f878f1ad85ed79c1d1adc19df2ff7398915",
       "kind": "integration_or_validation"
+    },
+    {
+      "path": "docs/EDIT-WORKFLOW.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "18fd5515382b3bed006e39c55b95a781cf8aef88d3168ba38c3584a91c1d6d4d"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "34de1ce84bfffb31145792c3b420d2985f9046d386b0db334a13467d29592c70"
+      "sha256": "6f05139d5f57791f03ad50cf702da74908a903172d443e507de4665a059a6111"
     },
     {
       "path": "docs/README.md",
@@ -2091,6 +2097,24 @@
       "sha256": "0f87b5627ab4782a98719d24b8bc7221cd450ef452a1f38a57f3690f93c2b779"
     },
     {
+      "path": "docs/contracts/acceptance-gate.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "671147bdb9a3d6d25e8bf36bd6e5eb68354a2144d41c6f813da6f0dd831f6e91"
+    },
+    {
+      "path": "docs/contracts/edit-decisions.example.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8f11928857e1919f56aee0175a180e543bafbb1929e9a7af2b6df3223a2834e7"
+    },
+    {
+      "path": "docs/contracts/edit-decisions.schema.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a7f07f15a5c62b90cd480cb98510cd890a6bdf05e7e557df5fe4f89b6fc01e8e"
+    },
+    {
       "path": "docs/contributing.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\contributing.md",
       "source_sha256": "8774dd2dee4a9215e9285cb326021c385652ae69f34b6edb7cdf8ebd9569aefa",
@@ -2157,7 +2181,7 @@
       "path": "docs/guides/resolve211-agent-guide.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "775c26a50985733ebeead70ba528a312b21186fb6296da823be5e8a36ecc20d1"
+      "sha256": "7fcabea5ac7298334f8444bb6fe09455e520a43199987a93a6395fa6e955af4e"
     },
     {
       "path": "docs/guides/video-style-script.md",
@@ -2929,7 +2953,7 @@
       "path": "docs/superpowers/plans/2026-10-12-armigon-focus-qc-release.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1562752924d95f1b97a5d88d85f11fbadcaee1ed91ae1f79a727d9c694019b02"
+      "sha256": "5ce9e57185d2f28e1ef3595ba31a10aba2552fa8328cbbdabd3af2f03f6c1f14"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-T06-native-focus-independent-qc.json",
@@ -2947,7 +2971,7 @@
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "caedac0453e2373c2a119f9aaf3e9d16f80fa3abc682d62a57235c869b773726"
+      "sha256": "62b8e62cd562f100f1c5f2fca3075c3a4ac690ccc87f44196664bcd1c7a93104"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-plan-audit-candidates.json",
@@ -3985,7 +4009,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5d6ba972ec33259fdf1b7e99c167df57a5a4d9d306d9f452ec7c14efe5b36a4f"
+      "sha256": "d495d27db502d9493d78df815ac8aa4688a37e356732b5b760960cbd910b7dd2"
     },
     {
       "path": "scripts/README.md",
@@ -4228,6 +4252,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "cee2cbcfa4ebdf74eb89dfe158ce05a69dd595695132a929bc3b934748e4ecb8"
+    },
+    {
+      "path": "scripts/edit_workflow.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d69e10b6423238b3274c9bd0aa6f7cf2049a6cc3bffdd4e96916d0c2a13774d7"
     },
     {
       "path": "scripts/enrich_timelines_python.py",
@@ -4542,6 +4572,12 @@
       "sha256": "1438b245030ad22769190f4387316c01184ca2d03669eba53a9c5ad885832a2a"
     },
     {
+      "path": "scripts/prepare_edit.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2054f7281cc6529570f5cf9a575d32d1d5035d906c991a9204fa8f12536dfc83"
+    },
+    {
       "path": "scripts/promote_drafts_to_originals.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -4774,6 +4810,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "a9bb9288c76edf6af2359cc940aaab7cbfd597bd31583f1ae87e63923047fcc2"
+    },
+    {
+      "path": "tests/test_edit_workflow.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "8add5385e1025088eb85612cf15218450b28163505f52c547dc20664139509bb"
     },
     {
       "path": "tests/test_enrich_timelines_python.py",
@@ -5183,12 +5225,28 @@
       "reason": "Fix misplaced rows above table headers"
     },
     {
+      "path": "scripts/prepare_edit.py",
+      "reason": "Add offline cached intake and reuse caption lint/contact sheets; preserve user plans"
+    },
+    {
+      "path": "scripts/edit_workflow.py",
+      "reason": "Validate rational frame plans and reconcile acceptance evidence without Resolve control"
+    },
+    {
+      "path": "docs/EDIT-WORKFLOW.md",
+      "reason": "Document shared offline intake, edit contract and evidence gates"
+    },
+    {
+      "path": "scripts/prepare_edit.py",
+      "reason": "Guard nested probe/receipt data, partial SRT, external frame cache and Windows junctions without excluding cloud placeholders"
+    },
+    {
       "path": ".agents/skills/resolve-edit/SKILL.md",
       "reason": "Scope speed API limitations to builds and route Resolve 21.1 native setters"
     },
     {
       "path": ".agents/skills/resolve-mcp/SKILL.md",
-      "reason": "Link verified 21.1 agent guide and attached MCP 4.13.1 catalog"
+      "reason": "Link verified 21.1 agent reference and current attached catalog"
     },
     {
       "path": ".agents/skills/resolve-media-pool/SKILL.md",
@@ -5200,31 +5258,63 @@
     },
     {
       "path": "docs/reference/resolve-211-typed-api.md",
-      "reason": "Explain equivalent CRLF and LF hashes with Build 17 read-only comparison"
+      "reason": "Explain CRLF and LF hashes with Build 17 read-only comparison"
     },
     {
-      "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
-      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
+      "path": "VERSION",
+      "reason": "Bump to v0.15.0"
     },
     {
-      "path": "docs/superpowers/plans/2026-10-12-armigon-focus-qc-release.md",
-      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
+      "path": "CHANGELOG.md",
+      "reason": "Add v0.15.0 offline edit intake and acceptance workflow notes"
     },
     {
-      "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
-      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
+      "path": "README.md",
+      "reason": "Document offline intake and acceptance workflow entry point"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Record offline intake cache validation and gate rules"
+    },
+    {
+      "path": "scripts/INDEX.md",
+      "reason": "Register prepare_edit.py and edit_workflow.py"
+    },
+    {
+      "path": ".agents/skills/resolve-delivery/SKILL.md",
+      "reason": "Link shared acceptance workflow and evidence hashes"
+    },
+    {
+      "path": ".agents/skills/resolve-edit/SKILL.md",
+      "reason": "Link shared frame plan validation"
+    },
+    {
+      "path": ".agents/skills/resolve-media-analysis/SKILL.md",
+      "reason": "Link offline probe caching and intake"
+    },
+    {
+      "path": ".agents/skills/video-footage-review/SKILL.md",
+      "reason": "Link offline intake and edit decisions draft"
+    },
+    {
+      "path": "tests/test_edit_workflow.py",
+      "reason": "Add tests for offline intake, frame plans and acceptance gates"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 623,
+    "manifest_files": 630,
     "supporting_skills": 30,
     "active_skills": 47
   },
-  "bundle_version": "0.14.0",
+  "bundle_version": "0.15.0",
   "excluded_repository_paths": [
+    {
+      "path": "scripts/scratch/chaiwithjai-review/**",
+      "reason": "Ignored external repository checkout for source review only; never part of the installed skill bundle or its provenance."
+    },
     {
       "path": ".agents/teamwork/**",
       "reason": "Internal orchestration briefs, audit notes, and project-specific coordination records are not installable skills."

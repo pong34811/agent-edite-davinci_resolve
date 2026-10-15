@@ -201,6 +201,12 @@ Use this when the source is a long recording or the user asks for one Resolve ti
 
 ## Output format
 
+For reusable offline intake and a frame-based edit decision format, see
+[the shared edit workflow](../../../docs/EDIT-WORKFLOW.md). Use
+`scripts/prepare_edit.py` for intake and `scripts/edit_workflow.py` to validate
+the completed plan. Plan validation does not replace the picture/audio review
+or the live Media Pool/range checks above.
+
 Deliver the report in the language the user used for the request. Structure:
 
 1. **Footage inventory** — table of files, sizes, formats, durations

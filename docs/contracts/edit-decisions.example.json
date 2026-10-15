@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "timeline": {"name": "EXAMPLE_ONLY", "width": 1920, "height": 1080, "fps": "60", "start_frame": 216000},
+  "sources": [{"id": "source-example", "path": "example-source.mp4", "fps": "30", "frame_count": 900}],
+  "edits": [{
+    "id": "beat-1", "source_id": "source-example", "in_frame": 30, "out_frame": 90,
+    "record_frame": 216000, "track_kind": "video", "track_index": 1,
+    "story_beat": "setup", "reason": "Preserve the full question before the reaction",
+    "evidence": ["example-contact-sheet.jpg#frame-4"], "confidence": "high"
+  }]
+}

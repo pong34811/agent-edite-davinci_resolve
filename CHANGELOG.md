@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.15.0
+
+### Added
+- เพิ่ม `scripts/prepare_edit.py` เตรียม offline intake แคชผล ffprobe สร้าง draft edit decisions นำผล caption lint เดิมมาใช้ซ้ำ และสร้าง contact sheet โดยไม่ต่อ Resolve และไม่แก้ footage ต้นฉบับ
+- เพิ่ม `scripts/edit_workflow.py` ตรวจ rational frame rates (คำนวณแยกตาม source/record rate), ตรวจ gapless cut และ evaluate acceptance gate เทียบกับ SHA-256 evidence hashes แบบ deterministic
+- เพิ่ม schema และสัญญาตรวจรับงานใน `docs/contracts/`: `acceptance-gate.json`, `edit-decisions.schema.json` และ `edit-decisions.example.json`
+- เพิ่มเอกสารคู่มือ `docs/EDIT-WORKFLOW.md` อธิบายกระบวนการเตรียมงาน offline การร่างสัญญาตัดต่อ และเกณฑ์ตรวจรับงานตาม house style
+- เพิ่มชุดทดสอบ 37 รายการใน `tests/test_edit_workflow.py` ครอบคลุม frame rate parsing, duplicate IDs, cache invalidation, caption linting, SRT validation, contact sheet hashing และการป้องกัน Windows junction
+
+### Updated
+- เพิ่มหัวข้อ "เตรียมงานและเกณฑ์ตรวจรับกลาง" ใน `README.md` ชี้ไปที่ `docs/EDIT-WORKFLOW.md`
+- บันทึกกฎ offline intake, cache validation และ coverage ใน `docs/OPERATING-NOTES.md`
+- ลงทะเบียนเครื่องมือใหม่ทั้งสองรายการใน `scripts/INDEX.md`
+- เชื่อมโยงแนวทางการตรวจรับงานและสัญญาเฟรมใน `.agents/skills/resolve-delivery/`, `resolve-edit/`, `resolve-media-analysis/` และ `video-footage-review/`
+
+### Verified
+- ทดสอบ unit tests: `python -m pytest tests/test_edit_workflow.py` ผ่านครบ 37 รายการ
+- ทดสอบทั้ง repo: `python -m pytest -q` ผ่าน 212 passed, 22 skipped, 10 subtests
+- ตรวจสอบความถูกต้องของ skill bundle: `python scripts/verify_skill_bundle.py` ผ่าน 100%
+
+### Scope
+- ทุกเครื่องมือทำงานแบบ offline 100% โดยอ่านไฟล์และ JSON เท่านั้น ไม่ต่อ Resolve และไม่มีการดัดแปลง footage ต้นฉบับ
+
 ## v0.14.0
 
 ### Added

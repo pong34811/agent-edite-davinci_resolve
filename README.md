@@ -61,6 +61,12 @@
 
 อ่านกฎใช้งานที่ `AGENTS.md` และรายละเอียดข้อขัดแย้ง/ข้อจำกัดที่ `docs/OPERATING-NOTES.md`
 
+## เตรียมงานและเกณฑ์ตรวจรับกลาง
+
+ดู [docs/EDIT-WORKFLOW.md](docs/EDIT-WORKFLOW.md): ใช้ `python scripts/prepare_edit.py <source-folder> --out-dir scratch/edit-review`
+เพื่อสร้าง intake พร้อม probe cache และแบบร่างแผนตัดต่อ จากนั้นใช้ `scripts/edit_workflow.py`
+ตรวจ source/record frames และตรวจหลักฐานส่งงานตาม house style ทั้งหมดทำงาน offline โดยไม่แก้ Resolve
+
 ## ฐานความรู้คลิป VTuber ไทยและ YouTube
 
 `resolve-video-enrichment` มีแกนงานสั้น พร้อม references 15 ไฟล์และ template 1 ไฟล์ใน `.agents/skills/resolve-video-enrichment/` เรียกอ่านเฉพาะหัวข้อผ่าน `skill_view` ได้:

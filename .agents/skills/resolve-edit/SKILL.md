@@ -269,6 +269,11 @@ No MCP action trims a timeline item's source range or razors. `scripts/p2_trim_t
 
 ## Source-media safety (AGENTS.md)
 
+For an offline decision-list contract with source/record FPS, cut rationale,
+and frame-bound checks, use `scripts/edit_workflow.py` as described in
+[the shared edit workflow](../../../docs/EDIT-WORKFLOW.md). The v1 contract
+uses half-open source ranges at normal speed; it is not an apply tool.
+
 Edit operations reference existing Media Pool items — they never transcode,
 
 render, proxy, or create derivatives of source media. Keep it that way. Treat

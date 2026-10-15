@@ -17,6 +17,8 @@
 | `cleanup_backups.py` | export `.drp` ใหม่ที่ตรวจแล้ว แล้วลบ archive ที่ระบุ (ต้องได้รับอนุญาต) | ใช้ซ้ำ |
 | `review_enrichment_readonly.py` | inventory read-only ของทุก timeline/track/item | ใช้ซ้ำ |
 | `anomaly_sweep.py` | ตรวจโครงสร้างผิดปกติทุก timeline (รายงานอย่างเดียว) | ใช้ซ้ำ |
+| `prepare_edit.py` | เตรียม intake offline พร้อม probe cache, แบบร่าง edit decisions, lint ซับ/contact sheet เดิม; ไม่ต่อ Resolve | ใช้ซ้ำ |
+| `edit_workflow.py` | ตรวจแผนเฟรม/เหตุผลการตัด และ reconcile เกณฑ์ตรวจรับกับ evidence hash (`validate`, `accept`, `hash`) | ใช้ซ้ำ |
 | `verify_skill_bundle.py` | ตรวจชุด skills ไม่ต้องต่อ Resolve | ใช้ซ้ำ |
 | `refresh_skill_manifest.py` | อัปเดต `docs/skills-manifest.json` และตรวจซ้ำหลังแก้ repo | ใช้ซ้ำ |
 
