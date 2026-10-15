@@ -1,25 +1,53 @@
 # Changelog
 
-## Unreleased
+## v0.13.0
+
+เน้นให้ agent (Claude Code, Codex, Hermes) เริ่มงานเร็วขึ้นและไม่สร้างเครื่องมือซ้ำนอกโปรเจค
 
 ### เพิ่ม
-- `scripts/check_mcp_update.py` เทียบเวอร์ชัน MCP ชุมชนที่ติดตั้งกับ tag ล่าสุดของ samuelgursky/davinci-resolve-mcp และอัปเดตด้วย `--apply`; เป็นขั้นตอนที่ 0 ของ checklist เริ่มงานใน `AGENTS.md` (อัปเดตจริง v4.10.3 -> v4.13.1)
-- `docs/channels/` โปรไฟล์ช่อง 7 ช่อง (Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael) พร้อม test ตรวจหัวข้อ; ข้อมูลที่ไม่มีหลักฐานเขียนว่า 'ยังไม่ทราบ'
-- `patches/README.md` ระบุว่า patch เดิมใช้กับ v4.13.x ไม่ได้
+- `CLAUDE.md` เป็นไฟล์ตัวชี้สั้นๆ ไป `AGENTS.md` (`@AGENTS.md`) เพราะ Claude Code อ่าน `CLAUDE.md` ไม่ใช่ `AGENTS.md`; กฎอยู่ที่เดียว Codex และ Hermes อ่าน `AGENTS.md` เหมือนเดิม
+- `AGENTS.md` เพิ่มหัวข้อ "Start of task checklist" (ขั้น 0-4) และ "Finish of task: record what you learned" ใช้ได้กับทั้ง 3 agent
+  - ขั้น 0: รัน `scripts/check_mcp_update.py` ก่อนเริ่มงาน
+  - ขั้น 1: อ่านโปรไฟล์ช่องใน `docs/channels/` เมื่อผู้ใช้พูดถึงช่อง
+  - ขั้น 3-4: ค้น `scripts/INDEX.md` ก่อน ห้ามสร้างเครื่องมือนอก repo; ถ้าไม่มีจริงให้เขียนใน `scripts/scratch/` พร้อมบรรทัด `MCP-GAP:`
+- `scripts/INDEX.md` ตาราง "งาน -> script -> ขอบเขต" ครบ 115 script จัด 8 หมวด (พื้นฐาน, ซับไทย, VTuber Zoom/Focus, แปลง 9:16, Enrichment, QC/Review, Render/Export, จัดการโปรเจค) ติดป้ายขอบเขต `ใช้ซ้ำ` / `p2` / `armigon` / `sakuyako` / `ครั้งเดียว`
+- `scripts/scratch/` (ติดตามเฉพาะ `.gitkeep`) ที่ทิ้ง script ชั่วคราวภายในโปรเจค แก้ `.gitignore` ให้ไม่ถูกกฎ `scratch/` เดิมบัง
+- `scripts/check_mcp_update.py` ตรวจเวอร์ชัน MCP ชุมชน ([samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp)) เทียบ tag ล่าสุดผ่าน `git ls-remote`
+  - อ่านโฟลเดอร์ที่ติดตั้งจาก `.mcp.json` ไม่ฝัง path
+  - `--apply` ทำ `git fetch --tags`, `git checkout <tag>`, `pip install -r requirements.txt` และปฏิเสธเมื่อมีการแก้ค้างในโฟลเดอร์ MCP
+  - สถานะผลลัพธ์: `UP-TO-DATE`, `UPDATE`, `BLOCKED`, `UNKNOWN` (ออฟไลน์)
+- skill `project-learning` (`.agents/skills/project-learning/SKILL.md`) ขั้นตอนค้นเครื่องมือเดิมก่อนเขียนใหม่ และตารางว่าจบงานแล้วบันทึกอะไรลงไฟล์ไหน (OPERATING-NOTES, INDEX, house-style, โปรไฟล์ช่อง, AGENTS.md)
+- `docs/channels/` โปรไฟล์ช่อง 7 ช่อง + สารบัญ: Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael แต่ละไฟล์มี 8 หัวข้อ (ตัวตน, ที่เก็บไฟล์, โปรเจค/timeline, layout, ซับ/เสียง/enrichment, script/skill, กับดัก/งานค้าง, "ยังไม่ทราบ")
+  - Laffy และ Kael ยังมีข้อมูลน้อย (ยังไม่พบ timeline หรือ script) ส่วนที่ไม่มีหลักฐานเขียนว่า "ยังไม่ทราบ" ไม่เดา
+  - `aomimama.md` มีบทเรียนจากงานเดบิวต์ 30 ก.ย. 2026: เลย์เอาต์แนวตั้ง "Story", ค่า GIF แนวตั้งที่ผู้ใช้ยอมรับ, กฎซับ, ขั้นตอน sample gate
+- กฎใหม่ใน `docs/OPERATING-NOTES.md`: audit ฟอนต์ต้องสแกนแบบ UTF-16 และห้ามอ่านค่า Text+ (Fusion) สดผ่านสคริปต์ (เคยทำให้ Resolve ค้าง) ให้อ่านจาก `.drp` ที่ export
+- `patches/README.md` ระบุว่า patch เอกสาร MCP เดิมใช้กับ v4.13.x ไม่ได้
+- `work/README.md` อธิบายโฟลเดอร์งานจริง
+- test ใหม่ 3 ไฟล์: `tests/test_agent_entrypoints.py` (ทุก script ต้องอยู่ใน INDEX, ตรวจจุดเข้าของ agent), `tests/test_channel_profiles.py` (ครบ 7 ช่อง 8 หัวข้อ), `tests/test_check_mcp_update.py` (เรียงเวอร์ชันแบบตัวเลข, อ่านเวอร์ชันที่ติดตั้ง, ตัดสินใจ update/blocked, apply ใน repo ทดลอง)
 
 ### เปลี่ยน
-- `.mcp.json` ชี้ MCP ที่ติดตั้งจริงบน Desktop
-- ลบ `reference/` และหลักฐานภาพหนักของ Aomi-mama 881MB หลังสกัดบทเรียนลง `docs/channels/aomimama.md` และ `docs/OPERATING-NOTES.md` (กฎ UTF-16 font audit, ห้ามอ่าน Text+ สด)
+- `.mcp.json` ชี้ MCP ที่ติดตั้งจริงที่ `Desktop/davinci-resolve-mcp` (เดิมชี้ `D:\` ที่ไม่มีอยู่) และตัด `PYTHONHOME` ที่ชี้ Python 3.13 ซึ่งไม่ได้ติดตั้งออก
+- `AGENTS.md` ตัดรายการ script ยาวออก ชี้ไป `scripts/INDEX.md` และเลิกฝังเลขรุ่น MCP
+- ย้าย `PLAN.md`, `PLAN-9x16.md`, `PROJECT.md`, `WORKLOG.md` ไป `work/` พร้อมอัปเดตลิงก์ใน README, OPERATING-NOTES, REVIEW
+- `scripts/README.md` ชี้ไป INDEX และ `scratch/`
+- รวม v0.12.0 จาก remote (script `sakuyako_*`, `drt_prepend_cover`, `build_9x16_day22/24` ฯลฯ) เข้า INDEX และโปรไฟล์ช่อง
 
-### เพิ่ม
-- `CLAUDE.md` ชี้ไป `AGENTS.md` เพื่อให้ Claude Code, Codex และ Hermes ใช้กฎชุดเดียวกัน
-- `scripts/INDEX.md` จัดรายการ script ทั้งหมดตามงานและขอบเขต (`ใช้ซ้ำ` / `p2` / `armigon` / `sakuyako` / `ครั้งเดียว`) และ `scripts/scratch/` สำหรับ script ชั่วคราวในโปรเจค
-- skill `project-learning` กำหนดขั้นตอนค้นเครื่องมือเดิมก่อนเขียนใหม่ และบันทึกกฎ/script/คำแก้ไขเมื่อจบงาน
-- `tests/test_agent_entrypoints.py` ตรวจว่าทุก script อยู่ใน INDEX และจุดเข้าของ agent สอดคล้องกัน
+### ลบ / เลิกติดตาม
+- ลบโฟลเดอร์ `reference/` และที่เก็บถาวรภาพหนักของงาน Aomi-mama 30 ก.ย. (881MB) หลังสกัดบทเรียนลงโปรไฟล์ช่องแล้ว รายงานรีวิวกับ readback json ไม่มีสำเนา
+- เลิกติดตามสำเนาฐานข้อมูลโปรเจค `backups/**/*.sqlite` (14 ไฟล์ ประมาณ 100MB) ใน git ไฟล์ยังอยู่บนดิสก์ และเพิ่มกฎใน `.gitignore`
 
-### เปลี่ยน
-- ย้าย `PLAN.md`, `PLAN-9x16.md`, `PROJECT.md`, `WORKLOG.md` ไป `work/` และอัปเดตลิงก์; เลิกติดตาม `backups/**/*.sqlite` (ไฟล์ยังอยู่บนดิสก์)
-- `AGENTS.md` เพิ่ม checklist เริ่มและจบงาน แทนรายการ script ยาวด้วยตัวชี้ไป INDEX
+### ผลการตรวจ
+- `pytest`: 175 ผ่าน, 22 ข้าม (test `test_m1_*` ที่ต้องใช้ Resolve จริง ข้ามเมื่อไม่ใส่ `--live`), 197 collected
+- `scripts/verify_skill_bundle.py`: `ok: true`, ไม่มี errors; manifest และ checksum อัปเดตด้วย `refresh_skill_manifest.py`
+- อัปเดต MCP ชุมชน v4.10.3 -> v4.13.1 บนเครื่อง (ติดตั้ง dependency ผ่าน, import `server` ได้); `check_mcp_update.py` รายงาน `UP-TO-DATE`
+
+### ข้อจำกัด
+- ไม่ได้เชื่อมต่อหรือแก้ Resolve ในรุ่นนี้: ยังไม่ได้ทดสอบว่า MCP v4.13.1 คุยกับ Resolve ได้ (`resolve_preflight.py` ตอบ `BLOCKED` เพราะ Resolve ไม่ได้เปิด) ต้อง restart session แล้วลอง `resolve_control get_version`
+- ข้อมูลในโปรไฟล์ช่องมาจากหลักฐานใน repo, memory และการดูโฟลเดอร์ต้นทางแบบอ่านอย่างเดียว ไม่ใช่การตรวจ Resolve สด ต้องยืนยันชื่อโปรเจค/timeline จาก Resolve ก่อนเขียนทุกครั้ง
+- ป้ายขอบเขตใน INDEX จัดจากชื่อไฟล์และ docstring ไม่ได้อ่านโค้ดทุก script
+- หัวข้อรายการ tool ใน skill `resolve-mcp` ยังอ้าง v4.10.4 (ยังไม่ได้ตรวจกับ v4.13.1)
+- ไม่ได้ลดขนาด `.git` (ประมาณ 400MB เป็นประวัติเก่า) เพราะต้องเขียนประวัติใหม่และ force-push
+- ไม่ได้แยก `scripts/` เป็นโฟลเดอร์ย่อย เพราะ import `scripts.xxx` 150+ จุดและยังไม่มีทางตรวจกับ Resolve จริง
 
 ## v0.12.0
 

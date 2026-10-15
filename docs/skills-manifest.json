@@ -1945,19 +1945,19 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "6a8c79f5d265ce9288a79f3bce1094946b3a11ecd40a3915212913127e87d656",
+      "sha256": "46f8ee8b31dc2c1d0927b710a1af849b4b9b4e248616927098c12abfcab25e06",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b833d00bfff9d4cb7cc759745298d59e32f10baad287596bb4852a914ec7357e"
+      "sha256": "b617cc89947667813889ac34c41aa25536ea08feb7afc04a5992431a5875540e"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "2e96a20da8a104d70c9ec1698a354bc2be73d95090bee82c891219446f35acbd",
+      "sha256": "181fb5a5f5f8b7e93e53d3e53e73106401e58af55f52c7bcd9d8ced7657b464f",
       "kind": "integration_or_validation"
     },
     {
@@ -5163,6 +5163,14 @@
     {
       "path": "CHANGELOG.md",
       "reason": "Archive deleted"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "Release v0.13.0 notes"
+    },
+    {
+      "path": "README.md",
+      "reason": "Bump to v0.13.0"
     }
   ],
   "counts": {
@@ -5173,7 +5181,7 @@
     "supporting_skills": 30,
     "active_skills": 47
   },
-  "bundle_version": "0.12.0",
+  "bundle_version": "0.13.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",
