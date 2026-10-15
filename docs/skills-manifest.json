@@ -3979,7 +3979,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "696528c24681dfac0df2e996bda528fde6d611e95297df2930e73a2af7a82d36"
+      "sha256": "5d6ba972ec33259fdf1b7e99c167df57a5a4d9d306d9f452ec7c14efe5b36a4f"
     },
     {
       "path": "scripts/README.md",
@@ -5171,6 +5171,10 @@
     {
       "path": "README.md",
       "reason": "Bump to v0.13.0"
+    },
+    {
+      "path": "scripts/INDEX.md",
+      "reason": "Fix misplaced rows above table headers"
     }
   ],
   "counts": {
