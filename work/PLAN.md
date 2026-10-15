@@ -8,7 +8,7 @@
 
 **Tech Stack:** DaVinci Resolve Studio, Resolve MCP, UI ที่รองรับเมื่อ API เข้าไม่ถึง, FFprobe/FFmpeg สำหรับอ่านตรวจไฟล์, Markdown สำหรับรายงาน
 
-**Spec:** ข้อกำหนดผู้ใช้ในหัวข้อ Global Constraints ด้านล่าง และ [รายงานรีวิว 30 กันยายน 2026](reference/Aomi-mama_Review_20260930/Aomi-mama_review.md)
+**Spec:** ข้อกำหนดผู้ใช้ในหัวข้อ Global Constraints ด้านล่าง และ [รายงานรีวิว 30 กันยายน 2026](../reference/Aomi-mama_Review_20260930/Aomi-mama_review.md)
 
 **วันที่บันทึก:** 30 กันยายน 2026 — เอกสารสำหรับย้ายงาน ยังไม่ได้ดำเนินการแก้ตามแผนนี้
 

@@ -10,6 +10,8 @@ The backend remains the existing `davinci-resolve-mcp` installation. This reposi
 
 ## Reconciled rules
 
+When you learn a new rule, add a row here (see `.agents/skills/project-learning/SKILL.md`). Script catalogue: `scripts/INDEX.md`.
+
 | Topic | This project's rule | Why |
 |---|---|---|
 | Tool selection | MCP catalog first; scripting-API script only after a stated `MCP-GAP:` line; shared `scripts/resolve_common.py` | Agents skipped the MCP and wrote ad-hoc scripts, each with its own copy of the connect code. |
@@ -73,7 +75,7 @@ The current portable `.agents` source was chosen over older worktree versions. D
 The bundle validator checks file coverage under `.agents/`, `docs/`,
 `resolve-advanced/`, `scripts/`, and `tests/`, plus the declared integration
 documents. It excludes its manifest, generated validation report and Python
-bytecode caches. `PLAN.md`, `WORKLOG.md`, `reference/` and `.mcp.json` are
+bytecode caches. `work/PLAN.md`, `work/WORKLOG.md`, `reference/` and `.mcp.json` are
 separate editing-work context, not evidence that this collection completed any
 live edit. Check those tasks independently; do not rewrite their progress from
 bundle tests. Checksums detect drift against the local manifest, not malicious
@@ -87,7 +89,7 @@ upstream skill name. Archive scripts and all archive links are not execution-
 tested by core validation; these files remain inactive historical references.
 
 In the separate editing plan, keep the sample-approval gate authoritative.
-`PLAN.md` Task 2's all-timeline font heading must not be used to bypass Task 3's
+`work/PLAN.md` Task 2's all-timeline font heading must not be used to bypass Task 3's
 explicit sample approval. Review/reorder that plan with its owner before any
 batch writes; this skill-package review does not approve the remaining clips.
 

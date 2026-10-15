@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+### เพิ่ม
+- `CLAUDE.md` ชี้ไป `AGENTS.md` เพื่อให้ Claude Code, Codex และ Hermes ใช้กฎชุดเดียวกัน
+- `scripts/INDEX.md` จัดรายการ script ทั้งหมดตามงานและขอบเขต (`ใช้ซ้ำ` / `p2` / `armigon` / `sakuyako` / `ครั้งเดียว`) และ `scripts/scratch/` สำหรับ script ชั่วคราวในโปรเจค
+- skill `project-learning` กำหนดขั้นตอนค้นเครื่องมือเดิมก่อนเขียนใหม่ และบันทึกกฎ/script/คำแก้ไขเมื่อจบงาน
+- `tests/test_agent_entrypoints.py` ตรวจว่าทุก script อยู่ใน INDEX และจุดเข้าของ agent สอดคล้องกัน
+
+### เปลี่ยน
+- ย้าย `PLAN.md`, `PLAN-9x16.md`, `PROJECT.md`, `WORKLOG.md` ไป `work/` และอัปเดตลิงก์; เลิกติดตาม `backups/**/*.sqlite` (ไฟล์ยังอยู่บนดิสก์)
+- `AGENTS.md` เพิ่ม checklist เริ่มและจบงาน แทนรายการ script ยาวด้วยตัวชี้ไป INDEX
+
 ## v0.11.0
 
 ### เพิ่ม

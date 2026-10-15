@@ -2,6 +2,15 @@
 
 This repository packages the user's existing DaVinci Resolve editing skills. It is not the MCP server implementation and does not contain footage or a Resolve project database.
 
+## Start of task checklist (Claude Code, Codex, Hermes)
+
+Entry points: Claude Code reads `CLAUDE.md` (a thin pointer to this file); Codex and Hermes read this file; skills live in `.agents/skills/`. Keep the rules here only.
+
+1. Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`; load the domain skill that matches the request (`resolve-mcp` is the index).
+2. Check the attached MCP tool catalog and run a read-only probe (`resolve_control get_version`; Studio MCP `get_resolve_status`). If the `davinci-resolve` MCP is disabled or unreachable, say so before falling back.
+3. Search `scripts/INDEX.md` and `grep -r` in `scripts/` for an existing tool. **Never create a tool outside this repository** (no new folders on the Desktop, no temp scripts under `%TEMP%` or the home directory).
+4. Only if nothing exists, print the `MCP-GAP:` line and write the script in `scripts/scratch/` (gitignored, no approval needed). Promote it to `scripts/` only when it is reusable: use `resolve_common`, add a test, add a row to `scripts/INDEX.md`.
+
 ## Before editing
 
 - Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`, then load the skill matching the actual request. Use `read_file` if a project skill is not yet registered in `skill_view`.
@@ -48,24 +57,9 @@ Matching domain skills in `.agents/skills/`: `resolve-edit`, `resolve-color`, `r
 - Assets: `list_luts`, `generate_lut`, `delete_lut`, `list_dctls`, `update_dctl`, `delete_dctl`.
 - `launch_resolve`: only when the user explicitly requests starting Resolve.
 
-**C. Python Scripting API via `scripts/`** (see `scripts/README.md`):
-- Connect via `scripts/resolve_common.py` (`connect_resolve()`, `require_resolve()`, `preserved_state()`, `api_has_method()`).
-- Verification & Preflight: `resolve_preflight.py` (`--need`, `--list-tools`, `--probe-api`), `backup_drp.py` (`export_verified`), `caption_lint.py`.
-- Timeline & Track Engineering:
-  - `scripts/drt_focus_track.py`: Build and inject dedicated Adjustment Clip / Zoom tracks into `.drt` timeline files safely without track-targeting insertion bugs.
-  - `scripts/focus_frame_qc.py`: Multi-frame visual and geometry QC for VTuber framing (headroom, centering, scale, crop prevention).
-  - `scripts/deploy_climbing_focus.py`: Seamless DRT transfer of focus tracks into master production projects.
-  - `scripts/cleanup_and_rename_timelines.py`: Safe timeline cleanup, archiving, and standardized Thai title renaming.
-- p2 production pipeline:
-  - `scripts/p2_9x16_*.py`: build/convert/verify vertical timelines; `p2_9x16_gif_relayout.py` keeps V2 GIFs inside the game panel above the avatar seam (V3 draws over V2).
-  - `scripts/p2_trim_tail_150s.py`: `<name>_150s` variant cut at 150 s (originals untouched; subtitle cues past/straddling the cut are deleted, not re-timed).
-  - `scripts/p2_export_final.py`: final export of every p2 timeline to the Drive `vdo` folder with the `H.264 Master` preset (preset loaded per job, vertical gets a temporary cover frame, dry-run unless `--apply`); loudness via `p2_loudnorm_worker*.py`.
-  - `scripts/armigon_focus_pilot.py`: disposable Adjustment Clip pilot on a temporary duplicate.
-- Subtitles & single-timeline enrichment (verified on one 16:9 gameplay clip):
-  - `scripts/asr_words_th.py` (faster-whisper + char-level Thai words), `scripts/build_dynamic_srt.py` (curated cues -> SRT), `scripts/verify_srt_on_timeline.py` (cue/frame read-back).
-  - `scripts/apply_vtuber_zoom.py` / `retune_vtuber_zoom.py` / `zoom_variant_stills.py` (Adjustment Clip zoom track, retune, rendered-still QC; `--in-place` only on explicit user instruction).
-  - `scripts/apply_enrichment_d22.py` (BGM/SFX/GIF onto an `[ENHANCED]` copy or in place) followed by `scripts/apply_vdo_preset.py`.
-- Styling & Enrichment: `apply_video_style.py`, `enrichment_engine.py`, `enrich_timelines_python.py`, `focus_apply_batch.py`.
+**C. Python Scripting API via `scripts/`** — the catalogue is `scripts/INDEX.md` (task → script → scope). Do not duplicate script lists here.
+- Shared plumbing: `scripts/resolve_common.py` (`connect_resolve`, `require_resolve`, `preserved_state`, `api_has_method`), `resolve_preflight.py` (`--need`, `--list-tools`, `--probe-api`), `backup_drp.py` (`export_verified`).
+- Scope labels in the index: `ใช้ซ้ำ` (any project), `p2` / `armigon` / `sakuyako` (project-specific constants), `ครั้งเดียว` (one-off; use as an example only).
 
 ## Tool Selection Hierarchy: MCP First, Scripting API Second (Mandatory)
 
@@ -122,6 +116,16 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 - Always export a verified `.drp` backup before running batch operations (`backup_drp.py`).
 - Work in recoverable variants (`_focus_variant`, `_bak`). Only update original master timelines upon explicit user instruction.
 - Always save via `project_manager.SaveProject()` and read back all modified items.
+
+## Finish of task: record what you learned
+
+Follow `.agents/skills/project-learning/SKILL.md`. In short, before reporting done:
+
+- New rule or trap learned from a failure → one row in `docs/OPERATING-NOTES.md` (rule, why).
+- New or promoted script → row in `scripts/INDEX.md`; delete or leave in `scripts/scratch/` anything that was a one-off.
+- A correction the user gave about taste (cut rhythm, subtitles, framing) → `.agents/skills/house-style/SKILL.md`.
+- Changes to this file stay short: add a rule only if it applies to every task; otherwise put it in OPERATING-NOTES or a skill.
+- Run `python -m pytest -q` and `python scripts/refresh_skill_manifest.py` after touching skills, scripts or docs.
 
 ## Verification and handoff
 

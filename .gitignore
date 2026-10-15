@@ -16,7 +16,7 @@ footage/
 
 # Working artifacts: keep on disk, not in the skill bundle
 reference/
-scratch/
+/scratch/
 exports/
 .agents/teamwork/
 .hermes/
@@ -27,3 +27,9 @@ crop_*.jpg
 temp_frame.jpg
 pair*.txt
 
+# Throwaway agent scripts (promote to scripts/ + INDEX.md if reusable)
+scripts/scratch/*
+!scripts/scratch/.gitkeep
+
+# Project DB copies stay on disk as local rollback points, not in git (large, contain project data)
+backups/**/*.sqlite

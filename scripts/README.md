@@ -1,5 +1,7 @@
 # scripts/
 
+**Start with [`INDEX.md`](INDEX.md)** — it maps each task to a script and its scope. Throwaway scripts go in `scratch/` (gitignored); promote reusable ones here and add them to the index.
+
 Fallback tools for work the `davinci-resolve` MCP does not cover. Order of use (AGENTS.md): MCP, then `python scripts/resolve_preflight.py --need <tool[.action]>`, then a script.
 
 | Group | Scripts |
@@ -14,4 +16,4 @@ Fallback tools for work the `davinci-resolve` MCP does not cover. Order of use (
 | p2 render / export | `p2_render_vertical.py`, `p2_render_horizontal.py`, `p2_loudnorm_worker*.py` (two-pass loudnorm I=-14), `p2_trim_bad_gif_tail.py`, `p2_trim_tail_150s.py` (`<name>_150s` variant cut at 150 s, originals untouched), `p2_export_final.py` (final export of every p2 timeline to the Drive `vdo` folder with the `H.264 Master` preset; vertical copies get a temporary cover frame; dry-run unless `--apply`; tests in `tests/test_p2_export_final.py`) |
 | Bundle upkeep | `verify_skill_bundle.py`, `refresh_skill_manifest.py` |
 
-New scripts connect through `resolve_common` (never a private `get_resolve()`), wrap session changes in `preserved_state(resolve)`, and read back every write. Retired one-off scripts live outside the repo in `Desktop/_archive-davinci-cleanup-2026-10-09/` (`scripts/` and `scripts-review-2026-10-09/`). Tests that need a running Resolve (`tests/test_m1_*`) are skipped unless `pytest --live` is passed.
+New scripts connect through `resolve_common` (never a private `get_resolve()`), wrap session changes in `preserved_state(resolve)`, and read back every write. Retired one-off scripts from 2026-10-09 were archived outside the repo in `Desktop/_archive-davinci-cleanup-2026-10-09/`; new throwaway scripts stay in `scratch/`, never outside the repository. Tests that need a running Resolve (`tests/test_m1_*`) are skipped unless `pytest --live` is passed.

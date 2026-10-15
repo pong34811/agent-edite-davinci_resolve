@@ -62,6 +62,15 @@
       "history_sessions": 5
     },
     {
+      "name": "project-learning",
+      "tier": "supporting",
+      "path": ".agents/skills/project-learning/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "resolve-audio",
       "tier": "editing",
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -994,7 +1003,7 @@
       "path": ".agents/skills/gif-search/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "60780ed24c53e2e01f14f6e728e1f6c220b3cf8e8dd0df6d1c5fb72091cf3c5a"
+      "sha256": "a8349043740a8805d4ebfeb3a21f67ec0e9a9733a84f96403ca142c88a312b5d"
     },
     {
       "path": ".agents/skills/house-style/SKILL.md",
@@ -1002,7 +1011,13 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "a82798203a26064e4eed347155d962e2196d9b4e8a2a00ca76136ca914320c8f"
+      "sha256": "0e71878e0f3d5031f29bc1556fd249d81844138a70e6f9a69e00e6172938c45f"
+    },
+    {
+      "path": ".agents/skills/project-learning/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "cce4cfe7dff0e1cdaff736bc1e3a096e14b6f82e8759df5762be5e55b7500d2b"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -1096,7 +1111,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9c19fcf9e9d890c338c04320c758c55a05cc19307e9818c95dea5509c5672b36"
+      "sha256": "661c1aa6951ae30392ca01f712054c7896b0f7ca5c18321411abf719a805f13d"
     },
     {
       "path": ".agents/skills/resolve-offline-media-repair/SKILL.md",
@@ -1273,445 +1288,445 @@
       "path": ".agents/skills/superpowers-brainstorming/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "8b883cc136d60e304dbc2cc3c2e024f5416bb9d805b4ea3c1aec5b5012da3442"
+      "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/scripts/frame-template.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7b9418e9939dded0cf8e6a5549a18162b7c7e5495deeefa83a12f3394b81395d"
+      "sha256": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/scripts/helper.js",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "78c3a22dd5e799623cab8908b0b03e764404efde2d2edc94a8814cf450a09e81"
+      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/scripts/server.cjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ee89af11506ac4933324c89a2cfb36b391fe611f82efb9eeb3b814e40825145f"
+      "sha256": "2d2961ea8d11f56c5f4c3a1a68d22709efa5d7601a2246d8c880774e7e9e8412"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/scripts/start-server.sh",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "526f3fc34bbdc56d97532d84bf861a1113f9f08fec6479c3553c13ec627c2448"
+      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/scripts/stop-server.sh",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6a2f3f3b7ca84fde8ef3c43825d392e1f12126b52a93b42c4d4940779bac884d"
+      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/spec-document-reviewer-prompt.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "793f2546815a28f2712f0dcb926ab96dc4a60145fbea6f9a08d88287ec8e15bc"
+      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/visual-companion.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "95a58903eeac8e247f75335d46d5cbbe29e041e1731a15ff89aec82e96a7c989"
+      "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9c68190617f4f20eee9c7519badc067c66e732922a343825937f62af62578182"
+      "sha256": "5a652f8132cc901eb5ca61f89157839f87a2f20aed037fc7a2b51051bc37cd19"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/analyst-common.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "87f5303d6c45b3fb7ba6d54a46b06f0227e5f8f2f3fdd54c1c698d33efbaf3f6"
+      "sha256": "88801c36070be2a54a8a9a29632b01ab21db053e2e76ee49b5252a9b74ca4090"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/cost-and-time.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "72ee384cf6bc3daeb3f954230a05edd96ca9b3c03e303bba031612fe259e2868"
+      "sha256": "fe97a66d4db3b436816ef82694bda413b522b3a862dd41978da01e358fffecc4"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/plan-adherence.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d2681d76bf70eff9fba380c6d6c9c2b6e1af7afff32d0bd282e17c977da6fc37"
+      "sha256": "1dcbab82033598a2e9c9ee42e950d4b1822d2c871c02cef9e102cdd5cbbda113"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/quality-evidence.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "01b29eea22501ddd22416418b8de1c7a6124a293d13c41d417f7ecf08bb690a3"
+      "sha256": "749d11cf678f379ed77a29274cad456634e0284aa523639a1a214a9f2b986eb1"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/repeated-work.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e9a7b8bde8521c896b959b9c63570e7f832ce75d5db3f4cfecc14f988e2e7524"
+      "sha256": "895027f2dfa4b1b8bcdb7ac9aec8d45a80bff212fad6ec6cad5ab38fa68322f5"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/request-conflicts.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2fee01230cf625de4702ad2ad83cd68d3c236b69b51d3823342f9d12449ab166"
+      "sha256": "e800e38d8b7752c212c76c5c3ed75cd78b749684263ea0c313586f26af6f4b5c"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/scrub-audit.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c230befe2ab708faee327d708760c2fbe6fc39f874653ca21fed660068209d15"
+      "sha256": "5cc48f05a7f81f5f7e05e0c7ceafc0fb8774bcaf75fe88dcb5c7e408026c70ad"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/scrub.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "58e84fb2db013a945de00ab67f2945b2829deb70abb132c0a18fad4a5cdc2216"
+      "sha256": "854cb3320cc5377b493cea2f72519d67983464882db68a0f408a7d0a0f040b8c"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/similar-session.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "abec588fb5f59a2bc1c54ca0aa1bda538989ef0c48e32bb85030097c1dd43908"
+      "sha256": "b190f713b463df2bb5ec3914647e204074d1bd50643a53159db6d13cace916c1"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/skill-timeline.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c2f24ba30c7be3b13ae5fd1c51d4a2397bd1cdc1700f7e7b37b259f9b2357535"
+      "sha256": "45d604d583b57a77b9033eced8eb875ef342af70fcd66cf7d15c6dc89964890f"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/prompts/stumbles.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bf103612b7b78dcd160fa7b6a58e31a5349334adb4092781471016ef07619e27"
+      "sha256": "1f2d1f048aff7b8b400006301f1ce8c232ecc7e9d5f705af27a849b2c03ea2e7"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/references/context-safety.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "39c5259de8416f309b9d4e7a559fb7f5f1db52d865522efc87635f7669edb334"
+      "sha256": "e6be2bd3495f454d4bedee9484d728d245d1fa656e11fc4ceec5693c16e4730a"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/references/github-issues.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0444c209fa848cda33636fa45e834c399c31d4e3b3d86c01ee7e1123d9c6048f"
+      "sha256": "a656f5e15b21c7a200c39c038f5ede74b9d6ea3ceeb90f39af7e930c8d8424d6"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/references/redaction-policy.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6eca8a3a16b174f2a4505fafb7d55b756904ea176147bde2aaf2e5ad5333d89b"
+      "sha256": "96b16f47074838fe2d7e609577d6f8b0ad460f8378b281a3f96ee23cb5a08bde"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/references/session-discovery.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "383801d792eed50a7049f7c39997dee9d12945a7618bffa1ff9c0c1256f8d4cc"
+      "sha256": "6d1dced083e5d978448a78df298cf515531b0eb39b2854a4a2afbffeb69a7435"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/templates/bundle-README.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "75e2d9c9dc1bf2ab6818c0d36363d08a4b162f8f8d8ea5c8ab30d7af40b7f383"
+      "sha256": "2e6ddc6b106028d5ebd00a50ad93a77111d675c219ee1273cd0857869e8d51ec"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/templates/case.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8e5ecb243d01a9a4d6189f6ec3f179bd42a6cb28a6e781345c097e8237515ac4"
+      "sha256": "597892462be83bc478536ec91f7c285f6dd25d119c560734a3a180fe8471301d"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/templates/issue.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f8a6d000e412be1159bbfd947c5475c9522512e4b13335dbc6b64bd99ae03e5d"
+      "sha256": "8f28dbfe60602f77dda76d81815cb4e2dce7d3e2a93348890e1581be8310ac1f"
     },
     {
       "path": ".agents/skills/superpowers-diagnosing-superpowers/templates/report.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5844320cd9cfefb064ec1249b1deab91e6157e2199b911a30459e082035ce987"
+      "sha256": "38295d0fd785e8608f330815c59ebd7047942002ec7085aecbed54681f56b0c1"
     },
     {
       "path": ".agents/skills/superpowers-dispatching-parallel-agents/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "fc9875393a1dcd6b649bf22d9ff62f3a02080c0ce365932451bc73e63d87ddab"
+      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
     },
     {
       "path": ".agents/skills/superpowers-executing-plans/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "4cf415d4acde551dd10beb43d459af53a778a65052a4e6d9ff8078658abe52f1"
+      "sha256": "80ce138bdca6419e11bf8f4cfa73c1810a1a68679b5a5975cf18317b8fe6139c"
     },
     {
       "path": ".agents/skills/superpowers-executing-plans/scripts/task-done",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5896ebbb8c2a942a523913de6975b2a6334a27d0b9bc128cedad83bd2737792a"
+      "sha256": "f704dc216e0602f95c601b9ee1113c9a55cc1c5f6e4d149dddfba0fd3ad1c314"
     },
     {
       "path": ".agents/skills/superpowers-executing-plans/scripts/task-start",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5eb4db5457bfe9d201712fd7322896afd2f7f12b277b563900331b4e2ddfb114"
+      "sha256": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe"
     },
     {
       "path": ".agents/skills/superpowers-finishing-a-development-branch/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "2b8cb8f9cabb1951be2ebb1d72da90d3313f7e3705fd25f5b8f2d0432e139bae"
+      "sha256": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65"
     },
     {
       "path": ".agents/skills/superpowers-receiving-code-review/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "bbe7eb200ac9feb97f2620308ba8ecb517837465009a858bc5687695f3d0a6ae"
+      "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438"
     },
     {
       "path": ".agents/skills/superpowers-requesting-code-review/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "c12edf804d7b064661de587920b92768ad650fc5b61917c795436637b7f00740"
+      "sha256": "cfcee1b06774e7c0517f1e09be1a11f2d5680257072723e709ddbcf7e08b795a"
     },
     {
       "path": ".agents/skills/superpowers-requesting-code-review/code-reviewer.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "5e618b2a89ab9616112791b5245957948a1a26079ca6c30339f42fb378411e32"
+      "sha256": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e43446abe27019b1953db0d19dd2e58319c170d622ca4c82e6fcab4cc71a843e"
+      "sha256": "b0884a04ceb807515be7321bcc8e341fa313ace4a535497aafadcdf3fe87b816"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/implementer-prompt.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "bda42c4969d1578eab92bc1cca864397203329d22dbc143a8c6a896adb548b42"
+      "sha256": "81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/re-review-prompt.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "ea2d362871c1269ba44f3d5e4c6d7b6785da7572e6b7e27b7c5f92443f55d0ac"
+      "sha256": "0828a5e9cbb12ba49f14621dd8c3953c48c0fc383e75bb5494f055ed0d6d824f"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/scripts/review-package",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f617c52c538f09b13bd19a301cf5201584dcfd7aaf552eedefb3405f3f90fe0e"
+      "sha256": "f9275175b2276b1d5fdb1bae0bedaadd2a950659b7c6f311ea37ff85e1861b1f"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/scripts/sdd-workspace",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6e36a399687199dc11b9d7bd3038082d6a4637e7ad373b674dbb09f8ee1f7eea"
+      "sha256": "75ca46c756ba4209ca36e0d3d65567257ceb33bc7a6775b9dad946707cb3bd7b"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/scripts/task-brief",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "51bb3fb73b07f85fd19d8f29f178451f7557b8c3d084a85835c5bc6bc15869f3"
+      "sha256": "cc563538e09abf719b34ddf4b2fa7a65cf3b301729039dbfa923cb060f729146"
     },
     {
       "path": ".agents/skills/superpowers-subagent-driven-development/task-reviewer-prompt.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "f1431b65a6e63e5fbaddda1922b4c97375cd4feeecf9ecdd9a9391ff1c405843"
+      "sha256": "bfed55c8f19d0ff6ed57b0fe09127c92890e9311c6c73917129598826bf9ebe8"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/CREATION-LOG.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "397f122f115f994372a1805e30071fc0ad86c0dc1e427fbf5b5f1b14143399f5"
+      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "23f249e47a3a4b06c3a5030e37aaf3ced12a54f406782766b384ed127d21eca4"
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/condition-based-waiting-example.ts",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "0602407671f97439acc9e3cc2fe27ad42a22eb0dbca62f56d610fb223daadb0f"
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/condition-based-waiting.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "02aa854bd9e761f275e1450d7136ba60f1a4d103fe94b552fdce822dd3c99506"
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/defense-in-depth.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9407efcbd028a5ec45edfdf6692b988716c0a7b34d1fb5e05d60146171d8041e"
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/find-polluter.sh",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "31aa8bbab625ffae398c357de90fe3f4cb8f6dd39b23101bf81ef6dd53638b7c"
+      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/root-cause-tracing.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "f6359a35f1c695f789fac7b08d46ae0bb74f9a24123f9add96a7de053019b9bb"
+      "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/test-academic.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "51e07c1c56052a6c46cde8e7d42d6612598ea076f128086fd85911f4d2d3e8dd"
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/test-pressure-1.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "fbf04219c44460e76d96642d7dc16960a2390936e0a6937d0b133e013fa55afb"
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/test-pressure-2.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "fc6b2594bed3f2a15ece75d0a211b55cb9a4668d85b9873f2bab5ee54ed31cbf"
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
     },
     {
       "path": ".agents/skills/superpowers-systematic-debugging/test-pressure-3.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "69ed6a5a59dac92d58d284519991a46b90978bc40a229776dac0ffa3a6123bfe"
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
     },
     {
       "path": ".agents/skills/superpowers-test-driven-development/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "90fa0021a53360948fd1eb67799821d549ebef036ffad0ad5ceb7d8585abf159"
+      "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
     },
     {
       "path": ".agents/skills/superpowers-test-driven-development/writing-good-tests.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "87f56d0a4236f804165149ec038787d20062afc9b37aa240a167c394b39d2065"
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
     },
     {
       "path": ".agents/skills/superpowers-using-git-worktrees/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "49ac647dd5a65e0e79f87d346005dde8ce27c6886bccf966164917ee8bb4df80"
+      "sha256": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "c460d4e164f6583dd980a65ac4d27c963de4fe13061a170c10e73eac8ab0b52e"
+      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/antigravity-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "343af08abab2936a4063399ec0908a0d3a129f66a54a42ef1f14e9b9edc0b8fa"
+      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/claude-code-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fc455de197f1ca60fceeb620b8118815cae16b2b42900aff86036c1715b994b6"
+      "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/codex-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "51d2e878aac90809bfdd0358c974281e2fb88c7d46571e6310587d9df6cd55ea"
+      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/gemini-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3e0e732356eaf1780da7cfd93773723a68ff1fe03dbc519aaac38cd7e9b62e87"
+      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/hermes-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "32c262e22da268ac1bc33f2b318e597e78539f10be170a7453dee07ff432f36b"
+      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/muse-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7fc9b703682c55b453b1ed56a498d99df2293242cdbd9b53af15f8982e513969"
+      "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
     },
     {
       "path": ".agents/skills/superpowers-using-superpowers/references/pi-tools.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fb6db6991508e958b0117861b6107fb1cafcc752210c7cfe66def13f1e34d371"
+      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
     },
     {
       "path": ".agents/skills/superpowers-verification-before-completion/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "8f15b9f67e566f286d531b7da77052f4009b5065fd8edfcb659c9f837eebb4a4"
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
     },
     {
       "path": ".agents/skills/superpowers-writing-plans/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "0fdb0f2af96e7d8e879bbffc65413983915411c63daf85e0757034e38630445d"
+      "sha256": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "b10718c4d482469cbc80530a2a1dc38e2c0f2952898fe0a36db539c9b995d00b"
+      "sha256": "bcd6ed676acdb61317a6278610741a3ec8a306793b94791710905e51b38dde65"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/anthropic-best-practices.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "26f2fc231b4bea7ad7ec034a61615f8fe8bfff6c436ad77e60d5734be16a6a15"
+      "sha256": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/examples/CLAUDE_MD_TESTING.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3648a10c414546fdea2eae3a8f21345cda2234aca54a084042e5f933a6b332ca"
+      "sha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/graphviz-conventions.dot",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "b18a02773875f6c7b92f2a260e88550c92a62549b0009df9d680f7e9541d0ecc"
+      "sha256": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/persuasion-principles.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "73ffb3d9d9f510f82296de0e3509bdcc1bae13379ef56354877e3f33303b44bf"
+      "sha256": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/render-graphs.js",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "7f558e910dc0dc1c24a30fda9b0595643399f16014f8cd12b56e1ef1ad113a84"
+      "sha256": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196"
     },
     {
       "path": ".agents/skills/superpowers-writing-skills/testing-skills-with-subagents.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "134a5d0f695d717f6d34609dff44ec9316a593c2f6db981ec94a61750fcce1bb"
+      "sha256": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade"
     },
     {
       "path": ".agents/skills/thai-proofread/SKILL.md",
@@ -1731,7 +1746,7 @@
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "02a4b9eea264f2455fd7a4d721e5b367e37b7c4236d17de81421885efb67d324"
+      "sha256": "af61dfa83102b6a06967be3aaf3e5e59641df272d33fa6152cd26730056aa688"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md",
@@ -1751,7 +1766,7 @@
       "path": ".agents/skills/video-footage-review/references/whisper-transcription.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "47ce4ab0ad1529e375b2ba240709313420bcb2e761c82a364b704580535d9478"
+      "sha256": "db6ac0b9cefae228dac78e466e55533bdd53f81225962985c0f8823cf0fa65d1"
     },
     {
       "path": ".agents/skills/video-provider-smoke-qc/SKILL.md",
@@ -1823,43 +1838,43 @@
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "3ab2960cc70e7734f15caefef7a723e9e48ced8957cf62411397d2224bcd97cf"
+      "sha256": "67624568bb0ece8b8a60e07d0f1e9510b4158f97ae4c0f2efee5b40afb96cd2b"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/avatar-placement.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f37e6e3cac880969873a35bb94e17a425a9e7c0776864d91355283890bb152c8"
+      "sha256": "cfda6a8e55b45666df243e00b5db6d0369e91f9dc8e02c7bf34b7fad5b7b854e"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/color-and-storytelling.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "56b39211f641c26d2df5afac8a45701cf02ac1ce4c87b3f2cbc093090c9062f4"
+      "sha256": "d38030b6b1f63258d4469189eec44d1b563f3ea6c8e0aeffa22d6f41c21aa169"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/delegation-pattern.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3930355f1db640323955a73192184a0451bce2d732b696b09ab87d8afb1e054b"
+      "sha256": "dc607fd89abc825c28eb4352c36270733c0f929ed2585ef1ddd61ed9293428c9"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/landscape-layout.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0d825f21dd18b5112580cd28774ace82f3a2b3db9667c5397fd305336276e467"
+      "sha256": "43bee890339c7f163ec5f7e439719d5406b10ffc464182c031aaa1672b316523"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/portrait-layout.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8ffbd31413caf9e2a1ea4d316fe2e4375d07af1b9881ce7fc5bb8432806a71b7"
+      "sha256": "03a34f77512f65de3bbcff88b0950c109a8993f0402e39ab54918a839441e00f"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/typography-thai.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "33c4447a2b068406e37b4cd73e63c1bb6c9b7ede1293035bb544694e38d3c335"
+      "sha256": "81acf5380edc410c4e94e44de9ebda50e4ebe8800d4fb984b4ddcdc3bbaf7866"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-qc/SKILL.md",
@@ -1889,19 +1904,19 @@
       "path": ".agents/skills/youtube-content/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9b33ad4af251dcc8a33c4e49296579539bc24c5af1023ab6d2571a5fcc803c91"
+      "sha256": "b556a0d2a220b46b80eb011619f0c951404f4d6e2edcc8b4847faec512b55132"
     },
     {
       "path": ".agents/skills/youtube-content/references/output-formats.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ae851f1c0c14cb2e3cae7359ea2e12481b2aecd1a01a82fc819fa4aeae096102"
+      "sha256": "f24e6939b47511a7dfc1257f3087c9dafd027fe7836d0e65b0feb3214f598cd1"
     },
     {
       "path": ".agents/skills/youtube-content/scripts/fetch_transcript.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9213e7d67635f17ea476b07c9523ebd45c6866297abb674cd84f7ff50c83d649"
+      "sha256": "c4edb9f4fdf68e609ed57f22a07f8ef80cf3c00dcb2395a53e6aca99ab177d81"
     },
     {
       "path": ".agents/skills/youtube-downloader/SKILL.md",
@@ -1919,37 +1934,37 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5dea1a564b9c823bf1eb6c49cc181514112cf434b906afe056b17328607c2139"
+      "sha256": "ecd4714e8fe180524e966827b8213483df85e4d7e37cba10163ae34ec889b9f5"
     },
     {
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "141dfd1e704ec51357e53acf8378d7514a86c48192db35199c6c563a07591b27"
+      "sha256": "33e687c8a6effa045f829bf2b2d5d794aa156710f8c56c037d3f943d283bdf84"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "e841a2f4e328e2fa83bc38ff982356b0f7e6ce487fcd5573831e55f413086a67",
+      "sha256": "7715726ddd0bfe277360c86d36c1511b3dc48c0404dcd4f22f6e75f2d897da1a",
       "kind": "integration_or_validation"
     },
     {
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "0f5320ce4d3eb33b305406d4887172af420f4f9dac04e68f39c41b27179b3f40"
+      "sha256": "23ab415b24577657f7998fb36b91902c266b0cea59fb7b542d60f2fcfa8c6625"
     },
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "795d6bc79574d2aec03ad9cfec404bb95083c9dd210e6521e0d4199772d28d44",
+      "sha256": "6a9b524a9fd4f1f95f08a1db768ade6b9ef841e66ecf4893ff9393dafc33c13e",
       "kind": "integration_or_validation"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b1df20b93429c2220dc4b9346ebb83408cbe25bf9cbf3bcd2cba30c6ec2cf86c"
+      "sha256": "f9a439afd715c40e6121cf664e0ce01334d2c56bf6c50a6cebe16d74eacc2bb6"
     },
     {
       "path": "docs/README.md",
@@ -1962,7 +1977,7 @@
       "path": "docs/REVIEW.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e197749e6417628df9e2a5f8786e71be1cdd2736655b3239b9ca0e6fa8c098a1"
+      "sha256": "322753258fa3f8e8dbe5ec0c39f3a844ca06b31c50f3f21dcf72290dc972de94"
     },
     {
       "path": "docs/SKILL.md",
@@ -2227,7 +2242,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\process\\release-process.md",
       "source_sha256": "bf7327f3d7a5280177d1d86789648038d8abc79f6aee44a70d478dd4bc7d6adc",
       "kind": "mcp_reference",
-      "sha256": "0b36674ec2114e3bef9a966c4b9a02c6b6baa52e16581e65b656627a1e7b41a2"
+      "sha256": "9160ea509056c30f91afc04728f5882b792686be6a87f76fd8dc9f6bbd6372ea"
     },
     {
       "path": "docs/reference/DaVinciResolveScript.pyi",
@@ -2514,77 +2529,77 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\SKILL.md",
       "source_sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061",
       "kind": "related_skill_archive",
-      "sha256": "757dc7f5c8597633a0fcad9d1ddc0919a1fe97ffa2c11bce32445062cba38a62"
+      "sha256": "b71179e82ff27c002e6593e792d9a64dad9a444901b8938f30204fa115592061"
     },
     {
       "path": "docs/related-skills/blocked-page-recovery/scripts/recover_page.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\web\\blocked-page-recovery\\scripts\\recover_page.py",
       "source_sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6",
       "kind": "related_skill_archive",
-      "sha256": "109168d3757c0133d68c073ab4a1168baaf493983c5da96bddc5b73d5bd03cbf"
+      "sha256": "22b996996ae2bf252b31cfd2636231f08936729a381dce7ba8bfa4afb8ffe8c6"
     },
     {
       "path": "docs/related-skills/codex/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex\\SKILL.md",
       "source_sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d",
       "kind": "related_skill_archive",
-      "sha256": "3c25152d36a0267e2945aa2199975b83230233fa2685c72131c181fe14af1705"
+      "sha256": "1b15b57bcaba128b83ebe9f050b6873958198a1570bc801d4ca0406fb7e3271d"
     },
     {
       "path": "docs/related-skills/computer-use/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use\\SKILL.md",
       "source_sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf",
       "kind": "related_skill_archive",
-      "sha256": "f8cb7fdfe65d7ef1b3f6147f2fd99b122861f9382322614c0acd44dc4cc3ba33"
+      "sha256": "778833ecfea4385cab79ec4dda0ffe956e3f4bf9231eb80e52c5d113ee4e6cdf"
     },
     {
       "path": "docs/related-skills/grounded-citations/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\SKILL.md",
       "source_sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6",
       "kind": "related_skill_archive",
-      "sha256": "c7991dbe56bc358436207946da5f8f3ebca689935695ee0ebe66a6bd98e300bb"
+      "sha256": "19fba3a4ceedf768af6851e094b268a66b62af750d4d0689c5d62d5d50c032b6"
     },
     {
       "path": "docs/related-skills/grounded-citations/references/citation-formats.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\citation-formats.md",
       "source_sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04",
       "kind": "related_skill_archive",
-      "sha256": "d074b32150b024ced76b0b13734e99f3199ee4dba0be5adddea597dc4d6c6371"
+      "sha256": "209312a46dd9516e44e78f617589f789e07d54660e347b6b3882e8ac60097d04"
     },
     {
       "path": "docs/related-skills/grounded-citations/references/grounding-rationale.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\references\\grounding-rationale.md",
       "source_sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1",
       "kind": "related_skill_archive",
-      "sha256": "43b22746313ba0480b747391dfb6b8891d8e4d69e768f4b3646e51eecaee63ea"
+      "sha256": "2835754857ea05a1c801e88a50d4c2b4cc6ebd52cc4cc1f5741dba05f5af73c1"
     },
     {
       "path": "docs/related-skills/grounded-citations/scripts/_hermes_home.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\_hermes_home.py",
       "source_sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4",
       "kind": "related_skill_archive",
-      "sha256": "6c2486b262f1ce8334a43d3c9b280f5d59f41e0c8da01cb7b85a65c371c92fa4"
+      "sha256": "4bfa31ce48ffaca3ae3fdd2ba5f093a2bedc34b057eec22a38f46e2d68b333d4"
     },
     {
       "path": "docs/related-skills/grounded-citations/scripts/sources.py",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\scripts\\sources.py",
       "source_sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c",
       "kind": "related_skill_archive",
-      "sha256": "82084892b12b27a5406aa44d139d121ffb9ab1e1b77cf63372ed78a968fc8e5f"
+      "sha256": "a867ae6ba99166b4114bfef1c15b57036e286fe22c48534caec28cc8335bde0c"
     },
     {
       "path": "docs/related-skills/songsee/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\songsee\\SKILL.md",
       "source_sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07",
       "kind": "related_skill_archive",
-      "sha256": "d399b3f6a85ba7f14bf59e7954013142c3f3737119e5e4a5c3470d1a13db36b1"
+      "sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\SKILL.md",
       "source_sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72",
       "kind": "related_skill_archive",
-      "sha256": "8b883cc136d60e304dbc2cc3c2e024f5416bb9d805b4ea3c1aec5b5012da3442"
+      "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/frame-template.html",
@@ -2598,7 +2613,7 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\helper.js",
       "source_sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
       "kind": "related_skill_archive",
-      "sha256": "78c3a22dd5e799623cab8908b0b03e764404efde2d2edc94a8814cf450a09e81"
+      "sha256": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/server.cjs",
@@ -2612,42 +2627,42 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\start-server.sh",
       "source_sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847",
       "kind": "related_skill_archive",
-      "sha256": "526f3fc34bbdc56d97532d84bf861a1113f9f08fec6479c3553c13ec627c2448"
+      "sha256": "a4e5ae84275bcaacd2f84345afeabe59cf7b00ba080e123da7cc1fb226f12847"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/scripts/stop-server.sh",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\scripts\\stop-server.sh",
       "source_sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf",
       "kind": "related_skill_archive",
-      "sha256": "6a2f3f3b7ca84fde8ef3c43825d392e1f12126b52a93b42c4d4940779bac884d"
+      "sha256": "0b5ccbbd57f62d3ed88993f7940b5ee0e5c0fc9b21c550c623da4f6292e47daf"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/spec-document-reviewer-prompt.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\spec-document-reviewer-prompt.md",
       "source_sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457",
       "kind": "related_skill_archive",
-      "sha256": "793f2546815a28f2712f0dcb926ab96dc4a60145fbea6f9a08d88287ec8e15bc"
+      "sha256": "95a0a195de9d984be2fffa95bab16fc8c563bc296a9cfc5e9c29cb3ece0d7457"
     },
     {
       "path": "docs/related-skills/superpowers-brainstorming/visual-companion.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\brainstorming\\visual-companion.md",
       "source_sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2",
       "kind": "related_skill_archive",
-      "sha256": "95a58903eeac8e247f75335d46d5cbbe29e041e1731a15ff89aec82e96a7c989"
+      "sha256": "6ffcb038b53254bd31debaa15e12dcd4ff24bd63d690e0b644ac6396701cf2e2"
     },
     {
       "path": "docs/related-skills/superpowers-dispatching-parallel-agents/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\dispatching-parallel-agents\\SKILL.md",
       "source_sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
       "kind": "related_skill_archive",
-      "sha256": "fc9875393a1dcd6b649bf22d9ff62f3a02080c0ce365932451bc73e63d87ddab"
+      "sha256": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c"
     },
     {
       "path": "docs/related-skills/superpowers-executing-plans/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\executing-plans\\SKILL.md",
       "source_sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71",
       "kind": "related_skill_archive",
-      "sha256": "9e0cf3924324bd93d2e3d5cbd242d623579c80b3d7fc9c9bfcd4c8240e5595df"
+      "sha256": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71"
     },
     {
       "path": "docs/related-skills/superpowers-executing-plans/scripts/task-done",
@@ -2668,161 +2683,161 @@
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\CREATION-LOG.md",
       "source_sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789",
       "kind": "related_skill_archive",
-      "sha256": "397f122f115f994372a1805e30071fc0ad86c0dc1e427fbf5b5f1b14143399f5"
+      "sha256": "c24733a5b1821bd6bed1fc950261f0b9f4e90097e0bbb96459d8179713730789"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\SKILL.md",
       "source_sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
       "kind": "related_skill_archive",
-      "sha256": "23f249e47a3a4b06c3a5030e37aaf3ced12a54f406782766b384ed127d21eca4"
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting-example.ts",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting-example.ts",
       "source_sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e",
       "kind": "related_skill_archive",
-      "sha256": "0602407671f97439acc9e3cc2fe27ad42a22eb0dbca62f56d610fb223daadb0f"
+      "sha256": "40ae5ebe497fdf310200e43fe986552546d0a22837c0d39e855db1cfd33eb88e"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/condition-based-waiting.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\condition-based-waiting.md",
       "source_sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
       "kind": "related_skill_archive",
-      "sha256": "02aa854bd9e761f275e1450d7136ba60f1a4d103fe94b552fdce822dd3c99506"
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/defense-in-depth.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\defense-in-depth.md",
       "source_sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7",
       "kind": "related_skill_archive",
-      "sha256": "9407efcbd028a5ec45edfdf6692b988716c0a7b34d1fb5e05d60146171d8041e"
+      "sha256": "1e175fb86fc357e58c6aebf5441e481e1b7868b4380c0456b63a17eefbd18ba7"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/find-polluter.sh",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\find-polluter.sh",
       "source_sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c",
       "kind": "related_skill_archive",
-      "sha256": "31aa8bbab625ffae398c357de90fe3f4cb8f6dd39b23101bf81ef6dd53638b7c"
+      "sha256": "dd7b8f13c4cc2a24b33ff87b18da9248f3e1c80a085c3316224f69ff0fa5c43c"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/root-cause-tracing.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\root-cause-tracing.md",
       "source_sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8",
       "kind": "related_skill_archive",
-      "sha256": "f6359a35f1c695f789fac7b08d46ae0bb74f9a24123f9add96a7de053019b9bb"
+      "sha256": "75b933b6a8c40bdb2031b10f21654395b56ec6ab6bc7b018c18d3fe57aeb7fb8"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-academic.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-academic.md",
       "source_sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486",
       "kind": "related_skill_archive",
-      "sha256": "51e07c1c56052a6c46cde8e7d42d6612598ea076f128086fd85911f4d2d3e8dd"
+      "sha256": "fe2ba480d78ac0d686dc025f41c2a32a43d642bf533f91b0c6053a04d35d6486"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-1.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-1.md",
       "source_sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a",
       "kind": "related_skill_archive",
-      "sha256": "fbf04219c44460e76d96642d7dc16960a2390936e0a6937d0b133e013fa55afb"
+      "sha256": "0b6a915db0054577819834c79be9eb614e97bddba10d73768e1fbe91cfed048a"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-2.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-2.md",
       "source_sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016",
       "kind": "related_skill_archive",
-      "sha256": "fc6b2594bed3f2a15ece75d0a211b55cb9a4668d85b9873f2bab5ee54ed31cbf"
+      "sha256": "b2030aeffba07050e8ad573ddf87486457c4a016a786bb326235bebd856f2016"
     },
     {
       "path": "docs/related-skills/superpowers-systematic-debugging/test-pressure-3.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\systematic-debugging\\test-pressure-3.md",
       "source_sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708",
       "kind": "related_skill_archive",
-      "sha256": "69ed6a5a59dac92d58d284519991a46b90978bc40a229776dac0ffa3a6123bfe"
+      "sha256": "96b50a52e2c7989c9cf20fb752c47c1e9a3a70dc362f8f7989f8f5b64dac7708"
     },
     {
       "path": "docs/related-skills/superpowers-test-driven-development/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\SKILL.md",
       "source_sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
       "kind": "related_skill_archive",
-      "sha256": "90fa0021a53360948fd1eb67799821d549ebef036ffad0ad5ceb7d8585abf159"
+      "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
     },
     {
       "path": "docs/related-skills/superpowers-test-driven-development/writing-good-tests.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\test-driven-development\\writing-good-tests.md",
       "source_sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1",
       "kind": "related_skill_archive",
-      "sha256": "87f56d0a4236f804165149ec038787d20062afc9b37aa240a167c394b39d2065"
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\SKILL.md",
       "source_sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
       "kind": "related_skill_archive",
-      "sha256": "c460d4e164f6583dd980a65ac4d27c963de4fe13061a170c10e73eac8ab0b52e"
+      "sha256": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/antigravity-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\antigravity-tools.md",
       "source_sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0",
       "kind": "related_skill_archive",
-      "sha256": "343af08abab2936a4063399ec0908a0d3a129f66a54a42ef1f14e9b9edc0b8fa"
+      "sha256": "4880f6de3da4e32f9659ebe7a72b9e0ebfff04e028c2ed96173f86d0387a04c0"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/claude-code-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\claude-code-tools.md",
       "source_sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b",
       "kind": "related_skill_archive",
-      "sha256": "fc455de197f1ca60fceeb620b8118815cae16b2b42900aff86036c1715b994b6"
+      "sha256": "21479a3fee27448cab8748a3b5687e53bb257883bda9c070426f9a1ab5cebf1b"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/codex-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\codex-tools.md",
       "source_sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7",
       "kind": "related_skill_archive",
-      "sha256": "51d2e878aac90809bfdd0358c974281e2fb88c7d46571e6310587d9df6cd55ea"
+      "sha256": "1a38ad9b188c393052f58d95657a1c35ea6aafc8b5a27f198f3922912f70bbe7"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/gemini-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\gemini-tools.md",
       "source_sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965",
       "kind": "related_skill_archive",
-      "sha256": "3e0e732356eaf1780da7cfd93773723a68ff1fe03dbc519aaac38cd7e9b62e87"
+      "sha256": "62b9157bcb0ee3c6784e3d0da0798ddfa5872f9e0c34bea48f3079dabea71965"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/hermes-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\hermes-tools.md",
       "source_sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190",
       "kind": "related_skill_archive",
-      "sha256": "32c262e22da268ac1bc33f2b318e597e78539f10be170a7453dee07ff432f36b"
+      "sha256": "e2185c976a3c87503910e05e2aea58cc89bc8e569bb624b93df9958ac47a9190"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/muse-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\muse-tools.md",
       "source_sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3",
       "kind": "related_skill_archive",
-      "sha256": "7fc9b703682c55b453b1ed56a498d99df2293242cdbd9b53af15f8982e513969"
+      "sha256": "5a1da5c575fe18456ca71cd47ebfd8a38c745f8d82a67fe64d5b83080000eeb3"
     },
     {
       "path": "docs/related-skills/superpowers-using-superpowers/references/pi-tools.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\using-superpowers\\references\\pi-tools.md",
       "source_sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5",
       "kind": "related_skill_archive",
-      "sha256": "fb6db6991508e958b0117861b6107fb1cafcc752210c7cfe66def13f1e34d371"
+      "sha256": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5"
     },
     {
       "path": "docs/related-skills/superpowers-verification-before-completion/SKILL.md",
       "source": "C:\\Users\\warit\\.codex\\plugins\\cache\\superpowers-dev\\superpowers\\6.4.2\\skills\\verification-before-completion\\SKILL.md",
       "source_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
       "kind": "related_skill_archive",
-      "sha256": "8f15b9f67e566f286d531b7da77052f4009b5065fd8edfcb659c9f837eebb4a4"
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
     },
     {
       "path": "docs/related-skills/systematic-debugging/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging\\SKILL.md",
       "source_sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a",
       "kind": "related_skill_archive",
-      "sha256": "5fa3dd44dc59ad0fdbd4178433e2dbe87327738100135121e441cc80966885c8"
+      "sha256": "bd480f51a2e9969c88544003c30b7539b7df0b7358703f99b0495514c2dd878a"
     },
     {
       "path": "docs/skill-variants/house-style/585298d16b71/SKILL.md",
@@ -2842,25 +2857,25 @@
       "path": "docs/superpowers/plans/2026-09-30-kt404-video-enrichment.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b135cee90cdf357b055750562dc303c99b9bf61044ede29f2bd30de1e5ff8225"
+      "sha256": "a956f34c8c6ca658ef6b7086719e9478e14acec882816814531c17ef86cf4269"
     },
     {
       "path": "docs/superpowers/plans/2026-09-30-resolve-placement-fix.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7f1f5a82140f0f01660d7a6acf596008a53e6621e55395a8d0f8dea24bee3efb"
+      "sha256": "a3277c3f273b6cea4e6d3ec5a78b60437e4093067cbe9c8c7742f1220b2f597e"
     },
     {
       "path": "docs/superpowers/plans/2026-10-08-vtuber-focus-position-audit.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fa4028492d821eaa4014691b9f2d1aa5cb73141e4198a65c59770d47d65edddd"
+      "sha256": "9be2f704dcfe7f54e281d5a8da5342397fe4af793beb3d574295f7a9e04f008b"
     },
     {
       "path": "docs/superpowers/plans/2026-10-12-armigon-focus-qc-release.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1562752924d95f1b97a5d88d85f11fbadcaee1ed91ae1f79a727d9c694019b02"
+      "sha256": "5ce9e57185d2f28e1ef3595ba31a10aba2552fa8328cbbdabd3af2f03f6c1f14"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-T06-native-focus-independent-qc.json",
@@ -2878,7 +2893,7 @@
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "caedac0453e2373c2a119f9aaf3e9d16f80fa3abc682d62a57235c869b773726"
+      "sha256": "62b8e62cd562f100f1c5f2fca3075c3a4ac690ccc87f44196664bcd1c7a93104"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-plan-audit-candidates.json",
@@ -2902,7 +2917,7 @@
       "path": "docs/superpowers/reports/2026-10-12-armigon-focus-qc-th.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "46565cd54e3b239cfe52d17f691a537ca09da016d6205c074583ac3e40d6c5da"
+      "sha256": "a928f2b9fb3f7fa1f00ae4929777d482e6176cf46e997822b8556d61ae9c0c0c"
     },
     {
       "path": "docs/superpowers/reports/layout-30-49-evidence/T30_0.jpg",
@@ -3862,7 +3877,7 @@
       "path": "docs/superpowers/specs/2026-09-30-kt404-video-enrichment-design.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "bb008f2a33d918ab36fbff66b321b9080a86314a01b96e0f5dda49e83f1b3089"
+      "sha256": "ec516c6abfa4e8c5df56b43c9b3506351f5a748c05531b58251c2817ba9dd367"
     },
     {
       "path": "docs/upstream-licenses/advanced-LICENSE",
@@ -3913,22 +3928,28 @@
       "sha256": "c942d6dd81816e09e52c41f08ab80c76f5add3d610f9054cdc94c8512cc02f92"
     },
     {
+      "path": "scripts/INDEX.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5d919a0e765dc699de38cafdd0eef8f3a69f77d09283669e186d458ba04aeeff"
+    },
+    {
       "path": "scripts/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e52ff893ff2aedff338e5ec97002e9138aebc4cef6999a78729ca9e176b4951b"
+      "sha256": "29ff102674c205b65135083f906c8f31eda48998cc475c8508bd690fff966821"
     },
     {
       "path": "scripts/analyze_review_previews.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8ee927831f03591f1c2fa138439b0d253827a48490d152016cf50555c0375fb0"
+      "sha256": "316a83f2dc8030f0805e940f48c81ad92d77298f0eff1ca5bff74dc4af085e42"
     },
     {
       "path": "scripts/anomaly_sweep.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f8ce858dda66c8480d52ca69d4278e4736c2869dc2d215f5ccc7417a8a21e495"
+      "sha256": "97c22f72e5133994da52b3c8a3e9674a7228b025a35b17a897b54f1a3455bae2"
     },
     {
       "path": "scripts/apply_enrichment_d22.py",
@@ -3946,7 +3967,7 @@
       "path": "scripts/apply_offline_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e6ba08b74c1e18cf649154aa32ce18a2c1f57552cb4f67f2e77f0d3b308f8a15"
+      "sha256": "1beb77992ec2ed2795089a7526cb8d0ea4f326ebad77155550887053d3627fc3"
     },
     {
       "path": "scripts/apply_vdo_preset.py",
@@ -3958,7 +3979,7 @@
       "path": "scripts/apply_vdo_python.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5bd34bab1845c13ed4c622a40042a597b6bbfc6a85887c477f4f11f6e20cbd48"
+      "sha256": "1585bc9dd64a4ffd6c4f18a6bb634238815f40e37c2d171cb0545a6a42b8376c"
     },
     {
       "path": "scripts/apply_video_style.py",
@@ -4048,7 +4069,7 @@
       "path": "scripts/backup_drp.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5dd3c8492d29a83d3200a08148c518150ba061e0f59c76b8433c62da3c79254f"
+      "sha256": "93ec0d1e98b5e8c9f59af87c6ad48e885a2c2e7fcff2e66d4988713f176219ed"
     },
     {
       "path": "scripts/build_9x16_batch.py",
@@ -4066,31 +4087,31 @@
       "path": "scripts/build_offline_asset_draft.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ac5fa49310348329393bd435ccee2f2177fd251a8c78a830729bf65f40d0acd7"
+      "sha256": "95773d86fcbb01dcfdb9d80293e3102e15f1d6bd9db3c8d1b84a905d497270d0"
     },
     {
       "path": "scripts/build_offline_review.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9f52ffc1158a38615c7b5095bd58e09866858b0f0d7d5f9d7c3d62a14b465d96"
+      "sha256": "03f6cfe937983ce69eb0923517def9953597cc6b1a7f2cb3c7c2e37233b93e8b"
     },
     {
       "path": "scripts/caption_lint.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "857a1a9d74b77e1d215d02a61e6e31bd5c4981e1fb1d54b4f0598b2ce4b9005a"
+      "sha256": "ed1996f5b7c67d4bc0ff51d5c83f5d2b86538d4266b2ed0029dc14048d802e46"
     },
     {
       "path": "scripts/cleanup_and_rename_timelines.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "bd331b2bbfa224f16bf0af3eb48bdef1c83aa16d6a94465b6471b56b504ab214"
+      "sha256": "d1547f109cafb2500050b828e126348c2ba438299eb16f2a44b796ac2d1df5fb"
     },
     {
       "path": "scripts/cleanup_backups.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d40db76bb6769636de7c889934299df3fc8f1b97f3443ee71f17d3c3f31aa308"
+      "sha256": "6ec1cfab9e4e1dce08faf7e87e72ea88ff972ac9a5867c101b2582f8673f50b7"
     },
     {
       "path": "scripts/contact_sheet.py",
@@ -4110,7 +4131,7 @@
       "path": "scripts/deploy_climbing_focus.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "99ee823f4ceb560d6cac02d8f6f9d1e0bb30606a7fcda664bfae7f526a8a0791"
+      "sha256": "fd9c4f5a2ba28bf62bc78c22dcb9263e89b32dda59f66063a98b89f916c19d3f"
     },
     {
       "path": "scripts/drt_add_native_subtitle.py",
@@ -4122,7 +4143,7 @@
       "path": "scripts/drt_focus_track.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6d7336a20b7855b08d7dea4e35d47ffb376c3963304994262da467fecb3775bc"
+      "sha256": "b0a7c5e70c6a4d605dd080eb7da57747b0a632dc04b640f00252446107f93161"
     },
     {
       "path": "scripts/drt_shift_subtitles.py",
@@ -4134,19 +4155,19 @@
       "path": "scripts/enrich_timelines_python.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "165f12e054a027c0d7a175c1de8ef1ac6d0a0929cbd10397236566007fbc7aa9"
+      "sha256": "e629f4c756df7c74a9f9908d43d6037d0cce974eceb95648e13ae61c216443f6"
     },
     {
       "path": "scripts/enrichment_assets.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "679db2d8ab4de01f183380f366d88c2d14b9f6e85aa3730d78d8a99bfa6a2a59"
+      "sha256": "cbe8eea044725a2325fed3defe35818373925b92eb256c488b9174708a4483fd"
     },
     {
       "path": "scripts/enrichment_engine.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fe4d90e5de968b9f67e78ab6cce58555c84e5902c4b79ccb712d555c3a696df3"
+      "sha256": "f90dee082c99e64e44d5779012b793a746f811be2aa2db0934bdc6360cf4fda5"
     },
     {
       "path": "scripts/fix_focus_black_band.py",
@@ -4182,19 +4203,19 @@
       "path": "scripts/focus_frame_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "61fb653ca9657ff3e3523130181405452662167259a18b1834682c38daa4e0d0"
+      "sha256": "0547e3221d9bca32715c85a36a50135242317973689e11498230ea40def14026"
     },
     {
       "path": "scripts/focus_qc_all.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fbdd8840942ac313cea48fd4dd9698aac3f092f95c4ae644c42e075a3523c6c7"
+      "sha256": "961a91ae8e02afb6e4040f729f989536de2b088e5af278764cbb9984ff5ff9fb"
     },
     {
       "path": "scripts/focus_qc_frames.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a757372236e25610686bde4a4878a98e00dadbc988542a810e0a5948e7925761"
+      "sha256": "bd9ee0c03c8e01d292fdad7c8cb9e41e5d80f6b36fa3a07741c29fde9d41b8ef"
     },
     {
       "path": "scripts/focus_tune.py",
@@ -4242,7 +4263,7 @@
       "path": "scripts/p2_9x16_common.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "514005ebb1380e31a9397f8a687456a509e1c29b0ced0e32231cfdca4eb07e4d"
+      "sha256": "a66968e60e786d530bc08efb9e1472e38e5cc033e575f0759b7a486054a520f1"
     },
     {
       "path": "scripts/p2_9x16_convert.py",
@@ -4266,7 +4287,7 @@
       "path": "scripts/p2_9x16_inventory.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a365634a4386b8f585644dbe7c134455bc0a397e44cf4ef8d4252c754238968b"
+      "sha256": "5e885a9bc09a637bcf57aa2e2dcd621c349f226612d75d139df7e99a2f718d84"
     },
     {
       "path": "scripts/p2_9x16_layout.py",
@@ -4278,19 +4299,19 @@
       "path": "scripts/p2_9x16_sections.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "484a509ced05639ae06cc8988d77ce2236f89163051608ba0f4e5214b59d3664"
+      "sha256": "cb0b5129a313ce8ac91ea3d8bd244eedfd313e5232f4df30993850094eabb550"
     },
     {
       "path": "scripts/p2_9x16_sources.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "4aacd4e280b0db01b716c381b2cc559b12c5bea9918c2c3c2c12e37125e716f0"
+      "sha256": "336df028c7d78cade858f22f3703277234c1a5daf8e67a055c54a6c271990f99"
     },
     {
       "path": "scripts/p2_9x16_verify.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6a3fe9485b0863524466f9ffc53c7ff8681d04ad2af2629908770275039e5d8e"
+      "sha256": "c8d149a9b2f7ba3601d8543057746b62484e983a010602916abab9f65cfa7944"
     },
     {
       "path": "scripts/p2_9x16_verify_t3.py",
@@ -4302,7 +4323,7 @@
       "path": "scripts/p2_apply_cues.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a94e3833417ab10c0f9d3ae0b13816968e7b87968c2ef05b3d529ea41f346063"
+      "sha256": "b2dbfec2558b66be1efbbc62fd0ba563a1fe39d0dce7e63eab9d188a00738302"
     },
     {
       "path": "scripts/p2_apply_fixed_captions.py",
@@ -4314,7 +4335,7 @@
       "path": "scripts/p2_build_all_cues.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3ba8436e6ca78749635e8ea43a8c178a6864c901beb62c3ae297e0f9244d3634"
+      "sha256": "6ecb1e6018c2dfda38a067fa47bb247335161cd4e70db92417af730dd46dbd2e"
     },
     {
       "path": "scripts/p2_build_sample_cues.py",
@@ -4326,13 +4347,13 @@
       "path": "scripts/p2_delete_stray_copy.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "12e0017d49f002d66770d0aa5bca8f335589da905a36343d2d6bfaf79ec4e594"
+      "sha256": "71c0ffb5b3692ec753bec3442f532ed834034a038203472ae839a9d9bc4f3a3a"
     },
     {
       "path": "scripts/p2_dump_cue_inputs.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "082f15eab6c1d53401c6c8428beff3105ff49257952f5379fd054cbbed53cc47"
+      "sha256": "d31fbb3ca222bcedb11d179d6a7af9ad9993d91a021def73b4df0f4609e3f386"
     },
     {
       "path": "scripts/p2_export_final.py",
@@ -4350,13 +4371,13 @@
       "path": "scripts/p2_fix_captions_horizontal.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5a054833f65cfc4d7dd359f34ea00916b6371b6490610f1a9cad1333b440e792"
+      "sha256": "518cb07c4d2b4cde0053194b059529120eafbc933043a6f1946b5f5ff76187c9"
     },
     {
       "path": "scripts/p2_inventory_readonly.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "34fcd417153013295b2508c84f42817f4e72410584d85a000a6bd9685729a10a"
+      "sha256": "8a599480af4062e16c9fb660b7720b348c3c6c953e8b7658c29992dd19e76b92"
     },
     {
       "path": "scripts/p2_loudnorm_worker.py",
@@ -4374,19 +4395,19 @@
       "path": "scripts/p2_publish_audio_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d52ce58dfd5e5ecc5f39664efb55e6cfee3ca52e4e5e35e919db523a2640543a"
+      "sha256": "ff440900f0df92ba42e9790b7cf6c0326c23c9d5770f433944f6c8c2a3945324"
     },
     {
       "path": "scripts/p2_publish_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fc83d143511debf8da48afd200135a520bf0e4ca3cf9087912921ac4c10ccd7e"
+      "sha256": "66f7e231f0f7e71ca61b6d969ca2fdde8d129573923498e9564dc83d8154be8c"
     },
     {
       "path": "scripts/p2_publish_stills.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "67bbc5a0fa46a5ceb7b738c93349c10ba904891d96865a7c9fd5d4932511c292"
+      "sha256": "b5a4e4161c31637cf7264a447320e1cb771b57b532fb24863a759d621b3d9c3d"
     },
     {
       "path": "scripts/p2_render_horizontal.py",
@@ -4416,7 +4437,7 @@
       "path": "scripts/p2_verify_all.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fb93c252471a1899c59c4b4b6583cb28f37daa0948b97d5001614fe24ac389df"
+      "sha256": "b68c1c258a3d54c2cf39bc5515233feefeb45bfd9caec5601d30881ba710d6cf"
     },
     {
       "path": "scripts/p2_verify_captions_after.py",
@@ -4464,13 +4485,13 @@
       "path": "scripts/render_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "623dae17195fa82e88e476a7d505e5de5ec0f049bd79bb19094dbc54419db854"
+      "sha256": "e4b8f8dd133beaeb12d7c77670a15ab2b34129980cf0071150d222e24fef13e0"
     },
     {
       "path": "scripts/render_review_previews.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "94f5b73d1c8ec50fcd71b0b987332518078226793b2ee7635ea491b8dc7b701c"
+      "sha256": "241c09b2ad7046dad2cd2220028bfbbb64a05b3473fa3b1816fbb3cf46fd1a1a"
     },
     {
       "path": "scripts/resolve_common.py",
@@ -4494,7 +4515,7 @@
       "path": "scripts/review_enrichment_readonly.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9ca6d83ec31ded5f2018118143c9e703e4c4be4b5027c458843756194cc47c3d"
+      "sha256": "969b37fb1089701d3670877953d592e8dc3d6fe5d184950f49fb1d37db1c617d"
     },
     {
       "path": "scripts/run_batch_9x16.py",
@@ -4506,25 +4527,31 @@
       "path": "scripts/run_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a0abadb6d49278f42771a078b85694a8b3526d32f6273c0dbe9f75b6674c9ef2"
+      "sha256": "70a0e558f9447379b40b1c0065d3d3a534263859ee6a25c5f3eac456081bb792"
     },
     {
       "path": "scripts/scan_p2_vtuber_presence.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a68776082fa53770eeae923648bdb6deb5e4f69accd0231f0355da1f3c162873"
+      "sha256": "d2c36f8dd9df601116ed4080d8d88f8baf8e74bced2caecce4cb1ab43d7cd049"
+    },
+    {
+      "path": "scripts/scratch/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "scripts/verify_review_resume.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "37f17e4d23fc089610ace2e5576fe04f8bbe2351e1802605128cd9cfd05254b0"
+      "sha256": "873aabb0b744bb35d4c81edb0afb83841798d664828191829d7de67c7c45e459"
     },
     {
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ce3a21ccd6a95d7ccb2c34db173cc7e7884917b2b4bed0d2e0cea42bd5797fd9"
+      "sha256": "0d7a7a0ab3e8980919aff5477c0f43c8648b4b150897cf3fb9ae15f357db81f7"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -4554,13 +4581,19 @@
       "path": "tests/conftest.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "c1ad3df1b58361685f6142462d708277acb07ab96dac5030177ef0c2c7af8be2"
+      "sha256": "5175c765a491e2633e6cc4a2e78d9a36b9a586693459df1d230844e35141e1da"
+    },
+    {
+      "path": "tests/test_agent_entrypoints.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "15c10b7c4cd21841c626b059aac19b33e0a0b366a72a7e497e2192bab06b8022"
     },
     {
       "path": "tests/test_apply_vdo_python.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "aa22dcef73ea84cdda24763832a2c8ea9b45cef626022b60775236cde26ef8cd"
+      "sha256": "48e45ada98a4f317c0bc459505405f9792295802649e975298351b00c6b96e46"
     },
     {
       "path": "tests/test_apply_video_style.py",
@@ -4572,7 +4605,7 @@
       "path": "tests/test_backup_cleanup.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "dff0089586872cd04a377e489f93c38b6055937fd73c963a159072da787569c1"
+      "sha256": "3d8e114e44f1901fa2c557d1546e28b08484887d481e326f923f8baf47cfb9fb"
     },
     {
       "path": "tests/test_build_dynamic_srt.py",
@@ -4584,13 +4617,13 @@
       "path": "tests/test_caption_lint.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "03378c2a8ce34856ebfe596e7feab0058e68ce7c93095e0fc6dcbaa7c837bf01"
+      "sha256": "c7c372353cf5ffb11a4a0d614e7ec415e4868dbb962bfd4d91cc1d33996d83a3"
     },
     {
       "path": "tests/test_contact_sheet.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "addadc497e4c640d96ee2be114076c88a76ecbec90856a93b0af230b18888216"
+      "sha256": "995ab9f7865e63fe249f308b69a331fff299268de87b23a83d0b1c9f7c3c6e56"
     },
     {
       "path": "tests/test_drt_add_native_subtitle.py",
@@ -4602,55 +4635,55 @@
       "path": "tests/test_drt_focus_track.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "eb7151786110b23ef94fb8f39a4b414d19dbc94b6ad69f4e21502ebeb3fa911e"
+      "sha256": "8d58fade39568b4c71791b2384513efdbfaa15ffa3289a7551eb5bd9f2e7bb28"
     },
     {
       "path": "tests/test_enrich_timelines_python.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f040a35660be5ca81ad74aed493b20dcc907d207bf0414fc4147595c4f205e32"
+      "sha256": "975dbc65af26c202d6405652a3a2a006219d4dc17d3203379f2b10e4499e4404"
     },
     {
       "path": "tests/test_enrichment_assets.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5a6e416a5488d495efa174faa09b5a02fee61ddde46a145048cfc2e3fd303565"
+      "sha256": "1321d59fdf12576962de23e03b61d1256debb04a9bda8ea826422431dcaffd2a"
     },
     {
       "path": "tests/test_enrichment_engine.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "371224896c9c51ab07aeee93471a43ca18f7c4edae427e87c70e14f7c5895034"
+      "sha256": "00720c7d265f715de723da7d0ec4406b9ca3ad096e725ae9839c1c30bf9079e1"
     },
     {
       "path": "tests/test_focus_frame_qc.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7e98d545a2ef40a9e6de6dd65bf4189846c81b263f15bfc5ecade05340461ca1"
+      "sha256": "6ac49dccd97941c2f068d499465d8a2e979d75565d037285e484826c666b3da2"
     },
     {
       "path": "tests/test_load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "ee8083623feafeab4918dc2b053e4d95f81b34262d1e84db8ee9ba1090ffa639"
+      "sha256": "2f32bd6efd443c636ff31b4460848c5527e5f09de9023848836fcd2f0fc048e8"
     },
     {
       "path": "tests/test_offline_asset_draft.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8caf172d4c2133526730ad5d84cb98784723fa7a45ea1fd8528675a868796609"
+      "sha256": "5598c8d42ab0ff8f9c26d8b5703a558e736fc2ff9a34108b4bfe437fd2d3eace"
     },
     {
       "path": "tests/test_offline_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a86c99ef96f75ded4e868e4defbed497daf7bf4bb6b0004608b8686d12bf872f"
+      "sha256": "2b662f1a5a39bd323990dc0a1b81e344800bb47192c8b297314b065959b284b8"
     },
     {
       "path": "tests/test_offline_review.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "903e2857a58906d7452a34cfca79e3013319a5e8705ade2d2cff1a01ad7b1038"
+      "sha256": "de6c8d5565ac0df4d6bab23d21507b34262e06c633589caba19e076af4f5d484"
     },
     {
       "path": "tests/test_p2_export_final.py",
@@ -4662,19 +4695,19 @@
       "path": "tests/test_pilot_readback.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fcd11614c55d4b6b8a307aaef5aa2d0f639d0d26eb431027272d9ac717f80291"
+      "sha256": "4b0ebd5addc86d0c444a91ddb73d60f3e8e4239dd77827ed3c790a05ae27d313"
     },
     {
       "path": "tests/test_render_enrichment_pilot.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "284fabe92616fb18d04cdafeff36d3cd48bc5bea3dfcd8a6481c538c06d8da0f"
+      "sha256": "5a65d10b208a1267ceb91ebe410006e1337f6c265c8c0da8a8a7ae7aef567029"
     },
     {
       "path": "tests/test_resolve_common.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d790532860f2c147464ae656cf4068bb9142235a3939f24bd2a3667e6aef5a62"
+      "sha256": "d513efc8f40980b3c4236017e62db535b2dde4be5924e8d62253a29564784beb"
     },
     {
       "path": "tests/test_resolve_preflight.py",
@@ -4692,13 +4725,13 @@
       "path": "tests/test_review_analysis_retry.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "765d09092c69febe20bb3ac87f515eafbcaa5c72f73dc2892cde32c5d9d66109"
+      "sha256": "794f5dce1d3a5b8cf44a97d292ccbdae701c750045db7f63396ab276da50193d"
     },
     {
       "path": "tests/test_review_resume_cache.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "2dd715e35b461cc5a01e25a9e17972046f5f1e931d526b6782aa9f94ed8c76a9"
+      "sha256": "3ee890597adcb05bc02ae2754a1d40a8de392581238c3fd65bdec40afff0702d"
     },
     {
       "path": "tests/test_skill_bundle.py",
@@ -4710,13 +4743,13 @@
       "path": "tests/test_subtitle_workflow_rules.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "458577265c3375bcc8d5bdf48d57797643e8f8f0d1374c5840745bad9d556eba"
+      "sha256": "a6345f3e6d1a3dd08a27d81204481e509fe453952d8b7aebf9db81688413f00c"
     },
     {
       "path": "tests/test_validation_regressions.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6a3ed126b75abc5a4e1131f06623949634cebc6eb5eb5d1442c06a122431fa6b"
+      "sha256": "3c8f10bf553bf151efb317ff22ca7396a7f1dc472bd1d1df66651fcc278f40b2"
     },
     {
       "path": "tests/test_vertical_layout_repair_pilot.py",
@@ -4938,15 +4971,55 @@
     {
       "path": ".agents/skills/house-style/SKILL.md",
       "reason": "ยึด subject ที่ผู้ใช้ระบุหรือชี้ในภาพอ้างอิงเป็น focus target แทนการสมมติว่าเป็น VTuber"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "Add start/finish checklists, point to scripts/INDEX.md"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Pointer to project-learning and scripts/INDEX.md"
+    },
+    {
+      "path": "scripts/README.md",
+      "reason": "Pointer to INDEX.md and scratch/"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "Unreleased entry for agent entrypoints"
+    },
+    {
+      "path": ".gitignore",
+      "reason": "Ignore backups/**/*.sqlite and scripts/scratch"
+    },
+    {
+      "path": "README.md",
+      "reason": "work/ links"
+    },
+    {
+      "path": "docs/REVIEW.md",
+      "reason": "work/ links"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "work/ links"
+    },
+    {
+      "path": ".agents/skills/project-learning/SKILL.md",
+      "reason": "work/ link"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "work/ move"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 596,
-    "supporting_skills": 29,
-    "active_skills": 46
+    "manifest_files": 600,
+    "supporting_skills": 30,
+    "active_skills": 47
   },
   "bundle_version": "0.11.0",
   "excluded_repository_paths": [

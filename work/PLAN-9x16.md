@@ -3,7 +3,7 @@
 > เขียนเมื่อ 2026-10-01 หลังหยุดงานกลางคัน (โควตา Antigravity/Gemini หมด และผู้ใช้สั่งหยุด)
 > แหล่งข้อมูล: transcript Antigravity `2009ba19-…`, ไฟล์ใน `.agents/teamwork/`, `scripts/`, `test_qc_stills/`
 > **ไม่ได้ตรวจ Resolve สด** ตอนเขียนแผนนี้ — สถานะ timeline ใน Resolve ต้องอ่านใหม่ก่อนทำอะไรต่อ
-> `PLAN.md` ที่ root เป็นแผนของงาน Aomi-mama คนละงาน อย่าสับสน
+> `work/PLAN.md` เป็นแผนของงาน Aomi-mama คนละงาน อย่าสับสน
 
 ## 1. เป้าหมาย (จากคำสั่งผู้ใช้)
 - โปรเจกต์ `KT404_2026-09-29` (ID `7c38045b-c9ae-426c-8b4c-2e2d726d88ff`), โฟลเดอร์งาน `G:\My Drive\Projects\Katy404\2026-09-29`
