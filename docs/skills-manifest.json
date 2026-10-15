@@ -1940,7 +1940,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "33e687c8a6effa045f829bf2b2d5d794aa156710f8c56c037d3f943d283bdf84"
+      "sha256": "52e3706779425eb3ace6001347b20ad9b4ed0f028c2982fd1495ec7a587dab1f"
     },
     {
       "path": "CHANGELOG.md",
@@ -5061,6 +5061,10 @@
     {
       "path": "scripts/INDEX.md",
       "reason": "index v0.12.0 scripts"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "Correct community MCP path and version"
     }
   ],
   "counts": {
