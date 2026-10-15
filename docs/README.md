@@ -24,6 +24,8 @@ ignored scratch folders such as `docs/_scratch/`.
   Resolve scripting API text used for parity checks.
 - [Resolve 21.1 Typed API](reference/resolve-211-typed-api.md) — vendor stub,
   scripting changelog, provenance and an executable-reference inventory.
+- [Resolve 21.1 Agent Guide](guides/resolve211-agent-guide.md) — source
+  precedence, native-action routing, runtime setup and evidence boundaries.
 - [Contributing and Project Layout](contributing.md) — contribution workflow,
   platform support, security notes, and repository structure.
 - [Release Process](process/release-process.md) — maintainer release checklist.

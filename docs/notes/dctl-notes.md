@@ -7,12 +7,20 @@ custom ACES IDT/ODT transforms.
 
 This is adjacent to, but not the same as, the Python scripting API used by the
 MCP. The MCP can refresh Resolve's LUT list and set discovered LUT-style files
-on Color page nodes, but it does not compile DCTL, encrypt DCTL, or manipulate
-ResolveFX DCTL plugin UI controls directly.
+on Color page nodes. Resolve 21.1 adds native DCTL source validation and
+encryption, exposed through `dctl validate_native` and `encrypt_native`.
+Validation is not proof of shader rendering or control of ResolveFX plugin UI.
 
 ## Current MCP Surface
 
 Relevant existing actions:
+
+- `dctl(action="validate_native", params={"source": "..."})` uses
+  `Resolve.ValidateDCTL`; native `None` means success and a string is a diagnostic.
+  See [native validation](../reference/resolve211-dctl-validation.md).
+- `dctl(action="encrypt_native", params={"input_path": "...", "output_path": "..."})`
+  uses `Resolve.EncryptDCTL` on 21.1+. It creates a new output without overwriting;
+  see [native encryption](../reference/resolve211-encryption.md).
 
 - `project_settings(action="refresh_luts")` wraps `Project.RefreshLUTList()`.
   Call it after adding or editing `.dctl`, `.dctle`, or `.cube` files in
@@ -30,8 +38,10 @@ Relevant existing actions:
   in a Color page node, but the scripting API does not expose a general
   "configure DCTL plugin parameter" helper.
 
-There is no documented Resolve scripting method to list installed DCTLs, encrypt
-DCTLs, choose a DCTL in the ResolveFX DCTL plugin, or apply a DCTL transition.
+The Studio MCP separately offers `list_dctls` for inventory. Do not infer a
+general Python API for installed-DCTL enumeration or ResolveFX plugin parameter
+control from that tool, native encryption, or `AddTransition`. Inspect the exact
+API/action for selecting or applying a DCTL effect or transition.
 
 ## DCTL Types
 

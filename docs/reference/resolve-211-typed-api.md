@@ -12,8 +12,17 @@ Collected September 9, 2026 from the installed official MCP's
 `get_scripting_api(as_file=True)` on macOS, DaVinci Resolve Studio **21.1.0.14**.
 The changelog was copied from the installed `Developer/Scripting/CHANGELOG.md`
 and is dated September 1, 2026. The stub is unmodified vendor reference material;
-it is not authored by this project. Its SHA-256 is
+it is not authored by this project. Its LF-normalized SHA-256 is
 `00078fa1256851b9807621a4eea5e670f4266b0e7003763cba4a62655543f0ec`.
+
+On 2026-10-15, the Windows checkout and the stub returned by the attached
+Studio MCP had identical raw SHA-256
+`f934bcdbc71d3bcbe2b4eb9d921811ac5a47bad6aba1f4f46b7ca917fa8411d5`.
+Both used CRLF; normalizing CRLF to LF reproduced the original hash above.
+This is a line-ending difference, not evidence of an API change. Community MCP
+reported the running host as Studio **21.1.0.17**, MCP **4.13.1**. Comparing stubs
+confirms reference content, not runtime behavior of every declared method.
+See [agent guidance](../guides/resolve211-agent-guide.md) before applying older limitations.
 
 This supplies the typed snapshot requested in
 [the review of #197](https://github.com/samuelgursky/davinci-resolve-mcp/pull/197#issuecomment-5584959121).

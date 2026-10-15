@@ -46,9 +46,11 @@ and organize live.
 
   or derivatives of source media.
 
-- Native multicam clip creation/flattening is not in the public API — the setup
-
-  helper preps a stacked timeline you convert in Resolve's UI (see the guide).
+- Resolve 21.1+ supports native `media_pool create_multicam_clip` and
+  `timeline_item flatten_multicam`. Read `docs/reference/resolve211-multicam.md`
+  for options, Media Pool reorganization defaults and validation limits.
+  `setup_multicam_timeline` remains a separate stacked-prep helper for manual
+  conversion; it is not the native creation action.
 
 - **`ImportMedia` has no destination parameter** — clips always land in the
 

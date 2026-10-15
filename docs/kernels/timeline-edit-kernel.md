@@ -155,9 +155,13 @@ Current partial areas:
 
 ## Unsupported Boundaries
 
-These are blocked by Resolve's public scripting API, not by MCP plumbing:
+These boundaries belong to the copy kernel or the measured native API surface;
+check newer native actions separately before treating one as a global API gap:
 
-- Transition cloning: no public timeline-item transition clone/read/write API.
+- Transition cloning is unsupported by this copy kernel. Resolve 21.1 adds
+  `TimelineItem.AddTransition` for creation; this does not establish a complete
+  transition clone/read/write workflow. See
+  [native transition controls](../reference/resolve211-native-transitions.md).
 - Razor/split edits: no direct public timeline split primitive.
 - True partial lift: no safe partial-item delete without a split primitive.
 - Source-less item cloning through append: titles, generators, Fusion

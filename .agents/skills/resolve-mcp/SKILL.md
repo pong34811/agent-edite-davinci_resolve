@@ -158,9 +158,12 @@ offer the call and let it fail.
 
 Before any script, check the davinci-resolve MCP catalog; write a Resolve Python scripting-API script only after a stated `MCP-GAP:` line shows the MCP lacks the tool/action. Follow `AGENTS.md` "Tool selection" and run `python scripts/resolve_preflight.py --need <tool[.action]>`.
 
-### Complete 37 Compound Tools Catalog (davinci-resolve MCP v4.10.4)
+### Compound tool domains (catalog checked on MCP 4.13.1)
 
-All 37 compound tools grouped by domain:
+The attached community catalog contained 37 compound tools on 2026-10-15.
+This table groups tools; discover exact actions and parameters from the attached
+schema each session. For Resolve 21.1 additions, source precedence and validation
+limits, read `docs/guides/resolve211-agent-guide.md`.
 
 | Domain | MCP Tools | Key Actions & Responsibilities |
 |---|---|---|
@@ -202,7 +205,7 @@ All 37 compound tools grouped by domain:
 | | `lut` | LUT file inspection, export, and verification |
 | | `dctl` | DCTL template creation, verification, and encryption |
 
-### Key Capabilities in v4.10.4
+### Historical capability notes (v4.10.4)
 
 1. **Advanced Subtitle Engine & Formatting**:
    - The upstream server's subtitle database module (subtitle-db.mjs) and subtitle track editing guide provide dedicated subtitle parsing, styling, and track safety.

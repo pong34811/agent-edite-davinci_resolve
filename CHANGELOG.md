@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.14.0
+
+### Added
+- เพิ่ม `docs/guides/resolve211-agent-guide.md` ให้ agent เลือก API และ MCP สำหรับ Resolve 21.1 โดยอ้างอิง build, schema และหลักฐานการตรวจที่ตรงกัน
+- รวมเส้นทาง native สำหรับ speed/fades, transitions, multicam, audio normalization/alignment และ DCTL พร้อมลิงก์ไปยังคู่มือเฉพาะงาน
+
+### Updated
+- แก้ข้อความใน skills และคู่มือที่ระบุว่าไม่มี clip-speed API หรือ native multicam API ในทุกเวอร์ชัน ให้แยกข้อจำกัดของรุ่นเก่าจากความสามารถ 21.1
+- แยกการสร้าง transition ออกจากการ clone และแยก native multicam creation/flattening ออกจาก stacked-timeline helper
+- เพิ่มคำอธิบาย DCTL validation/encryption, Python ในตัว, settings แบบ TypedDict, ผลข้างเคียงของการเขียนหลายคีย์ และขอบเขตการตรวจ subtitle/render
+- ตรวจ catalog ของ community MCP 4.13.1 ซึ่งมี 37 compound tools และกำหนดให้ตรวจ action schema ที่แนบในแต่ละ session
+- ชี้แจง SHA-256 ของ vendor stub แบบ CRLF และ LF: เนื้อหาตรงกัน ความต่างของ hash ไม่ได้หมายความว่า API เปลี่ยน
+
+### Verified
+- ชุดไฟล์ release แยกจาก working tree: `python -m pytest -q` ผ่าน 175 tests, ข้าม 22 รายการ และผ่าน 10 subtests
+- Community MCP รายงาน DaVinci Resolve Studio `21.1.0.17` และ MCP `4.13.1`; Studio MCP ยืนยันว่า Resolve `21.1` กำลังรันและเข้าถึงได้
+- เปรียบเทียบ vendor stub ใน repo กับไฟล์ที่ Studio MCP ส่งมาได้ตรงกันแบบ byte-for-byte; เมื่อแปลง CRLF เป็น LF ค่า hash ตรงกับ provenance เดิม
+- ตรวจลิงก์ภายใน คู่มือ และ manifest/checksums ก่อนเผยแพร่
+
+### Scope
+- ปรับ checksum เดิมที่ค้างใน manifest 3 รายการให้ตรงกับไฟล์ที่ติดตามอยู่ใน HEAD ได้แก่ helper subtitle preset และเอกสาร Armigon 2 ไฟล์ โดยไม่แก้เนื้อหาไฟล์เหล่านั้น
+- รุ่นนี้ปรับ skills และเอกสาร ไม่ได้ทดลอง setters, แก้ timeline, render หรือเขียนฐานข้อมูล Resolve; หลักฐาน contributor บน macOS Build 14 ยังคงมีขอบเขตตามที่บันทึกไว้
+- ไม่รวมงาน offline intake/edit workflow ที่ค้างอยู่ใน working tree ก่อนงานนี้
+- เลขเวอร์ชันของ skill bundle แยกจากเวอร์ชัน DaVinci Resolve และ MCP server
+
 ## v0.13.0
 
 เน้นให้ agent (Claude Code, Codex, Hermes) เริ่มงานเร็วขึ้นและไม่สร้างเครื่องมือซ้ำนอกโปรเจค

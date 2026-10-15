@@ -951,9 +951,10 @@ Media Pool / Ingest kernel actions (v2.8.0+) add safer agent-facing workflows:
 `setup_multicam_timeline` is a helper, not a native multicam API wrapper. It
 creates a source-safe stacked prep timeline with one angle per video track,
 optional matching audio tracks, and `stack_start`, `source_timecode`, or
-explicit `record_frame` placement. Native multicam clip creation, angle
-switching, and flattening remain Resolve UI workflows; see
-`docs/guides/multicam-setup-guide.md`.
+explicit `record_frame` placement. On Resolve 21.1+, native creation and
+flattening use separate `create_multicam_clip` and `flatten_multicam` actions;
+see [native multicam](reference/resolve211-multicam.md). The stacked helper's
+manual conversion workflow remains in `docs/guides/multicam-setup-guide.md`.
 
 Note: `folder path` arguments use slash notation like `"Master/SubFolder"`.
 `"Master"` or `"/"` refers to the root folder.
@@ -1684,8 +1685,9 @@ Key actions:
   `retime`, `dynamic_zoom`, `scaling`, `stabilization`, `clip_color`,
   `markers`, `flags`, `enabled`, `cache`, `voice_isolation`, `fusion`,
   `grades`, `takes`, and `keyframes`; `transitions` is accepted but reported
-  unsupported because Resolve's public scripting API does not expose transition
-  cloning. `copy_keyframes=True` adds the `keyframes` group.
+  unsupported by the copy kernel. Native 21.1 `add_transition` creates a
+  transition separately; it does not establish full transition cloning.
+  `copy_keyframes=True` adds the `keyframes` group.
 - `copy_clips(...)` / `move_clips(...)` — same safe append path; `move_clips`
   deletes only sources whose duplicate was VERIFIED live on the timeline
   (AppendToTimeline can return null-id items — e.g. into an occupied span — and

@@ -23,6 +23,8 @@ When you learn a new rule, add a row here (see `.agents/skills/project-learning/
 | Backup cleanup | Retain and report archives; delete only with explicit approval and a new verified backup | The rough-cut source said to clean archives automatically; other workflows correctly require permission. |
 | Playback FPS | Read separately from timeline FPS; set in verified Resolve UI if necessary | Playback frame rate is not script-settable in the observed build. |
 | API methods | Exact build, installed README/typed stub, then a read-only or isolated probe | Older manuals' blanket API gaps may be stale; do not treat absence from a catalog as proof. |
+| Resolve 21.1 reference routing | Read `docs/guides/resolve211-agent-guide.md`; version-scope speed, transition, multicam and DCTL limits; distinguish documented APIs, attached actions and live validation | Older skills denied APIs that the 21.1 stub and current catalog expose; an empty version-gate list does not verify their behavior. |
+| Vendor stub hashes | Compare raw bytes and CRLF-to-LF normalized bytes before declaring a stale reference; retain original provenance | The Windows 21.1 stub matched Studio MCP byte-for-byte; its raw CRLF hash differed from the recorded LF hash while normalized content matched. |
 | Audio level | AudioVolume in dB on observed builds; enumerate/read back actual properties | Volume/Gain/Level guesses can return False silently. |
 | Caption QC | Viewer screenshot or short burn-in render | ExportCurrentFrameAsStill can omit subtitle overlays. |
 | Native captions | Subtitle track only; migrate only exact authorized targets | A creation preference does not authorize modifying protected legacy timelines. |

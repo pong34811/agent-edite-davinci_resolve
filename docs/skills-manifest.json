@@ -1064,7 +1064,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "c50ce458548708ac456ebea25980e72cf1e8783b68bda4f812a39f43f043da30"
+      "sha256": "e7b4352b0b6f4ec8bafb753c78f2c69a9f3670bc30f9612362e66aeb29c0d10b"
     },
     {
       "path": ".agents/skills/resolve-folder-cover-batch/SKILL.md",
@@ -1084,7 +1084,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "f064cabe1d19c5a7725dd5f645aea30131abce09b12cd3e5483d923020c6fd34"
+      "sha256": "01644b081cd850dd90aa0c7ca84b2e02999b61f5da746e135f3401f7190812af"
     },
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
@@ -1099,7 +1099,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-media-pool\\SKILL.md",
       "source_sha256": "2ede4db63c156a2899c85bae8ea11db7bf83f71e79246b49d00149f305f0f3f6",
       "kind": "editing_skill",
-      "sha256": "bd1fab6f1754529227b16eb9c4d08375b03f866349a7e6165e9512a1a01870a3"
+      "sha256": "a5d9241a19fa9625c6bc83c2484348cfa02a27977553a6e43044b9bd214711e9"
     },
     {
       "path": ".agents/skills/resolve-mitr-subtitle-presets/SKILL.md",
@@ -1111,7 +1111,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "661c1aa6951ae30392ca01f712054c7896b0f7ca5c18321411abf719a805f13d"
+      "sha256": "9c19fcf9e9d890c338c04320c758c55a05cc19307e9818c95dea5509c5672b36"
     },
     {
       "path": ".agents/skills/resolve-offline-media-repair/SKILL.md",
@@ -1945,7 +1945,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "46f8ee8b31dc2c1d0927b710a1af849b4b9b4e248616927098c12abfcab25e06",
+      "sha256": "bfe06352f495e801c76207a87c36a971749963e9bb96273db1fc6a1b9f9525fd",
       "kind": "integration_or_validation"
     },
     {
@@ -1957,21 +1957,21 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "181fb5a5f5f8b7e93e53d3e53e73106401e58af55f52c7bcd9d8ced7657b464f",
+      "sha256": "4337d69e5c4ad7696e749ffb28b5b798e3143ee5001da9b5c85ab52b7e30de2d",
       "kind": "integration_or_validation"
     },
     {
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "28a3cde5023d9c0bb0b05caf190b9ec9e0d85c6ab9caa9cf1e200f8d214e4d96"
+      "sha256": "34de1ce84bfffb31145792c3b420d2985f9046d386b0db334a13467d29592c70"
     },
     {
       "path": "docs/README.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\README.md",
       "source_sha256": "c255d0727829846b697d281c23948566be4a8e386eec561d401a32fdc01e82e2",
       "kind": "mcp_reference",
-      "sha256": "c255d0727829846b697d281c23948566be4a8e386eec561d401a32fdc01e82e2"
+      "sha256": "01395b318745364f74f5472d733dc407188c4a3180f4066f61942819e777564c"
     },
     {
       "path": "docs/REVIEW.md",
@@ -1984,7 +1984,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\SKILL.md",
       "source_sha256": "c324d0bd3dc0437292603277b7ea9f04592f3208c00fde72a3d790bef445a440",
       "kind": "mcp_reference",
-      "sha256": "c324d0bd3dc0437292603277b7ea9f04592f3208c00fde72a3d790bef445a440"
+      "sha256": "1e3d3273469213d6d6d034df726873a3cd226be474b3f93c933f1dc1ea05774b"
     },
     {
       "path": "docs/authoring/fuse-dctl-authoring.md",
@@ -2144,7 +2144,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\guides\\multicam-setup-guide.md",
       "source_sha256": "32bfb187c5dafdb78faaea304c11725c6836a6709b922c0763ad1b2227fb2917",
       "kind": "mcp_reference",
-      "sha256": "32bfb187c5dafdb78faaea304c11725c6836a6709b922c0763ad1b2227fb2917"
+      "sha256": "8d9545ae19d38bb47b01f2bf9bb1fd873b0ddc9212b42f6f1c319e96df35a984"
     },
     {
       "path": "docs/guides/native-drt-authoring.md",
@@ -2152,6 +2152,12 @@
       "source_sha256": "a0479171b1724c30e96160f19a45f9b39b598d4bcef148418454b435e210665e",
       "kind": "mcp_reference",
       "sha256": "a0479171b1724c30e96160f19a45f9b39b598d4bcef148418454b435e210665e"
+    },
+    {
+      "path": "docs/guides/resolve211-agent-guide.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "775c26a50985733ebeead70ba528a312b21186fb6296da823be5e8a36ecc20d1"
     },
     {
       "path": "docs/guides/video-style-script.md",
@@ -2213,7 +2219,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\media-pool-ingest-kernel.md",
       "source_sha256": "49e2333501af2bec03fa77b0d4366b3c658687e9d4261ee28680e1b8a03f8393",
       "kind": "mcp_reference",
-      "sha256": "49e2333501af2bec03fa77b0d4366b3c658687e9d4261ee28680e1b8a03f8393"
+      "sha256": "4b61c555f46095aa736b4eb28a097f1c1cf744825d56fdaed1dbebf855e01931"
     },
     {
       "path": "docs/kernels/project-lifecycle-kernel.md",
@@ -2248,7 +2254,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\kernels\\timeline-edit-kernel.md",
       "source_sha256": "acf9d4c23bfd75ad337f10286e4b46bbd7d5386a024e2a4b3424d66a55cb32e9",
       "kind": "mcp_reference",
-      "sha256": "acf9d4c23bfd75ad337f10286e4b46bbd7d5386a024e2a4b3424d66a55cb32e9"
+      "sha256": "4508569ba88d1b82e490710ee899394b6b899fe003bae651e5122a4ab2984f1d"
     },
     {
       "path": "docs/notes/codec-plugin-notes.md",
@@ -2262,7 +2268,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\notes\\dctl-notes.md",
       "source_sha256": "a78f2c2d0157e4fcb894641a638ec2f3f170fb78185d674a9e4ef66230e7c94c",
       "kind": "mcp_reference",
-      "sha256": "a78f2c2d0157e4fcb894641a638ec2f3f170fb78185d674a9e4ef66230e7c94c"
+      "sha256": "141581417573c78495c5e0f4185931a6cbea99df3418e6c9c0f2ee0a9c7bff5d"
     },
     {
       "path": "docs/notes/fusion-template-notes.md",
@@ -2465,7 +2471,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\reference\\resolve-211-typed-api.md",
       "source_sha256": "b0c2f93b5ec5baa7257538796a8e5712ecdcbbf4db5a9760f2857ff3e52a6d04",
       "kind": "mcp_reference",
-      "sha256": "b0c2f93b5ec5baa7257538796a8e5712ecdcbbf4db5a9760f2857ff3e52a6d04"
+      "sha256": "1416758f0d0f86baf8d04678975dac3f62fc90f2ba0c998bce753fa11b4b4755"
     },
     {
       "path": "docs/reference/resolve211-alignment.md",
@@ -2923,7 +2929,7 @@
       "path": "docs/superpowers/plans/2026-10-12-armigon-focus-qc-release.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5ce9e57185d2f28e1ef3595ba31a10aba2552fa8328cbbdabd3af2f03f6c1f14"
+      "sha256": "1562752924d95f1b97a5d88d85f11fbadcaee1ed91ae1f79a727d9c694019b02"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-T06-native-focus-independent-qc.json",
@@ -2941,7 +2947,7 @@
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "62b8e62cd562f100f1c5f2fca3075c3a4ac690ccc87f44196664bcd1c7a93104"
+      "sha256": "caedac0453e2373c2a119f9aaf3e9d16f80fa3abc682d62a57235c869b773726"
     },
     {
       "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-plan-audit-candidates.json",
@@ -5175,17 +5181,49 @@
     {
       "path": "scripts/INDEX.md",
       "reason": "Fix misplaced rows above table headers"
+    },
+    {
+      "path": ".agents/skills/resolve-edit/SKILL.md",
+      "reason": "Scope speed API limitations to builds and route Resolve 21.1 native setters"
+    },
+    {
+      "path": ".agents/skills/resolve-mcp/SKILL.md",
+      "reason": "Link verified 21.1 agent guide and attached MCP 4.13.1 catalog"
+    },
+    {
+      "path": ".agents/skills/resolve-media-pool/SKILL.md",
+      "reason": "Distinguish native multicam creation from stacked helper"
+    },
+    {
+      "path": "docs/guides/resolve211-agent-guide.md",
+      "reason": "Reconcile older guidance with vendor 21.1 declarations and evidence limits"
+    },
+    {
+      "path": "docs/reference/resolve-211-typed-api.md",
+      "reason": "Explain equivalent CRLF and LF hashes with Build 17 read-only comparison"
+    },
+    {
+      "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
+      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-12-armigon-focus-qc-release.md",
+      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
+    },
+    {
+      "path": "docs/superpowers/reports/2026-10-08-vtuber-focus-all-timelines-status-th.md",
+      "reason": "Reconcile stale pre-existing manifest checksum with unchanged tracked HEAD content; content not edited in v0.14.0"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 622,
+    "manifest_files": 623,
     "supporting_skills": 30,
     "active_skills": 47
   },
-  "bundle_version": "0.13.0",
+  "bundle_version": "0.14.0",
   "excluded_repository_paths": [
     {
       "path": ".agents/teamwork/**",

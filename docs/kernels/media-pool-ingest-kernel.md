@@ -40,8 +40,9 @@ All actions are under `media_pool(action=...)`.
 ## Multicam Setup Helper
 
 `setup_multicam_timeline` is intentionally documented as a helper tool rather
-than API coverage. It prepares the timeline structure Resolve's multicam UI can
-consume, while leaving native conversion to Resolve.
+than native multicam API coverage. It prepares a stacked timeline for manual
+conversion. On Resolve 21.1+, `media_pool create_multicam_clip` offers a separate
+native route; see [native multicam](../reference/resolve211-multicam.md).
 
 Supported planning inputs:
 
@@ -114,11 +115,12 @@ params={"confirm": true, ...})`.
   remain raw explicit clip actions and are not used by the kernel probe.
 - Resolve does not guarantee a stable writable metadata schema across versions
   or locales.
-- Native multicam clip creation, angle switching, and multicam flattening are
-  not exposed by the public Resolve scripting API. The setup helper prepares a
-  timeline that can be converted to a native multicam clip in Resolve's UI. See
-  the installed DaVinci Resolve 20 Manual, Edit > Chapter 42, "Multicam
-  Editing," for the current UI workflow.
+- Native multicam creation and flattening require Resolve 21.1+ and the matching
+  MCP actions; they are separate from the stacked setup helper. The 21.1 stub
+  also documents SmartSwitch, which does not imply every manual angle operation
+  is scriptable. See [native multicam](../reference/resolve211-multicam.md) for
+  option coverage and contributor validation limits. Older builds can use the
+  stacked helper and user-operated conversion documented in the Resolve 20 manual.
 
 ## Advanced (offline) server — media front-end / ingest verification
 

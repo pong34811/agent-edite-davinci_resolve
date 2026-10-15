@@ -1,11 +1,15 @@
 # Multicam Setup Helper Guide
 
 The multicam setup helper prepares source-safe Resolve timelines for multicam
-workflows. It is a workflow helper, not a native multicam API wrapper: DaVinci
-Resolve's public scripting API does not expose creating native multicam clips,
-switching multicam angles, or flattening multicam edits.
+workflows. It is a stacked-timeline helper, not a native multicam API wrapper.
+On Resolve 21.1+, use `media_pool create_multicam_clip` for native creation and
+`timeline_item flatten_multicam` for flattening; read the
+[21.1 multicam reference](../reference/resolve211-multicam.md) first.
+`TimelineItem.PerformMulticamSmartSwitch` is also documented in the vendor stub;
+check the attached action schema before choosing a route for smart switching.
+These APIs do not establish support for every manual angle-switch operation.
 
-The current Resolve UI workflow is documented in the installed DaVinci Resolve
+The older Resolve UI workflow is documented in the installed DaVinci Resolve
 20 Manual, Edit > Chapter 42, "Multicam Editing." In Resolve, native multicam
 creation and "Convert Compound Clips (Timelines) to Multicam Clips" are Media
 Pool context-menu operations.
@@ -98,7 +102,11 @@ The helper also accepts `start_frame`, `end_frame`, `duration_frames`,
 `record_offset`, `track_index`, and `audio_track_index` per angle for more
 explicit control.
 
-## After The Timeline Is Created
+## Manual Conversion After Using The Stacked Helper
+
+The following steps are for the user when they choose the stacked helper/manual
+conversion workflow. Agents must not automate the GUI. For native creation on
+21.1+, use the MCP action above instead of requiring these UI steps.
 
 1. Open the setup timeline and verify sync by scrubbing visible action, slate,
    clap, or reference audio.
@@ -119,8 +127,10 @@ When asked to prepare multicam:
 2. Prefer a `dry_run` call first.
 3. Explain which sync mode is being used and what evidence supports it.
 4. Create the setup timeline only after the plan is coherent.
-5. Report the resulting timeline name/id and remind the user that native
-   conversion is a Resolve UI step.
+5. Report the resulting timeline name/id. If the stacked helper was used,
+   distinguish its prep timeline from a native multicam clip; explain the manual
+   conversion step only for that workflow. Native creation on 21.1+ does not
+   require conversion of a prep timeline.
 
 For audio-derived alignment, first run a separate source-safe analysis pass
 against source paths with `media_analysis(action="detect_sync_events")`. Use

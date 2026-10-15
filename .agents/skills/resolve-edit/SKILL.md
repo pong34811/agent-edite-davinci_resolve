@@ -83,13 +83,9 @@ symbol with no gate returns `unknown`, which means probe it. Probe with
 
 `True` for every name, real or invented, so it can only say yes.
 
-Distinguish *gated* from *absent*. A gated surface arrives with a newer build;
-
-an absent one never does, and upgrading will not help. **Clip speed / retime is
-
-absent on every build** — see the edit-kernel essentials below before you offer
-
-`set_retime` for it.
+Treat an absent method as a finding on the measured build, not a promise about
+future releases. Resolve 21.1 adds native speed, fades and transition creation;
+see `docs/guides/resolve211-agent-guide.md` for routing and evidence limits.
 
 ## Live edit-kernel essentials
 
@@ -121,19 +117,14 @@ absent on every build** — see the edit-kernel essentials below before you offe
 
   or partial selection is indistinguishable from a small one.
 
-- **There is no clip-speed API at any version.** `set_retime` sets retime
-
-  *quality* only (`RetimeProcess`, `MotionEstimation`) and returns `True` for
-
-  doing so, which reads as if the retime succeeded. Setting a % speed, reversing
-
-  a clip, and speed ramps are all unreachable — `SetProperty('Speed'|'PlaybackSpeed'|
-
-  'RetimeSpeed'|'ClipSpeed')` returns `False` and the matching `GetProperty`
-
-  returns `None` on every build measured. Say so and route the user to the UI;
-
-  do not offer `set_retime` as if it answered the question (issue #132).
+- **Speed and retime quality are separate.** On Resolve 21.1+, inspect
+  `timeline_item set_speed` / native `TimelineItem.SetSpeed`; fades use
+  `set_fades` / `SetFades`. Read `docs/reference/resolve211-speed-fades.md`
+  before writing: ripple, reverse, freeze, pitch and keyframe behavior have
+  narrower evidence than the documented options. Legacy `set_retime` controls
+  quality (`RetimeProcess`, `MotionEstimation`), not percentage speed. On older
+  builds check the version gate instead of guessing `SetProperty` speed keys.
+  Native constant-speed support does not establish arbitrary speed-ramp support.
 
 - **Routing to the UI is where issue #132 actually went wrong — and it was not
 
