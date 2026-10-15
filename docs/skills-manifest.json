@@ -5143,6 +5143,10 @@
     {
       "path": "CHANGELOG.md",
       "reason": "MCP update check, channel profiles"
+    },
+    {
+      "path": "work/README.md",
+      "reason": "reference deleted"
     }
   ],
   "counts": {
