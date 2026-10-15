@@ -1945,7 +1945,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "cef751b78fda1f616501c9b2a15ebbd8bdc3c42d433355b71157e4ada5181908",
+      "sha256": "6a8c79f5d265ce9288a79f3bce1094946b3a11ecd40a3915212913127e87d656",
       "kind": "integration_or_validation"
     },
     {
@@ -1964,7 +1964,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "923fc37ec44376694e0cf4b5c5162a2c5b2da1be5a9cb378c7b15357d321d526"
+      "sha256": "28a3cde5023d9c0bb0b05caf190b9ec9e0d85c6ab9caa9cf1e200f8d214e4d96"
     },
     {
       "path": "docs/README.md",
@@ -2052,7 +2052,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c0caea10eb54ca3d0556819ec3b24c733e847508cdb84d89ad7eee705cb3e95f"
+      "sha256": "dd5e6149af0ffbefc9b754720d8fa78f9ebf8b3a472b7bfca620ad3f6dc21f81"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -5147,6 +5147,22 @@
     {
       "path": "work/README.md",
       "reason": "reference deleted"
+    },
+    {
+      "path": "docs/channels/aomimama.md",
+      "reason": "Debut-stream learnings"
+    },
+    {
+      "path": "docs/OPERATING-NOTES.md",
+      "reason": "Font audit and Text+ rows"
+    },
+    {
+      "path": "work/README.md",
+      "reason": "Archive deleted"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "reason": "Archive deleted"
     }
   ],
   "counts": {

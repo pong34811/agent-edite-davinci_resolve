@@ -9,7 +9,7 @@
 
 ### เปลี่ยน
 - `.mcp.json` ชี้ MCP ที่ติดตั้งจริงบน Desktop
-- ย้ายหลักฐานภาพหนักของ Aomi-mama 881MB จาก `reference/` ไปที่เก็บถาวรนอกโปรเจค
+- ลบ `reference/` และหลักฐานภาพหนักของ Aomi-mama 881MB หลังสกัดบทเรียนลง `docs/channels/aomimama.md` และ `docs/OPERATING-NOTES.md` (กฎ UTF-16 font audit, ห้ามอ่าน Text+ สด)
 
 ### เพิ่ม
 - `CLAUDE.md` ชี้ไป `AGENTS.md` เพื่อให้ Claude Code, Codex และ Hermes ใช้กฎชุดเดียวกัน

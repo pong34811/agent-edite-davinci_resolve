@@ -41,6 +41,8 @@ When you learn a new rule, add a row here (see `.agents/skills/project-learning/
 | Whisper model | `large-v3` on the raw audio; distrust `large-v3-turbo` on game audio | Turbo invented ~20 s of text; check `avg_logprob` and re-run the window alone. |
 | GIF hold | Validate every GIF (Resolve 25 fps, >= 1.5 s) before mutating the timeline | A 1-second GIF aborted a run after BGM/SFX were already placed. |
 | Zoom framing | Corner avatar: no black band, slight off-centre; keep the hair tip inside | Centre-exact framing shows a band; the first pass clipped the ahoge. |
+| Font audit | Scan subtitle cue blobs as UTF-16 as well as ASCII | A track marked Mitr Bold still carried hidden Open Sans metadata in some cues; an ASCII-only audit missed it. |
+| Fusion Text+ reads | Read exported `.drp`/DRT, not live Fusion tools, on Aomi-mama-class projects | A live TextPlus read probe hung Resolve (Aomi debut project, 2026-09-30). |
 | Archive deletion | Export one fresh verified `.drp`, report the exact files and bytes removed, and say there is no longer a rollback point | Deleting archives on request is fine; deleting them silently is not. |
 | Enrichment re-run | After an aborted `apply_enrichment_d22` reset the Media Pool folder and pre-validate GIFs with PIL (>= 1.5 s after conform) | The script imports into its bin and leaves the current folder there before it checks GIF length. |
 | Drive manifests | Enumerate `G:` asset roots with `os.scandir` into a manifest | `ls` on Drive stalled over 2 minutes. |
