@@ -40,6 +40,18 @@ def test_install_dir_comes_from_mcp_json(tmp_path):
     assert cmu.install_dir(cfg) == tmp_path / "mcp"
 
 
+def test_missing_configured_install_reports_blocked_without_traceback(tmp_path, capsys):
+    cfg = tmp_path / ".mcp.json"
+    server = tmp_path / "missing-mcp" / "src" / "server.py"
+    cfg.write_text(json.dumps({"mcpServers": {"davinci-resolve": {
+        "command": "x", "args": [str(server)]}}}), encoding="utf-8")
+
+    assert cmu.main(["--mcp-json", str(cfg)]) == 1
+    output = capsys.readouterr().out
+    assert output.startswith("BLOCKED: configured MCP install is missing")
+    assert str(server) in output
+
+
 def test_decide_up_to_date_update_and_dirty():
     assert cmu.decide("4.13.1", "v4.13.1", dirty=False).action == "up-to-date"
     assert cmu.decide("4.10.3", "v4.13.1", dirty=False).action == "update"

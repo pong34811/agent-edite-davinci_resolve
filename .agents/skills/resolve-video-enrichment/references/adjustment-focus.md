@@ -74,6 +74,7 @@ the hair tip, not just the face. Pixel-check stills for dark edge bands.
 
 When timeline-item insertion via API is constrained or prone to track-offset bugs:
 - **`scripts/drt_focus_track.py`**: Export timeline as `.drt`, inject a dedicated `VTuber Zoom` Adjustment Clip track with precise Fusion comps, and import back via `mediaPool.ImportTimelineFromFile()`. This preserves all existing tracks, subtitles, audio routings, and composite layers with 100% fidelity.
+- **`scripts/drt_rebuild_focus_track.py`**: For N zoom ranges in one import, or to rebuild a track after the user dragged a clip head earlier (that clip's Fusion comp keeps its old length and the added head will not render), replace every clip on the named track with fresh template clips at the wanted ranges (`--create` adds the track first). After import: rename the timeline by unique ID (the import names it after the file), set the Fusion Transform, read it back, and probe-render each range.
 - **`scripts/focus_frame_qc.py`**: Automates multi-frame visual and geometry verification (inspecting center offsets, headroom ~5–8%, avatar boundaries, and ensuring zero cropping of head/hands).
 - **`scripts/deploy_climbing_focus.py`**: Deploys verified focus timelines directly into the main project.
 - **`scripts/cleanup_and_rename_timelines.py`**: Deletes temporary backup timelines and applies standard clean Thai titles.

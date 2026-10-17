@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.16.0
+
+### Added
+- เพิ่ม `scripts/drt_rebuild_focus_track.py` แทนที่ทุก clip บน Adjustment Clip track ที่ระบุชื่อใน DRT ด้วย clip ใหม่จาก template ตามช่วงที่กำหนด (`--create` สร้าง track ก่อน) ตรวจช่วงซ้อน, DbId ซ้ำ และเทียบ track อื่นแบบ byte ต่อ byte (ยกมาจากขั้น `rezoom` ของงาน Bunny Girl)
+- เพิ่ม `scripts/rebuild_trimmed_zoom_clip.py` สร้าง zoom track ใหม่บน timeline ที่เปิดอยู่หลังตัดหัว timeline (คง Fusion Transform)
+- เพิ่มชุดทดสอบ 12 รายการใน `tests/test_drt_rebuild_focus_track.py`
+
+### Fixed
+- `scripts/refresh_skill_manifest.py` และ `scripts/verify_skill_bundle.py` ไม่นับไฟล์ที่ gitignore (เช่น `scripts/scratch/*`) เป็นไฟล์ใน bundle อีกต่อไป และลบ skill declaration ที่ไม่มีโฟลเดอร์แล้ว (ก่อนหน้านี้ manifest พังทุกครั้งที่ไฟล์ scratch เปลี่ยน และ checkout ใหม่จะ verify ไม่ผ่าน); เพิ่ม `tests/test_bundle_git_ignored.py`
+
+### Updated
+- บทเรียนจากงาน "Bunny Girl คืออะไร" (Katy404, 2026-10-17) ใน `docs/OPERATING-NOTES.md`: ชื่อ timeline หลัง import DRT, endFrame ของ `AppendToTimeline` เป็น exclusive, วิธีต่อ BGM ให้วนที่ช่วงเงียบ, Adjustment Clip ที่ถูกยืดหัวแล้ว render ไม่ได้, InsertGenerator บน 21.1.0.17 และ SFX ทับกันบน track เดียว
+- `house-style`: กราฟิก keyword ใน explainer ต้องใหญ่และเปลี่ยนตามคำพูด (ผู้ใช้เลือก Pop Kinetic)
+- โปรไฟล์ `docs/channels/katy404.md`: สถานะ day 25 และ Bunny Girl (timeline, ค่า SFX/BGM ที่ผู้ใช้ยืนยัน, backup)
+- `resolve-edit` และ `adjustment-focus.md` ชี้ไปที่เครื่องมือใหม่; ลงทะเบียนใน `scripts/INDEX.md`
+- `scripts/check_mcp_update.py` รายงาน `BLOCKED` เมื่อ path ใน `.mcp.json` ไม่มี MCP อยู่จริง; `.mcp.json` ชี้ไปที่ `D:\davinci-resolve-mcp`
+
+### Verified
+- `python -m pytest -q` ผ่าน 227 passed, 22 skipped, 10 subtests; `python scripts/verify_skill_bundle.py` ผ่าน (errors ว่าง)
+- เครื่องมือใหม่ทดสอบแบบ offline กับ DRT จำลองเท่านั้น ยังไม่ได้รันกับ Resolve จริง (logic เดียวกับขั้น `rezoom` ที่ render ผ่านในงาน Bunny Girl)
+
+### Scope
+- skill HyperFrames ที่ติดตั้งจาก upstream (`general-video`, `hyperframes*`, `media-use`, `skills-lock.json`) ไม่รวมใน release นี้ เพราะมี local reference ที่ verifier ยังหาไม่เจอ 18 รายการ
+
 ## v0.15.0
 
 ### Added

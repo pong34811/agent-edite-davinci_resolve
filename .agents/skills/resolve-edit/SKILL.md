@@ -54,7 +54,7 @@ re-derive it here.
 ### Subtitle Track Editing & Conform QC (v4.10.3)
 
 - **Subtitle Database & Preset Engine**: The upstream server's subtitle database engine (subtitle-db.mjs) and subtitle track editing guide provide offline caption parsing and styling. Subtitle format objects are governed by format modules (subtitle-captions.js, subtitle-preset.js, subtitle-style.js). Live subtitle reads are guarded by property checks to ensure subtitle property setters cannot corrupt audio or video tracks.
-- **DRT Focus Track Injection**: When live generator insertion risks track-targeting or ripple bugs on complex timelines, export the timeline to DRT (`Timeline.Export(path, resolve.EXPORT_DRT, resolve.EXPORT_NONE)`), parse and inject the dedicated track via `scripts/drt_focus_track.py`, and import back into the Media Pool (`MediaPool.ImportTimelineFromFile(path)`).
+- **DRT Focus Track Injection**: When live generator insertion risks track-targeting or ripple bugs on complex timelines, export the timeline to DRT (`Timeline.Export(path, resolve.EXPORT_DRT, resolve.EXPORT_NONE)`), parse and inject the dedicated track via `scripts/drt_focus_track.py`, and import back into the Media Pool (`MediaPool.ImportTimelineFromFile(path)`). For many ranges on one track, or to rebuild clips whose heads were extended, use `scripts/drt_rebuild_focus_track.py`.
 - **Conform QC Suite**: The upstream server's conform-qc vendor suite provides synthetic edit fixtures and automated golden comparison for multi-track timeline integrity.
 
 

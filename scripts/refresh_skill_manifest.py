@@ -12,6 +12,9 @@ import subprocess
 import sys
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from verify_skill_bundle import git_ignored  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'docs/skills-manifest.json'
 DIRS = ('.agents', 'docs', 'resolve-advanced', 'scripts', 'tests')
@@ -42,7 +45,8 @@ def kind_for(relative):
 
 def sync_skill_declarations(manifest):
     """Keep the curated core and supporting active skills distinct in the manifest."""
-    existing = {record['path']: record for record in manifest.get('skills', [])}
+    existing = {record['path']: record for record in manifest.get('skills', [])
+                if record['tier'] not in ('editing', 'supporting') or (ROOT / record['path']).is_file()}
     for skill_file in sorted((ROOT / '.agents/skills').glob('*/SKILL.md')):
         relative = skill_file.relative_to(ROOT).as_posix()
         if relative in existing:
@@ -99,24 +103,30 @@ def main():
         if not (ROOT / relative).is_file():
             del records[relative]
             changed.append({'action': 'removed', 'path': relative})
-    for directory in DIRS:
-        for path in sorted((ROOT / directory).rglob('*')):
-            if not path.is_file() or '__pycache__' in path.parts:
-                continue
-            relative = path.relative_to(ROOT).as_posix()
-            if relative in ('docs/skills-manifest.json', 'docs/validation-report.json'):
-                continue
-            if is_excluded(relative):
-                continue
-            record = records.get(relative)
-            digest = sha(path)
-            if record is None:
-                records[relative] = {'path': relative, 'source': 'project-authored',
-                                     'kind': kind_for(relative), 'sha256': digest}
-                changed.append({'action': 'added', 'path': relative})
-            elif record['sha256'] != digest:
-                record['sha256'] = digest
-                changed.append({'action': 'rechecksummed', 'path': relative})
+    candidates = [path for directory in DIRS for path in sorted((ROOT / directory).rglob('*'))
+                  if path.is_file() and '__pycache__' not in path.parts]
+    ignored = git_ignored(ROOT, [path.relative_to(ROOT).as_posix() for path in candidates])
+    for relative in sorted(records):
+        if relative in ignored:
+            del records[relative]
+            changed.append({'action': 'unlisted_gitignored', 'path': relative})
+    for path in candidates:
+        relative = path.relative_to(ROOT).as_posix()
+        if relative in ignored:
+            continue
+        if relative in ('docs/skills-manifest.json', 'docs/validation-report.json'):
+            continue
+        if is_excluded(relative):
+            continue
+        record = records.get(relative)
+        digest = sha(path)
+        if record is None:
+            records[relative] = {'path': relative, 'source': 'project-authored',
+                                 'kind': kind_for(relative), 'sha256': digest}
+            changed.append({'action': 'added', 'path': relative})
+        elif record['sha256'] != digest:
+            record['sha256'] = digest
+            changed.append({'action': 'rechecksummed', 'path': relative})
     for relative in TOP:
         path = ROOT / relative
         if not path.is_file():

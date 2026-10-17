@@ -8,6 +8,7 @@ import fnmatch
 import hashlib
 import json
 import re
+import subprocess
 import sys
 import yaml
 
@@ -46,6 +47,24 @@ def checksum_matches(path, expected):
     crlf = lf.replace(bytes([10]), bytes([13, 10]))
     return expected in {hashlib.sha256(lf).hexdigest(),
                         hashlib.sha256(crlf).hexdigest()}
+
+def git_ignored(root, relatives):
+    """Return the repo-relative paths that .gitignore excludes; tracked files never count as ignored.
+
+    Outside a git checkout (an exported bundle) nothing is treated as ignored.
+    """
+    if not relatives:
+        return set()
+    # -z: NUL-separated, so Windows newlines and Thai paths come back unquoted.
+    try:
+        result = subprocess.run(['git', 'check-ignore', '-z', '--stdin'], cwd=root,
+                                capture_output=True, input='\0'.join(relatives).encode('utf-8'))
+    except OSError:
+        return set()
+    if result.returncode not in (0, 1):
+        return set()
+    return {item for item in result.stdout.decode('utf-8').split('\0') if item}
+
 
 def validate():
     manifest = json.loads((ROOT / 'docs/skills-manifest.json').read_text(encoding='utf-8'))
@@ -157,19 +176,19 @@ def validate():
 
     # The manifest is not its own checksum authority; reports are generated.
     excluded = {'docs/skills-manifest.json', 'docs/validation-report.json'}
-    for directory in ['.agents', 'docs', 'resolve-advanced', 'scripts', 'tests']:
-        for path in (ROOT / directory).rglob('*'):
-            if not path.is_file() or '__pycache__' in path.parts:
-                continue
-            relative = path.relative_to(ROOT).as_posix()
-            if relative in excluded:
-                continue
-            exclusion = exclusion_for(relative)
-            if exclusion is not None:
-                if relative in listed_files:
-                    errors.append('Manifest file also excluded from bundle: ' + relative)
-            elif relative not in listed_files:
-                errors.append('Unlisted bundle file: ' + relative)
+    walked = [path for directory in ['.agents', 'docs', 'resolve-advanced', 'scripts', 'tests']
+              for path in (ROOT / directory).rglob('*') if path.is_file() and '__pycache__' not in path.parts]
+    excluded |= git_ignored(ROOT, [path.relative_to(ROOT).as_posix() for path in walked])
+    for path in walked:
+        relative = path.relative_to(ROOT).as_posix()
+        if relative in excluded:
+            continue
+        exclusion = exclusion_for(relative)
+        if exclusion is not None:
+            if relative in listed_files:
+                errors.append('Manifest file also excluded from bundle: ' + relative)
+        elif relative not in listed_files:
+            errors.append('Unlisted bundle file: ' + relative)
     for relative in ['.gitignore', 'AGENTS.md', 'README.md']:
         if relative not in listed_files:
             errors.append('Unlisted bundle file: ' + relative)

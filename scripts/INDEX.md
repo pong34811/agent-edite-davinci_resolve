@@ -46,6 +46,8 @@
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
 | `drt_focus_track.py` | ฉีด Adjustment Clip track ลง DRT (วิธีที่ปลอดภัยกว่า InsertGenerator) | ใช้ซ้ำ |
+| `drt_rebuild_focus_track.py` | แทนที่ทุก clip บน Adjustment Clip track ที่ระบุชื่อใน DRT ด้วย clip ใหม่ตามช่วงที่กำหนด (`--create` สร้าง track ก่อน); ใช้ใส่หลายช่วงในครั้งเดียว หรือซ่อม clip ที่ถูกยืดหัวแล้ว render ไม่ได้ | ใช้ซ้ำ |
+| `rebuild_trimmed_zoom_clip.py` | สร้าง Adjustment Clip track ใหม่บน timeline ที่เปิดอยู่ด้วย InsertGenerator (ลบทั้ง track แล้วใส่ตามลำดับเวลา, คง Transform) หลังตัดหัว timeline; บน 21.1.0.17 ให้ใช้ `drt_rebuild_focus_track.py` แทน (ดู OPERATING-NOTES) | ใช้ซ้ำ |
 | `apply_vtuber_zoom.py` | เพิ่ม Zoom-Focus track บนสำเนา timeline (`--in-place` เมื่อผู้ใช้สั่งเท่านั้น) | ใช้ซ้ำ |
 | `retune_vtuber_zoom.py` | ปรับ Fusion Transform ของ Adjustment Clip ทุกตัวบน focus track | ใช้ซ้ำ |
 | `zoom_variant_stills.py` | export still จริงต้น/กลาง/ท้ายช่วงซูมสำหรับ QC | ใช้ซ้ำ |

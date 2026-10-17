@@ -85,6 +85,11 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     directory = install_dir(args.mcp_json)
+    version_file = directory / "src" / "server.py"
+    if not version_file.is_file():
+        print(f"BLOCKED: configured MCP install is missing {version_file} (check .mcp.json)")
+        return 1
+
     installed = installed_version(directory)
     remote = subprocess.run(["git", "ls-remote", "--tags", UPSTREAM], capture_output=True,
                             text=True, timeout=60)

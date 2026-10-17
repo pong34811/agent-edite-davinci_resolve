@@ -126,7 +126,9 @@ timelines you created or that the user names; a backup `.drp` comes first.
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->
 
-_Not yet captured._
+## Explainer graphics size
+
+For a talking-host explainer, make keyword graphics large (a slam word at least a third of the frame width) and change them on the spoken cue. Do not hold one small corner card for a whole chapter. The user rejected nine small persistent cards as "too small and boring" and chose the Pop Kinetic style instead (Bunny Girl, 2026-10-17). The trap is a tidy card template that never moves.
 
 ## VTuber Zoom Focus
 
