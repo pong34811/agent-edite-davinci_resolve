@@ -128,7 +128,7 @@ def main():
                        "mediaType": 2, "trackIndex": a_bgm, "recordFrame": 0}, "bgm")
         placed["bgm"] = item
         for s in plan["sfx"]:
-            secs = min(dur_of(s["path"]), 3.0)
+            secs = min(dur_of(s["path"]), 3.0, s.get("max_s", 3.0))  # max_s keeps neighbouring SFX from overlapping on A2
             end = int(secs * FPS) - 1
             placed["sfx"].append((s, append({"mediaPoolItem": pool[s["path"]], "startFrame": 0, "endFrame": end,
                                              "mediaType": 2, "trackIndex": a_sfx, "recordFrame": s["frame"]}, s["path"])))

@@ -9,6 +9,15 @@
   },
   "skills": [
     {
+      "name": "agent-edite-skills-catalog",
+      "tier": "supporting",
+      "path": ".agents/skills/agent-edite-skills-catalog/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "agent-skill-repo-release",
       "tier": "supporting",
       "path": ".agents/skills/agent-skill-repo-release/SKILL.md",
@@ -190,6 +199,15 @@
       "name": "resolve-batch-export",
       "tier": "supporting",
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "resolve-clip-editing",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-clip-editing/SKILL.md",
       "source": "profile skill sync (commit 10370a1)",
       "history_evidence": [],
       "history_loads": 0,
@@ -1073,6 +1091,66 @@
       "source_sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2",
       "kind": "review_role",
       "sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "c5fa5140a688fb3fb71bf15430341a6808b2683c2a55eb0076461418cee42a9c"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/domain-resolve-skills.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "4e5d524517ed99cf223d3a22a30db6ac296b7384945b5338fbd628f75326c9b6"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/governance-and-conventions.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "d21f8401eeffe2707342ae2547880f6681c9aa429690f22ea58f26b244b630c4"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/resolve-domain-depth.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "33eabc6212239f77b2ef9d1ef2a4a1410d11f76518e5bd9f23f1c4c0cb3ed03d"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/skill-authoring-rules.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "bca29ec6f0364654166d0561c6ff3d7e0ddd5e1ecb63ddc4d9d32e9c5f0f8611"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/superpowers-skills.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "a632bea0d89ef8789889b34e87c824fd0c0c64980284d43044545eed71a61c6c"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/task-recipe-skills.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "b0f8358c189a354a49fc2d8936313ea8749fa931c55fd91df287217a13550c5d"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/thai-vtuber-skills.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "924ba60e407c74da61fd5352ef7c026e439f8f251ae67fcfef414de5bf8dda75"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/references/utility-tool-skills.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "6cce89b90d529079ca0052937467481404ae4467482ff005f090f41bf9e84915"
+    },
+    {
+      "path": ".agents/skills/agent-edite-skills-catalog/scripts/inventory_skills.py",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "3cd89fe43c9cffe7b3ecf1ffb0d98403ed72692586dd3e4996fd96ed5ad7eb09"
     },
     {
       "path": ".agents/skills/agent-skill-repo-release/SKILL.md",
@@ -3440,6 +3518,48 @@
       "source": "project-authored",
       "kind": "editing_skill_reference",
       "sha256": "3e947c64cd7bb899bbe1d5c431a3a211ce8ff5bf5f4394dd19d864254e51fa91"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "5c6c62e395b4b84f70266f2df48b2a0f9c8ff5386b043b1558cd5f71e7c5d4d7"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/assembly-and-tightening.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "96a00f5e9408bcd01c372de8865d833c8e2317a28bf40cbcec5c1e9cb87634d1"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/editorial-craft.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "6a54097fb3f9536d3c7dc4f966af3ef034bfadb1dcf34df3feb2c6978833ef56"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/interchange-and-drt.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "5ad98fdbc41430c03b2ae98f19b2200825ead5a2c8f3c308db4c2e37ddd43efa"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/live-cut-operations.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "fc5a5fe87997c5d0566309234e976307cd1e93d98cd04fcb807fc87a298b2635"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/resolve-timeline-model.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "516954cfbd9dbd34f6d12f4b3f33471c60f0c30ed7024be3a17f9310a87f3486"
+    },
+    {
+      "path": ".agents/skills/resolve-clip-editing/references/verification-and-safety.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "a81c8a140b2db117e30d33bde3d72531a452ff49515c78ba9aa28e239792b187"
     },
     {
       "path": ".agents/skills/resolve-color/SKILL.md",
@@ -6396,7 +6516,7 @@
       "path": "scripts/apply_enrichment_d22.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2a1cdbaf3efc2ecaf503838f22031c3be076204f8c76dd213993585c003dece0"
+      "sha256": "2e666d6bd72ee03901d45412497aac89f49369d0175e28d6c6118723e8a5f2cc"
     },
     {
       "path": "scripts/apply_group_fix.py",
@@ -6599,6 +6719,12 @@
       "sha256": "721dc0472484964ad8059a33554267bfe2afd7bccdc875b856feefddc25989cd"
     },
     {
+      "path": "scripts/drt_focus_multi.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "22bc6969627dd68381caca5dd849553cf686c896cf7eee93ab6e9f6d0e5bfb28"
+    },
+    {
       "path": "scripts/drt_focus_track.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -6701,6 +6827,12 @@
       "sha256": "2984b4f5358d1c861cfda8806753ecbd1dc4c07ba3459ab9b04d5304c1ddedfa"
     },
     {
+      "path": "scripts/import_focus_drt.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "3708a60256b31e98d14aed572e2b9285039dd3caaa8f7225e598318413f06ca4"
+    },
+    {
       "path": "scripts/inspect_t3.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -6717,6 +6849,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "e88b09a55ca190df58e8a43bfd928ec7cbe98f270cf50ff2cd13b370c1247a1a"
+    },
+    {
+      "path": "scripts/katy_9x16.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a2f3234fa6c63303c2daff9b3211bd78cd83b6fc75172c2aa8e5f85a2593d75c"
     },
     {
       "path": "scripts/load_subtitle_preset.py",
@@ -6995,6 +7133,12 @@
       "sha256": "94f5b73d1c8ec50fcd71b0b987332518078226793b2ee7635ea491b8dc7b701c"
     },
     {
+      "path": "scripts/render_subtitle_stills.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f9b3e9d18a1109a3b5c7e8ab42727e913a798bd70b399264e715a185e208fa88"
+    },
+    {
       "path": "scripts/resolve_common.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7082,7 +7226,7 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e6ccdef33ddf4c1bfe0bbf26edbbe620bef42aa02f2c1eaffa3b62ec97b7f34d"
+      "sha256": "55d0990dd01e8f9858136c46aaa823420737a45020f417de746defed0c4035b4"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -7698,15 +7842,23 @@
     {
       "path": "docs/OPERATING-NOTES.md",
       "reason": "Record the stale updater path trap."
+    },
+    {
+      "path": "scripts/apply_enrichment_d22.py",
+      "reason": "max_s caps SFX length so neighbouring SFX do not overlap on A2"
+    },
+    {
+      "path": "scripts/verify_skill_bundle.py",
+      "reason": "treat .mjs as text so CRLF checkouts pass checksum verification"
     }
   ],
   "counts": {
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1021,
-    "supporting_skills": 39,
-    "active_skills": 56
+    "manifest_files": 1042,
+    "supporting_skills": 41,
+    "active_skills": 58
   },
   "bundle_version": "0.16.0",
   "excluded_repository_paths": [
