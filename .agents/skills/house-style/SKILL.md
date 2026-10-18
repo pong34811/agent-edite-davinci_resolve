@@ -129,6 +129,7 @@ timelines you created or that the user names; a backup `.drp` comes first.
 ## Explainer graphics size
 
 For a talking-host explainer, make keyword graphics large (a slam word at least a third of the frame width) and change them on the spoken cue. Do not hold one small corner card for a whole chapter. The user rejected nine small persistent cards as "too small and boring" and chose the Pop Kinetic style instead (Bunny Girl, 2026-10-17). The trap is a tidy card template that never moves.
+When dialogue subtitles share the frame, a keyword must leave a visible gap to the subtitle; cap its width (640 px on a 1920 frame with centred `Mitr Font` subtitles) instead of letting the two touch (Bunny Girl, 2026-10-18).
 
 ## VTuber Zoom Focus
 
