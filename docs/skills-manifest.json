@@ -4493,7 +4493,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "91480d7b21839ef05fbafd61afd21aced5906e6b5eea7e592dea8a4ea25ce68c"
+      "sha256": "5c26a6622dc57c67fa60ab5ee7d77df3add91358f45163bd06415d644b6a6fad"
     },
     {
       "path": "docs/README.md",
@@ -4599,7 +4599,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "291cc64b674419b1aff41271717c8db8df7c6a9ff7e4c866c409caafd5c2be4d"
+      "sha256": "6d1992146e056958035fb82fe22e662fe23187bd4a208bf99e16670b450240b1"
     },
     {
       "path": "docs/channels/laffy.md",
