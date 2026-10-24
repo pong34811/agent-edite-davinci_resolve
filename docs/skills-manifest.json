@@ -1096,61 +1096,61 @@
       "path": ".agents/skills/agent-edite-skills-catalog/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "c5fa5140a688fb3fb71bf15430341a6808b2683c2a55eb0076461418cee42a9c"
+      "sha256": "e450494729325bb38296da6cac2551f75fb685c079c3aebdc15959d4b7c1bff0"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/domain-resolve-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4e5d524517ed99cf223d3a22a30db6ac296b7384945b5338fbd628f75326c9b6"
+      "sha256": "0a12f80dbd77cc70e84f3eaa6f1d415f16954bd5fb37f374c305ee3a86b934ea"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/governance-and-conventions.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d21f8401eeffe2707342ae2547880f6681c9aa429690f22ea58f26b244b630c4"
+      "sha256": "44b0301130ed3d0ca1fbf8f15f4f5f7c1892f7efeae6f17430e135e6524e1b01"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/resolve-domain-depth.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "33eabc6212239f77b2ef9d1ef2a4a1410d11f76518e5bd9f23f1c4c0cb3ed03d"
+      "sha256": "0e22a3c930967e7ad32c43f0e2134b3bfcfbd0d42bfa510ffb12cbb0d7bd20f0"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/skill-authoring-rules.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bca29ec6f0364654166d0561c6ff3d7e0ddd5e1ecb63ddc4d9d32e9c5f0f8611"
+      "sha256": "7fe8565a1712f948061cc40fbca5123e924513bac5478f2b661ff55226f7d291"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/superpowers-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a632bea0d89ef8789889b34e87c824fd0c0c64980284d43044545eed71a61c6c"
+      "sha256": "f43790b1151bdf8e8f268421a278c7156a968de1bd4c204d654033e751876849"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/task-recipe-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b0f8358c189a354a49fc2d8936313ea8749fa931c55fd91df287217a13550c5d"
+      "sha256": "de9fab5ec1be90f6b1ba71a9ca31316cece3b275a2f1eabe7392c5eea90a5635"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/thai-vtuber-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "924ba60e407c74da61fd5352ef7c026e439f8f251ae67fcfef414de5bf8dda75"
+      "sha256": "38c9fa58a08d8407531492e0158b268e09f858161840f3d87ded62844370141e"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/utility-tool-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6cce89b90d529079ca0052937467481404ae4467482ff005f090f41bf9e84915"
+      "sha256": "546630a192486f069c5bc83176eb64009bdd61b9787af3f94828e8be3c841c9b"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/scripts/inventory_skills.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3cd89fe43c9cffe7b3ecf1ffb0d98403ed72692586dd3e4996fd96ed5ad7eb09"
+      "sha256": "e339bbeb1e731f8b7d85221c7707813803de9256ff81b52859ad7682a0a69788"
     },
     {
       "path": ".agents/skills/agent-skill-repo-release/SKILL.md",
@@ -1162,37 +1162,37 @@
       "path": ".agents/skills/general-video/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "db87c1909eff755d810f83de6064bfb7c52a76e76ba388d4b00c98893dddcb1f"
+      "sha256": "016dbe735421476e6536187865b12d0ba0c6d20dbddd9629736482d2b581b08f"
     },
     {
       "path": ".agents/skills/general-video/scripts/frame-packets.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "998ad1593e759c235537feca8eb7a116f930bd2135fdd0420d3a9a4ba100d65b"
+      "sha256": "da41d61ee346de95a6ecf808164ce47e7ec24f60f0cf58f5e2cc30bd597fb35a"
     },
     {
       "path": ".agents/skills/general-video/scripts/frame-packets.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "05b2bbe7cd60f68b40b65e7cf5a6e7ef377d5d899dc85848ab8a6db6886bd5eb"
+      "sha256": "43b83daaa7cb9fb45d921636c266190f253cb26a61b735fbb804f4518d851d76"
     },
     {
       "path": ".agents/skills/general-video/scripts/lib/frame-packets-core.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fd9062f3c955f89e5520fec3f88d25f92f44e91cf42988e387ae993175999c87"
+      "sha256": "cf1f9f7a0be796de2992d02455d37bb7e90b00b885e13ed1a5aaaba5d9e7213c"
     },
     {
       "path": ".agents/skills/general-video/scripts/lib/main-module.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "61811e09110856e1439c29875e4a4ad7701ae45d4045f9d1dcb6a7929698e4c0"
+      "sha256": "2880d5aef607f109b8849beaf7ed7b82c4e791ed9eb64216b1cd67c0a97fc746"
     },
     {
       "path": ".agents/skills/general-video/sub-agents/frame-worker.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "447395b986126769a0d169c468f3f24b324781761130bc5155802656d1f22999"
+      "sha256": "747c350278e1dd5afdc63379b62b6516129afbbee2cf6ef903e19d39ec53b0b8"
     },
     {
       "path": ".agents/skills/gif-search/SKILL.md",
@@ -1212,1027 +1212,1027 @@
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "b35f1f8eff68e9ff480a5d5d343a1bf5a40ebb7d0d9be20b0b980cfdb36047f3"
+      "sha256": "c4c5826724b790aaa2959ea8941ce9b0ee8db253849d8d728c3c32496794ea62"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/animate-text.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0c4aab6758595a1435ef0a14de5fa2badb7daf46ba92404580f6bb9b6c6e4dc5"
+      "sha256": "97fe4d6d18205ae003f45961e54d938dd8568d9d63f2ed9e19d735914467ba51"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/animejs.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "25f8a9061b72b1f8a85e128db1257c149191dc52be2f788729dbac41010baeea"
+      "sha256": "befc65dd1f44cd4c1fb10246c2130b0f37f53bf0018943e6edd3d695259d48a4"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/css-animations.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "52a1a7fd8702cf8721bbe63e324f0492f3966c5b092925f5135839132a999012"
+      "sha256": "48f7cd6bace78c2d5f007c631087d9fc1eff187dd3064ed66dc60588d144c7d6"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/gsap-easing-and-stagger.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "825e8d2524ad166d8c29d59d72caa9e81c3a0368bcfbe059c86371a64d3494d0"
+      "sha256": "fd8285261906868c6fdfff168581e92302f2637e5d7c907c93d100be794d4511"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/gsap-timeline-and-labels.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "41263d8b42369a9799d7476e384acb59cce563672994c9f659eb3599e5042578"
+      "sha256": "b1c391ea866c1c60cc6c036704164cc037f057dfbfa35e41801f0a83ff1ec9ac"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/gsap-transforms-and-perf.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a73c1ea0af7dd782936dd5726e0ea6c1cdc98126c89c6aec4370624f4622ee67"
+      "sha256": "8063a3aa129b9db04ff8eb5d49b4fe9b34d442b257b2b40030f716eefd179481"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/gsap.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "53854c37fa8be925c005a6a4e21a1991db850089042d81cd4c7ebf5def44b028"
+      "sha256": "72689df8e8a2d9b91a1a5874671568d103a3661a06626d04400b109266004685"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/html-in-canvas-patterns.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5e7c801c65d8f34f38c535bc9ed6808ebb6f475f166347bf71a453eb87614e9a"
+      "sha256": "42c259eb783d401d79ef95c264dec8d5b69f23905cc9ebff3a16fe0a14fb1ca8"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/lottie.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "16da66c43a511b261f6a249c56c0c0bc3cdb76632e20952aa289e32803565d42"
+      "sha256": "670b2ce020bdb703aa86ec7211fe187bf0f282cb2ff0a00c5e45d44bc44009d2"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/three.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4cea6db8315673d2e2875d6e4bdcad31e3951e4fb46fb67236bd87881648353f"
+      "sha256": "688bf5cf084fc6b399f890afeee316bc73fcf616637fc2a8b4e0e1bfabbff11a"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/typegpu.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7b6e8ea6719d257d928adf5d28f4cbc6d98090fb87b0ba30327ad456f1d33be2"
+      "sha256": "62cde4980a112394550fffe60aa5b9ce9f5e489dc1e19cd968d3c66dfc3ac7ee"
     },
     {
       "path": ".agents/skills/hyperframes-animation/adapters/waapi.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3e173bc484cd7daef9022c2c80e8e2091ab73321def54c2a100ddf738ee8d1e0"
+      "sha256": "b0893906060f8c6d5f8a0459266a1507d6b114084acb095be284aa180b8e445c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints-index.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "601228ddcfda89ed6add52bd08becf53296764e155126fb5e7100eb29caaa46e"
+      "sha256": "513bf394eaff973aa30cf80b6637d3409f5c8f19ff17e936847bd1aaa64d40c7"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/agent-progress-theater.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1939690276ebf41123126e40915c283b69d3b2fd7d563f774c96e6ff6a076d4b"
+      "sha256": "5bb0894e1f30324daec8a56642dea6ca41e27b98fd6ea4c90cac733a3045b70f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/camera-journey.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0508b034b4a1c30bf3cd37a25137987c435e7805f3d5a98f85921ce0e6f06d1e"
+      "sha256": "8b5a8dba16d1195fbb03391a540748b1e753a28d3937920451c40d15b2deefe8"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/comparison-split.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "af2af2ddf86aba21ed8b2016b7b1bd4b1ced52b4ac98f17eff487dca1097599a"
+      "sha256": "d80918dcdbdaf3b0c089524901b8968d64def940ab957c461ea252842c915b24"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/constellation-hub.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "729357480806d512217f46155d7810537f0ab6f7f46ba47b0905e4c3ea4d59c0"
+      "sha256": "fad31fb8211dc16818b71874ae2bfd79600de73b9015eb0525d2e8f0bb5f619b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/cta-morph-press.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0f8ee56ff89af960cf2deb1da86994d5bb93186b85e71d601fb5c64b40deaaeb"
+      "sha256": "63b1c740815b6d2a87f4612a5402ad1013c12c35e3844b23a81562be39e3bfa3"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/cursor-ui-demo.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f4403a088e1358b59a21eabc4f5867f53b9179f5a4abf2f28e8e9982ef9fb479"
+      "sha256": "e0c980443a55b935b92d4014b15d63f8fdd4a876ae5f33af1b290951c27ce02b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/dataviz-countup.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9de0c34b44bcee7dda7371f8597df3421b4e6d46380237f76e815044f02e4a1f"
+      "sha256": "306781d9c13cfbcbb3f4c8e4febfe8b122b51d53a26200334af35356795f4b6f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/device-surface-showcase.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "83d1c7b91b40ba24de324a14b50d023514c95b6b01a3c5bcf5c066a770e07fc8"
+      "sha256": "84a1fc4db4e8d147fae4d345bcf8b49d88d35232b0787c259f74e122364741cb"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/fixed-anchor-cycle.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1a49afda275f54c0383e8569b405175f2a2424a74574d935d1fdf3858f50eb89"
+      "sha256": "7496fff63500ff5fbbab727c70f4d7a13e954bb250568870c6a16a11291657e5"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/grid-card-assemble.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c35349ce839aec1e279ec66b297553c3a9dd1f30fdf64ce8b768c9fafdb4e662"
+      "sha256": "41790c1ac66fad7c92bd2c3c37e6792c8881c2e90e33f2ae36282ca2081be974"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/kinetic-type-beats.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4515b7aa6284898117e8970b76c04fd350ec61c664f5b241deb81c7fdd655d8c"
+      "sha256": "7a6b13e93b8bfd44253f2c0c0af17f4843adf0ec3787e129e3c58b9d80e0b540"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/logo-assemble-lockup.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "53bff65b0b4b14566bceb061c71a9a987003273aa1f7ef711dc20c30b812ec55"
+      "sha256": "6af8751fb78e5c4cd40ea0b128c671c58303d640d6737b51303f0eca7430b79b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/overwhelm-surround.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e35c5bff4db70574124db06122d79443cc0d3ab8238b52949548c4ba995c5b9e"
+      "sha256": "10bc83d6375bba0252a7f15b674d19d261b7a2bac8b1d9e3a06b8a5281288fab"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/panel-edit-live-sync.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f864194c9a56ca7936df72b92b4806427437c1a09fab11cd27eb3d0499186644"
+      "sha256": "44e21c823d2bf5f4799d66fe9ec20ee16ec890b8860fa4588e20357a88509971"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/prompt-type-submit-generate.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c94f17f6cccec12c7e8eac246d8b534e7cb4120a3f9b7c52dee049b9d228da1a"
+      "sha256": "fb8458e21a4c25b57e5e6d88dcf5ac7c1b3ca124248a323e396f47992aaf8c36"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/spatial-pan-stations.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6c044d1fbdb057aae80d46efd1e5fa7222ad3e294a249566f36c82221ba02386"
+      "sha256": "61e3e908ea46574a49abe2557fd17da90cd3fa2494ed2decf8a6f14cc057791d"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/ticker-takeover.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "58e7a19b1aca8f3a85affbc24005d1b26ffd9b953053166783afa428f524b5d8"
+      "sha256": "640cc510c8057d207784fc80f6193d764d298252b6f7acbc280a8056263738bb"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/titlecard-reveal.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "39ebf47ec45da556a03d0521d028924c61a02e0c6d60cd194cc40a236af2f08e"
+      "sha256": "ff8d7262f68c6273edc718b1e8690f3487bae48d8062311bde935c44a18728e5"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/transcript-scroll-artifact-reveal.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bb76b82b375ad919412fd201186c82950f636753608efd810ac4f32c5655de4b"
+      "sha256": "c636f2deb8071bc0b0ce4065657f0306d508225ddb9fa7832e6431c1502bb78b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/typewriter-reveal.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "be324c142dc5bf89649df3c59aa8a7e218ca99d8afe1222f4028a314a237245c"
+      "sha256": "43d276c85eedf6b9b576d8be3afbfdf62438dfff8e705f39c40942220e98b3b1"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/video-text-pivot.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6472224469cfb1801989510bec88a997819fa51cd4a5260bc23eee0fd7f086ed"
+      "sha256": "2413e510ebce45a447ae421a9bc2b9a5b4511918934f4775838f4eb3bf9aa65f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/blueprints/zoom-out-workspace-reveal.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "30a6a396a72bcd37127100f6e4cb5f13f6ca1ea179df7001ce347a3b84c8b7ae"
+      "sha256": "e35b2aa91880f71b01029880d2cd1b4ea2be6317b0fc2f29b293f3eb86d2f768"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/brand-reveal-assemble-zoom.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6ef0274922bf33c9362c638476d97c475931941263f03934ce06f677c8301e5f"
+      "sha256": "f5c12e1daac10444c9bcc2f2274c2ae5ef61fcea7424dc8eb1245183f8cf9ef2"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/comparison-split-cards.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6fbf71a6620971f67d984d08346758a088d45297b68f2098d05a516001daa2b8"
+      "sha256": "e0b9ef5bd2f732ab8a0998993c8bff0c1e875a7ee64bbd826c42961cd3ffc040"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/concept-demo-decode-pan.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "003f8bbde732f9c982493ba3a531c8d861bdb3119fe772dc3bad135924b355ac"
+      "sha256": "9ced69b5c293dfdb120fb824053745defafd5aaa68f2180c27330ed34f8e7a4a"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/cta-morph-press.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4d423157e55cc7c46d112d3471bac207a2072f5f7d190f506809bc6c7ac68644"
+      "sha256": "593ca24022fbea1541834ff4d5e76da7f10b9701ea2903c08f5f63d360671cda"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/cta-orbit-collapse.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d41514f8bb0a4808a66f719bdc3b2118f16a476d47ac71b7db14a73e723f7aee"
+      "sha256": "e1439e8cf88d17442427276e8b3543fe30d7ac7f0cdcab16d35dc0020e30d222"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/demo-page-scroll-spotlight.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "aa1252821669b2f81d7925bac2869ee9a06650abec152c9ab0c978df1f9b2808"
+      "sha256": "d8e49a077a9c9bbb65bb04778fbb0329e80ceb95a7fe93511cbda0fb5203da0f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/hook-counter-burst.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4766950cad912becd81d293ee23475caf4eac8c02dbde31c4c4f7ed015cb127b"
+      "sha256": "b2fd0fc62f4b479ceeff826dca21071df417fa2a27d0e9e68af2c36e97cac72a"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/messaging-multi-phrase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "dbfa5e74f09b0e2b45cb28cd100915143aab7f59ad3a2dffb46f5f88c3cccd77"
+      "sha256": "73546358f43d7a684650c98eff5f795e84e68711bbe9e00850fa647217f1a583"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/metric-video-text-pivot.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5d0ede336552e9ac402bd7bf7dc84d95c9f76699d0e8ebb78f2dfeac3c7ebc36"
+      "sha256": "5df46c780ed172a1f31b4ebe59a1329ab8f132add0d5b7aae8a7f6fbfe080872"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/problem-mockup-overwhelm.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "127d94b53a48d36bf1a5eb5a9fd4e44b0c4cb3a5478c19783aff940f6683106d"
+      "sha256": "909baa1de14b5ae69da7c99fc6543c2a900bc03c4905d9ceeca5b950a8840ad6"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/proof-logo-chain.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b607d15d84d7666cb519626f1292fa42902f1c58e38766c2c8b5dc75825e7cc2"
+      "sha256": "a29e80cfa5a053df0cf1860e16cbe12a946797db4975ba3d8cb76758d70bd9f3"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/takeover-ticker-displace.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8d39a9028d8302ccd185d6fa2c5a6da1f097b4e9af083d18a1f0063a96989d22"
+      "sha256": "1544b4ef1cc8fbc3248897a78203d69cf94551f3a8fa23680a1564544992c208"
     },
     {
       "path": ".agents/skills/hyperframes-animation/examples/workflow-approve-press.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "45329aaa6a1b229c61d946ebad50874dcbec97bb7692944d0df7c6ebaff986fe"
+      "sha256": "d63615e9be73f1b4143dfbb485d1f029f5b525e56727d4d3f9d213861b94a5fa"
     },
     {
       "path": ".agents/skills/hyperframes-animation/references/motion-blur.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "66c5a15a3515063c1103633877494430bdf33b783544f0fb98e433dbd65a6777"
+      "sha256": "6d59ef8fccdd7c27a363b54e364885d703aaa7ca840a15ab8da70e2650459948"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules-index.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e6142e35d7090934fc139ec490df97fd3c7d4995d35745417afc52476aecd7ca"
+      "sha256": "0590ff510b1d3614d75306d9adf4a7a33b9982214fa549c4a2963f6c0f1e3138"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/3d-camera-flight.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f88aa996dfff909ba780e0ace41dd7fe3cb2b275b6d87694470f26e78fbb13c1"
+      "sha256": "8125006312694e956be72f8bf02e65203d5e4a188b82066c3c70671dc284a660"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/3d-page-scroll.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4afe02d1205513afc9fe669c739e9734f23057b15b92bf62dff6004f00c1650c"
+      "sha256": "91bca0903873fa8e34d96cbf2433c6e353ad8d975e75e9a78d9c59e0aa981e94"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/3d-text-depth-layers.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e95234a6a42bdd25a555365d5978f7f3cf20305c5f1a3be46c39b9b5d34a49d9"
+      "sha256": "58905484e7f28120e30196930587c5c14b265a6b88680150e74e6bd041b5a1cc"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/ai-tracking-box.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7e7b0433c58d95f468d65ae061beb3037f83442940aadfe89e32da8039ef5bfa"
+      "sha256": "3cf2a63e95473b13af8659e1d10052de403a16c8b339b0adc0eda3287a08cd2b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/ambient-glow-bloom.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "06cf000cd14dc72f92f4038114c21020ffc358efad921bcea05d85025d28a5e4"
+      "sha256": "d7b5ea786bbcf401f066c404b24d1d96c03547d5e494c8fefc0f50a9c8177976"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/anchored-layout-expand.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "11eae6a4c3ca7c31ae41c068c577a960c76fd9714bea12a2bc9ec608f8b098c3"
+      "sha256": "5c2948ff2b72da69960e6d34cf6694116457ae3ba4bbe79e162b0894339fca8b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/asr-keyword-glow.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "30d60b09bfe977896b588f2ae53d2c02a6d45d65aeaa32e261c25cba0e26d4d8"
+      "sha256": "af3e8e9987766560c537e6809dc56ddbbea667270e2b97a5465b20f6f9bc7535"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/avatar-cloud-network.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c29e0c58150e0056516c76c30932d93f9ac9a57bdb99ec6ff7327867d34a1a90"
+      "sha256": "328f9b4de74d88cb565239b913af321ef69abb58ad6cf7b533784440186cd890"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/camera-cursor-tracking.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "60dc50359c1cf60b96cee782a2ce11ec33c5e653c5f330df6ee270b280693235"
+      "sha256": "3ac749dc82ffbc270f8bd4270eeb1e7bc5d43a81690b70cf902feabc72792f1c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/card-morph-anchor.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "57ee55f0401026160808532dbfe4d060a412b1c2c603f8ce1f097913a556676b"
+      "sha256": "19b0ca9c144f074f8007568e56f4ef7ab1af2411175d0a763607df46d62dc016"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/center-outward-expansion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e8f95caa0060d015abce3c3dc422b9e05756bde5c2d5ce6a341360a14ec75217"
+      "sha256": "9000ddfd4ba81ac4240eb922ebc91203ab2b8e8db369d857ea78fee9e5f8c745"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/chart-scrub-readout.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e0a0fb62a9ce7ca4ef535ee50328078dc8bb7cf63f1f3a8ee68844b4a5294f61"
+      "sha256": "efc5bf638eaa0171f23f720fb4c2b7c0b5be7eb11636c95e864f3eb755b42617"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/chromatic-glitch.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "388eb6e8d7eb65c8ebca22c07538e7bd383184242a9dfcfe5561fad854551f28"
+      "sha256": "d644d41a563bf4451d3a6b29f597e64181cfbf2e26fba35ddf1faf8afa73661e"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/context-sensitive-cursor.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ba33d4d325d83e8e96905cfa24160f9d64a9ae36b831374f203436e790cd1951"
+      "sha256": "3be6b4d2c00c9c9e79aa23a6ce52cdfeb8ae6b53bad62e24276a8885260685c9"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/control-target-sync.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7f82b8a64cca6759580b9c7ab1dd4373a7c03a474bd8cfc927e18b587614dc47"
+      "sha256": "ae63ec429daf5c01468897de1fb3d47a6eb634d24345fbd607e8498d4f0d2cea"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/coordinate-target-zoom.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b716cdceace2e34518bf77dae1e0f04e2bad3c0d181b0e4919843ca8ed2c957c"
+      "sha256": "e28082e4314347b89c9e4523d99116fa48d4f3cf59452fb411fc29754dc549f8"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/counting-dynamic-scale.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "442d9f9a5cf8c10cc62fc5ece5732eca58f76aaa9724cebe92c1f91cc515fa62"
+      "sha256": "c3e86f80049c34645e3786c862c0fe44b3aa8afa0d87d23aa08ca4e1c12b8428"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/css-marker-patterns.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8ac8dd360b4dc8d78d34c3846b834155ad2b482a2d1388cbbd2d3061c6e9d0c2"
+      "sha256": "76f3ff43bc8e20b702b6eac9dc0340d91fe0860427a6c2820290d932872266ae"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/cursor-click-ripple.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f3cfefe1c4d2ef61388bafd3ffbf09debc4596a7abf46fef6b9fa70dd013b1c1"
+      "sha256": "c2cd716da097f82860a2573db05ffc1b39b7b7d9978270a7775ba6fd34b67157"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/cursor-drag.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c7c88d33ab9f7f1c6f0a93d984d4acb1b95698a2bd7a99ef306065da727445be"
+      "sha256": "2a1f88993f4403e02d9e570270ea30b9439894ee04f0ba255b9c807411138683"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/depth-of-field-blur.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d83b73641a8d5591ca1809bb0df21675537628e00ddb2a2d144fe562be1025df"
+      "sha256": "d089a9a8381c17f806b861c752f3f17d00fa33d3dcc6cad47c78ce59127f52d5"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/depth-scatter-assemble.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "63689fce3df29c4eca02f83cebf578f6026935bb04f3b57dbf465c63b4d8ba1e"
+      "sha256": "bbe9f1d7a7641bcf4c1b29e3819466f31a3eb4e6e6580a8632f8ac9af27f14bc"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/discrete-text-sequence.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d3eb00b0942f98eb30908f1b90f44c0bf9a4da1c2eb0dc6899b14accb75802cf"
+      "sha256": "2115418f7102441833b46d1ebbecd5f363b55606a0242b0b33102620caa8e55d"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/dynamic-content-sequencing.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7fd77bb18f989e31136338d383179beb2abe2da4b208a67ab7edb712607bc92d"
+      "sha256": "22314b0c5f80657a33fb1e84b69a41aff2f62a17969f0338af894e2dd2fe09a1"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/gradient-text-sweep.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ee17df8644eea65f2751c97604db1546c17260ab054483579e221eba6a5257a1"
+      "sha256": "8823cb4aee2fb0c44c52155d02954ab3ec9ad5e876c4e71482ad05e65ab31ae0"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/gsap-effects.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "63ee2ee5d9dcef1ecbd88b69526e1621f0ff7ce682ec7f2dbe553b5647656bbd"
+      "sha256": "a7ca2ba842bcad7b0d9105dc5df3477de8722a704e31d66b6819a080d48d8d96"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/hacker-flip-3d.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "67a79e585996b4a58dfb778283d9431ce02ae6bb0150a474d5adb1c4d23d6951"
+      "sha256": "74500b1baa16a4a1076de68a4092a186c52702e09c2f0c1f8b7540ee0f1b9aed"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/kinetic-beat-slam.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "05ae130e17e6229bec8fb144bdf2ec43f8cd1105221af5246673d5d403f0451a"
+      "sha256": "4a6cdd2f3e54e6ebee958c53c3b1731acb10d5f5b583580a8b0d7d8e5fa2621e"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/motion-blur-streak.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ddb00f347084d3f58f9617b9f8fb050dd572ea2a38421df01e4363953cfa35e1"
+      "sha256": "8445b4b6dabcb5524f8362e888e7d8ffd6184ea755b276a5fc5d997448a78e90"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/multi-cursor-choreography.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6d4207d9a0dac8a9ec9d681a6bd30b5cb2707b76349c513f336701c8ea4b4c14"
+      "sha256": "6c89ebbaf8ee95cb1f5559e24c02e64a11bfc8481a56bd924e938ff64bb6d33d"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/multi-phase-camera.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ffdcd08f47ed49d52d31b27f11676435d45fb34581fabe1507bc59e79364e375"
+      "sha256": "fdc9c03bb8cbf77a293b091e2a11200fe4d913489e6557659cc4c45596af8194"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/nudge-curve.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "91084469a672c8c979e8f2e2f76f78526fdff8e1d647650a5f4a54e21df1b3ad"
+      "sha256": "a3709a14d3a8c2517b01af6d110f37d76400e938faa59a09486969142df9f646"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/orbit-3d-entry.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2b24b8d92203e75faaef14c4bfdb216a70f700660056a6f77a9e5f035c5de94f"
+      "sha256": "9e66ca82805d256c558f158c253442e11d9962ab99af118ba57e4b49e48284ec"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/particle-burst.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b54113dc2d079ff49cd800b650e2c521cd4cf1af8aa125bfa2c9ff53fe5c88d1"
+      "sha256": "8f82bd83351a36fb39c113aba864466f07e129ca1a55d9d61d536ac47ed9fc9c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/physics-press-reaction.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "858ebad87af7bc4e7d7141f7aea19ad62d67a6af0bda6e01c9e3e8e841f38483"
+      "sha256": "d37dde726c7c64afdc6aad9b19c60e835e10c0c70ead1280195c45c886b49696"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/press-release-spring.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "36947331983342c48470c6a685ce04175ada089b0370adbb62acc06dcc98f579"
+      "sha256": "abbc7f878033eaeae1ea71ee2498c7780895ba6a24162decc657c6a14f003508"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/reactive-displacement.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7913e02dd6a303017993315045e0c3cd30aa2df9f09093b697e0396ecb7cfe51"
+      "sha256": "bec917697649dfa1e8fcd66361553d3856d4779e0c37d2517de8939a1d2f88b7"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/scale-swap-transition.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e527ce5e2614f5ef8dc0a4da8b97d2a015a85866f1d52d22d22c8411efdaa854"
+      "sha256": "37250312f47b4e504abd48f3c33e31bedfe1ba744be905a910a64a650f7be4d2"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/sine-wave-loop.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "54f283f4a8915de5c3f6d7c668b97f416efad3df6b5baf4941254cea8831944b"
+      "sha256": "f1515759065942ac7d91a31f3bbe8a9eba19b925242aa6670fcf7760516a6b9a"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/split-tilt-cards.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a50c135af38eb5a85f7f2f8753e5a8dcff3e6782392c2c6ee42bfafad9e41ab4"
+      "sha256": "9574f0d9c211578376241939ed52442cec6b03ff16c43abdd461abf12f22c75b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/spring-pop-entrance.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f6cfb58b967769900edc0a4b9ed2685127167a8e4f74f7047df07d4ca4a10fbf"
+      "sha256": "dfa273f474a71751a9d2c8e0c52f21bf17f7920b5a6757815fd2ca271e687ffc"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/stat-bars-and-fills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2da2a14d1d040e6c7c3634745eb047cd2805090ad374900d07ada50ecbcf650e"
+      "sha256": "5290761afd718faad7a10e54a12a75c7eb1015ca7c76ecca2cefeeec5aaff0fb"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/svg-icon-enrichment.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f0209f4c4254281d1750bb5d4e963f5372361b1443ada43236a27a0e37bbb810"
+      "sha256": "a29f06f5c2b52bfc464dd598e5bb3b39c4f41ad2dea2ce085da7a055ace80951"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/svg-path-draw.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "38e304463abcde3ac88095d682f86a2ea30517d366683d09d6bccccc6752c304"
+      "sha256": "693518cae54e357b4564a9ff843413a34151d08531ab0253ae678e3cde6277eb"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/theme-crossfade-morph.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d1855ee32b2b2a45f9b5dffd3d1edf96dd08b199d6aa8c685e302878ba8f0fef"
+      "sha256": "ad990260a7af579be2a389a82b670cf4104415839f295edfb6a114323ac8a407"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/vertical-spring-ticker.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "44ca684601429932cc9667ee56e44c8473e591de9b29c0eef808fabb432cda88"
+      "sha256": "63ea228488098304ee0f7e016ec0b9f76fd94b5bac0fe39c22d977c935adedd0"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/viewport-change.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c1ac00dab35da2fe57fd11d460a96730c37f73d8b4d5e73a0ce85b18b9922a75"
+      "sha256": "3ac8bc7cbb3c84f3cb8128dca9fdf5b56e4145eb62afd0252b11d42c428b2ff4"
     },
     {
       "path": ".agents/skills/hyperframes-animation/rules/waterfall-entry.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d9b8a3df6c59e0af6eef1f3f3d7ffb8058c8983976e4ce150566215770ff7c50"
+      "sha256": "19d3df84b9a264ea4d27c3324582e72452d29c9c0f2e0d59b14ddd66441427f1"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/animation-map-sampling.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1d9275d8764fab0c185291d498b6eedd87622437226a4f7a48c44607e25debe7"
+      "sha256": "cb7e7546b82b8b6d0e3ca8a472fb53980aee8531dc9cc6efe8d657337ab08f81"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/animation-map-sampling.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "470d2e9a7aa9c530d13298a604e01b1b031255b3b99546f446d62091b33217ac"
+      "sha256": "263b79c08938d3064864b85822cffba156af5a360d9dc83ef8770406f096cf4f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/animation-map.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "136a3d473f4cae48538b62da8025968393397d462508c091752d7b0302c7f1a4"
+      "sha256": "b35ef626247a24f8e6aa80857f4ab26f10efb480e94738bd546a2e7cd802e078"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/animation-map.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5d3b9ff36d82f3a0c53c2d7e3947e82a27cbcc9af177362abcc2cb96c611a930"
+      "sha256": "6e43ecbb4f9614abfaf8eca8e6c8e2a573cf7fad29030ad7ddbb8427f238cb85"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/package-loader.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f96e0e6058b8c79b9d89de9aa078d2b25a1755d569c1008c8c3ab9e17b519ccf"
+      "sha256": "3631b38d2f5c6e0e537d75bce0d995eaf46224f5bbf84c560b54c2d383dfd82b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/scripts/package-loader.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "504125ede3efaf687dba15de699c0100bf1fd47855fc83c98aec5c6fb9a4168f"
+      "sha256": "a46cf741ae1f440af7ee18f5f4e71c65251097f5d751bf4ab7031844aa3470ae"
     },
     {
       "path": ".agents/skills/hyperframes-animation/techniques.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "0227f5c4451807d4d425c626cf11ebddffecc228eccbcb63b9c206e0a4f7bd1b"
+      "sha256": "f76c0a57277046c2013dd8b732303c7681fb77e0cddfc04cc02d0fcf127b3a2e"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/TRANSITION-REGISTRY.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2c6d12342700149fdadada9fa64b518d128118cc0d44863e1cf2a5ee0804ac6e"
+      "sha256": "568d01aceb14254a24cdf7eb06d54b7124968d2a05c7f9310fcbe74b099bed03"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/catalog.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3914ec091c1f16bfee5c53d38ed6af1dfab74caedf561788dc39e67c6d7ca239"
+      "sha256": "616ef48bb164b5309e8121f9fe77c2a2f70c75411991aa204233bb53cf3a7543"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-3d.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e1c3888dd0a2d4b36d25200c1e5ef9038649ae63953865e4b2c4c40fb028d7dd"
+      "sha256": "0c1954913c8cbc051c0d12e36c932f75f5c752bc3ced5c4e7c7f51adaf35be0b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-blur.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fd3eef889a517e1dd985ca816f36f1abfb43420a4b664d4fcc453554cdf561f9"
+      "sha256": "7bb334381c28909f1b2bb8fb298227a541fe1ab8fba270ad772f8890cc4fef30"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-cover.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ba4e5926791c9e6a0a069e20afc91324acb018903f43b4b3f2866d9654f5b7eb"
+      "sha256": "9ca06c6e5dfb04009f211111f0bc2b4cef09eed19f13c7f0e37d9eccde00c535"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-destruction.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3f2fbbd561aacc8276f70cbee09ff420fc6e9c65b1e060c14e8399960d3bfbbc"
+      "sha256": "aee7a8f51e944aead41d27f08825bd115f5190cd509677893468aa365e4fe8df"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-dissolve.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "47c11ca0a715675c2788aa4a162a652b5dc5f1773b058ea93e9907af56a4eb7c"
+      "sha256": "25bede7fd0e257415a2ba90be16502d52dec00c4d9fcf1019792cf2dbaeb78a6"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-distortion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7140650692926959bd5459ca5c478a9b4f137cc76fb92b9138e3b0d353677c06"
+      "sha256": "92c4f1d2baa46e6574e4b370e0267c898c385c31bd9005da3b2b0623e87c7f63"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-grid.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c62b17058aa7ba42d34df29436b6b4233e47ff2b72f2c7ce0963c75bdec45144"
+      "sha256": "1055c82ad2a8464c354f1f4e284ad684c365ed0758184ee9e4cce7f9fbfc9162"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-light.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "53f0422d3f6dd2584a30501f84e4f09c9b515f605d51ed264a2061567dda15db"
+      "sha256": "dce1bd9db82f58c76d88b2600c391d0bbbe70a4be696494c2e75ecc9505882a7"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-mechanical.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4fed48fa659a4b215a996beeea619d244e6c893700178b1f969c17f2ee0a8612"
+      "sha256": "1152ad766ba6eaea2e9e276ba882f061160d57548ef8df2478276ecab8e9803d"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-other.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2156e4fcc3b42cba9e0d9e268944269057fb48ff15fc1983e3ff9386fa2a8cf8"
+      "sha256": "4d430cd13c82000dbbc9a59e3c26076c27fd6b3adc7ad3d43d8a8954dd1f0258"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-push.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d55f18fd88c71ca694a7709ac613967cf81ead4f325900be3b8ace1888818eff"
+      "sha256": "026c1cda75af38cca5a383d2dc1b6519c250c1dd7bbe00e985d0d588c3e976e9"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-radial.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5d8f20de439e3f2c8d45df11c8acbe31dc1b9342e2d54bbe66b451cf81ca0a1b"
+      "sha256": "525847c89575f1f26c42d9fde9c83474029ad9a2c78249a484623ab523dcf2f5"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/css-scale.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3c0cb33d6c844a7265379225f3241d8964afcc908ee757a1ebfb1700a5320ea7"
+      "sha256": "da2a02d2c0e3bf1ffa6793e4134474ca973acd1a265840d8b1091ebab30f7b2d"
     },
     {
       "path": ".agents/skills/hyperframes-animation/transitions/overview.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ec878d479d16addcd88c770b39fc88fa5219086478aee39e9f96a1096a58b084"
+      "sha256": "06de210facc6255ed6b054ec795573219521dc462ee0ab3fd4be15f7d07dfa26"
     },
     {
       "path": ".agents/skills/hyperframes-cli/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "be481984f8d3c871c353a4ba82bb295a416634e11938de2081b950e9e488a3ff"
+      "sha256": "cc93475dae9e46fe31f6c6eeaab0d217c591527c76397f280118e2f38954e827"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/beats.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "79b6c936b33d2cd0f26349820cb05adb6fa00ccde6ee61bb223a8fcb9be2191f"
+      "sha256": "f2c536adf205301828676be2b1fa1773568fb3baa5eadefcc05da6ceb10d6658"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/cloud.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "297336e9c8040faab69b6fc6101fd81b5b378236a02ec54fe93231bb84ccae84"
+      "sha256": "f891aaa8535b99f0a79f0abcce87bf0dabdc64dabd4ee2e4348252570dd7b93a"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/cloudrun.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "87ba98cc0db3721fb09776d44a5c8ef75fd95b6a74cea1376dc028907b98aeba"
+      "sha256": "ed059bf6ce7478400c2f820da8f755f462abd7312a711ee436c2c2d1a594fdfa"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/compare-and-batch.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d17fa5a16707d981fa6473b99a28aa45abf41bca0fd96c5157c632abd0bfc222"
+      "sha256": "5c62c364f56340d84f0d67754c1e3d0567bb72415f0cb8cfd3eec94a29d4fd32"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/doctor-browser.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9747dd5a545d2528914c58d55d0c54281ace686fc5c782072334c6ba0ff65c55"
+      "sha256": "824d924f19ff0d10f1fed8b33ee75faced20a8ad9fe616e529f8587bbe1137a8"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/init-and-scaffold.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "78bd5c49352a986bd136f7c5d43f96ec5e0a5199f1d0de3b5c437cabe337cb23"
+      "sha256": "f4e68688ec192a3538e68878ed398f388c7dbab9c5b1bd833945eb0bf3b61f8f"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/lambda.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "73e681f3e5c6c3608b8d4f66b4b75628eed708803b4d2fd5532366659a0667c9"
+      "sha256": "6347578fb5a9905eee27fe606bfc5b6af4dbce3e9d3c8d85591e975055131bee"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/lint-validate-inspect.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e42ae93086cc6b152fb58883ccabfeaab9629eb4eadb09668cddab40703b4a9f"
+      "sha256": "30c851d800392d9ec919eeda09aa0965d48a03ec9dd5b6ecd741ddc1dbeb3d94"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/preview-render.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a60d74da477b56623211055239e6f6e8a5fed4b851a0dab0c06020ca0cf30fa5"
+      "sha256": "23b061844c6d59c389e5380827d7fed87a43dbea658b05d9ff5bf17fbf152af1"
     },
     {
       "path": ".agents/skills/hyperframes-cli/references/upgrade-info-misc.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a46662ad866669d1cf70bfa6404e9a01f68d2db4eb667fe6dc8a8442f6a069d8"
+      "sha256": "cfeaa8da10425b483fecd094afff716061965e0e69de560b2cdae379d2285fef"
     },
     {
       "path": ".agents/skills/hyperframes-core/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "a8d6fe52471be6bcf1816ba0b9eb16c6d1efc830c668de533d6bee8d41d86e11"
+      "sha256": "69b8687b061aeeedb4e1ce7d13dba07cc7e8e4584682bcbb4175c4dac84ede47"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/composition-patterns.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bcdf548ba1fec8decce5ea22c7bed99c73ba268986b1bfefc837f2d7f70f55b0"
+      "sha256": "4befe91f4f3642fb77e5c3f6f8f85a319292852de5647393e5a3fd9c872888b4"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/creator-editing-recipes.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8db8ed156e9e3d1a01bb6b25b92fe6597152e6c8f18128d40a03d52fe46a2af9"
+      "sha256": "22dd36b41dd929d3dc084c359d8b5d52ac3484bac28472a6c0dafd9e923057fb"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/data-attributes.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9da0123bbd9508c32b3ea11bf6ab8edbf4fd725ab35d51cce735a6b03f3b4a96"
+      "sha256": "4a40397688e85ceab08118740c568ecdc9e9f1ee06466c4c31be08d645bee5ef"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/determinism-rules.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "415a3f08cf3be801e6ca381fd47959e787947da325a7ee30b8104b8b80198fd5"
+      "sha256": "196f93c264d040f8c655dd83a75e3a4da3c666c552e03168e6279c0b86340e81"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/full-screen-motion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4534cc717e94f9b7a83d5b86990d6af16594d18c4b9ddcb97950d919288f3994"
+      "sha256": "ea14e6946b4a05f0be8744dc7a450e12bf44b6685be3a4dfc9b96554c23f3629"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/minimal-composition.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0884abd9feeeea48d0de3d517c3d074859b9c322318401a928b9d1f9ee2cf851"
+      "sha256": "e5e6cbc0ab5ecf6e6a60b78c78d638686c37aec1e614a2e6684a5ed2c92ffe07"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/sub-compositions.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7caf63046ea0d1915b51e4eb49897101e36dc716ea1195f9a34cef4ba9c18f64"
+      "sha256": "2ad559f058500e612b65e4a26f38ecf50f5b5db37b4a776f7a680aa330fa4e7f"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/tailwind.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bce2e8ae118f91df3a9790e99273f50942f12d1c345a149d6762c9411e3dfd2c"
+      "sha256": "ce61868dab9303292e04ec954c4c5b3049a8cecfde45e4916773f3e571e86f2a"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/tracks-and-clips.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c0fbb3242406e0a1f2de507427330fb998d411587b8790eec17128ee6b4f8204"
+      "sha256": "e6deb76c1c43496ec3d189142d9b9a813cbc080f16c920f8f113a0b6f76f2f67"
     },
     {
       "path": ".agents/skills/hyperframes-core/references/variables-and-media.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d905b18425dfbbcf232aa9557708425bdf4b52c13f999093e04c9f7f1428d6a1"
+      "sha256": "1b89dd22f30b63cfe1d18884dc6c1e1294789449fdbb7c9e0f60e4f727c95fe8"
     },
     {
       "path": ".agents/skills/hyperframes-creative/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9da7b7ac84c8d884b54125887ecca1a645a38337013082b96af2fdc0259c945a"
+      "sha256": "21886f533b708ffb110543ce18b8f19e4d09a018057f3cf9b1b383b4be9263df"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/biennale-yellow/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "76d22cced9c152b0edb520543cf34c4ce772a312caa7211c40d4315b53c053cf"
+      "sha256": "276142d3b04ef34ee0e9a0305ead0eac96850101143269e790cd1f0795bd4dc5"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/biennale-yellow/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e6e24155d587ab0fe1beca7c62e6fbfcce9d069cfb9cf02dfcecffe95194554b"
+      "sha256": "a47dd1abae104111bcb5d585ebb1fe611d2b788f3e54133c4e553a956e197fad"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/biennale-yellow/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5ba04e47cf9897e023dcfa49e1ec26fe26bac0c5061097dc6e7cb1d9ed46d7d0"
+      "sha256": "622e71492eb0975a7cc1acf6dd7f45b4c0a0b0803d202a3d03e91b851d5941ae"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blockframe/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ef8d9d47a209bed4ccc2d928c14a81cdaecb5129f5dc0cdc0dc40afc7ef92931"
+      "sha256": "0acb4e5c1f937bae3613c94f3013d078854d06f7bcf18283696085859010c2ce"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blockframe/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "85ef2bf1579587b97e26b617ea0c957329879e8413c2875605a278ad947c7d26"
+      "sha256": "1d0a00b789c626e38a82cdf0ada497bdaf8b5b02b614c05320010bb93e4b3fc9"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blockframe/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8d2e4963713928b353d0aa28c2c83fce415df81b66a500c192b602c0aaf4ddf2"
+      "sha256": "8e156f9072e85e71b05f9a3e5b56540adfa5c00e457a968ab50464ef6696b5ac"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blue-professional/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "62e9a445885f6057084493de385a8ce20c3b4a299ae36a553ef54884f06bad68"
+      "sha256": "9fa1394148618d88d632b33dcbf6a35b00582265498842d33cd23a5ea7ce5567"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blue-professional/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a4cec56e723db7fc6b6f0c71a52314f80fc3f3f6c43747ae46af8a0761aa0c8b"
+      "sha256": "221c32cc01d5b0cda34f98c318bc101a31896871f41c2614974b6f4a57095cba"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/blue-professional/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "715b130d086977a48925a3c79bb079fbc7270274c9c9a7761bf275df3020b0ba"
+      "sha256": "d761af054369e26ca3082fd81483d069b2cdc7be7a986e2694018e53af886e77"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/bold-poster/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "af756ef993099f9ac78328f676eb79a6572ff0e9c2aacf12787471cd4525b171"
+      "sha256": "054d3839c5f87305d344c76b6419f35f84060ec49e67efd856e18f2a51c57287"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/bold-poster/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c5408b8d2b36028d85455003a5f0bbcde863f33474799477bab6afa261ec0214"
+      "sha256": "0d64e0d3c5f6f762326a6e80cb1d9becd8d63e27bb3e437d9c73a73a7c41656e"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/bold-poster/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "57bbc3374b6a8b37ce59e36ed784c22bbb88fd44d039955221913b3e1bacf159"
+      "sha256": "057e39da73719fb12a9dc42248c1a21fa12fd9d2cd5e0a0f20334d8a9142ea61"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/broadside/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3af0a1e5e61bece19841671672d7732082f03d5699b713475e90323a21dbcc89"
+      "sha256": "c48e3fd7539c23173aff00280ca583aad230f0e216ef74783e7484348cc232bb"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/broadside/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d09b3e09bf497c0f2ed8db9dee181f376f75c65a25246181dc9d8f82cc938d6a"
+      "sha256": "d6367ef1c0865d7fbf8066289394e1afca129c1e797d0424865b2595eee74c1b"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/broadside/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8d23a2cbeb898568a5626b38ffc864236fb4a09930d59b17c34c45f34c8e4161"
+      "sha256": "9e1f21cb7fe3b635292009d68738c5d8aa413e4df1d4c31bb6147f24518a13a4"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/capsule/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f06dba67a3859f7c732b5177f7bcc58c94592caa5d6bbbcc6730a7876f5baa7a"
+      "sha256": "e62cf391305e315053baa4d2d28c61e2ca12a68316868d06a2b26632de21301f"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/capsule/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a66a37a0b2060ebe635f4d2309b3cf0f78c31203de19c12fc477a23009ec0e89"
+      "sha256": "766ba8ec83e285571bcaeb21a553381ad94db1a923fa3fe45ae399488dfbb813"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/capsule/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b3a642b5df3bbfb1ff227f1b82ee3ea02b51f20a0d7c5c46c97d72b180cddb4f"
+      "sha256": "a7a0d9a2fb584836f38b37eefd0c519b018741650932b317bb979d7a3ead672d"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cartesian/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3dc6a31813a333b2a7a1509ddbd3b4dabbbd7e12e6479b6cff10d69c185fec95"
+      "sha256": "68641ab59f1dc6867bbb6252fcf8ad5a4eb29764b5af6b122e1335661aabef12"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cartesian/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "48f7b844d2936e0e0fc142605ec627adadc12120691bacb50dba7390d8706137"
+      "sha256": "6f6e78f59052b9ddd34b12a4ede735fb4ea58b3ef5a7da17d446087c95c82229"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cartesian/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d7867cee5e07c4f22345c566071f2ce0261b3fccca111a94dfbec5fde64f3e55"
+      "sha256": "98a06703c0b630056004b0b5d1c70615f2a5b6a2fab1913a4f4ace1621b5dd58"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cobalt-grid/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "62a6c9e6e5188cc29b9c0098e9bb8e72c23f152d9a99dd92c58139d26b69b19f"
+      "sha256": "d017d8de989d93c9c52578915eed5f8fa064663e43011e45823469392a04e6ee"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cobalt-grid/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "506c0abc064ee4450afc7d34ff71a6fd04fa0dda69d57608ab310569d7651c03"
+      "sha256": "0dfbfe421fce1d9ddf0cab78f3c5b3b0fa745b29a1578683c1ef7b8d0a8a763f"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/cobalt-grid/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b135214cd2e310273a01e3f72b2828149f022803954a22a13cbf27aa1c2f518a"
+      "sha256": "b540e1f9745430a8822e9cfda1423ddbe7ed57cd39512eb227fdccbfd0dc887b"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b1c123526634e31a3e36cff9856e3b4322f2f778d2c7f573aa35a9ee1e90deb7"
+      "sha256": "8d8e8577f34f1ce3483acd55a518aaf6fa6405dbf0aa995b14c6acfe0908bb16"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fe96654fb76433caf5b3c81e4b9c52c07c1d03b267411c12ed94f054ccb92028"
+      "sha256": "8182591008b655329bc29813133952f3d853324a91c7ccd8d59e2b6ab63e4039"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/EBGaramond-400.woff2",
@@ -2274,571 +2274,571 @@
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/OFL-eb-garamond.txt",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f03c8eda63076cd52317dcd40aa04db8472d4cb592dfaafa385129dfdafc7f9c"
+      "sha256": "4526d9c2691049275a5377160ac2793524bcaf33d39018ef7bdb69567cce0834"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/OFL-inter.txt",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+      "sha256": "05f6002bf3f86f0040a2b0cec4d103346ba12f6659817838196f76a218d55724"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/fonts/OFL-jetbrains-mono.txt",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b"
+      "sha256": "a56054325c8cf79382a9b8547d0f558dc812b5caa773b84ef8b550e12f3a2b56"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/code-editorial/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "08d711f5409a6af3fb6de05febe47fee77e4c8e85517bf2d087e2277b524e4ab"
+      "sha256": "8bd51375662fd2b943536527b7cfc2ee45910a5871f287368b178fc1cdd37aad"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/coral/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8530ecb36d1bb2d53392d88d972df35beeba19a5bcb3260fc9b18a58de7cdfe8"
+      "sha256": "51b927012eb13e1b71b52ad38efba4cdeaa59735dd428fe1e0cc2709f59eac6f"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/coral/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9af79dabd44f5d6ac934a5c371aad5316a4e2db76542a1ec3c969245b33892fa"
+      "sha256": "05b08a26e85a7aee0cd8d47527347ed24e7e21156e46a62269285f34f34388b3"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/coral/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8ddf31ae13a4e57fe9730892fbbcb171cae67a204b5cb00b00374984f49b8f76"
+      "sha256": "e045b33a1743d495848883a9b37667e4cbb0d384769cb81899ebbc7a71ef64b2"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/creative-mode/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c1a1359502d9fc79ef267305291fe0f651219c72d88088cee32327dd933dead8"
+      "sha256": "c66fe46a1c50a3a831d855bc397771bb02062dfeef97b85f71e0c21a2ece8899"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/creative-mode/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ef4a13de5757453294db153607891e60ab3f408603ed222e53b908359dcbd296"
+      "sha256": "9f2de2b2f068fd964c2bfc5be284012f13969a9be7f80d4a951911cca7b47cb1"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/creative-mode/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "32c1371fcd526c56edb515e5b255ad736a3e330ba3ff2631c61576064b384ef0"
+      "sha256": "8cb9c77f6e739d0c5edfbd7515ecf2951b13e977fa10deb144f76763bbcf60eb"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/daisy-days/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "42d827dbd279990052e171d04380b5e6bbc111ae391dc283deb7a452e70b9b97"
+      "sha256": "7f77c3bc2933692f56bd68176fae6f1e48fa381868f7dc285cd9903b893c9d4d"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/daisy-days/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6090e702f09c1df11e7289269a5b1ebc126981107c3ed5d9f951f69d471d1494"
+      "sha256": "57dd1d9b350e3afa91ce9c3d7e25b2c181e37268cdc3c01c53cb136ca6b76db7"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/daisy-days/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4fb93e5fa3ba12367f303996b6ca8b62f8e18c721d02e8032274df12d49d96f3"
+      "sha256": "23ee29d2f68001b9ce39f56f2c5ac2612a7a0b417c8bf465214bb8744fdecebf"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/editorial-forest/FRAME.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ceeb2ab768367da1e1f3e1eca36ab9feeb3de3e4d15493319b0044c3d869329c"
+      "sha256": "f6f84a5f539ea5a2fb050b0654db5d51c8d6abf25a971a65c46182bf1c8b68a1"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/editorial-forest/caption-skin.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "31999378b8fed9a4511432e38017f287127ce25a534ee57bfe4cc0f3b74c7d48"
+      "sha256": "886396388037a508c5ae4ad437896c8b2de9bfae3b3465e2cdf8e6e2476f5314"
     },
     {
       "path": ".agents/skills/hyperframes-creative/frame-presets/editorial-forest/frame-showcase.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bb87b88b91184f4fee7f02eea63ed35d9d378fa89fad8988326e31e82a43dbb1"
+      "sha256": "5c088dc647e5592efbf4e72eb301a1c831e229fe44d47d8dc9cdd9f12eaf765e"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/bold-energetic.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "17bc6b7889302151b4e5c84c0c6a33df676647078011d9decb2b68810e3baa7f"
+      "sha256": "d609c6a2c025e301212da3ae22bf3b7bccaf7f99206383c07c088c3fc81902b7"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/clean-corporate.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d0c8c86838abb77985609629afe600d0ca365eccd835820f309959e8a85cba9d"
+      "sha256": "97a0a529917c6b952ca1a60596213d52ad0a4071d33387a13b194a7ff202c452"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/dark-premium.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "abfecbf7e8dca3b674376590a0467aac3e13b2135022ae4ec519c4b27c2303b1"
+      "sha256": "2507de6c961dcb0716098bd3d5ab6084afc43a657caa17def0f9d0c3138124d5"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/jewel-rich.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "17c8f7506469f66bca4e27ef78c19f0bcbf250f88fe840e3043816b7041c4fc5"
+      "sha256": "c1e5caeab799c6ee8b26807522c4a054081a477ad5f9c0f43da3452cf08e3c73"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/monochrome.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fe8586f6d70707098859063bdef34d68084f02cf7d5aaa436d4c9915a7ae3748"
+      "sha256": "5a3d31723a8713f2bc858d193f35eedd5351a3d415a46a35955a742f10dc580f"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/nature-earth.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9710549b17487787fef3c7cb459cfd6e4ac28c1593bf471fcf55a3b4e546beed"
+      "sha256": "740652b7e904865444b45744ee55c991413b4678e6a942de804ae6788973b4e9"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/neon-electric.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "35225bf8d2cd37223e88e0bc59b0a96bc8adeda7225389b3df97b675cfd33dfb"
+      "sha256": "baf9fd4a35d97fe3c9bd9fbb52cd881464ff24735aadb0809a8ddf59e606bad1"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/pastel-soft.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ed4e25bb5f4953c002e55a53320249621437e03b5a11d43e3c1bd32c869b6d95"
+      "sha256": "7dae88b52fc70d4f17ba085d14ef692047d634436c0cb7f14e49c840eaef2b47"
     },
     {
       "path": ".agents/skills/hyperframes-creative/palettes/warm-editorial.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c467ee3cc0bbf4b2bedccc8106e18293b8a06dbac8f092b10300492da0e0559a"
+      "sha256": "0246ba98536fe148c9bd10c2f0838896879283d83c458509d8191c9ab7bc245a"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/audio-reactive.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ad93a0c588a702203a08ed909842570f010f041500aa33512d2b06f66d450c1c"
+      "sha256": "052924b73a96612cae610bfa54dff2738a73ccc8cc4fa667df1682bda6a35c9a"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/beat-direction.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "312560b513e689aeda44956c9a883cf465a982b8efce9730722bfb8d147f94f9"
+      "sha256": "23a18f76cd0136277fa935a55d1db0941213492dbbfdb9d1141f97dbd650c3f7"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/composition-patterns.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "954c1d6a7eefa63991a4a34615f8eb94263f4c4b64c0e97c18b59dd006771fbd"
+      "sha256": "a686908e096d52245cb222f695d0d8f8940f6a6355c7b1c3c9f3296529289789"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/data-in-motion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6066c79717156c4a41ef86f28e07c6bd35f18d6830b12893c58523063c788d7d"
+      "sha256": "e6b275e4b6aed579cc18dc1446f6c42fcd353b7a614922a1ed276440bc376b32"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/design-adherence.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ff21deb80143c8e09092958a6f40bc712173a43d23c5ea88742566573a2a7241"
+      "sha256": "bc8ebd844a2bafb0e60387c6dc7bb1dc2fb91980782bc64bcb3933b6814b0a3b"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/design-picker.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3b37cd0e9366b8f9c30b5e31a909193b23b58ada7f73675eab0fe7d2a74bbdf8"
+      "sha256": "29d212b6816b0f53b4ea20a1f9eede61021e254fc0c96b04b2aa3423e4f87048"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/design-spec.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a583fe293facc2e6d242fa69f64c8cdc110c5cfe25f8ddb2429bfb445fcf8ad5"
+      "sha256": "17beaa8433b5ac2b516ca0b9ae1d5cbee9e0567857ca087219680e2753c688a8"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/house-style.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3adc51745bfce9719b63ba74251fcf9e5b9eed56b1e0d8c3928f47c3703eba92"
+      "sha256": "b6da0af7b3eb130d37291b57078774ce3d7584ca9ca230ce89f70431c9f4ca6e"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/motion-principles.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "43cb4193d2716bffde5a44f3740021f0b2eede83fe5c75d30e3f5398e2bf6d2e"
+      "sha256": "4555ce72bcda11a1ff7e5071c60e7eab9f53174d6028a3a0d0e0eb7b0a39c2e5"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/narration.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6002bb2a2270149a8955068d5952fc57cd22594649f576b3e8c38057846610b6"
+      "sha256": "9c848131db94bf27bdb7084482fedb005a8568bf9ab88b1163cb39cf8a8d7578"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/prompt-expansion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3c428274da00f7809e93a2036454b2b9cba9a20b3ae3811d43f33a50501a36f6"
+      "sha256": "a022ae515dff463237506f5845a8d419a576537839b508b9d9258df7abad8067"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/story-spine.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5978b2ad02cc971925d9c0894b5f0a649c28b1848852f844e49dbd2aa584e148"
+      "sha256": "241c4440db49b06697c9927fa231ea82953e5115aa1513a103001ab659647a36"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/storyboard-recipe.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ebf2ed23ea86099256166f96cfb47b1a843eb430d80aa0cc8f929c6ebf7a262c"
+      "sha256": "b4c4fe4c5b2deed8596205c710e64909c91ec7d249f1b7538e2628668887b6e9"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/typography.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2213319b8055285dbe5b6aeb923f27660355a04a1b27da1edda8fd0c91888ab2"
+      "sha256": "2e8e5c63d5df4889220ba02bb29e514c59663521a3e0e9baf5675e852c98c82c"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/video-composition.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "037a966583e4b5fc4c3385ef6217560d36237ec638d2b68b5808950c873e424b"
+      "sha256": "607030a400a6a9bf073641a18c005b1fac97f3950fb5ead63866fc3ebe425278"
     },
     {
       "path": ".agents/skills/hyperframes-creative/references/visual-styles.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c22d2c3f0732398ff52cbb469cf17567706b4d6555ad4149cae950a7cb3867c6"
+      "sha256": "bad8653e580f6a1de4bb35d6fee6c7b207a7c4c7c4459b9e43502801c4361602"
     },
     {
       "path": ".agents/skills/hyperframes-creative/scripts/contrast-report.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c53d140011adfd1c5b9a0a2444ca80a4ed1b027163c48811d92524477374f104"
+      "sha256": "1cc4cf5e6828f3b273d487921edb5fa8503cac2b7b91442c8653506f3e9e222a"
     },
     {
       "path": ".agents/skills/hyperframes-creative/scripts/extract-audio-data.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2b72d7aaa8688a4c524042274364f9696fb26fa9dd7125c58798cbdf021950e8"
+      "sha256": "8f042c6e038013cddb0968539eae9dbd862cab0f73ecbc3d0b800e8a00274a67"
     },
     {
       "path": ".agents/skills/hyperframes-creative/scripts/package-loader.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f96e0e6058b8c79b9d89de9aa078d2b25a1755d569c1008c8c3ab9e17b519ccf"
+      "sha256": "3631b38d2f5c6e0e537d75bce0d995eaf46224f5bbf84c560b54c2d383dfd82b"
     },
     {
       "path": ".agents/skills/hyperframes-creative/scripts/package-loader.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "504125ede3efaf687dba15de699c0100bf1fd47855fc83c98aec5c6fb9a4168f"
+      "sha256": "a46cf741ae1f440af7ee18f5f4e71c65251097f5d751bf4ab7031844aa3470ae"
     },
     {
       "path": ".agents/skills/hyperframes-creative/templates/design-picker.html",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c417139fef8e21b34d56a85cedda8b9597c9574e0727ce603a4743c4ee592c1a"
+      "sha256": "225ed305c066d6d8c5794245b15344533b6084821e2e29d5fd64b4ae3a9aabe0"
     },
     {
       "path": ".agents/skills/hyperframes-keyframes/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "d6484e8367ed522f2a89af9ec30ae3cd86ae243b5a23c5ab00a7a682e3d1a791"
+      "sha256": "c3de03d32fb44c196b02a529281209e0b8119abc837c94b3c792e5301a137bfe"
     },
     {
       "path": ".agents/skills/hyperframes-keyframes/agents/openai.yaml",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1fbce5f9defa4c5f2d9e8cd7fad67566e21aba09e93a25e5836ebca62bd68f4b"
+      "sha256": "5c2f05e618bd2b67f525c79f0e45591bd8c0005fe6973e00a7f463bc4885bb84"
     },
     {
       "path": ".agents/skills/hyperframes-keyframes/references/keyframe-patterns.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "727cbc8db92968e9a8c9e77434e6aa45ad4e938df577c86ba75d118aa7e6e88d"
+      "sha256": "05621f0e922f03aabfa299b046852d44491296bcfdea82f8aacb936b5ca55277"
     },
     {
       "path": ".agents/skills/hyperframes-registry/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "f1925b202cabd125b509658b11db593b55340b1926ecb056fc31aa4233a2b4f6"
+      "sha256": "35c1b9c70b98f6b343d31135148a50a1e08f4e8751a9aafeaf01701bc92d2f20"
     },
     {
       "path": ".agents/skills/hyperframes-registry/examples/add-block.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0e3353755c4ef55e53570d1266a4a43b2c5aef9bbe41276430e38cfa6580b83a"
+      "sha256": "54aafdc319321bc547134dcd14d0f6d0d7332701a49a0db63769ed16e7edd308"
     },
     {
       "path": ".agents/skills/hyperframes-registry/examples/add-component.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d06992d31eec617a91f5c34630c9274c52dd07898bd24f10a869d0d1cab5af29"
+      "sha256": "e07fc854cba28ef16d9d56c7b8fd1aad6dc7cdc744fd802b74889c32cb266c0f"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/component-quality-bar.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f0d4c3c44131bc0791f8a8cc3d2d7478d38045451775af7d20b2dd47cf5f91ac"
+      "sha256": "f247a572833cb2837273161bf5184c33759127f437e74e64965453f5fd9d4296"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/contributing.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7e9e6fd894e54251fad9aa30a08730960ceb776da590a175eadfc1d9014106b1"
+      "sha256": "2dc33305864400a396998997681c45282e70143e63f7f616b3ebd7033dcdcf7b"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/demo-html-pattern.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "dfc50cd33eff2c2be75437786fc3e851ab0085f7d453fb35b3380ecf9a6e9f04"
+      "sha256": "f224cdc61f6de5e83dd631ab495c2481afd314dc854a43ec3447fe369fcd775d"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/discovery.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0b79462927c834b1f57af31fd514bbb81152d411c7386f1317572ea07168ea6b"
+      "sha256": "47923b9448297b12b95b645b6e10494eb239b347d357ed544c123a850f792840"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/install-locations.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "83793e7d6aeea9a751755e4bd23ea48182ff9af082287b98a1192343d2571dd1"
+      "sha256": "0beec79866bd5c31e3d5acd97c4a287de4c984135c03e0a422cbe5e3bf75ee38"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/placeholder-material.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "15adf4a40b26166f64df784aed065adb58051d9ccd5c0c52ad9b71e3b8367a09"
+      "sha256": "0621769a2d1ea86af4abfc75437ce814b76ab78b2dc37f962d915f048fc8753f"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/templates.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "98e1ef62d3c1264b28139d85a1c9b5a8b7438209914aebef6d9890e3f4275805"
+      "sha256": "8fa375cd8653b1be3c1d0794ad6fc4e4442110bf34c67bd5eb4bb374862f1855"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/wiring-blocks.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "397f9ad5a9244d173b97bb5a5dfe76ea3cbccfb8dde16cba8b3dabc6044b011a"
+      "sha256": "b1a709c714837114b77d05a1e001a07a9054dac50014cb04ef68658a29789fd7"
     },
     {
       "path": ".agents/skills/hyperframes-registry/references/wiring-components.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6c8341c29fdae6de4f9fd1560a668d11cf34731b81fe5a06c9aeb4a000047b2a"
+      "sha256": "63b5d8123a61732ab180f2a9492d6a1086d610892b99392a34135d9c099f1785"
     },
     {
       "path": ".agents/skills/hyperframes/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "dd67af24e6ca148769f191abd68e670bade17c4b8c847d1ff9aa847fbd7ffe23"
+      "sha256": "04995eaef81088b29c481ff4b63d4512b7cf26ff7ee30a67df3fdbb8f474664a"
     },
     {
       "path": ".agents/skills/hyperframes/references/brief-contract.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0b934224161ef3321d635ad62ede6a7d9d62696cbca66d4b56b9e235248702cc"
+      "sha256": "1c26219f60766fd9ad123fb27c4dffa0fa5b3d469751d74bfebfdb2754e8d276"
     },
     {
       "path": ".agents/skills/hyperframes/references/brief-format.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1e4f2f67989052fedd56fd1211e7a8c27f70aa5dba14ccd18e23cbd44d825adb"
+      "sha256": "9c4df94a31550b6512b0e22025544fc601b1f15ef9810c5d3cb51476924119f4"
     },
     {
       "path": ".agents/skills/hyperframes/references/capability-menu.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "71d0f7ac7348317169fdafdc354b45198231a9e8746361481ccfa3aefe8e1a43"
+      "sha256": "f620568c167a9eb5eda3c6333cbbce97737d79c087d45acffd57d22764f56379"
     },
     {
       "path": ".agents/skills/hyperframes/references/frame-worker-core.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "75a1aafaf2e656ba075cfcf13c1f79bc825005f90aa78f0cafe6778df2493226"
+      "sha256": "c957001f341782d9fb411afaae755d733087e5c668a479da1f8d60e65112b73a"
     },
     {
       "path": ".agents/skills/hyperframes/references/intent-interview.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "546cdfec8906583f3bd2e7836bcafae5c587917a9e3cbe0ad5df3819d601ad27"
+      "sha256": "699cfd5f900fd0c53ef509cbb2a3bc84730b884c1bc5defda353e3d5bdc43119"
     },
     {
       "path": ".agents/skills/hyperframes/references/pitch-round.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2d9ceb09ff7be704ebe47b64152b8f6d5dd611925d405e9f87f47f24dd65775c"
+      "sha256": "ce043cbe7b9fc3172827ae45199602e9fc433d3a329d8dd9b1acdcedf9da378d"
     },
     {
       "path": ".agents/skills/hyperframes/references/plugin-installation.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8f5759c30a7cca889c2d950d8cec587de558fe193b62f20e2d399f3931d291ff"
+      "sha256": "54e873a492e4623189cd452e8fd95ac92a17099076b15227fe612daae201931e"
     },
     {
       "path": ".agents/skills/hyperframes/references/production-loop.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "95b09c92c768de0736a77f5e3f8f88260ee38e80e96bfcbf804694a9fac624c5"
+      "sha256": "ad3a075b9863a23e361751e7f4d12087aef0fe001e93dc358452b5395022f3e8"
     },
     {
       "path": ".agents/skills/hyperframes/references/review-loop.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3be4751dc704851e61729e4f45ca8a9cdadc6ea5a877792f85ddfffbf18ac925"
+      "sha256": "8759fe603b43aedb65280adbe05830130c1a957349c671a8b159f662d916567f"
     },
     {
       "path": ".agents/skills/hyperframes/references/route-briefs.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "67f38ec0c8b4e009464657cfd87d886f46b24629fca91571d9efaa1dbe5280d0"
+      "sha256": "06f3712e50eebd834ebb5c4c777253963ce86399cb4aeea0bd00d41b2e2d889c"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/embedded-captions.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4e2f83a54caad625ae0dc4150b619f8b5afd65410965f53f6a40c430253207d1"
+      "sha256": "b544eddc069609734fc71dd474516f56e226ee3d162715926f7ed28b656231fe"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/faceless-explainer.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "cd76f75e109e11c1bbda483b46791acd98103184a7102eb0365f966abec6b037"
+      "sha256": "c1332f7459ee0d7373b1536807792e52a829e9db1a3c2c04dffc380fb3bdf14c"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/general-video.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "dda0e1559cb57e5ba8e589f0fa6eedadbef78030bd2dccb4172b3b496da9fef1"
+      "sha256": "9630b514c4b1761ca3b5b6eedfd31b49368153832bd5cd7f208b8d8d7527a93c"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/motion-graphics.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b0388400c4da484ea383c6938df47db7d67d9194aa0ccb3e03c4e53d8691fb7c"
+      "sha256": "491527d0111b1e43b781a37e3e50b3c79a04b1429c92df03b14314fd60fa059f"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/music-to-video.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f0b8c86130ea1167f9c3116cae5b3440f86d184c6264cad1cb2dad0675e09dc2"
+      "sha256": "d3159bf860a57e10e2f01da5811b00dff9b6eb15109cc18d95f09897c94272f4"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/pr-to-video.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "179d31b24940f6ee80d833d03e7b9b4c012cede7cbc07f88b460637239d66a57"
+      "sha256": "c81727e81f783eab24b3f0d06a7ba44ba86e1f9f1b16edfef4e902f40d2f6534"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/product-launch-video.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ed2cba0be42a1e34361f65f7c633110935ef53c47933584e7b9ffc2ff07c366f"
+      "sha256": "c13292a91f1be807479672f11e72e2671a7075773409b56af6147aa9e57453d3"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/remotion-to-hyperframes.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "86cffe564eb4e92b12375f558aeb5d30e271f97416d3c5f32ee77bcf6b14e35c"
+      "sha256": "1538693d77eb142955b3ac0905b8208b4dd942c40c806062e11aa48091052994"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/slideshow.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8f81d2f8102dd257fd3b7730edbda618c2ec8e0c180e4494e89592aa7cc5cc5b"
+      "sha256": "8067f996f7ea6b2028f15b2501bc8064a88d1eb55ce2b499ff0b118c35c52e9c"
     },
     {
       "path": ".agents/skills/hyperframes/references/routes/talking-head-recut.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d027e04e427c358ca0182e55b0449c0256ad7828b13b6e760d64a60de01eb0cc"
+      "sha256": "3dbd7b62bee1cb44963b0b205c2d24a43f5dc834762472c7a1aa534a0304dcfc"
     },
     {
       "path": ".agents/skills/hyperframes/references/script-format.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7637028d866d3d4a21d0b7934d6db4f73585a28c28da060d00cecc39c47e2e3d"
+      "sha256": "68bd9e1d90ac97bbb4a548e9915bb2742490c1a5d723473789634701892d4e6c"
     },
     {
       "path": ".agents/skills/hyperframes/references/skill-lifecycle.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9a50727490647cc8f24389b51bf53c7fc736112c1327dadd0bc4ed71ab39fcfe"
+      "sha256": "c8f418d8825b3dd64726550916585b78775e5996d052132a7ec7a8ceb701e636"
     },
     {
       "path": ".agents/skills/hyperframes/references/storyboard-format.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f3fda31a65c89f0a6e10a9739b004568a9a0d7e2c8c56609b766b4ff36eedec6"
+      "sha256": "71cd60b269ac11b8349438ce197231e5a5c5b18e4862cd270f8cc246b0139d5c"
     },
     {
       "path": ".agents/skills/hyperframes/references/subagent-dispatch.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "92082776fe6618eda8aa5eb0cba40312f55210f4e542a40ae2f85afd1459f3e7"
+      "sha256": "7bb81ea92864a7c28934052d7e81d7eefce5d2de812ab4b07fec46317f5a9259"
     },
     {
       "path": ".agents/skills/hyperframes/references/workflow-catalog.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5f3e684ca26bc811c3c124e39633fbb685a410de1563f989b8a8cadab2680d8a"
+      "sha256": "dcbe56a67e3cd76f656a4544da15e4df4a93f81072e60926214a365b1091d3f6"
     },
     {
       "path": ".agents/skills/hyperframes/scripts/lib/frame-packets-core.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fd9062f3c955f89e5520fec3f88d25f92f44e91cf42988e387ae993175999c87"
+      "sha256": "cf1f9f7a0be796de2992d02455d37bb7e90b00b885e13ed1a5aaaba5d9e7213c"
     },
     {
       "path": ".agents/skills/hyperframes/scripts/lib/main-module.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "61811e09110856e1439c29875e4a4ad7701ae45d4045f9d1dcb6a7929698e4c0"
+      "sha256": "2880d5aef607f109b8849beaf7ed7b82c4e791ed9eb64216b1cd67c0a97fc746"
     },
     {
       "path": ".agents/skills/hyperframes/scripts/lib/main-module.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "350b7432eb76a1384bfc5cc7bfa1262b5e04465cd6f72ced2b0eb57214fdff82"
+      "sha256": "7485d91dfe9737eae4f763606f7da782fb750b9e39d0f03804c12ec99554d4e5"
     },
     {
       "path": ".agents/skills/hyperframes/scripts/plugin-cli.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1ec46cdb9d819ecc9367aba719fea9253089617ead8c5454e59ab18b206711fb"
+      "sha256": "9cf2197b39669b6fa518dbc7db92df4c250f4aa2ba131ba51464b58d48c2a2a0"
     },
     {
       "path": ".agents/skills/hyperframes/scripts/plugin-cli.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "abfdf2498b57509438077803bee3a626c6fc13e1014ae066e5281edbfc4ca23d"
+      "sha256": "6ae3489a35ff81651b44fa59d33b804d1416460329fa8feee3ace23fbfa2d768"
     },
     {
       "path": ".agents/skills/media-use/.gitignore",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "a299ec0fcdb6bc6670cf9fb22eefe3fcc37730e2e554b7f54e25de88be1ede02"
+      "sha256": "fab8652833c515ce2211093513fe4da4d8bdb9cfa8408a5ce846e2be045ed584"
     },
     {
       "path": ".agents/skills/media-use/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "0f08ff6b493a46e0505dcc9c0c607e517e0eb70e7dc2b7b5c1f51b4f27bb6181"
+      "sha256": "89a0edabfcb1912599152ad1fdaa576cfde5145a9da9b44b2baf7b1ba8489032"
     },
     {
       "path": ".agents/skills/media-use/audio/assets/sfx/CREDITS.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+      "sha256": "60ddfe91a7d69b73aabaf9ac4d7716943a058556e2f88b321f6f6455fa0bee01"
     },
     {
       "path": ".agents/skills/media-use/audio/assets/sfx/chime.mp3",
@@ -2904,7 +2904,7 @@
       "path": ".agents/skills/media-use/audio/assets/sfx/manifest.json",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1b1aae06c6e25412e1d217ebf1e646a0ed36410c0fcad11acdb8f5d5e5b7dc10"
+      "sha256": "dd7413d4a764916bec7b75c41de154d29074acd275d6597ed2d5ce6c46ea43bc"
     },
     {
       "path": ".agents/skills/media-use/audio/assets/sfx/notification.mp3",
@@ -2964,541 +2964,541 @@
       "path": ".agents/skills/media-use/audio/references/bgm.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "921118ba932a63f8fc350a64c905676cdc2feaa5fffdd4af8dd7f9e92dd87a92"
+      "sha256": "a86897b5e515f11e65914f628810e0de943d8daf09c97aee052756d13d81d0c4"
     },
     {
       "path": ".agents/skills/media-use/audio/references/captions/authoring.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5efe83e8371721d52f29463fd87632a9a81f52bebda5fa40baedc341adb825ee"
+      "sha256": "70c745c11fb0571612f92837862334e97fdda0fbe291763a053ebbcae3cd4cae"
     },
     {
       "path": ".agents/skills/media-use/audio/references/captions/motion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "20646595c341902877f31804d4ac6be54e1a261f7d34600660b0e9fcae964019"
+      "sha256": "29295e0e729b38b47976c2cd0e6b3dec75004bbcbd09871b1a6aed07997b29e1"
     },
     {
       "path": ".agents/skills/media-use/audio/references/captions/transcript-handling.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "84c4d5181749022c00b6de62ffe95fe257598fb5f9111d9e8541d25a13836287"
+      "sha256": "730f19993b96917bfc63ff430848f5464fb523b0e43b30f3692e3caf55ef5bbc"
     },
     {
       "path": ".agents/skills/media-use/audio/references/remove-background.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fb6b38a25c6535c57a461bbe2ca681b38f18e5f09b1e904e4a0b5f6eca7a5b98"
+      "sha256": "faa273fd62802d04daa1cd1e3048441f0331d4b5c14284b6aa985071f3896985"
     },
     {
       "path": ".agents/skills/media-use/audio/references/requirements.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1ebd23531306ca51a85623e82a1e25fd16814b8539fe9b69cabf9f418fff55b3"
+      "sha256": "b69fd3b600065ed73171c3fe847eecc7d8050f185d5fb85b2b0e4f5bb07b83a1"
     },
     {
       "path": ".agents/skills/media-use/audio/references/sfx.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9af6e0fbd861a9e3972de49d30ecbaf70b8b464b5dba20abf553ffcea32b48a1"
+      "sha256": "dd1e969362bbe8ca0ee69b4fac8f18e9aac096a899aa0ac9fa100393d5e57fcd"
     },
     {
       "path": ".agents/skills/media-use/audio/references/transcribe.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e688fcb18ff58a4170f867c7c35bf5dfcfc5fd335d92bdb1a90e9fddcf26854c"
+      "sha256": "0dd4e69bf9023bd676f78c1c7a21eb0c16bd575778210f78a0b078a4595fa370"
     },
     {
       "path": ".agents/skills/media-use/audio/references/tts-to-captions.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bc74fa83c096d64997dde33c9873c01b23c3b575b80689793440cd91466c8bd1"
+      "sha256": "7efa04138e74a2f4f100d2a9113d19253b61defd17a74cc589fd2e2696ea25f0"
     },
     {
       "path": ".agents/skills/media-use/audio/references/tts.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5e25b51529a28e5dc2c1fe52ebe53aa012247357eabaa87e709c186199148fa7"
+      "sha256": "768d1e161a134276bfcf212ff9c01ae0211fba1d25d2e52b3addb16bc6a4ec8f"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/audio.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7cc24c7b689248d17acc0f4027a8d5eaab0d809d99040f9ed7b150cb691d7cab"
+      "sha256": "9b6a0343009313bdd0ee922c0dce0651fa5e65d9cbed2a9aa778c9168004766d"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/audio.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a4020464d1b0417acc455ec5c7a0f1852d933287d1e91163c14d50a47f5fe646"
+      "sha256": "4e90a03b8a43ac60246e8cabd183997df035341c5ac163deeee3db8892b53c4a"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/gemini-pipeline.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1caced7d5d088cc1281d7ba4346bf3bb540870482a56515f5a6a35352fbbc0f9"
+      "sha256": "ba21e22e56274d128ef607ae6e233272e3fff4d497fc68843542916084f68046"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/heygen-tts.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7cf5e907807e0df919fdff2c762733c9d6dbdad5b605d05236ea788d8aecf5ff"
+      "sha256": "a41b0f73f4b1db6fab592cc31efd89ca6b17de30520e1bbb19a38d2248fd20ed"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/heygen-tts.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "55f54468f0ba01f24c7a587f1b58d7d128a9c03919dfadd92dc2929aa1e8ed69"
+      "sha256": "82a7f937090d26b5b59fa8139e266211ce74d2ee2c433c7c94b6c6c5af53897a"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/heygen-voice.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1ab6d29860c106b49ca0c3dec408d99a8d3297a5bbc953d21f1148c3d8568064"
+      "sha256": "a5c4b5ce0f19086cc9a4cfaa4940cf53340bf629b05d0dceee79cadc13c28ac0"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/heygen-voice.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d0920895246ee7679a424ffa36ed13d3f1bb7c03b8641c8bbb4a4efd4ede320b"
+      "sha256": "ec4762f0108d61e5a0ba398099168b63351c4fda3c2ef3fc92c6d15d3ec9eab4"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/audio-meta.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "94e1b4cf242362eeb52bb8a5665b5b50fe4ffdc7854f4366b82e290c33d03890"
+      "sha256": "3ba8468a3e62b932426b3f2425d26f2416174814a655602dedf204b133a69888"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/audio-meta.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "dcb64fed2a256b0f9305f1434024e588adf312d787e8a8dfdc9349193d37f2ad"
+      "sha256": "03754765cfb04781caddaf3aaa50f301061136a27327baa672e33d23275a71a6"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/bgm-volume.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bb9debebdbd09724f6d07cd10b3982a076639664420ff8caf5f5a36ae7429a8c"
+      "sha256": "2c183db61892ed3a3cc17fb99264ebf7e0b14ad7d0851fbefc356c4a9fc001d1"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/bgm.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2e7e7590bef554c4aa8fa0250ca4fd0dc96da5e388644c90128cf7767c6a7532"
+      "sha256": "dcf3c3051981ccbe444bafbacbb09dbf44460eb8f664b17fbb32b463f0a22d24"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/bgm.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "59b6b3d23a7de4b8dcaef846290ec14c6f74530a4e9a8fd5fa354501c35c73ad"
+      "sha256": "8a675ec860d2113c06f988017a12e82064bfcf5df9003fdd2fca0e21372084c7"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/concurrency.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "36a28dc1a0528b5605cba29a593dd54a786ad6283611b09a634946b12a5ed32e"
+      "sha256": "feea72c05388830cb02fc44ebe12ed5f84002479b0652a08ced92b17bab89829"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/concurrency.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "daf0b162a9c3fc1a20cc22dff19566530e198459a10afcdf42ad39bec2426f55"
+      "sha256": "c08e95f14db4816aae7810379e8ce437ab8b17df2e1643c53c8d9b0f2ec7c7a5"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-auth.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "72fa1b984693279656ef5398bbdc48c074040ac4feafaedd1b7c45f12545bf10"
+      "sha256": "de15de3b67e30fbb3e0ab60c8d5337552f40ff43ce1c1731f7b25141dbd4a1ff"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-auth.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5ba85af3b5b46bfa04013f5d24b2c5b72dc7677b6cc5ef5ef926de82be4f8542"
+      "sha256": "ea50f313fbcea90a5252161b7670fbd22cee163dd7809132f4a43d766a8285c5"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-auth.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "4a74c9e910914d57c715b0ed487e6e8ce2af265e32edfe04e8432780a6ffe0b0"
+      "sha256": "978bee438da6e22bbaecc15e27f1f0b280ad1b161da6f560739c9a49e733f7a8"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-auth_test.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5f524492aa5d4fa77c45bfed0002a33045677bd1c28027ff80554c9911f32b66"
+      "sha256": "06e0c1c6eab90314ec3977198a5512f35467a2113e28ddb006f161640e39b15f"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-tts.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "cf34c6781e809d39b7d36a8f0caf32afd23a21860db45ccdc4cd70c6a08e9597"
+      "sha256": "fff74aff74a6c201d65672df48bba6d409d31954e6894d3b62ed9a096dba8ca7"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/gemini-tts.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c36d0a99d85dd377ba4f1314e8dc15a6f8e55284fc0176a6bcd529017767eff8"
+      "sha256": "7e7a6aa263164a714f701fa22e3d66647f099addcb1d648267f87154b23bbe2b"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/heygen.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "65c996c8f494248aba28030888b43b32e1da659a48842ad2ba259c64b4a2967e"
+      "sha256": "eba282e4c59441119367226ae2f6af660b9ee298a2d4cfe10da18194f8c33a3d"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/heygen.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "eedb0c96ebb8a1e04fad51d0f400a450d9f304e4961684f0d98b138aa48f9463"
+      "sha256": "70385b1c80af20fc69f1431f7db3428ff2221a6fa24ce172cba142b556d06e81"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/host-audio.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7eb08bd009ce08e92161349609db062203c061a3df2bf17d16c4e4a33e4481ef"
+      "sha256": "6496553c2ade6f34f499e0356fcf579b28c75691a33fd2262a9f1028595a156b"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/host-audio.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bbfabb9faba97bcc7d31e7e0844409c1beb35f65af6a528e9039189aa071d80f"
+      "sha256": "a7080dd02b90e7651566e5085401b723291759cb618e4e10c76d6243ec4a78d5"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/main-module.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "61811e09110856e1439c29875e4a4ad7701ae45d4045f9d1dcb6a7929698e4c0"
+      "sha256": "2880d5aef607f109b8849beaf7ed7b82c4e791ed9eb64216b1cd67c0a97fc746"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/media-record.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "3da3d4eb72f5cd22c284d90b7c39d4ccb68084fa53292c60dfb44cdec86562e5"
+      "sha256": "e994041a7bae3af500b46e4da1a6de9638269c042e0c7190243084b9b8b0e6de"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/media-record.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "89ef94e345b48b652893d353f8a93fc0eb9c9ef018bd9d945dc2a4e61251f41d"
+      "sha256": "ed12a379da44b8d776cc198f303e33ec267c89e0974f60e1ef603fce6813b284"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/python.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "cfcee5d30291edc45f0bf3779ee346adb5bb91ae3b6e9e504d4b4f63259fdd4f"
+      "sha256": "aba51376cbc720e4e8ae35c793f011967c13a4af9aa3868159f206b7c03d9f11"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/python.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f8e1e5df3977691772605867ebe8ae2d02a8132c1745dfd3cbf6453f351bcc79"
+      "sha256": "d953c9020cc334ac09771c058e69f700ccd8ebb853d995a76fe340689c24b2c7"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/sfx.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ad5a96240a895918e2a96457f48f12346ab1db64e7fc0f350f13604fe0d5caed"
+      "sha256": "624b0a73736d898bd76795ab615770827582e83caf33cbaa8767532477eef181"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/sfx.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "89da51e8b38b93654d76156ab0522e7e2feb6b9019a9aa915658c85a95e82c1e"
+      "sha256": "627b3c320aba310bb37560f67efc36367c6f27a03c11cd9ba8d32c6f77e9585e"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/tts.cleanup.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bacb2ac60b7d755237aad3535b90c0093d0ff1b3cd71c9c8dc80cfc37f4efdf8"
+      "sha256": "3d0c6d1501a10309563e8a4d377cf5c4ba1f3e3007ebdf3fcf0ee09f578ded82"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/tts.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0a706b9f83ba1b8723d5f8247b5d35c6f85b28b6849bbf47a7bef2f413eb2ffd"
+      "sha256": "85b64c532b3804da1693ea2d4958429fa779ea808e9bd486c3eda1eee940e4cf"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/tts.spawn.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "62ec9589648477e8c7242567e9daa67d1cf07a0fbe2cf9968acef8df8e982ef2"
+      "sha256": "f60415c99ae905939cb5b2f8a64e4418befff20550f68d693ff57d0d68fdb6a9"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lib/tts.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "47185cb0d6ac4ca9350d65640a93e9f477d022a8a48d614f51e2ca57f3ca4a39"
+      "sha256": "d290cc452413bbea44793b75c4d65442fc30c46894911a60f6ef316fd1720074"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/lyria-recipe.py",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "07bcba4a128430545a03e7ced49b9a6750a77d72a3659d67e4e9886fe9731436"
+      "sha256": "f850a75c0cfc030394d0b7bc47319b2ec07825cb388bbc74f01fc373b34fb8b8"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/wait-bgm.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bb9cf35cae4342ca1b03c1c129df199d6e389b67a8d5be9d4973a3bc20d585e3"
+      "sha256": "bee6d90b94e0589850b8af4d4d9aa4d194d06693bac35ea80a057381235a278a"
     },
     {
       "path": ".agents/skills/media-use/audio/scripts/wait-bgm.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8f3c50a19e14c6d0b6c2d871892be8fa1022d6ee5653f3f5224c955f4afdf862"
+      "sha256": "c58cfe1d818319f0c9ec68df98ba4bbdacb447c875f31b0039f3234f57847621"
     },
     {
       "path": ".agents/skills/media-use/luts/README.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c06cbbf2aab80cbf8aa25c83497202a63107a61e083b6c199a89d513e8096a3b"
+      "sha256": "ba413802b9e83b9ff9ee8b108d6ea9e3864aa8b9de59d2989f99bbb3e7c09d81"
     },
     {
       "path": ".agents/skills/media-use/luts/index.json",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "988ac83c14bc3a9ef09aa6ab64459a0aa9e766e96361738136970ec89df1675a"
+      "sha256": "325936eae53e767969c3d9a184bc2bd2d34ee8dce1c2daebd4fb943398adb1f7"
     },
     {
       "path": ".agents/skills/media-use/references/audio.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "13409d128c10b55016f29c9bec55f53ac0ab63061fc87d054a45492467a9456d"
+      "sha256": "bc06f48442a884222c839d9f25b593f05563e5164a03b183599f7bba2054791c"
     },
     {
       "path": ".agents/skills/media-use/references/grading.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "00455ee9d1eecec76d846c9bc5d0eac35017ca08f514f2efc7f3fc5f6ffb6e87"
+      "sha256": "8bd049c64bfc9bc6ff08bb7d356a4ea545dda157700962c418a354abb41ded2a"
     },
     {
       "path": ".agents/skills/media-use/references/media-treatment-recipes.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5"
+      "sha256": "9f206dbd08295cd7eb8b66e3a17771a253da59e2bb4a229a0ac10bb47ad8c57b"
     },
     {
       "path": ".agents/skills/media-use/references/media-treatments.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2125e106e7f891e14716efabda40f5d6a46284592c6f37d5a14b2b86bda96c1a"
+      "sha256": "c2c5e7f2448992d96292ba8c43690806f76bedb586dea79fa5129fc47bf9cafa"
     },
     {
       "path": ".agents/skills/media-use/references/memory.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "41d85dcfae213e4c2ae82f3870890675239142a117933eeebab4398ebbaaa204"
+      "sha256": "a52ffe072da4c5ff21fc65dc6a6fa0b2a0c23a70509ffe0b5d2c8611765a7fc6"
     },
     {
       "path": ".agents/skills/media-use/references/meta.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0397b11301e10de6b126f6f39e5ad8bac68f8b22a5ab32236fb6a8f0e5c279dd"
+      "sha256": "3441d7b266865911eb213f6286967686997b7602f68a8156e84b887310409f72"
     },
     {
       "path": ".agents/skills/media-use/references/operations.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a1a25b65eaf6290ee006230e20138f9ce3d3172ab92b84d33c6a0c86168efbe0"
+      "sha256": "bcea1f894187eb56b2b780b3361531d8409b4fb974b9450abbe32341d784f6cf"
     },
     {
       "path": ".agents/skills/media-use/references/resolve.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "257ee47fcd7bbfdf7d7c4332eb9f6f0fd0e57c5bd31c4ebb077b053eed477130"
+      "sha256": "bba2e472d6fe0f11772f28a65f35454630bef63687c3c6ad544618b1224f9a8a"
     },
     {
       "path": ".agents/skills/media-use/references/setup-providers.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a819f36047e69d3c54da7dc0b0a359a7ef631c7508004e21728d331efc659000"
+      "sha256": "90fcca4c1dd27716c7903ab0ce4f7f826159e17d84f23daa96ffab005c4cc864"
     },
     {
       "path": ".agents/skills/media-use/references/telemetry-dashboard.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bdc30ad1ff84ebe7f5ca835acb9f47b33717e041ea79b41c6f0db489b86094a7"
+      "sha256": "9b1d4bb7bd654616538b11f09863eedcf25c6006ed3718510d21f138acbef90c"
     },
     {
       "path": ".agents/skills/media-use/scripts/audio-duck.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6beac3c1c6c0e0375e67a04c184406ced3740cc832bb3ba9a09c796bbe16d40e"
+      "sha256": "d10df6d9261a3297b4abb7fc5a74cd7f5bc366e1d2acacf41c7998a69e70fafb"
     },
     {
       "path": ".agents/skills/media-use/scripts/compatibility.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "f45979fb53e6a12e03c0ef54d07469d7754fae5ce0fa7e749baffd1285b49e9f"
+      "sha256": "663195a7fd877424a915c70f11062c07b224f4feb0e39198fa2bd43b464d0baf"
     },
     {
       "path": ".agents/skills/media-use/scripts/dither.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "8e9f437526f39f417f6793912ddeef71094ddb5a5b8d4893c5339086bc39547f"
+      "sha256": "0a10db6d56bf40b762e08607af1379a592328b49f4c4a14224ef95f4079aa63e"
     },
     {
       "path": ".agents/skills/media-use/scripts/dither.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c22c3a0ae41647ac3f733b489a6bc6043fd294155d00954be5d901b3cff7d216"
+      "sha256": "1e9d777bd237b5099db145311e7bc868c501fdde32b4826d4a1c1178e5ceb6a4"
     },
     {
       "path": ".agents/skills/media-use/scripts/eval.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fadf274111a682acbfdff91eca75b977e3821c53026cd058551c538027f21f51"
+      "sha256": "23d65e3060072539397880a64b1f2372e371d17ee448c4f5ebfe93b93ade786f"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/config-lock.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a9d1679e2039be38cd1756a1011f813ae4be0577c2ff77b9ed411b99b1c94275"
+      "sha256": "e3ae2a87939882950e2d51e90e914f29d7f3e0eb60f41396616caf1c133dd9cf"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/cutlist.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c395f49bdb602b29dfc1ea98b7f6d0d5d8781f00eca1c16d009d10e7ef0205be"
+      "sha256": "501b05d1b5bc50d97cb1e2f0812e7876cb01b16c81c2b7f2ec01e82b94d3a6b5"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/duck.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2124a2d7aaf7147bc6f9573e68a8a38aea5f49e5df40070bcd3c3473fd021fa8"
+      "sha256": "9c15e4b204dd2d88a24967730ca6fd9bc4632a0f5eb3b4da39e4d70bafa62265"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/error-diffusion.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "aa718fe95f98087979bab5ea31d68b8e45fbde0c5b874c6888ad21923fb45936"
+      "sha256": "92fcd74cece5420091b6e62161ee4e18a3507a888d27b276cf768f1ad0dcb0cf"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/index-gen.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fde84f36ebfb4fa819935956b2b6dc43a70b749a5c846d5470295d7c439e40e6"
+      "sha256": "e3edfd5a1d8911f6994b8f86c6e55e6b2a0427bfa1435346d698e56deda95b79"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/manifest.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "0f5f1300ffb3737d92ecf9c5dceb324fad281c762703705f2dfbfef44e9deb5f"
+      "sha256": "47eac30322c25d777700844a954e027d6ccc0cbf052b15f9aee5480e5f49ed63"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/media-fetch.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6a90740eee3e4765b83b4c9726676b2935a7fbc9990f61ad5b166f9263188366"
+      "sha256": "234d9daa0a34ab4d74fa54ee712ae75f834e8a9f9c497a8043911666685f0954"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/media-home.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "7f69890d7b822f202b44ddec0d8176c767cd8b1da4dfc4d918599c6a05cfecb1"
+      "sha256": "2038606f895750b06ed09b188f5f8f1d94f6f90a287d9066458c473471dabd94"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/npx-sync.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "1dc7f6372da36242f8c373defcba80fe9e006ce824e0f459e6d56226b3bf919a"
+      "sha256": "dd4fd1b4eb8ff70c3184d5bea262980fd65615ceb79bdb3417b03fa20c6ce62e"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/parakeet-words.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "d5b66efe6cb8975beab2f523503113c3be3117e687ebc20695e7ab08c2ba1b4d"
+      "sha256": "19cb9b815b3c89cc7afd1b272fcc3f765de375acc8dbfe07d21c3a8b933edfa1"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/prefs-store.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c781efa1485b0eba4120e766fa2555f7639bcf4d432f174c3f8ee796b57ced01"
+      "sha256": "d4c70d34d916e9f1655e5e0e5803a7643c2525433400e36409b47e4841e97030"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/recipe-store.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "be457529fda79ded9d47fc25d20fa3950f31aabdb346258157e9dbc348188ae8"
+      "sha256": "bb7c95edf49caf4bc83748cf47b513babfe62f5a6c060b92a44d5aa5e6156ade"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/telemetry.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "292ca36e91189e69d36b197311a345664a3a407b4e3fdb91f8044190649961cd"
+      "sha256": "506d9b7ce21f290b89da08a0e7934c3af06a13853f2b24df689e964d38617c26"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/telemetry.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "b7f6513eede2eb33f6fde626162b2fd4ef74b0034a3e81b9eebdede89f766373"
+      "sha256": "bfe74080a756388836dc904bc9a47c1d3c28603deb792ede72913f8ffe5964d4"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/transcriptCutFade.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ee9c7ec28650cf0f6a0f1f21f1c6a1faa5e152337163cccc0cc9a109b3c99805"
+      "sha256": "9352f9868c178c33963e91ac3b37c9b5171dc1dcee65af8c6481701d41df60e5"
     },
     {
       "path": ".agents/skills/media-use/scripts/lib/words.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "bfc1f93523d2fc8ce55580b262efcca537c7feabaf029c1c6f33433591377adb"
+      "sha256": "fa494b5a639033ce6e28bfb7261e943c9fd84482148a26765a3ebcabc45b07cd"
     },
     {
       "path": ".agents/skills/media-use/scripts/prefs.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "149836b527e1243f5ab714694393f742e23328890bcef21cf28eed52f888273e"
+      "sha256": "1c2ad252d9d4634cd5731831156260bb95f360983bd1e0426605cc24236a4724"
     },
     {
       "path": ".agents/skills/media-use/scripts/recipe.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "c9936537405dc8d066ed7aff519d28bc43fe683c42fc50a336945e33ac43f938"
+      "sha256": "abe31ae19e4f69b71978e35ba6b4371972d2aecb2708ea9deab6e741144723c6"
     },
     {
       "path": ".agents/skills/media-use/scripts/resolve-plugin.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fe8f4dce139b3a88e9ba817da335ae7667a644a715f250613901f7cc1e75f0ed"
+      "sha256": "17c08a6e385cf99d84f0b4d7f9e907b176bd06d7e082703c4456e73afaff313f"
     },
     {
       "path": ".agents/skills/media-use/scripts/resolve.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "85aec401d22b65639fa6a91056e515563135962a127516aaae1e2644d48fa0b9"
+      "sha256": "33cb69bd2a6e6ba7eb6c6c621c1800bb205afbc4eeca5938383180cc3d35daa9"
     },
     {
       "path": ".agents/skills/media-use/scripts/transcribe.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "9e0f2fd2775e3a76267fc219d4b5aa52373a95478812884f8f40f6292e09dac7"
+      "sha256": "f3c439f498261310d0c804e34d00e25a7b674be98416e03f24573e7b5f6c71a9"
     },
     {
       "path": ".agents/skills/media-use/scripts/transcribe.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "39a456ac37a0eca282417b09d7e556c0f2ac11ab3726bc361ff077e75a963ae1"
+      "sha256": "fb0bfd2ddf77897b366260af51187c2f13ce041f171820e358115ddead23b75d"
     },
     {
       "path": ".agents/skills/media-use/scripts/transcript-cut.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "17e148571738ad8cf30b0ccb3f28d0837df5072114b9dfb63bc8d9f5d25e5a5d"
+      "sha256": "972d4b4e927923339683c93edacac044e1b933d36ab3675ffe2b389396cc3530"
     },
     {
       "path": ".agents/skills/media-use/scripts/transcript-cut.test.mjs",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "af546cd7d473eb5f4258148a8dd8ec637a67a242cd50948abe1e0dcd6f64c527"
+      "sha256": "8df2030aca341878d1bfec084dd3f909510a6f9d60172d10461c2cf8406603db"
     },
     {
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "60ed0e1d8658f4ec3c1da2d60a15d5a4800de65baf889cd582b05738c047ec4a"
+      "sha256": "e10025e5ece958f542234d7bd153fbe0df0fc03e98d97291d2597a012810f8c3"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -3523,43 +3523,43 @@
       "path": ".agents/skills/resolve-clip-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "5c6c62e395b4b84f70266f2df48b2a0f9c8ff5386b043b1558cd5f71e7c5d4d7"
+      "sha256": "ffed1c258be393243e3f5239d9ec6400d1fa450a2e7161d2e26e7f21e44ea684"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/assembly-and-tightening.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "96a00f5e9408bcd01c372de8865d833c8e2317a28bf40cbcec5c1e9cb87634d1"
+      "sha256": "21c8812fe622ff17de3d652160933e654782b5a2f6e3a8842712781cb5fa478f"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/editorial-craft.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "6a54097fb3f9536d3c7dc4f966af3ef034bfadb1dcf34df3feb2c6978833ef56"
+      "sha256": "3aba1b9dbb9294933507743c466127856a5984c8a7f76b6774907d236b85aaff"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/interchange-and-drt.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5ad98fdbc41430c03b2ae98f19b2200825ead5a2c8f3c308db4c2e37ddd43efa"
+      "sha256": "78430192503319cdebd6a476ec5685ae625d2a6252e1a9d2abc32cd9728ba851"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/live-cut-operations.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fc5a5fe87997c5d0566309234e976307cd1e93d98cd04fcb807fc87a298b2635"
+      "sha256": "e81230cdcd1bcdf8f7c4b6bd189a143b9bcf96c6acea1d7dac6a65678d8a50a2"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/resolve-timeline-model.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "516954cfbd9dbd34f6d12f4b3f33471c60f0c30ed7024be3a17f9310a87f3486"
+      "sha256": "754c59637b8896df07f3720e490aa191feeaee727172360218e9f048fcc846ad"
     },
     {
       "path": ".agents/skills/resolve-clip-editing/references/verification-and-safety.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "a81c8a140b2db117e30d33bde3d72531a452ff49515c78ba9aa28e239792b187"
+      "sha256": "32fb96e8664221ab1ad2f43853c41fcc1bd6301b30a544d16597056cce9ff286"
     },
     {
       "path": ".agents/skills/resolve-color/SKILL.md",
@@ -3587,7 +3587,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "321eb6b7f57e68f3afbcfa784dfcf94428e34b7a5023b037830e135b0d9b7054"
+      "sha256": "7e25a4c09aded0366087379a2a22112b8e02d4bf2e7ab9b1acd931ea0160e9f1"
     },
     {
       "path": ".agents/skills/resolve-folder-cover-batch/SKILL.md",
@@ -3725,6 +3725,12 @@
       "source": "project-authored",
       "kind": "editing_skill_reference",
       "sha256": "48a6508f8e0d4c3b4e129ac9e127dbfca29301389786eb283848ab000cc46f9d"
+    },
+    {
+      "path": ".agents/skills/resolve-video-enrichment/references/hyperframes-illustration-workflow.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "fa648972856369801f72dc247f153f40e65414bf34b2d512e92703639aa49280"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/illustration-assets.md",
@@ -4463,7 +4469,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "60bf4ad4fb0fa4a2926215429379b2ae75bc1147d246d0dfa39096fff8eb5f37"
+      "sha256": "311d1096b25a546f8291f4385f63027c1cfe5638dba9aae0a3e69e59f30948b7"
     },
     {
       "path": "CHANGELOG.md",
@@ -4493,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5c26a6622dc57c67fa60ab5ee7d77df3add91358f45163bd06415d644b6a6fad"
+      "sha256": "55df22890175a70d96928994a1a50dda9347269952f84adbf7c6d39f9d57f93e"
     },
     {
       "path": "docs/README.md",
@@ -4587,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "cd824b590e3a0506a14b3bb25ed80a7b290d80c52fc701df48c33590094a90a7"
+      "sha256": "02a67e26926519bbccc854be78fc29b1a9ff5400f107dcdf3e23b963b80e3a22"
     },
     {
       "path": "docs/channels/kael.md",
@@ -4599,7 +4605,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "82c942fff156fe1ce78af173b7194a4d451b7d89b05a1b711fb163e1794ba4da"
+      "sha256": "9861a8e8c65b1bf0b1ef03d475024b3eddde63df4e7389c8b76d03ff2379805b"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -6492,7 +6498,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d8f096e14467cf605947b944502ed4f38872b08dd6b9e2d975629e54eebc6dc0"
+      "sha256": "da03ce5f2331fc1f746bacd71a7cd2817650c72f7736caf2bfed8603d300b1e5"
     },
     {
       "path": "scripts/README.md",
@@ -6516,7 +6522,7 @@
       "path": "scripts/apply_enrichment_d22.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2e666d6bd72ee03901d45412497aac89f49369d0175e28d6c6118723e8a5f2cc"
+      "sha256": "99f5622ffc835ed001f6c93fb0a43edf0c988797ff2fb9c46c922b991a74b1bc"
     },
     {
       "path": "scripts/apply_group_fix.py",
@@ -6722,7 +6728,7 @@
       "path": "scripts/drt_focus_multi.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "22bc6969627dd68381caca5dd849553cf686c896cf7eee93ab6e9f6d0e5bfb28"
+      "sha256": "c0cef5b5740a2a3f835568e5244202c54bec2a828e879706a724eba4d2b033c3"
     },
     {
       "path": "scripts/drt_focus_track.py",
@@ -6818,7 +6824,7 @@
       "path": "scripts/focus_qc_frames.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a757372236e25610686bde4a4878a98e00dadbc988542a810e0a5948e7925761"
+      "sha256": "8bd3ea6020585ff1344427a2e2b7ea72694560774915ce9d76005fa13e85ab81"
     },
     {
       "path": "scripts/focus_tune.py",
@@ -6830,7 +6836,7 @@
       "path": "scripts/import_focus_drt.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3708a60256b31e98d14aed572e2b9285039dd3caaa8f7225e598318413f06ca4"
+      "sha256": "9dc6bccf4afa2b8c1224e5be3833c4ff8cee0bedcfc0741be4deb5b5a5c0a7c5"
     },
     {
       "path": "scripts/inspect_t3.py",
@@ -6854,7 +6860,7 @@
       "path": "scripts/katy_9x16.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a2f3234fa6c63303c2daff9b3211bd78cd83b6fc75172c2aa8e5f85a2593d75c"
+      "sha256": "3cde93bfffa971c8db0080ed638574561bea67af54914df10bd96d978b8ffca3"
     },
     {
       "path": "scripts/load_subtitle_preset.py",
@@ -6866,7 +6872,7 @@
       "path": "scripts/load_subtitle_preset_auto.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6fce4febf0d93dc76b886ea5beb201e5833901477a23cd97372b563f52d8b75a"
+      "sha256": "b3c304ae0ac6e1ac5210bc3ea0fe8f5300b4496b0fa734e3fef25c5ed52a8884"
     },
     {
       "path": "scripts/p2_9x16_build.py",
@@ -7136,7 +7142,7 @@
       "path": "scripts/render_subtitle_stills.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f9b3e9d18a1109a3b5c7e8ab42727e913a798bd70b399264e715a185e208fa88"
+      "sha256": "a52b2f7f9dd7213fce05dc8addb4a3046422c78e00b13a6c46dbaa8a751d12d1"
     },
     {
       "path": "scripts/resolve_common.py",
@@ -7226,7 +7232,7 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "55d0990dd01e8f9858136c46aaa823420737a45020f417de746defed0c4035b4"
+      "sha256": "378dce4d6a748406713e59104fca91d037814c1d484e85ba943b2ebf12ea4bf4"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -7856,7 +7862,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1042,
+    "manifest_files": 1043,
     "supporting_skills": 41,
     "active_skills": 58
   },

@@ -46,6 +46,9 @@
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
 | `drt_focus_track.py` | ฉีด Adjustment Clip track ลง DRT (วิธีที่ปลอดภัยกว่า InsertGenerator) | ใช้ซ้ำ |
+| `drt_focus_multi.py` | DRT offline: track ใหม่ 1 track ที่มี Adjustment Clip หลายช่วง (`--ranges`) ต่อยอด `drt_focus_track` | ใช้ซ้ำ |
+| `import_focus_drt.py` | import DRT ที่ patch แล้วเป็น `_focus_variant` + ใส่ Fusion Transform ให้ทุก Adjustment Clip (dry run เป็นค่าเริ่ม, `--apply`) | ใช้ซ้ำ |
+| `render_subtitle_stills.py` | render เฟรมเดี่ยวเป็น PNG พร้อม burn-in ซับ (แทน still export ที่ไม่ติดซับ) | ใช้ซ้ำ |
 | `drt_rebuild_focus_track.py` | แทนที่ทุก clip บน Adjustment Clip track ที่ระบุชื่อใน DRT ด้วย clip ใหม่ตามช่วงที่กำหนด (`--create` สร้าง track ก่อน); ใช้ใส่หลายช่วงในครั้งเดียว หรือซ่อม clip ที่ถูกยืดหัวแล้ว render ไม่ได้ | ใช้ซ้ำ |
 | `rebuild_trimmed_zoom_clip.py` | สร้าง Adjustment Clip track ใหม่บน timeline ที่เปิดอยู่ด้วย InsertGenerator (ลบทั้ง track แล้วใส่ตามลำดับเวลา, คง Transform) หลังตัดหัว timeline; บน 21.1.0.17 ให้ใช้ `drt_rebuild_focus_track.py` แทน (ดู OPERATING-NOTES) | ใช้ซ้ำ |
 | `apply_vtuber_zoom.py` | เพิ่ม Zoom-Focus track บนสำเนา timeline (`--in-place` เมื่อผู้ใช้สั่งเท่านั้น) | ใช้ซ้ำ |
@@ -53,7 +56,7 @@
 | `zoom_variant_stills.py` | export still จริงต้น/กลาง/ท้ายช่วงซูมสำหรับ QC | ใช้ซ้ำ |
 | `focus_frame_qc.py` | contact sheet + รายงาน framing (headroom, ตัดหัว/มือ) | ใช้ซ้ำ |
 | `focus_tune.py` | ตั้ง Transform ของ focus clip 1 ตัว + render 1 เฟรม | ใช้ซ้ำ |
-| `focus_qc_frames.py` | render ช่วงสั้นของ timeline ที่เปิดอยู่ (burn-in ซับ) แล้วดึงเฟรม QC | ใช้ซ้ำ |
+| `focus_qc_frames.py` | render ช่วงสั้นของ timeline ที่เปิดอยู่ (burn-in ซับ) แล้วดึงเฟรม QC (`--width/--height` สำหรับ 9:16) | ใช้ซ้ำ |
 | `focus_qc_all.py` | render ทุก focus cue ต่อ timeline + contact sheet | p2 |
 | `focus_apply_batch.py` | apply/verify focus บน aomimama-2026-09-p1 | p2 |
 | `focus_apply_p2.py` | apply focus บน aomimama-2026-09-p2 | p2 |
@@ -74,6 +77,7 @@
 | `p2_9x16_build.py` | สร้างโครง `<name>_9x16` (pilot) | p2 |
 | `p2_9x16_layout.py` | ใส่ transform/layout ของ 9:16 | p2 |
 | `p2_9x16_convert.py` | ตัวแปลงหลัก 1 original → `<name>_9x16` (`--slow-raster`) | p2 |
+| `katy_9x16.py` | สร้าง/จัด layout `<original>_9x16` ของ Katy404 day-23 (`build`/`layout`/`stills`) | ครั้งเดียว |
 | `p2_9x16_charscene.py` | 9:16 เต็มจอสำหรับฉากตัวละคร (ไม่มี game panel) | p2 |
 | `p2_9x16_sections.py` | 9:16 ต่อ section เมื่อ V1 เปลี่ยนฉาก OBS | p2 |
 | `p2_9x16_gif_relayout.py` | จัด GIF V2 ให้อยู่ใน game panel เหนือรอยต่ออวาตาร์ | p2 |

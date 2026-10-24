@@ -280,6 +280,25 @@ render, proxy, or create derivatives of source media. Keep it that way. Treat
 
 generated probe reports as local scratch artifacts, not committed files.
 
+## Pitfalls
+
+- **AppendToTimeline endFrame is exclusive on 60 fps timelines.** Passing
+  `endFrame = sourceStart + duration - 1` produces one frame less than
+  requested. Pass `endFrame = sourceStart + duration` (exclusive source end)
+  and read back the placed range before batching. Applies to MP4/MOV video
+  and MP3 audio on Resolve 21.1.0.17.
+- **Activate the target timeline before comparing track enable/lock state.**
+  An inactive timeline's track inventory can differ from the active one;
+  the inventory matches its immutable baseline only after activation. Read
+  `Timeline.GetCurrentTimecode()` only after `SetCurrentTimeline`.
+- **AppendToTimeline does not overlap on a single track.** Two clips whose
+  trimmed ranges overlap on the same track push the later one to the
+  earlier one's end. Keep SFX/GIF placements at least their trimmed length
+  apart, or use a separate track.
+- **Imported HyperFrames graphics on a 60 fps timeline need end-frame
+  verification.** Read back every placed range before batching; do not
+  assume the requested end frame matches the placed end frame.
+
 ## Tool selection (MCP first)
 
 Before any script, check the davinci-resolve MCP catalog; write a Resolve Python scripting-API script only after a stated `MCP-GAP:` line shows the MCP lacks the tool/action. Follow `AGENTS.md` "Tool selection" and run `python scripts/resolve_preflight.py --need <tool[.action]>`.

@@ -120,6 +120,8 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 
 ## Finish of task: record what you learned
 
+**Mandatory after every task, every time (user's standing instruction, 2026-10-24):** record everything learned (update this file when a rule applies to every task; write or update the matching skill in `.agents/skills/` for workflows, traps and techniques), then run tests + manifest refresh, then commit and `git push origin main` immediately, without asking again. Check `git status` before staging; never commit footage, renders, `.drp`/`.drt`, `.env` or credentials. If the push fails, report the error; do not force-push.
+
 Follow `.agents/skills/project-learning/SKILL.md`. In short, before reporting done:
 
 - Channel facts (project names, presets the user confirmed, traps, open work) -> the channel's profile in `docs/channels/`.

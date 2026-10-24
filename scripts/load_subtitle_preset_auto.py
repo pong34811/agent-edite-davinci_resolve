@@ -93,7 +93,8 @@ def main() -> int:
     close_resolve()
     out = subprocess.run(cmd + ["--apply"], capture_output=True, text=True, encoding="utf-8")
     print(out.stdout, out.stderr)
-    subprocess.Popen([RESOLVE_EXE])
+    # launch through Explorer: a Resolve started as a child of the agent's shell never answered scripting (2026-10-23)
+    subprocess.Popen(["explorer.exe", RESOLVE_EXE])
     r2 = wait_resolve()
     pm2 = r2.GetProjectManager()
     # the project lives in a sub-folder of the library: search the folder tree from the root

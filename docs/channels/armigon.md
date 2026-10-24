@@ -32,3 +32,25 @@
 ## ยังไม่ทราบ (ถามผู้ใช้ก่อนเดา)
 - จำนวนคลิปที่ทำ 9:16 เสร็จและอนุมัติแล้ว
 - preset ซับ/ฟอนต์ที่ผู้ใช้ยืนยันเฉพาะช่องนี้
+
+## คลิปแนะนำตัว — ภาพประกอบแฟนตาซี (2026-10-24)
+- โปรเจกต์ `เเนะนำตัว-armigon`; ต้นฉบับ `FirstPass v2` และสำเนา `FirstPass v2_illustrated` (ID `ab0559f8-ae8c-4f99-98c7-ff79eb79f003`)
+- ผู้ใช้เลือกแฟนตาซีจริงจัง ภาพเต็มจอสลับกราฟิกข้างตัว; คง 1920×1052, 60 fps, 11,045 เฟรม ไม่แปลงเป็น 1920×1080 อัตโนมัติ
+- ภาพประกอบ 23 ช่วงบน `REACTIONS`: full-frame 7 ช่วง และกราฟิกโปร่งใส 16 ช่วง; สร้างด้วย HyperFrames และนำเข้า Resolve ผ่าน Python API
+- ไฟล์งาน/backup/baseline/readback/QC อยู่ `.hermes/projects/armigon-illustrated/`; ต้นฉบับวิดีโอ/เสียง/ซับอ่านกลับตรง baseline หลังนำเข้า ตรวจพรีวิวกำเนิดโกเลมพร้อมซับแล้ว ส่วน QC พรีวิวเต็มดู `ACCEPTANCE.md` ในโฟลเดอร์งาน
+- ผู้ใช้แก้ `FirstPass v2_illustrated` เองหลังส่งงาน (ยาว 10,827 เฟรม, SFX 22, ไม่มี BGM, ซับ 177) และ `FirstPass v2` ถูกลบออกจากโปรเจกต์ก่อน backup 9:16 (ยังกู้ได้จาก `Armigon_illustrated_project_v2.drp`)
+- 9:16 (2026-10-24): `FirstPass v2_illustrated_9x16` ID `967342ca-ba76-45ea-8b88-650c77cffdd7`; ผู้ใช้อนุมัติ layout B = อวาตาร์ครึ่งล่าง (window x 470–1350, Zoom 2.1818, Pan 61.36, Tilt -1020.28) + แถบบน plate เบลอ (V2 `Top Plate`) + การ์ด side กลางแถบบน + art เต็มความสูงครอปตาม `v916/art_centre.json`; ซับสไตล์เดิมอยู่ราว y 1530 บนอก สคริปต์ build อยู่ใน `scripts/scratch/` (armigon_illustrated_9x16, ยังไม่ promote)
+- ปกคลิปแนะนำตัว (2026-10-24): `.hermes/projects/armigon-illustrated/thumb/armigon_intro_thumb_16x9.jpg` (1920x1080) และ `_9x16.jpg` (1080x1920); พื้นหลัง art `tree` (ต้นไม้แห่งชีวิตลุกไฟ) + อวาตาร์เฟรม source 1413 (ตาเปิด มองกล้อง ตาเรืองแสง) ไม่ตัด cutout; ข้อความ "แนะนำตัว ARMIGON" / "โกเลม" ขาว / "2,000 ปี" ทองเรืองส้ม, Mitr Bold ขอบดำ; HTML `thumb/t169|t916/index.html` render ด้วย `hyperframes snapshot`; QC มือถือ/เทา/squint `thumb/qc_t*.jpg`
+
+## ปกคลิป "ทำไมถึงชื่อ Armigon" (2026-10-24)
+- ผู้ใช้ยืนยันขอบเขตเป็นปกสองสัดส่วน ไม่ใช่แปลงวิดีโอ; ไม่แก้ Resolve timeline
+- ไฟล์ `.hermes/projects/armigon-name/thumb/armigon_name_thumb_16x9.jpg` (1920×1080) และ `armigon_name_thumb_9x16.jpg` (1080×1920), JPEG sRGB <2 MB
+- ข้อความ `ที่มาของชื่อ / ARMIGON / แขนหาย?!`; แนวนอนเพิ่ม `ชื่อที่เข้าใจผิดมาตลอด` อิงซับเรื่อง Arm 1 gon และแขนซ้ายหาย ไม่แต่งเหตุการณ์ใหม่
+- เฟรม source 659 จาก `ทำไม Name Armigon.mp4`; ฉากป่า forest เดิมจากภาพประกอบ; Mitr Bold สีทอง/ขาวบนเขียวเข้ม จัดสองเลย์เอาต์แยก ไม่ครอปปกนอน
+- HTML `thumb/t169/index.html`, `thumb/t916/index.html`; builder `scripts/scratch/armigon_name_covers.py`; QC `thumb/qc/`, รายงาน `thumb/QC.md`
+
+## คลิป "ทำไมถึงชื่อ Armigon" — ภาพประกอบ HyperFrames (2026-10-24)
+- โปรเจกต์ `ทำไมถึงชื่อ Armigon`; ต้นฉบับ `FirstPass v2` (51 วิ, 1920×1052, 60 fps, ซับ 52) สำเนา `FirstPass v2_illustrated` ID `83e7cd5c-172f-4ce6-9f46-c90e6749263b`
+- 10 ภาพบน V2 `REACTIONS` จาก reel alpha เดียว `name_v3.mov` (แก้ 2 รอบหลังผู้ใช้แจ้ง panel ล้นจอ): full-frame 2 (forest, forge/โอดิน) + กราฟิกมุมซ้ายบน 8 (x 20–560, y 30–520 ซ้ายของเขา) ซับอยู่ราว y 840 ไม่ชน
+- งาน/QC: `.hermes/projects/armigon-name/` (`ACCEPTANCE.md`); สคริปต์ `scripts/scratch/build_armigon_name.py`, `scripts/scratch/armigon_name_apply.py`, `scripts/scratch/armigon_name_mock.py`
+- 9:16 (2026-10-24): `FirstPass v2_illustrated_9x16` ID `10b4ec54-6dbc-424b-8997-25978fd851d1` ใช้ layout B เดียวกับคลิปแนะนำตัว; ภาพเต็มจอ 2 ช่วงทำใหม่เป็น reel 1080x1920 (`v916/art916.mp4`) แทนการครอป 16:9 เพราะข้อความบนภาพจะถูกตัด; สคริปต์ `scripts/scratch/armigon_name_9x16*.py`, `scripts/scratch/build_armigon_name_art916.py`; `FirstPass v2` ถูกลบออกจากโปรเจกต์ก่อน build (กู้ได้จาก `Armigon_name_illustrated_project.drp`)

@@ -33,6 +33,8 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--name", required=True)
     ap.add_argument("--frames", type=int, default=3)
+    ap.add_argument("--width", type=int, default=1280, help="render width (1080 for a 9:16 timeline)")
+    ap.add_argument("--height", type=int, default=720, help="render height (1920 for a 9:16 timeline)")
     a = ap.parse_args()
 
     r = connect_resolve()
@@ -50,7 +52,7 @@ def main():
         require(project.SetRenderSettings({
             "TargetDir": str(out), "CustomName": a.name,
             "SelectAllFrames": False, "ExportVideo": True, "ExportAudio": False,
-            "FormatWidth": 1280, "FormatHeight": 720, "FrameRate": 60.0,
+            "FormatWidth": a.width, "FormatHeight": a.height, "FrameRate": 60.0,
             "MarkIn": a.start, "MarkOut": a.end - 1,
             "ExportSubtitle": True, "SubtitleFormat": "BurnIn"}), "settings rejected")
         job = project.AddRenderJob()
