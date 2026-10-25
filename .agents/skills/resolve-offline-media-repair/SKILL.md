@@ -17,11 +17,12 @@ after recording an `MCP-GAP:` line, and keep any script under `scripts/` using
 
 ## Procedure
 
-1. Confirm the path exists, then use `ffprobe` read-only (codec, fps, duration) and compare with a known-online sibling. A correct path does not prove Resolve can decode the media; diagnose the exact clip and codec before proposing a change.
+1. If the referenced file is missing, inspect the project's documented asset bundle and known generation-output locations before changing Resolve. Recover source files byte-for-byte to their exact referenced paths when possible; regenerate only sources that are truly absent, keeping the prompt/source project with the deliverable. Then use `ffprobe` read-only (codec, fps, duration) and compare with a known-online sibling. A correct path does not prove Resolve can decode the media; diagnose the exact clip and codec before proposing a change.
 2. If a replacement is reported, compare content hashes (and file size as a quick check) against the original. Timestamps, including ctime, do not prove that bytes changed.
 3. Do not transcode with FFmpeg or replace source media through an external editor. First check the Resolve MCP for a supported relink/repair action. If the MCP lacks it, record the required `MCP-GAP:` and use only a verified Resolve scripting-API method under the repository rules. Never invent `ReplaceClip` or other methods; check the installed API stub and probe read-only first.
 4. If recovery requires optimized/proxy media that the supported MCP/API cannot create, stop with `BLOCKED` and ask the user to generate it in Resolve. Do not use GUI automation or bypass the tool mandate.
 5. Resume exports only after the batch exporter confirms a prior `Complete` job and validates the corresponding output. A failed/cancelled job or an unexplained existing file is not proof of a usable export.
+6. After recovery, read back Resolve's online status and every affected timeline clip's record range and source offset. If exact paths restore the media automatically, do not relink or rebuild placements; preserve the active project, timeline, playhead, page, and Media Pool folder.
 
 ## Pitfalls
 

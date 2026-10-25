@@ -42,6 +42,12 @@
 - 9:16 (2026-10-24): `FirstPass v2_illustrated_9x16` ID `967342ca-ba76-45ea-8b88-650c77cffdd7`; ผู้ใช้อนุมัติ layout B = อวาตาร์ครึ่งล่าง (window x 470–1350, Zoom 2.1818, Pan 61.36, Tilt -1020.28) + แถบบน plate เบลอ (V2 `Top Plate`) + การ์ด side กลางแถบบน + art เต็มความสูงครอปตาม `v916/art_centre.json`; ซับสไตล์เดิมอยู่ราว y 1530 บนอก สคริปต์ build อยู่ใน `scripts/scratch/` (armigon_illustrated_9x16, ยังไม่ promote)
 - ปกคลิปแนะนำตัว (2026-10-24): `.hermes/projects/armigon-illustrated/thumb/armigon_intro_thumb_16x9.jpg` (1920x1080) และ `_9x16.jpg` (1080x1920); พื้นหลัง art `tree` (ต้นไม้แห่งชีวิตลุกไฟ) + อวาตาร์เฟรม source 1413 (ตาเปิด มองกล้อง ตาเรืองแสง) ไม่ตัด cutout; ข้อความ "แนะนำตัว ARMIGON" / "โกเลม" ขาว / "2,000 ปี" ทองเรืองส้ม, Mitr Bold ขอบดำ; HTML `thumb/t169|t916/index.html` render ด้วย `hyperframes snapshot`; QC มือถือ/เทา/squint `thumb/qc_t*.jpg`
 
+## กู้คืนภาพประกอบคลิปแนะนำตัว (2026-10-25)
+- `.hermes/projects/armigon-illustrated/` หายไป แต่ภาพต้นฉบับ 5 ภาพยังอยู่ใน `.codex/generated_images/01a16c15-a3ca-7752-b489-031c4aa20f70/`; คัดลอกกลับแบบ byte-identical ไป `assets/ice|forge|tree|ruins|forest.png` และสร้างฉากสงคราม `battle.png` ใหม่จาก prompt ที่เก็บไว้ในโฟลเดอร์โปรเจกต์
+- สร้าง HyperFrames source และวิดีโอที่ Resolve อ้างถึงกลับ ณ path เดิม: `art.mp4` (1,935 เฟรม), `side.mov` (3,014 เฟรม, alpha), `battle.mp4` (298 เฟรม); ทั้งหมด 1920×1052, 60 fps
+- Resolve ตรวจ `FirstPass v2_illustrated` แล้วพบสื่อ `REACTIONS` 23/23 ชิ้นเป็น Online และตำแหน่งกับ source offsets ตรงกับ `placements.json`; รักษาการขยับตำแหน่งของผู้ใช้บน `art-06` (5524–5756) กับ `side-15` (10357–10613)
+- Backup ก่อนกู้: `.hermes/projects/armigon-illustrated/Armigon_illustrated_before_rebuild.drp`; หลังตรวจยังอยู่โปรเจกต์/ไทม์ไลน์/หน้า Edit/folder/playhead เดิม ไม่มีการย้ายหรือแทนที่คลิปใน Resolve
+
 ## ปกคลิป "ทำไมถึงชื่อ Armigon" (2026-10-24)
 - ผู้ใช้ยืนยันขอบเขตเป็นปกสองสัดส่วน ไม่ใช่แปลงวิดีโอ; ไม่แก้ Resolve timeline
 - ไฟล์ `.hermes/projects/armigon-name/thumb/armigon_name_thumb_16x9.jpg` (1920×1080) และ `armigon_name_thumb_9x16.jpg` (1080×1920), JPEG sRGB <2 MB

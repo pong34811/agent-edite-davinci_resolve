@@ -3640,7 +3640,7 @@
       "path": ".agents/skills/resolve-offline-media-repair/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9d6df987990ae3a11cae1e3b909aa6ebe8810644a4a832ab046065a0c7caa1ae"
+      "sha256": "5ac3e1316befd81b9d41f71da79ef1c6941003072eef0c40f7d3f430c99891d8"
     },
     {
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3bb9dc5a3a7efb537cb062abecebf72181b175875ff080ab481d6258aa232d63"
+      "sha256": "e99c308e63628e969914f0bf5b4c7be22290ec632264250df3caa36738d982ba"
     },
     {
       "path": "docs/README.md",
@@ -4593,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "02a67e26926519bbccc854be78fc29b1a9ff5400f107dcdf3e23b963b80e3a22"
+      "sha256": "426e5166a9146c26673f01a4134ce10da1340fc54eb1174f1ad0cb9019737251"
     },
     {
       "path": "docs/channels/kael.md",
