@@ -1206,7 +1206,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "bd5103f4c3fee735ca69f6afa6ccc2867b9fa912ad418b45bc9f63d039580398"
+      "sha256": "1c6d012381fb8820482c0328ffa8b0a17d0de3ae3685fc9c39196865aaccaeed"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "eaaed1738cb7926fb2950b12b3ef9f79679ec08758a1a3b5bb42b113a5ce9d3b"
+      "sha256": "12ae3c02a98f697553fe2b1ba4ca83de9697748d2d6ee1ec18b61da11028baa2"
     },
     {
       "path": "docs/README.md",
@@ -4605,7 +4605,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0cfcb7367e1109b28d5035a7fff36c3c31b70971c2850dd5fa6a1c1feebfe63"
+      "sha256": "65afceaa576dd40214b73ceb04e17f0c5bb74b000b6ec16de33294f1fc7c90b8"
     },
     {
       "path": "docs/channels/laffy.md",

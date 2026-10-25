@@ -93,6 +93,7 @@ When you learn a new rule, add a row here (see `.agents/skills/project-learning/
 | Fusion values after a reload | Compare Fusion Transform inputs with a tolerance after `load_subtitle_preset_auto --apply` | The reload returned Size 1.35135135135135 for 1.3513513513513513, so a strict `==` reported all 7 zooms changed when none had (ep3). |
 | Phrase times on an open mic | Anchor phrase starts and chapter cuts on a -40 dB / 80 ms silence map even when the mic is not gated, and put a wipe cut inside a measured pause <= 0.15 s before speech | Whisper's Thai first-token times ran 0.2-0.5 s early after pauses (`เหตุผลแรก` at 15.80 s, signal silent to 16.35 s); extends row 78 (ep3). |
 | Slams vs zooms and subtitles (16:9, 1.35x) | During a zoom the tray wrist sits near x 360 y 800 inside the slam zone, so keep 150 px slams out of zooms; keep a slam's right edge at x <= ~570 when a long centred cue can be on screen, and check burned-in frames at the widest overlapping cue (`scripts/scratch/bunny_ep3/qc_slam_subs.py`) | Latin `Bunny Girl!` at 104 px reached x ~688 and touched the cue `นี่แหละคือ Bunny Girl` (starts ~x 680); overlay-only composites cannot show it (ep3, fixed with size 84). |
+| Restoring the playhead after a render | After `OpenPage('edit')`, `SetCurrentTimecode` can return True yet read back the render range's last frame; wait ~1 s, set it again and read it back | Restoring 00:00:15:08 after a `focus_qc_frames` render read back 00:00:15:29 until it was re-set (ep3, 21.1.0.17). |
 
 ## Transform and offline-media traps
 
