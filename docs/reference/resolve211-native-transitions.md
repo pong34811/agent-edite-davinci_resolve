@@ -32,6 +32,18 @@ risk in both classifier tables. Explicit compound dry-run requests are refused
 before the handler because this action has no native dry-run implementation.
 Granular tool annotations also identify a destructive, non-idempotent write.
 
+## Local Push readback (Windows 21.1.0.17)
+
+For an overlay cut with incoming head handle 0 and outgoing tail handle 13,
+`Push`, category `simple`, position `end`, alignment `right`, duration 12
+created a transition at cut..cut+12. Every original clip name, record range
+and source offset compared equal between original and variant. This is native
+creation/readback evidence only; rendered appearance was not verified.
+
+MCP `compare_timelines` compares item indexes: inserting a transition causes
+cascading mismatches. Compare the identified transition separately and exclude
+it when checking every original clip; do not infer ripple from index drift.
+
 ## Contributor evidence and limits
 
 Contributor-validated on macOS Studio **21.1.0.14**, using generated red/blue
