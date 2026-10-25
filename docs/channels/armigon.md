@@ -47,6 +47,9 @@
 - สร้าง HyperFrames source และวิดีโอที่ Resolve อ้างถึงกลับ ณ path เดิม: `art.mp4` (1,935 เฟรม), `side.mov` (3,014 เฟรม, alpha), `battle.mp4` (298 เฟรม); ทั้งหมด 1920×1052, 60 fps
 - Resolve ตรวจ `FirstPass v2_illustrated` แล้วพบสื่อ `REACTIONS` 23/23 ชิ้นเป็น Online และตำแหน่งกับ source offsets ตรงกับ `placements.json`; รักษาการขยับตำแหน่งของผู้ใช้บน `art-06` (5524–5756) กับ `side-15` (10357–10613)
 - Backup ก่อนกู้: `.hermes/projects/armigon-illustrated/Armigon_illustrated_before_rebuild.drp`; หลังตรวจยังอยู่โปรเจกต์/ไทม์ไลน์/หน้า Edit/folder/playhead เดิม ไม่มีการย้ายหรือแทนที่คลิปใน Resolve
+- กู้ timeline แนวตั้ง `FirstPass v2_illustrated_9x16` (ID `967342ca-ba76-45ea-8b88-650c77cffdd7`, 1080×1920/60 fps, 10,827 เฟรม): `v916/top_plate_B.mov` ที่หายถูกสร้างใหม่ตามสูตรต้นแบบของ mockup ใน scratch จาก still source frame 150; ขยาย/เบลอแถบ x470–1350, y0–36, ลดความสว่าง 75%, fade ที่ y630–694
+- ไฟล์ใหม่ `v916/top_plate_B.mov` เป็น ProRes 4444 alpha, 300 เฟรม/5 วิ และ Resolve อ่านกลับเป็น Online ทั้ง 37 ชิ้นบน V2 `Top Plate`; V1 21, V3 `REACTIONS` 23, audio 21/20/0 และ Subtitle 177 คงเดิม ไม่มีการแก้ตำแหน่ง timeline; still QC `v916/vertical_restored_frame.png`, source/HTML `v916/`
+- `GetClipProperty("Video Codec")` หลัง restore ยังรายงาน `PNG` แม้ `ffprobe` อ่านไฟล์จริงเป็น ProRes; Resolve ส่ง still จาก timeline ได้ถูกต้อง จึงบันทึกเป็น metadata cache ที่อาจเก่า ไม่ใช่หลักฐานว่าไฟล์ออฟไลน์
 
 ## ปกคลิป "ทำไมถึงชื่อ Armigon" (2026-10-24)
 - ผู้ใช้ยืนยันขอบเขตเป็นปกสองสัดส่วน ไม่ใช่แปลงวิดีโอ; ไม่แก้ Resolve timeline

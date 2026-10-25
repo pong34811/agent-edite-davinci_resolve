@@ -27,6 +27,7 @@ after recording an `MCP-GAP:` line, and keep any script under `scripts/` using
 ## Pitfalls
 
 - Pool entries with an empty File Path are timelines, not offline media; do not relink them.
+- Exact-path recovery can make media Online while Resolve retains stale codec metadata. Compare `ffprobe` with a rendered Resolve frame before any relink/reimport; a successful decode is the stronger evidence.
 - Keep Resolve scripting-API probe or mutation scripts under this repository's `scripts/`, connect through `scripts/resolve_common.py`, and use `preserved_state(resolve)` for mutations. Do not put Resolve mutation scripts in Hermes scratch.
 - `ffprobe` and `ffmpeg` are permitted here only for read-only media analysis or render-QC checks; they are not an editing/transcode path.
 
