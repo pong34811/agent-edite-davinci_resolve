@@ -72,3 +72,4 @@
 - Resolve อ่านคลิปทั้ง 10 ตัวบน V2 กลับมาเป็น Online อัตโนมัติ (0 missing media); แทร็กดั้งเดิม V1, A1, A2, Subtitle 1 มี zero drift
 - สำรอง DRP ก่อนและหลัง: `Armigon_name_before_restoration.drp` และ `Armigon_name_illustrated_project.drp`
 - ดำเนินการและตรวจรับผ่านระบบ Teamwork Multi-Agent (5 concurrent subagents) พร้อมผ่าน Victory Audit ครบทุกข้อกำหนด
+- กู้คืน timeline แนวตั้ง `FirstPass v2_illustrated_9x16`: พบ `top_plate.mov` และ `art916.mp4` ออฟไลน์เนื่องจากโฟลเดอร์ `v916` หายไป; กู้คืน `top_plate.mov` จากต้นฉบับ layout B และเรนเดอร์ `art916.mp4` (1080x1920 @ 60fps) ด้วย HyperFrames ผ่านสคริปต์ใน scratch (build_armigon_name_art916); Resolve อ่านกลับเป็น Online ครบทุกแทร็ก (V1: 10, V2: 11, V3: 10, ST1: 52) รายงาน 0 missing media
