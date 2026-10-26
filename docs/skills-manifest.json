@@ -4593,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1c4af80aef5c9649a81d0c953c4d2f81774c6bfe3b424482fe1022edba0fabf2"
+      "sha256": "b4b21214aeef1e2356e792896f0606c5c3a13825dcbeabef570e22fedafa18ad"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7283,6 +7283,12 @@
       "sha256": "2a82e46deedf67e3876415bef6928d5a5dd581ee14ddaff80bd1987df89506f2"
     },
     {
+      "path": "tests/test_audio_qc_and_headroom.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "3cef692c129e7aefcdf9f9ba1de4916d721a399e4beba2e13c994712d804e311"
+    },
+    {
       "path": "tests/test_backup_cleanup.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7455,6 +7461,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "feaa2e01e308a3742bedc742b2574f2dc00d65086a9f64936d15581d40709fc2"
+    },
+    {
+      "path": "tests/test_subtitle_qc_and_baseline_invariants.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "de677a1f0a1c502b911fdc8c2055d5cc09d2e7ca917940f3d45ba3c294dc48f2"
     },
     {
       "path": "tests/test_subtitle_workflow_rules.py",
@@ -7862,7 +7874,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1043,
+    "manifest_files": 1045,
     "supporting_skills": 41,
     "active_skills": 58
   },

@@ -65,3 +65,10 @@
 - 10 ภาพบน V2 `REACTIONS` จาก reel alpha เดียว `name_v3.mov` (แก้ 2 รอบหลังผู้ใช้แจ้ง panel ล้นจอ): full-frame 2 (forest, forge/โอดิน) + กราฟิกมุมซ้ายบน 8 (x 20–560, y 30–520 ซ้ายของเขา) ซับอยู่ราว y 840 ไม่ชน
 - งาน/QC: `.hermes/projects/armigon-name/` (`ACCEPTANCE.md`); สคริปต์ `scripts/scratch/build_armigon_name.py`, `scripts/scratch/armigon_name_apply.py`, `scripts/scratch/armigon_name_mock.py`
 - 9:16 (2026-10-24): `FirstPass v2_illustrated_9x16` ID `10b4ec54-6dbc-424b-8997-25978fd851d1` ใช้ layout B เดียวกับคลิปแนะนำตัว; ภาพเต็มจอ 2 ช่วงทำใหม่เป็น reel 1080x1920 (`v916/art916.mp4`) แทนการครอป 16:9 เพราะข้อความบนภาพจะถูกตัด; สคริปต์ `scripts/scratch/armigon_name_9x16*.py`, `scripts/scratch/build_armigon_name_art916.py`; `FirstPass v2` ถูกลบออกจากโปรเจกต์ก่อน build (กู้ได้จาก `Armigon_name_illustrated_project.drp`)
+
+## กู้คืน reel ภาพประกอบ `name_v3.mov` และตรวจสอบ timeline (2026-10-26)
+- ไฟล์ภาพประกอบ `name_v3.mov` หายไปและ Track V2 แสดง Media Offline ทั้ง 10 คลิป
+- กู้คืนโดยสร้าง reel ใหม่ผ่าน HyperFrames ด้วยสคริปต์ใน scratch (build_armigon_name) ที่ `D:\agent-edite-davinci_resolve\.hermes\projects\armigon-name\name_v3.mov` (ProRes 4444 + alpha, 1920x1052, 60 fps, 1,794 เฟรม, 1.69 GB)
+- Resolve อ่านคลิปทั้ง 10 ตัวบน V2 กลับมาเป็น Online อัตโนมัติ (0 missing media); แทร็กดั้งเดิม V1, A1, A2, Subtitle 1 มี zero drift
+- สำรอง DRP ก่อนและหลัง: `Armigon_name_before_restoration.drp` และ `Armigon_name_illustrated_project.drp`
+- ดำเนินการและตรวจรับผ่านระบบ Teamwork Multi-Agent (5 concurrent subagents) พร้อมผ่าน Victory Audit ครบทุกข้อกำหนด
