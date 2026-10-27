@@ -3498,7 +3498,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e10025e5ece958f542234d7bd153fbe0df0fc03e98d97291d2597a012810f8c3"
+      "sha256": "75bb9f62ae5edadbdc534f096d886743a5b2a85f6da0cab94dce824c56a2e1a4"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -4469,7 +4469,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "311d1096b25a546f8291f4385f63027c1cfe5638dba9aae0a3e69e59f30948b7"
+      "sha256": "10a0cb4beb34134528bf63b88e568c5e24b4c05afa0c5aff8e6b90efe3648994"
     },
     {
       "path": "CHANGELOG.md",
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b298cbd627c9752eeea746abd5783009729ad3947c3ae4ac6fe794a142079dbd"
+      "sha256": "a5ccd9af699b79af9da8206d445541b10bbc168f0c471b3fe564c09f2f4d1a2a"
     },
     {
       "path": "docs/README.md",
@@ -6498,7 +6498,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "db0db9d58e010d75a42811014a163d9a86657237ed7636918761e4e3a1cca2c9"
+      "sha256": "f8ed14cc90af279efe410c862723eb507182ccdc26fd6cddbe21371ef2f04396"
     },
     {
       "path": "scripts/README.md",
@@ -7124,7 +7124,13 @@
       "path": "scripts/refresh_skill_manifest.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d9e3b486b1806f25d4a8020248df0c844741894d47fdd7a9b646124e0514754c"
+      "sha256": "a88f7d37d605ff7e095af94932c4a4e13c8e6a48edd7af7fdcb7f512329276b3"
+    },
+    {
+      "path": "scripts/release.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5f9e00d4a04d157a38f2334b8f9506ca9f6c0b1fe27a93c76a9636c8ad1b7cf0"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -7419,6 +7425,18 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "fcd11614c55d4b6b8a307aaef5aa2d0f639d0d26eb431027272d9ac717f80291"
+    },
+    {
+      "path": "tests/test_refresh_skill_manifest.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "1f0d7644f099db1aa67bc284c877c09b7a01e9b51de11e2f9c1030f3c9366661"
+    },
+    {
+      "path": "tests/test_release.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "75e187ebde433f8e5f18297574bf28674997e13919d5c97a212a4d83acd666d9"
     },
     {
       "path": "tests/test_render_enrichment_pilot.py",
@@ -7874,7 +7892,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1045,
+    "manifest_files": 1048,
     "supporting_skills": 41,
     "active_skills": 58
   },

@@ -120,16 +120,16 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 
 ## Finish of task: record what you learned
 
-**Mandatory after every task, every time (user's standing instruction, 2026-10-24):** record everything learned (update this file when a rule applies to every task; write or update the matching skill in `.agents/skills/` for workflows, traps and techniques), then run tests + manifest refresh, then commit and `git push origin main` immediately, without asking again. Check `git status` before staging; never commit footage, renders, `.drp`/`.drt`, `.env` or credentials. If the push fails, report the error; do not force-push.
+**Mandatory after every task, every time:** record reusable learnings in the matching skill/docs, improve a reusable project tool when useful, run tests and refresh the manifest, then create a patch release and publish it. Follow `.agents/skills/project-learning/SKILL.md`; don't invent a lesson when there was none, and don't change Resolve state unless the task authorizes it.
 
-Follow `.agents/skills/project-learning/SKILL.md`. In short, before reporting done:
+Before reporting done:
 
-- Channel facts (project names, presets the user confirmed, traps, open work) -> the channel's profile in `docs/channels/`.
-- New rule or trap learned from a failure → one row in `docs/OPERATING-NOTES.md` (rule, why).
-- New or promoted script → row in `scripts/INDEX.md`; delete or leave in `scripts/scratch/` anything that was a one-off.
-- A correction the user gave about taste (cut rhythm, subtitles, framing) → `.agents/skills/house-style/SKILL.md`.
-- Changes to this file stay short: add a rule only if it applies to every task; otherwise put it in OPERATING-NOTES or a skill.
+- Channel facts -> `docs/channels/`; a new failure rule -> `docs/OPERATING-NOTES.md`; reusable workflow/trap -> matching `.agents/skills/<domain>/SKILL.md`; user taste correction -> `house-style/SKILL.md`.
+- Reusable scripts belong in `scripts/`, use `resolve_common` for Resolve work, have tests, and appear in `scripts/INDEX.md`; one-offs remain in `scripts/scratch/`.
 - Run `python -m pytest -q` and `python scripts/refresh_skill_manifest.py` after touching skills, scripts or docs.
+- Read `git status` and stage only this task's intended files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
+- Write release notes in Thai as bullet points, include only verified changes/results, and save the bullets to a notes file under `scripts/scratch/`. Preview the default patch bump with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <ไฟล์>`; publish with the same command plus `--publish`. Use `--bump minor|major` only when the change warrants it. The helper updates `VERSION` and `CHANGELOG.md`, commits those two paths only, creates a version tag, pushes `main` and the tag, and creates a GitHub Release. Verify the tag/release and report failures honestly; never force-push or move an existing tag.
+- Include the release URL/version and Thai bullet summary in the final report. If auth, network, tests, or push prevent release, state the exact blocker; never claim a release that was not verified.
 
 ## Verification and handoff
 

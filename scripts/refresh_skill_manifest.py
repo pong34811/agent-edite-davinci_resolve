@@ -13,7 +13,7 @@ import sys
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from verify_skill_bundle import git_ignored  # noqa: E402
+from verify_skill_bundle import checksum_matches, git_ignored  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'docs/skills-manifest.json'
@@ -28,6 +28,13 @@ CORE_SKILL_COUNT = 17
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def digest_for(path, existing=None):
+    """Keep a valid existing hash across LF/CRLF checkout conversions."""
+    if existing and checksum_matches(path, existing):
+        return existing
+    return sha(path)
 
 
 def kind_for(relative):
@@ -119,7 +126,7 @@ def main():
         if is_excluded(relative):
             continue
         record = records.get(relative)
-        digest = sha(path)
+        digest = digest_for(path, record['sha256'] if record else None)
         if record is None:
             records[relative] = {'path': relative, 'source': 'project-authored',
                                  'kind': kind_for(relative), 'sha256': digest}
@@ -132,7 +139,7 @@ def main():
         if not path.is_file():
             continue
         record = records.get(relative)
-        digest = sha(path)
+        digest = digest_for(path, record['sha256'] if record else None)
         if record is None:
             records[relative] = {'path': relative, 'source': 'project-authored',
                                  'kind': 'integration_or_validation', 'sha256': digest}

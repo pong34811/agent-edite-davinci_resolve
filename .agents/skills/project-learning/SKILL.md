@@ -39,5 +39,7 @@ Answer each, in order, and act on every "yes":
 
 - `python -m pytest -q` (tests that need Resolve are skipped without `--live`).
 - After touching skills, scripts or docs: `python scripts/refresh_skill_manifest.py`.
-- Always, after every task (user's standing instruction): `git status`, stage the learning/doc/script changes (never footage, renders, `.drp`/`.drt`, `.env`, credentials), commit, and `git push origin main` right away without asking. Push failed → report it; never force-push.
-- In the final report: name the path used (`davinci-resolve` MCP, Studio MCP, or script), list what you recorded and where, and say what you did not verify.
+- Inspect `git status`; stage only this task's files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
+- Write release notes in Thai as verified bullet points. Preview a patch release (default) with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <path>`; add `--publish` to update `VERSION`/`CHANGELOG.md`, commit those paths, tag, push `main` + the tag, and publish the GitHub Release. Use `--bump minor|major` only when justified. Verify the published tag and release URL; never force-push or move an existing tag.
+- If checks, credentials, or network block publishing, report the blocker and do not claim success.
+- In the final report: name the path used (`davinci-resolve` MCP, Studio MCP, or script), list recorded learnings and paths, include version/release URL when published, and say what was not verified.
