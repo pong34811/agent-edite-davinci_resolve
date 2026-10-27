@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.16.1 — วางระบบเรียนรู้และเผยแพร่ให้ทุก agent
+
+### รายละเอียด
+- ปรับ `AGENTS.md` และ `.agents/skills/project-learning/SKILL.md` ให้ทุก agent บันทึกบทเรียนลง skill/เอกสารที่ตรงงาน และทำ release หลังตรวจสอบงาน
+- เพิ่ม `scripts/release.py` สำหรับ SemVer patch bump โดยปริยาย, ตรวจความสะอาดและซิงก์ของ branch/tag, ตรวจหัว changelog, preview ก่อนเผยแพร่ และเผยแพร่ GitHub Release เมื่อระบุ `--publish`
+- ปรับ `refresh_skill_manifest.py` ให้คง checksum ที่ยังถูกต้องเมื่อ checkout แปลง LF/CRLF; บันทึกกฎใน `docs/OPERATING-NOTES.md` เพื่อไม่ให้ refresh เปลี่ยน hash ที่ไม่จำเป็น
+- ลงทะเบียนเครื่องมือ release ใน `scripts/INDEX.md` และเพิ่ม unit tests สำหรับ release/preflight และ manifest checksum
+- ผลทดสอบเฉพาะทาง: ผ่าน 11 tests; full suite: 236 passed, 23 skipped, 4 failed และ 12 errors จาก references/ไฟล์ QC ที่ขาดใน workspace
+- ไม่ได้ทดสอบกับ DaVinci Resolve จริง; งาน Armigon/export ที่ค้าง staged ก่อนเริ่มและ config เฉพาะเครื่องไม่รวมใน release นี้
+
 ## v0.16.0
 
 ### Added
