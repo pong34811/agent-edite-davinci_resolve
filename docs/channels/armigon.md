@@ -8,6 +8,9 @@
 - สร้างเฉพาะไฟล์ปกแยกแนวนอน 1920×1080 และแนวตั้ง 1080×1920 ใน `.hermes/projects/armigon-covers-20261028/`; ไม่แก้ Timeline. ไฟล์ส่ง: `FirstPass v2_illustrated_cover.jpg` และ `FirstPass v2_illustrated_9x16_cover_final.jpg`.
 - ใช้ built-in imagegen อ้างอิงตัวละครจริงจาก source frame; ข้อความ “ทำไมถึงชื่อ ARMIGON?” สีขาว/ทองบนพื้นหลังแฟนตาซีเขียวเข้ม. เป็นภาพประกอบที่สร้างจาก reference ไม่ใช่ cutout ที่คงพิกเซลต้นฉบับ. ตรวจมือถือ/เทา/squint/badge; แนวตั้งแก้ให้วรรณยุกต์ทั้งหมดอยู่ในพื้นที่ครอป 4:5 และคำถามหลบขอบขวา.
 
+- ปก v2 (2026-10-28, ผู้ใช้ขอเวอร์ชันใหม่หลังเห็นชุด imagegen): `.hermes/projects/armigon-covers-v2/armigon_name_cover_v2_16x9.jpg` และ `_9x16.jpg` (+ `Armigon_Name_Covers_v2.zip`, `QC.md`); ตัวละครเป็นเฟรมจริงไม่ตัด cutout: timeline 2640 = source 3245 (ยิ้ม ตาเปิด เห็นแขนไม้); ข้อความ `ที่มาของชื่อ / ARM 1 GON (เลข 1 แดง) / แขนหาย?!` อิงซับ 1234/1740/1889; HTML + `hyperframes snapshot --at 0.5 --no-end --describe false`; builder `scripts/scratch/armigon_covers_v2.py`, ดึงเฟรม `scripts/scratch/armigon_covers_v2_frames.py` (map timeline→source จาก V1 left offset)
+- กับดัก: เฟรม source มีตัวจิบิชมพูมุมซ้ายล่าง (x~270,y~900) — ปกแนวนอนต้องทำ radial มืดทับ หรือเลือก scale/offset ให้หลุดเฟรม
+
 ## ที่เก็บไฟล์
 - ฟุตเทจ: `C:/Users/warit/SynologyDrive/armigon/` มี `2026-09-20`, `_firstpass`
 - Google Drive: `Projects/Armigon/`
