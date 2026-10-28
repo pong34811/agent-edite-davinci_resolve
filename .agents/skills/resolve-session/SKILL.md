@@ -122,3 +122,9 @@ start editing off the back of this.
 - Do not open, create, or switch projects without being asked. Reporting state
 
   is the whole job here.
+
+- Exception, user-authorised: if Resolve crashes or hangs during a task, run
+  `python scripts/resolve_recover.py --project "<project>"` (restarts Google Drive
+  when the project library's drive is gone, relaunches via Explorer, reopens the
+  project), re-verify the item in flight, and continue. A library on `G:` that
+  vanished is the usual cause of `SaveProject` returning False and the crash.

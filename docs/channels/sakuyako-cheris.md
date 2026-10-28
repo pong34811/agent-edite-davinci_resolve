@@ -35,6 +35,8 @@
 - ไฟล์ pilot MP4 ที่ตรวจแล้วมีอย่างละหนึ่งไฟล์: 16:9 1920×1080 H.264/AAC, 9:16 1080×1920 H.264/AAC, 30 fps, 54.976 วินาที
 - เตรียม SRT 85 คู่ รวม 1,711 cues; ชื่อคู่ตรงกันเมื่อถอด suffix `_9x16`, bytes ตรงกัน และ caption lint ผ่านทั้งหมด; มี 15 timeline ที่ไม่มี cue ส่งเข้าคิวตรวจเสียง/ASR ที่ `.hermes/projects/sakuyako-2026-06/asr/caption-review-queue.tsv`; lint ไม่ยืนยันความถูกต้องของคำพูด
 - SRT เหล่านี้ยังเป็น sidecar; ยังไม่ได้ใส่ native subtitle track หรือ render ให้ 84 timelines ที่เหลือ
+- อัปเดต 2026-10-28 (confirmed, อ่านกลับจาก Resolve): นำ SRT เข้า native Subtitle track ครบ **78/85** timeline ต้นฉบับ — 70 จาก SRT ใน `vdo\16x9` และ 8 จาก ASR draft ที่ตัด cue ให้ ≤1.5 วิ (`scripts/scratch/empty-caption-audio/<n>.capped.srt`: #7, 9, 13, 23, 32, 46, 48, 77; คำยังไม่ได้ตรวจเทียบเสียง); 7 timeline ไม่มีข้อความ (#33, 36, 49, 56, 60, 63, 76) ไม่ใส่ track. ทุก cue ตรง SRT ทั้งข้อความและเฟรม, V1/A1 ไม่ขยับ; `_archived_v01` 20 รายการที่ MCP สร้างเองยังเก็บไว้; สำรอง `backups/2026-10-28-sakuyako-after-caption-import.drp`; ยังไม่ได้ render และยังไม่ได้ใส่ preset ฟอนต์
+- กับดัก: project library ของช่องนี้อยู่บน Google Drive (`G:\My Drive\Projects\Resolve Project Library`, library ชื่อ `google drive`) — ถ้า Drive for desktop หยุด Resolve จะ Save ไม่ได้และปิดเอง ใช้ `scripts/resolve_recover.py`
 - ก่อน batch ต้องสร้างและตรวจ `.drp` หลัง pilot ใหม่: ไฟล์ที่มีอยู่ `backups/2026-10-26-sakuyako-2026-06-pre-pilot.drp` เก่ากว่า pilot และใช้เป็น rollback ของสถานะปัจจุบันไม่ได้; Studio MCP 21.1.1 read-only ยังตอบ แต่ `SetCurrentTimeline`/`SaveProject`/`ExportProject` ไม่ยืนยันการทำงานและไม่เกิดไฟล์สำรอง ต้อง restart Resolve และเปิดโปรเจกต์ใหม่ก่อนทำ batch
 
 ## ยังไม่ทราบ (ถามผู้ใช้ก่อนเดา)

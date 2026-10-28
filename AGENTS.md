@@ -117,6 +117,7 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 - Always export a verified `.drp` backup before running batch operations (`backup_drp.py`).
 - Work in recoverable variants (`_focus_variant`, `_bak`). Only update original master timelines upon explicit user instruction.
 - Always save via `project_manager.SaveProject()` and read back all modified items.
+- If Resolve closes itself or hangs mid-task, recover without asking (user-authorised 2026-10-28): run `python scripts/resolve_recover.py --project "<current project>"`, then re-verify the item that was in flight and continue. Do not use it to quit a healthy Resolve with other work open.
 
 ## Finish of task: record what you learned
 
