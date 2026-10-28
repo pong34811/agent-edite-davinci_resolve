@@ -3655,7 +3655,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session\\SKILL.md",
       "source_sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c",
       "kind": "editing_skill",
-      "sha256": "8717a34e95b6695e061b870cdd1395723c9b6f3879ea7d17206d136d73e3cce0"
+      "sha256": "064a7d2207f38014d6bd5c215d083ee5c9a6bc5f9fb9949dec181f998056bd33"
     },
     {
       "path": ".agents/skills/resolve-session/agents/openai.yaml",
@@ -3730,7 +3730,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/hyperframes-illustration-workflow.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "da12a34d1bd1d62f0bca9ed5d1ce59b9008ad3920ef898ec60b4d3e28db6b45e"
+      "sha256": "fa648972856369801f72dc247f153f40e65414bf34b2d512e92703639aa49280"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/illustration-assets.md",
@@ -4269,7 +4269,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "764839378eba19a55aca985293288728bdbe060470841e951efcede53b6fd0d1"
+      "sha256": "068026d489fea4172a4cdd4767b8f084a8e5efe94b71f05f19a19d4d7b8be3c1"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4469,12 +4469,12 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "10a0cb4beb34134528bf63b88e568c5e24b4c05afa0c5aff8e6b90efe3648994"
+      "sha256": "e93224e8e4620a07ea9cecaa3c686487173f2519c9f4facfbf17d0dd0960202c"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "af819c58239f56bf6b2fc0ec407ee1f99ac1d1bcf35b120c8c9ad532179801fa",
+      "sha256": "3c26c5eea428ba65480d6ca42493991ba6407746bc8d4005df514fe23443d08a",
       "kind": "integration_or_validation"
     },
     {
@@ -4486,7 +4486,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "f2158278a038730ac2f0ed3e084c619fb6aed11aadaa36ec51c0de5e8f3eefe8",
+      "sha256": "6810e2440597dbf3ac3a8c2248f96631aa483584c921bc1238a6ec91fd2f6a32",
       "kind": "integration_or_validation"
     },
     {
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a5ccd9af699b79af9da8206d445541b10bbc168f0c471b3fe564c09f2f4d1a2a"
+      "sha256": "86d29456e32418405b945a168ed5a47ca417610eba9707e41e0873912d5312fc"
     },
     {
       "path": "docs/README.md",
@@ -4593,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "4461453bee51340e08005086499d38a7dc9c8bf87d915cbabb830b9ce1274793"
+      "sha256": "07670c38b713ca3c0719453d3b3c72c52c5f8b35194864fba088ebd2f08c972b"
     },
     {
       "path": "docs/channels/kael.md",
@@ -4617,7 +4617,7 @@
       "path": "docs/channels/sakuyako-cheris.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ce8efc4831fabc34cacedc7be9c674a8ed9d67a0af7a4ed90cdf50e62c76a1b9"
+      "sha256": "46c3ac88e8f3f98142598b42075563896cd492414786faeacdd6be4788c95595"
     },
     {
       "path": "docs/channels/tygarina.md",
@@ -6498,7 +6498,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f8ed14cc90af279efe410c862723eb507182ccdc26fd6cddbe21371ef2f04396"
+      "sha256": "b04c58faf5549c1a3be5bb161645e4a2414f0836a9cef627352c4cbee190b6fc"
     },
     {
       "path": "scripts/README.md",
@@ -6654,7 +6654,7 @@
       "path": "scripts/build_9x16_day24.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0252fdffdfefa21c3bebe8e50cc0ecb47e9169485548d5259677b580c231577f"
+      "sha256": "e4a5d02e123940cbd485668eb6ec32744a6bc1dcef0c5ea9f9115051e8ddefd6"
     },
     {
       "path": "scripts/build_dynamic_srt.py",
@@ -6690,7 +6690,7 @@
       "path": "scripts/cleanup_and_rename_timelines.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d1547f109cafb2500050b828e126348c2ba438299eb16f2a44b796ac2d1df5fb"
+      "sha256": "bd331b2bbfa224f16bf0af3eb48bdef1c83aa16d6a94465b6471b56b504ab214"
     },
     {
       "path": "scripts/cleanup_backups.py",
@@ -6713,10 +6713,16 @@
       "sha256": "a84b360e4c5e5acda22e56086b418d1a6e2e6c103ff570d141b977cf29386a31"
     },
     {
+      "path": "scripts/delete_archived_timelines.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "14d82333377d1723f8d5671eb068695edd58a05942ac8de78c561cc08cf82e01"
+    },
+    {
       "path": "scripts/deploy_climbing_focus.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fd9c4f5a2ba28bf62bc78c22dcb9263e89b32dda59f66063a98b89f916c19d3f"
+      "sha256": "99ee823f4ceb560d6cac02d8f6f9d1e0bb30606a7fcda664bfae7f526a8a0791"
     },
     {
       "path": "scripts/drt_add_native_subtitle.py",
@@ -6728,19 +6734,19 @@
       "path": "scripts/drt_focus_multi.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "22bc6969627dd68381caca5dd849553cf686c896cf7eee93ab6e9f6d0e5bfb28"
+      "sha256": "c0cef5b5740a2a3f835568e5244202c54bec2a828e879706a724eba4d2b033c3"
     },
     {
       "path": "scripts/drt_focus_track.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0a7c5e70c6a4d605dd080eb7da57747b0a632dc04b640f00252446107f93161"
+      "sha256": "6d7336a20b7855b08d7dea4e35d47ffb376c3963304994262da467fecb3775bc"
     },
     {
       "path": "scripts/drt_prepend_cover.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "15a987145d3e3f359846721e98e4544441b0d14ddaf1b2785211ce95df3ce3df"
+      "sha256": "40cda003bf57d8bec1958eb5ba09ec3ffa344dc48a9f9f51a8f4e6c04e5de39a"
     },
     {
       "path": "scripts/drt_rebuild_focus_track.py",
@@ -6812,7 +6818,7 @@
       "path": "scripts/focus_frame_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0547e3221d9bca32715c85a36a50135242317973689e11498230ea40def14026"
+      "sha256": "61fb653ca9657ff3e3523130181405452662167259a18b1834682c38daa4e0d0"
     },
     {
       "path": "scripts/focus_qc_all.py",
@@ -6836,7 +6842,7 @@
       "path": "scripts/import_focus_drt.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3708a60256b31e98d14aed572e2b9285039dd3caaa8f7225e598318413f06ca4"
+      "sha256": "9dc6bccf4afa2b8c1224e5be3833c4ff8cee0bedcfc0741be4deb5b5a5c0a7c5"
     },
     {
       "path": "scripts/inspect_t3.py",
@@ -6860,7 +6866,7 @@
       "path": "scripts/katy_9x16.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a2f3234fa6c63303c2daff9b3211bd78cd83b6fc75172c2aa8e5f85a2593d75c"
+      "sha256": "3cde93bfffa971c8db0080ed638574561bea67af54914df10bd96d978b8ffca3"
     },
     {
       "path": "scripts/load_subtitle_preset.py",
@@ -7076,7 +7082,7 @@
       "path": "scripts/patch_subtitle_preset_offline.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ed877b09284f5f8d69dbfd301a70c04d578471aa691279656ef617df54a0d557"
+      "sha256": "7e385f907a24835d1fb1b99f72e5bbcb88d8aebedc2c4d5834a0e0c61c08d449"
     },
     {
       "path": "scripts/plan_p2_focus.py",
@@ -7130,7 +7136,7 @@
       "path": "scripts/release.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5f9e00d4a04d157a38f2334b8f9506ca9f6c0b1fe27a93c76a9636c8ad1b7cf0"
+      "sha256": "f19126fdea490c8e1731ea85baae338d9d89ef70e5e2eca7df2802d6af7cca1f"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -7148,7 +7154,7 @@
       "path": "scripts/render_subtitle_stills.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f9b3e9d18a1109a3b5c7e8ab42727e913a798bd70b399264e715a185e208fa88"
+      "sha256": "a52b2f7f9dd7213fce05dc8addb4a3046422c78e00b13a6c46dbaa8a751d12d1"
     },
     {
       "path": "scripts/resolve_common.py",
@@ -7161,6 +7167,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "85c9620fc6ab81f1f093be823f54868dd94d3c62f952b8270a91e4f067c54b90"
+    },
+    {
+      "path": "scripts/resolve_recover.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5247c2dd2e604a1aba678b0db4aec4f8fcd7abeffcb81dddbd238f064022e7e3"
     },
     {
       "path": "scripts/retune_vtuber_zoom.py",
@@ -7190,31 +7202,31 @@
       "path": "scripts/sakuyako_export_final_audit.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "05625aa8b38077a604378885989db5895062da0f1437a88404548400f0797d07"
+      "sha256": "e32d7bb4a6d9a504b7c1de4e0db184e5c442a6f883c5b5e7af28272e6d998632"
     },
     {
       "path": "scripts/sakuyako_export_preflight.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ec32fd8df71266e1eb823d93383e44c40c90747a38cad5eeb3a547b2243edd53"
+      "sha256": "c40be09814c15cc7863b939d968f2017d2406ca036d29fb969376222f5874969"
     },
     {
       "path": "scripts/sakuyako_export_qc.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2754cb6e15dad778819e15233000fdc4993d8f5bf7ca7b1d492ec8746fa93c89"
+      "sha256": "46e74206680d5af103e7dbb089ca3256add99bba37d0c69fc5e59d1dca0ba248"
     },
     {
       "path": "scripts/sakuyako_export_resume.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5db35ed443f3bb4db0abf9ba9b08ad58544301b2a22d62f988e1a5a20841f1c7"
+      "sha256": "05423945595188feeccf7a95aaf16d148c3d07e3638473c664a135f4f6cd942f"
     },
     {
       "path": "scripts/sakuyako_update_vertical_masters.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1d6470dab118259bd9065bcb465f86c4e5d4eea2cc47be58430022b1b5325dff"
+      "sha256": "a451fc5fe61d326370f3a4027cb2884fe6c2fb8724ee479ad60eaf54b21e721f"
     },
     {
       "path": "scripts/scan_p2_vtuber_presence.py",
@@ -7238,7 +7250,7 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "55d0990dd01e8f9858136c46aaa823420737a45020f417de746defed0c4035b4"
+      "sha256": "378dce4d6a748406713e59104fca91d037814c1d484e85ba943b2ebf12ea4bf4"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -7292,7 +7304,7 @@
       "path": "tests/test_audio_qc_and_headroom.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "510d785e6e47c70280f000082609973e727205f9d9b95f8c571a0e7220c2054f"
+      "sha256": "3cef692c129e7aefcdf9f9ba1de4916d721a399e4beba2e13c994712d804e311"
     },
     {
       "path": "tests/test_backup_cleanup.py",
@@ -7310,7 +7322,7 @@
       "path": "tests/test_bundle_git_ignored.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3c6ca484c0414b8367becdd7c959fcc7892e77c1e586eab17a48d8c29caae6fb"
+      "sha256": "ff97ad90e344c3a09bdf763a527ddd35cc8b522a2af13080da1da831755cd3a3"
     },
     {
       "path": "tests/test_caption_lint.py",
@@ -7337,6 +7349,12 @@
       "sha256": "addadc497e4c640d96ee2be114076c88a76ecbec90856a93b0af230b18888216"
     },
     {
+      "path": "tests/test_delete_archived_timelines.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "a002ab7bc283cf8ccce58245dc44dbd597e1f213dc09cb7217d964cb1ff7926b"
+    },
+    {
       "path": "tests/test_drt_add_native_subtitle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7346,19 +7364,19 @@
       "path": "tests/test_drt_focus_track.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8d58fade39568b4c71791b2384513efdbfaa15ffa3289a7551eb5bd9f2e7bb28"
+      "sha256": "eb7151786110b23ef94fb8f39a4b414d19dbc94b6ad69f4e21502ebeb3fa911e"
     },
     {
       "path": "tests/test_drt_prepend_cover.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a9bb9288c76edf6af2359cc940aaab7cbfd597bd31583f1ae87e63923047fcc2"
+      "sha256": "9e4cce8d3958fc27240137f867321d822cade320de7f9ad1c9bceda3ea7d3cbb"
     },
     {
       "path": "tests/test_drt_rebuild_focus_track.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "13ac356934fb6cb9e9b4410910a822089016fe075bce38000575a379e574e605"
+      "sha256": "1c176c6fbff4caa03562d9f5031bff1c12d83bb209b0584d5e055912a0255c5c"
     },
     {
       "path": "tests/test_edit_workflow.py",
@@ -7388,7 +7406,7 @@
       "path": "tests/test_focus_frame_qc.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6ac49dccd97941c2f068d499465d8a2e979d75565d037285e484826c666b3da2"
+      "sha256": "7e98d545a2ef40a9e6de6dd65bf4189846c81b263f15bfc5ecade05340461ca1"
     },
     {
       "path": "tests/test_load_subtitle_preset.py",
@@ -7430,13 +7448,13 @@
       "path": "tests/test_refresh_skill_manifest.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "1f0d7644f099db1aa67bc284c877c09b7a01e9b51de11e2f9c1030f3c9366661"
+      "sha256": "c5d1d1aa60745dacb5fdd97a1ab89bf1f5b4a11b91e72ce2de0062c89a975bf9"
     },
     {
       "path": "tests/test_release.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "75e187ebde433f8e5f18297574bf28674997e13919d5c97a212a4d83acd666d9"
+      "sha256": "2ec74bf0a5f9b457fe68fd26826a65b92cf9345f3212d6ebcf1a7341715e17f4"
     },
     {
       "path": "tests/test_render_enrichment_pilot.py",
@@ -7455,6 +7473,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "f3f00ed5f09420b83bc1cc11f5b79324b5caa392376950af02c4ebd55c00656e"
+    },
+    {
+      "path": "tests/test_resolve_recover.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "da2772d5dad2841215835ac63f274e4055117539ba396e5e1bdb5f779746720d"
     },
     {
       "path": "tests/test_review_analysis_budget.py",
@@ -7484,7 +7508,7 @@
       "path": "tests/test_subtitle_qc_and_baseline_invariants.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "bdeadff290270efd9f5cc43a9ec683adb09ead275249534dd7e252048e91f37d"
+      "sha256": "de677a1f0a1c502b911fdc8c2055d5cc09d2e7ca917940f3d45ba3c294dc48f2"
     },
     {
       "path": "tests/test_subtitle_workflow_rules.py",
@@ -7892,11 +7916,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1048,
+    "manifest_files": 1052,
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.0",
+  "bundle_version": "0.16.4",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
