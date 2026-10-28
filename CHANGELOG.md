@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.16.2 — กู้ Resolve อัตโนมัติเมื่อปิดเองหรือค้าง
+
+### รายละเอียด
+- เพิ่ม `scripts/resolve_recover.py` ให้ agent กู้ DaVinci Resolve ที่ปิดเองหรือค้างได้เอง: เปิด Google Drive ใหม่เมื่อไดรฟ์ของ project library หาย, kill เฉพาะเมื่อ Resolve ค้าง, เปิด Resolve ผ่าน Explorer และเปิดโปรเจกต์เดิมให้ (ทดสอบจริงกับ `2026-06-Sakuyako` ได้ `RECOVER_OK`)
+- เพิ่ม test `tests/test_resolve_recover.py` (5 ข้อผ่าน) และแถวใน `scripts/INDEX.md`
+- บันทึกกฎใน `AGENTS.md`, `docs/OPERATING-NOTES.md` และ skill `resolve-session`: ผู้ใช้อนุญาตให้กู้ Resolve เองแล้ว, ถ้า SaveProject คืนค่า False ให้ตรวจไดรฟ์ library ก่อน, หลังเปิดใหม่ให้ตรวจผลโดยอ่านค่ากลับแทนการเชื่อค่าที่ setter คืนมา
+- อัปเดตสถานะช่อง Sakuyako-Cheris: นำ SRT เข้า native Subtitle track แล้ว 78/85 timeline และอ่านกลับตรวจครบทุก cue
+
 ## v0.16.1 — วางระบบเรียนรู้และเผยแพร่ให้ทุก agent
 
 ### รายละเอียด
