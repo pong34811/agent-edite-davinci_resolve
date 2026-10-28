@@ -4367,7 +4367,7 @@
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "3ab2960cc70e7734f15caefef7a723e9e48ced8957cf62411397d2224bcd97cf"
+      "sha256": "22a3b80db0ad54ab6cc18f27d7d84e0715d5f2c3d0d97459fd9e2c7c03db08b9"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/references/avatar-placement.md",
@@ -4593,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "07670c38b713ca3c0719453d3b3c72c52c5f8b35194864fba088ebd2f08c972b"
+      "sha256": "c014bd7dbdd2d0b5b4ee82b1a8c1ca6ebdc928f5d28e38aa1f4f1ac901337621"
     },
     {
       "path": "docs/channels/kael.md",

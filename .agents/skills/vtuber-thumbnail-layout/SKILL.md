@@ -55,6 +55,8 @@ Canonical rules for VTuber YouTube thumbnail composition in 16:9 landscape and 9
 
 ## Pitfalls
 
+- For portrait image generation, specify safe bounds for the complete text block including Thai tone marks and outline, not just the baseline. Inspect the real 4:5 crop overlay; reduce/reposition the whole text block if upper marks cross y=285 at 1080×1920. Generated size instructions are not proof of pixel dimensions: inspect the saved image and normalize export dimensions before QC.
+
 - ห้าม crop ปกแนวนอนมาใช้กับ Shorts โดยตรง — จัดองค์ประกอบใหม่
 - อย่าวางข้อความใน Timestamp Badge (1580–1900, 980–1060) หรือ Scrubber ล่าง
 - อย่าใช้สีแดงมากกว่า 1 จุดบนปก (สงวนเฉพาะ hook หลัก)
