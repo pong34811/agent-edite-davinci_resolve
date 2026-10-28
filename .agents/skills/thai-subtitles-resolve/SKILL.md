@@ -341,6 +341,14 @@ model.transcribe(wav, language="th", word_timestamps=True, beam_size=5,
 - Use contact frames for game context, never as evidence for words. Preserve English only when clear; record uncertain name spellings and exclude stray foreign-script glyphs.
 - Keep curation separate from Resolve when only SRT sidecars are requested. Reparse the written UTF-8 SRTs to assert consecutive indices, non-overlapping one-line cues, a brief gap, short display duration, no foreign junk, and the final cue before `end_frame / fps`; report omitted intervals and uncertain terms per clip.
 
+## Hard clips: game audio drowning the voice (verified 2026-10-28, Sakuyako)
+
+- Whisper long-form with VAD on the full mix returned nothing for clips that had ~40-58 s of speech. Separate the voice first: `python -m demucs --two-stems=vocals -n htdemucs -d cuda` (15 x 60 s clips in 46 s on an RTX 4060). A vocals stem with no voice above -38 dB means the clip really has no speech.
+- Do not run Whisper long-form on the stem either (it skipped speech and looped "อาหารอาหาร..."). Cut the stem into VAD chunks (`faster_whisper.vad.get_speech_timestamps`, threshold 0.35, max 6 s) and transcribe each chunk with `vad_filter=False`, `condition_on_previous_text=False`; run Typhoon ASR (`scb10x/typhoon-asr-realtime`) on the same chunk slices.
+- Normalise Typhoon's sara am (`ํา` -> `ำ`) before comparing. Even at >= 0.75 agreement both models keep wrong words ("เมฆ"/"มีด", "สาว"/"สระ"), so a human or an agent proofread is still required; reject Whisper stock hallucinations (สวัสดีครับ, ขอบคุณครับ, โปรดติดตามตอนต่อไป), repetition, in-game announcer lines and background song lyrics.
+- When the user asks for Typhoon text, proofread it per chunk (Whisper as a hint), then spread the chunk span across cues by character count; give pythainlp a custom dictionary with the channel's names or `newmm` splits them across cues ("มิฟ/ฟี่").
+- Confirm the streamer's self-name with the user before captioning: ASR rendered one name as ชนิด/เฉศนิท/ฉลิด/ชะลีด/ชิคกี้พาย across 20 timelines. When a fixed name lengthens a cue past 14 chars, move a neighbouring word into the adjacent cue instead of retiming.
+
 ## Timebase
 
 Whisper time is relative to the extracted WAV. WAV t=0 is the clip's
