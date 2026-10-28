@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.16.4 — ลบ Timeline สำรองและเพิ่มเครื่องมือลบ archive
+
+### รายละเอียด
+- เพิ่ม `scripts/delete_archived_timelines.py` สำหรับลบ timeline `<ชื่อ>_archived_vNN` ที่ MCP สร้างอัตโนมัติ: dry-run ก่อน, เทียบคลิปภาพ/เสียงกับ timeline หลัก, สำรอง `.drp` แล้วลบด้วย `--confirm` และอ่านกลับ พร้อม test
+- ลบ timeline สำรอง `_archived_v01` 20 อันในโปรเจกต์ `2026-06-Sakuyako` (ภาพ/เสียงตรงกับ timeline หลักทุกอัน) เหลือ timeline หลัก 85 อัน ซับยังตรง SRT 81/85 ตามเดิม
+
 ## v0.16.3 — ซับ Typhoon และแก้ชื่อเชอรี่ทั้งโปรเจกต์ Sakuyako
 
 ### รายละเอียด
