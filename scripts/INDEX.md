@@ -15,6 +15,7 @@
 | `check_mcp_update.py` | เทียบเวอร์ชัน MCP ชุมชนที่ติดตั้งกับ tag ล่าสุดของ samuelgursky/davinci-resolve-mcp (`--apply` อัปเดตให้) — รันก่อนเริ่มทุกงาน | ใช้ซ้ำ |
 | `backup_drp.py` | export + verify `.drp` ก่อนแก้เป็นชุด | ใช้ซ้ำ |
 | `resolve_recover.py` | Resolve ปิดเอง/ค้าง: เปิด Google Drive ถ้า library หาย → kill ถ้าค้าง → เปิดผ่าน explorer → เปิดโปรเจกต์เดิม (`--project`, `--dry-run`) | ใช้ซ้ำ |
+| `delete_archived_timelines.py` | ลบ timeline `<ชื่อ>_archived_vNN` ที่ MCP สร้าง (dry-run ก่อน, เทียบ V/A กับ timeline หลัก, สำรอง `.drp` แล้วลบด้วย `--confirm`) | ใช้ซ้ำ |
 | `cleanup_backups.py` | export `.drp` ใหม่ที่ตรวจแล้ว แล้วลบ archive ที่ระบุ (ต้องได้รับอนุญาต) | ใช้ซ้ำ |
 | `review_enrichment_readonly.py` | inventory read-only ของทุก timeline/track/item | ใช้ซ้ำ |
 | `anomaly_sweep.py` | ตรวจโครงสร้างผิดปกติทุก timeline (รายงานอย่างเดียว) | ใช้ซ้ำ |
