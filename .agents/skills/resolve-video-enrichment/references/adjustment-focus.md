@@ -99,3 +99,20 @@ Symptom: chibi blown up with a black band on the left. Cause: each Adjustment Cl
 - Layout: 1280x720 Roblox capture with a pillarbox (black at x < 0.05 and x > 0.95). Chibi sits bottom-left: hair/flower top ~0.585, body base ~0.93, x ~0.08-0.235.
 - Window `top 0.55, bottom 0.955, cx 0.255` gives Size 2.469, Center (1.105, 1.123). `cx` can't go below `0.05 + h/2` or the pillarbox shows, so the avatar stays left of centre (accepted, same rule as the corner-avatar note above).
 - `scripts/zoom_variant_stills.py` is 60 fps only (the `timecode` helper refuses other rates). On 30 fps, export stills with `Project.ExportCurrentFrameAsStill` after stepping the playhead off and back.
+
+## Batch: zoom on 80 Sakuyako timelines in place (2026-10-29, 21.1.0.17)
+
+Route per timeline (scratch tools `scripts/scratch/zoom_one.py`, `zoom_batch.py`, `chibi_match.py`, `zoom_qc.py`):
+export DRT → `drt_rebuild_focus_track.py --create --track-index 2` with a **0-comp** template → import → compare every
+original track → add one Fusion comp + Transform per clip → save → rename the original `<name>_pre-zoom`, move it to bin
+`_pre-zoom originals`, give the import the original name and bin. 80/80 audited; 201 Resolve stills viewed.
+
+- **Template must carry no comps.** A template cut from an already-tuned clip brings its whole comp stack (6 here) into
+  every new clip, and `DeleteFusionCompByName` returns False on this build, so the stack can't be pruned. Build the
+  template from a fresh `InsertGeneratorIntoTimeline('Adjustment Clip')` on a throwaway empty timeline (it has 0 comps;
+  landing on V1 is harmless there), export it, delete the throwaway.
+- **Avatar position differs per source**, even inside one channel (chibi top 0.55 vs 0.59 vs 0.69 of frame height). One
+  window for all would crop heads. Locate the sprite per timeline with masked template matching (numpy, ~5 frames), then
+  window = bbox + 4.5% headroom + 3% foot room, centre clamped so the left pillarbox (≤ 6%) never shows.
+- Subtitle-led cues: subtitles were word fragments; group fragments with gaps ≤ 15 f into phrases, score by title keyword
+  + reaction words, take 2-3 non-overlapping 105-150 f ranges. Timelines with no subtitles were left untouched.
