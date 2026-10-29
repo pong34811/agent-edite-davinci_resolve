@@ -84,7 +84,7 @@ def main():
         check(variant is not None and variant.GetEndFrame() == src.GetEndFrame(), "duplicate failed")
         tl = variant
     activate(project, tl)
-    check(float(tl.GetSetting("timelineFrameRate")) == 60 and tl.GetStartFrame() == 0, "fps/start")
+    check(float(tl.GetSetting("timelineFrameRate")) in (30, 60) and tl.GetStartFrame() == 0, "fps/start")
     counts = {k: tl.GetTrackCount(k) for k in ("video", "audio", "subtitle")}
     before = signature(tl, counts)
     locks = {(k, i): tl.GetIsTrackLocked(k, i) for k in counts for i in range(1, counts[k] + 1)}
@@ -93,7 +93,8 @@ def main():
     done = []
     try:
         for k, i in locks:
-            tl.SetTrackLock(k, i, True)
+            if k != "video":
+                tl.SetTrackLock(k, i, True)
         time.sleep(SETTLE)
         check(tl.AddTrack("video") and tl.GetTrackCount("video") == idx, "AddTrack failed")
         time.sleep(SETTLE)
