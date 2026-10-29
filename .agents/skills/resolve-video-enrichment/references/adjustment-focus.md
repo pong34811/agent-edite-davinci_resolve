@@ -91,3 +91,11 @@ One real timeline, no pre-selected Adjustment Clip (the Inspector showed the V1 
 - Cue selection: 7 ranges (4-6 s each, ~38% of a 90 s clip) on number/goal/thanks/call-to-action/goodbye beats, not every cue. Ranges need `>= 90` frames and strict gaps (`e < next s`).
 - Run: `python -m scripts.apply_vtuber_zoom --plan <plan.json> --backup <pre.drp> --in-place --apply`, then `python -m scripts.zoom_variant_stills "<timeline>" <out_dir>`. Readback matched all 7 ranges; V1/A1/subtitle signatures unchanged.
 - Evidence limit: 8 of 21 exported stills were viewed; no A/B with the Adjustment Clip off and no rendered range, so motion stability is unproven (no keyframes were set).
+
+## Fix: zoom "ใหญ่ผิดปกติ" from stacked comps (Sakuyako, 2026-10-29, 21.1.0.17)
+
+Symptom: chibi blown up with a black band on the left. Cause: each Adjustment Clip carried 6 Fusion comps from repeated tuning attempts (each `AddFusionComp()` appends one and makes it active), and the last one, the one Resolve renders, was Size 4.24. When a zoom looks wrong, dump **every** comp per clip first (index, Transform Size/Center). Fix by editing only the last comp's Transform (`focus_apply_batch.set_transform_existing`), not by adding a seventh.
+
+- Layout: 1280x720 Roblox capture with a pillarbox (black at x < 0.05 and x > 0.95). Chibi sits bottom-left: hair/flower top ~0.585, body base ~0.93, x ~0.08-0.235.
+- Window `top 0.55, bottom 0.955, cx 0.255` gives Size 2.469, Center (1.105, 1.123). `cx` can't go below `0.05 + h/2` or the pillarbox shows, so the avatar stays left of centre (accepted, same rule as the corner-avatar note above).
+- `scripts/zoom_variant_stills.py` is 60 fps only (the `timecode` helper refuses other rates). On 30 fps, export stills with `Project.ExportCurrentFrameAsStill` after stepping the playhead off and back.

@@ -48,3 +48,5 @@
 - Sakuyako และ Cheris เป็นคนเดียวกัน คนละช่อง หรือคอลแล็บ
 - ถ้ามี Cheris แยก: โปรเจคและฟุตเทจของ Cheris อยู่ที่ไหน (พบแค่ `contact-cheris.gsheet` และคำว่า cheris ใน 3 script)
 - งานค้างหลังส่งออกวันที่ 2026-10-13
+
+- VTuber Zoom (2026-10-29, timeline `ช็อตฮา  โอ้ย-vdo`): chibi sits bottom-left in a pillarboxed 1280x720 Roblox capture. Verified window is `top 0.55 / bottom 0.955 / cx 0.255` (Size 2.469). Anything larger (e.g. Size 4.2) crops the chibi and shows the black pillarbox. Details in `adjustment-focus.md`.
