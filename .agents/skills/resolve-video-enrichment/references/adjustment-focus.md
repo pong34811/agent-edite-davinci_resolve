@@ -121,3 +121,6 @@ original track → add one Fusion comp + Transform per clip → save → rename 
   timelines). Fix used: keep Size, move Center so the avatar's left edge sits ~5% in from the frame edge (its right edge
   then lands at ~0.38 of width). Check with `python -m scripts.focus_qc_frames ... --fps 30` (burn-in render), not
   native stills, which omit subtitles.
+- **Timelines without subtitles:** pick cues from audio instead: ffmpeg `ebur128` momentary loudness over the V1
+  source range, the 2-3 loudest non-overlapping 4.5 s windows (scratch `plan_audio_cues.py`). Used on 4 Sakuyako
+  timelines; result checked on stills only. Loudness finds shouting/reaction peaks, not meaning, so review the moments.
