@@ -116,3 +116,8 @@ original track → add one Fusion comp + Transform per clip → save → rename 
   window = bbox + 4.5% headroom + 3% foot room, centre clamped so the left pillarbox (≤ 6%) never shows.
 - Subtitle-led cues: subtitles were word fragments; group fragments with gaps ≤ 15 f into phrases, score by title keyword
   + reaction words, take 2-3 non-overlapping 105-150 f ranges. Timelines with no subtitles were left untouched.
+- **Subtitle overlap check (same day):** the subtitle track always draws above the zoom, so a zoom never hides
+  captions. But a horizontally centred avatar puts its body under the bottom-centre caption and kills contrast (65/81
+  timelines). Fix used: keep Size, move Center so the avatar's left edge sits ~5% in from the frame edge (its right edge
+  then lands at ~0.38 of width). Check with `python -m scripts.focus_qc_frames ... --fps 30` (burn-in render), not
+  native stills, which omit subtitles.

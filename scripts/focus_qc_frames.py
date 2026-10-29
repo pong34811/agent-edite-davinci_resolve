@@ -4,7 +4,7 @@ MCP-GAP: davinci-resolve timeline_frame.capture -> RENDER_START_FAILED
 (StartRendering refused) on p2 Resolve 21.1.0.17, so render through the scripting API.
 
 Usage:
-  python -m scripts.focus_qc_frames --start 1995 --end 2272 --out <dir> --name pilot [--frames 3]
+  python -m scripts.focus_qc_frames --start 1995 --end 2272 --out <dir> --name pilot [--frames 3] [--fps 30]
 Restores the render preset it found. Read-only for the timeline.
 """
 from __future__ import annotations
@@ -35,6 +35,7 @@ def main():
     ap.add_argument("--frames", type=int, default=3)
     ap.add_argument("--width", type=int, default=1280, help="render width (1080 for a 9:16 timeline)")
     ap.add_argument("--height", type=int, default=720, help="render height (1920 for a 9:16 timeline)")
+    ap.add_argument("--fps", type=float, default=60.0, help="must equal the timeline frame rate (SetRenderSettings rejects a mismatch)")
     a = ap.parse_args()
 
     r = connect_resolve()
@@ -52,7 +53,7 @@ def main():
         require(project.SetRenderSettings({
             "TargetDir": str(out), "CustomName": a.name,
             "SelectAllFrames": False, "ExportVideo": True, "ExportAudio": False,
-            "FormatWidth": a.width, "FormatHeight": a.height, "FrameRate": 60.0,
+            "FormatWidth": a.width, "FormatHeight": a.height, "FrameRate": a.fps,
             "MarkIn": a.start, "MarkOut": a.end - 1,
             "ExportSubtitle": True, "SubtitleFormat": "BurnIn"}), "settings rejected")
         job = project.AddRenderJob()
