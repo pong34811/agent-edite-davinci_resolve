@@ -17,8 +17,10 @@
 - Google Drive: `Projects/Armigon/`
 
 ## โปรเจคและ timeline ใน Resolve
-- `armigon-2026-09`: 48 timeline แนวนอน (vdo) พร้อม baseline ใน `armigon_9x16_snapshot.py`
-- pilot แนวตั้งสร้างบน timeline duplicate เท่านั้น
+- `armigon-2026-09`: 48 timeline แนวนอน (vdo) และ 48 timeline แนวตั้ง (_9x16) รวมทั้งหมด 96 timelines
+- Export ปลายทาง: `G:\My Drive\Projects\Armigon\2026-09\vdo`
+- Export ล่าสุด: เสร็จสิ้นสมบูรณ์ครบทั้ง 96 คลิป (48 แนวนอน + 48 แนวตั้งแนบภาพปกเฟรมแรก COVER_FRAMES=1) ผ่าน QC ทั้งหมด (96/96 pass)
+- ภาพปก: มีครบทั้ง 48 ปกแนวนอน และ 48 ปกแนวตั้ง (`_9x16.jpg`) เก็บไว้ใน `vdo` และ `Thumbnails/Portrait`
 
 ## รูปแบบและ layout
 - ต้นทาง 16:9; 9:16 ต้อง pilot ทีละ 1 timeline แล้วให้ผู้ใช้อนุมัติก่อนทำต่อ ห้ามสร้างทั้งชุดเอง

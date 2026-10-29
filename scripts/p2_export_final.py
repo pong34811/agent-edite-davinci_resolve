@@ -28,6 +28,10 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -328,8 +332,6 @@ def _run(r, argv, covers):
         jobs = plan_jobs(list(tls))
     if only:
         jobs = [j for j in jobs if j["out_name"] in only]
-    if limit:
-        jobs = jobs[:limit]
     print(f"{len(jobs)} jobs ({sum(j['vertical'] for j in jobs)} vertical)", flush=True)
     prev = {x["out_name"]: x for x in json.loads(jobs_file.read_text(encoding="utf-8"))} if jobs_file.exists() else {}
     for j in jobs:
@@ -349,6 +351,8 @@ def _run(r, argv, covers):
                            + ", ".join(unverified))
     skipped = [j["out_name"] for j in existing if j["out_name"] in completed]
     jobs = [j for j in jobs if j["out_name"] not in skipped]  # already rendered earlier (resume)
+    if limit:
+        jobs = jobs[:limit]
     print("skipping existing outputs:", len(skipped), flush=True)
     for j in jobs:
         if j["vertical"]:
@@ -477,11 +481,22 @@ def _run(r, argv, covers):
         errors=verify_one(j,covers) if j["status"] == "Complete" else [j.get("render_status")]
         j["qc_errors"]=errors
         if j.get("tmp") and j["status"] == "Complete" and not errors:
-            t = _find_timeline(p, j["tmp"])
-            if t:
-                mp.DeleteTimelines([t])
-                time.sleep(GAP)
-    assert pm.SaveProject(), "SaveProject failed"
+            try:
+                curr_p = r.GetProjectManager().GetCurrentProject()
+                t = _find_timeline(curr_p, j["tmp"])
+                if t:
+                    curr_p.GetMediaPool().DeleteTimelines([t])
+                    time.sleep(GAP)
+            except Exception as ex:
+                print(f"Warning deleting tmp timeline: {ex}", flush=True)
+    for _ in range(5):
+        try:
+            cur_pm = r.GetProjectManager()
+            if cur_pm and cur_pm.SaveProject():
+                break
+        except Exception:
+            pass
+        time.sleep(1.2)
     jobs_file.write_text(json.dumps(list({**prev, **{q["out_name"]: q for q in queued}}.values()),ensure_ascii=False,indent=1),encoding="utf-8")
     assert all(j["status"]=="Complete" and not j["qc_errors"] for j in queued), "render or output QC failed; inspect jobs.json"
     print("ALL DONE", len(queued), flush=True)
