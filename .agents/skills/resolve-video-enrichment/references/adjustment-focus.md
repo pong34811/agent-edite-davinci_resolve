@@ -124,3 +124,11 @@ original track → add one Fusion comp + Transform per clip → save → rename 
 - **Timelines without subtitles:** pick cues from audio instead: ffmpeg `ebur128` momentary loudness over the V1
   source range, the 2-3 loudest non-overlapping 4.5 s windows (scratch `plan_audio_cues.py`). Used on 4 Sakuyako
   timelines; result checked on stills only. Loudness finds shouting/reaction peaks, not meaning, so review the moments.
+- **9:16 copies without the raster hang (21.1.0.17):** `SetSetting` 1080x1920 on a populated duplicate hung Resolve
+  again (2026-10-29), but works on an EMPTY timeline. Build: `CreateEmptyTimeline` → raster → `SetStartTimecode` →
+  `AddTrack('subtitle')` + `AppendToTimeline([srt_item])` FIRST (appending to a non-empty timeline puts the SRT after
+  the end) → re-append V1/V3/A1 from the same media and `GetLeftOffset()` with explicit `recordFrame`. Generate the SRT
+  from the original's native cues, not a sidecar file. Then compare audio/V1/subtitles/range with the original.
+- Render queue hygiene: `DeleteRenderPreset` cannot delete the preset that is currently loaded, so "save temp preset →
+  render → load it back → delete" leaves one preset per render. After a crash, every setter returned None while a
+  modal dialog was open in Resolve; reads still worked. Close the dialog first.

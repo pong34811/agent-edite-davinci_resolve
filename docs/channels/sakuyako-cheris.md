@@ -50,3 +50,5 @@
 - งานค้างหลังส่งออกวันที่ 2026-10-13
 
 - VTuber Zoom (2026-10-29, timeline `ช็อตฮา  โอ้ย-vdo`): chibi sits bottom-left in a pillarboxed 1280x720 Roblox capture. Verified window is `top 0.55 / bottom 0.955 / cx 0.255` (Size 2.469). Anything larger (e.g. Size 4.2) crops the chibi and shows the black pillarbox. Details in `adjustment-focus.md`.
+
+- 9:16 ของ 2026-06 (2026-10-29, ผู้ใช้อนุมัติ layout): ทำครบ 85 `_9x16` ด้วย `scripts/scratch/sk06_9x16.py` + `v916_batch.sh`: เกม 16:9 เต็มเฟรมด้านบน (แถว 60..667), chibi สูง ~740 px กึ่งกลาง (540,1060) ให้ซับกลางล่างอยู่ใต้ตัว, แถบดำล่างสุดยอมรับได้. render 1080x1920 มีเสียง+burn-in ซับ อยู่ที่ `vdo/9x16/<name>_9x16.mp4` (pilot เก่าเปลี่ยนชื่อเป็น `..._9x16_pilot-old.mp4`). ไฟล์ `จังหวะเกม  มาดีดๆ-vdo_9x16.srt` บน Drive เร็วกว่าซับ native 100 เฟรม (ยังไม่ได้แก้ไฟล์บน Drive).
