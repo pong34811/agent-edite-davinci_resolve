@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.16.5 — VTuber Zoom ครบ 85 Timeline (Sakuyako)
+
+### รายละเอียด
+- แก้ VTuber Zoom ที่ใหญ่ผิดปกติใน `ช็อตฮา  โอ้ย-vdo` (Sakuyako) และสร้างคลิปใหม่ให้เหลือ Fusion comp เดียวต่อคลิป
+- เพิ่ม VTuber Zoom ให้ครบ 85 Timeline ของ 2026-06-Sakuyako: เลือกจุดซูมจากซับ (Timeline ที่ไม่มีซับใช้ความดังของเสียงแทน) วัดตำแหน่ง chibi แยกตามแต่ละ source และจัด chibi ไว้ทางซ้ายเพื่อไม่ให้ซับตกบนตัว ผลตรวจ: ช่วง/comp/Transform/track เดิมผ่านทุก Timeline และดูภาพ still จาก Resolve ครบทุกคลิป
+- `scripts/focus_qc_frames.py` เพิ่มตัวเลือก `--fps` (เดิมใช้ได้เฉพาะ 60 fps)
+- บันทึกกับดัก API ของ 21.1.0.17 ใน skill และ OPERATING-NOTES: track enabled อ่านค่าได้เฉพาะ Timeline ปัจจุบัน, ลบ Fusion comp ไม่ได้, ค่า Fusion ถูกปัดเศษหลังเปิดใหม่, ExportProject ต้องใช้ path แบบเต็ม, Google Drive หลุดทำให้ Resolve ค้าง
+- รวม commit ที่ push ไว้ก่อนหน้า: ปก Armigon, helper ทำ inventory จุด focus จากซับ และแผน pilot ของ VTuber zoom
+
 ## v0.16.4 — ลบ Timeline สำรองและเพิ่มเครื่องมือลบ archive
 
 ### รายละเอียด
