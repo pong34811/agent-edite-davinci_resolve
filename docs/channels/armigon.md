@@ -88,3 +88,9 @@
 ## ทำไมถึงชื่อ Armigon — ตรวจปก (2026-10-28)
 - โปรเจกต์ Resolve มี FirstPass v2_illustrated และ FirstPass v2_illustrated_9x16; ชื่อซ้ำกับโปรเจกต์แนะนำตัวแต่เป็นคนละโปรเจกต์ ตรวจ project และ source ก่อนจับคู่ปก
 - ตรวจ tracks และโฟลเดอร์งาน armigon-name กับ outputs/reports ใน agent-thumbnail แล้ว ยังไม่พบปกที่ยืนยันได้สำหรับคลิปนี้; ปก Armigon_Intro เป็นของคลิปแนะนำตัว
+
+## คลิป "ทำไมถึงมาเป็นวีทูปเบอร์" — ภาพประกอบ HyperFrames (2026-10-29)
+- โปรเจกต์ `ทำไมถึงมาเป็นวีทูปเบอร์`; ต้นฉบับ `FirstPass v2` ID `89d39fe3-e699-4fee-848e-b1e17c0a38aa` (9,195 เฟรม, 1920×1052, 60 fps, ซับ 145, V1 35 / A1 35 / A2 SFX 28) ไม่ถูกแก้; สำเนา `FirstPass v2_illustrated` ID `56ab7549-70c6-479f-991c-0966a2b5ae2d` + V2 `REACTIONS`
+- 21 ภาพจาก reel alpha เดียว `whyvtuber_v1.mov` (ProRes 4444, 5,214 เฟรม, 5.4 GB): full-frame 4 (forge=ตัวละครจากนิยาย, forest=กลุ่มนักผจญภัย, ruins=ค่ายทหาร, ice=ค่าย Dreamlight) + กราฟิกซ้ายบน 17 (งานอดิเรก, ≠ความรู้สึก, กลอน≈แร็ป, ไม่เปิดเผยตัวตน, Markiplier, ยิ้มได้, พักไลฟ์, PNGTuber, Twitch↓, TikTok↑, ปัญหา #1, ใบแดง, สัญญา, ปฏิเสธ, ARMIGON, CTA); ชื่อแบรนด์/บุคคลเป็นตัวอักษรเท่านั้น ไม่ใช้โลโก้
+- งาน/QC: `.hermes/projects/armigon-whyvtuber/` (`placements.json`, `baseline.json`, `readback-verify.json`, `qc/final/` เฟรม Resolve พร้อมซับทุกช่วง, backup `backup_before_illustrations.drp`, `Armigon_whyvtuber_illustrated_project.drp`); สคริปต์ `scripts/scratch/build_armigon_whyvtuber.py`, `armigon_whyvtuber_apply.py`, `armigon_whyvtuber_mock.py`
+- layout เดิมใช้ได้: อวาตาร์กลางจอ เขาเริ่ม x~600 กราฟิก x 20–560 y 30–520 ไม่ชน; ซับ y~840

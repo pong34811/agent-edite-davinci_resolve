@@ -3696,7 +3696,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
       "source_sha256": "e817a4f7285c6edd7150429dd6cf322cadfdb2eeb57ce56993bdb78e354ead8b",
       "kind": "editing_skill",
-      "sha256": "b14b9566c0bbb2fba857dbc0773b3e97d6fe08dc561c17646f0a29681f4fba58"
+      "sha256": "68c99635e03b43ae73a08cc8eb906d2b71f5098682ddff52f0a9d760fc500dcc"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
@@ -4474,7 +4474,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "3c26c5eea428ba65480d6ca42493991ba6407746bc8d4005df514fe23443d08a",
+      "sha256": "341b417e4ceacbdd51c9f73c9da97fda96d199a82677f4a523ffe251d54dd2c9",
       "kind": "integration_or_validation"
     },
     {
@@ -4486,7 +4486,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "6810e2440597dbf3ac3a8c2248f96631aa483584c921bc1238a6ec91fd2f6a32",
+      "sha256": "88dd14268f53658ddb83ec92dab41a8934007e7fa1dd0a8b83480449ebc6afb1",
       "kind": "integration_or_validation"
     },
     {
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "86d29456e32418405b945a168ed5a47ca417610eba9707e41e0873912d5312fc"
+      "sha256": "7b0564c2a4482adca5833b29f44688fdcb9d6873247708b286b64dd5cbf3cd52"
     },
     {
       "path": "docs/README.md",
@@ -4593,7 +4593,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b366d2f4921a342159894ed652d2a8e618b31e505609ca2de9e51f67974361bc"
+      "sha256": "62ffd2eb3467285191ae4d01a0dedacb4e3f6db9c6710d8a0321ec902d36989e"
     },
     {
       "path": "docs/channels/kael.md",
@@ -4617,7 +4617,7 @@
       "path": "docs/channels/sakuyako-cheris.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "46c3ac88e8f3f98142598b42075563896cd492414786faeacdd6be4788c95595"
+      "sha256": "150d6b1bee0fd6fbcf24d7deb02bd34f21b1a6e1605cabdb20ded437822a2fc2"
     },
     {
       "path": "docs/channels/tygarina.md",
@@ -6558,7 +6558,7 @@
       "path": "scripts/apply_vtuber_zoom.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b3ecf580ded77dc4714ebc34011a3d56bfdf9422cd5125348fb402a1f5aaa09e"
+      "sha256": "5ba5a1d4a138f7d8b571d632d966ac034520be3055564f78d90db8655b29b417"
     },
     {
       "path": "scripts/armigon_9x16_batch_one.py",
@@ -6830,7 +6830,7 @@
       "path": "scripts/focus_qc_frames.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8bd3ea6020585ff1344427a2e2b7ea72694560774915ce9d76005fa13e85ab81"
+      "sha256": "66771aeb90b2a97155e1037cc07dc72d8dfc01d9dcfcf3fd2792b973bd85a352"
     },
     {
       "path": "scripts/focus_tune.py",
@@ -6992,7 +6992,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f3bac044bc7f07c924b2ee564f26a68eeec6310d8365ae432498f0f01dff1c12"
+      "sha256": "956208a9835f36ec0ac1d4db4370071b25cbe9efbd8bbc06b0efd27d894eb2f7"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -7239,6 +7239,18 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/scratch/analyze_vtuber_focus_targets.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c745cfdb157ebdf52fcd35db05b8a464c07d481e67f5fe36f4fba8d40304b151"
+    },
+    {
+      "path": "scripts/scratch/focus_pilot_plan.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "271fedd66001e37f722600594718075f6528a13f7d864729ab211498584f9bf4"
     },
     {
       "path": "scripts/verify_review_resume.py",
@@ -7916,11 +7928,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1052,
+    "manifest_files": 1054,
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.4",
+  "bundle_version": "0.16.6",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
