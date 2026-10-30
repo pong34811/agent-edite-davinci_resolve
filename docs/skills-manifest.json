@@ -4511,7 +4511,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8becceab992e49d5d5eeb0d4d3dae0b218d5d2f0a5b4762ae35ebf9dc85353d1"
+      "sha256": "4ca8b9570825123310daa6276f1231064814d8f1be9e480f9e308e2c77852bf4"
     },
     {
       "path": "docs/README.md",
@@ -4629,7 +4629,7 @@
       "path": "docs/channels/sakuyako-cheris.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "fd6a4397fe056f23781353ced7b045b5dfd87a5313c12c2b249f80b3218f374f"
+      "sha256": "c4cd3acb00b75b45660e3d5988d6d45306cd176de6bb3aec29b3731d12a789b0"
     },
     {
       "path": "docs/channels/tygarina.md",
@@ -6510,7 +6510,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0c3cf58679710f59f1295448674b5af96ccebfbedccb7a39296047dea5eec2ef"
+      "sha256": "b2c8f49d3f40b5ca2e7cd0fb831c33bde94085e70d4f276046d161246cd1a1aa"
     },
     {
       "path": "scripts/README.md",
@@ -7010,7 +7010,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "956208a9835f36ec0ac1d4db4370071b25cbe9efbd8bbc06b0efd27d894eb2f7"
+      "sha256": "14c0d16a852b421ccafd725109964bea762d19f6f3418fc131231eb17fe111bc"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -7496,7 +7496,7 @@
       "path": "tests/test_p2_export_final.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8f09c202d8413cca88ec834e2e368afc0c91e81752951a6872c8c2a43254febc"
+      "sha256": "4045b7c9f2fd954045db89ce8d99321595bb8c354795f20614096d65bd90fa9a"
     },
     {
       "path": "tests/test_pilot_readback.py",

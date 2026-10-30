@@ -43,6 +43,12 @@ GAP = 1.3
 OUT = ROOT / "exports" / "final-export"
 VARIANT = "_150s"
 TMP = "__cover_tmp"
+# Naming knobs (CLI: --vertical-suffix, --cover-pattern, --cover-bin). Defaults keep the p2/Aomi convention:
+# vertical timelines end in "_9x16" and the cover is "<timeline>.jpg". The pattern may use {name} (timeline/out name)
+# and {stem} (name without the vertical suffix), e.g. Sakuyako 2026-06: "-9x16" + "{stem}-vdo_cover_9x16.jpg".
+VERTICAL_SUFFIX = "_9x16"
+COVER_PATTERN = "{name}.jpg"
+COVER_BIN = "P2 Covers"
 # User requirement: Deliver > File > Export Subtitle checked, Format = "Burn into video" (the preset alone left it as a
 # separate .ttml sidecar file).
 SUBTITLE_BURN_IN = {"ExportSubtitle": True, "SubtitleFormat": "BurnIn"}
@@ -98,11 +104,19 @@ def safe(name: str) -> str:
     return re.sub(r'[\\/:*?"<>|]', "", name).strip()
 
 
-def cover_path_for(timeline_name: str, vdo: str = VDO) -> str:
-    return f"{vdo}/{timeline_name}.jpg"
+def cover_file_for(timeline_name: str, pattern: str | None = None, suffix: str | None = None) -> str:
+    pattern = COVER_PATTERN if pattern is None else pattern
+    suffix = VERTICAL_SUFFIX if suffix is None else suffix
+    stem = timeline_name[: -len(suffix)] if suffix and timeline_name.endswith(suffix) else timeline_name
+    return pattern.format(name=timeline_name, stem=stem)
 
 
-def plan_jobs(names, prefer_variant=True):
+def cover_path_for(timeline_name: str, vdo: str = VDO, pattern: str | None = None, suffix: str | None = None) -> str:
+    return f"{vdo}/{cover_file_for(timeline_name, pattern, suffix)}"
+
+
+def plan_jobs(names, prefer_variant=True, vertical_suffix=None):
+    vertical_suffix = VERTICAL_SUFFIX if vertical_suffix is None else vertical_suffix
     names = [n for n in names if "archived" not in n and TMP not in n]
     have = set(names)
     jobs, seen = [], set()
@@ -112,16 +126,16 @@ def plan_jobs(names, prefer_variant=True):
             continue
         seen.add(base)
         tl = base + VARIANT if prefer_variant and (base + VARIANT) in have else (base if base in have else n)
-        jobs.append({"timeline": tl, "out_name": safe(base), "vertical": base.endswith("_9x16")})
+        jobs.append({"timeline": tl, "out_name": safe(base), "vertical": base.endswith(vertical_suffix)})
     return jobs
 
 
 def select_jobs(names, cover_files, prefer_variant=True):
-    """Jobs whose out_name has a matching <out_name>.jpg; second value lists timelines skipped for lack of a cover."""
+    """Jobs whose out_name has a matching cover file; second value lists timelines skipped for lack of a cover."""
     jobs = plan_jobs(names, prefer_variant)
     have = set(cover_files)
-    return ([j for j in jobs if j["out_name"] + ".jpg" in have],
-            [j["out_name"] for j in jobs if j["out_name"] + ".jpg" not in have])
+    return ([j for j in jobs if cover_file_for(j["out_name"]) in have],
+            [j["out_name"] for j in jobs if cover_file_for(j["out_name"]) not in have])
 
 
 def assert_unique_out_names(per_project):
@@ -293,12 +307,15 @@ def verify(jobs_file, covers=VDO):
 
 
 def main():
-    global VDO, PROJECT, PRESET, OUT
+    global VDO, PROJECT, PRESET, OUT, VERTICAL_SUFFIX, COVER_PATTERN, COVER_BIN
     argv = sys.argv[1:]
-    covers = _arg(argv, "--covers", VDO)  # folder holding the <timeline>.jpg covers
+    covers = _arg(argv, "--covers", VDO)  # folder holding the cover jpgs
     VDO = _arg(argv, "--out", covers)  # render destination (default: same folder as the covers)
     PROJECT = _arg(argv, "--project", PROJECT)
     PRESET = _arg(argv, "--preset", PRESET)
+    VERTICAL_SUFFIX = _arg(argv, "--vertical-suffix", VERTICAL_SUFFIX)
+    COVER_PATTERN = _arg(argv, "--cover-pattern", COVER_PATTERN)
+    COVER_BIN = _arg(argv, "--cover-bin", COVER_BIN)
     OUT = ROOT / "exports" / "final-export" / safe(PROJECT)
     if "--verify" in argv:
         sys.exit(0 if verify(OUT / "jobs.json", covers) else 1)
@@ -378,20 +395,20 @@ def _run(r, argv, covers):
     vert = [j for j in jobs if j["vertical"]]
     if vert:
         root = mp.GetRootFolder()
-        folder = next((f for f in root.GetSubFolderList() if f.GetName() == "P2 Covers"), None) \
-            or mp.AddSubFolder(root, "P2 Covers")
+        folder = next((f for f in root.GetSubFolderList() if f.GetName() == COVER_BIN), None) \
+            or mp.AddSubFolder(root, COVER_BIN)
         assert folder, "cannot create bin"
         mp.SetCurrentFolder(folder)
         time.sleep(GAP)
         have = {c.GetName(): c for c in folder.GetClipList() or []}
-        need = [cover_path_for(j["out_name"], covers) for j in vert if (j["out_name"] + ".jpg") not in have]
+        need = [cover_path_for(j["out_name"], covers) for j in vert if cover_file_for(j["out_name"]) not in have]
         if need:
             assert mp.ImportMedia(need), "ImportMedia failed"
             time.sleep(GAP)
             have = {c.GetName(): c for c in folder.GetClipList() or []}
         for j in vert:
-            assert (j["out_name"] + ".jpg") in have, f"cover not in pool: {j['out_name']}"
-            pool_covers[j["out_name"]] = have[j["out_name"] + ".jpg"]
+            assert cover_file_for(j["out_name"]) in have, f"cover not in pool: {j['out_name']}"
+            pool_covers[j["out_name"]] = have[cover_file_for(j["out_name"])]
     src_keep = tls[jobs[0]["timeline"]]
     cur = {}
     try:

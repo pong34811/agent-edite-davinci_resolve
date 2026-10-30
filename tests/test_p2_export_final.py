@@ -1,6 +1,7 @@
 import pytest
 
-from scripts.p2_export_final import assert_unique_out_names, cover_path_for, plan_jobs, safe, select_jobs
+from scripts.p2_export_final import (assert_unique_out_names, cover_file_for, cover_path_for, plan_jobs, safe,
+                                     select_jobs)
 
 VDO = "G:/x/vdo"
 
@@ -44,4 +45,16 @@ def test_assert_unique_out_names_across_projects():
     assert_unique_out_names({"p1": a, "p2": b})
     with pytest.raises(ValueError, match="X"):
         assert_unique_out_names({"p1": a, "p2": [{"out_name": "X"}]})
+
+
+def test_custom_vertical_suffix_and_cover_pattern():
+    # Sakuyako 2026-06: timelines "<stem>-vdo" / "<stem>-9x16", vertical cover "<stem>-vdo_cover_9x16.jpg".
+    jobs = plan_jobs(["A-vdo", "A-9x16"], vertical_suffix="-9x16")
+    assert [(j["out_name"], j["vertical"]) for j in jobs] == [("A-vdo", False), ("A-9x16", True)]
+    assert cover_file_for("A-9x16", "{stem}-vdo_cover_9x16.jpg", "-9x16") == "A-vdo_cover_9x16.jpg"
+    assert cover_path_for("A-9x16", VDO, "{stem}-vdo_cover_9x16.jpg", "-9x16") == VDO + "/A-vdo_cover_9x16.jpg"
+
+
+def test_default_cover_file_is_timeline_name():
+    assert cover_file_for("A-vdo_9x16") == "A-vdo_9x16.jpg"
 

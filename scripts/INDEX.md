@@ -160,7 +160,7 @@
 | `p2_loudnorm_worker.py` | loudnorm 2 pass I=-14 สำหรับไฟล์แนวตั้ง | p2 |
 | `p2_loudnorm_worker_h.py` | loudnorm 2 pass I=-14 สำหรับไฟล์แนวนอน | p2 |
 | `p2_trim_tail_150s.py` | สร้าง variant `<name>_150s` | p2 |
-| `p2_export_final.py` | export สุดท้ายด้วย `H.264 Master` (dry-run ถ้าไม่ใส่ `--apply`) | p2 |
+| `p2_export_final.py` | export สุดท้ายด้วย `H.264 Master` (dry-run ถ้าไม่ใส่ `--apply`); ชื่อแนวตั้ง/ปกปรับได้ด้วย `--vertical-suffix`, `--cover-pattern` (`{name}`/`{stem}`), `--cover-bin` | p2 |
 | `drt_prepend_cover.py` | เลื่อนเนื้อหาใน DRT ชั่วคราว N เฟรมเพื่อเติม cover (ใช้กับ `p2_export_final.py --prepend-cover-frames`) | ใช้ซ้ำ |
 | `sakuyako_export_preflight.py` | จับ baseline ก่อน export (Resolve Python + JSON) | sakuyako |
 | `sakuyako_export_final_audit.py` | เทียบไฟล์ที่ export กับ baseline | sakuyako |
