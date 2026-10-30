@@ -26,8 +26,11 @@ def verify_drp(path) -> int:
 
 
 def export_verified(project_manager, project, path) -> int:
-    """Save the project, export it to `path`, verify it, and return its size."""
-    path = Path(path)
+    """Save the project, export it to `path`, verify it, and return its size.
+
+    `path` is made absolute: Resolve's ExportProject returns False for a relative path.
+    """
+    path = Path(path).resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
     if not project_manager.SaveProject():
         raise RuntimeError("SaveProject failed; no backup written")
