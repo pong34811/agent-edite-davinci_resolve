@@ -5,7 +5,7 @@
   "active_skill_count": 58,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 1054,
+  "manifest_file_count": 1055,
   "excluded_repository_path_count": 43,
   "local_reference_count": 329,
   "documented_example_link_exception_count": 14,
@@ -81,8 +81,1271 @@
       "reason": "Illustrative link in an imported reference describing an unrelated sample skill package."
     }
   ],
-  "scanner": "unavailable; structural/checksum checks only",
-  "security_scans": [],
+  "scanner": "Hermes tools.skills_guard.scan_skill",
+  "security_scans": [
+    {
+      "name": "agent-edite-skills-catalog",
+      "verdict": "dangerous",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 70,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 108,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "hermes_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 100,
+          "description": "references Hermes configuration files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\domain-resolve-skills.md",
+          "line": 87,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\domain-resolve-skills.md",
+          "line": 105,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\domain-resolve-skills.md",
+          "line": 113,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\governance-and-conventions.md",
+          "line": 108,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "hermes_config_ref",
+          "severity": "low",
+          "file": "references\\governance-and-conventions.md",
+          "line": 147,
+          "description": "references Hermes configuration files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\resolve-domain-depth.md",
+          "line": 27,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\skill-authoring-rules.md",
+          "line": 6,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\superpowers-skills.md",
+          "line": 23,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\task-recipe-skills.md",
+          "line": 121,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "references\\utility-tool-skills.md",
+          "line": 114,
+          "description": "curl command interpolating secret environment variable"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "references\\utility-tool-skills.md",
+          "line": 115,
+          "description": "curl command interpolating secret environment variable"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "references\\utility-tool-skills.md",
+          "line": 116,
+          "description": "curl command interpolating secret environment variable"
+        }
+      ]
+    },
+    {
+      "name": "agent-skill-repo-release",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "uv_run",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 110,
+          "description": "uv run (may auto-install unpinned dependencies)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 57,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "general-video",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "sub-agents\\frame-worker.md",
+          "line": 3,
+          "description": "relative path traversal (2+ levels up)"
+        }
+      ]
+    },
+    {
+      "name": "gif-search",
+      "verdict": "dangerous",
+      "findings": [
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "SKILL.md",
+          "line": 43,
+          "description": "curl command interpolating secret environment variable"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "SKILL.md",
+          "line": 46,
+          "description": "curl command interpolating secret environment variable"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "SKILL.md",
+          "line": 53,
+          "description": "curl command interpolating secret environment variable"
+        },
+        {
+          "pattern_id": "env_exfil_curl",
+          "severity": "critical",
+          "file": "SKILL.md",
+          "line": 60,
+          "description": "curl command interpolating secret environment variable"
+        }
+      ]
+    },
+    {
+      "name": "house-style",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "hyperframes",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "references\\frame-worker-core.md",
+          "line": 21,
+          "description": "relative path traversal (2+ levels up)"
+        },
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "references\\script-format.md",
+          "line": 5,
+          "description": "relative path traversal (2+ levels up)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\subagent-dispatch.md",
+          "line": 29,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "hyperframes-animation",
+      "verdict": "caution",
+      "findings": [
+        {
+          "pattern_id": "too_many_files",
+          "severity": "medium",
+          "file": "(directory)",
+          "line": 0,
+          "description": "skill has 122 files (limit: 50)"
+        },
+        {
+          "pattern_id": "inline_shell_exec",
+          "severity": "high",
+          "file": "blueprints\\kinetic-type-beats.md",
+          "line": 60,
+          "description": "inline-shell auto-exec snippet (expands via bash -c on skill view/load)"
+        },
+        {
+          "pattern_id": "inline_shell_exec",
+          "severity": "high",
+          "file": "blueprints\\kinetic-type-beats.md",
+          "line": 96,
+          "description": "inline-shell auto-exec snippet (expands via bash -c on skill view/load)"
+        },
+        {
+          "pattern_id": "path_traversal_deep",
+          "severity": "high",
+          "file": "references\\motion-blur.md",
+          "line": 132,
+          "description": "deep relative path traversal (3+ levels up)"
+        },
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "references\\motion-blur.md",
+          "line": 132,
+          "description": "relative path traversal (2+ levels up)"
+        }
+      ]
+    },
+    {
+      "name": "hyperframes-cli",
+      "verdict": "caution",
+      "findings": [
+        {
+          "pattern_id": "backtick_subshell",
+          "severity": "medium",
+          "file": "references\\doctor-browser.md",
+          "line": 80,
+          "description": "backtick string with command substitution"
+        },
+        {
+          "pattern_id": "aws_dir_access",
+          "severity": "high",
+          "file": "references\\lambda.md",
+          "line": 35,
+          "description": "references user AWS credentials directory"
+        },
+        {
+          "pattern_id": "dump_all_env",
+          "severity": "high",
+          "file": "references\\lambda.md",
+          "line": 55,
+          "description": "dumps all environment variables"
+        }
+      ]
+    },
+    {
+      "name": "hyperframes-core",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "hyperframes-creative",
+      "verdict": "dangerous",
+      "findings": [
+        {
+          "pattern_id": "too_many_files",
+          "severity": "medium",
+          "file": "(directory)",
+          "line": 0,
+          "description": "skill has 79 files (limit: 50)"
+        },
+        {
+          "pattern_id": "backtick_subshell",
+          "severity": "medium",
+          "file": "references\\design-picker.md",
+          "line": 121,
+          "description": "backtick string with command substitution"
+        },
+        {
+          "pattern_id": "tmp_staging",
+          "severity": "critical",
+          "file": "references\\typography.md",
+          "line": 81,
+          "description": "writes to /tmp then exfiltrates"
+        },
+        {
+          "pattern_id": "python_subprocess",
+          "severity": "medium",
+          "file": "scripts\\extract-audio-data.py",
+          "line": 60,
+          "description": "Python subprocess execution"
+        }
+      ]
+    },
+    {
+      "name": "hyperframes-keyframes",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "hyperframes-registry",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "media-use",
+      "verdict": "caution",
+      "findings": [
+        {
+          "pattern_id": "oversized_file",
+          "severity": "medium",
+          "file": "audio\\assets\\sfx\\riser.mp3",
+          "line": 0,
+          "description": "file is 313KB (limit: 256KB)"
+        },
+        {
+          "pattern_id": "too_many_files",
+          "severity": "medium",
+          "file": "(directory)",
+          "line": 0,
+          "description": "skill has 112 files (limit: 50)"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "references\\operations.md",
+          "line": 42,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "references\\operations.md",
+          "line": 43,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "references\\operations.md",
+          "line": 112,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "references\\setup-providers.md",
+          "line": 82,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "git_clone",
+          "severity": "medium",
+          "file": "references\\setup-providers.md",
+          "line": 83,
+          "description": "clones a git repository at runtime"
+        },
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "audio\\references\\bgm.md",
+          "line": 8,
+          "description": "relative path traversal (2+ levels up)"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\bgm.md",
+          "line": 72,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 10,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 11,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 12,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 13,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 23,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 24,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\references\\requirements.md",
+          "line": 25,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "path_traversal",
+          "severity": "medium",
+          "file": "audio\\references\\tts.md",
+          "line": 7,
+          "description": "relative path traversal (2+ levels up)"
+        },
+        {
+          "pattern_id": "python_environ_get_secret",
+          "severity": "medium",
+          "file": "audio\\scripts\\lyria-recipe.py",
+          "line": 58,
+          "description": "reads secret via os.environ.get() (normal API-key access; informational)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth.py",
+          "line": 26,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_environ_get_secret",
+          "severity": "medium",
+          "file": "audio\\scripts\\lib\\gemini-auth.py",
+          "line": 21,
+          "description": "reads secret via os.environ.get() (normal API-key access; informational)"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\scripts\\lib\\gemini-auth.py",
+          "line": 18,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 38,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 51,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 52,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 56,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 58,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 62,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 67,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 69,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "python_os_environ",
+          "severity": "high",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 70,
+          "description": "accesses os.environ outside comments/docstrings (potential env dump)"
+        },
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "audio\\scripts\\lib\\gemini-auth_test.py",
+          "line": 85,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "unicode_escape_chain",
+          "severity": "medium",
+          "file": "audio\\references\\captions\\transcript-handling.md",
+          "line": 54,
+          "description": "chain of unicode escapes (possible obfuscation)"
+        }
+      ]
+    },
+    {
+      "name": "project-learning",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 20,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 34,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 36,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-audio",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 142,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 148,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-batch-export",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "backtick_subshell",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 114,
+          "description": "backtick string with command substitution"
+        },
+        {
+          "pattern_id": "uv_run",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 116,
+          "description": "uv run (may auto-install unpinned dependencies)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 12,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-clip-editing",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\resolve-timeline-model.md",
+          "line": 5,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\verification-and-safety.md",
+          "line": 3,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-color",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 76,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 94,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 216,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-conform",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 223,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 233,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-delivery",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 222,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 238,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-edit",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 270,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 304,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-folder-cover-batch",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 13,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 19,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 23,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 49,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-fusion",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 48,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 52,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-mcp",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 133,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 153,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 159,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-media-analysis",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 120,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-media-pool",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 43,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 79,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-mitr-subtitle-presets",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-offline-media-repair",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 14,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-rough-cut",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 103,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 348,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 360,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-session",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "resolve-tighten-recording",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 250,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 262,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-trim-to-length",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 13,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "resolve-video-enrichment",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "oversized_file",
+          "severity": "medium",
+          "file": "assets\\katy404-vertical-reaction-layout.png",
+          "line": 0,
+          "description": "file is 317KB (limit: 256KB)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 33,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 110,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "uv_run",
+          "severity": "medium",
+          "file": "references\\automation-safety.md",
+          "line": 22,
+          "description": "uv run (may auto-install unpinned dependencies)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\automation-safety.md",
+          "line": 6,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\resolve-editing-workflow.md",
+          "line": 7,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "superpowers-brainstorming",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-diagnosing-superpowers",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "prompts\\request-conflicts.md",
+          "line": 13,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "superpowers-dispatching-parallel-agents",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-executing-plans",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-finishing-a-development-branch",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-receiving-code-review",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-requesting-code-review",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-subagent-driven-development",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-systematic-debugging",
+      "verdict": "caution",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "CREATION-LOG.md",
+          "line": 7,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "dump_all_env",
+          "severity": "high",
+          "file": "SKILL.md",
+          "line": 95,
+          "description": "dumps all environment variables"
+        }
+      ]
+    },
+    {
+      "name": "superpowers-test-driven-development",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-using-git-worktrees",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-using-superpowers",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 65,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "other_agent_config_ref",
+          "severity": "low",
+          "file": "references\\codex-tools.md",
+          "line": 3,
+          "description": "references other agent configuration files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "other_agent_config_ref",
+          "severity": "low",
+          "file": "references\\codex-tools.md",
+          "line": 71,
+          "description": "references other agent configuration files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\hermes-tools.md",
+          "line": 23,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "hermes_config_ref",
+          "severity": "low",
+          "file": "references\\hermes-tools.md",
+          "line": 23,
+          "description": "references Hermes configuration files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\muse-tools.md",
+          "line": 23,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "superpowers-verification-before-completion",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-writing-plans",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "superpowers-writing-skills",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "unpinned_pip_install",
+          "severity": "medium",
+          "file": "anthropic-best-practices.md",
+          "line": 1082,
+          "description": "pip install without version pinning"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 589,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "testing-skills-with-subagents.md",
+          "line": 15,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "examples\\CLAUDE_MD_TESTING.md",
+          "line": 1,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "examples\\CLAUDE_MD_TESTING.md",
+          "line": 67,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "thai-proofread",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "thai-subtitles-resolve",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "unicode_escape_chain",
+          "severity": "medium",
+          "file": "SKILL.md",
+          "line": 291,
+          "description": "chain of unicode escapes (possible obfuscation)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 566,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "references\\srt-insertion-and-presets.md",
+          "line": 16,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "video-footage-review",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "video-provider-smoke-qc",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "vtuber-content-curriculum",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "vtuber-cover-batch-pipeline",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 8,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 13,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        },
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 17,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "vtuber-thumbnail-layout",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "vtuber-thumbnail-qc",
+      "verdict": "safe",
+      "findings": [
+        {
+          "pattern_id": "agent_config_ref",
+          "severity": "low",
+          "file": "SKILL.md",
+          "line": 80,
+          "description": "references agent config files (informational; only modification intent is scored)"
+        }
+      ]
+    },
+    {
+      "name": "youtube-content",
+      "verdict": "safe",
+      "findings": []
+    },
+    {
+      "name": "youtube-downloader",
+      "verdict": "safe",
+      "findings": []
+    }
+  ],
   "errors": [
     "Missing local reference: .agents/skills/general-video/SKILL.md -> references/beat-direction.md",
     "Missing local reference: .agents/skills/general-video/SKILL.md -> references/composition-patterns.md",
@@ -101,7 +1364,10 @@
     "Missing local reference: .agents/skills/hyperframes-cli/SKILL.md -> references/creator-editing-recipes.md",
     "Missing local reference: .agents/skills/hyperframes-cli/SKILL.md -> references/variables-and-media.md",
     "Missing local reference: .agents/skills/hyperframes-creative/references/design-spec.md -> ../frame-presets/",
-    "Missing local reference: .agents/skills/hyperframes-keyframes/SKILL.md -> references/creator-editing-recipes.md"
+    "Missing local reference: .agents/skills/hyperframes-keyframes/SKILL.md -> references/creator-editing-recipes.md",
+    "Quarantined active skill: agent-edite-skills-catalog",
+    "Quarantined active skill: gif-search",
+    "Quarantined active skill: hyperframes-creative"
   ],
   "live_resolve_tested": false,
   "project_trust_changed": false

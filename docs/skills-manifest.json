@@ -1206,7 +1206,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "1c6d012381fb8820482c0328ffa8b0a17d0de3ae3685fc9c39196865aaccaeed"
+      "sha256": "5a0b457845bb1bcce9dd086c11c1a9082b3488d6fb6e919c86d0c57ceb9c352c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4474,7 +4474,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "341b417e4ceacbdd51c9f73c9da97fda96d199a82677f4a523ffe251d54dd2c9",
+      "sha256": "813a9a5672e1c167c70164a124c85c97c6ee87afa8280b93221259fc98418bd4",
       "kind": "integration_or_validation"
     },
     {
@@ -4486,7 +4486,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "88dd14268f53658ddb83ec92dab41a8934007e7fa1dd0a8b83480449ebc6afb1",
+      "sha256": "f29f06f318d640b8d56557293722980b3fc11a8dbce7410b4096e8fc33881c84",
       "kind": "integration_or_validation"
     },
     {
@@ -4499,7 +4499,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7b0564c2a4482adca5833b29f44688fdcb9d6873247708b286b64dd5cbf3cd52"
+      "sha256": "d234d58060ec4400c3c49a2a760c39e55112ad955dae4c915e6e42bf78e98fcb"
     },
     {
       "path": "docs/README.md",
@@ -4617,7 +4617,7 @@
       "path": "docs/channels/sakuyako-cheris.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "150d6b1bee0fd6fbcf24d7deb02bd34f21b1a6e1605cabdb20ded437822a2fc2"
+      "sha256": "fd6a4397fe056f23781353ced7b045b5dfd87a5313c12c2b249f80b3218f374f"
     },
     {
       "path": "docs/channels/tygarina.md",
@@ -6636,7 +6636,7 @@
       "path": "scripts/backup_drp.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5dd3c8492d29a83d3200a08148c518150ba061e0f59c76b8433c62da3c79254f"
+      "sha256": "183dfe5c7e5c6f576e3593d43bac7699010349faece51411bcb1a71455013c73"
     },
     {
       "path": "scripts/build_9x16_batch.py",
@@ -7325,6 +7325,12 @@
       "sha256": "dff0089586872cd04a377e489f93c38b6055937fd73c963a159072da787569c1"
     },
     {
+      "path": "tests/test_backup_drp_abspath.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "3e6d88a6e84ff9cbd1175b3571be0fb657be3c17f2aa942861bedc8d0dbba5db"
+    },
+    {
       "path": "tests/test_build_dynamic_srt.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7928,11 +7934,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1054,
+    "manifest_files": 1055,
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.6",
+  "bundle_version": "0.16.8",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

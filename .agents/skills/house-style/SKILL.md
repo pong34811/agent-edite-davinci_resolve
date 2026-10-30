@@ -167,6 +167,14 @@ thrown away:
 - Music beds
 - Grading on a cut that was asked for as an assembly
 
+## Thumbnail simplicity
+
+For Sakuyako cover templates, prefer a minimal composition: one short hook and
+one clear character image. Avoid decorative frames, stickers, dot patterns,
+diagonal ribbons and extra copy unless requested. The user asked to reduce
+decoration in the landscape/portrait examples; the trap is treating generic
+thumbnail embellishments as required branding.
+
 ## Delivery conventions
 
 <!-- Aspect ratios, timeline naming, versioning, where renders go. -->
