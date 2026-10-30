@@ -15,6 +15,17 @@ user-invocable: false
 
 Why this exists: agents kept writing new tools outside the repo and never recorded what they learned, so every session re-derived the same things. This skill is the loop that stops that.
 
+## Channel-specific learning
+
+- Before work, read `docs/channels/README.md` and only the profile indexed for the named channel. Keep channel facts, presets and lessons isolated; do not borrow them from another channel without evidence. If identity or evidence conflicts, ask the user rather than guessing. Shared rules remain in `house-style`.
+- At the end, propose a learning only when warranted; record it in that channel's profile with date, project/timeline ID or document reference, finding, status, applicability, confirmer and a safe evidence link, following the README template. No automatic memory is implied.
+- Mark `confirmed` only for user-confirmed facts or evidence actually inspected, identifying the source; mark unverified ideas `hypothesis` and never treat them as mandatory editing rules or approved preferences. Preserve conflicting history; mark an older entry `superseded` only when justified, with the reason and link to the replacement; unresolved conflicts require user confirmation.
+- Privacy: do not put credentials, footage, transcripts or private information in shared notes or exposed links. Do not send footage, audio, transcript or personal information to external providers without explicit permission and scope.
+
+## YouTube post-edit research
+
+For each editing assignment, consult `.agents/skills/resolve-video-enrichment/references/post-edit-review.md`: research current official guidance at the start and, after QC, prepare a separate evidence-limited public comparator review. This is a manual workflow, not automatic execution; it does not authorize timeline changes, external uploads, analytics access or publishing. Keep channel-specific hypotheses separate from confirmed learning.
+
 ## Before writing any script
 
 1. Probe the MCP first (see `AGENTS.md` "Start of task checklist").

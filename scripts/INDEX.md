@@ -21,6 +21,7 @@
 | `anomaly_sweep.py` | ตรวจโครงสร้างผิดปกติทุก timeline (รายงานอย่างเดียว) | ใช้ซ้ำ |
 | `prepare_edit.py` | เตรียม intake offline พร้อม probe cache, แบบร่าง edit decisions, lint ซับ/contact sheet เดิม; ไม่ต่อ Resolve | ใช้ซ้ำ |
 | `edit_workflow.py` | ตรวจแผนเฟรม/เหตุผลการตัด และ reconcile เกณฑ์ตรวจรับกับ evidence hash (`validate`, `accept`, `hash`) | ใช้ซ้ำ |
+| `channel_intelligence.py` | ตรวจรายงานหลักฐานเกม/ช่องและ research แบบ offline (`validate REPORT.json`); ไม่ตรวจจับเกมหรือยืนยันความจริง | ใช้ซ้ำ |
 | `verify_skill_bundle.py` | ตรวจชุด skills ไม่ต้องต่อ Resolve | ใช้ซ้ำ |
 | `refresh_skill_manifest.py` | อัปเดต `docs/skills-manifest.json` และตรวจซ้ำหลังแก้ repo | ใช้ซ้ำ |
 | `release.py` | สร้าง patch release ค่าเริ่มต้น พร้อม changelog ภาษาไทยแบบ bullet; `--publish` อัปเดต VERSION/CHANGELOG, commit, tag, push และสร้าง GitHub Release | ใช้ซ้ำ |

@@ -1,5 +1,9 @@
 # YouTube packaging and evidence-led improvement
 
+## Post-edit review entrypoint
+
+At the start of each editing assignment, research official YouTube guidance with an as-of date, source URL and access date; after QC, follow [post-edit-review.md](post-edit-review.md) for public comparative research and a separate proposal. Mark unknown information and every causal explanation a hypothesis. Separate Shorts from long-form metrics, require permission for private data or external transfers, and make no guarantee of views or reach. This is a workflow, not automatic execution or permission to change or publish content.
+
 ## What this chapter can and cannot claim
 - YouTube describes recommendation goals in terms of relevant choices and long-term viewer satisfaction, using personalized and performance signals.[8]
 - Therefore optimize for a real viewer promise and a satisfying payoff, not a mythical fixed recipe for the algorithm.

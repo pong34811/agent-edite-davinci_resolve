@@ -26,6 +26,7 @@ qc_stills/
 crop_*.jpg
 temp_frame.jpg
 pair*.txt
+.worktrees/
 
 # Throwaway agent scripts (promote to scripts/ + INDEX.md if reusable)
 scripts/scratch/*

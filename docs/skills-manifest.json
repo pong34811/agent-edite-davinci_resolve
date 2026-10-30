@@ -3498,7 +3498,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "75bb9f62ae5edadbdc534f096d886743a5b2a85f6da0cab94dce824c56a2e1a4"
+      "sha256": "7e8fa50fca4900445524545d1ee076fb250e66b41ec7e2461850f6481c94e0aa"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -3683,7 +3683,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "61a1b2f260d972c57162b590d71785fea3a23768cf0108b71b86e43c768bf56b"
+      "sha256": "a16bc21a11a66061ac2f8942a3ae66fc5c0294094e028716914cde03c9412a33"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -3753,6 +3753,12 @@
       "sha256": "322595db89aec5cd99d3ae392ab6c7aa4d7259ac6c58ec2812a1204ab48a3404"
     },
     {
+      "path": ".agents/skills/resolve-video-enrichment/references/post-edit-review.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "6b855b20b9063c7b7ac75f37542b695379c327cf07426518a0b17c679cf194c5"
+    },
+    {
       "path": ".agents/skills/resolve-video-enrichment/references/render-qc.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\render-qc.md",
       "source_sha256": "2e223f5cb7a35b65b4393afcb9da68e7cae55a18fc7c4b529355f669f572e5ee",
@@ -3801,7 +3807,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/youtube-packaging-and-feedback.md",
       "source": "C:/Users/warit/AppData/Local/hermes/skills/media/resolve-video-enrichment/references/youtube-packaging-and-feedback.md",
       "source_sha256": "4d55962879818738ca1b2981bf5d02cf73883f1ff57eeb6a586e4f6781cd5df8",
-      "sha256": "4d55962879818738ca1b2981bf5d02cf73883f1ff57eeb6a586e4f6781cd5df8",
+      "sha256": "421859f30a1e4b5a4bf098360f6df4a686354a2e62087368e41ff377cf9eaac7",
       "kind": "editing_skill",
       "local_amendment": "Normalize skill-relative Markdown links and final newline for the repository bundle."
     },
@@ -4289,7 +4295,13 @@
       "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
       "kind": "editing_skill",
       "local_amendment": "Hermes search_files inventory instead of ls; supplied missing Whisper reference.",
-      "sha256": "b7a15f0ce116404737ace8643466ea0d2ec46df5dc9b376b5940678bd5fe223b"
+      "sha256": "b7dca4b002f4b908ebd08a31c527dd125a4bf9fccd9093341db27891dc30f5d3"
+    },
+    {
+      "path": ".agents/skills/video-footage-review/references/game-identification.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "677c4ef31f7e59c7e02be7d15f702c08f044215ad7d70172016af6f3c4730cf1"
     },
     {
       "path": ".agents/skills/video-footage-review/references/whisper-transcription.md",
@@ -4463,13 +4475,13 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "2156036888adbe235f496702c2da3e3517d7c42817037227604c12e52ecd5536"
+      "sha256": "405c5ab681a1a1e19acb3237c9a677881a4de1cadcd33728293b78ca37112133"
     },
     {
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e93224e8e4620a07ea9cecaa3c686487173f2519c9f4facfbf17d0dd0960202c"
+      "sha256": "7435de461ed29df1374f1ad2418a5f33f1885b58782a5428f2a1358d9d999ed2"
     },
     {
       "path": "CHANGELOG.md",
@@ -4499,7 +4511,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d234d58060ec4400c3c49a2a760c39e55112ad955dae4c915e6e42bf78e98fcb"
+      "sha256": "8becceab992e49d5d5eeb0d4d3dae0b218d5d2f0a5b4762ae35ebf9dc85353d1"
     },
     {
       "path": "docs/README.md",
@@ -4581,7 +4593,7 @@
       "path": "docs/channels/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a3f07e20c037b657b908049925f854169933c67a03343c5c20205b7ede1badeb"
+      "sha256": "b064e6323fc1426c2daef01cfbc481505a2c2271bd92370f551081299b2e57ff"
     },
     {
       "path": "docs/channels/aomimama.md",
@@ -6498,7 +6510,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b04c58faf5549c1a3be5bb161645e4a2414f0836a9cef627352c4cbee190b6fc"
+      "sha256": "0c3cf58679710f59f1295448674b5af96ccebfbedccb7a39296047dea5eec2ef"
     },
     {
       "path": "scripts/README.md",
@@ -6679,6 +6691,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "857a1a9d74b77e1d215d02a61e6e31bd5c4981e1fb1d54b4f0598b2ce4b9005a"
+    },
+    {
+      "path": "scripts/channel_intelligence.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ca62b6453f1952b52432a7b10bf36d24c23feeff697e4a7500fda4326b1b973d"
     },
     {
       "path": "scripts/check_mcp_update.py",
@@ -7349,6 +7367,18 @@
       "sha256": "03378c2a8ce34856ebfe596e7feab0058e68ce7c93095e0fc6dcbaa7c837bf01"
     },
     {
+      "path": "tests/test_channel_intelligence.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "6658b5e383d33538a2bae6d9974482ec1dc99b192863f77edfa9021f71a14e14"
+    },
+    {
+      "path": "tests/test_channel_learning_rules.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "b81c140dba92a885f2cf7cade431199fc9f063801b772450a467152e73a3a013"
+    },
+    {
       "path": "tests/test_channel_profiles.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7427,6 +7457,18 @@
       "sha256": "7e98d545a2ef40a9e6de6dd65bf4189846c81b263f15bfc5ecade05340461ca1"
     },
     {
+      "path": "tests/test_game_identification_workflow.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "4f47803cb6d3af4c26d9d48b8d285a9c19cffcab6f9535d019cbe00ab0efef7a"
+    },
+    {
+      "path": "tests/test_heygen_guidance.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "20a6198efd721b449cd6a731655b0603ccfda6c72502916738a46bfc6a30bd23"
+    },
+    {
       "path": "tests/test_load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7461,6 +7503,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "fcd11614c55d4b6b8a307aaef5aa2d0f639d0d26eb431027272d9ac717f80291"
+    },
+    {
+      "path": "tests/test_post_edit_review_rules.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "6b4d9ed14cb43183c284ba623bd7a4e83b7cefa9281859d185458cd8d9895708"
     },
     {
       "path": "tests/test_refresh_skill_manifest.py",
@@ -7934,7 +7982,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1055,
+    "manifest_files": 1063,
     "supporting_skills": 41,
     "active_skills": 58
   },

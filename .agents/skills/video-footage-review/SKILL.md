@@ -14,6 +14,8 @@ metadata:
 
 ## Workflow
 
+For game or channel identification, follow the [game identification evidence contract](references/game-identification.md). Record game identity and channel identity separately; an avatar or game alone does not establish footage ownership. Its permissions and read-only safeguards govern identification, including any sampling below.
+
 ### 1. Inventory the footage
 
 List all files in the target folder. If the path is a single file, note that — do not assume a folder of clips.
