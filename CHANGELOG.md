@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.16.9 — ระบบหลักฐานเกม/ช่อง และรีวิวหลังตัดต่อ
+
+### รายละเอียด
+- เพิ่ม `scripts/channel_intelligence.py` สำหรับตรวจรายงานหลักฐานเกม/ช่องแบบ offline พร้อมเทสต์ และแถวใน `scripts/INDEX.md`
+- เพิ่มขั้นตอนระบุเกม (`video-footage-review/references/game-identification.md`) และรีวิวหลังตัดต่อ (`resolve-video-enrichment/references/post-edit-review.md`) พร้อมอัปเดต skill `project-learning`, `resolve-video-enrichment`, `video-footage-review`
+- `AGENTS.md`: เพิ่มวิธีแก้เมื่อพาธ MCP หาย และให้งานตัดต่อทำตาม `project-learning` + post-edit review ตั้งแต่ต้นงาน
+- แก้พาธ `davinci-resolve` MCP ใน `.mcp.json` ให้ตรงตำแหน่งจริง และเพิ่ม `.codex/config.toml` สำหรับ Codex
+- `.gitignore`: คง `.hermes/` ไว้ไม่ให้ไฟล์งาน/ภาพเข้า repo และเพิ่ม `.worktrees/`
+- ตรวจแล้ว: pytest 325 passed (เพิ่มจาก 243), รายการที่ล้มเหลว 5 failed / 12 errors เป็นของเดิมทั้งหมด ไม่มีความล้มเหลวใหม่; commit ไม่มีไฟล์ภาพ/วิดีโอ/.drp/.hermes และไม่มี key
+- ไม่ได้ commit: `.hermes/` (~5.7 GB ภาพ/รายงาน/backup) และสคริปต์ทดลอง `test_insert*.py` ที่รากโปรเจกต์ซึ่งลบ/สร้าง Timeline บน Resolve จริง
+
 ## v0.16.8 — ปกคลิปครบ 38 คลิป (Sakuyako 2026-06)
 
 ### รายละเอียด
