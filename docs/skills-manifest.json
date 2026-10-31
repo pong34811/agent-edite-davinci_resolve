@@ -3785,7 +3785,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/vertical-9x16-conversion.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "e5a2a4789074401176b17676ac946430be5c1571f6115417aa83b24c41240687"
+      "sha256": "2fce2826243e6fab50f52afb3b1a52b702b742f5b471c958348274de7f5126ee"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/vtuber-story-and-pacing.md",
@@ -4486,7 +4486,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "afd38a8dc1c1a98eb0f5f0cad3025dee0b59db70ffb8536e310bf0e2c2a980da",
+      "sha256": "ed338348e734cfe0fc68fe67a6a9d88c3dd03416f0fa0dd360f6414aaa39894f",
       "kind": "integration_or_validation"
     },
     {
@@ -4498,7 +4498,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "ffcf23dcf10d8ff32a10d504b95077bf49e2ce450c89fced876b21eba4ae568c",
+      "sha256": "1288cb20716be1554c1bc630f8753da1c5a952333bb7481dcbcfb4b7fe6ab527",
       "kind": "integration_or_validation"
     },
     {
@@ -4605,7 +4605,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "62ffd2eb3467285191ae4d01a0dedacb4e3f6db9c6710d8a0321ec902d36989e"
+      "sha256": "8589ce9077f89bb2a7223615ac269454aeaf1f50e597d3eeec43770d7818fb17"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7998,7 +7998,7 @@
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.10",
+  "bundle_version": "0.16.11",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

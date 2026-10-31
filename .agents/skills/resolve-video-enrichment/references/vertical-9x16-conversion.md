@@ -29,3 +29,9 @@ For a second timeline of the same channel layout (2560x1440 source, avatar baked
 - Copy `scripts/build_9x16_day22.py` to `build_9x16_dayNN.py` and change only `ORIG_NAME`, `OUT` and the log name; the builder asserts 3 video tracks, a single V1 clip and V2 made only of Adjustment Clips, so a timeline with a different track set fails fast.
 - Dry run first (it prints the plan without writing), then `--apply`. Result: `<name>_9x16` at 1080x1920 with `Game Top` / `REACTIONS` (GIFs, original frames) / `VTuber Bottom` / `VTuber Full` (the 7 focus ranges as full-screen avatar); protected audio/subtitle/V1 signatures equal; original stays 1920x1080 with 3/3/1 tracks.
 - Pixel review: 5 stills (normal, full-screen focus, 2 GIF frames) showed no black band and the ahoge/face inside. Only 1 of 7 focus ranges was viewed; subtitle overlap with the avatar is unverified because scripted stills omit subtitles.
+
+## Illustrated-overlay clips (Armigon layout B, verified 2026-10-31)
+
+- Build from the live illustrated timeline, not the original `placements.json`: the user may trim, split or delete reel pieces and add stills. Map each live reel item to its placement by `GetLeftOffset()` inside `[sourceStart, sourceEnd)`; rebuild only the full-frame art that is still on the timeline.
+- A square still (3000x3000) in a 1080x1920 timeline with `scaleToFit` fills the width; Tilt is in units of fitted-height/canvas-height (1080/1920 canvas px). Centre in the top band: `Tilt = (960 - band/2) / 0.5625`, `Zoom = target_px / 1080`. Confirmed by a rendered Resolve frame (logo centred in the band).
+- Full-frame 16:9 art with titles needs a 1080x1920 HyperFrames reel (text cut otherwise); keep the same text/animation and timings. Scripts: `scripts/scratch/armigon_whyvtuber_9x16_plan.py`, `build_armigon_whyvtuber_art916.py`, `armigon_whyvtuber_9x16.py`.
