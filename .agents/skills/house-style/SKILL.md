@@ -140,6 +140,7 @@ When the user asks for a "transition" between chapters of a Pop Kinetic explaine
 - คงภาพเต็มเฟรมโดยไม่เพิ่มขอบดำหรือ blur และไม่สร้างการเคลื่อน/สั่นจากค่า transform ที่เปลี่ยนตามเวลา ตรวจค่า keyframe ของ `Center` และ `Size` รวมถึง `MotionBlur` แล้วดูภาพจริงหลายจุดเมื่อจำเป็น ภาพนิ่งเพียงภาพเดียวไม่พิสูจน์ว่าไม่มีอาการสั่นตลอดช่วง
 - จัด Armigon ให้เด่นและอยู่ใกล้กลางเฟรม เห็นตั้งแต่ศีรษะถึงอก/มือ เว้น headroom ราว 5–8% โดยไม่ตัดศีรษะ ใบหน้า เขา หู เครื่องประดับ หรือมือที่จำเป็นต่อปฏิกิริยา ถ้าจัดไม่ได้ให้ลด zoom หรือค้างช่วงนั้นไว้เพื่อตรวจเพิ่ม
 - เทียบเฟรมเวลาเดียวกันขณะเปิด/ปิด `Adjustment Clip` เพื่อระบุว่าขอบภาพที่ตัดหรือ overlay ที่บังตัวละครอยู่ใน source แล้วหรือเกิดจาก focus อย่ารายงานว่าการแก้ focus ซ่อม source ที่ถูกตัดหรือถูกบัง
+- When the user hand-places an Adjustment Clip on a specific track and asks for "the same" there, clone that clip (its type and Inspector values) to every range on that track; do not keep or recreate the Fusion Transform version on another track. Why: the user disabled the Fusion `VTuber Zoom` V2 and set an Inspector zoom on V3 to replace it (Armigon favgames, 2026-10-31). Trap: the existing focus tools only build Fusion `Sm2TiGenerator` clips.
 
 ## Cut points
 
