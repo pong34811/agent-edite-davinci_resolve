@@ -4486,7 +4486,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "ed338348e734cfe0fc68fe67a6a9d88c3dd03416f0fa0dd360f6414aaa39894f",
+      "sha256": "6c32fca4942c58de81a881fe9dfa5c6eba80522b90345b5b8850e6e44771d807",
       "kind": "integration_or_validation"
     },
     {
@@ -4498,7 +4498,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1288cb20716be1554c1bc630f8753da1c5a952333bb7481dcbcfb4b7fe6ab527",
+      "sha256": "1a0c14f49270fa3463c094107d63ba35581dae98232b3abb173fcb920d721382",
       "kind": "integration_or_validation"
     },
     {
@@ -4605,7 +4605,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8589ce9077f89bb2a7223615ac269454aeaf1f50e597d3eeec43770d7818fb17"
+      "sha256": "2b91c5c9dd4254e2e2254472b4cb0d5c44a9576186861cf27ef72c72ad40594e"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7998,7 +7998,7 @@
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.11",
+  "bundle_version": "0.16.12",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
