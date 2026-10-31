@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.16.11 — ย้ายสื่อโปรเจกต์ทำไมถึงมาเป็นวีทูปเบอร์
+
+### รายละเอียด
+- เพิ่ม `scripts/consolidate_project_media.py`: คัดลอกไฟล์ทุกตัวที่โปรเจกต์ใช้ไปไว้โฟลเดอร์เดียว แยกเป็น gif/sfx/bgm/subtitles/illustrations แล้ว relink และอ่าน File Path กลับทุกคลิป (สำรอง `.drp` ก่อน, ไม่ลบต้นฉบับ)
+- โปรเจกต์ ทำไมถึงมาเป็นวีทูปเบอร์: คัดลอก 51 ไฟล์ไปที่ `Z:\armigon\Why Vtuber` และ relink สำเร็จ 49 ไฟล์; Timeline `FirstPass v2_illustrated` ใช้ 14 ไฟล์ ทั้งหมดอยู่ในโฟลเดอร์ใหม่และ online
+- บันทึกใน OPERATING-NOTES: ย้ายสื่อให้ใช้วิธีคัดลอก (คลัง GIF/SFX/BGM ใช้ร่วมกับโปรเจกต์อื่น) และ `RelinkClips` คืนค่า False กับคลิป `.srt` ใน Media Pool บน 21.1.0.17
+
 ## v0.16.10 — Render ส่งมอบครบ 76 ไฟล์ พร้อมปกแนวตั้ง (Sakuyako 2026-06)
 
 ### รายละเอียด
