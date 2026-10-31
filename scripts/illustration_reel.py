@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -41,9 +42,20 @@ def validate_plan(plan, timeline_end):
     return cursor - plan[0]['sourceStart']
 
 
-def matches(item, x):
+def check(cond, msg):
+    """Explicit gate that survives `python -O` (unlike assert)."""
+    if not cond:
+        raise RuntimeError(msg)
+
+
+def norm_path(path):
+    """Resolved, case-normalised full path used to compare media files."""
+    return os.path.normcase(str(Path(path).resolve()))
+
+
+def matches(item, x, root):
     return (item['start'] == x['start'] and item['end'] == x['end'] and item['left'] == x['sourceStart']
-            and Path(item['path'] or '').name == x['file'])
+            and bool(item['path']) and norm_path(item['path']) == norm_path(Path(root) / x['file']))
 
 
 def inventory(t):
@@ -68,7 +80,9 @@ def run(a):
     root = Path(a.root).resolve()
     r = require_resolve(); pm = r.GetProjectManager(); p = pm.GetCurrentProject()
     tls = [p.GetTimelineByIndex(i) for i in range(1, p.GetTimelineCount() + 1)]
-    source = next(t for t in tls if t.GetUniqueId() == a.source_id)
+    source = next((t for t in tls if t.GetUniqueId() == a.source_id), None)
+    if source is None:
+        raise SystemExit(f'source timeline id {a.source_id!r} not found in current project')
     if a.mode == 'baseline':
         out = root / 'baseline.json'
         if out.exists():
@@ -97,63 +111,70 @@ def run(a):
         if a.mode == 'verify' and not targets:
             raise SystemExit('target missing')
         target = targets[0] if targets else source.DuplicateTimeline(a.target)
-        assert target; time.sleep(1.2)
+        check(target, f'DuplicateTimeline {a.target!r} failed'); time.sleep(1.2)
         p.SetCurrentTimeline(target)
         mp = p.GetMediaPool()
         if a.mode != 'verify':
             export_verified(pm, p, root / f'backup_before_{a.mode}_{int(time.time())}.drp')
             if target.GetTrackCount('video') == vi - 1:
-                assert target.AddTrack('video'); time.sleep(1.2)
-                assert target.SetTrackName('video', vi, a.track_name)
-            assert target.GetTrackCount('video') == vi
-            for kind, tracks in base['tracks'].items():
-                for tr in tracks:
-                    target.SetTrackLock(kind, tr['index'], True)
-            target.SetTrackLock('video', vi, False)
-            bins = [f for f in mp.GetRootFolder().GetSubFolderList() if f.GetName() == a.bin]
-            folder = bins[0] if bins else mp.AddSubFolder(mp.GetRootFolder(), a.bin)
-            assert folder and mp.SetCurrentFolder(folder)
-            media = {Path(c.GetClipProperty('File Path')).name: c for c in folder.GetClipList()}
-            for name in sorted({x['file'] for x in want}):
-                if name not in media:
-                    loaded = mp.ImportMedia([str(root / name)]); assert loaded, name
-                    media[name] = loaded[0]
-            for x in want:
-                existing = [c for c in target.GetItemListInTrack('video', vi) or [] if c.GetStart() == x['start']]
-                if existing:
-                    c = existing[0]
-                    m = c.GetMediaPoolItem()
-                    item = {'start': c.GetStart(), 'end': c.GetEnd(), 'left': c.GetLeftOffset(),
-                            'path': m.GetClipProperty('File Path') if m else None}
-                    if len(existing) == 1 and matches(item, x):
-                        continue
-                    assert target.DeleteClips(existing, False); time.sleep(1.2)
-                m = media[x['file']]
-                assert float(m.GetClipProperty('FPS')) == float(target.GetSetting('timelineFrameRate')), m.GetClipProperty('FPS')
-                # endFrame is exclusive on 60 fps 21.1.0.17 (hyperframes-illustration-workflow.md)
-                added = mp.AppendToTimeline([{'mediaPoolItem': m, 'startFrame': x['sourceStart'], 'endFrame': x['sourceEnd'],
-                                              'recordFrame': x['start'], 'trackIndex': vi, 'mediaType': 1}])
-                assert added and len(added) == 1, x
-                c = added[0]
-                assert (c.GetStart(), c.GetEnd(), c.GetLeftOffset()) == (x['start'], x['end'], x['sourceStart']), \
-                    (x, c.GetStart(), c.GetEnd(), c.GetLeftOffset())
-                time.sleep(1.2)
-            for kind, tracks in base['tracks'].items():
-                for tr in tracks:
-                    target.SetTrackLock(kind, tr['index'], tr['locked'])
-            assert pm.SaveProject()
+                check(target.AddTrack('video'), 'AddTrack failed'); time.sleep(1.2)
+                check(target.SetTrackName('video', vi, a.track_name), 'SetTrackName failed')
+            check(target.GetTrackCount('video') == vi, f'expected {vi} video tracks, got {target.GetTrackCount("video")}')
+            try:
+                for kind, tracks in base['tracks'].items():
+                    for tr in tracks:
+                        target.SetTrackLock(kind, tr['index'], True)
+                target.SetTrackLock('video', vi, False)
+                bins = [f for f in mp.GetRootFolder().GetSubFolderList() if f.GetName() == a.bin]
+                folder = bins[0] if bins else mp.AddSubFolder(mp.GetRootFolder(), a.bin)
+                check(folder, f'bin {a.bin!r} missing and AddSubFolder failed')
+                check(mp.SetCurrentFolder(folder), f'SetCurrentFolder {a.bin!r} failed')
+                # keyed by full normalised path so a same-named clip from another folder is never reused
+                media = {norm_path(fp): c for c in folder.GetClipList() if (fp := c.GetClipProperty('File Path'))}
+                for name in sorted({x['file'] for x in want}):
+                    key = norm_path(root / name)
+                    if key not in media:
+                        loaded = mp.ImportMedia([str(root / name)])
+                        check(loaded, f'ImportMedia failed: {root / name}')
+                        media[key] = loaded[0]
+                for x in want:
+                    existing = [c for c in target.GetItemListInTrack('video', vi) or [] if c.GetStart() == x['start']]
+                    if existing:
+                        c = existing[0]
+                        m = c.GetMediaPoolItem()
+                        item = {'start': c.GetStart(), 'end': c.GetEnd(), 'left': c.GetLeftOffset(),
+                                'path': m.GetClipProperty('File Path') if m else None}
+                        if len(existing) == 1 and matches(item, x, root):
+                            continue
+                        check(target.DeleteClips(existing, False), f"DeleteClips failed at {x['start']}"); time.sleep(1.2)
+                    m = media[norm_path(root / x['file'])]
+                    check(float(m.GetClipProperty('FPS')) == float(target.GetSetting('timelineFrameRate')),
+                          f"clip FPS {m.GetClipProperty('FPS')} != timeline {target.GetSetting('timelineFrameRate')}")
+                    # endFrame is exclusive on 60 fps 21.1.0.17 (hyperframes-illustration-workflow.md)
+                    added = mp.AppendToTimeline([{'mediaPoolItem': m, 'startFrame': x['sourceStart'], 'endFrame': x['sourceEnd'],
+                                                  'recordFrame': x['start'], 'trackIndex': vi, 'mediaType': 1}])
+                    check(added and len(added) == 1, f'AppendToTimeline failed: {x}')
+                    c = added[0]
+                    check((c.GetStart(), c.GetEnd(), c.GetLeftOffset()) == (x['start'], x['end'], x['sourceStart']),
+                          f'placement read-back mismatch: {(x, c.GetStart(), c.GetEnd(), c.GetLeftOffset())}')
+                    time.sleep(1.2)
+            finally:
+                for kind, tracks in base['tracks'].items():
+                    for tr in tracks:
+                        target.SetTrackLock(kind, tr['index'], tr['locked'])
+            check(pm.SaveProject(), 'SaveProject failed')
         data = inventory(target)
-        assert data['end'] == base['end'], (data['end'], base['end'])
+        check(data['end'] == base['end'], f"timeline end changed: {data['end']} != {base['end']}")
         for kind, tracks in base['tracks'].items():
             for i, tr in enumerate(tracks):
-                assert data['tracks'][kind][i] == tr, (kind, i, 'protected track mismatch')
+                check(data['tracks'][kind][i] == tr, f'protected track mismatch: {kind} {i + 1}')
         placed = data['tracks']['video'][vi - 1]['items'] if len(data['tracks']['video']) >= vi else []
-        missing = [x['id'] for x in want if not any(matches(c, x) for c in placed)]
-        assert not missing, missing
+        missing = [x['id'] for x in want if not any(matches(c, x, root) for c in placed)]
+        check(not missing, f'placements missing or wrong media: {missing}')
         if a.mode != 'pilot':
-            assert len(placed) == len(plan), (len(placed), len(plan))
+            check(len(placed) == len(plan), f'overlay count {len(placed)} != plan {len(plan)}')
         p.SetCurrentTimeline(source)
-        assert inventory(source)['tracks'] == base['tracks']
+        check(inventory(source)['tracks'] == base['tracks'], 'source tracks changed during run')
         (root / f'readback-{a.mode}.json').write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
         if a.mode == 'verify':
             export_verified(pm, p, root / 'illustrated_project.drp')

@@ -45,9 +45,20 @@ class IllustrationReelTests(unittest.TestCase):
 
     def test_matches_placed_item(self):
         x = plan(('a', 10, 70))[0]
-        self.assertTrue(self.m.matches({'start': 10, 'end': 70, 'left': 0, 'path': 'D:/x/reel.mov'}, x))
-        self.assertFalse(self.m.matches({'start': 10, 'end': 69, 'left': 0, 'path': 'D:/x/reel.mov'}, x))
-        self.assertFalse(self.m.matches({'start': 10, 'end': 70, 'left': 0, 'path': 'D:/x/other.mov'}, x))
+        self.assertTrue(self.m.matches({'start': 10, 'end': 70, 'left': 0, 'path': 'D:/x/reel.mov'}, x, 'D:/x'))
+        self.assertFalse(self.m.matches({'start': 10, 'end': 69, 'left': 0, 'path': 'D:/x/reel.mov'}, x, 'D:/x'))
+        self.assertFalse(self.m.matches({'start': 10, 'end': 70, 'left': 0, 'path': 'D:/x/other.mov'}, x, 'D:/x'))
+        self.assertFalse(self.m.matches({'start': 10, 'end': 70, 'left': 0, 'path': None}, x, 'D:/x'))
+
+    def test_matches_rejects_same_basename_in_other_dir(self):
+        x = plan(('a', 10, 70))[0]
+        item = {'start': 10, 'end': 70, 'left': 0, 'path': 'D:/old_task/reel.mov'}
+        self.assertFalse(self.m.matches(item, x, 'D:/x'))
+
+    def test_check_raises_runtime_error(self):
+        self.m.check(True, 'unused')
+        with self.assertRaisesRegex(RuntimeError, 'AddTrack failed'):
+            self.m.check(False, 'AddTrack failed')
 
     def test_cli_help_runs_without_resolve(self):
         r = subprocess.run([sys.executable, str(ROOT / 'scripts/illustration_reel.py'), '--help'],
