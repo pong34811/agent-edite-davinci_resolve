@@ -4511,7 +4511,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "4ca8b9570825123310daa6276f1231064814d8f1be9e480f9e308e2c77852bf4"
+      "sha256": "d114cb58ea2a381fa1df5daa77e18db2d0558984523dc0e347cee8f93e5f3444"
     },
     {
       "path": "docs/README.md",
@@ -6510,7 +6510,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b2c8f49d3f40b5ca2e7cd0fb831c33bde94085e70d4f276046d161246cd1a1aa"
+      "sha256": "f147f9d0832a1dc3cb03218c9b4704bf8d151ace3d1b050d20d33d06bbfac8e6"
     },
     {
       "path": "scripts/README.md",
@@ -6715,6 +6715,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "d40db76bb6769636de7c889934299df3fc8f1b97f3443ee71f17d3c3f31aa308"
+    },
+    {
+      "path": "scripts/consolidate_project_media.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "20c3108a8ab2d076503c65b7fe96d62f457c5d5ed629c9523406925c4639f16b"
     },
     {
       "path": "scripts/contact_sheet.py",
@@ -7391,6 +7397,12 @@
       "sha256": "24e4d293c0b3c522ddbd9812a9487b8f4e49d1e37f3348b69dcec74db9140dfd"
     },
     {
+      "path": "tests/test_consolidate_project_media.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "fba1d5ef4fb2381985d9aec9d8a5fd57452469617ec1bd050f2d2dbd4ce784ce"
+    },
+    {
       "path": "tests/test_contact_sheet.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7982,7 +7994,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1063,
+    "manifest_files": 1065,
     "supporting_skills": 41,
     "active_skills": 58
   },
