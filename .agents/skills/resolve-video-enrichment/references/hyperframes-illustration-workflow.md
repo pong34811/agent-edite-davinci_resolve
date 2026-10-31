@@ -67,6 +67,11 @@ settings that the session discovered. For static stills use
 - **Source overlays in the original footage are not repaired by zoom or
   illustration placement.** If the source has a cropped head or a baked-in
   overlay, the illustration does not fix it; report it separately.
+- **Keep the reel beside the footage.** Pass `illustration_reel.py --root`
+  a folder next to the source media (e.g. `Z:/<channel>/<clip>/illustrations/`)
+  and copy the reel + `placements.json` there before `baseline`. Reels kept only
+  under `.hermes/projects/` went Media Offline twice when that folder vanished
+  (Armigon intro/name, 2026-10-25/26).
 - **Mixed rasters in one project.** The Armigon pilot used 1920x1052
   (not 1920x1080). Do not auto-convert to 1920x1080; preserve the
   approved aspect ratio.

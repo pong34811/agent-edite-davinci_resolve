@@ -3730,7 +3730,7 @@
       "path": ".agents/skills/resolve-video-enrichment/references/hyperframes-illustration-workflow.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fa648972856369801f72dc247f153f40e65414bf34b2d512e92703639aa49280"
+      "sha256": "09b0c2905d6df61475d1a3aa1537276d7c3e51b76fdcaf16af785868d23aa035"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/illustration-assets.md",
@@ -4486,7 +4486,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "6c32fca4942c58de81a881fe9dfa5c6eba80522b90345b5b8850e6e44771d807",
+      "sha256": "b19cba7eb835856ca5d4543a680bb2f9bfcd64e5fe9d93ef28d55e935c567436",
       "kind": "integration_or_validation"
     },
     {
@@ -4498,7 +4498,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1a0c14f49270fa3463c094107d63ba35581dae98232b3abb173fcb920d721382",
+      "sha256": "354bd0725cecb34642d95ff93f203917d0d6a97dd7000d1fe600642539204e25",
       "kind": "integration_or_validation"
     },
     {
@@ -4605,7 +4605,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2b91c5c9dd4254e2e2254472b4cb0d5c44a9576186861cf27ef72c72ad40594e"
+      "sha256": "92965656f6e8567ca89707395100763cdc5f926bbc639dd92eadec73dcb1a13f"
     },
     {
       "path": "docs/channels/kael.md",
@@ -6510,7 +6510,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f147f9d0832a1dc3cb03218c9b4704bf8d151ace3d1b050d20d33d06bbfac8e6"
+      "sha256": "c9e859932c5ff313cd0f6fa1854e39d010cf40a2b23f3b84dc8e44b87808ec45"
     },
     {
       "path": "scripts/README.md",
@@ -6861,6 +6861,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "2984b4f5358d1c861cfda8806753ecbd1dc4c07ba3459ab9b04d5304c1ddedfa"
+    },
+    {
+      "path": "scripts/illustration_reel.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "8b3ec20ceda11b3dfeb6154e110acadb88dd5d2123aa534033e629e5109f6ad6"
     },
     {
       "path": "scripts/import_focus_drt.py",
@@ -7481,6 +7487,12 @@
       "sha256": "20a6198efd721b449cd6a731655b0603ccfda6c72502916738a46bfc6a30bd23"
     },
     {
+      "path": "tests/test_illustration_reel.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "62d6ee6de88a577cf08df2e9d4ba4b31405ddf6fe26a4556982e0d01cca42dd7"
+    },
+    {
       "path": "tests/test_load_subtitle_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7994,11 +8006,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1065,
+    "manifest_files": 1067,
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.12",
+  "bundle_version": "0.16.13",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
