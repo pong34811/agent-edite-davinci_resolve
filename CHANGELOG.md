@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.16.15 — Adjustment Clip บน Video 3 เกมที่ชอบในปี 2026
+
+### รายละเอียด
+- เกมที่ชอบในปี 2026 (Armigon): สร้าง timeline `FirstPass v2_illustrated_focus_v3` ที่มี Adjustment Clip แบบ Inspector (Zoom 1.377) บน Video 3 ครบ 5 ช่วงตามคลิปที่ผู้ใช้วางเอง; ต้นฉบับไม่ถูกแก้ ตรวจ readback และ render 1 เฟรมต่อช่วงแล้ว
+- บันทึกกับดัก: Adjustment Clip จาก Effects library ใน DRT เป็น `Sm2TiVideoClip` ไม่ใช่ `Sm2TiGenerator` จึงใช้ `drt_rebuild_focus_track` ไม่ได้ ต้องโคลน Element เอง
+- house-style: เมื่อผู้ใช้วาง Adjustment Clip เองบน track ใด ให้โคลนคลิปนั้นบน track เดิม ไม่ใช้ Fusion Transform แทน
+
 ## v0.16.14 — ภาพประกอบ เกมที่ชอบในปี 2026
 
 ### รายละเอียด
