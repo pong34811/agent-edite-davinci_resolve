@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.16.14 — ภาพประกอบ เกมที่ชอบในปี 2026
+
+### รายละเอียด
+- เพิ่มภาพประกอบ HyperFrames 14 ช่วงให้คลิป "เกมที่ชอบในปี 2026" (Armigon) บนสำเนา `FirstPass v2_illustrated` แทร็ก V2 `REACTIONS`: กราฟิกข้าง 12 + ภาพแฟนตาซีเต็มจอ 2 ตรงตามซับ
+- ตรวจแล้ว: `illustration_reel.py` baseline/pilot/apply/verify ผ่าน, แทร็กต้นฉบับ (วิดีโอ 15 / เสียง 41 / ซับ 68) ตรง baseline, render QC 1920×1080 60 fps 4,151 เฟรม decode ไม่มี error มีซับครบทุกช่วง
+- บันทึกกฎใหม่: เก็บ reel และ placements.json ไว้ข้างฟุตเทจ (`Z:/…/illustrations/`) แทน `.hermes/projects/` เพื่อกัน Media Offline
+
 ## v0.16.13 — Render แนวตั้ง ทำไมถึงมาเป็นวีทูปเบอร์
 
 ### รายละเอียด
