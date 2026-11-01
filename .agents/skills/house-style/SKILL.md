@@ -104,6 +104,13 @@ require explicit database-write approval and a verified backup; a font request
 alone does not authorize SQL. Preserve every cue's text/timing and all original
 video/audio ranges.
 
+Prefer a preset method that keeps Resolve open. The user asked for an
+alternative after the close/patch/relaunch cycle of `load_subtitle_preset_auto`
+hung on a leftover `Resolve.exe` (Bunny Girl ep4, 2026-11-01). Try the MCP
+`timeline_ai set_subtitle_preset` (DRT round trip, `preset_reference` taken
+from a timeline that already has the preset) on a copy first. Fall back to the
+DB patch only if that fails, and still ask for approval.
+
 ## Names, numerals and cue length (Katy404 / KT)
 
 Write the channel name spoken as "เคที" in Thai captions as **เคที่** (with the
