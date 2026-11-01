@@ -193,7 +193,8 @@ def full_original_signature(tl):
     video = track_rows(tl, "video", VIDEO_PROPS)
     for index in range(1, tl.GetTrackCount("video") + 1):
         for item_index, item in enumerate(sorted(tl.GetItemListInTrack("video", index) or [], key=lambda x: x.GetStart())):
-            if item.GetName() == "Adjustment Clip":
+            # Inspector-zoom Adjustment Clips have no Fusion comp; VIDEO_PROPS already covers their transform.
+            if item.GetName() == "Adjustment Clip" and (item.GetFusionCompCount() or 0) >= 1:
                 video[index - 1]["items"][item_index]["fusion"] = fusion_signature(item)
     return {
         "id": tl.GetUniqueId(),
