@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.16.22 — ส่งมอบ Bunny Girl ep4 9:16
+
+### รายละเอียด
+- ส่งมอบ Bunny Girl ep4 9:16: `Bunny Girl ep4_9x16_FINAL_2026-11-01.mp4` จาก `Timeline 1_9x16` 1080x1920@60 ซับ burn-in, 9655 เฟรม, -15.7 LUFS, peak -1.5 dBFS, ไม่มีเฟรมดำ
+- บันทึกการส่งมอบในโปรไฟล์ Katy404 (ไฟล์ส่งมอบปัจจุบัน: 16:9 FINAL_v2 + 9:16 FINAL; งานที่เหลือ: ปก)
+
 ## v0.16.21 — Bunny Girl ep4 FINAL_v2 และ 9:16 ทดสอบ
 
 ### รายละเอียด
