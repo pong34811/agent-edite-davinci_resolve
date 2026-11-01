@@ -1206,7 +1206,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "5a0b457845bb1bcce9dd086c11c1a9082b3488d6fb6e919c86d0c57ceb9c352c"
+      "sha256": "c6516f9be1c0fb70a54bfa12667632be2d7cc9f74ab1c254b72bfa83cfcb74e7"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -3580,7 +3580,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "fb936108c62c9251207a4e951239ef9bc1c80c67f0e474e14faf371e71130eda"
+      "sha256": "4fd812540954cd9194beb6a3eaf3a39d36a891327aa028a5e82a4cc4bcefb5bf"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
@@ -4486,7 +4486,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "b19cba7eb835856ca5d4543a680bb2f9bfcd64e5fe9d93ef28d55e935c567436",
+      "sha256": "fcf1903a2ee7f8c5d4cf1aadd2ac853c39fcbbb841ac474fbb29b1cd6166c631",
       "kind": "integration_or_validation"
     },
     {
@@ -4498,7 +4498,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "354bd0725cecb34642d95ff93f203917d0d6a97dd7000d1fe600642539204e25",
+      "sha256": "79d5f63b2f671b826fb4d121412a7f4664c6af7d3ca20ffa51420a690865a16c",
       "kind": "integration_or_validation"
     },
     {
@@ -4617,7 +4617,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "580fd55eb127567400ae27b851687826570b894800107c9774b1870b1243dc05"
+      "sha256": "be2f56738f341c1947300f05345e9452b64308ef18d6dc883bd27f49ba7dd0b0"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -6576,7 +6576,7 @@
       "path": "scripts/armigon_9x16_batch_one.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "02210b5d61b3fb12b1a54ea5c29f214539d6c79b71434e7f60daf2c94fd02084"
+      "sha256": "e054ada52c28aa0b2d7432631ab73d36ad808157b69585d987dcf801e443096a"
     },
     {
       "path": "scripts/armigon_9x16_focus_retarget.py",
@@ -8010,7 +8010,7 @@
     "supporting_skills": 41,
     "active_skills": 58
   },
-  "bundle_version": "0.16.13",
+  "bundle_version": "0.16.18",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

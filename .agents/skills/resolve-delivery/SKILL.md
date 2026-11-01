@@ -215,6 +215,14 @@ Two things that bite when hand-writing specs, both handled by the projections:
 
 - Deliverable gates never auto-clear; surface the per-field verdict to a human.
 
+- A render that fails at 0% ("Failed to render background job.") can leave the
+  background helper holding the target file. Every retry under the same
+  `CustomName` then fails too. Check
+  `%APPDATA%/Blackmagic Design/DaVinci Resolve/Support/logs/HelperDebug.txt`
+  for "Existing file can not be removed", and retry under a NEW name
+  (Bunny Girl ep4, 21.1.0.17, 2026-11-01). A single 0% failure right after
+  copying a new asset into Google Drive usually passes on a plain retry.
+
 ## Batch final export (p2 pattern)
 
 `scripts/p2_export_final.py` is the verified loop for exporting many timelines: dry-run by default, `--apply` to render. It calls `LoadRenderPreset("H.264 Master")` before every job and overrides only frame range, `TargetDir` and `CustomName`; it starts only the jobs it created (the project queue holds old jobs). Vertical (`_9x16`) timelines are duplicated to `<name>__cover_tmp`, the matching `<name>.jpg` is laid on a new top video track for the first frames (nothing shifts), the copy is rendered then deleted; originals are never modified. `<name>_150s` variants (from `p2_trim_tail_150s.py`) replace their original in the output name. After render, verify Complete status, nonempty output and ffprobe video+audio; loudness comes from `p2_loudnorm_worker*.py` (I=-14, TP=-1.5). Export a verified `.drp` first (`backup_drp.py`).
