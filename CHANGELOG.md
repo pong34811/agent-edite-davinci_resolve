@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.16.21 — Bunny Girl ep4 FINAL_v2 และ 9:16 ทดสอบ
+
+### รายละเอียด
+- เรนเดอร์ 16:9 ใหม่เป็น `Bunny Girl ep4_FINAL_v2_2026-11-01.mp4` จาก `Timeline 1_pop` ที่ผู้ใช้แก้เอง: 9655 เฟรม, -15.7 LUFS, peak -1.5 dBFS, ไม่มีเฟรมดำ
+- สร้าง 9:16 `Timeline 1_9x16` (กราฟิกแนวตั้ง 7 บท, ซูม 1.1x, ซับ `Mitr-short-001`) และเรนเดอร์ทดสอบ `Bunny Girl ep4_9x16_test_2026-11-01.mp4`: 1080x1920@60, 9655 เฟรม, -15.7 LUFS, ไม่มีเฟรมดำ
+- บันทึกกับดัก: เรนเดอร์ Resolve พร้อม HyperFrames ทำให้ Fusion ล้ม, Resolve ค้างตอนโหลด preset ต้องให้ผู้ใช้ปิดเอง, gain ของ timeline อื่นเด้งกลับหลัง reload
+- house-style: ผู้ใช้อยากได้วิธีโหลด preset ซับที่ไม่ต้องปิด Resolve ให้ลอง MCP `timeline_ai set_subtitle_preset` ก่อน
+
 ## v0.16.20 — ส่งมอบ Bunny Girl ep4 16:9
 
 ### รายละเอียด
