@@ -92,6 +92,9 @@ def publish(version: str, title: str, changelog_entry: str) -> str:
 
 
 def main() -> int:
+    # Thai titles/notes must print on a Windows console whose codepage cannot encode them
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--title", required=True, help="หัวข้อ release ภาษาไทย")
     parser.add_argument("--notes-file", required=True, type=Path, help="ไฟล์ bullet point ภาษาไทย")

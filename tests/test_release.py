@@ -119,3 +119,15 @@ def test_run_decodes_thai_output_as_utf8():
     import sys
     out = release.run(sys.executable, "-c", "import sys; sys.stdout.buffer.write('ปกคลิป'.encode('utf-8'))")
     assert out == "ปกคลิป"
+
+
+def test_dry_run_prints_thai_on_a_cp1252_console(tmp_path):
+    # Without PYTHONIOENCODING=utf-8 the Windows console encoding could not print the Thai preview
+    import os, subprocess, sys
+    notes = tmp_path / "notes.md"
+    notes.write_text("- ทดสอบ\n", encoding="utf-8")
+    env = {**os.environ, "PYTHONIOENCODING": "cp1252"}
+    r = subprocess.run([sys.executable, str(SCRIPT), "--title", "ทดสอบ", "--notes-file", str(notes)],
+                       capture_output=True, env=env)
+    assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
+    assert "ทดสอบ" in r.stdout.decode("utf-8")
