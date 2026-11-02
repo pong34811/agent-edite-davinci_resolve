@@ -49,6 +49,7 @@ When you learn a new rule, add a row here (see `.agents/skills/project-learning/
 | MCP timeline mutators | Expect an auto-archived `Timeline N_archived_vNN` per mutating call; report it, delete only on request | `timeline.add_track` created a copy and left the Media Pool on `Archive`. |
 | Preset backup path | Pass `--backup-dir` as an absolute path (now resolved in the helper) | Resolve's ExportProject fails silently on a relative path. |
 | Whisper model | `large-v3` on the raw audio; distrust `large-v3-turbo` on game audio | Turbo invented ~20 s of text; check `avg_logprob` and re-run the window alone. |
+| Thai ASR model | For Thai subtitle text on voice chunks, prefer `scb10x/typhoon-asr-realtime` (typhoon-env) and keep faster-whisper `large-v3` as the cross-check | 54 Sakuyako chunks: Typhoon CER 0.25 at 65x realtime vs large-v3 0.43, Typhoon-Qwen 0.44, turbo 0.54; reference was Typhoon-derived (2026-11-02). |
 | GIF hold | Validate every GIF (Resolve 25 fps, >= 1.5 s) before mutating the timeline | A 1-second GIF aborted a run after BGM/SFX were already placed. |
 | Zoom framing | Corner avatar: no black band, slight off-centre; keep the hair tip inside | Centre-exact framing shows a band; the first pass clipped the ahoge. |
 | Font audit | Scan subtitle cue blobs as UTF-16 as well as ASCII | A track marked Mitr Bold still carried hidden Open Sans metadata in some cues; an ASCII-only audit missed it. |

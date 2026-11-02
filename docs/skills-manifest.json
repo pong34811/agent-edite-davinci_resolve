@@ -4419,7 +4419,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "068026d489fea4172a4cdd4767b8f084a8e5efe94b71f05f19a19d4d7b8be3c1"
+      "sha256": "8d3ef9bc63a212e6f6712c2aa4439d27faaa893ff453d5e83847ce22d8d45d8b"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4654,7 +4654,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "166109dd510323f48c3db3125b5566ef601a55b9d7d534a3b3ce6a6496a5b6bf",
+      "sha256": "3f83b12744370bc4265a7c103ea12451cd44555d29cf3293a1fce57469df4f85",
       "kind": "integration_or_validation"
     },
     {
@@ -4666,7 +4666,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1afbc0d046ac3d5d45c4ee413ab5be74ca763c37ccd13754fd5640d6da41b89d",
+      "sha256": "88b83826626cf15814661babd93cfdeac7ee65d684a8c9e124e9dd31bd5e21f5",
       "kind": "integration_or_validation"
     },
     {
@@ -4679,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "599b2b120342d72512d5b50fb41373ce8b90ae96a399cab698b1ad4215b22673"
+      "sha256": "e57eb03994f7b0350c45443d3d27052470b8a0cd2ac3ca5c25c5c521e33bb593"
     },
     {
       "path": "docs/README.md",
@@ -8550,7 +8550,7 @@
     "supporting_skills": 51,
     "active_skills": 68
   },
-  "bundle_version": "0.17.1",
+  "bundle_version": "0.17.2",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

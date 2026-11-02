@@ -1,13 +1,13 @@
 {
   "ok": false,
   "core_skill_count": 17,
-  "supporting_skill_count": 41,
-  "active_skill_count": 58,
+  "supporting_skill_count": 51,
+  "active_skill_count": 68,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 1065,
+  "manifest_file_count": 1142,
   "excluded_repository_path_count": 43,
-  "local_reference_count": 335,
+  "local_reference_count": 346,
   "documented_example_link_exception_count": 14,
   "documented_example_link_exceptions": [
     {
