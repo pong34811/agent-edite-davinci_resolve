@@ -112,3 +112,10 @@ def test_preflight_requires_exactly_one_changelog_header(monkeypatch, tmp_path):
         assert "changelog" in str(exc).lower()
     else:
         raise AssertionError("duplicate changelog headers should be rejected")
+
+
+def test_run_decodes_thai_output_as_utf8():
+    # Windows default codepage cannot decode git's Thai commit summary (v0.17.0 crash)
+    import sys
+    out = release.run(sys.executable, "-c", "import sys; sys.stdout.buffer.write('ปกคลิป'.encode('utf-8'))")
+    assert out == "ปกคลิป"

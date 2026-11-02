@@ -4654,7 +4654,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "1dca59fd966c85b6e0928ac2a1c15e94e4196764ff49a3def8ebd8aa70206cd1",
+      "sha256": "7fad7d4570d4f121665d33ece58577855bd5214b8a9a29c96900544006724779",
       "kind": "integration_or_validation"
     },
     {
@@ -4666,7 +4666,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "c7dd0e0836c42e75114958228afd6d03837ded0d1f3c1eff8e69cc0334fd859e",
+      "sha256": "0f305403349162fe328624f2997e15cf6246657deb04d0739be8904ce1501b0a",
       "kind": "integration_or_validation"
     },
     {
@@ -4679,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "518a0c297f730567c13fefe8905a66c966290da392c0746ccf12d91cb43f0a1c"
+      "sha256": "827003763a71b9084f0143db34d990c5f507c411f38ee80d0109511380e2f96a"
     },
     {
       "path": "docs/README.md",
@@ -7652,7 +7652,7 @@
       "path": "scripts/release.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f19126fdea490c8e1731ea85baae338d9d89ef70e5e2eca7df2802d6af7cca1f"
+      "sha256": "4ea76e99b88ce6a97eba7fcadf839b4d60a749614eb5088140998c441ce3cfc4"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -8084,7 +8084,7 @@
       "path": "tests/test_release.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "2ec74bf0a5f9b457fe68fd26826a65b92cf9345f3212d6ebcf1a7341715e17f4"
+      "sha256": "acf35a86862372ad79d3cefba942444770feeed5cda3eca71a1c43a4caa40753"
     },
     {
       "path": "tests/test_render_enrichment_pilot.py",
@@ -8550,7 +8550,7 @@
     "supporting_skills": 51,
     "active_skills": 68
   },
-  "bundle_version": "0.16.23",
+  "bundle_version": "0.17.0",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

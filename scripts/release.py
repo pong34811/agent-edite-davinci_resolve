@@ -37,7 +37,8 @@ def format_changelog(version: str, title: str, notes: str) -> str:
 
 
 def run(*args: str, cwd: Path = ROOT) -> str:
-    result = subprocess.run(args, cwd=cwd, check=True, text=True, capture_output=True)
+    result = subprocess.run(args, cwd=cwd, check=True, text=True, capture_output=True,
+                            encoding="utf-8", errors="replace")
     return result.stdout.strip()
 
 
