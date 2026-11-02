@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.3 — แก้ path MCP และเก็บกวาด environment ทดสอบ
+
+### รายละเอียด
+- แก้ `.mcp.json` ให้ชี้ไปยัง checkout `davinci-resolve-mcp` ที่ตรวจ remote, entrypoint และ Python environment แล้ว; อัปเดตและยืนยันเวอร์ชัน v4.18.4
+- เพิ่มวิธีตรวจและแก้ path MCP โดยรักษา `env` และยืนยันการเชื่อมต่อหลังเริ่ม session ใหม่
+- เพิ่มวิธีตรวจ root `.venv` และลบเฉพาะ environment ชั่วคราวที่งานปัจจุบันสร้าง พร้อมตรวจ path ก่อนลบ
+
 ## v0.17.2 — ทดสอบออก release ใหม่บนคอนโซล Windows
 
 ### รายละเอียด
