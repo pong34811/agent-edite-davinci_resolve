@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.17.0 — รวมเครื่องมือคัดไฮไลต์ไลฟ์สตรีมเข้าโปรเจกต์
+
+### รายละเอียด
+- ย้ายเครื่องมือคัดไฮไลต์ไลฟ์สตรีม (mp4 เสียงไทย) จาก repo `agent-seacrh-virus-cut` มาไว้ที่ `scripts/highlight/` พร้อมเทส `tests/highlight/` (ผ่าน 44 เทส)
+- เพิ่ม 10 สกิล: long-video-highlight-clipping, livestream-highlight-clipping, new-channel-job-setup, timeline-naming-convention, user-feedback-capture, resolve-project-folder-targeting, resolve-still-qc-capture, llm-wiki, resolve-smart-edit, vertical-video-reframing
+- ย้ายวิกิความรู้คัดคลิปไปที่ `docs/highlight/wiki/`, เทมเพลตงานภาษาไทยไปที่ `docs/highlight/prompt-template.md` และข้อมูลงานเก่า 4 งาน (เฉพาะไฟล์เล็ก) ไปที่ `work/highlight/`
+- เพิ่มหัวข้อขั้นตอนงานไฮไลต์ใน `AGENTS.md`, หมวด 9 ใน `scripts/INDEX.md` และกฎตั้งชื่อ Timeline ไฮไลต์ใน house-style
+- repo เดิมไม่ถูกแก้; ไฟล์เสียง/เฟรม/ถอดเสียงขนาดใหญ่ไม่ได้ย้ายและถูก gitignore
+
 ## v0.16.23 — ปกคลิป Bunny Girl ep4
 
 ### รายละเอียด
