@@ -1,0 +1,26 @@
+{
+  "INPUT_DIR": "G:/My Drive/Projects/Katy404/2026-10",
+  "CHANNEL": "Katy404",
+  "JOB": "2026-10",
+  "CLIP_MIN_S": 30,
+  "CLIP_MAX_S": 180,
+  "CATEGORIES": [
+    "gameplay",
+    "fun",
+    "meme"
+  ],
+  "CLIPS_PER_VIDEO": "3-4",
+  "ASPECT": "16:9",
+  "LANGUAGE": "th",
+  "APPROVAL": "auto",
+  "GAME_OVERRIDES": {
+    "Terraria": "Terraria",
+    "Minecraft": "Minecraft",
+    "Monster Hunter": "Monster Hunter World",
+    "League of Legends": "League of Legends",
+    "Soul Walker": "Soul Walker"
+  },
+  "DEMUX_WORKERS": 2,
+  "SHORTLIST_PER_HOUR": 10,
+  "TRANSCRIBE_PAD_S": 30
+}

@@ -2934,7 +2934,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "817a23fab28ffb22eb870e6ad9b517ce579146270580bfe3d506eef5e13ae09b"
+      "sha256": "234165f39da3c256ebe7b042f4a6f6b423299aa27ec79f084b01f548522776c2"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -4679,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7716de71d6d48ea0085a4a4468a3fd7a1f136ccde0239873719fd867f9ac3d05"
+      "sha256": "265135ce8b4b50b68f738d83ba266a147b98f34965b7f2d631b232f947de289a"
     },
     {
       "path": "docs/README.md",
@@ -4785,7 +4785,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0a7310585485e8ff8d8ca409e49f26af3ad5d3ead3b0614335162555f48d67d6"
+      "sha256": "93192efefeba2c23c592c08b632bf77240be7c31303e945d12d885ea2fa8a6d6"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -6888,7 +6888,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a9a0fd4ace72507025b819e94644e027002c42b689bca5bd1c53583e808f9eb6"
+      "sha256": "affd326cd1426e1269c67b2469781642e880a154780a6a5caa39ce441f2f8139"
     },
     {
       "path": "scripts/README.md",
@@ -7244,7 +7244,7 @@
       "path": "scripts/highlight/briefs.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e9450a7717d9ce062689b484728b17aeaa9fc37296ca036d4bc7bf90d0fa5637"
+      "sha256": "1060ca272f45a9ebaae9044ada30ad8468a24e8cc7d55f6dde3d5cbc0ba65db2"
     },
     {
       "path": "scripts/highlight/build_timelines.py",
@@ -7268,13 +7268,13 @@
       "path": "scripts/highlight/features.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c1821ad684c4d541a6bde854d06fb781d0549c285dcbd1a26f4089f022ae8395"
+      "sha256": "d1bfd150bae2d3dd6764c057d45bc5fd0a0eb961e9f8c0b07d2d581c8a156ce0"
     },
     {
       "path": "scripts/highlight/gpu_env.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a2e839203d10e80f1b6a4ba0d0b5fbba197fb88c0e4111dd2468412d7a646e06"
+      "sha256": "39316f7e152487c4f5e340d80aea5f05444c9d2cf067f79d7d2687c583409985"
     },
     {
       "path": "scripts/highlight/inventory.py",
@@ -7292,7 +7292,7 @@
       "path": "scripts/highlight/pipeline.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f5540df51614d2e7aec8950fd970b8a9ce4d57db67ed0b9fd8aa7debc68c9621"
+      "sha256": "8856ae654a20d2736dd98ed7cebe93656b6b1b02c5873bbe392ce5fcccd7f157"
     },
     {
       "path": "scripts/highlight/resolve_clips.py",
@@ -7316,7 +7316,7 @@
       "path": "scripts/highlight/templates/reviewer_brief.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ff0c5cfb8f990de0dc033187b62320c33c712aa8afd1306cf6098dfca6d111cb"
+      "sha256": "9d3aab5db5a1d9462856c86fa3651f0a9e28c75b2ee0c30b2b5122fdd3112fbd"
     },
     {
       "path": "scripts/highlight/tools/gpu_smoke.py",
@@ -7341,6 +7341,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "942498d3405428ad49735eccfcf610eb79d88f5d89c6f6367fe70d17263ba5c1"
+    },
+    {
+      "path": "scripts/highlight/verify_timelines.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c08a047f7cd390526e1666bd42ecdfa78e10bc57daea1e33efd2dfefdee1c15b"
     },
     {
       "path": "scripts/highlight/windows.py",
@@ -7829,6 +7835,12 @@
       "sha256": "4b28ba606eb48e84236bd598d53e12e78d5b30b7317c7972f31a23f73f51ebb9"
     },
     {
+      "path": "tests/highlight/test_features_wav.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "e7a0b688fa1a1d20c27f2c1a5bfcf778e80dbd03af0103396129cf889614f858"
+    },
+    {
       "path": "tests/highlight/test_inventory.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -7844,19 +7856,25 @@
       "path": "tests/highlight/test_snap_schema.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3862629646e6a098e31845e06da6fe74febe559861748f7319e89f26d77cf18f"
+      "sha256": "6238130da9ae5b54a64b374fcf9d18e860875ebe8f9358ee773ef0974ab9f382"
     },
     {
       "path": "tests/highlight/test_tools.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fcf3012a6a6cb66d8931704c3b7d0dca5dee8269280b0b176dd36ee82781fb0c"
+      "sha256": "20810aefa6a6a3301f3190453a493e9a90a616c4a7321ba4a37be134fff3b018"
     },
     {
       "path": "tests/highlight/test_transcribe.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "33fb60dcb894da0eba925be59c3f24344629128eb3847a2a634862260679323e"
+    },
+    {
+      "path": "tests/highlight/test_verify_timelines.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "9f50fb29275932b01042f5d79678fc622b6a69e59981d1a68bf7f0b54ab3bfba"
     },
     {
       "path": "tests/highlight/test_windows.py",
@@ -8546,7 +8564,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1142,
+    "manifest_files": 1145,
     "supporting_skills": 51,
     "active_skills": 68
   },

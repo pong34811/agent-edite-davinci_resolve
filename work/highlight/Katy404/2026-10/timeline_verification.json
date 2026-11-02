@@ -1,0 +1,396 @@
+{
+ "project": "KT404 Highlights 2026-10",
+ "timeline_count": 48,
+ "planned": 48,
+ "ok": 46,
+ "rows": [
+  {
+   "name": "บอสถล่ม ลาฟี่ตีสู้จนตาย-Terraria-vdo",
+   "candidate": "v01-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6000,
+   "expected_duration": 6000
+  },
+  {
+   "name": "ด่าก้อนดินเหนียวเสียชาติเกิด-Terraria-vdo",
+   "candidate": "v01-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5100,
+   "expected_duration": 5100
+  },
+  {
+   "name": "มังกรรอดหวุดหวิด-Terraria-vdo",
+   "candidate": "v01-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5100,
+   "expected_duration": 5100
+  },
+  {
+   "name": "สู้บอสจนตายจังหวะสุดท้าย-Terraria-vdo",
+   "candidate": "v01-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4113,
+   "expected_duration": 4113
+  },
+  {
+   "name": "หนีลาวากลางหิมะ-Minecraft-vdo",
+   "candidate": "v02-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4880,
+   "expected_duration": 4880
+  },
+  {
+   "name": "ปักทอร์ชอุดถ้ำ ดินหมด-Minecraft-vdo",
+   "candidate": "v02-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5900,
+   "expected_duration": 5900
+  },
+  {
+   "name": "หนาวตายหรือจุ่มลาวา-Minecraft-vdo",
+   "candidate": "v02-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4800,
+   "expected_duration": 4800
+  },
+  {
+   "name": "ลงเหมืองเจอเหล็กเต็ม-Minecraft-vdo",
+   "candidate": "v02-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5963,
+   "expected_duration": 5963
+  },
+  {
+   "name": "ตามล่าตัวบินได้แล้วเจอตัวเดินพื้น-Monster Hunter World-vdo",
+   "candidate": "v03-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4786,
+   "expected_duration": 4786
+  },
+  {
+   "name": "ฟันแล้วฟันอีก ชุบ!-Monster Hunter World-vdo",
+   "candidate": "v03-02",
+   "ok": false,
+   "problems": [
+    "source_start 61521 != 61522"
+   ],
+   "video_duration": 5078,
+   "expected_duration": 5078
+  },
+  {
+   "name": "เร็วๆ ยิงปืนใหญ่ ยิงๆ-Monster Hunter World-vdo",
+   "candidate": "v03-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 7230,
+   "expected_duration": 7230
+  },
+  {
+   "name": "โจรโผล่มา 3 ตัว ตีใครดี-Monster Hunter World-vdo",
+   "candidate": "v03-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4736,
+   "expected_duration": 4736
+  },
+  {
+   "name": "ไฟต์ป่าสุดตึง โยนๆๆ-League of Legends-vdo",
+   "candidate": "v04-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5690,
+   "expected_duration": 5690
+  },
+  {
+   "name": "เลื่อนขั้น Platinum II-League of Legends-vdo",
+   "candidate": "v04-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5609,
+   "expected_duration": 5609
+  },
+  {
+   "name": "เจอคนเล่นเป็นอีกแล้ว-League of Legends-vdo",
+   "candidate": "v04-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5408,
+   "expected_duration": 5408
+  },
+  {
+   "name": "มันเก่งเหรอ! ชนะแล้ว-League of Legends-vdo",
+   "candidate": "v04-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4261,
+   "expected_duration": 4261
+  },
+  {
+   "name": "ลาวากับความตกใจกลางหิมะ-Minecraft-vdo",
+   "candidate": "v05-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4018,
+   "expected_duration": 4018
+  },
+  {
+   "name": "เพื่อนมาช่วยตอนซอมบี้ตายหมด-Minecraft-vdo",
+   "candidate": "v05-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5263,
+   "expected_duration": 5263
+  },
+  {
+   "name": "โดนสเกเลตันยิงโล่หาย-Minecraft-vdo",
+   "candidate": "v05-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3973,
+   "expected_duration": 3973
+  },
+  {
+   "name": "ดาเมจเต็มแล้วจะพาเพื่อนลงไปด้วย-Minecraft-vdo",
+   "candidate": "v05-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5546,
+   "expected_duration": 5546
+  },
+  {
+   "name": "แบนแบล็คลิสต์ เพื่อนเชิญไม่ติด-Soul Walker-vdo",
+   "candidate": "v06-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3616,
+   "expected_duration": 3616
+  },
+  {
+   "name": "จอยไม่เวิร์ก ต้องกลับไปใช้คีย์บอร์ด-Soul Walker-vdo",
+   "candidate": "v06-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3807,
+   "expected_duration": 3807
+  },
+  {
+   "name": "หลอดไม่เคยแตก คุยเรื่องหลอดเฟค-Soul Walker-vdo",
+   "candidate": "v06-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4800,
+   "expected_duration": 4800
+  },
+  {
+   "name": "วิ่งส่งระเบิดสุดชุลมุน-Soul Walker-vdo",
+   "candidate": "v06-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5164,
+   "expected_duration": 5164
+  },
+  {
+   "name": "ปะทะทีมรอบดราก้อน-ไอ้เชี่ยลั่นหมดแล้ว-League of Legends-vdo",
+   "candidate": "v07-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5048,
+   "expected_duration": 5048
+  },
+  {
+   "name": "วิ่งหนีเอาตัวรอด-มังกรมา-League of Legends-vdo",
+   "candidate": "v07-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6610,
+   "expected_duration": 6610
+  },
+  {
+   "name": "เพิ่งเล่น LoL ด้วยกันแท้ๆ ยังจำไม่ได้-League of Legends-vdo",
+   "candidate": "v07-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5420,
+   "expected_duration": 5420
+  },
+  {
+   "name": "ไอ้เฮียคนเมา-คามิไหนวะ-League of Legends-vdo",
+   "candidate": "v07-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6234,
+   "expected_duration": 6234
+  },
+  {
+   "name": "ตั้งชื่อตัวละคร ยามดาแซว-Monster Hunter World-vdo",
+   "candidate": "v08-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5378,
+   "expected_duration": 5378
+  },
+  {
+   "name": "เจอ T-Rex กลางทาง-Monster Hunter World-vdo",
+   "candidate": "v08-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4562,
+   "expected_duration": 4562
+  },
+  {
+   "name": "สุ่มวงล้ออาวุธ ห้ามเปลี่ยน-Monster Hunter World-vdo",
+   "candidate": "v08-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5850,
+   "expected_duration": 5850
+  },
+  {
+   "name": "ลุยล่าม้อนกับเพื่อน-Monster Hunter World-vdo",
+   "candidate": "v08-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5040,
+   "expected_duration": 5040
+  },
+  {
+   "name": "ยิงมังกรสายรุ้งสุดมัน-Terraria-vdo",
+   "candidate": "v09-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6446,
+   "expected_duration": 6446
+  },
+  {
+   "name": "มูนลอร์ดลูกตาออก ปากหมวกแตก-Terraria-vdo",
+   "candidate": "v09-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 7220,
+   "expected_duration": 7220
+  },
+  {
+   "name": "ชนะแล้วทุกคน!-Terraria-vdo",
+   "candidate": "v09-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5991,
+   "expected_duration": 5991
+  },
+  {
+   "name": "ถึงเวลาเราแล้ว อย่าไปยอม-Terraria-vdo",
+   "candidate": "v09-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 8042,
+   "expected_duration": 8042
+  },
+  {
+   "name": "ลืมเอาของกินมา แดกเนื้อซอมบี้-Minecraft-vdo",
+   "candidate": "v10-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6274,
+   "expected_duration": 6274
+  },
+  {
+   "name": "ซอมบี้โผล่ ครีปเปอร์ระเบิดกลางถ้ำ-Minecraft-vdo",
+   "candidate": "v10-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5964,
+   "expected_duration": 5964
+  },
+  {
+   "name": "เสียงในหัวกับการขุดมืดๆ-Minecraft-vdo",
+   "candidate": "v10-03",
+   "ok": false,
+   "problems": [
+    "source_start 256024 != 256025"
+   ],
+   "video_duration": 5079,
+   "expected_duration": 5079
+  },
+  {
+   "name": "ช่วยด้วย! ทางลงแหลก-Minecraft-vdo",
+   "candidate": "v10-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 7813,
+   "expected_duration": 7813
+  },
+  {
+   "name": "คอลแลปเปิดห้อง ชุดหาย-Soul Walker-vdo",
+   "candidate": "v11-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4745,
+   "expected_duration": 4745
+  },
+  {
+   "name": "ตกใจโอโรจิมารุ หลงเมือง-Soul Walker-vdo",
+   "candidate": "v11-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4908,
+   "expected_duration": 4908
+  },
+  {
+   "name": "กลับแรคคูนซิตี้-Soul Walker-vdo",
+   "candidate": "v11-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4473,
+   "expected_duration": 4473
+  },
+  {
+   "name": "โดเนตกับเรื่องสเปคคอม-Soul Walker-vdo",
+   "candidate": "v11-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4416,
+   "expected_duration": 4416
+  },
+  {
+   "name": "บอสกับหมากับกระสุน-Soul Walker-vdo",
+   "candidate": "v12-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6132,
+   "expected_duration": 6132
+  },
+  {
+   "name": "กดมั่วจนรอด-Soul Walker-vdo",
+   "candidate": "v12-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5882,
+   "expected_duration": 5882
+  },
+  {
+   "name": "พระเอกยิงทั้งที่รู้ว่ามีนางเอก-Soul Walker-vdo",
+   "candidate": "v12-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5996,
+   "expected_duration": 5996
+  },
+  {
+   "name": "เควสสัตว์ประหลาดตัวใหญ่-Soul Walker-vdo",
+   "candidate": "v12-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5398,
+   "expected_duration": 5398
+  }
+ ]
+}

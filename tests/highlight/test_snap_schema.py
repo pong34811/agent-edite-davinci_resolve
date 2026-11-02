@@ -18,6 +18,17 @@ def test_snap_in_wav_keeps_time_without_silence(tmp_path):
     p = tmp_path / "b.wav"; _wav(p, [(20, 0.5)])
     assert snap.snap_in_wav(p, 9.4) == 9.4
 
+def clip_count_bounds(spec: str) -> tuple[float, float]:
+    """job CLIPS_PER_VIDEO like "4-8", "3-4+" (open-ended) or "5" -> (min, max)."""
+    lo, _, hi = spec.partition("-")
+    hi = hi or lo
+    return int(lo), (math.inf if hi.endswith("+") else int(hi))
+
+def test_clip_count_bounds():
+    assert clip_count_bounds("4-8") == (4, 8)
+    assert clip_count_bounds("3-4+") == (3, math.inf)
+    assert clip_count_bounds("5") == (5, 5)
+
 def test_review_files_match_schema():
     inv = {r["source_id"]: r for r in json.loads((config.WORK_DIR / "inventory.json").read_text(encoding="utf-8"))}
     files = sorted(glob.glob(str(config.WORK_DIR / "review" / "v??.json")))
@@ -26,7 +37,8 @@ def test_review_files_match_schema():
     for f in files:
         sid = f.replace("\\", "/").split("/")[-1][:-5]
         items = json.loads(open(f, encoding="utf-8").read())
-        assert 4 <= len(items) <= 8, f"{sid}: {len(items)} clips"
+        lo, hi = clip_count_bounds(config._job.get("CLIPS_PER_VIDEO", "4-8"))
+        assert lo <= len(items) <= hi, f"{sid}: {len(items)} clips"
         spans = []
         for c in items:
             assert {"id", "source_id", "start_s", "end_s", "category", "title_th", "reason", "score"} <= set(c)

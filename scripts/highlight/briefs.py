@@ -13,8 +13,8 @@ def render(source_id: str, inventory: list[dict], hint: str = "") -> str:
         VID=source_id, DURATION_S=int(row["duration_s"]), HINT=hint,
         CATEGORIES=", ".join(config.CATEGORIES), CLIP_MIN=config.CLIP_MIN_S, CLIP_MAX=config.CLIP_MAX_S,
         CLIPS_PER_VIDEO=config._job.get("CLIPS_PER_VIDEO", "4-8"),
-        WORK=_fwd(config.WORK_DIR.resolve()), CODE=_fwd(config.CODE_DIR.resolve()),
-        PYTHON=".venv/Scripts/python.exe")
+        WORK=_fwd(config.WORK_DIR.resolve()), JOB_FILE=_fwd(config.JOB_FILE.resolve()), CODE=_fwd(config.CODE_DIR.resolve()),
+        PYTHON=_fwd(config._job.get("PYTHON") or sys.executable))  # the interpreter that has the deps, not a guessed .venv
 
 def run_all(hint: str = "") -> None:
     inv = json.loads((config.WORK_DIR / "inventory.json").read_text(encoding="utf-8"))

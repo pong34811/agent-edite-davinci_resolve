@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v05-01",
+  "source_id": "v05",
+  "start_s": 273.49,
+  "end_s": 340.45,
+  "category": "gameplay",
+  "title_th": "ลาวากับความตกใจกลางหิมะ",
+  "reason": "Katy panics and swears near a lava pool in the freezing Minecraft world; avatar reacts alongside.",
+  "score": 0.55
+ },
+ {
+  "id": "v05-02",
+  "source_id": "v05",
+  "start_s": 552.29,
+  "end_s": 640.0,
+  "category": "fun",
+  "title_th": "เพื่อนมาช่วยตอนซอมบี้ตายหมด",
+  "reason": "Katy jokes that her friend only shows up after she finishes the zombie in the cave, with banter about brotherhood.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-03",
+  "source_id": "v05",
+  "start_s": 723.27,
+  "end_s": 789.48,
+  "category": "gameplay",
+  "title_th": "โดนสเกเลตันยิงโล่หาย",
+  "reason": "Skeleton fire and lack of a shield in the cave with Katy yelling at the buddy to hit the mob; chaotic fun.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-04",
+  "source_id": "v05",
+  "start_s": 1684.65,
+  "end_s": 1777.09,
+  "category": "fun",
+  "title_th": "ดาเมจเต็มแล้วจะพาเพื่อนลงไปด้วย",
+  "reason": "Katy chats while digging and jokes about dragging her friend down with her near lava; avatar smiles.",
+  "score": 0.55
+ }
+]

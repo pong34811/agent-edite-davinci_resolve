@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v10-01",
+  "source_id": "v10",
+  "start_s": 2279.09,
+  "end_s": 2383.66,
+  "category": "meme",
+  "title_th": "ลืมเอาของกินมา แดกเนื้อซอมบี้",
+  "reason": "Katy and friends realise they forgot food and joke about eating zombie meat in a Minecraft survival world.",
+  "score": 0.8
+ },
+ {
+  "id": "v10-02",
+  "source_id": "v10",
+  "start_s": 2439.13,
+  "end_s": 2538.53,
+  "category": "gameplay",
+  "title_th": "ซอมบี้โผล่ ครีปเปอร์ระเบิดกลางถ้ำ",
+  "reason": "Cave fight with a zombie and a creeper blowing up while Katy panics and reacts.",
+  "score": 0.85
+ },
+ {
+  "id": "v10-03",
+  "source_id": "v10",
+  "start_s": 4267.09,
+  "end_s": 4351.74,
+  "category": "gameplay",
+  "title_th": "เสียงในหัวกับการขุดมืดๆ",
+  "reason": "Katy banters about voices in her head while mining in the dark, then surfaces.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-04",
+  "source_id": "v10",
+  "start_s": 5629.78,
+  "end_s": 5760.0,
+  "category": "gameplay",
+  "title_th": "ช่วยด้วย! ทางลงแหลก",
+  "reason": "Chaotic bridge/path building on a snowy cliff with Katy yelling for help and arguing with friends.",
+  "score": 0.85
+ }
+]

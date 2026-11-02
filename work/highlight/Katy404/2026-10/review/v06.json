@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v06-01",
+  "source_id": "v06",
+  "start_s": 196.16,
+  "end_s": 256.43,
+  "category": "meme",
+  "title_th": "แบนแบล็คลิสต์ เพื่อนเชิญไม่ติด",
+  "reason": "Katy and friends fail to invite a friend because of a backlist mix-up and burst out laughing.",
+  "score": 0.8
+ },
+ {
+  "id": "v06-02",
+  "source_id": "v06",
+  "start_s": 1017.0,
+  "end_s": 1080.45,
+  "category": "fun",
+  "title_th": "จอยไม่เวิร์ก ต้องกลับไปใช้คีย์บอร์ด",
+  "reason": "Katy gives up on the gamepad and complains dramatically about her life while chatting with viewers.",
+  "score": 0.7
+ },
+ {
+  "id": "v06-03",
+  "source_id": "v06",
+  "start_s": 2370.69,
+  "end_s": 2450.69,
+  "category": "fun",
+  "title_th": "หลอดไม่เคยแตก คุยเรื่องหลอดเฟค",
+  "reason": "Banter with friends about the stream bar never breaking and accusations of faking it, then thunder talk.",
+  "score": 0.7
+ },
+ {
+  "id": "v06-04",
+  "source_id": "v06",
+  "start_s": 3085.03,
+  "end_s": 3171.09,
+  "category": "gameplay",
+  "title_th": "วิ่งส่งระเบิดสุดชุลมุน",
+  "reason": "Chaotic bomb planting run with friends shouting bomb over and over, Katy reacting.",
+  "score": 0.8
+ }
+]

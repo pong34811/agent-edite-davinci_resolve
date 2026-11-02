@@ -11,7 +11,8 @@ def stage_inventory():
 
 def stage_features():
     import features
-    with ThreadPoolExecutor(min(len(ids()), 8)) as ex:
+    # DEMUX_WORKERS: 8 parallel reads from G:/My Drive cut wavs short with exit 0; use 1-2 for cloud folders
+    with ThreadPoolExecutor(min(len(ids()), int(config._job.get("DEMUX_WORKERS", 8)))) as ex:
         for sid, p in zip(ids(), ex.map(features.extract, ids())):
             print(sid, p, flush=True)
 
@@ -32,10 +33,11 @@ def stage_sheets():
     import contact_sheet; contact_sheet.run_all()
 
 def stage_briefs():
-    import briefs; briefs.run_all()
+    import briefs; briefs.run_all(" ".join(sys.argv[2:]))   # `pipeline.py briefs <hint...>`
 
 def stage_packets():
     import packets; packets.run_all()
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # Thai/emoji filenames crash a cp1252 console
     t = time.time(); globals()[f"stage_{sys.argv[1]}"](); print("done", round(time.time() - t, 1), "s")

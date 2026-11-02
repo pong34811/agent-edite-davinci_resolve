@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v09-01",
+  "source_id": "v09",
+  "start_s": 1807.57,
+  "end_s": 1915.0,
+  "category": "gameplay",
+  "title_th": "ยิงมังกรสายรุ้งสุดมัน",
+  "reason": "Boss fight under a rainbow sky with chat shouting and Katy complaining her shots miss the dragon.",
+  "score": 0.7
+ },
+ {
+  "id": "v09-02",
+  "source_id": "v09",
+  "start_s": 3479.66,
+  "end_s": 3600.0,
+  "category": "gameplay",
+  "title_th": "มูนลอร์ดลูกตาออก ปากหมวกแตก",
+  "reason": "Moon Lord fight with the team panicking over lasers, near-deaths and who goes for the eye or heart.",
+  "score": 0.85
+ },
+ {
+  "id": "v09-03",
+  "source_id": "v09",
+  "start_s": 3695.15,
+  "end_s": 3795.0,
+  "category": "fun",
+  "title_th": "ชนะแล้วทุกคน!",
+  "reason": "Moon Lord falls, team celebrates; joking about who sacrifices for the eye.",
+  "score": 0.7
+ },
+ {
+  "id": "v09-04",
+  "source_id": "v09",
+  "start_s": 7668.77,
+  "end_s": 7802.8,
+  "category": "meme",
+  "title_th": "ถึงเวลาเราแล้ว อย่าไปยอม",
+  "reason": "Hype boss fight with team rallying 'don't give up' lines, a tongue-slap joke and chaotic laser dodging.",
+  "score": 0.85
+ }
+]

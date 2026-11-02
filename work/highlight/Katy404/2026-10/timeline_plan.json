@@ -1,0 +1,674 @@
+[
+ {
+  "name": "บอสถล่ม ลาฟี่ตีสู้จนตาย-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f40409a-8c81-4997-a211-42ac4683a4e0",
+    "start_frame": 53400,
+    "end_frame": 59400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-01",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "ด่าก้อนดินเหนียวเสียชาติเกิด-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f40409a-8c81-4997-a211-42ac4683a4e0",
+    "start_frame": 89100,
+    "end_frame": 94200,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-02",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "มังกรรอดหวุดหวิด-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f40409a-8c81-4997-a211-42ac4683a4e0",
+    "start_frame": 566100,
+    "end_frame": 571200,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-03",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "สู้บอสจนตายจังหวะสุดท้าย-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f40409a-8c81-4997-a211-42ac4683a4e0",
+    "start_frame": 603600,
+    "end_frame": 607713,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-04",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "หนีลาวากลางหิมะ-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a8b0a8f5-e6d3-4f22-a204-86b1b27c9d86",
+    "start_frame": 63000,
+    "end_frame": 67880,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-01",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ปักทอร์ชอุดถ้ำ ดินหมด-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a8b0a8f5-e6d3-4f22-a204-86b1b27c9d86",
+    "start_frame": 120600,
+    "end_frame": 126500,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-02",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "หนาวตายหรือจุ่มลาวา-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a8b0a8f5-e6d3-4f22-a204-86b1b27c9d86",
+    "start_frame": 270000,
+    "end_frame": 274800,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-03",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ลงเหมืองเจอเหล็กเต็ม-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a8b0a8f5-e6d3-4f22-a204-86b1b27c9d86",
+    "start_frame": 304256,
+    "end_frame": 310219,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-04",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ตามล่าตัวบินได้แล้วเจอตัวเดินพื้น-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59f7827b-1e54-4cdd-a233-bfbc85a6c0d8",
+    "start_frame": 17931,
+    "end_frame": 22717,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-01",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "ฟันแล้วฟันอีก ชุบ!-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59f7827b-1e54-4cdd-a233-bfbc85a6c0d8",
+    "start_frame": 61522,
+    "end_frame": 66600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-02",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "เร็วๆ ยิงปืนใหญ่ ยิงๆ-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59f7827b-1e54-4cdd-a233-bfbc85a6c0d8",
+    "start_frame": 132337,
+    "end_frame": 139567,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-03",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "โจรโผล่มา 3 ตัว ตีใครดี-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59f7827b-1e54-4cdd-a233-bfbc85a6c0d8",
+    "start_frame": 306364,
+    "end_frame": 311100,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-04",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "ไฟต์ป่าสุดตึง โยนๆๆ-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3dc43684-ece1-4e72-881a-2ff4d1d43a37",
+    "start_frame": 45049,
+    "end_frame": 50739,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-01",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "เลื่อนขั้น Platinum II-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3dc43684-ece1-4e72-881a-2ff4d1d43a37",
+    "start_frame": 263760,
+    "end_frame": 269369,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-02",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "เจอคนเล่นเป็นอีกแล้ว-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3dc43684-ece1-4e72-881a-2ff4d1d43a37",
+    "start_frame": 302400,
+    "end_frame": 307808,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-03",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "มันเก่งเหรอ! ชนะแล้ว-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3dc43684-ece1-4e72-881a-2ff4d1d43a37",
+    "start_frame": 403135,
+    "end_frame": 407396,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-04",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ลาวากับความตกใจกลางหิมะ-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "38d7bf7b-9738-4f22-864f-cbb8afc1f659",
+    "start_frame": 16409,
+    "end_frame": 20427,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-01",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "เพื่อนมาช่วยตอนซอมบี้ตายหมด-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "38d7bf7b-9738-4f22-864f-cbb8afc1f659",
+    "start_frame": 33137,
+    "end_frame": 38400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-02",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "โดนสเกเลตันยิงโล่หาย-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "38d7bf7b-9738-4f22-864f-cbb8afc1f659",
+    "start_frame": 43396,
+    "end_frame": 47369,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-03",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ดาเมจเต็มแล้วจะพาเพื่อนลงไปด้วย-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "38d7bf7b-9738-4f22-864f-cbb8afc1f659",
+    "start_frame": 101079,
+    "end_frame": 106625,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-04",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "แบนแบล็คลิสต์ เพื่อนเชิญไม่ติด-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f5363c1-5b4b-4255-94c8-245940e12353",
+    "start_frame": 11770,
+    "end_frame": 15386,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-01",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "จอยไม่เวิร์ก ต้องกลับไปใช้คีย์บอร์ด-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f5363c1-5b4b-4255-94c8-245940e12353",
+    "start_frame": 61020,
+    "end_frame": 64827,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-02",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "หลอดไม่เคยแตก คุยเรื่องหลอดเฟค-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f5363c1-5b4b-4255-94c8-245940e12353",
+    "start_frame": 142241,
+    "end_frame": 147041,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-03",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "วิ่งส่งระเบิดสุดชุลมุน-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "2f5363c1-5b4b-4255-94c8-245940e12353",
+    "start_frame": 185102,
+    "end_frame": 190266,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-04",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "ปะทะทีมรอบดราก้อน-ไอ้เชี่ยลั่นหมดแล้ว-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3adf943c-5367-4ece-b41f-9aedac7b8bd1",
+    "start_frame": 72358,
+    "end_frame": 77406,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-01",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "วิ่งหนีเอาตัวรอด-มังกรมา-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3adf943c-5367-4ece-b41f-9aedac7b8bd1",
+    "start_frame": 362990,
+    "end_frame": 369600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-02",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "เพิ่งเล่น LoL ด้วยกันแท้ๆ ยังจำไม่ได้-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3adf943c-5367-4ece-b41f-9aedac7b8bd1",
+    "start_frame": 422402,
+    "end_frame": 427822,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-03",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ไอ้เฮียคนเมา-คามิไหนวะ-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "3adf943c-5367-4ece-b41f-9aedac7b8bd1",
+    "start_frame": 434766,
+    "end_frame": 441000,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-04",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ตั้งชื่อตัวละคร ยามดาแซว-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "93c9ba31-347a-42e4-9cee-030eb8a9513f",
+    "start_frame": 15659,
+    "end_frame": 21037,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-01",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "เจอ T-Rex กลางทาง-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "93c9ba31-347a-42e4-9cee-030eb8a9513f",
+    "start_frame": 63300,
+    "end_frame": 67862,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-02",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "สุ่มวงล้ออาวุธ ห้ามเปลี่ยน-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "93c9ba31-347a-42e4-9cee-030eb8a9513f",
+    "start_frame": 115350,
+    "end_frame": 121200,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-03",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "ลุยล่าม้อนกับเพื่อน-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "93c9ba31-347a-42e4-9cee-030eb8a9513f",
+    "start_frame": 257760,
+    "end_frame": 262800,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-04",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "ยิงมังกรสายรุ้งสุดมัน-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "602b6682-85b3-4e7c-8ea9-a97a79f841dd",
+    "start_frame": 108454,
+    "end_frame": 114900,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-01",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "มูนลอร์ดลูกตาออก ปากหมวกแตก-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "602b6682-85b3-4e7c-8ea9-a97a79f841dd",
+    "start_frame": 208780,
+    "end_frame": 216000,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-02",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "ชนะแล้วทุกคน!-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "602b6682-85b3-4e7c-8ea9-a97a79f841dd",
+    "start_frame": 221709,
+    "end_frame": 227700,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-03",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "ถึงเวลาเราแล้ว อย่าไปยอม-Terraria-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "602b6682-85b3-4e7c-8ea9-a97a79f841dd",
+    "start_frame": 460126,
+    "end_frame": 468168,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-04",
+  "game": "Terraria",
+  "project": null
+ },
+ {
+  "name": "ลืมเอาของกินมา แดกเนื้อซอมบี้-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8993788d-e23b-4f98-ae1b-f37b43eb5c91",
+    "start_frame": 136745,
+    "end_frame": 143019,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-01",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ซอมบี้โผล่ ครีปเปอร์ระเบิดกลางถ้ำ-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8993788d-e23b-4f98-ae1b-f37b43eb5c91",
+    "start_frame": 146348,
+    "end_frame": 152312,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-02",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "เสียงในหัวกับการขุดมืดๆ-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8993788d-e23b-4f98-ae1b-f37b43eb5c91",
+    "start_frame": 256025,
+    "end_frame": 261104,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-03",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ช่วยด้วย! ทางลงแหลก-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8993788d-e23b-4f98-ae1b-f37b43eb5c91",
+    "start_frame": 337787,
+    "end_frame": 345600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-04",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "คอลแลปเปิดห้อง ชุดหาย-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "437b9995-e360-4f6d-9927-1a607f25df17",
+    "start_frame": 17209,
+    "end_frame": 21954,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-01",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "ตกใจโอโรจิมารุ หลงเมือง-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "437b9995-e360-4f6d-9927-1a607f25df17",
+    "start_frame": 48618,
+    "end_frame": 53526,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-02",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "กลับแรคคูนซิตี้-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "437b9995-e360-4f6d-9927-1a607f25df17",
+    "start_frame": 67160,
+    "end_frame": 71633,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-03",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "โดเนตกับเรื่องสเปคคอม-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "437b9995-e360-4f6d-9927-1a607f25df17",
+    "start_frame": 212518,
+    "end_frame": 216934,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-04",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "บอสกับหมากับกระสุน-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "ca4b90a4-68d1-401b-bcc0-662f15f03dc8",
+    "start_frame": 30755,
+    "end_frame": 33821,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-01",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "กดมั่วจนรอด-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "ca4b90a4-68d1-401b-bcc0-662f15f03dc8",
+    "start_frame": 165651,
+    "end_frame": 168592,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-02",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "พระเอกยิงทั้งที่รู้ว่ามีนางเอก-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "ca4b90a4-68d1-401b-bcc0-662f15f03dc8",
+    "start_frame": 253500,
+    "end_frame": 256498,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-03",
+  "game": "Soul Walker",
+  "project": null
+ },
+ {
+  "name": "เควสสัตว์ประหลาดตัวใหญ่-Soul Walker-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "ca4b90a4-68d1-401b-bcc0-662f15f03dc8",
+    "start_frame": 273151,
+    "end_frame": 275850,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-04",
+  "game": "Soul Walker",
+  "project": null
+ }
+]

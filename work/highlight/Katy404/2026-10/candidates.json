@@ -1,0 +1,482 @@
+[
+ {
+  "id": "v01-01",
+  "source_id": "v01",
+  "start_s": 890.0,
+  "end_s": 990.0,
+  "category": "gameplay",
+  "title_th": "บอสถล่ม ลาฟี่ตีสู้จนตาย",
+  "reason": "Boss fight in the jungle with Laffey on voice urging to hit, ending in the You were slain screen.",
+  "score": 0.7
+ },
+ {
+  "id": "v01-02",
+  "source_id": "v01",
+  "start_s": 1485.0,
+  "end_s": 1570.0,
+  "category": "meme",
+  "title_th": "ด่าก้อนดินเหนียวเสียชาติเกิด",
+  "reason": "Katy scolds a clay block as if alive then vows to play the 100-day run; funny quotable banter.",
+  "score": 0.7
+ },
+ {
+  "id": "v01-03",
+  "source_id": "v01",
+  "start_s": 9435.0,
+  "end_s": 9520.0,
+  "category": "gameplay",
+  "title_th": "มังกรรอดหวุดหวิด",
+  "reason": "Chaotic dragon boss fight with friends shouting; dragon survives and Katy reacts with a long string of exclamations.",
+  "score": 0.65
+ },
+ {
+  "id": "v01-04",
+  "source_id": "v01",
+  "start_s": 10060.0,
+  "end_s": 10128.55,
+  "category": "gameplay",
+  "title_th": "สู้บอสจนตายจังหวะสุดท้าย",
+  "reason": "Low-HP boss fight ends in Katy dying at the last moment and lamenting not getting the loot.",
+  "score": 0.65
+ },
+ {
+  "id": "v02-01",
+  "source_id": "v02",
+  "start_s": 1050.0,
+  "end_s": 1131.33,
+  "category": "gameplay",
+  "title_th": "หนีลาวากลางหิมะ",
+  "reason": "Katy scrambles broke and near-dead, with friends shouting about lava behind her; a near-death chase.",
+  "score": 0.8
+ },
+ {
+  "id": "v02-02",
+  "source_id": "v02",
+  "start_s": 2010.0,
+  "end_s": 2108.33,
+  "category": "fun",
+  "title_th": "ปักทอร์ชอุดถ้ำ ดินหมด",
+  "reason": "Plugging a cave with torches while out of dirt, banter about viewers and followers.",
+  "score": 0.7
+ },
+ {
+  "id": "v02-03",
+  "source_id": "v02",
+  "start_s": 4500.0,
+  "end_s": 4580.0,
+  "category": "meme",
+  "title_th": "หนาวตายหรือจุ่มลาวา",
+  "reason": "Friends joke about dipping in lava to avoid freezing; chaotic swearing banter and a near-death moment.",
+  "score": 0.75
+ },
+ {
+  "id": "v02-04",
+  "source_id": "v02",
+  "start_s": 5070.93,
+  "end_s": 5170.31,
+  "category": "gameplay",
+  "title_th": "ลงเหมืองเจอเหล็กเต็ม",
+  "reason": "Cave mining with spider encounter and excited iron finds, Katy reacting loudly.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-01",
+  "source_id": "v03",
+  "start_s": 298.85,
+  "end_s": 378.61,
+  "category": "gameplay",
+  "title_th": "ตามล่าตัวบินได้แล้วเจอตัวเดินพื้น",
+  "reason": "Katy chases a monster she thinks flies, corrects herself, then calls SOS and admits she's rusty after a long break; lively reactions.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-02",
+  "source_id": "v03",
+  "start_s": 1025.36,
+  "end_s": 1110.0,
+  "category": "gameplay",
+  "title_th": "ฟันแล้วฟันอีก ชุบ!",
+  "reason": "Hectic Monster Hunter fight with Katy shouting dodges and hits, avatar reacting happily; high energy.",
+  "score": 0.8
+ },
+ {
+  "id": "v03-03",
+  "source_id": "v03",
+  "start_s": 2205.62,
+  "end_s": 2326.12,
+  "category": "meme",
+  "title_th": "เร็วๆ ยิงปืนใหญ่ ยิงๆ",
+  "reason": "Frantic cannon/ballista section with Katy and friends urging 'quick, shoot'; chaotic shouting (transcript partly garbled by repeats).",
+  "score": 0.75
+ },
+ {
+  "id": "v03-04",
+  "source_id": "v03",
+  "start_s": 5106.06,
+  "end_s": 5185.0,
+  "category": "gameplay",
+  "title_th": "โจรโผล่มา 3 ตัว ตีใครดี",
+  "reason": "Katy panics when three monsters appear, 'who do I hit', then the target flees; funny frantic reaction.",
+  "score": 0.75
+ },
+ {
+  "id": "v04-01",
+  "source_id": "v04",
+  "start_s": 750.81,
+  "end_s": 845.64,
+  "category": "gameplay",
+  "title_th": "ไฟต์ป่าสุดตึง โยนๆๆ",
+  "reason": "Jungle skirmish with Katy reacting live ('โยนๆๆ', retreat call); tense gameplay beat.",
+  "score": 0.7
+ },
+ {
+  "id": "v04-02",
+  "source_id": "v04",
+  "start_s": 4396.0,
+  "end_s": 4489.48,
+  "category": "fun",
+  "title_th": "เลื่อนขั้น Platinum II",
+  "reason": "Match ends and the post-game screen shows promotion to Platinum II, with relieved celebratory banter.",
+  "score": 0.85
+ },
+ {
+  "id": "v04-03",
+  "source_id": "v04",
+  "start_s": 5040.0,
+  "end_s": 5130.14,
+  "category": "gameplay",
+  "title_th": "เจอคนเล่นเป็นอีกแล้ว",
+  "reason": "Teamfight then loud complaining about meeting skilled opponents again ('รับน้องตั้งแต่...').",
+  "score": 0.65
+ },
+ {
+  "id": "v04-04",
+  "source_id": "v04",
+  "start_s": 6718.91,
+  "end_s": 6789.93,
+  "category": "meme",
+  "title_th": "มันเก่งเหรอ! ชนะแล้ว",
+  "reason": "Base push ending with taunting 'มันเก่งเหรอ' then Victory and relieved 'นอนตายตาหลับ'.",
+  "score": 0.85
+ },
+ {
+  "id": "v05-01",
+  "source_id": "v05",
+  "start_s": 273.49,
+  "end_s": 340.45,
+  "category": "gameplay",
+  "title_th": "ลาวากับความตกใจกลางหิมะ",
+  "reason": "Katy panics and swears near a lava pool in the freezing Minecraft world; avatar reacts alongside.",
+  "score": 0.55
+ },
+ {
+  "id": "v05-02",
+  "source_id": "v05",
+  "start_s": 552.29,
+  "end_s": 640.0,
+  "category": "fun",
+  "title_th": "เพื่อนมาช่วยตอนซอมบี้ตายหมด",
+  "reason": "Katy jokes that her friend only shows up after she finishes the zombie in the cave, with banter about brotherhood.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-03",
+  "source_id": "v05",
+  "start_s": 723.27,
+  "end_s": 789.48,
+  "category": "gameplay",
+  "title_th": "โดนสเกเลตันยิงโล่หาย",
+  "reason": "Skeleton fire and lack of a shield in the cave with Katy yelling at the buddy to hit the mob; chaotic fun.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-04",
+  "source_id": "v05",
+  "start_s": 1684.65,
+  "end_s": 1777.09,
+  "category": "fun",
+  "title_th": "ดาเมจเต็มแล้วจะพาเพื่อนลงไปด้วย",
+  "reason": "Katy chats while digging and jokes about dragging her friend down with her near lava; avatar smiles.",
+  "score": 0.55
+ },
+ {
+  "id": "v06-01",
+  "source_id": "v06",
+  "start_s": 196.16,
+  "end_s": 256.43,
+  "category": "meme",
+  "title_th": "แบนแบล็คลิสต์ เพื่อนเชิญไม่ติด",
+  "reason": "Katy and friends fail to invite a friend because of a backlist mix-up and burst out laughing.",
+  "score": 0.8
+ },
+ {
+  "id": "v06-02",
+  "source_id": "v06",
+  "start_s": 1017.0,
+  "end_s": 1080.45,
+  "category": "fun",
+  "title_th": "จอยไม่เวิร์ก ต้องกลับไปใช้คีย์บอร์ด",
+  "reason": "Katy gives up on the gamepad and complains dramatically about her life while chatting with viewers.",
+  "score": 0.7
+ },
+ {
+  "id": "v06-03",
+  "source_id": "v06",
+  "start_s": 2370.69,
+  "end_s": 2450.69,
+  "category": "fun",
+  "title_th": "หลอดไม่เคยแตก คุยเรื่องหลอดเฟค",
+  "reason": "Banter with friends about the stream bar never breaking and accusations of faking it, then thunder talk.",
+  "score": 0.7
+ },
+ {
+  "id": "v06-04",
+  "source_id": "v06",
+  "start_s": 3085.03,
+  "end_s": 3171.09,
+  "category": "gameplay",
+  "title_th": "วิ่งส่งระเบิดสุดชุลมุน",
+  "reason": "Chaotic bomb planting run with friends shouting bomb over and over, Katy reacting.",
+  "score": 0.8
+ },
+ {
+  "id": "v07-01",
+  "source_id": "v07",
+  "start_s": 1205.97,
+  "end_s": 1290.1,
+  "category": "gameplay",
+  "title_th": "ปะทะทีมรอบดราก้อน-ไอ้เชี่ยลั่นหมดแล้ว",
+  "reason": "Team fight where Katy reacts loudly to a chain of kills and the enemy team composition, with the VTuber reacting bottom-right.",
+  "score": 0.75
+ },
+ {
+  "id": "v07-02",
+  "source_id": "v07",
+  "start_s": 6049.83,
+  "end_s": 6160.0,
+  "category": "gameplay",
+  "title_th": "วิ่งหนีเอาตัวรอด-มังกรมา",
+  "reason": "Frantic escape and dragon fight with constant shouting, ending in mission-complete style relief.",
+  "score": 0.8
+ },
+ {
+  "id": "v07-03",
+  "source_id": "v07",
+  "start_s": 7040.04,
+  "end_s": 7130.37,
+  "category": "fun",
+  "title_th": "เพิ่งเล่น LoL ด้วยกันแท้ๆ ยังจำไม่ได้",
+  "reason": "Banter with a friend about being forgotten right after playing together, with jokes about staging a scene for entertainment.",
+  "score": 0.7
+ },
+ {
+  "id": "v07-04",
+  "source_id": "v07",
+  "start_s": 7246.1,
+  "end_s": 7350.0,
+  "category": "meme",
+  "title_th": "ไอ้เฮียคนเมา-คามิไหนวะ",
+  "reason": "Rapid-fire banter and exclamations about drunks and the confusion over which Kami, ending in the gankers being spotted.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-01",
+  "source_id": "v08",
+  "start_s": 260.99,
+  "end_s": 350.62,
+  "category": "fun",
+  "title_th": "ตั้งชื่อตัวละคร ยามดาแซว",
+  "reason": "Katy picks a hunter name while chat/friends tease the YAMA name; light banter during character creation.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-02",
+  "source_id": "v08",
+  "start_s": 1055.0,
+  "end_s": 1131.04,
+  "category": "gameplay",
+  "title_th": "เจอ T-Rex กลางทาง",
+  "reason": "Katy runs toward and reacts loudly to a big T-Rex-like monster in Monster Hunter World.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-03",
+  "source_id": "v08",
+  "start_s": 1922.5,
+  "end_s": 2020.0,
+  "category": "meme",
+  "title_th": "สุ่มวงล้ออาวุธ ห้ามเปลี่ยน",
+  "reason": "Katy swears to play whatever weapon the wheel lands on, then gets metal bagpipe and reacts.",
+  "score": 0.8
+ },
+ {
+  "id": "v08-04",
+  "source_id": "v08",
+  "start_s": 4296.0,
+  "end_s": 4380.0,
+  "category": "gameplay",
+  "title_th": "ลุยล่าม้อนกับเพื่อน",
+  "reason": "Co-op hunt with friends against a big monster, chatter and reactions as the group fights.",
+  "score": 0.6
+ },
+ {
+  "id": "v09-01",
+  "source_id": "v09",
+  "start_s": 1807.57,
+  "end_s": 1915.0,
+  "category": "gameplay",
+  "title_th": "ยิงมังกรสายรุ้งสุดมัน",
+  "reason": "Boss fight under a rainbow sky with chat shouting and Katy complaining her shots miss the dragon.",
+  "score": 0.7
+ },
+ {
+  "id": "v09-02",
+  "source_id": "v09",
+  "start_s": 3479.66,
+  "end_s": 3600.0,
+  "category": "gameplay",
+  "title_th": "มูนลอร์ดลูกตาออก ปากหมวกแตก",
+  "reason": "Moon Lord fight with the team panicking over lasers, near-deaths and who goes for the eye or heart.",
+  "score": 0.85
+ },
+ {
+  "id": "v09-03",
+  "source_id": "v09",
+  "start_s": 3695.15,
+  "end_s": 3795.0,
+  "category": "fun",
+  "title_th": "ชนะแล้วทุกคน!",
+  "reason": "Moon Lord falls, team celebrates; joking about who sacrifices for the eye.",
+  "score": 0.7
+ },
+ {
+  "id": "v09-04",
+  "source_id": "v09",
+  "start_s": 7668.77,
+  "end_s": 7802.8,
+  "category": "meme",
+  "title_th": "ถึงเวลาเราแล้ว อย่าไปยอม",
+  "reason": "Hype boss fight with team rallying 'don't give up' lines, a tongue-slap joke and chaotic laser dodging.",
+  "score": 0.85
+ },
+ {
+  "id": "v10-01",
+  "source_id": "v10",
+  "start_s": 2279.09,
+  "end_s": 2383.66,
+  "category": "meme",
+  "title_th": "ลืมเอาของกินมา แดกเนื้อซอมบี้",
+  "reason": "Katy and friends realise they forgot food and joke about eating zombie meat in a Minecraft survival world.",
+  "score": 0.8
+ },
+ {
+  "id": "v10-02",
+  "source_id": "v10",
+  "start_s": 2439.13,
+  "end_s": 2538.53,
+  "category": "gameplay",
+  "title_th": "ซอมบี้โผล่ ครีปเปอร์ระเบิดกลางถ้ำ",
+  "reason": "Cave fight with a zombie and a creeper blowing up while Katy panics and reacts.",
+  "score": 0.85
+ },
+ {
+  "id": "v10-03",
+  "source_id": "v10",
+  "start_s": 4267.09,
+  "end_s": 4351.74,
+  "category": "gameplay",
+  "title_th": "เสียงในหัวกับการขุดมืดๆ",
+  "reason": "Katy banters about voices in her head while mining in the dark, then surfaces.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-04",
+  "source_id": "v10",
+  "start_s": 5629.78,
+  "end_s": 5760.0,
+  "category": "gameplay",
+  "title_th": "ช่วยด้วย! ทางลงแหลก",
+  "reason": "Chaotic bridge/path building on a snowy cliff with Katy yelling for help and arguing with friends.",
+  "score": 0.85
+ },
+ {
+  "id": "v11-01",
+  "source_id": "v11",
+  "start_s": 286.81,
+  "end_s": 365.9,
+  "category": "fun",
+  "title_th": "คอลแลปเปิดห้อง ชุดหาย",
+  "reason": "Colab setup with friends, banter about missing outfit and sad-viewer joke.",
+  "score": 0.6
+ },
+ {
+  "id": "v11-02",
+  "source_id": "v11",
+  "start_s": 810.3,
+  "end_s": 892.1,
+  "category": "gameplay",
+  "title_th": "ตกใจโอโรจิมารุ หลงเมือง",
+  "reason": "Graphics-settings chatter, Orochimaru joke, wrong-map confusion then run.",
+  "score": 0.6
+ },
+ {
+  "id": "v11-03",
+  "source_id": "v11",
+  "start_s": 1119.33,
+  "end_s": 1193.88,
+  "category": "gameplay",
+  "title_th": "กลับแรคคูนซิตี้",
+  "reason": "Back at Raccoon City, quest, entering stage with enemies.",
+  "score": 0.5
+ },
+ {
+  "id": "v11-04",
+  "source_id": "v11",
+  "start_s": 3541.96,
+  "end_s": 3615.56,
+  "category": "fun",
+  "title_th": "โดเนตกับเรื่องสเปคคอม",
+  "reason": "Donation thanks and chat about PC specs.",
+  "score": 0.5
+ },
+ {
+  "id": "v12-01",
+  "source_id": "v12",
+  "start_s": 1025.16,
+  "end_s": 1127.36,
+  "category": "gameplay",
+  "title_th": "บอสกับหมากับกระสุน",
+  "reason": "Katy and friends fight through a stage, with the dog-jumping joke and chaotic 'where is it' banter.",
+  "score": 0.7
+ },
+ {
+  "id": "v12-02",
+  "source_id": "v12",
+  "start_s": 5521.71,
+  "end_s": 5619.74,
+  "category": "fun",
+  "title_th": "กดมั่วจนรอด",
+  "reason": "Dungeon fight where Katy mashes buttons randomly and survives, with reactions to free-spawn item chatter.",
+  "score": 0.65
+ },
+ {
+  "id": "v12-03",
+  "source_id": "v12",
+  "start_s": 8450.0,
+  "end_s": 8549.92,
+  "category": "fun",
+  "title_th": "พระเอกยิงทั้งที่รู้ว่ามีนางเอก",
+  "reason": "Banter about a hero firing at a bunker with the heroine inside, over a Laffey co-op fight.",
+  "score": 0.6
+ },
+ {
+  "id": "v12-04",
+  "source_id": "v12",
+  "start_s": 9105.02,
+  "end_s": 9195.0,
+  "category": "gameplay",
+  "title_th": "เควสสัตว์ประหลาดตัวใหญ่",
+  "reason": "Katy talks to a giant purple monster for a quest, friends joke she cannot protect herself, then she fights it.",
+  "score": 0.6
+ }
+]

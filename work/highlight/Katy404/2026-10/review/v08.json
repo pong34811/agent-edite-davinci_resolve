@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v08-01",
+  "source_id": "v08",
+  "start_s": 260.99,
+  "end_s": 350.62,
+  "category": "fun",
+  "title_th": "ตั้งชื่อตัวละคร ยามดาแซว",
+  "reason": "Katy picks a hunter name while chat/friends tease the YAMA name; light banter during character creation.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-02",
+  "source_id": "v08",
+  "start_s": 1055.0,
+  "end_s": 1131.04,
+  "category": "gameplay",
+  "title_th": "เจอ T-Rex กลางทาง",
+  "reason": "Katy runs toward and reacts loudly to a big T-Rex-like monster in Monster Hunter World.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-03",
+  "source_id": "v08",
+  "start_s": 1922.5,
+  "end_s": 2020.0,
+  "category": "meme",
+  "title_th": "สุ่มวงล้ออาวุธ ห้ามเปลี่ยน",
+  "reason": "Katy swears to play whatever weapon the wheel lands on, then gets metal bagpipe and reacts.",
+  "score": 0.8
+ },
+ {
+  "id": "v08-04",
+  "source_id": "v08",
+  "start_s": 4296.0,
+  "end_s": 4380.0,
+  "category": "gameplay",
+  "title_th": "ลุยล่าม้อนกับเพื่อน",
+  "reason": "Co-op hunt with friends against a big monster, chatter and reactions as the group fights.",
+  "score": 0.6
+ }
+]

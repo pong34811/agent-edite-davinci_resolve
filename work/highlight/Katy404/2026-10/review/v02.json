@@ -1,0 +1,42 @@
+[
+ {
+  "id": "v02-01",
+  "source_id": "v02",
+  "start_s": 1050.0,
+  "end_s": 1131.33,
+  "category": "gameplay",
+  "title_th": "หนีลาวากลางหิมะ",
+  "reason": "Katy scrambles broke and near-dead, with friends shouting about lava behind her; a near-death chase.",
+  "score": 0.8
+ },
+ {
+  "id": "v02-02",
+  "source_id": "v02",
+  "start_s": 2010.0,
+  "end_s": 2108.33,
+  "category": "fun",
+  "title_th": "ปักทอร์ชอุดถ้ำ ดินหมด",
+  "reason": "Plugging a cave with torches while out of dirt, banter about viewers and followers.",
+  "score": 0.7
+ },
+ {
+  "id": "v02-03",
+  "source_id": "v02",
+  "start_s": 4500.0,
+  "end_s": 4580.0,
+  "category": "meme",
+  "title_th": "หนาวตายหรือจุ่มลาวา",
+  "reason": "Friends joke about dipping in lava to avoid freezing; chaotic swearing banter and a near-death moment.",
+  "score": 0.75
+ },
+ {
+  "id": "v02-04",
+  "source_id": "v02",
+  "start_s": 5070.93,
+  "end_s": 5170.31,
+  "category": "gameplay",
+  "title_th": "ลงเหมืองเจอเหล็กเต็ม",
+  "reason": "Cave mining with spider encounter and excited iron finds, Katy reacting loudly.",
+  "score": 0.7
+ }
+]

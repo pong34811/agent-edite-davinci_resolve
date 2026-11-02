@@ -12,17 +12,27 @@ def _inventory() -> dict:
     rows = json.loads((config.WORK_DIR / "inventory.json").read_text(encoding="utf-8"))
     return {r["source_id"]: r for r in rows}
 
-def extract_wav(source_id: str) -> pathlib.Path:
+def _wav_seconds(path: pathlib.Path) -> float:
+    with wave.open(str(path)) as w:
+        return w.getnframes() / w.getframerate()
+
+def extract_wav(source_id: str, tries: int = 3) -> pathlib.Path:
+    """Demux to a .part file and rename only when its length matches the source: a read from a
+    cloud drive (G:/My Drive) can end early with exit code 0, and a short wav must never become the cache."""
     row = _inventory()[source_id]; src = pathlib.Path(row["file"]); out = wav_path(source_id)
     if out.exists() and out.stat().st_mtime >= src.stat().st_mtime:
         return out
     out.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run([config.FFMPEG, "-y", "-v", "error", "-i", str(src), "-vn", "-ac", "1", "-ar", str(SR),
-                    "-c:a", "pcm_s16le", str(out)], check=True)
-    with wave.open(str(out)) as w:
-        dur = w.getnframes() / w.getframerate()
-    assert abs(dur - row["duration_s"]) < 1.5, f"{source_id}: wav {dur:.1f}s vs source {row['duration_s']:.1f}s"
-    return out
+    part = out.with_suffix(".part.wav")
+    for _ in range(tries):
+        subprocess.run([config.FFMPEG, "-y", "-v", "error", "-i", str(src), "-vn", "-ac", "1", "-ar", str(SR),
+                        "-c:a", "pcm_s16le", str(part)], check=True)
+        dur = _wav_seconds(part)
+        if abs(dur - row["duration_s"]) < 1.5:
+            part.replace(out)
+            return out
+    part.unlink(missing_ok=True)
+    raise RuntimeError(f"{source_id}: wav {dur:.1f}s vs source {row['duration_s']:.1f}s after {tries} tries")
 
 def per_second_db(x: np.ndarray, sr: int = SR):
     n = len(x) // sr

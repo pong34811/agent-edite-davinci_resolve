@@ -35,3 +35,18 @@ def test_render_brief_fills_every_variable():
     assert "v07" in txt and "1234" in txt and "a horror stream" in txt
     assert "gameplay" in txt and str(config.CLIP_MIN_S) in txt and str(config.CLIP_MAX_S) in txt
     assert "$" not in txt
+
+def test_render_brief_snap_command_uses_a_real_python_and_the_job():
+    inv = [{"source_id": "v07", "file": "Z:/a/one.mp4", "duration_s": 1234.5}]
+    txt = briefs.render("v07", inv)
+    assert ".venv/Scripts/python.exe" not in txt          # no venv guessed into reviewer commands
+    assert "HIGHLIGHT_JOB=" in txt and str(config.JOB_FILE.resolve()).replace(chr(92), "/") in txt
+    assert "\\" not in txt.split("SNAPPING", 1)[1].split("OUTPUT", 1)[0]   # forward slashes for git-bash
+
+def test_pipeline_briefs_stage_passes_the_hint(monkeypatch):
+    import sys, pipeline
+    got = []
+    monkeypatch.setattr(briefs, "run_all", lambda hint="": got.append(hint))
+    monkeypatch.setattr(sys, "argv", ["pipeline.py", "briefs", "a", "horror", "stream"])
+    pipeline.stage_briefs()
+    assert got == ["a horror stream"]

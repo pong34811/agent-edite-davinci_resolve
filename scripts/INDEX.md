@@ -190,6 +190,7 @@
 | `highlight/contact_sheet.py`, `highlight/packets.py`, `highlight/briefs.py`, `highlight/snap.py` | ภาพตัวอย่างต่อช่วง, packet ให้ reviewer, brief ต่อวิดีโอจาก `templates/reviewer_brief.md`, snap ขอบคลิปกับช่วงเงียบ | ใช้ซ้ำ |
 | `highlight/resolve_clips.py` | แมป `source_id` → Resolve clip id จาก JSON ของ `media_pool probe_media_pool` (ล้มเมื่อวิดีโอหาย) | ใช้ซ้ำ |
 | `highlight/build_timelines.py` | รวม `review/vNN.json` → `candidates.json`, `timeline_plan.json`; `calls <start> <end>` พิมพ์ payload MCP `create_timeline_from_clips` | ใช้ซ้ำ |
+| `highlight/verify_timelines.py` | อ่านกลับทุก timeline ใน `timeline_plan.json` จากโปรเจกต์ปัจจุบัน (read-only, ไม่สลับ timeline) เทียบ clip/source_start/ความยาว/เสียง → `timeline_verification.json` | ใช้ซ้ำ |
 | `highlight/tools/gpu_smoke.py` | ทดสอบ GPU/whisper กับวิดีโอแรกใน inventory ก่อน `transcribe` | ใช้ซ้ำ |
 | `highlight/tools/make_timelines.py` | สร้าง timeline จาก `timeline_plan.json` ผ่าน Resolve Python โดยตรง (ไม่ใช้ `resolve_common`, ชื่อ media folder `2026-09-aomimama` ฝังในโค้ด) — ตัวอย่างเท่านั้น ใช้ MCP ก่อน | ครั้งเดียว |
 | `highlight/tools/lint_vault.py` | ตรวจลิงก์/สารบัญของ wiki `docs/highlight/wiki` | ใช้ซ้ำ |
