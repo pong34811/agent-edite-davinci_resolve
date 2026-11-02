@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.2 — ทดสอบออก release ใหม่บนคอนโซล Windows
+
+### รายละเอียด
+- แก้ `scripts/release.py` ให้พิมพ์ตัวอย่าง changelog ภาษาไทยได้บนคอนโซล Windows โดยไม่ต้องตั้ง `PYTHONIOENCODING=utf-8` (ก่อนหน้านี้ dry run ล้มทันที) พร้อมเทสจำลองคอนโซล cp1252
+- release นี้ออกด้วย `scripts/release.py --publish` ตรงๆ โดยไม่ตั้งตัวแปร encoding เพื่อทดสอบทั้งขั้นตอน commit, tag, push และ `gh release create`
+
 ## v0.17.1 — แก้สคริปต์ออก release กับข้อความภาษาไทย
 
 ### รายละเอียด
