@@ -7,7 +7,7 @@ This repository packages the user's existing DaVinci Resolve editing skills. It 
 Entry points: Claude Code reads `CLAUDE.md` (a thin pointer to this file); Codex and Hermes read this file; skills live in `.agents/skills/`. Keep the rules here only.
 
 0. Run `python scripts/check_mcp_update.py` (compares the installed community MCP with the newest tag of https://github.com/samuelgursky/davinci-resolve-mcp). If it says `UPDATE`, read the upstream `CHANGELOG.md` for the new versions, run it with `--apply`, tell the user to restart the agent session so the MCP reloads, and continue with the Studio MCP / scripts until then. `BLOCKED` (local changes in the install) or `UNKNOWN` (offline): report it, do not force.
-   If `BLOCKED` reports that the configured install is missing, locate and verify the real community MCP checkout and its Python executable before correcting `.mcp.json` to those exact paths; preserve other settings and rerun the checker. A corrected project config or updated files do not prove Hermes has attached the server: restart the session and probe `resolve_control get_version`; if its tools remain absent, report that the active client still needs its own MCP configuration. Never clone, overwrite local changes, or guess a replacement path.
+   If `BLOCKED` reports a missing configured install, read `.mcp.json` to identify the stale paths, then search local checkouts. Verify the candidate's `origin` is `https://github.com/samuelgursky/davinci-resolve-mcp`, `src/server.py` exists, and the configured venv Python exists and runs; check its version and working tree before use. Update only `mcpServers.davinci-resolve.command` and `args[0]` to the verified paths, preserve `env` and other settings, and rerun the checker. Never clone, overwrite local changes, or guess a replacement path. A corrected project config does not prove the active client attached the server: restart the session and probe `resolve_control get_version`; if its tools remain absent, report that the active client still needs its own MCP configuration.
 1. Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`; load the domain skill that matches the request (`resolve-mcp` is the index). If the user names a channel or project (Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael), read its profile in `docs/channels/` first.
    For an editing assignment, also follow `.agents/skills/project-learning/SKILL.md`: research current guidance at the start per `.agents/skills/resolve-video-enrichment/references/post-edit-review.md`, and prepare its evidence-limited review after QC.
 2. Check the attached MCP tool catalog and run a read-only probe (`resolve_control get_version`; Studio MCP `get_resolve_status`). If the `davinci-resolve` MCP is disabled or unreachable, say so before falling back.
@@ -39,7 +39,7 @@ All DaVinci Resolve editing, cutting, conforming, grading, audio mixing, track m
 
 ### Tool Inventory & Capabilities
 
-**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp`, at `C:\Users\warit\Desktop\davinci-resolve-mcp`, configured in `.mcp.json`; the installed version is whatever `scripts/check_mcp_update.py` prints). Tools are grouped by domain; each takes an `action`:
+**A. `davinci-resolve` MCP** (community server `davinci-resolve-mcp`; its exact checkout and Python paths come from `.mcp.json`, and `scripts/check_mcp_update.py` reports the installed version). Tools are grouped by domain; each takes an `action`:
 
 | Domain | Tools & Primary Actions |
 |---|---|
@@ -140,6 +140,15 @@ Before reporting done:
 - Channel facts -> `docs/channels/`; a new failure rule -> `docs/OPERATING-NOTES.md`; reusable workflow/trap -> matching `.agents/skills/<domain>/SKILL.md`; user taste correction -> `house-style/SKILL.md`.
 - Reusable scripts belong in `scripts/`, use `resolve_common` for Resolve work, have tests, and appear in `scripts/INDEX.md`; one-offs remain in `scripts/scratch/`.
 - Run `python -m pytest -q` and `python scripts/refresh_skill_manifest.py` after touching skills, scripts or docs.
+- For repo-level Python checks, inspect the root `.venv` before creating one and record whether it pre-existed. Reuse a suitable environment. From the repository root, remove a test-only `.venv` after checks only if this task created it; in PowerShell, verify the resolved target before deletion and confirm cleanup with `Test-Path` because `.venv` is ignored by Git:
+  ```powershell
+  $repoRoot = (Get-Location).Path
+  $venvPath = (Resolve-Path -LiteralPath '.venv').Path
+  if ($venvPath -ne (Join-Path $repoRoot '.venv')) { throw "Unexpected venv path: $venvPath" }
+  Remove-Item -LiteralPath $venvPath -Recurse -Force
+  if (Test-Path -LiteralPath '.venv') { throw 'Temporary venv was not removed' }
+  ```
+  Never remove a pre-existing or nested environment.
 - Read `git status` and stage only this task's intended files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
 - Write release notes in Thai as bullet points, include only verified changes/results, and save the bullets to a notes file under `scripts/scratch/`. Preview the default patch bump with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <ไฟล์>`; publish with the same command plus `--publish`. Use `--bump minor|major` only when the change warrants it. The helper updates `VERSION` and `CHANGELOG.md`, commits those two paths only, creates a version tag, pushes `main` and the tag, and creates a GitHub Release. Verify the tag/release and report failures honestly; never force-push or move an existing tag.
 - Include the release URL/version and Thai bullet summary in the final report. If auth, network, tests, or push prevent release, state the exact blocker; never claim a release that was not verified.

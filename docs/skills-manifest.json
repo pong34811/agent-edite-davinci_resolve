@@ -4649,7 +4649,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8ba2feb58b6aec4761b85fea6d0e4954af01ef121faf2c492fb637de5a3df27d"
+      "sha256": "1f9f5c1c70b201d384cc98271a5b5bdfc5d86ca8a318b0461c8d3e73160c17cb"
     },
     {
       "path": "CHANGELOG.md",
@@ -4679,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "e57eb03994f7b0350c45443d3d27052470b8a0cd2ac3ca5c25c5c521e33bb593"
+      "sha256": "7716de71d6d48ea0085a4a4468a3fd7a1f136ccde0239873719fd867f9ac3d05"
     },
     {
       "path": "docs/README.md",

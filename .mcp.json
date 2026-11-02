@@ -1,9 +1,9 @@
 {
   "mcpServers": {
     "davinci-resolve": {
-      "command": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\venv\\Scripts\\python.exe",
+      "command": "C:\\Users\\pc-server\\tools\\davinci-resolve-mcp\\venv\\Scripts\\python.exe",
       "args": [
-        "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\src\\server.py"
+        "C:\\Users\\pc-server\\tools\\davinci-resolve-mcp\\src\\server.py"
       ],
       "env": {
         "RESOLVE_SCRIPT_API": "C:\\ProgramData\\Blackmagic Design\\DaVinci Resolve\\Support\\Developer\\Scripting",
