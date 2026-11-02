@@ -1,0 +1,312 @@
+[
+ {
+  "id": "v01-01",
+  "source_id": "v01",
+  "start_s": 319.0,
+  "end_s": 394.81,
+  "category": "fun",
+  "title_th": "ขอเปิดไลฟ์ให้ดูใหม่ นับ 7 วิ",
+  "reason": "โฮชิจะปิดไลฟ์แล้วเปิดใหม่เพราะคนเข้ามาช้า 7 วิ แล้วแซวคนดูที่รอเข้าไลฟ์วันเกิด บรรยากาศแซวเล่นสนุก",
+  "score": 0.8
+ },
+ {
+  "id": "v01-02",
+  "source_id": "v01",
+  "start_s": 1307.06,
+  "end_s": 1372.97,
+  "category": "fun",
+  "title_th": "ของขวัญชิ้นใหญ่มีรอยฟันกัด",
+  "reason": "เปิดของขวัญแฟนอาร์ตแล้วแซวว่ามีรอยฟันกัด/แอบชิมของขวัญ ตลกเป็นจังหวะแซวกัน",
+  "score": 0.7
+ },
+ {
+  "id": "v01-03",
+  "source_id": "v01",
+  "start_s": 1471.99,
+  "end_s": 1554.64,
+  "category": "meme",
+  "title_th": "จดชื่อไว้ในเดธโน้ต",
+  "reason": "อ่านคำอวยพรแล้วแซวคนส่ง 'กลมขึ้นอีกปี' จบด้วย 'ฉันจดชื่อแกในเดธโน้ตแล้ว' ประโยคเด็ดสั้นๆ",
+  "score": 0.78
+ },
+ {
+  "id": "v01-04",
+  "source_id": "v01",
+  "start_s": 3983.49,
+  "end_s": 4046.81,
+  "category": "meme",
+  "title_th": "ลูกอีกคนต้องสมัครเป็นพี่ / คนปิดหลอดหาย",
+  "reason": "มุกเรียกแม่/ลูกสาว แล้วต่อด้วย running gag 'คนปิดหลอดหาย' ที่คนดูเล่นกัน",
+  "score": 0.75
+ },
+ {
+  "id": "v01-05",
+  "source_id": "v01",
+  "start_s": 4588.0,
+  "end_s": 4648.96,
+  "category": "fun",
+  "title_th": "แฟนอาร์ตมาไวมาก น่ารักจนอยากเอาเข้าไลฟ์",
+  "reason": "โฮชิเปิดดูแฟนอาร์ตที่เพิ่งวาดเสร็จและตื่นเต้นกับความน่ารักของผลงาน มีแชทร่วมแซวด้วย",
+  "score": 0.76
+ },
+ {
+  "id": "v01-06",
+  "source_id": "v01",
+  "start_s": 5692.75,
+  "end_s": 5753.71,
+  "category": "fun",
+  "title_th": "คำอวยพรเริ่มสแปมแล้ว!",
+  "reason": "อ่านฟอร์มคำอวยพรแล้วเจอคนส่งสแปมรัวๆ โฮชิโวยและแซวว่าต้องโดนจับตีตูด",
+  "score": 0.74
+ },
+ {
+  "id": "v01-07",
+  "source_id": "v01",
+  "start_s": 7433.54,
+  "end_s": 7511.09,
+  "category": "meme",
+  "title_th": "ความแค้นส่วนตัว กำตดคุณเปอร์",
+  "reason": "บทสนทนาแซวกันเรื่องความแค้นส่วนตัวและมุกเดาใครจะกำตด ตลกแบบหลุดๆ",
+  "score": 0.72
+ },
+ {
+  "id": "v01-08",
+  "source_id": "v01",
+  "start_s": 7789.31,
+  "end_s": 7848.91,
+  "category": "meme",
+  "title_th": "ฝากไตไว้ในตู้ ATM ฝากหัวใจไว้ที่ผม",
+  "reason": "มุกฝากไต/ฝากหัวใจไว้ที่ตู้ ATM แล้วจบด้วย 'ผมเป็นดาว หัวใจทำมาจากเผ็ด' ไร้สาระน่าจำ",
+  "score": 0.77
+ },
+ {
+  "id": "v02-01",
+  "source_id": "v02",
+  "start_s": 1460.0,
+  "end_s": 1560.0,
+  "category": "gameplay",
+  "title_th": "ผีไล่ในห้องมืด ตกใจสุดๆ",
+  "reason": "ฉากสำรวจห้อง เจอตัวเอง/ผู้เล่นแปลกหน้าวิ่งมา เสียงกรี๊ดและความตื่นตระหนกของทีม",
+  "score": 0.85
+ },
+ {
+  "id": "v02-02",
+  "source_id": "v02",
+  "start_s": 1851.53,
+  "end_s": 1942.12,
+  "category": "gameplay",
+  "title_th": "ไล่ล่าหนีผีกวางคนเดียว",
+  "reason": "ถูกผีหน้ากากกวางไล่ ไฟฉายสลัว โฮชิกลัวอยู่คนเดียวและทีมตะโกนบอกให้วิ่ง",
+  "score": 0.88
+ },
+ {
+  "id": "v02-03",
+  "source_id": "v02",
+  "start_s": 3235.33,
+  "end_s": 3325.0,
+  "category": "gameplay",
+  "title_th": "หลบผีในออฟฟิศมืด",
+  "reason": "ฉากผีเดินเข้ามาทางประตูและวิ่งหนีในออฟฟิศ ทีมเรียกกันเสียงดังแล้วรวมตัว",
+  "score": 0.82
+ },
+ {
+  "id": "v02-04",
+  "source_id": "v02",
+  "start_s": 5123.9,
+  "end_s": 5218.42,
+  "category": "gameplay",
+  "title_th": "ทางตันในโรงแรม ผีมา",
+  "reason": "ทีมหาทางเข้า-ออกในโรงแรม ผีไล่ตามในทางเดิน คนอาสาล่อผี",
+  "score": 0.84
+ },
+ {
+  "id": "v02-05",
+  "source_id": "v02",
+  "start_s": 6445.2,
+  "end_s": 6509.07,
+  "category": "gameplay",
+  "title_th": "น้ำแดงต้องห้ามกับเพลงประหลาด",
+  "reason": "ทีมรอดจากผีในห้องที่มีเพลง มีมุกอย่ากินน้ำแดงและตกใจกันเอง",
+  "score": 0.72
+ },
+ {
+  "id": "v02-06",
+  "source_id": "v02",
+  "start_s": 6806.96,
+  "end_s": 6896.62,
+  "category": "gameplay",
+  "title_th": "กระโดดลงสระ ตามหาทางออก",
+  "reason": "ในสระสไตล์ Backrooms ทีมแยกสีและตัดสินใจกระโดดลงไปตามหาทางออก มีผีบนบันไดไล่",
+  "score": 0.86
+ },
+ {
+  "id": "v02-07",
+  "source_id": "v02",
+  "start_s": 8376.48,
+  "end_s": 8460.0,
+  "category": "fun",
+  "title_th": "โฮชิหล่อเกินจนมีแต่คนมาจีบ",
+  "reason": "ช่วงคุยกันมุกตลกกับคนดู: หัวกับเมีย เลือกช่วยใคร และเรื่องมีภรรยา",
+  "score": 0.8
+ },
+ {
+  "id": "v02-08",
+  "source_id": "v02",
+  "start_s": 9303.0,
+  "end_s": 9383.04,
+  "category": "fun",
+  "title_th": "คุยเรื่องท็อปโดเนตและคิ้วหน้า",
+  "reason": "ช่วงจบไลฟ์ คุยกับแชทเรื่องท็อปโดเนต ตลกขำๆ ไม่ต้องเล่นเกม",
+  "score": 0.7
+ },
+ {
+  "id": "v03-01",
+  "source_id": "v03",
+  "start_s": 513.0,
+  "end_s": 576.34,
+  "category": "fun",
+  "title_th": "แว่นดำทัดหัว ฟีลหล่อ",
+  "reason": "Hoshi bantering about net lag and wearing sunglasses on his head to look cool; sunglasses avatar toggle visible.",
+  "score": 0.78
+ },
+ {
+  "id": "v03-02",
+  "source_id": "v03",
+  "start_s": 1359.79,
+  "end_s": 1489.45,
+  "category": "meme",
+  "title_th": "บ้านนี้มันน่ากลัว อาหวังโปรแม็กซ์",
+  "reason": "Running 'อาหวัง' scare bit with exaggerated panicked reactions to the guest while drawing.",
+  "score": 0.8
+ },
+ {
+  "id": "v03-03",
+  "source_id": "v03",
+  "start_s": 2560.45,
+  "end_s": 2659.26,
+  "category": "fun",
+  "title_th": "อายุโฮชิ 3,100 ปี",
+  "reason": "Age-comparison banter with guest (minus ages, Hoshi 3,100) ending in a joking goodbye.",
+  "score": 0.8
+ },
+ {
+  "id": "v03-04",
+  "source_id": "v03",
+  "start_s": 4280.0,
+  "end_s": 4365.0,
+  "category": "meme",
+  "title_th": "โฮชิ = ดาว+จิ้งจอก+แกะ+ลูกชิ้นหมา",
+  "reason": "Guest explains Hoshi's absurd origin (star+fox+sheep+dog meatball); quotable lore bit.",
+  "score": 0.85
+ },
+ {
+  "id": "v03-05",
+  "source_id": "v03",
+  "start_s": 7340.32,
+  "end_s": 7440.0,
+  "category": "meme",
+  "title_th": "อาชีพนักดับเพลิงจุดไฟเอง",
+  "reason": "Mock-profession joke: set fire to houses then put them out; absurd riff.",
+  "score": 0.75
+ },
+ {
+  "id": "v03-06",
+  "source_id": "v03",
+  "start_s": 7518.26,
+  "end_s": 7668.86,
+  "category": "fun",
+  "title_th": "คดีโฮชิเข้าบ่อนตอนอายุไม่ถึง",
+  "reason": "Mock court case over Hoshi entering gambling parlour underage; escalating excuses and guest cross-examining.",
+  "score": 0.9
+ },
+ {
+  "id": "v03-07",
+  "source_id": "v03",
+  "start_s": 10479.75,
+  "end_s": 10555.54,
+  "category": "gameplay",
+  "title_th": "เกมมืด ผมตาย + ฝันดีจุ๊บ",
+  "reason": "Tense dark horror-game run with panic deaths, countdown, then sign-off kisses.",
+  "score": 0.72
+ },
+ {
+  "id": "v04-01",
+  "source_id": "v04",
+  "start_s": 1066.69,
+  "end_s": 1140.0,
+  "category": "gameplay",
+  "title_th": "ผีวิ่งไล่ใน Backrooms ทีมกรี๊ดแตก",
+  "reason": "ฉากหนีผีใน Backrooms ผีวิ่งไล่ ผู้เล่นตะโกนและตกใจกันวุ่น",
+  "score": 0.78
+ },
+ {
+  "id": "v04-02",
+  "source_id": "v04",
+  "start_s": 1675.0,
+  "end_s": 1755.0,
+  "category": "gameplay",
+  "title_th": "ผีปีนได้!? ตกใจกันทั้งทีม",
+  "reason": "ผีปีนได้ทำให้ทุกคนตกใจและโวยวายกันใหญ่ ภาพเกมตึงเครียด",
+  "score": 0.72
+ },
+ {
+  "id": "v04-03",
+  "source_id": "v04",
+  "start_s": 2705.0,
+  "end_s": 2810.0,
+  "category": "fun",
+  "title_th": "คุยเรื่องตัดคลิปและไอจีหลังของโนว่า",
+  "reason": "เมาท์เรื่องให้คนตัดไฮไลท์ และแซวเรื่องไอจีหลัง ระหว่างเล่นเกม",
+  "score": 0.68
+ },
+ {
+  "id": "v04-04",
+  "source_id": "v04",
+  "start_s": 4450.0,
+  "end_s": 4590.0,
+  "category": "gameplay",
+  "title_th": "แข่งหนีผีสุดโกลาหล รอดทั้งทีม",
+  "reason": "คอมเมนต์สดการวิ่งแข่งหนีผี ตัวแสบยิงระเบิด จบด้วยการรอดแบบไม่น่าเชื่อ",
+  "score": 0.8
+ },
+ {
+  "id": "v04-05",
+  "source_id": "v04",
+  "start_s": 6065.0,
+  "end_s": 6150.2,
+  "category": "fun",
+  "title_th": "เงินค่าโมเดล ให้โดเนตมาเลย",
+  "reason": "พูดเล่นเรื่องโดเนตเป็นค่าโมเดลในอนาคต ระหว่างเล่น Dandy's World และแซวมอนสเตอร์ยืดแขนแบบลูฟี่",
+  "score": 0.65
+ },
+ {
+  "id": "v04-06",
+  "source_id": "v04",
+  "start_s": 7294.16,
+  "end_s": 7390.05,
+  "category": "gameplay",
+  "title_th": "ชิบหายแล้วทุกคน! Dandy ตัวใหญ่",
+  "reason": "เจอมอนสเตอร์ตัวใหญ่ในเกม Dandy's World ทุกคนตกใจ และมีคนตายเพราะเลือดเหลือ 1",
+  "score": 0.7
+ },
+ {
+  "id": "v04-07",
+  "source_id": "v04",
+  "start_s": 8017.91,
+  "end_s": 8110.0,
+  "category": "meme",
+  "title_th": "ขอแสนนึงเดี๋ยวเล่นเลย ไม่ขายวิญญาณ",
+  "reason": "มุกขอเงินโดเนตหมื่น/แสนเพื่อแลกกับการเล่นเกม REPO ผสมแซวไม่ขายวิญญาณ",
+  "score": 0.75
+ },
+ {
+  "id": "v04-08",
+  "source_id": "v04",
+  "start_s": 8280.63,
+  "end_s": 8359.48,
+  "category": "meme",
+  "title_th": "ทุกอย่างมีราคา ขอแสนนึงหลับ 25 ชั่วโมง",
+  "reason": "มุกต่อรองราคาหลับ 25 ชั่วโมงและแซวเรื่องไม่มีคนดู จบด้วยบรรยากาศปิดไลฟ์ฮา ๆ",
+  "score": 0.72
+ }
+]

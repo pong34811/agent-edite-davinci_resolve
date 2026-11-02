@@ -219,3 +219,8 @@ Official Hermes reference: https://hermes-agent.nousresearch.com/docs/user-guide
 - Fusion value readback after reload: After Resolve restarts, Transform `Size`/`Center` read back rounded to ~15 significant digits; compare with a tolerance (1e-9), not `==` Evidence: All 80 audited clips "failed" exact compare after a crash, values were correct (2026-10-29).
 - ExportProject path: `ProjectManager.ExportProject` fails with a relative path; pass an absolute path Evidence: Sakuyako backup, 2026-10-29.
 - Google Drive dropped mid-batch: When Drive for desktop stops, G: vanishes: `ExportCurrentFrameAsStill` returns False, then Resolve hangs/crashes, and restarting before G: mounts closes it again. Check G: first; make still loops fail fast on False Evidence: Sakuyako QC, 2026-10-29.
+
+## Highlight pipeline package (merged 2026-11-02)
+
+- Bare module names: `scripts/highlight/` modules import each other bare (`import config`, `import contact_sheet`); `tests/highlight/conftest.py` puts that folder first on `sys.path`. `scripts/contact_sheet.py` shares a name with `scripts/highlight/contact_sheet.py`, so load the top-level one by file path (`importlib.util.spec_from_file_location`, as `tests/test_contact_sheet.py` does), never by a bare import from a test that may share the session with `tests/highlight`. Evidence: name collision found while merging `agent-seacrh-virus-cut`; full suite passed with the file-path import.
+- `scripts/INDEX.md` rows for subfolder scripts must spell each file as `highlight/<name>.py`; `tests/test_agent_entrypoints.py` treats any bare `` `<name>.py` `` as a top-level script and fails when it does not exist. Evidence: first INDEX draft failed that test (2026-11-02).

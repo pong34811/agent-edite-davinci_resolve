@@ -121,6 +121,16 @@ Direct API insertion (`InsertGeneratorIntoTimeline`) can misplace clips across t
 - Always save via `project_manager.SaveProject()` and read back all modified items.
 - If Resolve closes itself or hangs mid-task, recover without asking (user-authorised 2026-10-28): run `python scripts/resolve_recover.py --project "<current project>"`, then re-verify the item that was in flight and continue. Do not use it to quit a healthy Resolve with other work open.
 
+## Livestream highlight finding (Thai-audio mp4 from YouTube lives)
+
+Merged from the `agent-seacrh-virus-cut` repo on 2026-11-02 (that folder is kept unchanged as history). For "find the interesting moments / cut highlights from these stream files":
+
+- Load `long-video-highlight-clipping` first (full funnel + pitfalls), then `new-channel-job-setup` for a new channel/folder, `timeline-naming-convention`, `resolve-project-folder-targeting`, `user-feedback-capture` after the user reviews clips, and `llm-wiki` when maintaining `docs/highlight/wiki/` (follow its own `AGENTS.md`; `raw/` and old log entries are immutable).
+- Job variables: one `work/highlight/<channel>/<job>/job.json` per job (template and Thai brief: `docs/highlight/prompt-template.md`). Set `HIGHLIGHT_JOB` to its absolute path; `scripts/highlight/config.py` raises without it. All job artifacts stay in that folder; `audio/ frames/ transcripts/ scores/ proxy/` are gitignored.
+- Pipeline: from `scripts/highlight/`, `python pipeline.py inventory|features|shortlist|transcribe|sheets|packets|briefs`, then `resolve_clips.py <probe.json>` and `build_timelines.py` / `build_timelines.py calls <start> <end>` for MCP payloads. Catalogue: `scripts/INDEX.md` section 9. Tests: `python -m pytest -q tests/highlight`.
+- Deps (own venv recommended): `numpy faster-whisper pillow pytest`; on Windows NVIDIA also `nvidia-cublas-cu12 nvidia-cudnn-cu12` (`gpu_env.setup()`). Run `tools/gpu_smoke.py` before `transcribe`.
+- Rules: footage folders are read-only; read inventory, fps and Resolve clip IDs live every job. Whisper Thai text is unverified: flag low-confidence clips. Verify reviewer subagents with the schema test, not their summaries. Timelines are assembly only (house-style). Never upload to YouTube unless asked.
+
 ## Finish of task: record what you learned
 
 **Mandatory after every task, every time:** record reusable learnings in the matching skill/docs, improve a reusable project tool when useful, run tests and refresh the manifest, then create a patch release and publish it. Follow `.agents/skills/project-learning/SKILL.md`; don't invent a lesson when there was none, and don't change Resolve state unless the task authorizes it.

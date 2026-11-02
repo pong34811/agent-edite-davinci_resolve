@@ -187,7 +187,17 @@ thumbnail embellishments as required branding.
 
 <!-- Aspect ratios, timeline naming, versioning, where renders go. -->
 
-_Not yet captured._
+**Livestream highlight timelines** (merged from `agent-seacrh-virus-cut`, 2026-11-02):
+
+- **Rule:** Name each highlight timeline in the format the live brief/`job.json` gives. The default is
+  `{ชื่อคลิป}-{ชื่อเกม}-vdo`; the Sakuyako-Cheris 2026-09 job used `{ชื่อคลิป}-vdo`. No candidate/source
+  IDs, categories, dates or extra suffixes; keep ID-to-timeline mappings in job artifacts.
+- **Why:** The user wants only the clip title, game name and `vdo` suffix in the timeline name.
+- **Trap:** Reusing `<id>_<category>_<title>`, assuming every segment shows the game in the source
+  filename, or silently appending a number to a duplicate name (ask instead).
+- Highlight timelines are assembly only (see "Rejected by default"). For renames: select each
+  timeline by ID, rename only, save, then read the list back and check every name and the count.
+  Details: `timeline-naming-convention` skill.
 
 ---
 

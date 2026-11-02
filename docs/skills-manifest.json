@@ -143,9 +143,45 @@
       "history_sessions": 0
     },
     {
+      "name": "livestream-highlight-clipping",
+      "tier": "supporting",
+      "path": ".agents/skills/livestream-highlight-clipping/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "llm-wiki",
+      "tier": "supporting",
+      "path": ".agents/skills/llm-wiki/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "long-video-highlight-clipping",
+      "tier": "supporting",
+      "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "media-use",
       "tier": "supporting",
       "path": ".agents/skills/media-use/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "new-channel-job-setup",
+      "tier": "supporting",
+      "path": ".agents/skills/new-channel-job-setup/SKILL.md",
       "source": "profile skill sync (commit 10370a1)",
       "history_evidence": [],
       "history_loads": 0,
@@ -424,6 +460,15 @@
       "history_sessions": 0
     },
     {
+      "name": "resolve-project-folder-targeting",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-project-folder-targeting/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "resolve-rough-cut",
       "tier": "editing",
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
@@ -467,6 +512,24 @@
       ],
       "history_loads": 3,
       "history_sessions": 3
+    },
+    {
+      "name": "resolve-smart-edit",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-smart-edit/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "resolve-still-qc-capture",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-still-qc-capture/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
     },
     {
       "name": "resolve-tighten-recording",
@@ -705,6 +768,33 @@
       ],
       "history_loads": 55,
       "history_sessions": 23
+    },
+    {
+      "name": "timeline-naming-convention",
+      "tier": "supporting",
+      "path": ".agents/skills/timeline-naming-convention/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "user-feedback-capture",
+      "tier": "supporting",
+      "path": ".agents/skills/user-feedback-capture/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "vertical-video-reframing",
+      "tier": "supporting",
+      "path": ".agents/skills/vertical-video-reframing/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
     },
     {
       "name": "video-footage-review",
@@ -1206,7 +1296,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "fb399efd67df0da719aabf7bdc755f61b716f514bfe44e510ed518a79271e63d"
+      "sha256": "e0d54c035beff007fa8c13c865b2f36ae4b3cecb184bd1259d0586997a5e1e28"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -2823,6 +2913,36 @@
       "sha256": "6ae3489a35ff81651b44fa59d33b804d1416460329fa8feee3ace23fbfa2d768"
     },
     {
+      "path": ".agents/skills/livestream-highlight-clipping/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "654d5bfad627155d0ae2a9dce708b3b8edde311761ca7cad6fd969404e80af2c"
+    },
+    {
+      "path": ".agents/skills/llm-wiki/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "23192a3ce2e64963c1c7bfac01f2374f07c62369ff709dfe02fef7d293f4db9a"
+    },
+    {
+      "path": ".agents/skills/llm-wiki/scripts/lint_vault.py",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "840218519db9996795c017759a0e17c22c8c0314dd78a73ec4e9593a719ebb65"
+    },
+    {
+      "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "817a23fab28ffb22eb870e6ad9b517ce579146270580bfe3d506eef5e13ae09b"
+    },
+    {
+      "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "5a59c60f737600d075645b452707469f9ae5e6f85b05e2fafe3ca0155a513a94"
+    },
+    {
       "path": ".agents/skills/media-use/.gitignore",
       "source": "project-authored",
       "kind": "editing_skill",
@@ -3495,6 +3615,12 @@
       "sha256": "8df2030aca341878d1bfec084dd3f909510a6f9d60172d10461c2cf8406603db"
     },
     {
+      "path": ".agents/skills/new-channel-job-setup/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "9069e55ad90cbcd364360749096db000c65c5ace65d974e7d1ae470babb16b98"
+    },
+    {
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
@@ -3643,6 +3769,12 @@
       "sha256": "33cf5c27dd37e3b30dda12327a43e419d90cc18ef948d67d6ffc56d65b16fb73"
     },
     {
+      "path": ".agents/skills/resolve-project-folder-targeting/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "73015ef71cc1e542cc41d0476a21c777fa020d5071675e37c18b92510fa2d73d"
+    },
+    {
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-rough-cut\\SKILL.md",
       "source_sha256": "aee1ffd3e2c0a539466f1fc7be4346f67f2845a0cbb6e24a0eb117dad0523ba4",
@@ -3663,6 +3795,18 @@
       "source_sha256": "a762e002918543e9e1e71a497f7f63bca4369cf2fd28cd3cc7dd46fce2c0edc1",
       "kind": "editing_skill",
       "sha256": "a762e002918543e9e1e71a497f7f63bca4369cf2fd28cd3cc7dd46fce2c0edc1"
+    },
+    {
+      "path": ".agents/skills/resolve-smart-edit/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "06ffb45d263e29f49c880b2698a501bd21f36bbe12bcc6082e491f8f8381decc"
+    },
+    {
+      "path": ".agents/skills/resolve-still-qc-capture/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "65a79330f0d2f672a5972bc034456f35c25f9f73678b2058f45211feeb3c20a9"
     },
     {
       "path": ".agents/skills/resolve-tighten-recording/SKILL.md",
@@ -4290,6 +4434,30 @@
       "sha256": "ac2545ae41108454367e975030341e7d4daa847fd069f0f131c003981dacec6d"
     },
     {
+      "path": ".agents/skills/timeline-naming-convention/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "ccd28ac449c955098091ba05c26eeb7e121c4a6503e1fe086f2d8ba4f68db24b"
+    },
+    {
+      "path": ".agents/skills/user-feedback-capture/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "3e22801b00e7c53ed8f572d8ec2d1faa300b239645b1252c5e18c70f5a5b39db"
+    },
+    {
+      "path": ".agents/skills/vertical-video-reframing/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "51888013d2b8f63a7de9976a3853132a4bf9c742f879923ab1b9ed2fa2d09a16"
+    },
+    {
+      "path": ".agents/skills/vertical-video-reframing/references/reference-study.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "b1f87163715e44c58a1abe6ed9918cc635f3b9ce66203b8b43fff9ecb7cbe118"
+    },
+    {
       "path": ".agents/skills/video-footage-review/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\video-footage-review\\SKILL.md",
       "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
@@ -4475,18 +4643,18 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "405c5ab681a1a1e19acb3237c9a677881a4de1cadcd33728293b78ca37112133"
+      "sha256": "2e479c297f21931d172fdd7fdf502a5150eac20a072c49638c318dec5650c54c"
     },
     {
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7435de461ed29df1374f1ad2418a5f33f1885b58782a5428f2a1358d9d999ed2"
+      "sha256": "8ba2feb58b6aec4761b85fea6d0e4954af01ef121faf2c492fb637de5a3df27d"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "ee010b0d084ced2762305bdfd766705a84c8779f2f3b230f6c27fec7b807c582",
+      "sha256": "1dca59fd966c85b6e0928ac2a1c15e94e4196764ff49a3def8ebd8aa70206cd1",
       "kind": "integration_or_validation"
     },
     {
@@ -4498,7 +4666,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "f11b88b53a8e18f47c4bc397133ade9ec2be108214f4f0ebe878f36163a6a809",
+      "sha256": "c7dd0e0836c42e75114958228afd6d03837ded0d1f3c1eff8e69cc0334fd859e",
       "kind": "integration_or_validation"
     },
     {
@@ -4511,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d114cb58ea2a381fa1df5daa77e18db2d0558984523dc0e347cee8f93e5f3444"
+      "sha256": "518a0c297f730567c13fefe8905a66c966290da392c0746ccf12d91cb43f0a1c"
     },
     {
       "path": "docs/README.md",
@@ -4605,7 +4773,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "92965656f6e8567ca89707395100763cdc5f926bbc639dd92eadec73dcb1a13f"
+      "sha256": "7acf0195a0be03271ffe83311ee1173fa37efde2e8bbe711e1596b04c9205bc3"
     },
     {
       "path": "docs/channels/kael.md",
@@ -4729,6 +4897,216 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "ed7a02367da9e4a1b82f3581e1c587ab8c0aab1067c1156e2ce729507e52dbfe"
+    },
+    {
+      "path": "docs/highlight/pipeline-plan.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "22701242ff988370f212628e0e3f3baf4f62541e7839e319578bf602eed64abf"
+    },
+    {
+      "path": "docs/highlight/prompt-template.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7b066aa7f4908f3be645c447fd0d2616c6e0e61ca1dacb6183df6c3b9ec336ab"
+    },
+    {
+      "path": "docs/highlight/wiki/.obsidian/app.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "docs/highlight/wiki/.obsidian/appearance.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "docs/highlight/wiki/.obsidian/core-plugins.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "763cf20a921fd9955735b278006820b90b207b2fc04d9e79ca648279c7c14276"
+    },
+    {
+      "path": "docs/highlight/wiki/.obsidian/graph.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1ab007edbac43cb9f6d32fb9b0f8b1615a8ff2b1fb750151b6ac7fffabc7439b"
+    },
+    {
+      "path": "docs/highlight/wiki/.obsidian/workspace.json",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "33fbcb5eae8668af1181bf49fa345a38a859569cbbc3ee8500c1e8c05a7b7941"
+    },
+    {
+      "path": "docs/highlight/wiki/AGENTS.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "645ca8335aeebf838c5b7ad660dbeb4d142dbd30e6c27e1568d27a769da6a46b"
+    },
+    {
+      "path": "docs/highlight/wiki/README.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7b4cb4ae62bc9a32513b652d717d1f0440e0b242cf38668f09f15b6fbffe9e0f"
+    },
+    {
+      "path": "docs/highlight/wiki/Welcome.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "bdc338c91664c01b6fc022cc922df41d06acd2174f99cce6008ff97321969e68"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/2026-10-04-house-style.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "14afbeee931a12380784462d0d88695309391abeffd86d4893b860872eea0ce1"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/2026-10-04-project-prompt.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fff07bae8f5ad0817700bf3ed536baca32a26cc9b6dcc6a3fc4bd918d7beeba9"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/2026-10-04-user-approval-31-clips.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2492a343395719842e87743c86b4ff40ba2eca94d602419efa10a0c06f30e217"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/2026-10-04-user-project-brief.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "53b6a48eaba0afea9409208d5cd3918e277c15340f773f94add9e28689d18fd1"
+    },
+    {
+      "path": "docs/highlight/wiki/raw/assets/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/highlight/wiki/templates/analysis.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5cad7b88767d59bda00b931d1cf6875812be3fd198946093aef739aea2b98b70"
+    },
+    {
+      "path": "docs/highlight/wiki/templates/clip-review.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2784e23c714605d3578b5c515334efbb84a71526dd0f8f573dbc9a42084c78db"
+    },
+    {
+      "path": "docs/highlight/wiki/templates/concept.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5f2168173603808f77e56ba72d623e84563e5104c49249a44083faabbd193b41"
+    },
+    {
+      "path": "docs/highlight/wiki/templates/source.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "333385b22a21c84819cb708850bc92a54b0ad0e128e53e5e26c42e445208940d"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/analyses/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/analyses/feedback-loop.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2afbf5c3134e2a7da98dac732fb759649f39d84bce06ac35796397854b6f21c5"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/analyses/hoshi-2026-10-03-run.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4c660465bd43e7104bcb931c6b193c69bcc1482fd147367eb281cd8f47f88c45"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/analyses/skill-integration.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "64b18ecf3c9988685e6acff6da867ef94119b4cccfecd81cdbbf3c894c8043ab"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/concepts/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/concepts/clip-selection.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5593afbcf0eba794a6679bbb106dca2cb8910565e6917e12ce1c85ede07845c4"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/concepts/editorial-preferences.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "20572637eb88b082cb3444005db8e0af688cde1955dc71361cfd306aed49cfd3"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/index.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5520302a25913009d9e6c450e2533300f05269403c8212b9862cd5acf26bc2f3"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/log.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "d39efc328a3f8bea6dfc1bdf25caa98cff2efa9bd99bdf39102c5c7934a8154d"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/overview.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a20f2ffb373391f31b4cbe027d650928b355896ab1ec61c100445e982e14040c"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/sources/.gitkeep",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/sources/house-style.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4c802a6d9b241fda40f3db3c77240271abded4347b8df4f9095e3a1781608be1"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/sources/project-prompt.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1ba1bd254f25dab146b0ca7b4753f9abdec325781da1410999d719cd23876cb6"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/sources/user-approval-31-clips.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a2a166b0ec0cd339962ee0812a1e0b9c7ef1caf5e056e7e2c0d365f71bfd0717"
+    },
+    {
+      "path": "docs/highlight/wiki/wiki/sources/user-project-brief.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ab4bbeb6835e744a1568fad983581490b333e7f89799c508699351bbc0713d9c"
     },
     {
       "path": "docs/install.md",
@@ -6510,7 +6888,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c9e859932c5ff313cd0f6fa1854e39d010cf40a2b23f3b84dc8e44b87808ec45"
+      "sha256": "a9a0fd4ace72507025b819e94644e027002c42b689bca5bd1c53583e808f9eb6"
     },
     {
       "path": "scripts/README.md",
@@ -6861,6 +7239,114 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "2984b4f5358d1c861cfda8806753ecbd1dc4c07ba3459ab9b04d5304c1ddedfa"
+    },
+    {
+      "path": "scripts/highlight/briefs.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e9450a7717d9ce062689b484728b17aeaa9fc37296ca036d4bc7bf90d0fa5637"
+    },
+    {
+      "path": "scripts/highlight/build_timelines.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b335c088691b9296f1bcb6eccdb2d1edf3bf1bffce85e9c71f728c60b75a1259"
+    },
+    {
+      "path": "scripts/highlight/config.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "405299f34c024d7e261f768327b89620c293f482d9f0d6330ca5b7c516254de1"
+    },
+    {
+      "path": "scripts/highlight/contact_sheet.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a7720dcf632efb1a97b0375294c835e9b2e44ac44dd98464a8b0d4050c2c41ce"
+    },
+    {
+      "path": "scripts/highlight/features.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c1821ad684c4d541a6bde854d06fb781d0549c285dcbd1a26f4089f022ae8395"
+    },
+    {
+      "path": "scripts/highlight/gpu_env.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a2e839203d10e80f1b6a4ba0d0b5fbba197fb88c0e4111dd2468412d7a646e06"
+    },
+    {
+      "path": "scripts/highlight/inventory.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "4ef11d3a5133b3a1f91018d6a0d40b9819189915d030898826a9151403d56366"
+    },
+    {
+      "path": "scripts/highlight/packets.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "c7a552da9c14ec9a06639dc0d3d68d79af907c37ce1770738ec83cb59e9dadf1"
+    },
+    {
+      "path": "scripts/highlight/pipeline.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f5540df51614d2e7aec8950fd970b8a9ce4d57db67ed0b9fd8aa7debc68c9621"
+    },
+    {
+      "path": "scripts/highlight/resolve_clips.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ee596fb38a0d4045f2f60e19446d9265987ff98b865e9c94d1732ee1052c8b74"
+    },
+    {
+      "path": "scripts/highlight/shortlist.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "521ff21bfc5058a2185b3673020001b0bc1e6013353bc23fb1aadab877bbfb49"
+    },
+    {
+      "path": "scripts/highlight/snap.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "116f9bdc0665e47c2deba7aa80ff27018f4c9910ff71cda1de3ef1e9260e8603"
+    },
+    {
+      "path": "scripts/highlight/templates/reviewer_brief.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ff0c5cfb8f990de0dc033187b62320c33c712aa8afd1306cf6098dfca6d111cb"
+    },
+    {
+      "path": "scripts/highlight/tools/gpu_smoke.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "6d6a56488fb18c2a4e715971942326454ad202a1edf05f4061606ae7b39b712d"
+    },
+    {
+      "path": "scripts/highlight/tools/lint_vault.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "840218519db9996795c017759a0e17c22c8c0314dd78a73ec4e9593a719ebb65"
+    },
+    {
+      "path": "scripts/highlight/tools/make_timelines.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f719e6155dab984a0b79b18472e0573a32e7e3794bbe0a7ec2e0acd383418446"
+    },
+    {
+      "path": "scripts/highlight/transcribe.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "942498d3405428ad49735eccfcf610eb79d88f5d89c6f6367fe70d17263ba5c1"
+    },
+    {
+      "path": "scripts/highlight/windows.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "9efdfd0e341a0a0243983b9dad0690d1779d7604c6392d818cd2fe90d641ff04"
     },
     {
       "path": "scripts/illustration_reel.py",
@@ -7323,6 +7809,60 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "c1ad3df1b58361685f6142462d708277acb07ab96dac5030177ef0c2c7af8be2"
+    },
+    {
+      "path": "tests/highlight/conftest.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "253d4bff5c883b77d6bd4a78fa9030b1d8183129a974b7e73dbd82b2db58a96f"
+    },
+    {
+      "path": "tests/highlight/test_build.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "b11b10131d6b7472dde338eb076464ce7d1e80934d7a61893c9a40dde3d5afbe"
+    },
+    {
+      "path": "tests/highlight/test_contact_sheet_packets.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "4b28ba606eb48e84236bd598d53e12e78d5b30b7317c7972f31a23f73f51ebb9"
+    },
+    {
+      "path": "tests/highlight/test_inventory.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "596c968cd3a48aedfb7cab2ad7d97c92e0d7f1cb57d7522bbf7f58dd48bfd710"
+    },
+    {
+      "path": "tests/highlight/test_shortlist.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "ac3aaf2038ca29f4acd51d1a43309384058901ee31aaafa2e7ffa73dea11129a"
+    },
+    {
+      "path": "tests/highlight/test_snap_schema.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "3862629646e6a098e31845e06da6fe74febe559861748f7319e89f26d77cf18f"
+    },
+    {
+      "path": "tests/highlight/test_tools.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "fcf3012a6a6cb66d8931704c3b7d0dca5dee8269280b0b176dd36ee82781fb0c"
+    },
+    {
+      "path": "tests/highlight/test_transcribe.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "33fb60dcb894da0eba925be59c3f24344629128eb3847a2a634862260679323e"
+    },
+    {
+      "path": "tests/highlight/test_windows.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "021023e175d012ba341eea4232db0a6e7bb7b6f7fa1e3a0a95d9b3c09d694d0e"
     },
     {
       "path": "tests/test_agent_entrypoints.py",
@@ -8006,11 +8546,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1067,
-    "supporting_skills": 41,
-    "active_skills": 58
+    "manifest_files": 1142,
+    "supporting_skills": 51,
+    "active_skills": 68
   },
-  "bundle_version": "0.16.22",
+  "bundle_version": "0.16.23",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

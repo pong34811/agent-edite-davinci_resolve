@@ -1,0 +1,932 @@
+[
+ {
+  "id": "v01-01",
+  "source_id": "v01",
+  "start_s": 195.05,
+  "end_s": 285.65,
+  "category": "fun",
+  "title_th": "เปิดสตรีมทักทายก่อนเริ่มเกม",
+  "reason": "Opening greeting over the live-chat intro screen before she starts the game; transcript is garbled so content is a guess.",
+  "score": 0.5
+ },
+ {
+  "id": "v01-02",
+  "source_id": "v01",
+  "start_s": 2539.86,
+  "end_s": 2632.01,
+  "category": "gameplay",
+  "title_th": "ตามหาห้องที่หายไป",
+  "reason": "Gameplay while she can't find the remaining target/room and talks it through with chat; cues from transcript are weak.",
+  "score": 0.5
+ },
+ {
+  "id": "v01-03",
+  "source_id": "v01",
+  "start_s": 2876.12,
+  "end_s": 2948.92,
+  "category": "meme",
+  "title_th": "ฝูงเอเลี่ยนบุกจนร้องลั่น",
+  "reason": "Big alien swarm in the corridor with high-energy screaming and swearing at the peak (~0:48:43).",
+  "score": 0.65
+ },
+ {
+  "id": "v01-04",
+  "source_id": "v01",
+  "start_s": 3461.57,
+  "end_s": 3570.03,
+  "category": "fun",
+  "title_th": "คุยเรื่องอายุและเด็กรุ่นหลาน",
+  "reason": "Chat banter about age and generations (kids/grandkid-aged viewers) while the map is being cleared; the score-1.00 loudest window.",
+  "score": 0.7
+ },
+ {
+  "id": "v01-05",
+  "source_id": "v01",
+  "start_s": 3749.97,
+  "end_s": 3829.63,
+  "category": "fun",
+  "title_th": "ซื้อปืนไม่พอเงินขาดไปพันเดียว",
+  "reason": "Shop screen banter about price and being 1,000 short on money, with laughing; punchline partly guessed.",
+  "score": 0.55
+ },
+ {
+  "id": "v01-06",
+  "source_id": "v01",
+  "start_s": 7968.44,
+  "end_s": 8060.05,
+  "category": "gameplay",
+  "title_th": "เตรียมป้อมสู้ศึกใหญ่",
+  "reason": "Mission completes then she sets turrets and gears up for the next level with excited swearing; mixed cutscene and menu.",
+  "score": 0.55
+ },
+ {
+  "id": "v01-07",
+  "source_id": "v01",
+  "start_s": 9490.46,
+  "end_s": 9639.65,
+  "category": "gameplay",
+  "title_th": "ล่อบอสตัวเหนียวจนเหนื่อย",
+  "reason": "Long fight with a very tanky enemy, her cursing at how tough it is, ending in a frustrated outburst.",
+  "score": 0.6
+ },
+ {
+  "id": "v01-08",
+  "source_id": "v01",
+  "start_s": 10809.64,
+  "end_s": 10867.61,
+  "category": "fun",
+  "title_th": "จบเกมในครั้งเดียว",
+  "reason": "Reaction at finishing the game on a single run, on the ending screen; transcript garbled.",
+  "score": 0.45
+ },
+ {
+  "id": "v02-01",
+  "source_id": "v02",
+  "start_s": 198.69,
+  "end_s": 292.06,
+  "category": "fun",
+  "title_th": "คุยกับแชทช่วงต้นไลฟ์ เล่าว่าเล่นเกมนี้มาหลายรอบ",
+  "reason": "Early-stream chat on the VTuber model; she talks about having replayed this game many times and what the mode is like. Transcript is garbled.",
+  "score": 0.5
+ },
+ {
+  "id": "v02-02",
+  "source_id": "v02",
+  "start_s": 599.07,
+  "end_s": 689.95,
+  "category": "fun",
+  "title_th": "ตั้งค่าหน้าจอไลฟ์ เจอวิธีใหม่",
+  "reason": "She fiddles with window capture and settings and has an 'oh, we can do that?' realisation. Content is guessed from garbled transcript and sheet.",
+  "score": 0.45
+ },
+ {
+  "id": "v02-03",
+  "source_id": "v02",
+  "start_s": 1196.69,
+  "end_s": 1262.85,
+  "category": "gameplay",
+  "title_th": "กวาดห้องจนจบภารกิจ",
+  "reason": "Isometric top-down shooter: she clears a blood-soaked lab room and the 'Mission Complete' screen shows at about 20:55.",
+  "score": 0.6
+ },
+ {
+  "id": "v02-04",
+  "source_id": "v02",
+  "start_s": 1640.52,
+  "end_s": 1730.5,
+  "category": "gameplay",
+  "title_th": "ตอบแชทว่าเกมยากไหมระหว่างเล่น",
+  "reason": "Mid-gameplay she answers a chat question about difficulty, saying she's replayed it so often she remembers where everything is. Visible action is a bloody corridor run.",
+  "score": 0.6
+ },
+ {
+  "id": "v02-05",
+  "source_id": "v02",
+  "start_s": 3120.0,
+  "end_s": 3236.0,
+  "category": "gameplay",
+  "title_th": "ด่านเขียวสุดท้ายก่อนจอดับ",
+  "reason": "Chaotic green-tinted level with heavy effects; she says she can't hold this spot any more. The level ends in a black screen at about 53:55.",
+  "score": 0.55
+ },
+ {
+  "id": "v02-06",
+  "source_id": "v02",
+  "start_s": 5609.79,
+  "end_s": 5737.8,
+  "category": "fun",
+  "title_th": "คุยสรุปเกมหลังเล่นจบ ก่อนปิดไลฟ์",
+  "reason": "After finishing at the menu she goes to the face cam and chats about the first game vs the sequels and unit design, then wraps up with a laugh. Transcript is garbled.",
+  "score": 0.55
+ },
+ {
+  "id": "v03-01",
+  "source_id": "v03",
+  "start_s": 1020.0,
+  "end_s": 1100.0,
+  "category": "fun",
+  "title_th": "ลืมแชร์จอ จบของวีทูปเบอร์ที่ไม่เตรียมตัว",
+  "reason": "Streamer fumbles the launcher/server join with the friend and jokes it is the end of a VTuber who forgot to prepare; chatty banter over idle screen.",
+  "score": 0.6
+ },
+ {
+  "id": "v03-02",
+  "source_id": "v03",
+  "start_s": 1422.0,
+  "end_s": 1530.0,
+  "category": "gameplay",
+  "title_th": "หนาวติดลบ 16 ต้องถือลาวา",
+  "reason": "Freezing Minecraft start, -15/-16 °C, joking about what sins they committed and having to hold lava all the time.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-03",
+  "source_id": "v03",
+  "start_s": 1840.54,
+  "end_s": 1925.0,
+  "category": "gameplay",
+  "title_th": "ถือถังลาวาไว้กันหนาว",
+  "reason": "Cold-survival scramble with a lava bucket, friend shouting advice and panic over freezing.",
+  "score": 0.6
+ },
+ {
+  "id": "v03-04",
+  "source_id": "v03",
+  "start_s": 2175.0,
+  "end_s": 2244.8,
+  "category": "meme",
+  "title_th": "พี่น้องไม่เคยช่วยอะไรเลย",
+  "reason": "Friend arrives right after the zombie fight is over; streamer rants about 'brotherhood never helping'.",
+  "score": 0.65
+ },
+ {
+  "id": "v03-05",
+  "source_id": "v03",
+  "start_s": 2457.99,
+  "end_s": 2573.99,
+  "category": "gameplay",
+  "title_th": "อย่าใส่ร้ายผม เกือบจมลาวา",
+  "reason": "Cave mining with lava plugging accusations and a near fall into a lava pit; lively co-op banter.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-06",
+  "source_id": "v03",
+  "start_s": 3235.0,
+  "end_s": 3315.0,
+  "category": "gameplay",
+  "title_th": "เจอเพชรแล้ว! ยิส!",
+  "reason": "After long digging at Y-54 and praying for diamonds, streamer finds one and cheers with laughter.",
+  "score": 0.75
+ },
+ {
+  "id": "v03-07",
+  "source_id": "v03",
+  "start_s": 5745.0,
+  "end_s": 5835.0,
+  "category": "fun",
+  "title_th": "เจอทางกลับบ้านแต่เพื่อนไปห้องน้ำ",
+  "reason": "Finds the way back home through the cave just as the friend steps away; exasperated reaction.",
+  "score": 0.6
+ },
+ {
+  "id": "v04-01",
+  "source_id": "v04",
+  "start_s": 955,
+  "end_s": 1040,
+  "category": "gameplay",
+  "title_th": "ลุยฐานใต้ดิน เข้าได้สองทาง",
+  "reason": "Alien Shooter 2 gameplay; she reacts to discovering she can enter two ways, then a mission-prompt moment.",
+  "score": 0.72
+ },
+ {
+  "id": "v04-02",
+  "source_id": "v04",
+  "start_s": 1410,
+  "end_s": 1520,
+  "category": "gameplay",
+  "title_th": "กวาดศัตรูในฐานมืด",
+  "reason": "Tense dark-corridor action with flashlight and gunfire, loud audio peak; little commentary in transcript.",
+  "score": 0.62
+ },
+ {
+  "id": "v04-03",
+  "source_id": "v04",
+  "start_s": 1820,
+  "end_s": 1920,
+  "category": "gameplay",
+  "title_th": "เช็กของ เซฟยัง แล้วลุยต่อ",
+  "reason": "Inventory check, worry about not having saved, then back into the shooting; banter with friends.",
+  "score": 0.62
+ },
+ {
+  "id": "v04-04",
+  "source_id": "v04",
+  "start_s": 4092,
+  "end_s": 4199.76,
+  "category": "fun",
+  "title_th": "กดเล่นแล้วเกมเด้ง ลบโหลดใหม่เลย",
+  "reason": "Friend remotely walks her through Windows-mode fix and the game crashes; joking about deleting and reinstalling.",
+  "score": 0.7
+ },
+ {
+  "id": "v04-05",
+  "source_id": "v04",
+  "start_s": 4461.39,
+  "end_s": 4570.26,
+  "category": "meme",
+  "title_th": "Windows XP? Vista? 8? ลองหมด",
+  "reason": "Frantic compatibility-mode guessing, swearing at the game and the developer; chaotic banter.",
+  "score": 0.75
+ },
+ {
+  "id": "v04-06",
+  "source_id": "v04",
+  "start_s": 4894.55,
+  "end_s": 4979.68,
+  "category": "fun",
+  "title_th": "ในที่สุดแชร์จอเหมือนคนปกติได้แล้ว",
+  "reason": "The long capture problem is finally fixed ('finally share the screen like normal people').",
+  "score": 0.68
+ },
+ {
+  "id": "v04-07",
+  "source_id": "v04",
+  "start_s": 5517.31,
+  "end_s": 5643.15,
+  "category": "meme",
+  "title_th": "ปรับความละเอียด 1024x768 ไอ้เฮีย",
+  "reason": "Resolution-fix saga with absurd back-and-forth and laughing until her throat gives out, game still fails.",
+  "score": 0.85
+ },
+ {
+  "id": "v05-01",
+  "source_id": "v05",
+  "start_s": 422.17,
+  "end_s": 502.94,
+  "category": "gameplay",
+  "title_th": "ไฟต์ใหญ่ในอารีนา",
+  "reason": "Team-fight with colourful ability effects at ~0:07:30 right after augment pick; transcript empty so the beat is judged from the sheet only.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-02",
+  "source_id": "v05",
+  "start_s": 4040.0,
+  "end_s": 4119.52,
+  "category": "meme",
+  "title_th": "เสียงร้องโอ๊ยๆ",
+  "reason": "After picking augments the streamer yelps 'โอ๊ย' repeatedly (1:07:43); Whisper repeats it so the actual length of the yelping is unknown.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-03",
+  "source_id": "v05",
+  "start_s": 4570.0,
+  "end_s": 4675.22,
+  "category": "gameplay",
+  "title_th": "ดับเบิลคิลแล้วโดนฝัง",
+  "reason": "Double-kill around 1:16:27 followed by 'ไม่ต้องฝังฉัน!' at 1:17:48; fast fighting with reactions.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-04",
+  "source_id": "v05",
+  "start_s": 6270.0,
+  "end_s": 6368.62,
+  "category": "gameplay",
+  "title_th": "ไฟต์หน้าป้อม",
+  "reason": "Fights near the turret in the Arena with excited commentary (earlier 'scared' line at 1:41:30); mixed transcript.",
+  "score": 0.65
+ },
+ {
+  "id": "v05-05",
+  "source_id": "v05",
+  "start_s": 6770.0,
+  "end_s": 6870.0,
+  "category": "fun",
+  "title_th": "เมาท์เรื่องสายเล่นเกม",
+  "reason": "Streamer rants/role-plays about passive players ('ลูกแห่งไอ้เพี้ย... มึงกลับไปหาแม่มึง') while gameplay runs; transcript is garbled, so the exact jokes are unverified.",
+  "score": 0.55
+ },
+ {
+  "id": "v05-06",
+  "source_id": "v05",
+  "start_s": 8381.49,
+  "end_s": 8470.0,
+  "category": "gameplay",
+  "title_th": "เพนตาคิลแล้วพ่ายแพ้",
+  "reason": "Pentakill / Shut Down banner at ~2:20:55 followed immediately by the Defeat screen at 2:21:05, with 'ไม่ไหวค่ะ' complaints before.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-07",
+  "source_id": "v05",
+  "start_s": 9000.0,
+  "end_s": 9080.0,
+  "category": "gameplay",
+  "title_th": "ไฟต์ท้ายเกมสุดมัน",
+  "reason": "Close fights with big ability flashes around 2:30:45; transcript line about 'ไม่ได้ขยับเลย' is unclear.",
+  "score": 0.55
+ },
+ {
+  "id": "v06-01",
+  "source_id": "v06",
+  "start_s": 1615,
+  "end_s": 1670,
+  "category": "fun",
+  "title_th": "ลืมเปิดเสียงเพื่อน คุยกับผีมาตั้งนาน",
+  "reason": "Streamer and friend bicker about forgetting to feed the friend's voice into the stream ('talking to a ghost all this time'), ending in laughter.",
+  "score": 0.6
+ },
+ {
+  "id": "v06-02",
+  "source_id": "v06",
+  "start_s": 1799,
+  "end_s": 1919,
+  "category": "gameplay",
+  "title_th": "ลืมเอาอาหาร ต้องกินเนื้อซอมบี้",
+  "reason": "Mining trip where the streamer forgot food and zombies swarm in while they joke about eating zombie flesh.",
+  "score": 0.62
+ },
+ {
+  "id": "v06-03",
+  "source_id": "v06",
+  "start_s": 2240,
+  "end_s": 2305,
+  "category": "gameplay",
+  "title_th": "ซอมบี้มาได้ไงวะ!",
+  "reason": "Zombies appear in the mine and the streamer panics about how they got in, wondering about a technical glitch.",
+  "score": 0.6
+ },
+ {
+  "id": "v06-04",
+  "source_id": "v06",
+  "start_s": 4145,
+  "end_s": 4200,
+  "category": "meme",
+  "title_th": "อยากเปลี่ยนร่าง เอาคนไม่มีเสียงในหัวมาเล่นแทน",
+  "reason": "Streamer rants that she wants to swap in a player without voices in their head; quotable line, then a yell.",
+  "score": 0.5
+ },
+ {
+  "id": "v06-05",
+  "source_id": "v06",
+  "start_s": 5151.36,
+  "end_s": 5245,
+  "category": "fun",
+  "title_th": "พี่จ๋าช่วยด้วย เรือไปไหนวะ",
+  "reason": "Chaotic boat/terrain scramble with the friend, shouting for help and bickering about who can steer.",
+  "score": 0.58
+ },
+ {
+  "id": "v06-06",
+  "source_id": "v06",
+  "start_s": 5468.19,
+  "end_s": 5620.81,
+  "category": "gameplay",
+  "title_th": "วิ่งหนีมอนตอนมืดจนเห็นบ้าน",
+  "reason": "Night run back home across snow with mobs chasing, urgent shouting until the house comes into view.",
+  "score": 0.65
+ },
+ {
+  "id": "v06-07",
+  "source_id": "v06",
+  "start_s": 7350,
+  "end_s": 7425,
+  "category": "fun",
+  "title_th": "ออกไม่ได้เลยวะ ฮ่าๆๆ",
+  "reason": "Streamer gets stuck/trapped near the boat and villagers and laughs about not being able to get out.",
+  "score": 0.55
+ },
+ {
+  "id": "v07-01",
+  "source_id": "v07",
+  "start_s": 2166,
+  "end_s": 2236,
+  "category": "gameplay",
+  "title_th": "ไฟต์ในเลนกับเสียงร้องเฮ้ย",
+  "reason": "League of Legends lane/fight action around 0:36 with the streamer reacting ('เฮ้ย!'); frames show live gameplay. Transcript garbled.",
+  "score": 0.6
+ },
+ {
+  "id": "v07-02",
+  "source_id": "v07",
+  "start_s": 2560,
+  "end_s": 2623.72,
+  "category": "gameplay",
+  "title_th": "ทีมไฟต์ถูกชัตดาวน์",
+  "reason": "Teamfight with a SHUT DOWN banner and loud shouting at the team; transcript has laughing loop, exact words unclear.",
+  "score": 0.7
+ },
+ {
+  "id": "v07-03",
+  "source_id": "v07",
+  "start_s": 3130,
+  "end_s": 3200,
+  "category": "gameplay",
+  "title_th": "เริ่มเกมแล้วเจอไฟต์",
+  "reason": "Early-game action after champ select with chat visible and streamer commenting; content guessed from frames.",
+  "score": 0.55
+ },
+ {
+  "id": "v07-04",
+  "source_id": "v07",
+  "start_s": 8590,
+  "end_s": 8735,
+  "category": "gameplay",
+  "title_th": "หัวยังไม่ฟู ตายก่อนเลย",
+  "reason": "Streamer gets killed mid-fight, says his hair isn't fluffy yet and laughs, then more panicked reactions ('โอ้ย โดน'). Funny gameplay reactions.",
+  "score": 0.8
+ },
+ {
+  "id": "v07-05",
+  "source_id": "v07",
+  "start_s": 10811.05,
+  "end_s": 10870.88,
+  "category": "meme",
+  "title_th": "ออกเมื่อไหร่มีตายเมื่อนั้น",
+  "reason": "Short quotable line 'ออกเมื่อไหร่มีตายเมื่อนั้น' right as the game starts after champ select; the frame shows the Ahri champ select then gameplay.",
+  "score": 0.6
+ },
+ {
+  "id": "v07-06",
+  "source_id": "v07",
+  "start_s": 14450,
+  "end_s": 14520,
+  "category": "meme",
+  "title_th": "ด่าทีมรัวๆ ไอ้เชี่ยทีมตาก",
+  "reason": "Rapid-fire rant at teammates during a match ('ไอ้เชี่ย...มึงจะตีเขาเมื่อไหร่'), over-the-top frustration.",
+  "score": 0.7
+ },
+ {
+  "id": "v07-07",
+  "source_id": "v07",
+  "start_s": 17285,
+  "end_s": 17353.67,
+  "category": "fun",
+  "title_th": "ลาสตรีม ขอบคุณทุกคน",
+  "reason": "Streamer talks to camera at the end of the stream thanking viewers and mentioning a toothache and next week's plan; live chat overlay visible.",
+  "score": 0.6
+ },
+ {
+  "id": "v08-01",
+  "source_id": "v08",
+  "start_s": 1010,
+  "end_s": 1110,
+  "category": "gameplay",
+  "title_th": "ดีเฟนด์รอบสุดท้ายจนแพ้",
+  "reason": "Defender round on the sand/ice map ending in a DEFEAT screen; streamer reacting. Transcript garbled.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-02",
+  "source_id": "v08",
+  "start_s": 1610,
+  "end_s": 1710,
+  "category": "gameplay",
+  "title_th": "ชนะรอบแล้วบ่นเหนื่อย",
+  "reason": "Opens on a VICTORY screen then a new round with streamer venting about being tired; transcript garbled.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-03",
+  "source_id": "v08",
+  "start_s": 1860,
+  "end_s": 1969.28,
+  "category": "fun",
+  "title_th": "คุยเรื่องเกมตอนรอเมนู",
+  "reason": "Draw result then streamer chats about how losing feels in this game while in menus/battle pass; mostly talk.",
+  "score": 0.55
+ },
+ {
+  "id": "v08-04",
+  "source_id": "v08",
+  "start_s": 3540,
+  "end_s": 3660,
+  "category": "gameplay",
+  "title_th": "บ่นทำไมชอบสู้ในทางแคบ",
+  "reason": "Streamer complains teammates fight in narrow corridors where she can't see; gameplay with live commentary.",
+  "score": 0.75
+ },
+ {
+  "id": "v08-05",
+  "source_id": "v08",
+  "start_s": 4980,
+  "end_s": 5100.24,
+  "category": "gameplay",
+  "title_th": "เก็บระเบิดแล้วบ่นทีมไม่ช่วย",
+  "reason": "Bomb defuse/round play with streamer questioning why enemy takes a detour; ends near match report screen.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-06",
+  "source_id": "v08",
+  "start_s": 5252.48,
+  "end_s": 5354.95,
+  "category": "gameplay",
+  "title_th": "เพื่อนตายในรูอีกแล้ว",
+  "reason": "Gunfights then streamer rants about a teammate dying in a hole ('ตายในรู'), peaking before the VS screen; high loudness.",
+  "score": 0.8
+ },
+ {
+  "id": "v08-07",
+  "source_id": "v08",
+  "start_s": 6059.94,
+  "end_s": 6179.95,
+  "category": "fun",
+  "title_th": "ทีมโหวตยอมแพ้",
+  "reason": "Teammates split up and streamer reacts; surrender vote prompts appear on screen. Transcript partly garbled.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-08",
+  "source_id": "v08",
+  "start_s": 9330.3,
+  "end_s": 9419.93,
+  "category": "gameplay",
+  "title_th": "ด่าเพื่อนยืนหลังคนแพน",
+  "reason": "Streamer scolds a teammate standing behind the pinned/panned player instead of helping.",
+  "score": 0.7
+ },
+ {
+  "id": "v09-01",
+  "source_id": "v09",
+  "start_s": 213.51,
+  "end_s": 280.0,
+  "category": "fun",
+  "title_th": "พูดคุยช่วงเริ่มไลฟ์",
+  "reason": "Streamer chats to camera in the opening segment, with a lively expression. Transcript is garbled so the topic is unclear.",
+  "score": 0.5
+ },
+ {
+  "id": "v09-02",
+  "source_id": "v09",
+  "start_s": 3558.61,
+  "end_s": 3648.87,
+  "category": "gameplay",
+  "title_th": "ลุ้นยิงปะทะในรอบ Strinova",
+  "reason": "Round of the Strinova shooter with the streamer reacting as enemies push in, then a round start countdown.",
+  "score": 0.62
+ },
+ {
+  "id": "v09-03",
+  "source_id": "v09",
+  "start_s": 4211.89,
+  "end_s": 4320.0,
+  "category": "gameplay",
+  "title_th": "ไล่ล่าและโดนฮิตกลางแมป",
+  "reason": "Fast gameplay with the streamer commenting, ending in a kill/terminated frame around 1:11:00.",
+  "score": 0.6
+ },
+ {
+  "id": "v09-04",
+  "source_id": "v09",
+  "start_s": 5643.5,
+  "end_s": 5747.68,
+  "category": "fun",
+  "title_th": "สงสัยโดนโกงจนต้องกดรีพอร์ต",
+  "reason": "Streamer complains about a suspected wallhacker, and the screen shows the report menu. Wording is garbled.",
+  "score": 0.65
+ },
+ {
+  "id": "v09-05",
+  "source_id": "v09",
+  "start_s": 7220.0,
+  "end_s": 7322.25,
+  "category": "gameplay",
+  "title_th": "เสียงหลุดตอนโดนยิงรัว",
+  "reason": "Streamer reacts loudly in a hero shooter round (Round start, 404 container area). Exact lines are unclear.",
+  "score": 0.58
+ },
+ {
+  "id": "v09-06",
+  "source_id": "v09",
+  "start_s": 8955.0,
+  "end_s": 9075.0,
+  "category": "gameplay",
+  "title_th": "บ่นเพื่อนร่วมทีมยิงหลัง",
+  "reason": "Streamer questions a teammate about being shot in the back before the round starts. Transcript is shaky.",
+  "score": 0.62
+ },
+ {
+  "id": "v09-07",
+  "source_id": "v09",
+  "start_s": 10619.76,
+  "end_s": 10691.81,
+  "category": "gameplay",
+  "title_th": "หลบหนีรอบสุดท้ายแล้วร้องโอ้ย",
+  "reason": "Defender round where the bomb carrier is knocked down, with a groan at 2:57:26.",
+  "score": 0.6
+ },
+ {
+  "id": "v09-08",
+  "source_id": "v09",
+  "start_s": 13073.66,
+  "end_s": 13161.89,
+  "category": "meme",
+  "title_th": "ระบายเกลียดการโดนโฟกัสคนเดียว",
+  "reason": "In the lobby the streamer rants about being focused every game and says she hates it. The rant is quotable but the transcript is garbled.",
+  "score": 0.7
+ },
+ {
+  "id": "v10-01",
+  "source_id": "v10",
+  "start_s": 1490.47,
+  "end_s": 1560.63,
+  "category": "gameplay",
+  "title_th": "ตกลาวาตายกลางเกม",
+  "reason": "Streamer dies to lava on Minecraft ('burned to death' screen) while asking how it happened, then banters about workers having only axes.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-02",
+  "source_id": "v10",
+  "start_s": 2318.84,
+  "end_s": 2409.17,
+  "category": "fun",
+  "title_th": "คุยเรื่องนอนกับเพื่อนร่วมเซิร์ฟ",
+  "reason": "Co-op chatter about sleeping through the night/bathroom timing with the friend in a cold-biome Minecraft base.",
+  "score": 0.4
+ },
+ {
+  "id": "v10-03",
+  "source_id": "v10",
+  "start_s": 2538.6,
+  "end_s": 2600.06,
+  "category": "meme",
+  "title_th": "ใช้พลังแอดมินโกงเวลา",
+  "reason": "Joking about using admin power to cheat/speed up time ('เปิดเวอร์โว้ว') while hurrying to set up water.",
+  "score": 0.5
+ },
+ {
+  "id": "v10-04",
+  "source_id": "v10",
+  "start_s": 4473.99,
+  "end_s": 4545.27,
+  "category": "meme",
+  "title_th": "หนาวตายหรือความตายเอง",
+  "reason": "Banter about dying of cold vs. dying, ending with a loud reaction line 'แก้ความหนาวด้วยความตาย'.",
+  "score": 0.55
+ },
+ {
+  "id": "v10-05",
+  "source_id": "v10",
+  "start_s": 5448.0,
+  "end_s": 5566.06,
+  "category": "gameplay",
+  "title_th": "ขุดถ้ำเกือบตก",
+  "reason": "Tense mining in a deep cave: gets stuck, asks to reset, admits fear of slipping into a pit.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-06",
+  "source_id": "v10",
+  "start_s": 5637.94,
+  "end_s": 5732.0,
+  "category": "gameplay",
+  "title_th": "ถ้ำเสียวสันหลังแล้วสู้มอนสเตอร์",
+  "reason": "Spooked reaction in the cave ('เสียวสันหลัง') and challenging mobs to come at them.",
+  "score": 0.55
+ },
+ {
+  "id": "v10-07",
+  "source_id": "v10",
+  "start_s": 6540.06,
+  "end_s": 6650.0,
+  "category": "fun",
+  "title_th": "มุกหมู่กับเพื่อนในเซิร์ฟ",
+  "reason": "Friends trade a string of jokes and puns while the streamer finishes digging and building.",
+  "score": 0.4
+ },
+ {
+  "id": "v11-01",
+  "source_id": "v11",
+  "start_s": 237.57,
+  "end_s": 335.0,
+  "category": "fun",
+  "title_th": "เปิดสตรีมทักทายแล้วแนะนำเกมวันนี้",
+  "reason": "สตรีมเมอร์ทักทายหน้ากล้องและแนะนำเกมที่จะเล่น; ช่วงเปิดเกมที่ได้ฟีลแชทกับผู้ชม.",
+  "score": 0.55
+ },
+ {
+  "id": "v11-02",
+  "source_id": "v11",
+  "start_s": 415.0,
+  "end_s": 515.0,
+  "category": "gameplay",
+  "title_th": "ลองเล่นครั้งแรกแล้วงงกับเกม",
+  "reason": "เริ่มเล่นเกมวางแผนป้องกันเมือง สตรีมเมอร์บ่นว่าไม่เข้าใจระบบ.",
+  "score": 0.5
+ },
+ {
+  "id": "v11-03",
+  "source_id": "v11",
+  "start_s": 2970.0,
+  "end_s": 3090.0,
+  "category": "gameplay",
+  "title_th": "กำแพงถูกบุกจนมีคนตาย",
+  "reason": "ฉากรบหน้ากำแพงที่ศัตรูบุกเข้ามา สตรีมเมอร์พูดถึงความสูญเสีย.",
+  "score": 0.5
+ },
+ {
+  "id": "v11-04",
+  "source_id": "v11",
+  "start_s": 3375.0,
+  "end_s": 3535.0,
+  "category": "gameplay",
+  "title_th": "ศัตรูบุกสะพานต้องรีบป้องกัน",
+  "reason": "ช่วงป้องกันเมืองที่เสียงในเกมเตือนศัตรูขึ้นสะพาน มีจังหวะตึงเครียดและจัดการวางแผนรับมือ.",
+  "score": 0.6
+ },
+ {
+  "id": "v11-05",
+  "source_id": "v11",
+  "start_s": 7280.0,
+  "end_s": 7400.0,
+  "category": "gameplay",
+  "title_th": "ใครเนี่ย แล้วก็งงในเกม",
+  "reason": "สตรีมเมอร์พึมพำงงๆ กับสถานการณ์ในเกมช่วงกลางคืน.",
+  "score": 0.45
+ },
+ {
+  "id": "v11-06",
+  "source_id": "v11",
+  "start_s": 11725.0,
+  "end_s": 11825.0,
+  "category": "gameplay",
+  "title_th": "ด่านหิมะศัตรูเต็มจอ",
+  "reason": "ฉากด่านหิมะที่มีศัตรูจำนวนมากรอบเมือง ช่วงเสียงดังตามคะแนนเสียงของระบบ.",
+  "score": 0.5
+ },
+ {
+  "id": "v11-07",
+  "source_id": "v11",
+  "start_s": 12780.0,
+  "end_s": 12927.94,
+  "category": "fun",
+  "title_th": "คุยสรุปเกมก่อนจบสตรีม",
+  "reason": "สตรีมเมอร์คุยสรุปความเห็นเกม (เป็นเกมไทยหรือเปล่า) ก่อนหน้าจอจบสตรีมขึ้น.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-01",
+  "source_id": "v12",
+  "start_s": 282.02,
+  "end_s": 380.27,
+  "category": "fun",
+  "title_th": "สตรีมเปิดตัว ทักทายและเล่าปัญหาเครื่อง",
+  "reason": "Opening chat: greets viewers, explains technical trouble and what game today (Becastled). Transcript garbled.",
+  "score": 0.5
+ },
+ {
+  "id": "v12-02",
+  "source_id": "v12",
+  "start_s": 990.0,
+  "end_s": 1075.0,
+  "category": "gameplay",
+  "title_th": "สร้างกำแพงเมืองใน Becastled",
+  "reason": "Base-building/defence gameplay with streamer commenting; line near 16:54 about wanting the 'real' unit is garbled.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-03",
+  "source_id": "v12",
+  "start_s": 3599.08,
+  "end_s": 3680.0,
+  "category": "gameplay",
+  "title_th": "ศึกกลางคืนรุกเข้ากำแพง",
+  "reason": "Night attack on the wall with arrow volleys and enemy swarm; loudness peak, no usable transcript.",
+  "score": 0.6
+ },
+ {
+  "id": "v12-04",
+  "source_id": "v12",
+  "start_s": 4630.0,
+  "end_s": 4710.0,
+  "category": "gameplay",
+  "title_th": "ไฟลุกกลางศึกป้อมปราการ",
+  "reason": "Fire/explosion hits the wall during enemy assault; tense moment, transcript empty.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-05",
+  "source_id": "v12",
+  "start_s": 5170.0,
+  "end_s": 5250.0,
+  "category": "gameplay",
+  "title_th": "ปะทะกันบนกำแพงหิมะ",
+  "reason": "Large clash on the snowy wall at night with colourful unit swarms; transcript empty.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-06",
+  "source_id": "v12",
+  "start_s": 6330.0,
+  "end_s": 6490.0,
+  "category": "gameplay",
+  "title_th": "แพ้เกม! ปราสาทแตก",
+  "reason": "Night assault leads to losing the game; streamer says 'ถือว่าเราแพ้เกมแล้ว' and reacts at 'มีตอนท้ายหรอ? เดี๋ยวๆๆ' before the title screen.",
+  "score": 0.7
+ },
+ {
+  "id": "v13-01",
+  "source_id": "v13",
+  "start_s": 204.37,
+  "end_s": 304.64,
+  "category": "fun",
+  "title_th": "เปิดเกม Becastled เริ่มสตรีม",
+  "reason": "Opening of the Becastled session: streamer greets viewers and says what the game is for today (transcript garbled), over cozy room then game menu.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-02",
+  "source_id": "v13",
+  "start_s": 4770.0,
+  "end_s": 4920.0,
+  "category": "gameplay",
+  "title_th": "ไม้ไม่พอ งบไม่พอ",
+  "reason": "Mid-game resource crunch in the snow season; streamer curses about wood and money running short while managing the wall. Transcript is rough.",
+  "score": 0.55
+ },
+ {
+  "id": "v13-03",
+  "source_id": "v13",
+  "start_s": 6180.27,
+  "end_s": 6280.0,
+  "category": "meme",
+  "title_th": "เฮ้ย! ชมูท่าด้วยหรอ",
+  "reason": "Sudden surprised reaction (Hey! ...) while explaining random seasonal effects on farms; quotable but wording is unclear.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-04",
+  "source_id": "v13",
+  "start_s": 7380.0,
+  "end_s": 7490.0,
+  "category": "gameplay",
+  "title_th": "กำแพงโดนตี ตายไปดูหน่อย",
+  "reason": "Night-time attack on the walls; streamer reacts with exclamations as units die and she checks the damage.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-05",
+  "source_id": "v13",
+  "start_s": 8050.0,
+  "end_s": 8170.0,
+  "category": "fun",
+  "title_th": "ไล่เคลียร์หมากแล้วบ่นยับ",
+  "reason": "Streamer clears an area, jokes and grumbles about food/town upgrades and soldiers while rain falls on the base; mix of banter and play.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-06",
+  "source_id": "v13",
+  "start_s": 13900.0,
+  "end_s": 14010.0,
+  "category": "gameplay",
+  "title_th": "ไม่มีไม้ขาย ศัตรูบุกมาแล้ว",
+  "reason": "Streamer swears at not being able to sell wood, then an enemy raid hits the wall at ~3:52:50.",
+  "score": 0.55
+ },
+ {
+  "id": "v13-07",
+  "source_id": "v13",
+  "start_s": 14560.0,
+  "end_s": 14720.0,
+  "category": "gameplay",
+  "title_th": "ศึกบอสสุดท้ายหน้ากำแพง",
+  "reason": "Climactic fight against a large enemy force/boss near the wall with frantic commentary; transcript has repeated hallucinated words, so wording unverified.",
+  "score": 0.6
+ },
+ {
+  "id": "v13-08",
+  "source_id": "v13",
+  "start_s": 14915.0,
+  "end_s": 14999.21,
+  "category": "fun",
+  "title_th": "คุยส่งท้ายสตรีมก่อนไปนอน",
+  "reason": "End-of-stream chat: reviews the game as fun and enjoyable, says goodbye to chat and goes off to sleep; wording partly garbled.",
+  "score": 0.45
+ }
+]

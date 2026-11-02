@@ -1,0 +1,82 @@
+[
+ {
+  "id": "v08-01",
+  "source_id": "v08",
+  "start_s": 1010,
+  "end_s": 1110,
+  "category": "gameplay",
+  "title_th": "ดีเฟนด์รอบสุดท้ายจนแพ้",
+  "reason": "Defender round on the sand/ice map ending in a DEFEAT screen; streamer reacting. Transcript garbled.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-02",
+  "source_id": "v08",
+  "start_s": 1610,
+  "end_s": 1710,
+  "category": "gameplay",
+  "title_th": "ชนะรอบแล้วบ่นเหนื่อย",
+  "reason": "Opens on a VICTORY screen then a new round with streamer venting about being tired; transcript garbled.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-03",
+  "source_id": "v08",
+  "start_s": 1860,
+  "end_s": 1969.28,
+  "category": "fun",
+  "title_th": "คุยเรื่องเกมตอนรอเมนู",
+  "reason": "Draw result then streamer chats about how losing feels in this game while in menus/battle pass; mostly talk.",
+  "score": 0.55
+ },
+ {
+  "id": "v08-04",
+  "source_id": "v08",
+  "start_s": 3540,
+  "end_s": 3660,
+  "category": "gameplay",
+  "title_th": "บ่นทำไมชอบสู้ในทางแคบ",
+  "reason": "Streamer complains teammates fight in narrow corridors where she can't see; gameplay with live commentary.",
+  "score": 0.75
+ },
+ {
+  "id": "v08-05",
+  "source_id": "v08",
+  "start_s": 4980,
+  "end_s": 5100.24,
+  "category": "gameplay",
+  "title_th": "เก็บระเบิดแล้วบ่นทีมไม่ช่วย",
+  "reason": "Bomb defuse/round play with streamer questioning why enemy takes a detour; ends near match report screen.",
+  "score": 0.65
+ },
+ {
+  "id": "v08-06",
+  "source_id": "v08",
+  "start_s": 5252.48,
+  "end_s": 5354.95,
+  "category": "gameplay",
+  "title_th": "เพื่อนตายในรูอีกแล้ว",
+  "reason": "Gunfights then streamer rants about a teammate dying in a hole ('ตายในรู'), peaking before the VS screen; high loudness.",
+  "score": 0.8
+ },
+ {
+  "id": "v08-07",
+  "source_id": "v08",
+  "start_s": 6059.94,
+  "end_s": 6179.95,
+  "category": "fun",
+  "title_th": "ทีมโหวตยอมแพ้",
+  "reason": "Teammates split up and streamer reacts; surrender vote prompts appear on screen. Transcript partly garbled.",
+  "score": 0.7
+ },
+ {
+  "id": "v08-08",
+  "source_id": "v08",
+  "start_s": 9330.3,
+  "end_s": 9419.93,
+  "category": "gameplay",
+  "title_th": "ด่าเพื่อนยืนหลังคนแพน",
+  "reason": "Streamer scolds a teammate standing behind the pinned/panned player instead of helping.",
+  "score": 0.7
+ }
+]

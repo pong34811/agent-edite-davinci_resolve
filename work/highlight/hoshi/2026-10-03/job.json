@@ -1,0 +1,16 @@
+{
+ "INPUT_DIR": "Z:/hoshi/2026-10-03",
+ "CHANNEL": "hoshi",
+ "JOB": "2026-10-03",
+ "CLIP_MIN_S": 30,
+ "CLIP_MAX_S": 180,
+ "CATEGORIES": [
+  "gameplay",
+  "fun",
+  "meme"
+ ],
+ "CLIPS_PER_VIDEO": "4-8",
+ "ASPECT": "16:9",
+ "LANGUAGE": "th",
+ "APPROVAL": "auto"
+}

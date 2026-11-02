@@ -1,0 +1,82 @@
+[
+ {
+  "id": "v09-01",
+  "source_id": "v09",
+  "start_s": 213.51,
+  "end_s": 280.0,
+  "category": "fun",
+  "title_th": "พูดคุยช่วงเริ่มไลฟ์",
+  "reason": "Streamer chats to camera in the opening segment, with a lively expression. Transcript is garbled so the topic is unclear.",
+  "score": 0.5
+ },
+ {
+  "id": "v09-02",
+  "source_id": "v09",
+  "start_s": 3558.61,
+  "end_s": 3648.87,
+  "category": "gameplay",
+  "title_th": "ลุ้นยิงปะทะในรอบ Strinova",
+  "reason": "Round of the Strinova shooter with the streamer reacting as enemies push in, then a round start countdown.",
+  "score": 0.62
+ },
+ {
+  "id": "v09-03",
+  "source_id": "v09",
+  "start_s": 4211.89,
+  "end_s": 4320.0,
+  "category": "gameplay",
+  "title_th": "ไล่ล่าและโดนฮิตกลางแมป",
+  "reason": "Fast gameplay with the streamer commenting, ending in a kill/terminated frame around 1:11:00.",
+  "score": 0.6
+ },
+ {
+  "id": "v09-04",
+  "source_id": "v09",
+  "start_s": 5643.5,
+  "end_s": 5747.68,
+  "category": "fun",
+  "title_th": "สงสัยโดนโกงจนต้องกดรีพอร์ต",
+  "reason": "Streamer complains about a suspected wallhacker, and the screen shows the report menu. Wording is garbled.",
+  "score": 0.65
+ },
+ {
+  "id": "v09-05",
+  "source_id": "v09",
+  "start_s": 7220.0,
+  "end_s": 7322.25,
+  "category": "gameplay",
+  "title_th": "เสียงหลุดตอนโดนยิงรัว",
+  "reason": "Streamer reacts loudly in a hero shooter round (Round start, 404 container area). Exact lines are unclear.",
+  "score": 0.58
+ },
+ {
+  "id": "v09-06",
+  "source_id": "v09",
+  "start_s": 8955.0,
+  "end_s": 9075.0,
+  "category": "gameplay",
+  "title_th": "บ่นเพื่อนร่วมทีมยิงหลัง",
+  "reason": "Streamer questions a teammate about being shot in the back before the round starts. Transcript is shaky.",
+  "score": 0.62
+ },
+ {
+  "id": "v09-07",
+  "source_id": "v09",
+  "start_s": 10619.76,
+  "end_s": 10691.81,
+  "category": "gameplay",
+  "title_th": "หลบหนีรอบสุดท้ายแล้วร้องโอ้ย",
+  "reason": "Defender round where the bomb carrier is knocked down, with a groan at 2:57:26.",
+  "score": 0.6
+ },
+ {
+  "id": "v09-08",
+  "source_id": "v09",
+  "start_s": 13073.66,
+  "end_s": 13161.89,
+  "category": "meme",
+  "title_th": "ระบายเกลียดการโดนโฟกัสคนเดียว",
+  "reason": "In the lobby the streamer rants about being focused every game and says she hates it. The rant is quotable but the transcript is garbled.",
+  "score": 0.7
+ }
+]

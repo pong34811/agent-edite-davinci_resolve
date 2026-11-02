@@ -1,0 +1,62 @@
+[
+ {
+  "id": "v02-01",
+  "source_id": "v02",
+  "start_s": 198.69,
+  "end_s": 292.06,
+  "category": "fun",
+  "title_th": "คุยกับแชทช่วงต้นไลฟ์ เล่าว่าเล่นเกมนี้มาหลายรอบ",
+  "reason": "Early-stream chat on the VTuber model; she talks about having replayed this game many times and what the mode is like. Transcript is garbled.",
+  "score": 0.5
+ },
+ {
+  "id": "v02-02",
+  "source_id": "v02",
+  "start_s": 599.07,
+  "end_s": 689.95,
+  "category": "fun",
+  "title_th": "ตั้งค่าหน้าจอไลฟ์ เจอวิธีใหม่",
+  "reason": "She fiddles with window capture and settings and has an 'oh, we can do that?' realisation. Content is guessed from garbled transcript and sheet.",
+  "score": 0.45
+ },
+ {
+  "id": "v02-03",
+  "source_id": "v02",
+  "start_s": 1196.69,
+  "end_s": 1262.85,
+  "category": "gameplay",
+  "title_th": "กวาดห้องจนจบภารกิจ",
+  "reason": "Isometric top-down shooter: she clears a blood-soaked lab room and the 'Mission Complete' screen shows at about 20:55.",
+  "score": 0.6
+ },
+ {
+  "id": "v02-04",
+  "source_id": "v02",
+  "start_s": 1640.52,
+  "end_s": 1730.5,
+  "category": "gameplay",
+  "title_th": "ตอบแชทว่าเกมยากไหมระหว่างเล่น",
+  "reason": "Mid-gameplay she answers a chat question about difficulty, saying she's replayed it so often she remembers where everything is. Visible action is a bloody corridor run.",
+  "score": 0.6
+ },
+ {
+  "id": "v02-05",
+  "source_id": "v02",
+  "start_s": 3120.0,
+  "end_s": 3236.0,
+  "category": "gameplay",
+  "title_th": "ด่านเขียวสุดท้ายก่อนจอดับ",
+  "reason": "Chaotic green-tinted level with heavy effects; she says she can't hold this spot any more. The level ends in a black screen at about 53:55.",
+  "score": 0.55
+ },
+ {
+  "id": "v02-06",
+  "source_id": "v02",
+  "start_s": 5609.79,
+  "end_s": 5737.8,
+  "category": "fun",
+  "title_th": "คุยสรุปเกมหลังเล่นจบ ก่อนปิดไลฟ์",
+  "reason": "After finishing at the menu she goes to the face cam and chats about the first game vs the sequels and unit design, then wraps up with a laugh. Transcript is garbled.",
+  "score": 0.55
+ }
+]

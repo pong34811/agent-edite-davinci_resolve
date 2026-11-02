@@ -1,0 +1,44 @@
+{
+  "INPUT_DIR": "Z:\\Aommi-mama\\2026-09-aomimama",
+  "CHANNEL": "Aommimama",
+  "JOB": "2026-09-aomimama",
+  "CLIP_MIN_S": 30,
+  "CLIP_MAX_S": 180,
+  "CATEGORIES": [
+    "gameplay",
+    "fun",
+    "meme"
+  ],
+  "CLIPS_PER_VIDEO": "4-8",
+  "ASPECT": "16:9",
+  "LANGUAGE": "th",
+  "APPROVAL": "auto",
+  "RESOLVE_PROJECTS": {
+    "aomimama-2026-09-p1": [
+      "v01",
+      "v02",
+      "v03",
+      "v04",
+      "v05",
+      "v06",
+      "v07"
+    ],
+    "aomimama-2026-09-p2": [
+      "v08",
+      "v09",
+      "v10",
+      "v11",
+      "v12",
+      "v13"
+    ]
+  },
+  "PLAYBACK_FPS_USER_CONFIRMED": 60,
+  "TRANSCRIBE_PAD_S": 90,
+  "TIMELINE_NAME_FORMAT": "{ชื่อคลิป}-{ชื่อเกม}-vdo",
+  "GAME_FROM_FILENAME": true,
+  "GAME_OVERRIDES": {
+    "หงุดหงิด ฉุนเฉียว": "League of Legends",
+    "Minecraft": "Minecraft"
+  },
+  "TIMELINE_FPS": 60
+}

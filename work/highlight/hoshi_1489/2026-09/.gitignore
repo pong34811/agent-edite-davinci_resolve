@@ -1,0 +1,6 @@
+audio/
+frames/
+transcripts/
+scores/
+proxy/
+*.log

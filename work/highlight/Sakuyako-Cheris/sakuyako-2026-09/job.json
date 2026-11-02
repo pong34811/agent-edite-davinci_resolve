@@ -1,0 +1,17 @@
+{
+  "INPUT_DIR": "G:\\My Drive\\Projects\\Sakuyako-Cheris\\sakuyako-2026-09",
+  "CHANNEL": "Sakuyako-Cheris",
+  "JOB": "sakuyako-2026-09",
+  "CLIP_MIN_S": 30,
+  "CLIP_MAX_S": 180,
+  "CATEGORIES": [
+    "gameplay",
+    "fun",
+    "meme"
+  ],
+  "CLIPS_PER_VIDEO": "3-4+",
+  "ASPECT": "16:9",
+  "LANGUAGE": "th",
+  "APPROVAL": "auto",
+  "TIMELINE_NAME_FORMAT": "{ชื่อคลิป}-vdo"
+}

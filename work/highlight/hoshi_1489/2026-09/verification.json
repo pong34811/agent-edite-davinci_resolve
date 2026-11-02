@@ -1,0 +1,26 @@
+{
+  "project": "hoshi-2026-09",
+  "project_id": "24933a54-2baa-43ff-ae35-eecf086ae2dd",
+  "fps": 60,
+  "resolution": [1920, 1080],
+  "pytest": "33 passed in 2.08s",
+  "timeline_list_execution": "exec_bfcb21fcda09",
+  "timeline_count": 7,
+  "archive_count": 0,
+  "readback_summary_not_raw_responses": true,
+  "timelines": [
+    {"candidate":"v01-01","id":"546da5c4-e9ee-4e27-8932-7ebc3208ec3e","source_start":39000,"source_end":42736,"video_frames":3736,"audio_frames":3736,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_3de0ca44412e","exec_b1adefc0be60"]},
+    {"candidate":"v01-02","id":"72344e0b-aef6-4a3b-80ef-5b7ab1dc6cbe","source_start":178257,"source_end":183600,"video_frames":5343,"audio_frames":5343,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_f1705f41f74e"]},
+    {"candidate":"v01-03","id":"e13b982d-cae0-4651-a88a-1ec96f970e21","source_start":232389,"source_end":238823,"video_frames":6434,"audio_frames":6434,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_9ebdb30b8eee"]},
+    {"candidate":"v01-04","id":"38baf585-c9a4-4023-9b75-63a9b329a431","source_start":300106,"source_end":303720,"video_frames":3614,"audio_frames":3614,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_5d2abb0232a7"]},
+    {"candidate":"v01-05","id":"29055c44-e88b-4e0d-9484-73a2cb8cea60","source_start":474172,"source_end":478095,"video_frames":3923,"audio_frames":3923,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_342db8e070ad"]},
+    {"candidate":"v01-06","id":"bbd754d6-78ee-48ac-83ef-a953fb05cd28","source_start":549568,"source_end":556816,"video_frames":7248,"audio_frames":7248,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_d273161fed2d"]},
+    {"candidate":"v01-07","id":"7bd3f1b8-137b-4da7-a1a7-610b8f6ba9a5","source_start":675284,"source_end":681925,"video_frames":6641,"audio_frames":6641,"source_fps":60,"gap_count":0,"overlap_count":0,"evidence":["exec_833d0accfd40"]}
+  ],
+  "first_frame_checks": [
+    {"candidate":"v01-01","path":"C:/Users/warit/AppData/Local/hermes/cache/images/img_8ccccd7d1b26.jpg","non_black":true,"observation":"VTuber talking layout and chat"},
+    {"candidate":"v01-03","path":"C:/Users/warit/AppData/Local/hermes/cache/images/img_2b0252c8771e.jpg","non_black":true,"observation":"Dark gameplay with walkway, lights and avatar overlay"},
+    {"candidate":"v01-06","path":"C:/Users/warit/AppData/Local/hermes/cache/images/img_082d848ad4ec.jpg","non_black":true,"observation":"VTuber talking layout and Top Donors list"}
+  ],
+  "warnings": ["All seven clips: exact dialogue, payoff and sentence-complete cut points not verified by listening; ASR-based rough selections", "Frame capture failed to restore original mov with blank codec; render settings now jpg/YUV420_8. User must choose a delivery preset before any future render.", "Capture playhead restoration failed; will intentionally leave first timeline at frame zero instead."]
+}

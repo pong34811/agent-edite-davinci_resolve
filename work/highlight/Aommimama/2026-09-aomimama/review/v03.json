@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v03-01",
+  "source_id": "v03",
+  "start_s": 1020.0,
+  "end_s": 1100.0,
+  "category": "fun",
+  "title_th": "ลืมแชร์จอ จบของวีทูปเบอร์ที่ไม่เตรียมตัว",
+  "reason": "Streamer fumbles the launcher/server join with the friend and jokes it is the end of a VTuber who forgot to prepare; chatty banter over idle screen.",
+  "score": 0.6
+ },
+ {
+  "id": "v03-02",
+  "source_id": "v03",
+  "start_s": 1422.0,
+  "end_s": 1530.0,
+  "category": "gameplay",
+  "title_th": "หนาวติดลบ 16 ต้องถือลาวา",
+  "reason": "Freezing Minecraft start, -15/-16 °C, joking about what sins they committed and having to hold lava all the time.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-03",
+  "source_id": "v03",
+  "start_s": 1840.54,
+  "end_s": 1925.0,
+  "category": "gameplay",
+  "title_th": "ถือถังลาวาไว้กันหนาว",
+  "reason": "Cold-survival scramble with a lava bucket, friend shouting advice and panic over freezing.",
+  "score": 0.6
+ },
+ {
+  "id": "v03-04",
+  "source_id": "v03",
+  "start_s": 2175.0,
+  "end_s": 2244.8,
+  "category": "meme",
+  "title_th": "พี่น้องไม่เคยช่วยอะไรเลย",
+  "reason": "Friend arrives right after the zombie fight is over; streamer rants about 'brotherhood never helping'.",
+  "score": 0.65
+ },
+ {
+  "id": "v03-05",
+  "source_id": "v03",
+  "start_s": 2457.99,
+  "end_s": 2573.99,
+  "category": "gameplay",
+  "title_th": "อย่าใส่ร้ายผม เกือบจมลาวา",
+  "reason": "Cave mining with lava plugging accusations and a near fall into a lava pit; lively co-op banter.",
+  "score": 0.7
+ },
+ {
+  "id": "v03-06",
+  "source_id": "v03",
+  "start_s": 3235.0,
+  "end_s": 3315.0,
+  "category": "gameplay",
+  "title_th": "เจอเพชรแล้ว! ยิส!",
+  "reason": "After long digging at Y-54 and praying for diamonds, streamer finds one and cheers with laughter.",
+  "score": 0.75
+ },
+ {
+  "id": "v03-07",
+  "source_id": "v03",
+  "start_s": 5745.0,
+  "end_s": 5835.0,
+  "category": "fun",
+  "title_th": "เจอทางกลับบ้านแต่เพื่อนไปห้องน้ำ",
+  "reason": "Finds the way back home through the cave just as the friend steps away; exasperated reaction.",
+  "score": 0.6
+ }
+]

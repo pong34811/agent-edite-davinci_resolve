@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v07-01",
+  "source_id": "v07",
+  "start_s": 2166,
+  "end_s": 2236,
+  "category": "gameplay",
+  "title_th": "ไฟต์ในเลนกับเสียงร้องเฮ้ย",
+  "reason": "League of Legends lane/fight action around 0:36 with the streamer reacting ('เฮ้ย!'); frames show live gameplay. Transcript garbled.",
+  "score": 0.6
+ },
+ {
+  "id": "v07-02",
+  "source_id": "v07",
+  "start_s": 2560,
+  "end_s": 2623.72,
+  "category": "gameplay",
+  "title_th": "ทีมไฟต์ถูกชัตดาวน์",
+  "reason": "Teamfight with a SHUT DOWN banner and loud shouting at the team; transcript has laughing loop, exact words unclear.",
+  "score": 0.7
+ },
+ {
+  "id": "v07-03",
+  "source_id": "v07",
+  "start_s": 3130,
+  "end_s": 3200,
+  "category": "gameplay",
+  "title_th": "เริ่มเกมแล้วเจอไฟต์",
+  "reason": "Early-game action after champ select with chat visible and streamer commenting; content guessed from frames.",
+  "score": 0.55
+ },
+ {
+  "id": "v07-04",
+  "source_id": "v07",
+  "start_s": 8590,
+  "end_s": 8735,
+  "category": "gameplay",
+  "title_th": "หัวยังไม่ฟู ตายก่อนเลย",
+  "reason": "Streamer gets killed mid-fight, says his hair isn't fluffy yet and laughs, then more panicked reactions ('โอ้ย โดน'). Funny gameplay reactions.",
+  "score": 0.8
+ },
+ {
+  "id": "v07-05",
+  "source_id": "v07",
+  "start_s": 10811.05,
+  "end_s": 10870.88,
+  "category": "meme",
+  "title_th": "ออกเมื่อไหร่มีตายเมื่อนั้น",
+  "reason": "Short quotable line 'ออกเมื่อไหร่มีตายเมื่อนั้น' right as the game starts after champ select; the frame shows the Ahri champ select then gameplay.",
+  "score": 0.6
+ },
+ {
+  "id": "v07-06",
+  "source_id": "v07",
+  "start_s": 14450,
+  "end_s": 14520,
+  "category": "meme",
+  "title_th": "ด่าทีมรัวๆ ไอ้เชี่ยทีมตาก",
+  "reason": "Rapid-fire rant at teammates during a match ('ไอ้เชี่ย...มึงจะตีเขาเมื่อไหร่'), over-the-top frustration.",
+  "score": 0.7
+ },
+ {
+  "id": "v07-07",
+  "source_id": "v07",
+  "start_s": 17285,
+  "end_s": 17353.67,
+  "category": "fun",
+  "title_th": "ลาสตรีม ขอบคุณทุกคน",
+  "reason": "Streamer talks to camera at the end of the stream thanking viewers and mentioning a toothache and next week's plan; live chat overlay visible.",
+  "score": 0.6
+ }
+]

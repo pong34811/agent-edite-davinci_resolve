@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v06-01",
+  "source_id": "v06",
+  "start_s": 1615,
+  "end_s": 1670,
+  "category": "fun",
+  "title_th": "ลืมเปิดเสียงเพื่อน คุยกับผีมาตั้งนาน",
+  "reason": "Streamer and friend bicker about forgetting to feed the friend's voice into the stream ('talking to a ghost all this time'), ending in laughter.",
+  "score": 0.6
+ },
+ {
+  "id": "v06-02",
+  "source_id": "v06",
+  "start_s": 1799,
+  "end_s": 1919,
+  "category": "gameplay",
+  "title_th": "ลืมเอาอาหาร ต้องกินเนื้อซอมบี้",
+  "reason": "Mining trip where the streamer forgot food and zombies swarm in while they joke about eating zombie flesh.",
+  "score": 0.62
+ },
+ {
+  "id": "v06-03",
+  "source_id": "v06",
+  "start_s": 2240,
+  "end_s": 2305,
+  "category": "gameplay",
+  "title_th": "ซอมบี้มาได้ไงวะ!",
+  "reason": "Zombies appear in the mine and the streamer panics about how they got in, wondering about a technical glitch.",
+  "score": 0.6
+ },
+ {
+  "id": "v06-04",
+  "source_id": "v06",
+  "start_s": 4145,
+  "end_s": 4200,
+  "category": "meme",
+  "title_th": "อยากเปลี่ยนร่าง เอาคนไม่มีเสียงในหัวมาเล่นแทน",
+  "reason": "Streamer rants that she wants to swap in a player without voices in their head; quotable line, then a yell.",
+  "score": 0.5
+ },
+ {
+  "id": "v06-05",
+  "source_id": "v06",
+  "start_s": 5151.36,
+  "end_s": 5245,
+  "category": "fun",
+  "title_th": "พี่จ๋าช่วยด้วย เรือไปไหนวะ",
+  "reason": "Chaotic boat/terrain scramble with the friend, shouting for help and bickering about who can steer.",
+  "score": 0.58
+ },
+ {
+  "id": "v06-06",
+  "source_id": "v06",
+  "start_s": 5468.19,
+  "end_s": 5620.81,
+  "category": "gameplay",
+  "title_th": "วิ่งหนีมอนตอนมืดจนเห็นบ้าน",
+  "reason": "Night run back home across snow with mobs chasing, urgent shouting until the house comes into view.",
+  "score": 0.65
+ },
+ {
+  "id": "v06-07",
+  "source_id": "v06",
+  "start_s": 7350,
+  "end_s": 7425,
+  "category": "fun",
+  "title_th": "ออกไม่ได้เลยวะ ฮ่าๆๆ",
+  "reason": "Streamer gets stuck/trapped near the boat and villagers and laughs about not being able to get out.",
+  "score": 0.55
+ }
+]

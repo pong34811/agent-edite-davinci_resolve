@@ -1,0 +1,374 @@
+[
+ {
+  "name": "v01-01_fun_ขอเปิดไลฟ์ให้ดูใหม่ นับ 7 วิ",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 19140,
+    "end_frame": 23689,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-01"
+ },
+ {
+  "name": "v01-02_fun_ของขวัญชิ้นใหญ่มีรอยฟันกัด",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 78424,
+    "end_frame": 82379,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-02"
+ },
+ {
+  "name": "v01-03_meme_จดชื่อไว้ในเดธโน้ต",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 88319,
+    "end_frame": 93278,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-03"
+ },
+ {
+  "name": "v01-04_meme_ลูกอีกคนต้องสมัครเป็นพี่   คนปิดหลอดหาย",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 239009,
+    "end_frame": 242808,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-04"
+ },
+ {
+  "name": "v01-05_fun_แฟนอาร์ตมาไวมาก น่ารักจนอยากเอาเข้าไลฟ์",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 275280,
+    "end_frame": 278938,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-05"
+ },
+ {
+  "name": "v01-06_fun_คำอวยพรเริ่มสแปมแล้ว!",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 341565,
+    "end_frame": 345223,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-06"
+ },
+ {
+  "name": "v01-07_meme_ความแค้นส่วนตัว กำตดคุณเปอร์",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 446012,
+    "end_frame": 450665,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-07"
+ },
+ {
+  "name": "v01-08_meme_ฝากไตไว้ในตู้ ATM ฝากหัวใจไว้ที่ผม",
+  "clip_infos": [
+   {
+    "clip_id": "67b130de-11f6-43a1-9270-1f0ab79e2a86",
+    "start_frame": 467359,
+    "end_frame": 470935,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-08"
+ },
+ {
+  "name": "v02-01_gameplay_ผีไล่ในห้องมืด ตกใจสุดๆ",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 87600,
+    "end_frame": 93600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-01"
+ },
+ {
+  "name": "v02-02_gameplay_ไล่ล่าหนีผีกวางคนเดียว",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 111092,
+    "end_frame": 116527,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-02"
+ },
+ {
+  "name": "v02-03_gameplay_หลบผีในออฟฟิศมืด",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 194120,
+    "end_frame": 199500,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-03"
+ },
+ {
+  "name": "v02-04_gameplay_ทางตันในโรงแรม ผีมา",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 307434,
+    "end_frame": 313105,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-04"
+ },
+ {
+  "name": "v02-05_gameplay_น้ำแดงต้องห้ามกับเพลงประหลาด",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 386712,
+    "end_frame": 390544,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-05"
+ },
+ {
+  "name": "v02-06_gameplay_กระโดดลงสระ ตามหาทางออก",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 408418,
+    "end_frame": 413798,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-06"
+ },
+ {
+  "name": "v02-07_fun_โฮชิหล่อเกินจนมีแต่คนมาจีบ",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 502589,
+    "end_frame": 507600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-07"
+ },
+ {
+  "name": "v02-08_fun_คุยเรื่องท็อปโดเนตและคิ้วหน้า",
+  "clip_infos": [
+   {
+    "clip_id": "6bdc1ee0-8c9d-48e1-8a08-91002245c4c8",
+    "start_frame": 558180,
+    "end_frame": 562982,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-08"
+ },
+ {
+  "name": "v03-01_fun_แว่นดำทัดหัว ฟีลหล่อ",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 30780,
+    "end_frame": 34580,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-01"
+ },
+ {
+  "name": "v03-02_meme_บ้านนี้มันน่ากลัว อาหวังโปรแม็กซ์",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 81587,
+    "end_frame": 89367,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-02"
+ },
+ {
+  "name": "v03-03_fun_อายุโฮชิ 3,100 ปี",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 153627,
+    "end_frame": 159556,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-03"
+ },
+ {
+  "name": "v03-04_meme_โฮชิ = ดาว+จิ้งจอก+แกะ+ลูกชิ้นหมา",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 256800,
+    "end_frame": 261900,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-04"
+ },
+ {
+  "name": "v03-05_meme_อาชีพนักดับเพลิงจุดไฟเอง",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 440419,
+    "end_frame": 446400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-05"
+ },
+ {
+  "name": "v03-06_fun_คดีโฮชิเข้าบ่อนตอนอายุไม่ถึง",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 451096,
+    "end_frame": 460132,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-06"
+ },
+ {
+  "name": "v03-07_gameplay_เกมมืด ผมตาย + ฝันดีจุ๊บ",
+  "clip_infos": [
+   {
+    "clip_id": "000035b1-5aeb-4538-b3c7-ff25d1146783",
+    "start_frame": 628785,
+    "end_frame": 633332,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-07"
+ },
+ {
+  "name": "v04-01_gameplay_ผีวิ่งไล่ใน Backrooms ทีมกรี๊ดแตก",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 64001,
+    "end_frame": 68400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-01"
+ },
+ {
+  "name": "v04-02_gameplay_ผีปีนได้!  ตกใจกันทั้งทีม",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 100500,
+    "end_frame": 105300,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-02"
+ },
+ {
+  "name": "v04-03_fun_คุยเรื่องตัดคลิปและไอจีหลังของโนว่า",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 162300,
+    "end_frame": 168600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-03"
+ },
+ {
+  "name": "v04-04_gameplay_แข่งหนีผีสุดโกลาหล รอดทั้งทีม",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 267000,
+    "end_frame": 275400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-04"
+ },
+ {
+  "name": "v04-05_fun_เงินค่าโมเดล ให้โดเนตมาเลย",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 363900,
+    "end_frame": 369012,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-05"
+ },
+ {
+  "name": "v04-06_gameplay_ชิบหายแล้วทุกคน! Dandy ตัวใหญ่",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 437650,
+    "end_frame": 443403,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-06"
+ },
+ {
+  "name": "v04-07_meme_ขอแสนนึงเดี๋ยวเล่นเลย ไม่ขายวิญญาณ",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 481075,
+    "end_frame": 486600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-07"
+ },
+ {
+  "name": "v04-08_meme_ทุกอย่างมีราคา ขอแสนนึงหลับ 25 ชั่วโมง",
+  "clip_infos": [
+   {
+    "clip_id": "1b93a8e7-eedc-47bf-8228-73288853f598",
+    "start_frame": 496838,
+    "end_frame": 501569,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-08"
+ }
+]

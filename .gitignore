@@ -34,3 +34,12 @@ scripts/scratch/*
 
 # Project DB copies stay on disk as local rollback points, not in git (large, contain project data)
 backups/**/*.sqlite
+
+# Highlight pipeline (scripts/highlight): heavy per-job artifacts stay on disk only
+work/highlight/**/audio/
+work/highlight/**/frames/
+work/highlight/**/transcripts/
+work/highlight/**/scores/
+work/highlight/**/proxy/
+work/highlight/**/review/source_previews/
+scripts/highlight/.venv/

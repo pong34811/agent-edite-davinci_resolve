@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v03-01",
+  "source_id": "v03",
+  "start_s": 513.0,
+  "end_s": 576.34,
+  "category": "fun",
+  "title_th": "แว่นดำทัดหัว ฟีลหล่อ",
+  "reason": "Hoshi bantering about net lag and wearing sunglasses on his head to look cool; sunglasses avatar toggle visible.",
+  "score": 0.78
+ },
+ {
+  "id": "v03-02",
+  "source_id": "v03",
+  "start_s": 1359.79,
+  "end_s": 1489.45,
+  "category": "meme",
+  "title_th": "บ้านนี้มันน่ากลัว อาหวังโปรแม็กซ์",
+  "reason": "Running 'อาหวัง' scare bit with exaggerated panicked reactions to the guest while drawing.",
+  "score": 0.8
+ },
+ {
+  "id": "v03-03",
+  "source_id": "v03",
+  "start_s": 2560.45,
+  "end_s": 2659.26,
+  "category": "fun",
+  "title_th": "อายุโฮชิ 3,100 ปี",
+  "reason": "Age-comparison banter with guest (minus ages, Hoshi 3,100) ending in a joking goodbye.",
+  "score": 0.8
+ },
+ {
+  "id": "v03-04",
+  "source_id": "v03",
+  "start_s": 4280.0,
+  "end_s": 4365.0,
+  "category": "meme",
+  "title_th": "โฮชิ = ดาว+จิ้งจอก+แกะ+ลูกชิ้นหมา",
+  "reason": "Guest explains Hoshi's absurd origin (star+fox+sheep+dog meatball); quotable lore bit.",
+  "score": 0.85
+ },
+ {
+  "id": "v03-05",
+  "source_id": "v03",
+  "start_s": 7340.32,
+  "end_s": 7440.0,
+  "category": "meme",
+  "title_th": "อาชีพนักดับเพลิงจุดไฟเอง",
+  "reason": "Mock-profession joke: set fire to houses then put them out; absurd riff.",
+  "score": 0.75
+ },
+ {
+  "id": "v03-06",
+  "source_id": "v03",
+  "start_s": 7518.26,
+  "end_s": 7668.86,
+  "category": "fun",
+  "title_th": "คดีโฮชิเข้าบ่อนตอนอายุไม่ถึง",
+  "reason": "Mock court case over Hoshi entering gambling parlour underage; escalating excuses and guest cross-examining.",
+  "score": 0.9
+ },
+ {
+  "id": "v03-07",
+  "source_id": "v03",
+  "start_s": 10479.75,
+  "end_s": 10555.54,
+  "category": "gameplay",
+  "title_th": "เกมมืด ผมตาย + ฝันดีจุ๊บ",
+  "reason": "Tense dark horror-game run with panic deaths, countdown, then sign-off kisses.",
+  "score": 0.72
+ }
+]

@@ -1,0 +1,17 @@
+{
+  "INPUT_DIR": "Z:\\hoshi\\2026-09",
+  "CHANNEL": "hoshi_1489",
+  "JOB": "2026-09",
+  "CLIP_MIN_S": 30,
+  "CLIP_MAX_S": 180,
+  "CATEGORIES": ["gameplay", "fun", "meme"],
+  "CLIPS_PER_VIDEO": "4-8",
+  "ASPECT": "16:9",
+  "LANGUAGE": "th",
+  "APPROVAL": "auto",
+  "RESOLVE_PROJECT": "hoshi-2026-09",
+  "PLAYBACK_FPS_USER_CONFIRMED": 60,
+  "TRANSCRIBE_PAD_S": 90,
+  "GAME_NAME": "Backrooms",
+  "TIMELINE_NAME_FORMAT": "{ชื่อคลิป}-{ชื่อเกม}-vdo"
+}

@@ -1,0 +1,82 @@
+[
+ {
+  "id": "v13-01",
+  "source_id": "v13",
+  "start_s": 204.37,
+  "end_s": 304.64,
+  "category": "fun",
+  "title_th": "เปิดเกม Becastled เริ่มสตรีม",
+  "reason": "Opening of the Becastled session: streamer greets viewers and says what the game is for today (transcript garbled), over cozy room then game menu.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-02",
+  "source_id": "v13",
+  "start_s": 4770.0,
+  "end_s": 4920.0,
+  "category": "gameplay",
+  "title_th": "ไม้ไม่พอ งบไม่พอ",
+  "reason": "Mid-game resource crunch in the snow season; streamer curses about wood and money running short while managing the wall. Transcript is rough.",
+  "score": 0.55
+ },
+ {
+  "id": "v13-03",
+  "source_id": "v13",
+  "start_s": 6180.27,
+  "end_s": 6280.0,
+  "category": "meme",
+  "title_th": "เฮ้ย! ชมูท่าด้วยหรอ",
+  "reason": "Sudden surprised reaction (Hey! ...) while explaining random seasonal effects on farms; quotable but wording is unclear.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-04",
+  "source_id": "v13",
+  "start_s": 7380.0,
+  "end_s": 7490.0,
+  "category": "gameplay",
+  "title_th": "กำแพงโดนตี ตายไปดูหน่อย",
+  "reason": "Night-time attack on the walls; streamer reacts with exclamations as units die and she checks the damage.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-05",
+  "source_id": "v13",
+  "start_s": 8050.0,
+  "end_s": 8170.0,
+  "category": "fun",
+  "title_th": "ไล่เคลียร์หมากแล้วบ่นยับ",
+  "reason": "Streamer clears an area, jokes and grumbles about food/town upgrades and soldiers while rain falls on the base; mix of banter and play.",
+  "score": 0.5
+ },
+ {
+  "id": "v13-06",
+  "source_id": "v13",
+  "start_s": 13900.0,
+  "end_s": 14010.0,
+  "category": "gameplay",
+  "title_th": "ไม่มีไม้ขาย ศัตรูบุกมาแล้ว",
+  "reason": "Streamer swears at not being able to sell wood, then an enemy raid hits the wall at ~3:52:50.",
+  "score": 0.55
+ },
+ {
+  "id": "v13-07",
+  "source_id": "v13",
+  "start_s": 14560.0,
+  "end_s": 14720.0,
+  "category": "gameplay",
+  "title_th": "ศึกบอสสุดท้ายหน้ากำแพง",
+  "reason": "Climactic fight against a large enemy force/boss near the wall with frantic commentary; transcript has repeated hallucinated words, so wording unverified.",
+  "score": 0.6
+ },
+ {
+  "id": "v13-08",
+  "source_id": "v13",
+  "start_s": 14915.0,
+  "end_s": 14999.21,
+  "category": "fun",
+  "title_th": "คุยส่งท้ายสตรีมก่อนไปนอน",
+  "reason": "End-of-stream chat: reviews the game as fun and enjoyable, says goodbye to chat and goes off to sleep; wording partly garbled.",
+  "score": 0.45
+ }
+]

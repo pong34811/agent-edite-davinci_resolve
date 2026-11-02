@@ -1,0 +1,82 @@
+[
+ {
+  "id": "v01-01",
+  "source_id": "v01",
+  "start_s": 195.05,
+  "end_s": 285.65,
+  "category": "fun",
+  "title_th": "เปิดสตรีมทักทายก่อนเริ่มเกม",
+  "reason": "Opening greeting over the live-chat intro screen before she starts the game; transcript is garbled so content is a guess.",
+  "score": 0.5
+ },
+ {
+  "id": "v01-02",
+  "source_id": "v01",
+  "start_s": 2539.86,
+  "end_s": 2632.01,
+  "category": "gameplay",
+  "title_th": "ตามหาห้องที่หายไป",
+  "reason": "Gameplay while she can't find the remaining target/room and talks it through with chat; cues from transcript are weak.",
+  "score": 0.5
+ },
+ {
+  "id": "v01-03",
+  "source_id": "v01",
+  "start_s": 2876.12,
+  "end_s": 2948.92,
+  "category": "meme",
+  "title_th": "ฝูงเอเลี่ยนบุกจนร้องลั่น",
+  "reason": "Big alien swarm in the corridor with high-energy screaming and swearing at the peak (~0:48:43).",
+  "score": 0.65
+ },
+ {
+  "id": "v01-04",
+  "source_id": "v01",
+  "start_s": 3461.57,
+  "end_s": 3570.03,
+  "category": "fun",
+  "title_th": "คุยเรื่องอายุและเด็กรุ่นหลาน",
+  "reason": "Chat banter about age and generations (kids/grandkid-aged viewers) while the map is being cleared; the score-1.00 loudest window.",
+  "score": 0.7
+ },
+ {
+  "id": "v01-05",
+  "source_id": "v01",
+  "start_s": 3749.97,
+  "end_s": 3829.63,
+  "category": "fun",
+  "title_th": "ซื้อปืนไม่พอเงินขาดไปพันเดียว",
+  "reason": "Shop screen banter about price and being 1,000 short on money, with laughing; punchline partly guessed.",
+  "score": 0.55
+ },
+ {
+  "id": "v01-06",
+  "source_id": "v01",
+  "start_s": 7968.44,
+  "end_s": 8060.05,
+  "category": "gameplay",
+  "title_th": "เตรียมป้อมสู้ศึกใหญ่",
+  "reason": "Mission completes then she sets turrets and gears up for the next level with excited swearing; mixed cutscene and menu.",
+  "score": 0.55
+ },
+ {
+  "id": "v01-07",
+  "source_id": "v01",
+  "start_s": 9490.46,
+  "end_s": 9639.65,
+  "category": "gameplay",
+  "title_th": "ล่อบอสตัวเหนียวจนเหนื่อย",
+  "reason": "Long fight with a very tanky enemy, her cursing at how tough it is, ending in a frustrated outburst.",
+  "score": 0.6
+ },
+ {
+  "id": "v01-08",
+  "source_id": "v01",
+  "start_s": 10809.64,
+  "end_s": 10867.61,
+  "category": "fun",
+  "title_th": "จบเกมในครั้งเดียว",
+  "reason": "Reaction at finishing the game on a single run, on the ending screen; transcript garbled.",
+  "score": 0.45
+ }
+]

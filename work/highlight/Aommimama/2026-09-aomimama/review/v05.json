@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v05-01",
+  "source_id": "v05",
+  "start_s": 422.17,
+  "end_s": 502.94,
+  "category": "gameplay",
+  "title_th": "ไฟต์ใหญ่ในอารีนา",
+  "reason": "Team-fight with colourful ability effects at ~0:07:30 right after augment pick; transcript empty so the beat is judged from the sheet only.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-02",
+  "source_id": "v05",
+  "start_s": 4040.0,
+  "end_s": 4119.52,
+  "category": "meme",
+  "title_th": "เสียงร้องโอ๊ยๆ",
+  "reason": "After picking augments the streamer yelps 'โอ๊ย' repeatedly (1:07:43); Whisper repeats it so the actual length of the yelping is unknown.",
+  "score": 0.6
+ },
+ {
+  "id": "v05-03",
+  "source_id": "v05",
+  "start_s": 4570.0,
+  "end_s": 4675.22,
+  "category": "gameplay",
+  "title_th": "ดับเบิลคิลแล้วโดนฝัง",
+  "reason": "Double-kill around 1:16:27 followed by 'ไม่ต้องฝังฉัน!' at 1:17:48; fast fighting with reactions.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-04",
+  "source_id": "v05",
+  "start_s": 6270.0,
+  "end_s": 6368.62,
+  "category": "gameplay",
+  "title_th": "ไฟต์หน้าป้อม",
+  "reason": "Fights near the turret in the Arena with excited commentary (earlier 'scared' line at 1:41:30); mixed transcript.",
+  "score": 0.65
+ },
+ {
+  "id": "v05-05",
+  "source_id": "v05",
+  "start_s": 6770.0,
+  "end_s": 6870.0,
+  "category": "fun",
+  "title_th": "เมาท์เรื่องสายเล่นเกม",
+  "reason": "Streamer rants/role-plays about passive players ('ลูกแห่งไอ้เพี้ย... มึงกลับไปหาแม่มึง') while gameplay runs; transcript is garbled, so the exact jokes are unverified.",
+  "score": 0.55
+ },
+ {
+  "id": "v05-06",
+  "source_id": "v05",
+  "start_s": 8381.49,
+  "end_s": 8470.0,
+  "category": "gameplay",
+  "title_th": "เพนตาคิลแล้วพ่ายแพ้",
+  "reason": "Pentakill / Shut Down banner at ~2:20:55 followed immediately by the Defeat screen at 2:21:05, with 'ไม่ไหวค่ะ' complaints before.",
+  "score": 0.7
+ },
+ {
+  "id": "v05-07",
+  "source_id": "v05",
+  "start_s": 9000.0,
+  "end_s": 9080.0,
+  "category": "gameplay",
+  "title_th": "ไฟต์ท้ายเกมสุดมัน",
+  "reason": "Close fights with big ability flashes around 2:30:45; transcript line about 'ไม่ได้ขยับเลย' is unclear.",
+  "score": 0.55
+ }
+]

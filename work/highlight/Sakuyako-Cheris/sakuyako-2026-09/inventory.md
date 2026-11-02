@@ -1,0 +1,21 @@
+| source_id | file | codec | resolution | fps | duration | size GB |
+|---|---|---|---|---|---|---|
+| v01 | 7csVdbw-HZU-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 1:34:05 | 1.14 |
+| v02 | ___BSgTZaT8-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 1:42:09 | 1.07 |
+| v03 | _doGDuFZ6V4-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:15:47 | 2.51 |
+| v04 | BpAJgs0jxcs-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:12:14 | 3.63 |
+| v05 | dWrD1X2eimw-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 0:01:42 | 0.03 |
+| v06 | Dx8EllYHlwA-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:05:12 | 2.56 |
+| v07 | Gj6sJz743jo-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 4:27:39 | 3.35 |
+| v08 | gPFWQRDiaN4-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 1:26:44 | 0.97 |
+| v09 | JvGMNSNawgg-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:07:50 | 2.20 |
+| v10 | jYSutB1hEC4-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 0:35:02 | 0.49 |
+| v11 | K3d3txSjKv0-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 1:24:58 | 1.81 |
+| v12 | MKpTF3pRKzI-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 1:54:32 | 1.59 |
+| v13 | nRHnqYlHTCc-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:27:51 | 2.43 |
+| v14 | P1TqW5M1pJ8-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:17:59 | 3.66 |
+| v15 | PEPGEieTGcU-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 2:40:07 | 2.27 |
+| v16 | rD9Mb90U_lc-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:25:04 | 2.48 |
+| v17 | SoHKKvCxSBc-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:18:36 | 2.89 |
+| v18 | urEeOHj42G0-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:23:44 | 2.03 |
+| v19 | xWi5lr-D0QY-【LIVE】Sakuyako-Cheris #SakuyakoCheris.mp4 | h264 | 1280x720 | 30 | 3:31:30 | 2.65 |

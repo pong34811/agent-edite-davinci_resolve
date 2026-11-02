@@ -1,0 +1,62 @@
+[
+ {
+  "id": "v12-01",
+  "source_id": "v12",
+  "start_s": 282.02,
+  "end_s": 380.27,
+  "category": "fun",
+  "title_th": "สตรีมเปิดตัว ทักทายและเล่าปัญหาเครื่อง",
+  "reason": "Opening chat: greets viewers, explains technical trouble and what game today (Becastled). Transcript garbled.",
+  "score": 0.5
+ },
+ {
+  "id": "v12-02",
+  "source_id": "v12",
+  "start_s": 990.0,
+  "end_s": 1075.0,
+  "category": "gameplay",
+  "title_th": "สร้างกำแพงเมืองใน Becastled",
+  "reason": "Base-building/defence gameplay with streamer commenting; line near 16:54 about wanting the 'real' unit is garbled.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-03",
+  "source_id": "v12",
+  "start_s": 3599.08,
+  "end_s": 3680.0,
+  "category": "gameplay",
+  "title_th": "ศึกกลางคืนรุกเข้ากำแพง",
+  "reason": "Night attack on the wall with arrow volleys and enemy swarm; loudness peak, no usable transcript.",
+  "score": 0.6
+ },
+ {
+  "id": "v12-04",
+  "source_id": "v12",
+  "start_s": 4630.0,
+  "end_s": 4710.0,
+  "category": "gameplay",
+  "title_th": "ไฟลุกกลางศึกป้อมปราการ",
+  "reason": "Fire/explosion hits the wall during enemy assault; tense moment, transcript empty.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-05",
+  "source_id": "v12",
+  "start_s": 5170.0,
+  "end_s": 5250.0,
+  "category": "gameplay",
+  "title_th": "ปะทะกันบนกำแพงหิมะ",
+  "reason": "Large clash on the snowy wall at night with colourful unit swarms; transcript empty.",
+  "score": 0.55
+ },
+ {
+  "id": "v12-06",
+  "source_id": "v12",
+  "start_s": 6330.0,
+  "end_s": 6490.0,
+  "category": "gameplay",
+  "title_th": "แพ้เกม! ปราสาทแตก",
+  "reason": "Night assault leads to losing the game; streamer says 'ถือว่าเราแพ้เกมแล้ว' and reacts at 'มีตอนท้ายหรอ? เดี๋ยวๆๆ' before the title screen.",
+  "score": 0.7
+ }
+]

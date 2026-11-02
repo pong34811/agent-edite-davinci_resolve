@@ -1,0 +1,29 @@
+{
+  "job": "Aommimama / 2026-09-aomimama",
+  "source_videos": 13,
+  "candidate_clips": 93,
+  "timelines_planned": 93,
+  "resolve_audit": [
+    {
+      "project": "aomimama-2026-09-p1",
+      "fps": 60.0,
+      "count": 49,
+      "planned": 49,
+      "missing": [],
+      "extra": [],
+      "bad": [],
+      "archived": []
+    },
+    {
+      "project": "aomimama-2026-09-p2",
+      "fps": 60.0,
+      "count": 44,
+      "planned": 44,
+      "missing": [],
+      "extra": [],
+      "bad": [],
+      "archived": []
+    }
+  ],
+  "tests": "42 passed"
+}

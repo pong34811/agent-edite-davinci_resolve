@@ -1,0 +1,86 @@
+[
+ {
+  "name": "ไลฟ์ในใจระหว่างรอโหลด-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 39000,
+    "end_frame": 42736,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-01"
+ },
+ {
+  "name": "ลงเรือแล้วใครจะพาย-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 178257,
+    "end_frame": 183600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-02"
+ },
+ {
+  "name": "มืดจนแยกเพื่อนไม่ออก-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 232389,
+    "end_frame": 238823,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-03"
+ },
+ {
+  "name": "กำลังจะเข้า ใครปิดก่อน-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 300106,
+    "end_frame": 303720,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-04"
+ },
+ {
+  "name": "หาเจอแล้ว แต่ไม่รอด-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 474172,
+    "end_frame": 478095,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-05"
+ },
+ {
+  "name": "โดเนตทวงสัญญาที่จำไม่ได้-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 549568,
+    "end_frame": 556816,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-06"
+ },
+ {
+  "name": "เรียนภาษา จบที่เรื่องเงิน-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+    "start_frame": 675284,
+    "end_frame": 681925,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-07"
+ }
+]

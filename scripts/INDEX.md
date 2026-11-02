@@ -177,6 +177,23 @@
 
 ---
 
+## 9. คัดไฮไลต์ไลฟ์สตรีม (mp4 เสียงไทย) — `scripts/highlight/`
+
+ย้ายมาจาก repo `agent-seacrh-virus-cut` (2026-11-02). รันจาก `scripts/highlight/` และตั้ง `HIGHLIGHT_JOB` เป็น path ของ `work/highlight/<channel>/<job>/job.json` ก่อนทุกคำสั่ง (ไม่มีค่าเริ่มต้น); เทสอยู่ใน `tests/highlight/`. skill: `long-video-highlight-clipping`
+
+| Script | ทำอะไร | ขอบเขต |
+|---|---|---|
+| `highlight/pipeline.py` | ตัวรันขั้นตอน `inventory\|features\|shortlist\|transcribe\|sheets\|packets\|briefs` (มี cache; ขั้นยาวรันเบื้องหลัง) | ใช้ซ้ำ |
+| `highlight/config.py` | อ่าน `job.json` จาก `HIGHLIGHT_JOB`; ffmpeg/ffprobe จาก `HIGHLIGHT_FFMPEG`/`HIGHLIGHT_FFPROBE` → Hermes bundled → PATH | ใช้ซ้ำ |
+| `highlight/inventory.py`, `highlight/features.py`, `highlight/shortlist.py`, `highlight/windows.py` | ffprobe inventory → wav 16 kHz ครั้งเดียว → คะแนนเสียงต่อหน้าต่าง → shortlist ที่ไม่ทับกัน | ใช้ซ้ำ |
+| `highlight/transcribe.py`, `highlight/gpu_env.py` | faster-whisper (`th`) เฉพาะช่วง shortlist บน GPU; เปิด CUDA DLL บน Windows | ใช้ซ้ำ |
+| `highlight/contact_sheet.py`, `highlight/packets.py`, `highlight/briefs.py`, `highlight/snap.py` | ภาพตัวอย่างต่อช่วง, packet ให้ reviewer, brief ต่อวิดีโอจาก `templates/reviewer_brief.md`, snap ขอบคลิปกับช่วงเงียบ | ใช้ซ้ำ |
+| `highlight/resolve_clips.py` | แมป `source_id` → Resolve clip id จาก JSON ของ `media_pool probe_media_pool` (ล้มเมื่อวิดีโอหาย) | ใช้ซ้ำ |
+| `highlight/build_timelines.py` | รวม `review/vNN.json` → `candidates.json`, `timeline_plan.json`; `calls <start> <end>` พิมพ์ payload MCP `create_timeline_from_clips` | ใช้ซ้ำ |
+| `highlight/tools/gpu_smoke.py` | ทดสอบ GPU/whisper กับวิดีโอแรกใน inventory ก่อน `transcribe` | ใช้ซ้ำ |
+| `highlight/tools/make_timelines.py` | สร้าง timeline จาก `timeline_plan.json` ผ่าน Resolve Python โดยตรง (ไม่ใช้ `resolve_common`, ชื่อ media folder `2026-09-aomimama` ฝังในโค้ด) — ตัวอย่างเท่านั้น ใช้ MCP ก่อน | ครั้งเดียว |
+| `highlight/tools/lint_vault.py` | ตรวจลิงก์/สารบัญของ wiki `docs/highlight/wiki` | ใช้ซ้ำ |
+
 ## เมื่อต้องเพิ่ม script ใหม่
 
 1. ค้นตารางนี้และ `grep -r "<คำสำคัญ>" scripts/` ก่อน

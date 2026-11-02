@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v10-01",
+  "source_id": "v10",
+  "start_s": 1490.47,
+  "end_s": 1560.63,
+  "category": "gameplay",
+  "title_th": "ตกลาวาตายกลางเกม",
+  "reason": "Streamer dies to lava on Minecraft ('burned to death' screen) while asking how it happened, then banters about workers having only axes.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-02",
+  "source_id": "v10",
+  "start_s": 2318.84,
+  "end_s": 2409.17,
+  "category": "fun",
+  "title_th": "คุยเรื่องนอนกับเพื่อนร่วมเซิร์ฟ",
+  "reason": "Co-op chatter about sleeping through the night/bathroom timing with the friend in a cold-biome Minecraft base.",
+  "score": 0.4
+ },
+ {
+  "id": "v10-03",
+  "source_id": "v10",
+  "start_s": 2538.6,
+  "end_s": 2600.06,
+  "category": "meme",
+  "title_th": "ใช้พลังแอดมินโกงเวลา",
+  "reason": "Joking about using admin power to cheat/speed up time ('เปิดเวอร์โว้ว') while hurrying to set up water.",
+  "score": 0.5
+ },
+ {
+  "id": "v10-04",
+  "source_id": "v10",
+  "start_s": 4473.99,
+  "end_s": 4545.27,
+  "category": "meme",
+  "title_th": "หนาวตายหรือความตายเอง",
+  "reason": "Banter about dying of cold vs. dying, ending with a loud reaction line 'แก้ความหนาวด้วยความตาย'.",
+  "score": 0.55
+ },
+ {
+  "id": "v10-05",
+  "source_id": "v10",
+  "start_s": 5448.0,
+  "end_s": 5566.06,
+  "category": "gameplay",
+  "title_th": "ขุดถ้ำเกือบตก",
+  "reason": "Tense mining in a deep cave: gets stuck, asks to reset, admits fear of slipping into a pit.",
+  "score": 0.6
+ },
+ {
+  "id": "v10-06",
+  "source_id": "v10",
+  "start_s": 5637.94,
+  "end_s": 5732.0,
+  "category": "gameplay",
+  "title_th": "ถ้ำเสียวสันหลังแล้วสู้มอนสเตอร์",
+  "reason": "Spooked reaction in the cave ('เสียวสันหลัง') and challenging mobs to come at them.",
+  "score": 0.55
+ },
+ {
+  "id": "v10-07",
+  "source_id": "v10",
+  "start_s": 6540.06,
+  "end_s": 6650.0,
+  "category": "fun",
+  "title_th": "มุกหมู่กับเพื่อนในเซิร์ฟ",
+  "reason": "Friends trade a string of jokes and puns while the streamer finishes digging and building.",
+  "score": 0.4
+ }
+]

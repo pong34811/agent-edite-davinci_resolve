@@ -1,0 +1,13 @@
+{
+  "root": {
+    "name": "Master",
+    "id": "5141800c-2352-4458-8f87-6178feee1ace",
+    "clips": [{
+      "name": "【LIVE】Backrooms  ｜ 05⧸09⧸2026 เวลา 20.00 [Vn4T1-s4htE].mp4",
+      "id": "6de88afe-d3d2-4fa8-aad6-1cec576c2403",
+      "file_path": "Z:\\hoshi\\2026-09\\【LIVE】Backrooms  ｜ 05⧸09⧸2026 เวลา 20.00 [Vn4T1-s4htE].mp4"
+    }],
+    "subfolder_count": 0
+  },
+  "provenance": "Subset of live media_pool.probe_media_pool response exec_25f09266a5c0; not a full response"
+}
