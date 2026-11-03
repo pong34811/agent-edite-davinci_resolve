@@ -1,6 +1,6 @@
 {
  "project": "KT404 Highlights 2026-10",
- "timeline_count": 49,
+ "timeline_count": 51,
  "planned": 48,
  "ok": 46,
  "rows": [
@@ -251,8 +251,8 @@
    "candidate": "v08-03",
    "ok": true,
    "problems": [],
-   "video_duration": 5850,
-   "expected_duration": 5850
+   "video_duration": 6882,
+   "expected_duration": 6882
   },
   {
    "name": "ลุยล่าม้อนกับเพื่อน-Monster Hunter World-vdo",
@@ -365,8 +365,8 @@
    "candidate": "v12-01",
    "ok": true,
    "problems": [],
-   "video_duration": 6132,
-   "expected_duration": 6132
+   "video_duration": 7052,
+   "expected_duration": 7052
   },
   {
    "name": "กดมั่วจนรอด-Soul Walker-vdo",

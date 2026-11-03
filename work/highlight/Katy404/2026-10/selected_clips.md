@@ -35,7 +35,7 @@
 | v07-04 | ไอ้เฮียคนเมา-คามิไหนวะ-League of Legends-vdo | v07 `oiQpFnGMlXA` | 2:00:46-2:02:30 | 104 | ช่วง meme | Rapid-fire banter and exclamations about drunks and the confusion over which Kami, ending in the gankers being spotted. | ASR อ่อน | ตรง |
 | v08-01 | ตั้งชื่อตัวละคร ยามดาแซว-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 0:04:20-0:05:50 | 90 | ช่วงสนุกสนาน | Katy picks a hunter name while chat/friends tease the YAMA name; light banter during character creation. | ASR อ่อน | ตรง |
 | v08-02 | เจอ T-Rex กลางทาง-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 0:17:35-0:18:51 | 76 | ช่วงเล่นเกม | Katy runs toward and reacts loudly to a big T-Rex-like monster in Monster Hunter World. | ASR | ตรง |
-| v08-03 | สุ่มวงล้ออาวุธ ห้ามเปลี่ยน-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 0:32:02-0:33:40 | 98 | ช่วง meme | Katy swears to play whatever weapon the wheel lands on, then gets metal bagpipe and reacts. | ASR | ตรง |
+| v08-03 | สุ่มวงล้ออาวุธ ห้ามเปลี่ยน-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 0:32:02-0:33:57 | 115 | ช่วง meme | Katy swears to play whatever weapon the wheel lands on, then gets metal bagpipe and reacts. | ASR | ตรง |
 | v08-04 | ลุยล่าม้อนกับเพื่อน-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 1:11:36-1:13:00 | 84 | ช่วงเล่นเกม | Co-op hunt with friends against a big monster, chatter and reactions as the group fights. | ASR | ตรง |
 | v09-01 | ยิงมังกรสายรุ้งสุดมัน-Terraria-vdo | v09 `VkJSTbFZg8M` | 0:30:07-0:31:55 | 107 | ช่วงเล่นเกม | Boss fight under a rainbow sky with chat shouting and Katy complaining her shots miss the dragon. | ASR อ่อน | ตรง |
 | v09-02 | มูนลอร์ดลูกตาออก ปากหมวกแตก-Terraria-vdo | v09 `VkJSTbFZg8M` | 0:57:59-1:00:00 | 120 | ช่วงเล่นเกม | Moon Lord fight with the team panicking over lasers, near-deaths and who goes for the eye or heart. | ASR | ตรง |
@@ -49,7 +49,7 @@
 | v11-02 | ตกใจโอโรจิมารุ หลงเมือง-Soul Walker-vdo | v11 `XxPqle_TUI4` | 0:13:30-0:14:52 | 82 | ช่วงเล่นเกม | Graphics-settings chatter, Orochimaru joke, wrong-map confusion then run. | ASR | ตรง |
 | v11-03 | กลับแรคคูนซิตี้-Soul Walker-vdo | v11 `XxPqle_TUI4` | 0:18:39-0:19:53 | 75 | ช่วงเล่นเกม | Back at Raccoon City, quest, entering stage with enemies. | ASR อ่อน | ตรง |
 | v11-04 | โดเนตกับเรื่องสเปคคอม-Soul Walker-vdo | v11 `XxPqle_TUI4` | 0:59:01-1:00:15 | 74 | ช่วงสนุกสนาน | Donation thanks and chat about PC specs. | ASR อ่อน | ตรง |
-| v12-01 | บอสกับหมากับกระสุน-Soul Walker-vdo | v12 `zzLB5paiL8M` | 0:17:05-0:18:47 | 102 | ช่วงเล่นเกม | Katy and friends fight through a stage, with the dog-jumping joke and chaotic 'where is it' banter. | ASR | ตรง |
+| v12-01 | บอสกับหมากับกระสุน-Soul Walker-vdo | v12 `zzLB5paiL8M` | 0:17:05-0:19:03 | 118 | ช่วงเล่นเกม | Katy and friends fight through a stage, with the dog-jumping joke and chaotic 'where is it' banter. | ASR | ตรง |
 | v12-02 | กดมั่วจนรอด-Soul Walker-vdo | v12 `zzLB5paiL8M` | 1:32:01-1:33:39 | 98 | ช่วงสนุกสนาน | Dungeon fight where Katy mashes buttons randomly and survives, with reactions to free-spawn item chatter. | ASR | ตรง |
 | v12-03 | พระเอกยิงทั้งที่รู้ว่ามีนางเอก-Soul Walker-vdo | v12 `zzLB5paiL8M` | 2:20:50-2:22:29 | 100 | ช่วงสนุกสนาน | Banter about a hero firing at a bunker with the heroine inside, over a Laffey co-op fight. | ASR อ่อน | ตรง |
 | v12-04 | เควสสัตว์ประหลาดตัวใหญ่-Soul Walker-vdo | v12 `zzLB5paiL8M` | 2:31:45-2:33:15 | 90 | ช่วงเล่นเกม | Katy talks to a giant purple monster for a quest, friends joke she cannot protect herself, then she fights it. | ASR อ่อน | ตรง |
@@ -60,3 +60,6 @@
 - v11: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker (= SoulWorker; เห็นตัวละคร Haru/Lily/Iris/Stella, เมือง Candus City) ผู้ใช้ยืนยันให้ใช้ชื่อ `Soul Walker` ตามเดิม
 - v12: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker เกมเดียวกับ v11 (UI เดียวกัน, Rocco Town/Grasscover Camp, Haru/Lily) ใช้ชื่อ `Soul Walker` ตามเดิม
 - v09-03: ขยายจุดจบจาก 3795 เป็น 3830.5 s (2026-11-03) ให้รวมช่วงบอสตาย/เชียร์/คัตซีน; ของเดิมเก็บเป็น timeline `ชนะแล้วทุกคน!-Terraria-vdo_bak`
+- 2026-11-03 ถอดเสียงทั้ง 48 คลิปใหม่ด้วย demucs + Typhoon (เลยจุดจบไป 40 s) เพื่อเช็กว่าไฮไลต์อยู่หลังจุดจบไหม: ขยาย v08-03 ถึง 2037.2 s (ปฏิกิริยา "อาวุธที่ผมอยากหนีที่สุด") และ v12-01 ถึง 1142.7 s (ประโยค "หมากับกระสุน" ที่เป็นชื่อคลิป); ของเดิมเก็บเป็น `..._bak` คลิปอื่นไม่พบไฮไลต์หลังจุดจบ
+- v10-03: ข้อความใหม่มี "เห็นในหัว... แพ้สิ่งในหัวไปแล้ว" ท้ายคลิป จึงคงชื่อ "เสียงในหัว" ไว้
+- v03-02, v10-03 เริ่มเร็ว 1 เฟรม: สร้างใหม่ก็ได้ผลเดิม (สั่ง 61522 ได้ 61521, สั่ง 61523 ได้ 61523) เป็นการปัดเวลาของ Resolve ที่เฟรมนั้น จึงคง timeline เดิมไว้ (ต่าง 1/60 วินาที)
