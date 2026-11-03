@@ -1,8 +1,10 @@
-"""Snap a cut time to the nearest silence in the level-untouched wav: python snap.py <source_id> <seconds> [<seconds> ...]"""
+"""Snap cut times: python snap.py <source_id> <t|in:t|out:t> ...
+`in:`/`out:` move a cut that falls inside a sentence to that sentence's start/end (needs `pipeline.py fulltext`);
+otherwise, and for plain seconds, snap to the nearest silence in the level-untouched wav."""
 import pathlib, re, subprocess, sys
 import config
 from features import wav_path
-from windows import snap_to_silence
+from windows import snap_to_sentence, snap_to_silence
 
 def silences_near(wav: pathlib.Path, t: float, radius: float = 3.0):
     start = max(0.0, t - radius - 2)
@@ -15,7 +17,22 @@ def silences_near(wav: pathlib.Path, t: float, radius: float = 3.0):
 def snap_in_wav(wav: pathlib.Path, t: float, radius: float = 3.0) -> float:
     return round(snap_to_silence(t, silences_near(pathlib.Path(wav), t, radius), radius), 2)
 
+def snap_arg(arg: str, sentences, wav) -> tuple[float, str]:
+    """-> (snapped seconds, how): 'sentence' when moved to a sentence edge, else 'silence'."""
+    edge, _, num = arg.rpartition(":")
+    t = float(num)
+    if edge in ("in", "out") and sentences:
+        s = snap_to_sentence(t, sentences, edge)
+        if s is not None:
+            return s, "sentence"
+    return snap_in_wav(wav, t), "silence"
+
 if __name__ == "__main__":
+    import fulltext
     sid = sys.argv[1]
-    for t in sys.argv[2:]:
-        print(t, "->", snap_in_wav(wav_path(sid), float(t)))
+    sents = fulltext.load_sentences(sid)
+    if any(":" in a for a in sys.argv[2:]) and not sents:
+        print(f"note: no transcripts/{sid}.sentences.json; run `pipeline.py fulltext` for sentence snapping")
+    for a in sys.argv[2:]:
+        t, how = snap_arg(a, sents, wav_path(sid))
+        print(a, "->", t, f"({how})")

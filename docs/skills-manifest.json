@@ -2934,7 +2934,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "bee2fbe58a0252c26e68df14f609db3c2fdf24897ef734bfdbdd5efab8d38337"
+      "sha256": "dfb643e0919223bbc4eaa0fa981c178f322eeda13d2061b2d87b18d7ef8e2e84"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -4654,7 +4654,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "5e6d9690b57aa3b20f246f2e3bb50f686acb03d322dee7c2b59287b67e27eb63",
+      "sha256": "6c18946470b9ac820a7be7b4929e7d3b4ba06b4ef0191e04823b7062cbc0167f",
       "kind": "integration_or_validation"
     },
     {
@@ -4666,7 +4666,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "12ab8612ae19b60932567802c4e8c82e7e0e22c5eecab010152dfa20b0452b0a",
+      "sha256": "c8b470518ced3c8a2e2faff3d34cd370b2c0a1ae8655def793cb30ca7bf51f43",
       "kind": "integration_or_validation"
     },
     {
@@ -6888,7 +6888,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "affd326cd1426e1269c67b2469781642e880a154780a6a5caa39ce441f2f8139"
+      "sha256": "9f44d025d226380cdf1a96f259249232b92c2aa21dad4edf1951220510b1ae50"
     },
     {
       "path": "scripts/README.md",
@@ -7271,6 +7271,12 @@
       "sha256": "d1bfd150bae2d3dd6764c057d45bc5fd0a0eb961e9f8c0b07d2d581c8a156ce0"
     },
     {
+      "path": "scripts/highlight/fulltext.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "377773c013f66109575dc9aecac52e53194b002e1c2f89982843c5afd712362e"
+    },
+    {
       "path": "scripts/highlight/gpu_env.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -7286,13 +7292,13 @@
       "path": "scripts/highlight/packets.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c7a552da9c14ec9a06639dc0d3d68d79af907c37ce1770738ec83cb59e9dadf1"
+      "sha256": "1026f923ba9aca5038ded4c664c00ae5bd091f1b85c9873cc655268e429361de"
     },
     {
       "path": "scripts/highlight/pipeline.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8856ae654a20d2736dd98ed7cebe93656b6b1b02c5873bbe392ce5fcccd7f157"
+      "sha256": "8ef832f4be9edd9c44999f2c0c6d7a376053c40c26adcfebebdfcf743d3ffa5e"
     },
     {
       "path": "scripts/highlight/resolve_clips.py",
@@ -7310,13 +7316,13 @@
       "path": "scripts/highlight/snap.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "116f9bdc0665e47c2deba7aa80ff27018f4c9910ff71cda1de3ef1e9260e8603"
+      "sha256": "aacf70c089c4e725a107781a71a9e86a5d05fadf6fe0464e6ec87c869f43df6c"
     },
     {
       "path": "scripts/highlight/templates/reviewer_brief.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9d3aab5db5a1d9462856c86fa3651f0a9e28c75b2ee0c30b2b5122fdd3112fbd"
+      "sha256": "7aa796000a846ed9f2408940ffa342a0b79f842a1747d039978416321f03a042"
     },
     {
       "path": "scripts/highlight/tools/gpu_smoke.py",
@@ -7352,7 +7358,7 @@
       "path": "scripts/highlight/windows.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9efdfd0e341a0a0243983b9dad0690d1779d7604c6392d818cd2fe90d641ff04"
+      "sha256": "7d825cdff260017967524fcd68cb0ea1088d93e4a911ea6a04f84d4666827abb"
     },
     {
       "path": "scripts/illustration_reel.py",
@@ -7839,6 +7845,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "e7a0b688fa1a1d20c27f2c1a5bfcf778e80dbd03af0103396129cf889614f858"
+    },
+    {
+      "path": "tests/highlight/test_fulltext.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "35296a0a5c4195f87fc7d728eb6b7a083453a8fb60b66d89468a3108dbd9f1b6"
     },
     {
       "path": "tests/highlight/test_inventory.py",
@@ -8564,11 +8576,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1145,
+    "manifest_files": 1147,
     "supporting_skills": 51,
     "active_skills": 68
   },
-  "bundle_version": "0.17.3",
+  "bundle_version": "0.17.4",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

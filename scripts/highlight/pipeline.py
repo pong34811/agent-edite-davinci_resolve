@@ -1,4 +1,5 @@
-"""Stage runner: python pipeline.py <inventory|features|shortlist|transcribe|sheets|packets|briefs>. Outputs are cached per stage."""
+"""Stage runner: python pipeline.py <inventory|features|shortlist|transcribe|fulltext|sheets|packets|briefs>. Outputs are cached per stage.
+`fulltext` (whole video, word timestamps) is optional; when present, packets and snap.py use its sentences."""
 import json, sys, time
 from concurrent.futures import ThreadPoolExecutor
 import config
@@ -28,6 +29,11 @@ def stage_transcribe():
     import transcribe
     for sid in ids():
         print(sid, transcribe.run(sid), flush=True)
+
+def stage_fulltext():
+    import fulltext
+    for sid in ids():
+        print(sid, fulltext.run(sid), flush=True)
 
 def stage_sheets():
     import contact_sheet; contact_sheet.run_all()

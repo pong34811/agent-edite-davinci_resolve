@@ -13,7 +13,9 @@ INPUTS (under $WORK/):
 
 RULES: clip length $CLIP_MIN-$CLIP_MAX s; clips must not overlap and should be spread across the stream (prefer >=5 min apart unless clearly different beats); start at the beginning of a beat or sentence and end right after the payoff, never mid-word; a clip may extend beyond the shortlist window but must stay inside the video (end_s <= $DURATION_S). Categorise from transcript plus sheet, not from the filename. Only raw content is judged; no titles or captions are made later.
 
-SNAPPING (required for every start_s and end_s): run from $CODE : `HIGHLIGHT_JOB="$JOB_FILE" $PYTHON snap.py $VID <t1> <t2> ...` (seconds; prints `t -> snapped`). Use the snapped values, then re-check the length is still within $CLIP_MIN-$CLIP_MAX s. Shell is git-bash on Windows; use forward slashes.
+- If $WORK/transcripts/$VID.fulltext.txt exists, it is the whole stream transcribed with sentence times (`[H:MM:SS] text   [ends seconds]`). Use it to see what comes BEFORE and AFTER a window: the setup may start earlier and the payoff (boss dies, punchline, reaction) may land after the window ends. End a clip at the `[ends]` of the reaction sentence, not at the window edge.
+
+SNAPPING (required for every start_s and end_s): run from $CODE : `HIGHLIGHT_JOB="$JOB_FILE" $PYTHON snap.py $VID in:<start> out:<end> ...` (seconds; prints `arg -> snapped (sentence|silence)`). `in:`/`out:` move a cut that falls mid-sentence to that sentence's start/end; otherwise it snaps to the nearest silence. Use the snapped values, then re-check the length is still within $CLIP_MIN-$CLIP_MAX s. Shell is git-bash on Windows; use forward slashes.
 
 OUTPUT: write ONLY $WORK/review/$VID.json (UTF-8 JSON array, written with python json.dump(ensure_ascii=False)). Each item exactly:
 {"id":"$VID-01","source_id":"$VID","start_s":float,"end_s":float,"category":"<one of the categories>","title_th":"short Thai title","reason":"1-2 sentences why it is interesting","score":0.0-1.0}

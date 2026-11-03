@@ -16,6 +16,15 @@ def clamp_duration(start: float, end: float, min_s: float = 30, max_s: float = 1
     if s < 0: s = 0
     return (s, s + length)
 
+def snap_to_sentence(t: float, sentences, edge: str, max_shift: float = 15.0, tail: float = 0.3) -> float | None:
+    """Move a cut out of the middle of a sentence: an `in` point goes back to the sentence start, an `out` point
+    forward to its end (+tail). Returns None when t is already between sentences or the shift would exceed max_shift."""
+    for s in sentences:
+        if s["start"] < t < s["end"]:
+            new = s["start"] if edge == "in" else s["end"] + tail
+            return round(new, 2) if abs(new - t) <= max_shift else None
+    return None
+
 def snap_to_silence(t: float, silences, radius: float = 3.0) -> float:
     best, bd = t, radius + 1e-9
     for a, b in silences:

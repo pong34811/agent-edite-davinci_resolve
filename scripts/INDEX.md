@@ -183,11 +183,12 @@
 
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
-| `highlight/pipeline.py` | ตัวรันขั้นตอน `inventory\|features\|shortlist\|transcribe\|sheets\|packets\|briefs` (มี cache; ขั้นยาวรันเบื้องหลัง) | ใช้ซ้ำ |
+| `highlight/pipeline.py` | ตัวรันขั้นตอน `inventory\|features\|shortlist\|transcribe\|fulltext\|sheets\|packets\|briefs` (มี cache; ขั้นยาวรันเบื้องหลัง) | ใช้ซ้ำ |
 | `highlight/config.py` | อ่าน `job.json` จาก `HIGHLIGHT_JOB`; ffmpeg/ffprobe จาก `HIGHLIGHT_FFMPEG`/`HIGHLIGHT_FFPROBE` → Hermes bundled → PATH | ใช้ซ้ำ |
 | `highlight/inventory.py`, `highlight/features.py`, `highlight/shortlist.py`, `highlight/windows.py` | ffprobe inventory → wav 16 kHz ครั้งเดียว → คะแนนเสียงต่อหน้าต่าง → shortlist ที่ไม่ทับกัน | ใช้ซ้ำ |
+| `highlight/fulltext.py` | ถอดเสียงทั้งวิดีโอพร้อมเวลาระดับคำ (faster-whisper `large-v3-turbo`, ก้อนละ 10 นาที, ทำต่อจากจุดค้างได้) → `transcripts/<id>.words.json`, `.sentences.json` (ตัดประโยคที่ช่วงหยุด ≥0.6 วิ), `.fulltext.txt` (`[H:MM:SS] ข้อความ [ends วินาที]`) ให้ agent อ่านทั้งไลฟ์ | ใช้ซ้ำ |
 | `highlight/transcribe.py`, `highlight/gpu_env.py` | faster-whisper (`th`) เฉพาะช่วง shortlist บน GPU; เปิด CUDA DLL บน Windows | ใช้ซ้ำ |
-| `highlight/contact_sheet.py`, `highlight/packets.py`, `highlight/briefs.py`, `highlight/snap.py` | ภาพตัวอย่างต่อช่วง, packet ให้ reviewer, brief ต่อวิดีโอจาก `templates/reviewer_brief.md`, snap ขอบคลิปกับช่วงเงียบ | ใช้ซ้ำ |
+| `highlight/contact_sheet.py`, `highlight/packets.py`, `highlight/briefs.py`, `highlight/snap.py` | ภาพตัวอย่างต่อช่วง, packet ให้ reviewer, brief ต่อวิดีโอจาก `templates/reviewer_brief.md`, snap ขอบคลิป: `in:`/`out:` เลื่อนไปต้น/ท้ายประโยคเมื่อมี `fulltext`, ไม่งั้นช่วงเงียบ | ใช้ซ้ำ |
 | `highlight/resolve_clips.py` | แมป `source_id` → Resolve clip id จาก JSON ของ `media_pool probe_media_pool` (ล้มเมื่อวิดีโอหาย) | ใช้ซ้ำ |
 | `highlight/build_timelines.py` | รวม `review/vNN.json` → `candidates.json`, `timeline_plan.json`; `calls <start> <end>` พิมพ์ payload MCP `create_timeline_from_clips` | ใช้ซ้ำ |
 | `highlight/verify_timelines.py` | อ่านกลับทุก timeline ใน `timeline_plan.json` จากโปรเจกต์ปัจจุบัน (read-only, ไม่สลับ timeline) เทียบ clip/source_start/ความยาว/เสียง → `timeline_verification.json` | ใช้ซ้ำ |
