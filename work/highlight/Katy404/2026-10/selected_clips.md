@@ -58,4 +58,4 @@
 
 หมายเหตุเกม:
 - v11: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker (= SoulWorker; เห็นตัวละคร Haru/Lily/Iris/Stella, เมือง Candus City) ผู้ใช้ยืนยันให้ใช้ชื่อ `Soul Walker` ตามเดิม
-- v12: ผู้ตรวจไม่ยืนยันชื่อเกม ใช้ชื่อตามไฟล์
+- v12: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker เกมเดียวกับ v11 (UI เดียวกัน, Rocco Town/Grasscover Camp, Haru/Lily) ใช้ชื่อ `Soul Walker` ตามเดิม
