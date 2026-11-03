@@ -1,0 +1,22 @@
+{
+ "v05": [
+  {
+   "pack": "v05-read-01",
+   "file": "v05-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v05-read-02",
+   "file": "v05-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v05-read-03",
+   "file": "v05-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5050.0
+  }
+ ]
+}

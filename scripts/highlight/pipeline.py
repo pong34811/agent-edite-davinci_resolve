@@ -1,5 +1,6 @@
-"""Stage runner: python pipeline.py <inventory|features|shortlist|transcribe|fulltext|sheets|packets|briefs>. Outputs are cached per stage.
-`fulltext` (whole video, word timestamps) is optional; when present, packets and snap.py use its sentences."""
+"""Stage runner: python pipeline.py <inventory|features|shortlist|transcribe|fulltext|readpacks|readbriefs|proposals|sheets|packets|briefs>. Outputs are cached per stage.
+`fulltext` (whole video, word timestamps) is optional; when present, packets and snap.py use its sentences,
+and `readpacks` -> reader subagents -> `proposals` let agents find moments by reading the whole stream."""
 import json, sys, time
 from concurrent.futures import ThreadPoolExecutor
 import config
@@ -32,8 +33,17 @@ def stage_transcribe():
 
 def stage_fulltext():
     import fulltext
-    for sid in ids():
+    for sid in sys.argv[2:] or ids():   # `pipeline.py fulltext [ids...]`
         print(sid, fulltext.run(sid), flush=True)
+
+def stage_readpacks():
+    import readpack; readpack.run_all(sys.argv[2:])   # `pipeline.py readpacks [ids...]`, needs fulltext
+
+def stage_readbriefs():
+    import briefs; briefs.run_readers(sys.argv[2:])   # one reader brief per reading pack
+
+def stage_proposals():
+    import proposals; proposals.run_all()             # merge review/<id>.read-NN.json -> <id>.proposals.md
 
 def stage_sheets():
     import contact_sheet; contact_sheet.run_all()

@@ -2934,7 +2934,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "dfb643e0919223bbc4eaa0fa981c178f322eeda13d2061b2d87b18d7ef8e2e84"
+      "sha256": "e25d29db579d7d33acb5e1f2b78fcb8b4b4506ab8094a2bd4f6db5bbeb94d9da"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -4654,7 +4654,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "6c18946470b9ac820a7be7b4929e7d3b4ba06b4ef0191e04823b7062cbc0167f",
+      "sha256": "b6aaeae8c13390e2bdf5a7e3836efed9aa4835b68be51862b4f3f53b6f4ee01a",
       "kind": "integration_or_validation"
     },
     {
@@ -4666,7 +4666,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "c8b470518ced3c8a2e2faff3d34cd370b2c0a1ae8655def793cb30ca7bf51f43",
+      "sha256": "251b10ebbc9211ba548de0b9f612cb287b074e425ee785f8e1934164658aa7b4",
       "kind": "integration_or_validation"
     },
     {
@@ -6888,7 +6888,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9f44d025d226380cdf1a96f259249232b92c2aa21dad4edf1951220510b1ae50"
+      "sha256": "ee1c29b9bc44b51d410084b8811e86076cd1cf294b4135679da2825047a16411"
     },
     {
       "path": "scripts/README.md",
@@ -7244,7 +7244,7 @@
       "path": "scripts/highlight/briefs.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1060ca272f45a9ebaae9044ada30ad8468a24e8cc7d55f6dde3d5cbc0ba65db2"
+      "sha256": "3632ff947adad6170403b037d30c9aa65e20a151ed5c05ec26b7e3ac20fd4fc5"
     },
     {
       "path": "scripts/highlight/build_timelines.py",
@@ -7298,7 +7298,19 @@
       "path": "scripts/highlight/pipeline.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8ef832f4be9edd9c44999f2c0c6d7a376053c40c26adcfebebdfcf743d3ffa5e"
+      "sha256": "7ce9f56b0f0f96de2732d0017ce9f601e269396e70ba45219d2f56a1a1146877"
+    },
+    {
+      "path": "scripts/highlight/proposals.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "aa15bd0203541963cff200e8d558a1cf577669ff3311701b0286f9ef34aa7188"
+    },
+    {
+      "path": "scripts/highlight/readpack.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "33ade75caccd30d7ef7e395af28b07dcd191db6fa2c837f23bde1d8dad93f659"
     },
     {
       "path": "scripts/highlight/resolve_clips.py",
@@ -7319,10 +7331,16 @@
       "sha256": "aacf70c089c4e725a107781a71a9e86a5d05fadf6fe0464e6ec87c869f43df6c"
     },
     {
+      "path": "scripts/highlight/templates/reader_brief.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "a7204261e64c7019b89877ad5c72425ffa1c5ab33e684099b8109085d90ad35e"
+    },
+    {
       "path": "scripts/highlight/templates/reviewer_brief.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7aa796000a846ed9f2408940ffa342a0b79f842a1747d039978416321f03a042"
+      "sha256": "a3a759553e4607060446c5265bf6cc8ccc56011238a4e83d8a76bc998f4b2782"
     },
     {
       "path": "scripts/highlight/tools/gpu_smoke.py",
@@ -7857,6 +7875,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "596c968cd3a48aedfb7cab2ad7d97c92e0d7f1cb57d7522bbf7f58dd48bfd710"
+    },
+    {
+      "path": "tests/highlight/test_readpack_proposals.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "27b4be01ba331ddd9d02e597c841b7a9eb19fe54fc9d6662b8a79c2f0da52200"
     },
     {
       "path": "tests/highlight/test_shortlist.py",
@@ -8576,11 +8600,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1147,
+    "manifest_files": 1151,
     "supporting_skills": 51,
     "active_skills": 68
   },
-  "bundle_version": "0.17.4",
+  "bundle_version": "0.17.5",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
