@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v06-read-03-01",
+  "source_id": "v06",
+  "pack": "v06-read-03",
+  "start_s": 3618.69,
+  "end_s": 3720.4,
+  "setup_s": 3640,
+  "payoff_s": 3654,
+  "category": "fun",
+  "title_th": "เล่าเรื่องรีออนต่อยหิน",
+  "quote": "ไอ้มูกตอยหิน",
+  "reason": "Chat talks about Leon punching rocks as a deep-cut joke; streamer explains and riffs on supernatural strength. Garbled ASR.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v06-read-03-02",
+  "source_id": "v06",
+  "pack": "v06-read-03",
+  "start_s": 3779.4,
+  "end_s": 3871.82,
+  "setup_s": 3800,
+  "payoff_s": 3866,
+  "category": "fun",
+  "title_th": "รีออนไม่ใช่ทหารด้วยซ้ำ",
+  "quote": "แต่รีออนไม่ใช่ทหารด้วยซ้ำ",
+  "reason": "Banter about Leon being a rookie cop whose girlfriend dumped him before Raccoon City; punchline that he is not even a soldier.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v06-read-03-03",
+  "source_id": "v06",
+  "pack": "v06-read-03",
+  "start_s": 4213.26,
+  "end_s": 4283.15,
+  "setup_s": 4240,
+  "payoff_s": 4277.6,
+  "category": "meme",
+  "title_th": "ตั้งชื่อลูกโซลิดกับลิควิด",
+  "quote": "ตั้งชื่อ โซลิกกับลิควิด",
+  "reason": "Talk of Solid and Liquid snake leads to a joke about naming kids Solid and Liquid, followed by laughter-like repeated chatter.",
+  "confidence": 0.45
+ },
+ {
+  "id": "v06-read-03-04",
+  "source_id": "v06",
+  "pack": "v06-read-03",
+  "start_s": 4394.01,
+  "end_s": 4450.54,
+  "setup_s": 4406.9,
+  "payoff_s": 4418.9,
+  "category": "fun",
+  "title_th": "คัตซีนไม่มีเสียงพากย์",
+  "quote": "ไม่มีเงินจ้างภาคเฮียลิกษีด",
+  "reason": "Streamer realises cutscene has no voice and jokes there was no money for voice acting, then riffs on the boss.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v06-read-03-05",
+  "source_id": "v06",
+  "pack": "v06-read-03",
+  "start_s": 4773.0,
+  "end_s": 4879.68,
+  "setup_s": 4793.0,
+  "payoff_s": 4805.4,
+  "category": "gameplay",
+  "title_th": "โดนรถชนกลางพายุ",
+  "quote": "แม่งโดนรถชนดีเฮ้ยรถชวนโดนมอนตี",
+  "reason": "Dodging in the storm, a car hits the player; then complains the monsters keep knocking down and stunning him.",
+  "confidence": 0.35
+ }
+]

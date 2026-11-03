@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v03-read-05-01",
+  "source_id": "v03",
+  "pack": "v03-read-05",
+  "start_s": 6785.48,
+  "end_s": 6852.0,
+  "setup_s": 6786,
+  "payoff_s": 6845,
+  "category": "gameplay",
+  "title_th": "บอสชาคามาหาถึงที่",
+  "quote": "เอ้า ยัง ชาคา มาหาเราแล้วอ่ะ",
+  "reason": "Chat about the Orgart/Plugboy items, then a monster (Shaka) shows up unexpectedly; streamer reacts and laughs. ASR garbled, payoff guessed.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v03-read-05-02",
+  "source_id": "v03",
+  "pack": "v03-read-05",
+  "start_s": 7036.44,
+  "end_s": 7093.41,
+  "setup_s": 7039,
+  "payoff_s": 7071,
+  "category": "fun",
+  "title_th": "ขอเพื่อนตามมาเล่นด้วย",
+  "quote": "อือ ตามได้มั้ย ตามได้มั้ย ตามได้มั้ย",
+  "reason": "Streamer asks a teammate to try joining/following, repeats the question, teammate agrees and they choose a ranged weapon (bow) for the next round. Co-op banter, garbled.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v03-read-05-03",
+  "source_id": "v03",
+  "pack": "v03-read-05",
+  "start_s": 7128.48,
+  "end_s": 7175.18,
+  "setup_s": 7130,
+  "payoff_s": 7168,
+  "category": "fun",
+  "title_th": "ขอให้คุณดูช่วยเก็บของ",
+  "quote": "ช่วยขอให้ด้วยแม่งเก็บโคงชามากเลยนี่",
+  "reason": "Streamer realises items must be kept, asks a viewer/teammate for help, then comments the loot collection is huge and thanks them. Words unclear.",
+  "confidence": 0.25
+ },
+ {
+  "id": "v03-read-05-04",
+  "source_id": "v03",
+  "pack": "v03-read-05",
+  "start_s": 8070.81,
+  "end_s": 8139.41,
+  "setup_s": 8073,
+  "payoff_s": 8080,
+  "category": "fun",
+  "title_th": "ปิดไลฟ์ ขอบคุณคนดู",
+  "quote": "ขอบคุณทุกคนมากขอบคุณ",
+  "reason": "Streamer steps away briefly, greets the 5 remaining viewers, thanks them and announces for the next weeks he may only play with Laffy in two, then says goodbye. Stream outro, low standalone value.",
+  "confidence": 0.3
+ }
+]

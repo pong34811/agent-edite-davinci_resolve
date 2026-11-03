@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v04-read-02-01",
+  "source_id": "v04",
+  "pack": "v04-read-02",
+  "start_s": 2599.55,
+  "end_s": 2665.81,
+  "setup_s": 2600,
+  "payoff_s": 2638,
+  "category": "fun",
+  "title_th": "บ่นเสียเงิน 750 ที่เกือบซื้อของได้",
+  "quote": "ผมได้ 750 ผมซื้อ...ผมซื้อดักซิลกับลองเท้าได้เลยอ่ะ",
+  "reason": "Streamer complains about a missed fight/farm -> says he could have had 750 gold and bought items -> teammates react and move on to checking. Words garbled.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v04-read-02-02",
+  "source_id": "v04",
+  "pack": "v04-read-02",
+  "start_s": 2771.0,
+  "end_s": 2880.31,
+  "setup_s": 2779,
+  "payoff_s": 2858,
+  "category": "gameplay",
+  "title_th": "เลือกไปช่วยทีมแล้วโดนฆ่า",
+  "quote": "โอ้ ชิบหายแล้วผมพาด โอเค ผมตายไอ้เฮ้ย",
+  "reason": "Explains choosing to go help a teammate instead of waiting -> walks into the enemy and dies -> repeated groaning reaction. Payoff partly guessed from garbled text.",
+  "confidence": 0.45
+ },
+ {
+  "id": "v04-read-02-03",
+  "source_id": "v04",
+  "pack": "v04-read-02",
+  "start_s": 3201.31,
+  "end_s": 3305.22,
+  "setup_s": 3205,
+  "payoff_s": 3278,
+  "category": "gameplay",
+  "title_th": "สบถสู้จนไม่ตาย แล้วต้องรอแฟต",
+  "quote": "้ย ไม่ตาย ไอ้ เหี้ย",
+  "reason": "Frustrated swearing during a fight -> narrowly survives ('ไม่ตาย') -> remarks it needs a fat/farm. Mostly guesswork.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v04-read-02-04",
+  "source_id": "v04",
+  "pack": "v04-read-02",
+  "start_s": 3416.0,
+  "end_s": 3482.96,
+  "setup_s": 3418,
+  "payoff_s": 3427,
+  "category": "meme",
+  "title_th": "ไม่ตาย! จะตายก็ตายหน้าหี",
+  "quote": "ไม่ตาย!",
+  "reason": "Talks about team getting hit -> shouts 'not dead!' and a quotable line about dying anyway -> reaction that everyone died. Garbled.",
+  "confidence": 0.35
+ }
+]

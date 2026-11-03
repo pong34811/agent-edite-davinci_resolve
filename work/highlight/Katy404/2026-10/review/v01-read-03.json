@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v01-read-03-01",
+  "source_id": "v01",
+  "pack": "v01-read-03",
+  "start_s": 3695.14,
+  "end_s": 3740.47,
+  "setup_s": 3703.0,
+  "payoff_s": 3709.0,
+  "category": "fun",
+  "title_th": "แชทแซวเรื่องฟูลมูน",
+  "quote": "กูเรียกสนมูลนี่เชี่ย กับพอเสื้อกันทำไมอ่ะ",
+  "reason": "Chat debates snow moon vs full moon; streamer reacts with surprise at what chat is doing. Garbled ASR, payoff guessed.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v01-read-03-02",
+  "source_id": "v01",
+  "pack": "v01-read-03",
+  "start_s": 3960.67,
+  "end_s": 4012.53,
+  "setup_s": 3985.0,
+  "payoff_s": 4009.0,
+  "category": "fun",
+  "title_th": "คนกินเงินไม่เกิด",
+  "quote": "ไม่คนกินเงินไม่เกิดแม่ง",
+  "reason": "Streamer waits for a money-eating monster to spawn, repeatedly checking; it never appears and he curses. Words partly garbled.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v01-read-03-03",
+  "source_id": "v01",
+  "pack": "v01-read-03",
+  "start_s": 4215.0,
+  "end_s": 4277.39,
+  "setup_s": 4221.0,
+  "payoff_s": 4229.0,
+  "category": "fun",
+  "title_th": "ปีกที่บินไม่เป็น",
+  "quote": "ใช้ปีกนี้กันมาตลอดเลย เพราะว่าบินไม่เป็น",
+  "reason": "Discussion of a new wing item; streamer admits he has used the wrong wing all along because it cannot fly, then chat gifts another. Garbled, low certainty.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v01-read-03-04",
+  "source_id": "v01",
+  "pack": "v01-read-03",
+  "start_s": 4344.27,
+  "end_s": 4386.42,
+  "setup_s": 4349.0,
+  "payoff_s": 4369.0,
+  "category": "gameplay",
+  "title_th": "มอนสเตอร์เสียแขน",
+  "quote": "เสียแขนไปอ่ะ เดี๋ยวๆๆโอ้ว เสียแขนเลยครับ",
+  "reason": "Streamer watches a monster cling to a wall, then lose its arm; he reacts excitedly and shows chat. ASR messy.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v01-read-03-05",
+  "source_id": "v01",
+  "pack": "v01-read-03",
+  "start_s": 4872.0,
+  "end_s": 4972.23,
+  "setup_s": 4880.0,
+  "payoff_s": 4893.0,
+  "category": "fun",
+  "title_th": "เพื่อนที่ไม่มีเพื่อนเล่น",
+  "quote": "คุณบอกมีแต่ยำมะดาไม่มีเพื่อนอ่ะ",
+  "reason": "Streamer notes a lonely player who bought the game but has nobody to play with; group teases and offers to arrange a day, ending with her still unable to join. Fairly clear banter, best of pack.",
+  "confidence": 0.55
+ }
+]

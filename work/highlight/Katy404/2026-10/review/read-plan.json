@@ -18,5 +18,299 @@
    "start_s": 3360.0,
    "end_s": 5050.0
   }
+ ],
+ "v01": [
+  {
+   "pack": "v01-read-01",
+   "file": "v01-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v01-read-02",
+   "file": "v01-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v01-read-03",
+   "file": "v01-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v01-read-04",
+   "file": "v01-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v01-read-05",
+   "file": "v01-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v01-read-06",
+   "file": "v01-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10286.0
+  }
+ ],
+ "v02": [
+  {
+   "pack": "v02-read-01",
+   "file": "v02-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v02-read-02",
+   "file": "v02-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v02-read-03",
+   "file": "v02-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v02-read-04",
+   "file": "v02-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 7310.0
+  }
+ ],
+ "v03": [
+  {
+   "pack": "v03-read-01",
+   "file": "v03-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v03-read-02",
+   "file": "v03-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v03-read-03",
+   "file": "v03-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v03-read-04",
+   "file": "v03-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v03-read-05",
+   "file": "v03-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8144.0
+  }
+ ],
+ "v04": [
+  {
+   "pack": "v04-read-01",
+   "file": "v04-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v04-read-02",
+   "file": "v04-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v04-read-03",
+   "file": "v04-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v04-read-04",
+   "file": "v04-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6831.0
+  }
+ ],
+ "v06": [
+  {
+   "pack": "v06-read-01",
+   "file": "v06-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v06-read-02",
+   "file": "v06-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v06-read-03",
+   "file": "v06-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v06-read-04",
+   "file": "v06-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v06-read-05",
+   "file": "v06-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v06-read-06",
+   "file": "v06-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 9423.0
+  }
+ ],
+ "v07": [
+  {
+   "pack": "v07-read-01",
+   "file": "v07-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v07-read-02",
+   "file": "v07-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v07-read-03",
+   "file": "v07-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v07-read-04",
+   "file": "v07-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v07-read-05",
+   "file": "v07-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8999.0
+  }
+ ],
+ "v08": [
+  {
+   "pack": "v08-read-01",
+   "file": "v08-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v08-read-02",
+   "file": "v08-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v08-read-03",
+   "file": "v08-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v08-read-04",
+   "file": "v08-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v08-read-05",
+   "file": "v08-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8821.0
+  }
+ ],
+ "v09": [
+  {
+   "pack": "v09-read-01",
+   "file": "v09-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v09-read-02",
+   "file": "v09-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v09-read-03",
+   "file": "v09-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v09-read-04",
+   "file": "v09-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v09-read-05",
+   "file": "v09-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8531.0
+  }
+ ],
+ "v10": [
+  {
+   "pack": "v10-read-01",
+   "file": "v10-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v10-read-02",
+   "file": "v10-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v10-read-03",
+   "file": "v10-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v10-read-04",
+   "file": "v10-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v10-read-05",
+   "file": "v10-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v10-read-06",
+   "file": "v10-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 9102.0
+  }
  ]
 }

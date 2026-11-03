@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v06-read-04-01",
+  "source_id": "v06",
+  "pack": "v06-read-04",
+  "start_s": 5167.58,
+  "end_s": 5226.74,
+  "setup_s": 5169,
+  "payoff_s": 5206,
+  "category": "fun",
+  "title_th": "ติดอยู่ในโลก SEO",
+  "quote": "ฉันออกไม่ได้ ฉันติดอยู่ในโลก SEO",
+  "reason": "Streamer misses shots then jokes about being stuck in the SEO world of clip titles; chat/guest banter follows about making clips. ASR garbled.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v06-read-04-02",
+  "source_id": "v06",
+  "pack": "v06-read-04",
+  "start_s": 5366.16,
+  "end_s": 5403.34,
+  "setup_s": 5366.5,
+  "payoff_s": 5392,
+  "category": "gameplay",
+  "title_th": "เจอแล้ว!",
+  "quote": "เจอแล้ว เจอแล้ว เจอแล้ว",
+  "reason": "Talk about grinding farming; then sudden excited shouts of finding the target and rushing there.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v06-read-04-03",
+  "source_id": "v06",
+  "pack": "v06-read-04",
+  "start_s": 6531.28,
+  "end_s": 6579.7,
+  "setup_s": 6532,
+  "payoff_s": 6564,
+  "category": "fun",
+  "title_th": "ชื่อลาฟี่ซ้ำกัน",
+  "quote": "พอพูดถึงลาฟี่ แล้วชื่อคุณก็ลาฟี่",
+  "reason": "Lore explanation of the Only One as Raffy's child, then the joke that the guest is also named Raffy, causing confusion.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v06-read-04-04",
+  "source_id": "v06",
+  "pack": "v06-read-04",
+  "start_s": 6698.24,
+  "end_s": 6775.7,
+  "setup_s": 6699,
+  "payoff_s": 6733,
+  "category": "fun",
+  "title_th": "ฟันไปแล้ว 2 คน",
+  "quote": "ฟันไปแล้ว 2 คน",
+  "reason": "Chat about cheating-route characters, then streamer admits he already beat 2 of 3 and is only mid-story; others react.",
+  "confidence": 0.35
+ }
+]

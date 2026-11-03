@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v02-read-03-01",
+  "source_id": "v02",
+  "pack": "v02-read-03",
+  "start_s": 3842.0,
+  "end_s": 3901.01,
+  "setup_s": 3842.0,
+  "payoff_s": 3863.0,
+  "category": "gameplay",
+  "title_th": "เอาลาวามาละลายหิน",
+  "quote": "ไอ้เยี่ย เอาลาวามาละลายหิมมาอ่ะ โฮเยี่ยเลย",
+  "reason": "Talks through a risky farm setup, then lava melting the stone surprises him and he reacts that it has turned into a huge amount. Words are garbled.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v02-read-03-02",
+  "source_id": "v02",
+  "pack": "v02-read-03",
+  "start_s": 4505.83,
+  "end_s": 4584.8,
+  "setup_s": 4505.83,
+  "payoff_s": 4553.0,
+  "category": "fun",
+  "title_th": "โดนรุมตายแบบงงๆ",
+  "quote": "เหี้ย ตัก เกิน ข้า นับ พอ หลอง ค้า มา วาง ตรง ฝั่ง พี่ อ่ะ เอา พี่ ตาย ด้วย วีธี น่ะ เหี้ย อ่ะ เหี้ย",
+  "reason": "Busy talk about the build, then a death/trap moment with strong swearing, followed by remarks to chat about the burn. Payoff guessed from garbled ASR.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v02-read-03-03",
+  "source_id": "v02",
+  "pack": "v02-read-03",
+  "start_s": 4693.49,
+  "end_s": 4799.95,
+  "setup_s": 4693.49,
+  "payoff_s": 4741.0,
+  "category": "meme",
+  "title_th": "DK ไม่ยอมแพ้ เฮ้ยๆๆ",
+  "quote": "เอ้ยา DK จะไม่ยอมแพ้ พายเซลล์กูเมตัวเองหรอกติน ไอ้เฮีย ตัวริโก",
+  "reason": "Chat returns and planting is finished, then an excited shout with a long run of repeated yells (possibly ASR loop); afterwards he comments on deformed mobs. Low certainty.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v02-read-03-04",
+  "source_id": "v02",
+  "pack": "v02-read-03",
+  "start_s": 5005.0,
+  "end_s": 5091.86,
+  "setup_s": 5005.0,
+  "payoff_s": 5057.0,
+  "category": "fun",
+  "title_th": "ไม่เคยมีใครลงมาถึงตรงนี้ ว้าว",
+  "quote": "เฮ้ย ถ้ามันตรงนี้ไม่มีใครเคยลงมาเลยหรอ ว้าว Amazing",
+  "reason": "Plans a different mining route, then discovers nobody has dug here and exclaims in wonder, followed by laughing and a string of ouch sounds. Words partly garbled.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v02-read-03-05",
+  "source_id": "v02",
+  "pack": "v02-read-03",
+  "start_s": 5104.0,
+  "end_s": 5161.74,
+  "setup_s": 5104.0,
+  "payoff_s": 5145.0,
+  "category": "fun",
+  "title_th": "ผักแร่วไปจากชีวิต ครีปเปอร์",
+  "quote": "พี่อาจจะเป็นตัวแม่ลิกที่แบบผัก ผักแร่วไปจากชีวิตผมอ่ะ",
+  "reason": "Chats about mining luck, then a quirky remark about a friend being removed from his life, with swearing and a creeper alarm as reaction. Guessing the payoff.",
+  "confidence": 0.25
+ }
+]
