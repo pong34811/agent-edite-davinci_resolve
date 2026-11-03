@@ -20,10 +20,12 @@ def format_packet(source_id: str, wins, segments, sheets: dict, ends: bool = Fal
         out.append("")
     return "\n".join(out)
 
-def run_all() -> None:
+def run_all(ids=None) -> None:
     (config.WORK_DIR / "review").mkdir(exist_ok=True)
     for sc in sorted((config.WORK_DIR / "scores").glob("*.top.json")):
         sid = sc.name.split(".")[0]
+        if ids and sid not in ids:
+            continue
         wins = [tuple(w) for w in json.loads(sc.read_text(encoding="utf-8"))]
         sents = fulltext.load_sentences(sid)   # whole-video sentences when `pipeline.py fulltext` ran
         segs = sents or json.loads((config.WORK_DIR / "transcripts" / f"{sid}.json").read_text(encoding="utf-8"))

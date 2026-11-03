@@ -70,11 +70,13 @@ def run(source_id: str, packs: list, duration_s: float, top_windows) -> dict:
     (rv / f"{source_id}.proposals.md").write_text(format_md(source_id, merged), encoding="utf-8")
     return {"kept": len(merged), "read": len(items), "rejected": bad, "missing_packs": missing}
 
-def run_all() -> None:
+def run_all(ids=None) -> None:
     w = config.WORK_DIR
     inv = {r["source_id"]: r for r in json.loads((w / "inventory.json").read_text(encoding="utf-8"))}
     plan = json.loads((w / "review" / "read-plan.json").read_text(encoding="utf-8"))
     for sid, packs in plan.items():
+        if ids and sid not in ids:
+            continue
         top = json.loads((w / "scores" / f"{sid}.top.json").read_text(encoding="utf-8"))
         r = run(sid, packs, inv[sid]["duration_s"], top)
         print(sid, f"{r['kept']} kept of {r['read']} valid;", f"rejected {r['rejected']};" if r["rejected"] else "",

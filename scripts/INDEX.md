@@ -179,11 +179,12 @@
 
 ## 9. คัดไฮไลต์ไลฟ์สตรีม (mp4 เสียงไทย) — `scripts/highlight/`
 
-ย้ายมาจาก repo `agent-seacrh-virus-cut` (2026-11-02). รันจาก `scripts/highlight/` และตั้ง `HIGHLIGHT_JOB` เป็น path ของ `work/highlight/<channel>/<job>/job.json` ก่อนทุกคำสั่ง (ไม่มีค่าเริ่มต้น); เทสอยู่ใน `tests/highlight/`. skill: `long-video-highlight-clipping`
+ย้ายมาจาก repo `agent-seacrh-virus-cut` (2026-11-02). รันจาก `scripts/highlight/` และตั้ง `HIGHLIGHT_JOB` เป็น path ของ `work/highlight/<channel>/<job>/job.json` ก่อนทุกคำสั่ง (ไม่มีค่าเริ่มต้น); เทสอยู่ใน `tests/highlight/`. skill: `highlight` (ทางเข้า) → `long-video-highlight-clipping`
 
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
-| `highlight/pipeline.py` | ตัวรันขั้นตอน `inventory\|features\|shortlist\|transcribe\|fulltext\|readpacks\|readbriefs\|proposals\|sheets\|packets\|briefs` (มี cache; ขั้นยาวรันเบื้องหลัง) | ใช้ซ้ำ |
+| `highlight/pipeline.py` | ตัวรันขั้นตอน `status\|inventory\|features\|shortlist\|transcribe\|fulltext\|readpacks\|readbriefs\|proposals\|sheets\|packets\|briefs` (มี cache; ขั้นยาวรันเบื้องหลัง) | ใช้ซ้ำ |
+| `highlight/status.py` | `pipeline.py status`: ตารางขั้นที่เสร็จต่อวิดีโอ (อ่านไฟล์อย่างเดียว) + คำสั่งถัดไปคำสั่งเดียว รวมรายชื่อแพ็กที่ reader ยังไม่ส่ง; `READ_WHOLE_STREAM: false` ข้ามขั้นอ่านทั้งไลฟ์ — ทางเข้าคือสกิล `highlight` | ใช้ซ้ำ |
 | `highlight/config.py` | อ่าน `job.json` จาก `HIGHLIGHT_JOB`; ffmpeg/ffprobe จาก `HIGHLIGHT_FFMPEG`/`HIGHLIGHT_FFPROBE` → Hermes bundled → PATH | ใช้ซ้ำ |
 | `highlight/inventory.py`, `highlight/features.py`, `highlight/shortlist.py`, `highlight/windows.py` | ffprobe inventory → wav 16 kHz ครั้งเดียว → คะแนนเสียงต่อหน้าต่าง → shortlist ที่ไม่ทับกัน | ใช้ซ้ำ |
 | `highlight/fulltext.py` | ถอดเสียงทั้งวิดีโอพร้อมเวลาระดับคำ (faster-whisper `large-v3-turbo`, ก้อนละ 10 นาที, ทำต่อจากจุดค้างได้) → `transcripts/<id>.words.json`, `.sentences.json` (ตัดประโยคที่ช่วงหยุด ≥0.6 วิ), `.fulltext.txt` (`[H:MM:SS] ข้อความ [ends วินาที]`) ให้ agent อ่านทั้งไลฟ์ | ใช้ซ้ำ |

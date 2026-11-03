@@ -7,6 +7,8 @@ description: Use when cutting highlights from long VODs into Resolve.
 
 > **In this repo:** pipeline code is `scripts/highlight/` (was `work/*.py`), tests `tests/highlight/`, job folders `work/highlight/<channel>/<job>/` (`HIGHLIGHT_JOB` points at its `job.json`), job prompt template `docs/highlight/prompt-template.md`, wiki `docs/highlight/wiki/`. Older wording that says `work/`, `prompt.md` or `llm_wiki/` means these paths.
 
+Start from the one-page `highlight` skill (map, steps, `pipeline.py status`); this file holds the details and traps.
+
 Finds gameplay / fun / meme highlight moments in long livestream or VOD footage and builds one short-clip timeline per moment in DaVinci Resolve.
 User communicates in Thai; write plans/prompts/reports in Thai, keep code, paths and commands literal.
 Also load `resolve-rough-cut` (assembly traps, no titles/captions/effects), `resolve-media-pool`, `resolve-session` and `house-style` before touching Resolve. Do not duplicate their rules here.
@@ -68,6 +70,8 @@ Also load `resolve-rough-cut` (assembly traps, no titles/captions/effects), `res
 Keep every script a job needs inside the repo, never only in chat or a one-off temp file: reviewer prompt as a template rendered per video (`briefs.py` + `templates/reviewer_brief.md`, delegate_task context = that file's text), source_id->Resolve clip id mapper that fails on a missing video, a `calls <start> <end>` mode on the timeline builder that prints ready MCP payloads, a GPU smoke test that reads the first inventory video (no hardcoded channel or filename), and ffmpeg path resolution as env override -> bundled copy -> PATH. Write the test first for each; run the whole suite before committing.
 
 ## Tooling pitfalls
+
+- After changing the `highlight` entry skill, run a cold-start test. Give a fresh, cheap subagent a read-only user-style request ("/highlight <job>: where is it, what next for v01?") and ask it to list what was unclear. The 2026-11-03 run found the workflow from `AGENTS.md` alone, but it caught three problems: the skill had no rule for re-reviewing a video whose `review/<id>.json` was already approved (overwrite risk), `status` could not be scoped to one video, and `WORK_DIR` and the background commands were never spelled out.
 
 - Edits to `AGENTS.md` can be blocked by an approval prompt that times out; silence is not consent. Do not retry or route around it via terminal; finish the rest, then tell the user exactly which line is still stale and ask.
 - When the user asks to commit or add something by a name that matches nothing in the repo (e.g. a `Releases` folder), say so and offer the readings (folder, tag, GitHub release) instead of guessing; commit what is unambiguous. Never push or tag without being asked.

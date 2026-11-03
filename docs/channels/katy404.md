@@ -67,3 +67,7 @@
 - ซีรีส์ถึง day ไหนแล้ว และ day ไหนส่งมอบแล้ว
 - มีกฎซับ/สีตัวอักษร/BGM เฉพาะช่องหรือไม่
 - เป้าซูมคืออวาตาร์เสมอหรือมีตัวละครในเกมด้วย
+
+## Highlight jobs
+
+- Job folders: `work/highlight/Katy404/<YYYY-MM>/` (2026-10: 12 lives, 48 timelines built from the loudness route; only v05 has been read in full). To see where a job stands, run `python scripts/highlight/pipeline.py status` with `HIGHLIGHT_JOB` set, and follow the `highlight` skill.

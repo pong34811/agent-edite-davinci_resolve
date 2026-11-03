@@ -1,4 +1,4 @@
-"""Stage runner: python pipeline.py <inventory|features|shortlist|transcribe|fulltext|readpacks|readbriefs|proposals|sheets|packets|briefs>. Outputs are cached per stage.
+"""Stage runner: python pipeline.py <status|inventory|features|shortlist|transcribe|fulltext|readpacks|readbriefs|proposals|sheets|packets|briefs>. Outputs are cached per stage.
 `fulltext` (whole video, word timestamps) is optional; when present, packets and snap.py use its sentences,
 and `readpacks` -> reader subagents -> `proposals` let agents find moments by reading the whole stream."""
 import json, sys, time
@@ -7,6 +7,10 @@ import config
 
 def ids():
     return [r["source_id"] for r in json.loads((config.WORK_DIR / "inventory.json").read_text(encoding="utf-8"))]
+
+def stage_status():
+    import status   # read-only: per-video stage table + the one next step
+    print(status.format_table(status.job_state(config.WORK_DIR, config._job.get("READ_WHOLE_STREAM", True), sys.argv[2:])))
 
 def stage_inventory():
     import inventory; inventory.main()
@@ -43,7 +47,7 @@ def stage_readbriefs():
     import briefs; briefs.run_readers(sys.argv[2:])   # one reader brief per reading pack
 
 def stage_proposals():
-    import proposals; proposals.run_all()             # merge review/<id>.read-NN.json -> <id>.proposals.md
+    import proposals; proposals.run_all(sys.argv[2:])   # `proposals [ids...]`: review/<pack>.json -> <id>.proposals.md
 
 def stage_sheets():
     import contact_sheet; contact_sheet.run_all()
@@ -52,7 +56,7 @@ def stage_briefs():
     import briefs; briefs.run_all(" ".join(sys.argv[2:]))   # `pipeline.py briefs <hint...>`
 
 def stage_packets():
-    import packets; packets.run_all()
+    import packets; packets.run_all(sys.argv[2:])   # `packets [ids...]`
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # Thai/emoji filenames crash a cp1252 console
