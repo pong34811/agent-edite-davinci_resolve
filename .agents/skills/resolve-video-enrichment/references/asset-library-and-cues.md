@@ -39,6 +39,12 @@ Treat these paths and counts as historical examples, not live inventory or licen
 - Order on a 16:9 timeline with a zoom track: V1 base, V2 `VTuber Zoom`, V3 `REACTIONS`. GIFs sit above the
   zoom so they are not magnified; keep them out of zoom ranges. Then `scripts/apply_vdo_preset.py --timeline <name> --apply`.
 
+- GIF length pre-filter: use the real play time (sum of PIL frame `duration` >= 1.5 s), not `n_frames / 25`;
+  the frame-count filter wrongly drops `งง - mochi-cat-what` (46 frames, 1.9 s), which Resolve held for 112 record
+  frames at 60 fps. In the 2026-11 scan only ~30 of 164 GIFs held >= 1.5 s, and most `ขำ`/`เบื่อ`/`หมา` picks were
+  0.5-1 s; scan once and choose from the passing list. `Reaction - Laughing Pointing.gif` is a real person's photo:
+  skip it for VTuber channels.
+
 ## Track convention on this user's shorts projects
 
 `V1` gameplay · `V2` reaction overlays · `A1` dialogue/game audio · `A2` SFX · `A3` BGM · `ST1` Thai subtitles. Inspect an already-finished timeline in the same project to confirm the names before creating tracks — an existing exemplar timeline is the spec.

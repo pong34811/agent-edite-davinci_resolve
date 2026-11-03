@@ -3869,7 +3869,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\asset-library-and-cues.md",
       "source_sha256": "4b34d3e949dcff3f372c23ca97d47e658d102ee3b3f051683af4a09e99397232",
       "kind": "editing_skill",
-      "sha256": "81f5529ec28ac1a30843e66cb73b3bddd1c4bdca153d4dd989722c2f262a7948"
+      "sha256": "8b68b081a48c8f591acf262c231a99dde1e7822f42cc1c0ca743201a1347445f"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/automation-safety.md",
@@ -4669,7 +4669,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "8071cd6f648ff732624b5f8ade50cabf8bd3d9b75741969f274263e3b4b8385d",
+      "sha256": "da7d263869fbd21e98e12860eb77c20b5772cad083e1e7ef657834fcd04c0fdf",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4681,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "38576e80ad79a16e7f75792bc874a47e842639dbbf84a86fedf39f9f669d3a59",
+      "sha256": "982fd4fb72283c478ed6c317da45598e360334ede07d985ed06ca070591077a1",
       "kind": "integration_or_validation"
     },
     {
@@ -4800,7 +4800,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "72250b4f25a5ede1cf557c5004ab133a3adba62c9bae403756887f566e09fe43"
+      "sha256": "6f17b0ba9c49cffd8d15934f3afbe5ff2fdb7e6eb2c96948356548a204a219e6"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8631,7 +8631,7 @@
     "supporting_skills": 52,
     "active_skills": 69
   },
-  "bundle_version": "0.17.9",
+  "bundle_version": "0.17.10",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
