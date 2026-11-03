@@ -45,4 +45,5 @@ work/highlight/**/review/source_previews/
 # reading packs and their briefs are regenerated from transcripts (pipeline.py readpacks/readbriefs)
 work/highlight/**/review/*-read-[0-9][0-9].md
 work/highlight/**/review/*-read-[0-9][0-9].brief.md
+work/highlight/**/*.log
 scripts/highlight/.venv/
