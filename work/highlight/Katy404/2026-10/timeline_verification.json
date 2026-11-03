@@ -1,6 +1,6 @@
 {
  "project": "KT404 Highlights 2026-10",
- "timeline_count": 48,
+ "timeline_count": 49,
  "planned": 48,
  "ok": 46,
  "rows": [
@@ -283,8 +283,8 @@
    "candidate": "v09-03",
    "ok": true,
    "problems": [],
-   "video_duration": 5991,
-   "expected_duration": 5991
+   "video_duration": 8121,
+   "expected_duration": 8121
   },
   {
    "name": "ถึงเวลาเราแล้ว อย่าไปยอม-Terraria-vdo",

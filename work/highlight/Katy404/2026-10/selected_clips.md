@@ -39,7 +39,7 @@
 | v08-04 | ลุยล่าม้อนกับเพื่อน-Monster Hunter World-vdo | v08 `tO6g3mXFdQk` | 1:11:36-1:13:00 | 84 | ช่วงเล่นเกม | Co-op hunt with friends against a big monster, chatter and reactions as the group fights. | ASR | ตรง |
 | v09-01 | ยิงมังกรสายรุ้งสุดมัน-Terraria-vdo | v09 `VkJSTbFZg8M` | 0:30:07-0:31:55 | 107 | ช่วงเล่นเกม | Boss fight under a rainbow sky with chat shouting and Katy complaining her shots miss the dragon. | ASR อ่อน | ตรง |
 | v09-02 | มูนลอร์ดลูกตาออก ปากหมวกแตก-Terraria-vdo | v09 `VkJSTbFZg8M` | 0:57:59-1:00:00 | 120 | ช่วงเล่นเกม | Moon Lord fight with the team panicking over lasers, near-deaths and who goes for the eye or heart. | ASR | ตรง |
-| v09-03 | ชนะแล้วทุกคน!-Terraria-vdo | v09 `VkJSTbFZg8M` | 1:01:35-1:03:15 | 100 | ช่วงสนุกสนาน | Moon Lord falls, team celebrates; joking about who sacrifices for the eye. | ASR | ตรง |
+| v09-03 | ชนะแล้วทุกคน!-Terraria-vdo | v09 `VkJSTbFZg8M` | 1:01:35-1:03:50 | 135 | ช่วงสนุกสนาน | Moon Lord falls, team celebrates; joking about who sacrifices for the eye. | ASR | ตรง |
 | v09-04 | ถึงเวลาเราแล้ว อย่าไปยอม-Terraria-vdo | v09 `VkJSTbFZg8M` | 2:07:48-2:10:02 | 134 | ช่วง meme | Hype boss fight with team rallying 'don't give up' lines, a tongue-slap joke and chaotic laser dodging. | ASR อ่อน | ตรง |
 | v10-01 | ลืมเอาของกินมา แดกเนื้อซอมบี้-Minecraft-vdo | v10 `xQmsPpzWWZw` | 0:37:59-0:39:43 | 105 | ช่วง meme | Katy and friends realise they forgot food and joke about eating zombie meat in a Minecraft survival world. | ASR อ่อน | ตรง |
 | v10-02 | ซอมบี้โผล่ ครีปเปอร์ระเบิดกลางถ้ำ-Minecraft-vdo | v10 `xQmsPpzWWZw` | 0:40:39-0:42:18 | 99 | ช่วงเล่นเกม | Cave fight with a zombie and a creeper blowing up while Katy panics and reacts. | ASR | ตรง |
@@ -59,3 +59,4 @@
 หมายเหตุเกม:
 - v11: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker (= SoulWorker; เห็นตัวละคร Haru/Lily/Iris/Stella, เมือง Candus City) ผู้ใช้ยืนยันให้ใช้ชื่อ `Soul Walker` ตามเดิม
 - v12: ยืนยันแล้ว (2026-11-03) เป็น Soul Walker เกมเดียวกับ v11 (UI เดียวกัน, Rocco Town/Grasscover Camp, Haru/Lily) ใช้ชื่อ `Soul Walker` ตามเดิม
+- v09-03: ขยายจุดจบจาก 3795 เป็น 3830.5 s (2026-11-03) ให้รวมช่วงบอสตาย/เชียร์/คัตซีน; ของเดิมเก็บเป็น timeline `ชนะแล้วทุกคน!-Terraria-vdo_bak`
