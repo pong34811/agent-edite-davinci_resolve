@@ -2949,7 +2949,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "ab89f4283018cf2e36cd53081d3c95c10791985d498b154aacb0b1e87f1c7e46"
+      "sha256": "278e3fdbb6849c061a2e19bcc94418bb0aae77372713ef016471404e0a88c4e2"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -4669,7 +4669,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "472f076541895a0b445e7206a6299478cc914565a12aa03fe461d8b36873dba3",
+      "sha256": "1205817f7848969313352d22d3523ce0c4957aa4f6e27baec680b14304b7f7ec",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4681,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "a23feddd7596370c7a29cc16ca4265a27e1395229173068cfa69247d80b7dab5",
+      "sha256": "090b4b5f34d5cb6ff0f8381826e5996efe1b1b380b1df82be11f42d29e8b241f",
       "kind": "integration_or_validation"
     },
     {
@@ -7355,7 +7355,7 @@
       "path": "scripts/highlight/templates/reader_brief.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a7204261e64c7019b89877ad5c72425ffa1c5ab33e684099b8109085d90ad35e"
+      "sha256": "cfd855b537a689da3c0264c6736833f7cc3ebd4a23f7ad2834635d2e43608539"
     },
     {
       "path": "scripts/highlight/templates/reviewer_brief.md",
@@ -8631,7 +8631,7 @@
     "supporting_skills": 52,
     "active_skills": 69
   },
-  "bundle_version": "0.17.6",
+  "bundle_version": "0.17.7",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

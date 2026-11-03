@@ -1,0 +1,30 @@
+[
+ {
+  "id": "v10-read-06-01",
+  "source_id": "v10",
+  "pack": "v10-read-06",
+  "start_s": 8581.66,
+  "end_s": 8695.12,
+  "setup_s": 8590.0,
+  "payoff_s": 8669.0,
+  "category": "fun",
+  "title_th": "ผักแข็งตายหมด แต่ยังยืนยันว่าไม่ตาย",
+  "quote": "มันไม่ตายพี่เชื่อผมทำคลิปปลูกผักมาร้อยวัน",
+  "reason": "Setup: the crops are frozen/snowed over and a friend asks what is wrong. Payoff: he insists they are not dead despite a hundred-day farming clip. Reaction: admits they look dried out and goes to check the farm. ASR is garbled.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v10-read-06-02",
+  "source_id": "v10",
+  "pack": "v10-read-06",
+  "start_s": 8706.42,
+  "end_s": 8797.33,
+  "setup_s": 8708.0,
+  "payoff_s": 8778.0,
+  "category": "meme",
+  "title_th": "หัวเราะลั่น แล้วบ่นหิมะบังหมด",
+  "quote": "มันใช่ไว้มันหัวมันไม่เห็นอะไรเนี่ยฮะก็มันหิมะอ่ะ",
+  "reason": "Setup: long laughing fit at the farm situation. Payoff: complains he cannot see anything because of the snow. Reaction: friend remarks it is so true, like a sculpture. Words are unclear, payoff guessed.",
+  "confidence": 0.35
+ }
+]

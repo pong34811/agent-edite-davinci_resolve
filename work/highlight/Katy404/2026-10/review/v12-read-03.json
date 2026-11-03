@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v12-read-03-01",
+  "source_id": "v12",
+  "pack": "v12-read-03",
+  "start_s": 4119.32,
+  "end_s": 4175.37,
+  "setup_s": 4121.0,
+  "payoff_s": 4138.0,
+  "category": "fun",
+  "title_th": "ชายาดีๆ ต้องเล่นใหม่",
+  "quote": "ชายาดีๆ ต้องเล่นใหม่",
+  "reason": "ASR garbled: talk about needing to remake a character to get good gear, then debate how good it really is; streamer admits he never used it. Guessing payoff.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v12-read-03-02",
+  "source_id": "v12",
+  "pack": "v12-read-03",
+  "start_s": 4629.88,
+  "end_s": 4675.89,
+  "setup_s": 4644.0,
+  "payoff_s": 4658.0,
+  "category": "meme",
+  "title_th": "คนดีเล่นอูโน่ อย่าเชื่อเขา",
+  "quote": "อย่าให้ผมไปหาเล่นสปอร์ตเกมเลยแบบไม่ว่าแวลวูปเลยว่าอูโน่อย่าเลยอย่าเชื่อเขาพูดผมว่าผมเป็นคนดี",
+  "reason": "Joke about people who claim to be good people while playing games, Uno as the example; streamer says do not trust anyone who says that, then chat riffs on. Words partly garbled.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v12-read-03-03",
+  "source_id": "v12",
+  "pack": "v12-read-03",
+  "start_s": 4825.13,
+  "end_s": 4892.36,
+  "setup_s": 4825.14,
+  "payoff_s": 4846.0,
+  "category": "fun",
+  "title_th": "ต้องเปิด Gemini ทำจนได้",
+  "quote": "ผมนั่งผมนั่งทำกับมันอ่ะ ผมเปิด Gemini ผมเปิด Google",
+  "reason": "Group talks about how tedious a game unlock quest is; streamer describes sitting with Gemini, Google and YouTube until it works without even understanding it, and others commiserate.",
+  "confidence": 0.5
+ },
+ {
+  "id": "v12-read-03-04",
+  "source_id": "v12",
+  "pack": "v12-read-03",
+  "start_s": 5002.25,
+  "end_s": 5044.13,
+  "setup_s": 5002.26,
+  "payoff_s": 5023.0,
+  "category": "fun",
+  "title_th": "ไม่รู้เรื่อง อังกฤษก็โง่ ต้องแปะให้ GPT",
+  "quote": "แล้ว นุษภาพ น้ำว่า ผม แม่ง โง อังกฤษ ต้อง มา นั่น แบบ",
+  "reason": "Streamer explains that nobody knows how to do the quest, and with poor English he has to paste info for an AI to help while the info is outdated. Garbled ASR, payoff guessed.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v12-read-03-05",
+  "source_id": "v12",
+  "pack": "v12-read-03",
+  "start_s": 5119.34,
+  "end_s": 5163.58,
+  "setup_s": 5129.0,
+  "payoff_s": 5148.0,
+  "category": "fun",
+  "title_th": "ชอบ Second Awakening คุยกับตัวเอง",
+  "quote": "ผมชอบ Second Awakening ตรงที่ว่าเราได้คุยกับตัวเราเอง",
+  "reason": "Discussion of the new Second Awakening update and skills changing; streamer says he likes that the character talks with their own self, not a shadow anymore.",
+  "confidence": 0.4
+ }
+]

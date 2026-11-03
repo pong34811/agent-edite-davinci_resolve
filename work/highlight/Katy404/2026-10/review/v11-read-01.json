@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v11-read-01-01",
+  "source_id": "v11",
+  "pack": "v11-read-01",
+  "start_s": 314.42,
+  "end_s": 356.07,
+  "setup_s": 314.42,
+  "payoff_s": 323.0,
+  "category": "fun",
+  "title_th": "คอสตูมหาย กลายเป็นยาจก",
+  "quote": "กลายเป็นยาจกเลยเมื่อกี้คนดูเศร้าว่ะ",
+  "reason": "Costumes go missing while setting up; the streamer ends up looking like a beggar, then chat feels sad and they joke about it. Words partly garbled.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v11-read-01-02",
+  "source_id": "v11",
+  "pack": "v11-read-01",
+  "start_s": 553.99,
+  "end_s": 628.17,
+  "setup_s": 559.0,
+  "payoff_s": 583.0,
+  "category": "fun",
+  "title_th": "งูบุกบ้านลาฟี่ ช็อค",
+  "quote": "เชี่ย แม่ง แบบ ช็อค",
+  "reason": "Co-player hears an animal entering their house, panics and leaves; the streamer is shocked, then explains to viewers that a snake invaded the house.",
+  "confidence": 0.55
+ },
+ {
+  "id": "v11-read-01-03",
+  "source_id": "v11",
+  "pack": "v11-read-01",
+  "start_s": 806.49,
+  "end_s": 837.44,
+  "setup_s": 806.49,
+  "payoff_s": 810.3,
+  "category": "fun",
+  "title_th": "กลับมาจากเหตุการณ์ระทึกขวัญ",
+  "quote": "กลับมาแล้ว จากเก็ดการระทึกขวันเฮียอ",
+  "reason": "Friend returns after the snake scare, chat and streamer tease that the snake slithered into the back of the house.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v11-read-01-04",
+  "source_id": "v11",
+  "pack": "v11-read-01",
+  "start_s": 1276.14,
+  "end_s": 1348.57,
+  "setup_s": 1277.0,
+  "payoff_s": 1327.0,
+  "category": "gameplay",
+  "title_th": "ปัดทุกอย่างได้ แม้ RPG",
+  "quote": "ปัดได้หมดทุกอย่าง RPG ก็ได้ ขนาดรถที่โดนขว้างมายังปัดได้เลย",
+  "reason": "Talk about surviving Rocket Rancher shots by parrying; someone claims a player can parry everything even RPGs and thrown cars; then they find a rare character to carry.",
+  "confidence": 0.35
+ }
+]

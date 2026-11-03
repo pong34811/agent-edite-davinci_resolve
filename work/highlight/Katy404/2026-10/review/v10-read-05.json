@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v10-read-05-01",
+  "source_id": "v10",
+  "pack": "v10-read-05",
+  "start_s": 7599.68,
+  "end_s": 7666.86,
+  "setup_s": 7604,
+  "payoff_s": 7645,
+  "category": "fun",
+  "title_th": "คุยกับแชทแล้วเจอหินขวางตอนขุดดิน",
+  "quote": "เจอหินแม่งอยากคุณดิ่งลงอีกแล้วอีกแล้วอีกแล้",
+  "reason": "Streamer thanks chat for mentioning the stream while digging/farming land; hits a stone block and groans repeatedly. Words garbled, payoff guessed.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v10-read-05-02",
+  "source_id": "v10",
+  "pack": "v10-read-05",
+  "start_s": 7914.68,
+  "end_s": 7966.34,
+  "setup_s": 7915,
+  "payoff_s": 7939,
+  "category": "fun",
+  "title_th": "ลองเปลี่ยนธีมแล้วสบถใส่เกม",
+  "quote": "ไอ้ เหี้ย มาขอมวล ผมไปแล้วพี่",
+  "reason": "Friends try to change the build theme/smoothing; streamer tests it and swears when it does not work as expected. Garbled, payoff guessed.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v10-read-05-03",
+  "source_id": "v10",
+  "pack": "v10-read-05",
+  "start_s": 7950.26,
+  "end_s": 8038.67,
+  "setup_s": 7950.26,
+  "payoff_s": 8011,
+  "category": "fun",
+  "title_th": "โดนแดกของไปครึ่งนึงแล้วต้องวิ่งไปเอาถังน้ำ",
+  "quote": "แม่งแดกรมป้างผมไปครึ่งนึงอ่ะ",
+  "reason": "Feeding/farming setup goes wrong, something eats half of his stuff, then he scrambles off to fetch water buckets. Includes garbled stretch, low confidence.",
+  "confidence": 0.25
+ },
+ {
+  "id": "v10-read-05-04",
+  "source_id": "v10",
+  "pack": "v10-read-05",
+  "start_s": 8223.15,
+  "end_s": 8260.3,
+  "setup_s": 8223.15,
+  "payoff_s": 8235,
+  "category": "gameplay",
+  "title_th": "ไปฟาร์มแล้วน้ำไม่จุด",
+  "quote": "ไม่จุด ทำไมไม่จุดดีแล้วพี่",
+  "reason": "Heading to the farm, a friend says to drop down; the thing will not light/work and they puzzle over it, a loud spike in audio. Very uncertain.",
+  "confidence": 0.2
+ }
+]

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "v10-read-01-01",
+  "source_id": "v10",
+  "pack": "v10-read-01",
+  "start_s": 278.0,
+  "end_s": 329.25,
+  "setup_s": 284.0,
+  "payoff_s": 324.0,
+  "category": "fun",
+  "title_th": "เซิร์ฟปิดกลางคัน เล่นเซิร์ฟส่วนตัวแล้วเซิร์ฟดับ",
+  "quote": "แม่งไม่มีเซอร์ฟรรร",
+  "reason": "Kay tells how a server shutting down mid-play wipes out hours of work, builds to the despair of having no server at all, then mock-sighs.",
+  "confidence": 0.4
+ },
+ {
+  "id": "v10-read-01-02",
+  "source_id": "v10",
+  "pack": "v10-read-01",
+  "start_s": 521.99,
+  "end_s": 607.02,
+  "setup_s": 525.0,
+  "payoff_s": 602.0,
+  "category": "gameplay",
+  "title_th": "เกือบตกลาวา-หลุมตาย",
+  "quote": "เกือบล่ะ เกือบล่ะ วิ้ยยย",
+  "reason": "Fast-digging down a shaft, he nearly falls to his death, scrambles out, then digs into a lit cave and almost dies again with relieved shouting.",
+  "confidence": 0.45
+ },
+ {
+  "id": "v10-read-01-03",
+  "source_id": "v10",
+  "pack": "v10-read-01",
+  "start_s": 792.05,
+  "end_s": 847.6,
+  "setup_s": 799.0,
+  "payoff_s": 831.0,
+  "category": "gameplay",
+  "title_th": "ขุดเจอเหล็กเต็มเลย 32 อัน",
+  "quote": "ไอ้ เหี้ยได้มา 32 อัน หวานเจียบเลยรออะไรล่ะครับ พี่น้อง",
+  "reason": "Digging for copper, he finds iron, reacts with surprise, hauls in 32 at once, then notes it is not the rare item he hoped for.",
+  "confidence": 0.5
+ },
+ {
+  "id": "v10-read-01-04",
+  "source_id": "v10",
+  "pack": "v10-read-01",
+  "start_s": 1323.99,
+  "end_s": 1383.65,
+  "setup_s": 1330.0,
+  "payoff_s": 1370.0,
+  "category": "fun",
+  "title_th": "มาขุดจิ๊นแต่ได้ดินเหนียว",
+  "quote": "โหโหโรเคชัดตรงนี้ดีจัดเลยดินเหนียวเต็มเลย",
+  "reason": "Chatting with the partner about fortune levels and gear, he looks around and realises the great spot is just full of clay; the partner jokes about the missing tools.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v10-read-01-05",
+  "source_id": "v10",
+  "pack": "v10-read-01",
+  "start_s": 1636.82,
+  "end_s": 1683.07,
+  "setup_s": 1648.0,
+  "payoff_s": 1651.0,
+  "category": "fun",
+  "title_th": "เดินแล้วโผล่ตรงที่สร้างเรือ",
+  "quote": "มันไปโผลตรงสร้างเรือเลยอ่ะ",
+  "reason": "Lost trying to find his house, he digs up and pops out right at the boat build site, exclaims, then marks the location and decides which way to go.",
+  "confidence": 0.35
+ }
+]

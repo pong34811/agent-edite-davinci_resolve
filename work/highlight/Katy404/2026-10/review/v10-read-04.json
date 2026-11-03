@@ -1,0 +1,58 @@
+[
+ {
+  "id": "v10-read-04-01",
+  "source_id": "v10",
+  "pack": "v10-read-04",
+  "start_s": 5682.29,
+  "end_s": 5763.83,
+  "setup_s": 5682.29,
+  "payoff_s": 5691.0,
+  "category": "gameplay",
+  "title_th": "ลุ้นหนีสัตว์โวยวายกลางเกม",
+  "quote": "เอ้ย ๆ พี่จะเย็น เฮ้ย ๆ",
+  "reason": "Trying to get past an obstacle with the other player, then frantic repeated shouting as it goes wrong; ends with 'I threw it already' and chat reaction. Words are garbled so the payoff is a guess.",
+  "confidence": 0.35
+ },
+ {
+  "id": "v10-read-04-02",
+  "source_id": "v10",
+  "pack": "v10-read-04",
+  "start_s": 5814.0,
+  "end_s": 5879.55,
+  "setup_s": 5814.0,
+  "payoff_s": 5832.0,
+  "category": "fun",
+  "title_th": "ฮึกเหิมสู้ศึกกับเฮีย",
+  "quote": "เลิด พี่ เลิด เลิด เลิด พี่แหกลางไม่ได้พี่จ๊ะ",
+  "reason": "Banter after a close fight: partner is hyped and calls out, streamer answers with excited shouts, then both plan a water channel. Garbled ASR.",
+  "confidence": 0.3
+ },
+ {
+  "id": "v10-read-04-03",
+  "source_id": "v10",
+  "pack": "v10-read-04",
+  "start_s": 6000.24,
+  "end_s": 6077.21,
+  "setup_s": 6000.24,
+  "payoff_s": 6011.0,
+  "category": "gameplay",
+  "title_th": "ล่อสัตว์ 'come on follow me'",
+  "quote": "มันนี่ มันนี่ มันนี่ มันนี่ come on boofollow me you can see",
+  "reason": "Streamer asks if the animals can only be placed, then coaxes them with 'come on, follow me' repeatedly and admits it is the first time leading them home without FC; urges them to hurry.",
+  "confidence": 0.45
+ },
+ {
+  "id": "v10-read-04-04",
+  "source_id": "v10",
+  "pack": "v10-read-04",
+  "start_s": 6214.85,
+  "end_s": 6333.18,
+  "setup_s": 6214.85,
+  "payoff_s": 6234.0,
+  "category": "fun",
+  "title_th": "พาสัตว์เข้าฟาร์มสำเร็จ",
+  "quote": "สวยพี่จ่ะอย่าพูดเหมือนนี้คนดูเสียจังนะ",
+  "reason": "Leading the animals home to the farm, announcing arrival, plan to breed two and spam them, then jokes that chat will lose faith in how he talks.",
+  "confidence": 0.4
+ }
+]

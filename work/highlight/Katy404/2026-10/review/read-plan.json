@@ -312,5 +312,69 @@
    "start_s": 8400.0,
    "end_s": 9102.0
   }
+ ],
+ "v11": [
+  {
+   "pack": "v11-read-01",
+   "file": "v11-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v11-read-02",
+   "file": "v11-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v11-read-03",
+   "file": "v11-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5221.0
+  }
+ ],
+ "v12": [
+  {
+   "pack": "v12-read-01",
+   "file": "v12-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v12-read-02",
+   "file": "v12-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v12-read-03",
+   "file": "v12-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v12-read-04",
+   "file": "v12-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v12-read-05",
+   "file": "v12-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v12-read-06",
+   "file": "v12-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10200.0
+  },
+  {
+   "pack": "v12-read-07",
+   "file": "v12-read-07.md",
+   "start_s": 10080.0,
+   "end_s": 10801.0
+  }
  ]
 }
