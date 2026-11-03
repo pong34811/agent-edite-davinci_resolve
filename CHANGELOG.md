@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.12 — KT404 Highlights ซับ Mitr Font
+
+### รายละเอียด
+- โหลด Subtitle preset `Mitr Font` ลง timeline นำร่อง KT404 Highlights (`_vdo_edit`, 55 cue) ตามที่ผู้ใช้อนุมัติ; dry run ยืนยัน `already_matches=True`, gain/ซับ/track อ่านกลับไม่เปลี่ยน
+- render ทดสอบ v2 ซับ burn-in 7052 เฟรม true peak -1.0 dBFS ไม่มีเฟรมดำ ซับอ่านได้บนฉากหิมะ
+- บันทึกวิธีแก้เมื่อ Resolve กลับมาค้างที่ Project Manager หลังแพตช์ preset: ใช้ `resolve_recover.py` แล้ว dry run ซ้ำ ไม่แพตช์ซ้ำ
+
 ## v0.17.11 — KT404 Highlights งานนำร่อง
 
 ### รายละเอียด
