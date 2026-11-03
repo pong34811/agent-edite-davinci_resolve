@@ -4446,7 +4446,7 @@
       "path": ".agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "ac2545ae41108454367e975030341e7d4daa847fd069f0f131c003981dacec6d"
+      "sha256": "5431f1b5cd80dd56f933b807b71e3435ae186e7c33131008f1b0fd2ce17aef59"
     },
     {
       "path": ".agents/skills/timeline-naming-convention/SKILL.md",
@@ -4669,7 +4669,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "da7d263869fbd21e98e12860eb77c20b5772cad083e1e7ef657834fcd04c0fdf",
+      "sha256": "a58beb8deee8c173b15158b88d99ebf7968399cecbf63113433219a6ac412548",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4681,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "982fd4fb72283c478ed6c317da45598e360334ede07d985ed06ca070591077a1",
+      "sha256": "3a7c9d68de8c65130c3e1451ac2806b21ea8dd50fab20eeb12879dee03d727aa",
       "kind": "integration_or_validation"
     },
     {
@@ -4800,7 +4800,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6f17b0ba9c49cffd8d15934f3afbe5ff2fdb7e6eb2c96948356548a204a219e6"
+      "sha256": "de852513f4bb725e00719ede8df687948d420e6e323a25b626246be6d34b4c4e"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8631,7 +8631,7 @@
     "supporting_skills": 52,
     "active_skills": 69
   },
-  "bundle_version": "0.17.10",
+  "bundle_version": "0.17.11",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

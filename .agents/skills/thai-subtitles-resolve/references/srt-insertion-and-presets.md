@@ -149,3 +149,10 @@ python -m unittest discover -s tests -p test_load_subtitle_preset.py -v
 
 Tests นี้ทดสอบ parser/exact database rows บน fixtures ไม่ได้เชื่อม Resolve
 และไม่เป็นหลักฐาน live verification ของโปรเจกต์ที่จะทำครั้งถัดไป
+
+## เมื่อ Resolve กลับมาแต่ scripting ไม่ตอบหลัง `load_subtitle_preset_auto --apply`
+
+ถ้า helper จบด้วย `Resolve did not come back` หลังพิมพ์ `PATCH_OK` แปลว่าแพตช์ลงแล้ว แต่ Resolve ที่เปิดใหม่ค้างอยู่หน้า
+Project Manager และ scripting ไม่ตอบ ให้รัน `python scripts/resolve_recover.py --project "<ชื่อโปรเจกต์>"` เอง (ไม่มีโปรเจกต์เปิดอยู่
+จึงไม่มีงานที่ยังไม่บันทึก) แล้วรัน dry run ซ้ำจนได้ `already_matches=True` และอ่าน gain/ซับ/track กลับ อย่าแพตช์ซ้ำ
+(KT404 Highlights 2026-11-03: `--dry-run` รายงาน `responsive=False` สองครั้ง; recover ครั้งเดียวเปิดโปรเจกต์กลับมาครบ 53 timelines และ gain ทุกตัวไม่เปลี่ยน)
