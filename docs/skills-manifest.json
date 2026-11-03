@@ -2934,7 +2934,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "234165f39da3c256ebe7b042f4a6f6b423299aa27ec79f084b01f548522776c2"
+      "sha256": "bee2fbe58a0252c26e68df14f609db3c2fdf24897ef734bfdbdd5efab8d38337"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -4679,7 +4679,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "265135ce8b4b50b68f738d83ba266a147b98f34965b7f2d631b232f947de289a"
+      "sha256": "ea2362f939a2ec41efaa910aee14cfbc82a40321b6bd18e75f76aff8b5f74828"
     },
     {
       "path": "docs/README.md",
@@ -4785,7 +4785,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "93192efefeba2c23c592c08b632bf77240be7c31303e945d12d885ea2fa8a6d6"
+      "sha256": "b180db22a45988d6008eddcffb4cc7df11a272610b41b79401df49b7444c066f"
     },
     {
       "path": "docs/channels/laffy.md",
