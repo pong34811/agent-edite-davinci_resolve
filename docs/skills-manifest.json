@@ -4658,7 +4658,7 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "705ac58fc73ca9e9aa7b0d4044bc28826428feea9d6e0f22a0c09f0694c6da16"
+      "sha256": "7770e016b002c775bb3c819ea34bc742de95437a4990c32493ec997b04f1c9a0"
     },
     {
       "path": "AGENTS.md",
@@ -4669,7 +4669,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "1205817f7848969313352d22d3523ce0c4957aa4f6e27baec680b14304b7f7ec",
+      "sha256": "8071cd6f648ff732624b5f8ade50cabf8bd3d9b75741969f274263e3b4b8385d",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4681,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "090b4b5f34d5cb6ff0f8381826e5996efe1b1b380b1df82be11f42d29e8b241f",
+      "sha256": "38576e80ad79a16e7f75792bc874a47e842639dbbf84a86fedf39f9f669d3a59",
       "kind": "integration_or_validation"
     },
     {
@@ -4694,7 +4694,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "05ba1f56033f651ca8ed30e04eba98d8bc54b7199b94412b10fd3bfff0439bf4"
+      "sha256": "157664b288f06cf03d5cacae8bf83012e5a1e740b521f30a9cf7c10275ec1a38"
     },
     {
       "path": "docs/README.md",
@@ -4800,7 +4800,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f77a2f41b17b3f71900fb78f654771e79b4f51fb1bf583deeb5eb60d78c76d21"
+      "sha256": "72250b4f25a5ede1cf557c5004ab133a3adba62c9bae403756887f566e09fe43"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -5085,7 +5085,7 @@
       "path": "docs/highlight/wiki/wiki/log.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d39efc328a3f8bea6dfc1bdf25caa98cff2efa9bd99bdf39102c5c7934a8154d"
+      "sha256": "975c35f24c8e53f1cc1844257e39756fcd3ae23696b01ffe4284031dccd4d545"
     },
     {
       "path": "docs/highlight/wiki/wiki/overview.md",
@@ -8631,7 +8631,7 @@
     "supporting_skills": 52,
     "active_skills": 69
   },
-  "bundle_version": "0.17.7",
+  "bundle_version": "0.17.9",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

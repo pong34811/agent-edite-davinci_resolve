@@ -87,3 +87,16 @@
 - path ใหม่: โค้ด pipeline `scripts/highlight/`, ข้อมูลงาน `work/highlight/<channel>/<job>/`, prompt `docs/highlight/prompt-template.md`, skill highlight อยู่ใน `.agents/skills/` ของ repo นี้
 - ไม่แก้ `raw/` และรายการ log เก่า ข้อความเก่าที่อ้าง `llm_wiki/`, `work/` หรือ Hermes skills นอก repo ให้อ่านตาม path ใหม่ข้างบน
 - ลิงก์ `../../AGENTS.md` ในรายการ log เก่าชี้ AGENTS.md ของ repo เดิม และเสียหลังย้าย; ไม่แก้ตามกฎ append-only (AGENTS.md ของ repo นี้อยู่ที่ `../../../../AGENTS.md`)
+
+
+## [2026-11-03] job | สรุปผลงานไฮไลต์ Katy404 2026-10 ครบ 12 ไลฟ์ (v0.17.8 / v0.17.9)
+
+- ขอบเขต: ไลฟ์ 12 ไฟล์ (~27.4 ชม.) ช่อง Katy404 เดือน 2026-10 บน Google Drive
+- ผลงานหลัก: สร้าง 48 timelines ใน DaVinci Resolve โปรเจกต์ `KT404 Highlights 2026-10` (4 คลิป/ไลฟ์, 1080p60) + 3 timeline สำรอง `_bak` รวม 51 timelines
+- การปรับปรุงคุณภาพ:
+  - แก้ปัญหา Whisper loop 7 คลิป ด้วย demucs + Typhoon ASR + Whisper large-v3
+  - ตรวจขอบเขตท้ายคลิป +40 วิ และขยาย 3 คลิปที่จบก่อนมุก/ปฏิกิริยา (v08-03, v09-03, v12-01)
+  - Resolve 21.1.0.17 ปัดเศษเฟรมต้นทาง 1 เฟรมใน 2 คลิป (v03-02, v10-03) บันทึกเป็นข้อจำกัด API
+  - ผู้ใช้ยืนยันชื่อเกม v11/v12 คือ Soul Walker
+- ผลเสริม: ถอดเสียงทั้งไลฟ์ด้วย Whisper large-v3-turbo และอ่านทั้งไลฟ์ 61 packs ด้วย subagents ได้ข้อเสนอ 342 ช่วง (248 quiet, 36 confidence ≥ 0.5, 27 ช่วงแนะนำใน `whole_stream_proposals.md`)
+- รายงานละเอียด: `work/highlight/Katy404/2026-10/REPORT.md`
