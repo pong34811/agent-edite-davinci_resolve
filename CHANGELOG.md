@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.17.19 — Aomi-mama ปกขึ้น Drive
+
+### รายละเอียด
+- Aomi-mama 2026-10: คัดลอกปก 12 ใบและ manifest ขึ้น Google Drive `Projects/Aomi-mama/2026-10/covers/` (ตรวจ hash ตรงทุกไฟล์)
+
 ## v0.17.18 — Aomi-mama ปกคลิป 12 ใบ
 
 ### รายละเอียด
