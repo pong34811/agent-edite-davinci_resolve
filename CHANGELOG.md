@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.17.17 — Aomi-mama คลิปแนวตั้ง 6 อัน
+
+### รายละเอียด
+- Aomi-mama 2026-10: สร้างคลิปแนวตั้ง `<ชื่อ>_9x16` ครบ 6 timeline (1080x1920) ต้นฉบับไม่เปลี่ยน ตรวจ render ครบทุกเฟรม
+- `load_subtitle_preset_auto.py` ใส่ `--timeline` ซ้ำได้หลายอัน โหลด Subtitle preset หลาย timeline โดยปิดเปิด Resolve รอบเดียว พร้อม test ใหม่
+- โปรไฟล์ช่อง Aomi-mama: บันทึกเลย์เอาต์แนวตั้ง (คอมเมนต์บน/อวาตาร์ล่าง, ฉากห้องนอนใช้ track Reframe ตัดช่วงตามตำแหน่งหัว) และ GIF/ภาพประกอบใช้ preset `short`
+- house-style: แนวตั้งให้ GIF และภาพประกอบใช้ video preset `short` แม้ทับหน้า (ผู้ใช้ยืนยัน)
+- OPERATING-NOTES: SmartReframe ผ่านสคริปต์ไม่มีผล, ตำแหน่งซับแบบ track style แก้ผ่าน MCP ไม่ได้, Resolve ที่เปิดใหม่อัตโนมัติอาจไม่ตอบ scripting จนกว่าจะปิดจริง
+
 ## v0.17.16 — KT404 Highlights อัปเดต timeline หลัก 48 อัน
 
 ### รายละเอียด
