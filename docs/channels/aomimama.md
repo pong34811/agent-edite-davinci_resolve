@@ -73,6 +73,7 @@
 - แถบบริจาคซ้ายล่างทั้งสองเลย์เอาต์
 - ภาพประกอบ Noto Emoji 3D (2 วิ MOV, Zoom 0.278, Tilt 120): Pan -853 (ซ้ายบน) ว่างทั้งสองเลย์เอาต์; แต่ถ้าวางในช่วงซูมที่อวาตาร์อยู่ซ้าย (ซิม 80-170) ให้ใช้ Pan +853 (ขวาบน) ไม่งั้นบังหน้า ดูภาพ render ทุกตัวก่อนส่ง
 - 2026-11-06 ผู้ใช้สั่ง "ตัดต่อครบชุด" (ไม่ตัดเนื้อหา) แล้วขอเพิ่มซูมและภาพประกอบจากอินเทอร์เน็ต: สำเนา `<ชื่อ>_edit` มี Subtitle 1 (`Mitr Font`), V2 `VTuber Zoom` 4-5 ช่วง window top 0.50 / bottom 1.0 / cx 0.75 (Size 2.0, cx ถูกจำกัดไม่ให้มีขอบดำ), V3 `REACTIONS` GIF 3 ตัว preset `vdo`, A2 SFX, A3 BGM (gain = speech LUFS - 20 - BGM LUFS), V4 `ILLUSTRATIONS` Noto Emoji 3D มุมซ้ายบน Zoom 0.278 Pan -853 Tilt 120
+- 2026-11-06 ผู้ใช้สั่งอัปเดตไฟล์หลัก: ลบ timeline `-vdo` ต้นฉบับ 6 อัน + `_archived_v02` แล้วเปลี่ยนชื่อสำเนา `_edit` เป็นชื่อเดิม (โปรเจคเหลือ 6 timeline ที่ตัดต่อแล้ว) และย้าย .drp/.db สำรองกับไฟล์ render QC ทั้งหมดไป Recycle Bin; ไฟล์ภาพประกอบใน `.hermes/projects/aomimama-2026-10/enrich/illustrations/` ยังเป็น media ที่ timeline ใช้อยู่ ห้ามลบ
 - ซับไทยของสตรีมนี้ ASR อ่อนมาก (Typhoon กับ large-v3 ไม่ตรงกัน) ใส่เฉพาะคำที่มั่นใจ ช่วงที่ไม่ชัดเว้นไว้และรายงาน; คลิปบอสและซิมมีซับน้อย
 - เวิร์กล็อกและหลักฐาน: `.hermes/projects/aomimama-2026-10/worklog.md`, สคริปต์ `scripts/scratch/aomimama_2026_10/`
 

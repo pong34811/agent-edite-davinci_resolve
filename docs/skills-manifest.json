@@ -4694,7 +4694,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "695ea0eb38f9fb46d28c5740c9f2f3de415fd728ad9f98ed75612da557403e75"
+      "sha256": "6bc2a2b5f3c7b8f1b7ad4266ee2a0716d93d1b140b9caa79e86b0fb84405b5b4"
     },
     {
       "path": "docs/README.md",
@@ -4782,7 +4782,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8500af962ad90e2432967e0dcf27e16476c90ca5b8b16c91d95459c539e44c20"
+      "sha256": "61c1310ea07b1b71af98c6dd10440fe67139e0d93a7811e7f4d23026f1d657bb"
     },
     {
       "path": "docs/channels/armigon.md",
