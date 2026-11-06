@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.13 — Aomi-mama 2026-10 ครบ 6 คลิป
+
+### รายละเอียด
+- ตัดต่อครบชุด 5 timeline ที่เหลือของโปรเจค aomimama-2026-10 (สำเนา `_edit`): ซับไทย Mitr Font, VTuber Zoom, GIF, SFX, BGM; render QC ครบ 5 คลิป ไม่มีเฟรมดำ, ความยาวตรง timeline
+- บันทึกกฎใหม่ใน OPERATING-NOTES: กู้งาน preset ซับเมื่อ Resolve เปิดกลับไม่ขึ้น, ต้องเช็คเลย์เอาต์ทุกคลิปก่อนตั้งกรอบซูมและตำแหน่ง GIF, เสียงที่ยาวเกิน timeline ทำให้มีเฟรมดำท้าย render
+- โปรไฟล์ช่อง Aomi-mama: บันทึก 2 เลย์เอาต์ (หน้าคอมเมนต์ / ฉากห้องนอน) พร้อมค่ากรอบซูมและ Pan ของ GIF
+- `apply_enrichment_d22.py`: รับ `fps` จากแผน และปฏิเสธ SFX ที่จะยาวเกินท้าย timeline ตั้งแต่ dry run พร้อม test ใหม่
+
 ## v0.17.12 — KT404 Highlights ซับ Mitr Font
 
 ### รายละเอียด
