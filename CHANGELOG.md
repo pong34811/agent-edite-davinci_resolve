@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.15 — Aomi-mama อัปเดตไฟล์หลัก
+
+### รายละเอียด
+- อัปเดตไฟล์หลักของโปรเจค aomimama-2026-10: ลบ timeline ต้นฉบับ 6 อันและ `_archived_v02` แล้วเปลี่ยนชื่อสำเนาที่ตัดต่อแล้วเป็นชื่อเดิม ตรวจแล้วทุก track ไม่เปลี่ยน
+- ย้ายไฟล์สำรอง .drp/.db และไฟล์ render QC ของงานนี้ 76 ไฟล์ไป Recycle Bin (ยังกู้คืนได้)
+- OPERATING-NOTES: เพิ่มกฎลบ timeline ด้วย `MediaPool.DeleteTimelines` เพราะ MCP `delete_timeline` สร้าง `_archived` ใหม่ทุกครั้ง
+
 ## v0.17.14 — Aomi-mama ภาพประกอบครบ 5 คลิป
 
 ### รายละเอียด
