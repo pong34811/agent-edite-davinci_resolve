@@ -70,6 +70,15 @@ height, so `top ~0.545` (Size ~2.39, `wx ~0.785`) kept head, ears, ahoge, mic an
 few percent headroom. A first pass with `top 0.577` clipped the ahoge against the top edge: check
 the hair tip, not just the face. Pixel-check stills for dark edge bands.
 
+**Measure the bottom bar per source stream before batching (KT404 Highlights, 2026-11-04).** Live VODs of one
+channel differ: of 12 streams, 3 had a 40-row black bar, 1 had 12 rows, 5 had 4-6 rows and 3 had none. A
+`bottom 1.0` window magnifies the bar ~1.9x into a visible band. Measure it as the rows whose *maximum* brightness
+stays <= 30 over 12 frames spread across the whole stream, on the left 60% of the frame (the avatar covers the
+right part of the bar). Do not use a one-frame row average: the avatar lifts it above the threshold, and a dark game
+scene reads as a bar. Then shift the window up by `(rows + 2) / 1080` with the same height, so zoom level and the
+right-edge limit stay unchanged and headroom grows slightly. Review stills from the middle of each zoom range,
+not evenly spaced contact-sheet frames, which mostly miss the zooms.
+
 ## DRT Track Injection & Automated Framing QC Tools
 
 When timeline-item insertion via API is constrained or prone to track-offset bugs:

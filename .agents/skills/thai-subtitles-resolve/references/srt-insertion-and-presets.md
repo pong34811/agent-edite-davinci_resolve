@@ -156,3 +156,18 @@ Tests นี้ทดสอบ parser/exact database rows บน fixtures ไม
 Project Manager และ scripting ไม่ตอบ ให้รัน `python scripts/resolve_recover.py --project "<ชื่อโปรเจกต์>"` เอง (ไม่มีโปรเจกต์เปิดอยู่
 จึงไม่มีงานที่ยังไม่บันทึก) แล้วรัน dry run ซ้ำจนได้ `already_matches=True` และอ่าน gain/ซับ/track กลับ อย่าแพตช์ซ้ำ
 (KT404 Highlights 2026-11-03: `--dry-run` รายงาน `responsive=False` สองครั้ง; recover ครั้งเดียวเปิดโปรเจกต์กลับมาครบ 53 timelines และ gain ทุกตัวไม่เปลี่ยน)
+
+## ใส่ซับที่มีสไตล์แล้วให้หลาย timeline โดยไม่เขียน database ซ้ำ (KT404 Highlights, 2026-11-03, 21.1.0.17)
+
+สไตล์ของ preset (font, ขนาด, สี) อยู่ใน FieldsBlob ของ **subtitle track** (หลังโหลด `Mitr Font` ขนาดเพิ่มจาก 111 เป็น 288 bytes)
+ส่วน cue แต่ละอันเหมือนเดิม ถ้าโหลด preset ด้วย `load_subtitle_preset_auto` ทีละ timeline ต้องปิด/เปิด Resolve ทุกรอบ
+สำหรับ batch ให้โหลด preset ลง timeline นำร่องอันเดียว (ผู้ใช้อนุมัติการเขียน DB ครั้งนั้น) แล้ว export timeline นั้นเป็น DRT
+จากนั้นในแต่ละ timeline เป้าหมาย:
+
+1. Export DRT ของ timeline เป้าหมาย
+2. โคลน Element `SubtitleTrackVec` ของนำร่องมาใส่: ตั้ง `Sm2TiTrack/Sequence` เป็น sequence id ของเป้าหมาย และสร้าง DbId ใหม่ทุกตัว
+3. สร้าง cue ใหม่จาก cue ต้นแบบ โดยแก้ Name/Start/Duration และ patch timestamp ใน FieldsBlob ของแต่ละ cue
+4. Import DRT แล้วเทียบ cue กับแผนทีละตัว และเทียบ V1/A1 กับต้นฉบับ
+
+ยืนยันผลด้วย `load_subtitle_preset_auto` แบบ dry run (ไม่เขียน DB): ต้องได้ `already_matches=True`
+ครั้งนี้ทำครบ 47 timelines โดยไม่เขียน Project.db เพิ่มและไม่ต้องรีสตาร์ต Resolve เลย

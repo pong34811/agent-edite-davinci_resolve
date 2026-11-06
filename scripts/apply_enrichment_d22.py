@@ -50,6 +50,19 @@ def prop(item, name):
     return v.get(name) if isinstance(v, dict) else v
 
 
+def pool_clips(mp, folder, paths):
+    """Map each path to a media pool clip: reuse clips already in the bin (a batch shares one bin) and import each
+    new path once (one SFX can repeat). Paths compare case-insensitively, as Windows does."""
+    key = lambda p: str(Path(p)).lower()  # noqa: E731
+    by_path = {key(prop(c, "File Path")): c for c in (folder.GetClipList() or [])}
+    fresh = list(dict.fromkeys(p for p in paths if key(p) not in by_path))
+    if fresh:
+        imported = mp.ImportMedia(fresh)
+        check(imported and len(imported) == len(fresh), f"import returned {len(imported or [])} of {len(fresh)}")
+        by_path.update({key(prop(c, "File Path")): c for c in imported})
+    return {p: by_path[key(p)] for p in paths}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--plan", required=True)
@@ -100,10 +113,7 @@ def main():
     folder = next((f for f in root.GetSubFolderList() if f.GetName() == plan["bin"]), None) or mp.AddSubFolder(root, plan["bin"])
     check(folder is not None and mp.SetCurrentFolder(folder), "bin")
     paths = [plan["bgm"]["path"]] + [x["path"] for x in plan["sfx"]] + [x["path"] for x in plan["gif"]]
-    imported = mp.ImportMedia(paths)
-    check(imported and len(imported) == len(paths), f"import returned {len(imported or [])}")
-    by_path = {str(Path(prop(c, "File Path"))).lower(): c for c in imported}
-    pool = {p: by_path[str(Path(p)).lower()] for p in paths}
+    pool = pool_clips(mp, folder, paths)
 
     # Validate every GIF BEFORE touching the timeline: a too-short GIF found mid-append left a half-built copy.
     for g in plan["gif"]:

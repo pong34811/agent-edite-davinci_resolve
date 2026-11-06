@@ -3646,7 +3646,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "b6fc0330fe3431dadea7860afdd1bad3ee133ef6acc3b776fefc1980557c9ed6"
+      "sha256": "3310ae4509eaa20d73021142789994f08edee312897035cc5a67aabe891072b7"
     },
     {
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
@@ -3721,7 +3721,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "4fd812540954cd9194beb6a3eaf3a39d36a891327aa028a5e82a4cc4bcefb5bf"
+      "sha256": "6b106af47c56c6501e0757ea1d36f608906c7099e606197de6a118589dfacf78"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
@@ -3855,7 +3855,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\adjustment-focus.md",
       "source_sha256": "e817a4f7285c6edd7150429dd6cf322cadfdb2eeb57ce56993bdb78e354ead8b",
       "kind": "editing_skill",
-      "sha256": "68c99635e03b43ae73a08cc8eb906d2b71f5098682ddff52f0a9d760fc500dcc"
+      "sha256": "dd7f602dd3923320478485c81dd09ac15e2c74f6c80ece39898359a375e5c29f"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/asset-coverage.md",
@@ -4446,7 +4446,7 @@
       "path": ".agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "5431f1b5cd80dd56f933b807b71e3435ae186e7c33131008f1b0fd2ce17aef59"
+      "sha256": "2dbd8566ff4ac558e6a15f92c733694952291c009cf33fe6eb3e8d4bd7ed4a92"
     },
     {
       "path": ".agents/skills/timeline-naming-convention/SKILL.md",
@@ -4669,7 +4669,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "a58beb8deee8c173b15158b88d99ebf7968399cecbf63113433219a6ac412548",
+      "sha256": "571fae1cbd2a913aac4dd1f35786d50734d993e5f2ab78dc00a2defd1fa29063",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4681,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "3a7c9d68de8c65130c3e1451ac2806b21ea8dd50fab20eeb12879dee03d727aa",
+      "sha256": "424aeee3573af65584223f5bc852b68eb9bb7207dfbd5d34127d671c6dffd4ff",
       "kind": "integration_or_validation"
     },
     {
@@ -4800,7 +4800,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "de852513f4bb725e00719ede8df687948d420e6e323a25b626246be6d34b4c4e"
+      "sha256": "0f7a494622b6f2abf9f097ba31edb575b7909140bbb2b812b18c0754b4689cb8"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -6927,7 +6927,7 @@
       "path": "scripts/apply_enrichment_d22.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "30ef1fc9dcc213f2ed4d7582d88d44f42e5672d0555a29350b76eb6fdabe9a05"
+      "sha256": "83a35f11ae0b5d4e1d4cae37f6ebfbf75cde5e74ecea996ec1e548e05ea80c6e"
     },
     {
       "path": "scripts/apply_group_fix.py",
@@ -7952,6 +7952,18 @@
       "sha256": "198bc8591743233fccfe2a815345f8f637fbc039cc587d38e140e52dba697010"
     },
     {
+      "path": "tests/test_apply_enrichment_d22.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "b8e3740fb797c5f1a91b74259aea1e807859b24cae7141d0ddce82a2617b1be1"
+    },
+    {
+      "path": "tests/test_apply_enrichment_pool.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "4943beb2181b3c9704552d60a2f45ebf9255d5194f8cdb38fec1a0a16eefcbbf"
+    },
+    {
       "path": "tests/test_apply_vdo_python.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8627,11 +8639,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1154,
+    "manifest_files": 1156,
     "supporting_skills": 52,
     "active_skills": 69
   },
-  "bundle_version": "0.17.11",
+  "bundle_version": "0.17.15",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

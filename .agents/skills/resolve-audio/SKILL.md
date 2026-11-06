@@ -139,6 +139,36 @@ with remedies and are never auto-corrected — report them, do not paper over th
 
   content-adaptive one.
 
+- **Batch loudness to a LUFS target (KT404 Highlights, 21.1.0.17, 2026-11-05).**
+  The API has no limiter. `AudioVolume` on every item moves integrated
+  loudness and peak by the same dB, so a raw live VOD that already peaks near
+  0 dBTP can only be turned down. 29 of 47 clips could not reach -14 LUFS that
+  way.
+  - Peaks were in the source A1 itself (PLR up to 23 dB), not in the added SFX.
+  - `AudioDialogueLeveler*` (clip, active timeline only) cut PLR by only
+    ~2 dB. Enabling it also switches on `BackgroundReduction` and +2 dB
+    `OutputGain`: set both explicitly.
+  - A Main-bus limiter saved by the user did not appear in
+    `GetFairlightPresets()` (still `{}`), and a DRT export carries no bus/FX
+    data. There was no scripted way to copy it to other timelines.
+  - What shipped: per-clip gain = `min(-14 - LUFS, -1 - truePeak)` from the
+    measured test render. Log each timeline as it is applied so a rerun never
+    adds the gain twice.
+  - `Timeline.NormalizeAudioLevel` is clip-gain normalization, also without a
+    limiter.
+  - After the flat gain, the renders still peaked about +0.1 dBTP. The peaks
+    came from SFX items at 0 dB on top of A1, not from A1.
+    - Locate the peak windows in the render (decode with ffmpeg, 0.1 s maxima).
+    - Lower only the SFX that covers each peak by `peak - ceiling + margin`.
+      A1 and BGM stay untouched, so integrated loudness barely moves.
+    - Keep the SFX bed below the speech ceiling from the start.
+- **SaveProject is slow on a large project.** On a ~100-timeline project in a
+  Google Drive library, each activate + set + `SaveProject` took about 30-60 s.
+  Windows showed Resolve as "Not responding" the whole time, but the log kept
+  advancing. Check log progress before treating it as a hang or running
+  `resolve_recover.py`. Do not run a second Resolve script in parallel: it
+  queues behind the save and races `SetCurrentTimeline`.
+
 Never modify/transcode/derive source media (AGENTS.md) — the offline `audio` ops
 
 write NEW files to scratch, never over source.

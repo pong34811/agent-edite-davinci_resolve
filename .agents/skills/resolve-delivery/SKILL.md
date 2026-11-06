@@ -223,6 +223,22 @@ Two things that bite when hand-writing specs, both handled by the projections:
   (Bunny Girl ep4, 21.1.0.17, 2026-11-01). A single 0% failure right after
   copying a new asset into Google Drive usually passes on a plain retry.
 
+- Stopping a render loop: kill the loop, then call `StopRendering()` and check
+  for a partial MP4, which a skip-if-exists loop would otherwise accept as done.
+  Delete the partial file. On KT404 Highlights (21.1.0.17, 2026-11-04) the next
+  script after `StopRendering()` hung and Resolve stopped responding (MCP
+  `get_version` timed out). `resolve_recover.py` fixed it; work saved earlier
+  was intact. A render loop should only skip outputs whose QC (frame count ==
+  timeline) passed, not just any output that exists.
+
+- Repeated 0% failures ("Failed to render background job.") that persist even
+  under new output names, with renders ~6x slower than usual. If
+  `davinci_resolve.log` shows `BgTranscribeManager: Helper disconnected, failed
+  to transcribe job`, the background helper is crashing during a transcription
+  job and taking the render with it. Fix: MCP `resolve_control
+  disable_background_tasks_for_current_session` (session only; reset on
+  restart), then render again (KT404 Highlights, 21.1.0.17, 2026-11-04).
+
 ## Batch final export (p2 pattern)
 
 `scripts/p2_export_final.py` is the verified loop for exporting many timelines: dry-run by default, `--apply` to render. It calls `LoadRenderPreset("H.264 Master")` before every job and overrides only frame range, `TargetDir` and `CustomName`; it starts only the jobs it created (the project queue holds old jobs). Vertical (`_9x16`) timelines are duplicated to `<name>__cover_tmp`, the matching `<name>.jpg` is laid on a new top video track for the first frames (nothing shifts), the copy is rendered then deleted; originals are never modified. `<name>_150s` variants (from `p2_trim_tail_150s.py`) replace their original in the output name. After render, verify Complete status, nonempty output and ffprobe video+audio; loudness comes from `p2_loudnorm_worker*.py` (I=-14, TP=-1.5). Export a verified `.drp` first (`backup_drp.py`).
