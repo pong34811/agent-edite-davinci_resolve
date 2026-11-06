@@ -24,7 +24,7 @@ from scripts.resolve_common import connect_resolve  # noqa: E402
 from scripts.backup_drp import verify_drp  # noqa: E402
 
 GAP = 1.2
-FPS = 60
+FPS = 60  # default when the plan has no "fps"; the timeline's own rate must match it
 
 
 def sig(tl, counts):
@@ -37,6 +37,12 @@ def dur_of(path):
     r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                        capture_output=True, text=True)
     return float(r.stdout.strip())
+
+
+def sfx_frames(duration_s, sfx, fps):
+    """Timeline frames an SFX occupies: its length capped at 3 s and at the plan's max_s."""
+    secs = min(duration_s, 3.0, sfx.get("max_s", 3.0))  # max_s keeps neighbouring SFX from overlapping on A2
+    return int(secs * fps)
 
 
 def prop(item, name):
@@ -60,6 +66,10 @@ def main():
     last = plan["timeline_end_frame"]
     for it in plan["sfx"] + plan["gif"]:
         check(0 <= it["frame"] < last, f"frame out of range {it}")
+    fps = float(plan.get("fps", FPS))
+    for s in plan["sfx"]:
+        n = sfx_frames(dur_of(s["path"]), s, fps)
+        check(s["frame"] + n <= last, f"SFX runs past the timeline end ({s['frame']}+{n} > {last}); move it earlier: {s['path']}")
     print("files ok; bgm", plan["bgm"]["gain_db"], "dB;", len(plan["sfx"]), "sfx;", len(plan["gif"]), "gif")
     if not a.apply:
         print("DRY RUN")
@@ -83,7 +93,7 @@ def main():
     activate(project, tl)
     counts = {k: tl.GetTrackCount(k) for k in ("video", "audio", "subtitle")}
     before = sig(tl, counts)
-    check(float(tl.GetSetting("timelineFrameRate")) == FPS and tl.GetStartFrame() == 0, "fps/start")
+    check(float(tl.GetSetting("timelineFrameRate")) == fps and tl.GetStartFrame() == 0, "fps/start")
 
     # --- import only the chosen files into a dedicated bin
     root = mp.GetRootFolder()
@@ -128,8 +138,7 @@ def main():
                        "mediaType": 2, "trackIndex": a_bgm, "recordFrame": 0}, "bgm")
         placed["bgm"] = item
         for s in plan["sfx"]:
-            secs = min(dur_of(s["path"]), 3.0, s.get("max_s", 3.0))  # max_s keeps neighbouring SFX from overlapping on A2
-            end = int(secs * FPS) - 1
+            end = sfx_frames(dur_of(s["path"]), s, fps) - 1
             placed["sfx"].append((s, append({"mediaPoolItem": pool[s["path"]], "startFrame": 0, "endFrame": end,
                                              "mediaType": 2, "trackIndex": a_sfx, "recordFrame": s["frame"]}, s["path"])))
         for g in plan["gif"]:

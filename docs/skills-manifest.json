@@ -4694,7 +4694,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "157664b288f06cf03d5cacae8bf83012e5a1e740b521f30a9cf7c10275ec1a38"
+      "sha256": "695ea0eb38f9fb46d28c5740c9f2f3de415fd728ad9f98ed75612da557403e75"
     },
     {
       "path": "docs/README.md",
@@ -4782,7 +4782,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "dd5e6149af0ffbefc9b754720d8fa78f9ebf8b3a472b7bfca620ad3f6dc21f81"
+      "sha256": "3b5b65dc527439c3f1e57bf62f0f80500672d16d6682cdb84fefc96b2e9ec215"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -6927,7 +6927,7 @@
       "path": "scripts/apply_enrichment_d22.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "99f5622ffc835ed001f6c93fb0a43edf0c988797ff2fb9c46c922b991a74b1bc"
+      "sha256": "30ef1fc9dcc213f2ed4d7582d88d44f42e5672d0555a29350b76eb6fdabe9a05"
     },
     {
       "path": "scripts/apply_group_fix.py",
