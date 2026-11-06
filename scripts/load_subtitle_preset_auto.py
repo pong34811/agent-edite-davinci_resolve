@@ -5,7 +5,8 @@ reload the project (folder tree search) -> read back every cue (text + frames) a
 snapshot.  Only the named timeline's subtitle-track style row changes.
 
 Usage:
-    python -m scripts.load_subtitle_preset_auto --timeline "Timeline 1_9x16" --preset "Mitr-short-001" [--apply]
+    python -m scripts.load_subtitle_preset_auto --timeline "Timeline 1_9x16" [--timeline "Timeline 2_9x16" ...] --preset "Mitr-short-001" [--apply]
+    (each --timeline is patched in the same single close/relaunch)
     (default: dry run, read-only; run from the repository root)
 """
 from __future__ import annotations
@@ -55,14 +56,20 @@ def wait_resolve(timeout=180):
     raise RuntimeError("Resolve did not come back")
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--timeline", required=True)
+    ap.add_argument("--timeline", required=True, action="append",
+                    help="timeline name; repeat to patch several timelines with one Resolve restart")
     ap.add_argument("--preset", required=True)
     ap.add_argument("--user", default="guest")
     ap.add_argument("--backup-dir", type=Path, default=Path("exports/_backups").resolve())
     ap.add_argument("--apply", action="store_true")
-    a = ap.parse_args()
+    return ap
+
+
+def main(argv=None) -> int:
+    ap = build_parser()
+    a = ap.parse_args(argv)
 
     r = connect_resolve()
     if r is None:
@@ -71,28 +78,36 @@ def main() -> int:
     p = pm.GetCurrentProject()
     if p.IsRenderingInProgress():
         raise SystemExit("render in progress: wait for it to finish")
-    tl = find(p, name=a.timeline)
-    if tl is None:
-        raise SystemExit(f"timeline not found: {a.timeline}")
-    tid, pname = tl.GetUniqueId(), p.GetName()
+    names = list(dict.fromkeys(a.timeline))
+    tls = {n: find(p, name=n) for n in names}
+    missing = [n for n, t in tls.items() if t is None]
+    if missing:
+        raise SystemExit(f"timeline not found: {missing}")
+    tids, pname = {n: t.GetUniqueId() for n, t in tls.items()}, p.GetName()
     db = pm.GetCurrentDatabase() or {}
     root = library_roots()[db["DbName"]]
     user_db = find_user_db(root, a.user)
-    project_db = find_project_db(root, a.user, pname, [tid])
-    before = snapshot(tl)
-    cmd = [sys.executable, "-m", "scripts.patch_subtitle_preset_offline", "--project-db", str(project_db),
-           "--user-db", str(user_db), "--timeline-id", tid, "--preset", a.preset]
+    project_db = find_project_db(root, a.user, pname, list(tids.values()))
+    before = {n: snapshot(t) for n, t in tls.items()}
+
+    def cmd(tid):
+        return [sys.executable, "-m", "scripts.patch_subtitle_preset_offline", "--project-db", str(project_db),
+                "--user-db", str(user_db), "--timeline-id", tid, "--preset", a.preset]
     if not a.apply:
-        print(subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8").stdout)
-        print(f"dry run: {pname!r} / {a.timeline!r}, {len(before['cues'])} cues; use --apply")
+        for n in names:
+            print(subprocess.run(cmd(tids[n]), capture_output=True, text=True, encoding="utf-8").stdout)
+            print(f"dry run: {pname!r} / {n!r}, {len(before[n]['cues'])} cues; use --apply")
         return 0
     if not pm.SaveProject():
         raise RuntimeError("SaveProject failed")
     bak = a.backup_dir / f"{pname[:20]}_pre_subpreset_{time.strftime('%Y%m%d-%H%M%S')}.drp".replace(" ", "_")
     print("drp backup bytes:", export_verified(pm, p, bak))
     close_resolve()
-    out = subprocess.run(cmd + ["--apply"], capture_output=True, text=True, encoding="utf-8")
-    print(out.stdout, out.stderr)
+    rc = 0
+    for n in names:
+        out = subprocess.run(cmd(tids[n]) + ["--apply"], capture_output=True, text=True, encoding="utf-8")
+        print(n, out.stdout, out.stderr)
+        rc = rc or out.returncode
     # launch through Explorer: a Resolve started as a child of the agent's shell never answered scripting (2026-10-23)
     subprocess.Popen(["explorer.exe", RESOLVE_EXE])
     r2 = wait_resolve()
@@ -103,12 +118,13 @@ def main() -> int:
     time.sleep(5)
     p2 = pm2.GetCurrentProject()
     if p2 is None or p2.GetName() != pname:
-        raise RuntimeError("project did not reload; open it manually (the patch itself succeeded)" if out.returncode == 0 else out.stderr)
-    after = snapshot(find(p2, name=a.timeline))
-    if after != before:
-        raise RuntimeError("readback differs from the pre-patch snapshot")
-    print(f"LOAD_OK {a.preset} on {a.timeline}: {len(after['cues'])} cues, video/audio ranges unchanged")
-    return out.returncode
+        raise RuntimeError("project did not reload; open it manually (the patch itself succeeded)" if rc == 0 else "patch failed")
+    for n in names:
+        after = snapshot(find(p2, name=n))
+        if after != before[n]:
+            raise RuntimeError(f"readback differs from the pre-patch snapshot: {n}")
+        print(f"LOAD_OK {a.preset} on {n}: {len(after['cues'])} cues, video/audio ranges unchanged")
+    return rc
 
 
 def _open_containing_folder(pm, pname, depth=0):

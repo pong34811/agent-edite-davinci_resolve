@@ -129,6 +129,13 @@ perfectly centred frame with a visible black strip; keep the hair tip (ahoge)
 inside the frame with a few percent of headroom. Delete only the copy/variant
 timelines you created or that the user names; a backup `.drp` comes first.
 
+In 9:16 copies, give every reaction GIF and illustration the saved **"short"**
+video preset (Zoom 0.42, Position Y 403.2, Pan 0) instead of a computed slot,
+even where a full-frame avatar crop puts it over the face. The user asked for
+"short" on V4/V5 of every vertical timeline and kept it after seeing the face
+overlap in the bedroom shots (Aomi-mama 2026-10, 2026-11-07). The trap is
+re-placing overlays to dodge the face: report the overlap, do not move them.
+
 ## Shot selection
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->
