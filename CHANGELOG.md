@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.17.28 — ไฮไลต์ 30 Timelines สำหรับ Hoshi_1489 2026-10-1
+
+### รายละเอียด
+- วิเคราะห์ฟุตเทจดิบ 5 ไฟล์ของช่อง Hoshi_1489 รวม 17 ชม. 29 นาที จาก `G:\My Drive\Projects\Hoshi_1489\2026-10-1`
+- คัดเลือกไฮไลต์ที่น่าสนใจ 30 คลิป (คลิปละประมาณ 36-96 วินาที) ครอบคลุม 3 หมวด: ช่วงเล่นเกม (gameplay), ช่วงสนุกสนาน (fun), และช่วง meme
+- สร้าง 30 Timelines ใน DaVinci Resolve Studio โปรเจกต์ `hoshi-2026-10-1` (ใน Project Library `Google_drive`, โฟลเดอร์ `hoshi_1489`) ตามรูปแบบชื่อ `{ชื่อคลิป}-{ชื่อเกม}-vdo`
+- ตรวจสอบความถูกต้องระดับเฟรม (Frame-accurate): 28 Timelines ตรงเป๊ะ 100%, 2 Timelines มีการปัดเศษของ Resolve 21.1 API ที่ source start 1 เฟรมแต่ความยาวคลิปตรงเป๊ะตาม Rule 55
+- เพิ่มโปรไฟล์ช่อง `docs/channels/hoshi-1489.md` พร้อมบันทึกข้อค้นพบและข้อจำกัดของ Google Drive latency
+- แก้ไข `scripts/highlight/briefs.py` ให้ใช้ `sys.base_prefix` เพื่อป้องกันการอ้างอิง `.venv` ใน subagent briefs
+- ผ่านการทดสอบชุดใหญ่ 424 tests (รวม 74 highlight pipeline tests) 100%
+
 ## v0.17.27 — ปก Bunny Girl ep5 ได้รับอนุมัติ
 
 ### รายละเอียด
