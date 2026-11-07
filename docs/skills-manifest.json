@@ -3892,7 +3892,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "ec076c139c98439bb743e02ed6d76d3419e15aaf25e35bfcb7b7dc2697ca8303"
+      "sha256": "d6013e7bcc2af480c4e2499910a29a3c0a665b16b52b0af728d7f2e438d1d0e6"
     },
     {
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "55f37621d51a995ab5f851825ecb2f7b8728a4f50d0c1402735e3e681a7f3078",
+      "sha256": "45382d9becb7a9d5afd9724c2189abec851ffffbed0b721023d99a1feaedd56b",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "bb269ec7e350722688f1f1be31a133adeaba8f9b840e8f587456a9e08ead0b25",
+      "sha256": "66bc8a7996f1e7e5a364c326efdc063ac4766de13df2697762ea9c1eb015b59b",
       "kind": "integration_or_validation"
     },
     {
@@ -4953,7 +4953,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "96470ad281ed97444780d2cdc006ef104a79915fac4c0485ce8f063ea2115e30"
+      "sha256": "33a643802e8f9a92398382706234b8d6ebfae765457e51a2171376dd65293e2a"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7304,7 +7304,7 @@
       "path": "scripts/drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ac30778d0e4de05dc1feafd043c347e0d8b3acbeb652d88987b8410a636de3f4"
+      "sha256": "c1789a30d1f401a2097bf18c0abf669d03219456142924740b8c1e09ce44f0c9"
     },
     {
       "path": "scripts/drt_focus_multi.py",
@@ -8814,7 +8814,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.23",
+  "bundle_version": "0.17.24",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

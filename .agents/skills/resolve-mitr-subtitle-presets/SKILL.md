@@ -1,7 +1,7 @@
 ---
 name: resolve-mitr-subtitle-presets
 description: "Apply Mitr subtitle presets to 16:9 and 9:16 Resolve tracks."
-version: 0.2.0
+version: 0.2.1
 author: Hermes
 license: MIT
 platforms: [windows]
@@ -29,7 +29,10 @@ timeline -> every track, gain and fade read back equal to the source. Resolve
 stays open and the source timeline is untouched. Check one burned-in render to
 see the style. Bunny Girl ep5 (2026-11-07): 48 cues, Fusion zooms equal within
 1e-15 (the DRT keeps 15 significant digits, so compare transforms with a
-tolerance). The MCP `timeline_ai set_subtitle_preset` is not a substitute for a
+tolerance). Reference DRTs on disk: 16:9 `Mitr Font` =
+`.hermes/kt404-hl/batch/pilot_edit.drt`; 9:16 `Mitr-short-001` =
+`.hermes/projects/bunny-girl-ep3/vertical/v916.drt` (used for Bunny Girl ep5
+9:16, 2026-11-07; V1 crop and Fusion zooms read back equal). The MCP `timeline_ai set_subtitle_preset` is not a substitute for a
 plain track style: it only carries animated presets (`FusionCompHolderItems`)
 and refuses with "No animation preset".
 

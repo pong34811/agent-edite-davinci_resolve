@@ -97,7 +97,7 @@ def main(argv=None):
     ap.add_argument('--styled-track', type=int, default=1)
     ap.add_argument('--workdir', required=True)
     a = ap.parse_args(argv)
-    work = Path(a.workdir)
+    work = Path(a.workdir).resolve()   # Timeline.Export fails on a relative path
     work.mkdir(parents=True, exist_ok=True)
     r = connect_resolve()
     pm = r.GetProjectManager()
