@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.26 — ปก Bunny Girl ep5
+
+### รายละเอียด
+- Bunny Girl ep5: ทำปก 16:9 และ 9:16 (ข้อความ "วันแรกที่ใส่ชุด" แดง + "Bunny Girl", เฟรม 0.4 วิ) เก็บไว้ที่โฟลเดอร์ Thumbnail ของตอน
+- บันทึกในโปรไฟล์ Katy404: hook ที่ยาวกว่า ep4 ต้องลดขนาดตัวอักษร (128/142 px) ไม่งั้นชนหูกระต่ายและขอบจอ และ hyperframes 0.8.197 บันทึก snapshot ไว้ใน .hyperframes/artifacts/snapshots
+
 ## v0.17.25 — Bunny Girl ep5 แนวตั้ง
 
 ### รายละเอียด
