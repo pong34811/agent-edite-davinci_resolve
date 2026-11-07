@@ -1,7 +1,7 @@
 ---
 name: resolve-mitr-subtitle-presets
 description: "Apply Mitr subtitle presets to 16:9 and 9:16 Resolve tracks."
-version: 0.1.0
+version: 0.2.0
 author: Hermes
 license: MIT
 platforms: [windows]
@@ -18,6 +18,20 @@ orientation: landscape 16:9 vs portrait 9:16 Shorts. It does NOT create cues,
 retime captions, or invent styles. It only copies an existing preset. Uses the
 stdlib plus Resolve's own scripting bridge. Resolve has no preset API, so the
 write goes into the disk-database `Project.db` while the project is closed.
+
+## Keep-open alternative (no Project.db write)
+
+When a DRT already holds a Subtitle track with the wanted style (for example
+`.hermes/kt404-hl/batch/pilot_edit.drt`, `Mitr Font`), prefer
+`py -3.13 -m scripts.drt_clone_subtitle_style --timeline <src> --new <name> --styled <drt> --workdir <dir>`:
+export -> clone the styled track with the timeline's own cues -> import as a new
+timeline -> every track, gain and fade read back equal to the source. Resolve
+stays open and the source timeline is untouched. Check one burned-in render to
+see the style. Bunny Girl ep5 (2026-11-07): 48 cues, Fusion zooms equal within
+1e-15 (the DRT keeps 15 significant digits, so compare transforms with a
+tolerance). The MCP `timeline_ai set_subtitle_preset` is not a substitute for a
+plain track style: it only carries animated presets (`FusionCompHolderItems`)
+and refuses with "No animation preset".
 
 ## When to Use
 

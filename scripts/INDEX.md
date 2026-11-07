@@ -38,6 +38,7 @@
 | `load_subtitle_preset.py` | อ่าน/โหลด Subtitle preset (dry-run เท่านั้น ห้ามข้ามบล็อก `--apply`) | ใช้ซ้ำ |
 | `drt_add_native_subtitle.py` | เติม native subtitle 1 cue ลง DRT | ใช้ซ้ำ |
 | `drt_shift_subtitles.py` | แก้ offset ท้าย timeline ของซับที่สร้างจาก SRT ใน DRT | ใช้ซ้ำ |
+| `drt_clone_subtitle_style.py` | ใส่สไตล์ซับแบบ track (เช่น `Mitr Font`) โดย clone track จาก DRT อ้างอิง แล้ว import เป็น timeline ใหม่ (Resolve เปิดค้าง ไม่เขียน Project.db) | ใช้ซ้ำ |
 | `p2_fix_captions.py` | สร้างซับแนวตั้ง p2 ใหม่ตามกฎสั้น | p2 |
 | `p2_fix_captions_horizontal.py` | แผน offline ซับแนวนอน p2 (44 timeline) | p2 |
 | `p2_apply_fixed_captions.py` | ใส่ SRT ที่แก้แล้วลง Subtitle track (`--horizontal` ได้) | p2 |

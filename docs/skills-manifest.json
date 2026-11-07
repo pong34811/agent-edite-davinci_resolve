@@ -1356,7 +1356,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "bd27c2d62dc52334e425cfb1c3335b43d3c48ef0b11d1f0265a1d71f09638810"
+      "sha256": "29f8613d007c9bdec79f8f9108e3f79e91a62a069682070b30409eb529f89e38"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -3892,7 +3892,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "eb8fd0765a1950096bb8394ba36903fa571b37f4ca949c4f20a38846e6aa5dd5"
+      "sha256": "ec076c139c98439bb743e02ed6d76d3419e15aaf25e35bfcb7b7dc2697ca8303"
     },
     {
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "43c6a996933b8ef44efe7e28f29b093023d4debc34989a07b619530ea84bb62c",
+      "sha256": "55f37621d51a995ab5f851825ecb2f7b8728a4f50d0c1402735e3e681a7f3078",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "c16830402a6b3fd1faef9ca1d9b86bf06008e704f461ca76afb981edccda1870",
+      "sha256": "bb269ec7e350722688f1f1be31a133adeaba8f9b840e8f587456a9e08ead0b25",
       "kind": "integration_or_validation"
     },
     {
@@ -4953,7 +4953,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "74fa8fc9b70cc9138020f1b78d5438916e0a408aef7c9ed22e2921e7823829ba"
+      "sha256": "96470ad281ed97444780d2cdc006ef104a79915fac4c0485ce8f063ea2115e30"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7056,7 +7056,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ac979fb81b25efd328c1c6ed5ae06407195373eb5003028988a4d54b9a7b857f"
+      "sha256": "d831e34a9bb73bd6c84c58884c14482e77e2d153e55546c77dcbead85c31c4fc"
     },
     {
       "path": "scripts/README.md",
@@ -7299,6 +7299,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "721dc0472484964ad8059a33554267bfe2afd7bccdc875b856feefddc25989cd"
+    },
+    {
+      "path": "scripts/drt_clone_subtitle_style.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "ac30778d0e4de05dc1feafd043c347e0d8b3acbeb652d88987b8410a636de3f4"
     },
     {
       "path": "scripts/drt_focus_multi.py",
@@ -8213,6 +8219,12 @@
       "sha256": "3d63aed4aaea7bcf809386f72cea6c7674f7926cca2ccf7ff060e114d17135c3"
     },
     {
+      "path": "tests/test_drt_clone_subtitle_style.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "1ae0328cb3d9bce7a2743e9c1eead0898e3f4669076d171943a4583e51aa3d1d"
+    },
+    {
       "path": "tests/test_drt_focus_track.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8798,11 +8810,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1175,
+    "manifest_files": 1177,
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.22",
+  "bundle_version": "0.17.23",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

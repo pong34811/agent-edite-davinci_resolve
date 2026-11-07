@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.0
+version: 0.3.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -106,10 +106,13 @@ video/audio ranges.
 
 Prefer a preset method that keeps Resolve open. The user asked for an
 alternative after the close/patch/relaunch cycle of `load_subtitle_preset_auto`
-hung on a leftover `Resolve.exe` (Bunny Girl ep4, 2026-11-01). Try the MCP
-`timeline_ai set_subtitle_preset` (DRT round trip, `preset_reference` taken
-from a timeline that already has the preset) on a copy first. Fall back to the
-DB patch only if that fails, and still ask for approval.
+hung on a leftover `Resolve.exe` (Bunny Girl ep4, 2026-11-01). For a plain
+track style such as `Mitr Font`, use `scripts/drt_clone_subtitle_style.py`: it
+clones the styled Subtitle track from a reference DRT into a new timeline (user
+chose this keep-open route, Bunny Girl ep5, 2026-11-07). The MCP
+`timeline_ai set_subtitle_preset` only carries animated presets (Word
+Highlight, Lollipop) and refuses `Mitr Font` with "No animation preset". Fall
+back to the DB patch only if the clone fails, and still ask for approval.
 
 ## Names, numerals and cue length (Katy404 / KT)
 
