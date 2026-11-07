@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.24 — ใส่ฟอนต์ซับ Mitr โดยไม่ปิด Resolve
+
+### รายละเอียด
+- เพิ่มสคริปต์ scripts/drt_clone_subtitle_style.py (พร้อม test): ใส่สไตล์ซับแบบ track เช่น Mitr Font โดย clone track จาก DRT อ้างอิงแล้ว import เป็น timeline ใหม่ Resolve เปิดค้าง ไม่เขียน Project.db
+- บันทึกว่า MCP timeline_ai set_subtitle_preset ใช้ได้เฉพาะ preset แบบ animation จึงปฏิเสธ Mitr Font ("No animation preset") ใน house-style และ skill resolve-mitr-subtitle-presets
+- Bunny Girl ep5: สร้าง Timeline 1_pop_mitr ซับเป็น Mitr Font ทุก track/gain/fade ตรงกับ Timeline 1_pop, render ทดสอบ 2440 เฟรม -15.6 LUFS ไม่มีเฟรมดำ
+
 ## v0.17.23 — Bunny Girl ep5 และกฎ ASR บน GPU ที่ไม่ว่าง
 
 ### รายละเอียด
