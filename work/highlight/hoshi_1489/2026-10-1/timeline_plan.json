@@ -1,0 +1,422 @@
+[
+ {
+  "name": "โมเดลแม่งด้วนแล้วยังเล็กอีก-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 91013,
+    "end_frame": 93900,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-01",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "เถียงเรื่องอายุ 2 พันปี สุดท้ายอายุ 18-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 110100,
+    "end_frame": 113078,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-02",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "จุดซ่อนเร้นข้างในต้องขาว-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 227713,
+    "end_frame": 231240,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-03",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "ชายแท้ต้องใช้สีชมพู-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 321587,
+    "end_frame": 325554,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-04",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "โนว่าเป็นดาวหรือดาวน์ซินโดรม-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 398978,
+    "end_frame": 403243,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-05",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "ไม่มีเงิน เลยบวก Energy ไม่ได้-Halloween-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "959b0a70-a426-4975-a285-00aa44ced561",
+    "start_frame": 503050,
+    "end_frame": 505691,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-06",
+  "game": "Halloween",
+  "project": null
+ },
+ {
+  "name": "ไลฟ์จอดำเพราะชื่อเกม Black Room-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 21652,
+    "end_frame": 25200,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-01",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "ลุ้นระเบิดเวลานับถอยหลังสกิบิดี-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 190500,
+    "end_frame": 194560,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-02",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "ระแวงแมงมุมลายตัวยักษ์ไล่หลัง-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 302700,
+    "end_frame": 308450,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-03",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "ปลอดภัยงั้นเดินตามหลังผีไปเลย-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 471755,
+    "end_frame": 475500,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-04",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "ใจเต้นแรงยิ่งกว่าตอนมีความรัก-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 601051,
+    "end_frame": 604528,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-05",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "หามุมถ่ายรูปปกสตรีมข้างศพเพื่อน-Backrooms-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "d5deec31-84d0-403e-8685-6484e94ea2ad",
+    "start_frame": 758593,
+    "end_frame": 762021,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-06",
+  "game": "Backrooms",
+  "project": null
+ },
+ {
+  "name": "อยู่กับโนว่าแล้วรู้สึกไม่ปลอดภัยเหมือนจะตายค-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 59387,
+    "end_frame": 63965,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-01",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "เดินตามกลุ่มอยู่ดีๆ หันมาอีกทีเพื่อนหาย-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 133771,
+    "end_frame": 137856,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-02",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "หมดห่วงเรื่องฮีล สรุปคนฮีลตายคนแรก-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 249020,
+    "end_frame": 252456,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-03",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "เราไม่ใช่พระเอก เราคือเอ็กซ์ตร้าของตัวประกอบ-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 365582,
+    "end_frame": 369900,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-04",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "นึกว่ามาเล่นเกมผีไขปริศนา สรุปเกมยิงซอมบี้สุ-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 470400,
+    "end_frame": 474341,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-05",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "ไม่เหลือความไว้ใจกันในตี้จนต้องยิงกันเอง-Examination-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "9d4234d8-b23d-4599-bbb0-31a1ca29d8fd",
+    "start_frame": 600319,
+    "end_frame": 603600,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-06",
+  "game": "Examination",
+  "project": null
+ },
+ {
+  "name": "จับมือฉันไว้แต่เกือบไม่รอด-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 59512,
+    "end_frame": 64706,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-01",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "โฮชิหลงทางโดนซอมบี้รุมกัดตาย-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 142879,
+    "end_frame": 148260,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-02",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "ไม่ได้นอกใจใครคนเดียวเพราะนอกใจทุกคน-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 358901,
+    "end_frame": 362535,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-03",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "ชีวิตเราอนาถกว่าชาวบ้านแต่ต้องมีความพยายาม-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 426046,
+    "end_frame": 431501,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-04",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "ฉันตกแน่จับมือฉันไว้แต่ต้านลมไม่ไหว-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 570230,
+    "end_frame": 574582,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-05",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "คุณอามเน้นกินจนหลอดสตามินายาวเฟื้อย-Peak-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "39732285-2a78-4e2a-afc6-4453ea461bfe",
+    "start_frame": 681841,
+    "end_frame": 686361,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-06",
+  "game": "Peak",
+  "project": null
+ },
+ {
+  "name": "สรุปวิธีเล่น Don't Scream  ถ้ามีใครกรี๊ดวูบหม-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 53393,
+    "end_frame": 58042,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-01",
+  "game": "DontScream",
+  "project": null
+ },
+ {
+  "name": "เจอคนโดนผีเล่น ถามซ้ำๆ เป็นอะไรหรือเปล่าครับ-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 142381,
+    "end_frame": 145620,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-02",
+  "game": "DontScream",
+  "project": null
+ },
+ {
+  "name": "ตายเพราะโดนหมีไล่กวด บ่นอุบทุเรศมากรับไม่ได้-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 384766,
+    "end_frame": 387582,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-03",
+  "game": "DontScream",
+  "project": null
+ },
+ {
+  "name": "แซวเพื่อนเล่นกับอากาศ รู้ว่าเหงาแต่กับอากาศเก-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 420881,
+    "end_frame": 423753,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-04",
+  "game": "DontScream",
+  "project": null
+ },
+ {
+  "name": "สมองไม่ได้พัง แม่อย่ายัดเยียดเพราะไม่มีตั้งแต-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 574346,
+    "end_frame": 578640,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-05",
+  "game": "DontScream",
+  "project": null
+ },
+ {
+  "name": "ถอดสมองถาม  เสียงขาวคืออะไร เอาผงซักฟอกมาซักเ-DontScream-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "48927bae-004a-4817-b0a3-6843d4bdb778",
+    "start_frame": 710030,
+    "end_frame": 712240,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-06",
+  "game": "DontScream",
+  "project": null
+ }
+]

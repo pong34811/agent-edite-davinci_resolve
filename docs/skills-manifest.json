@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "4afc649ab9af03c91fcacb6c03266778e9af9ac9ea652ed0dfd2e55e71a6046f"
+      "sha256": "70c93ca0ac56aad1ac1fb0d9fb807a71770d20d0d8cdecf6d5e6ee4586903969"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4817,7 +4817,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "0ea8120745be91578685254ecdda226a7d2f8694d8f95a9bd9a3e9cd913ec9fa"
+      "sha256": "78c70a722f07d74955ce7925e53bef8d088cc1df37fe5461275b9ef450c01496"
     },
     {
       "path": "CHANGELOG.md",
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "2a7cb0bd7c9bdd03bb0365b8792b936372f2ed3ba660bdeb6235990545511af5"
+      "sha256": "f9fc25a31dafbfaa940ff100394d5e4622cba60ae8a2673bc2ff9e97463c88f5"
     },
     {
       "path": "docs/README.md",
@@ -4929,7 +4929,7 @@
       "path": "docs/channels/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b064e6323fc1426c2daef01cfbc481505a2c2271bd92370f551081299b2e57ff"
+      "sha256": "1873c42eeb020dea72317f53a8c10c048714bdf1c3c941e334afcdd4d456a384"
     },
     {
       "path": "docs/channels/aomimama.md",
@@ -4941,7 +4941,13 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b4dc3e29ba9e17c2ac426213422d21ae1ecd9c0c452b6dc67f5482bf5d5bf51d"
+      "sha256": "b5fc843c098c8568cc0eb1fca0fea74916eab982a6d099fe014717cb29712b79"
+    },
+    {
+      "path": "docs/channels/hoshi-1489.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "1fa5e7f1d453787f465a9e18e886140cfee9c6d5ae4d6e077d3a14881e508bf8"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7304,7 +7310,7 @@
       "path": "scripts/drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c1789a30d1f401a2097bf18c0abf669d03219456142924740b8c1e09ce44f0c9"
+      "sha256": "1516a72acdd17505254cd3cdea2c5703103274213aed294cdccd4ae74d346566"
     },
     {
       "path": "scripts/drt_focus_multi.py",
@@ -7346,7 +7352,7 @@
       "path": "scripts/emoji_pop_overlay.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5f445e834b24f886667049d2e6e6de6183a04da35e8aa77623b76fc145078675"
+      "sha256": "48987724d04b3bce3de1e6af5a33df5129ad4205339aad88451951fae847ddef"
     },
     {
       "path": "scripts/enrich_timelines_python.py",
@@ -7424,7 +7430,7 @@
       "path": "scripts/highlight/briefs.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3632ff947adad6170403b037d30c9aa65e20a151ed5c05ec26b7e3ac20fd4fc5"
+      "sha256": "ab9c32b49238be704f9dc3ae7555fe25649283abfcab13ebf61269955ced68d2"
     },
     {
       "path": "scripts/highlight/build_timelines.py",
@@ -8198,7 +8204,7 @@
       "path": "tests/test_channel_profiles.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "720ea6fb417d114798b35da77864785168266690c3d7c159ae9cbf94227c2b76"
+      "sha256": "024a58c30d8db2236f1abf50ed18c4019ba0e44f7c4e6c95b60e193ee2c26513"
     },
     {
       "path": "tests/test_check_mcp_update.py",
@@ -8234,7 +8240,7 @@
       "path": "tests/test_drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "1ae0328cb3d9bce7a2743e9c1eead0898e3f4669076d171943a4583e51aa3d1d"
+      "sha256": "090b0bbd22e64b610d4683384ae76d9f414ae42fe18efee4c29ee843171291c2"
     },
     {
       "path": "tests/test_drt_focus_track.py",
@@ -8264,7 +8270,7 @@
       "path": "tests/test_emoji_pop_overlay.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "31a59573b03054dc22f85d74c29d8b6e454c5f2e5c878fb965e235f3a61ff20a"
+      "sha256": "87042e9b19de5af95b9a3f16c2bcc250b782527f8ca612acd1e6baa0cdfd320a"
     },
     {
       "path": "tests/test_enrich_timelines_python.py",
@@ -8444,7 +8450,7 @@
       "path": "tests/test_words_to_short_srt.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "0ab1639e7a3d975fa3e18142057b1bfe9c4f971c623c5a0a1f39e1855d2d50d6"
+      "sha256": "3208a775f1a2e7b993c230fb14db53d4f08cc2930683c43df86338bfb44ebcf7"
     }
   ],
   "historical_variants": [
@@ -8834,7 +8840,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1181,
+    "manifest_files": 1182,
     "supporting_skills": 57,
     "active_skills": 74
   },

@@ -1,0 +1,240 @@
+{
+ "v01": [
+  {
+   "pack": "v01-read-01",
+   "file": "v01-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v01-read-02",
+   "file": "v01-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v01-read-03",
+   "file": "v01-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v01-read-04",
+   "file": "v01-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v01-read-05",
+   "file": "v01-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v01-read-06",
+   "file": "v01-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 9346.0
+  }
+ ],
+ "v02": [
+  {
+   "pack": "v02-read-01",
+   "file": "v02-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v02-read-02",
+   "file": "v02-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v02-read-03",
+   "file": "v02-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v02-read-04",
+   "file": "v02-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v02-read-05",
+   "file": "v02-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v02-read-06",
+   "file": "v02-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10200.0
+  },
+  {
+   "pack": "v02-read-07",
+   "file": "v02-read-07.md",
+   "start_s": 10080.0,
+   "end_s": 11880.0
+  },
+  {
+   "pack": "v02-read-08",
+   "file": "v02-read-08.md",
+   "start_s": 11760.0,
+   "end_s": 13560.0
+  },
+  {
+   "pack": "v02-read-09",
+   "file": "v02-read-09.md",
+   "start_s": 13440.0,
+   "end_s": 14499.0
+  }
+ ],
+ "v03": [
+  {
+   "pack": "v03-read-01",
+   "file": "v03-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v03-read-02",
+   "file": "v03-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v03-read-03",
+   "file": "v03-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v03-read-04",
+   "file": "v03-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v03-read-05",
+   "file": "v03-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v03-read-06",
+   "file": "v03-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10200.0
+  },
+  {
+   "pack": "v03-read-07",
+   "file": "v03-read-07.md",
+   "start_s": 10080.0,
+   "end_s": 11633.0
+  }
+ ],
+ "v04": [
+  {
+   "pack": "v04-read-01",
+   "file": "v04-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v04-read-02",
+   "file": "v04-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v04-read-03",
+   "file": "v04-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v04-read-04",
+   "file": "v04-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v04-read-05",
+   "file": "v04-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v04-read-06",
+   "file": "v04-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10200.0
+  },
+  {
+   "pack": "v04-read-07",
+   "file": "v04-read-07.md",
+   "start_s": 10080.0,
+   "end_s": 11880.0
+  },
+  {
+   "pack": "v04-read-08",
+   "file": "v04-read-08.md",
+   "start_s": 11760.0,
+   "end_s": 13591.0
+  }
+ ],
+ "v05": [
+  {
+   "pack": "v05-read-01",
+   "file": "v05-read-01.md",
+   "start_s": 0.0,
+   "end_s": 1800.0
+  },
+  {
+   "pack": "v05-read-02",
+   "file": "v05-read-02.md",
+   "start_s": 1680.0,
+   "end_s": 3480.0
+  },
+  {
+   "pack": "v05-read-03",
+   "file": "v05-read-03.md",
+   "start_s": 3360.0,
+   "end_s": 5160.0
+  },
+  {
+   "pack": "v05-read-04",
+   "file": "v05-read-04.md",
+   "start_s": 5040.0,
+   "end_s": 6840.0
+  },
+  {
+   "pack": "v05-read-05",
+   "file": "v05-read-05.md",
+   "start_s": 6720.0,
+   "end_s": 8520.0
+  },
+  {
+   "pack": "v05-read-06",
+   "file": "v05-read-06.md",
+   "start_s": 8400.0,
+   "end_s": 10200.0
+  },
+  {
+   "pack": "v05-read-07",
+   "file": "v05-read-07.md",
+   "start_s": 10080.0,
+   "end_s": 11880.0
+  },
+  {
+   "pack": "v05-read-08",
+   "file": "v05-read-08.md",
+   "start_s": 11760.0,
+   "end_s": 13891.0
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "INPUT_DIR": "G:/My Drive/Projects/Hoshi_1489/2026-10-1",
+  "CHANNEL": "hoshi_1489",
+  "JOB": "2026-10-1",
+  "CLIP_MIN_S": 30,
+  "CLIP_MAX_S": 180,
+  "CATEGORIES": ["gameplay", "fun", "meme"],
+  "CLIPS_PER_VIDEO": "4-8",
+  "ASPECT": "16:9",
+  "LANGUAGE": "th",
+  "APPROVAL": "ask",
+  "RESOLVE_PROJECT": "hoshi-2026-10-1",
+  "DEMUX_WORKERS": 2,
+  "SHORTLIST_PER_HOUR": 10,
+  "READ_WHOLE_STREAM": true,
+  "FULL_ASR_MODEL": "large-v3-turbo",
+  "FULL_ASR_BEAM": 5,
+  "GAME_OVERRIDES": {
+    "0IfIDHeb27U": "Halloween",
+    "2de0dBLb86o": "Backrooms",
+    "2rhiHVn1oXA": "Examination",
+    "AZvlSZSPbno": "Peak",
+    "cth9fAitnpk": "DontScream"
+  },
+  "TIMELINE_NAME_FORMAT": "{ชื่อคลิป}-{ชื่อเกม}-vdo",
+  "PYTHON": "C:/Users/pc-server/AppData/Local/Programs/Python/Python312/python.exe"
+}

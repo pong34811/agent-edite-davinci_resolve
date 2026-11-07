@@ -1,0 +1,57 @@
+[
+  {
+    "file": "G:\\My Drive\\Projects\\Hoshi_1489\\2026-10-1\\0IfIDHeb27U-【กองโจร】ฮาโลวีน  ｜ 31⧸07⧸2026 เวลา 19.55.mp4",
+    "codec": "av1",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_s": 9346.014,
+    "size_bytes": 2371224504,
+    "audio_codec": "opus",
+    "source_id": "v01"
+  },
+  {
+    "file": "G:\\My Drive\\Projects\\Hoshi_1489\\2026-10-1\\2de0dBLb86o-【LIVE】Backrooms  ｜ 03⧸10⧸2026 เวลา 20.00.mp4",
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_s": 14499.014,
+    "size_bytes": 6762818119,
+    "audio_codec": "opus",
+    "source_id": "v02"
+  },
+  {
+    "file": "G:\\My Drive\\Projects\\Hoshi_1489\\2026-10-1\\2rhiHVn1oXA-【กองโจร】examination  ｜ 28⧸10⧸2026 เวลา 19.30.mp4",
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_s": 11633.016667,
+    "size_bytes": 5417920518,
+    "audio_codec": "opus",
+    "source_id": "v03"
+  },
+  {
+    "file": "G:\\My Drive\\Projects\\Hoshi_1489\\2026-10-1\\AZvlSZSPbno-【LIVE】Peak ｜ 10⧸10⧸2026 เวลา 19.30.mp4",
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_s": 13591.054,
+    "size_bytes": 7168608873,
+    "audio_codec": "opus",
+    "source_id": "v04"
+  },
+  {
+    "file": "G:\\My Drive\\Projects\\Hoshi_1489\\2026-10-1\\cth9fAitnpk-【LIVE】DON'T SCREAM TOGETHER｜ 17⧸10⧸2026 เวลา 20.00.mp4",
+    "codec": "av1",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_s": 13891.054,
+    "size_bytes": 5705540804,
+    "audio_codec": "opus",
+    "source_id": "v05"
+  }
+]

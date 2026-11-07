@@ -11,6 +11,7 @@
 | Sakuyako-Cheris | [sakuyako-cheris.md](sakuyako-cheris.md) | `sakuyako-2026-09` | ทำงานแล้ว |
 | Laffy | [laffy.md](laffy.md) | ยังไม่พบ | ข้อมูลน้อย |
 | Kael | [kael.md](kael.md) | ยังไม่พบ | ข้อมูลน้อย |
+| Hoshi_1489 | [hoshi-1489.md](hoshi-1489.md) | hoshi-2026-09, hoshi-2026-10-1 | ทำงานแล้ว |
 
 ## กติกาการใช้และการอัปเดต
 

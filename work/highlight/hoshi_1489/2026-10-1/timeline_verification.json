@@ -1,0 +1,252 @@
+{
+ "project": "hoshi-2026-10-1",
+ "timeline_count": 30,
+ "planned": 30,
+ "ok": 28,
+ "rows": [
+  {
+   "name": "โมเดลแม่งด้วนแล้วยังเล็กอีก-Halloween-vdo",
+   "candidate": "v01-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2887,
+   "expected_duration": 2887
+  },
+  {
+   "name": "เถียงเรื่องอายุ 2 พันปี สุดท้ายอายุ 18-Halloween-vdo",
+   "candidate": "v01-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2978,
+   "expected_duration": 2978
+  },
+  {
+   "name": "จุดซ่อนเร้นข้างในต้องขาว-Halloween-vdo",
+   "candidate": "v01-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3527,
+   "expected_duration": 3527
+  },
+  {
+   "name": "ชายแท้ต้องใช้สีชมพู-Halloween-vdo",
+   "candidate": "v01-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3967,
+   "expected_duration": 3967
+  },
+  {
+   "name": "โนว่าเป็นดาวหรือดาวน์ซินโดรม-Halloween-vdo",
+   "candidate": "v01-05",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4265,
+   "expected_duration": 4265
+  },
+  {
+   "name": "ไม่มีเงิน เลยบวก Energy ไม่ได้-Halloween-vdo",
+   "candidate": "v01-06",
+   "ok": false,
+   "problems": [
+    "source_start 503049 != 503050"
+   ],
+   "video_duration": 2641,
+   "expected_duration": 2641
+  },
+  {
+   "name": "ไลฟ์จอดำเพราะชื่อเกม Black Room-Backrooms-vdo",
+   "candidate": "v02-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3548,
+   "expected_duration": 3548
+  },
+  {
+   "name": "ลุ้นระเบิดเวลานับถอยหลังสกิบิดี-Backrooms-vdo",
+   "candidate": "v02-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4060,
+   "expected_duration": 4060
+  },
+  {
+   "name": "ระแวงแมงมุมลายตัวยักษ์ไล่หลัง-Backrooms-vdo",
+   "candidate": "v02-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5750,
+   "expected_duration": 5750
+  },
+  {
+   "name": "ปลอดภัยงั้นเดินตามหลังผีไปเลย-Backrooms-vdo",
+   "candidate": "v02-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3745,
+   "expected_duration": 3745
+  },
+  {
+   "name": "ใจเต้นแรงยิ่งกว่าตอนมีความรัก-Backrooms-vdo",
+   "candidate": "v02-05",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3477,
+   "expected_duration": 3477
+  },
+  {
+   "name": "หามุมถ่ายรูปปกสตรีมข้างศพเพื่อน-Backrooms-vdo",
+   "candidate": "v02-06",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3428,
+   "expected_duration": 3428
+  },
+  {
+   "name": "อยู่กับโนว่าแล้วรู้สึกไม่ปลอดภัยเหมือนจะตายค-Examination-vdo",
+   "candidate": "v03-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4578,
+   "expected_duration": 4578
+  },
+  {
+   "name": "เดินตามกลุ่มอยู่ดีๆ หันมาอีกทีเพื่อนหาย-Examination-vdo",
+   "candidate": "v03-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4085,
+   "expected_duration": 4085
+  },
+  {
+   "name": "หมดห่วงเรื่องฮีล สรุปคนฮีลตายคนแรก-Examination-vdo",
+   "candidate": "v03-03",
+   "ok": false,
+   "problems": [
+    "source_start 249019 != 249020"
+   ],
+   "video_duration": 3436,
+   "expected_duration": 3436
+  },
+  {
+   "name": "เราไม่ใช่พระเอก เราคือเอ็กซ์ตร้าของตัวประกอบ-Examination-vdo",
+   "candidate": "v03-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4318,
+   "expected_duration": 4318
+  },
+  {
+   "name": "นึกว่ามาเล่นเกมผีไขปริศนา สรุปเกมยิงซอมบี้สุ-Examination-vdo",
+   "candidate": "v03-05",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3941,
+   "expected_duration": 3941
+  },
+  {
+   "name": "ไม่เหลือความไว้ใจกันในตี้จนต้องยิงกันเอง-Examination-vdo",
+   "candidate": "v03-06",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3281,
+   "expected_duration": 3281
+  },
+  {
+   "name": "จับมือฉันไว้แต่เกือบไม่รอด-Peak-vdo",
+   "candidate": "v04-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5194,
+   "expected_duration": 5194
+  },
+  {
+   "name": "โฮชิหลงทางโดนซอมบี้รุมกัดตาย-Peak-vdo",
+   "candidate": "v04-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5381,
+   "expected_duration": 5381
+  },
+  {
+   "name": "ไม่ได้นอกใจใครคนเดียวเพราะนอกใจทุกคน-Peak-vdo",
+   "candidate": "v04-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3634,
+   "expected_duration": 3634
+  },
+  {
+   "name": "ชีวิตเราอนาถกว่าชาวบ้านแต่ต้องมีความพยายาม-Peak-vdo",
+   "candidate": "v04-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5455,
+   "expected_duration": 5455
+  },
+  {
+   "name": "ฉันตกแน่จับมือฉันไว้แต่ต้านลมไม่ไหว-Peak-vdo",
+   "candidate": "v04-05",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4352,
+   "expected_duration": 4352
+  },
+  {
+   "name": "คุณอามเน้นกินจนหลอดสตามินายาวเฟื้อย-Peak-vdo",
+   "candidate": "v04-06",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4520,
+   "expected_duration": 4520
+  },
+  {
+   "name": "สรุปวิธีเล่น Don't Scream  ถ้ามีใครกรี๊ดวูบหม-DontScream-vdo",
+   "candidate": "v05-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4649,
+   "expected_duration": 4649
+  },
+  {
+   "name": "เจอคนโดนผีเล่น ถามซ้ำๆ เป็นอะไรหรือเปล่าครับ-DontScream-vdo",
+   "candidate": "v05-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3239,
+   "expected_duration": 3239
+  },
+  {
+   "name": "ตายเพราะโดนหมีไล่กวด บ่นอุบทุเรศมากรับไม่ได้-DontScream-vdo",
+   "candidate": "v05-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2816,
+   "expected_duration": 2816
+  },
+  {
+   "name": "แซวเพื่อนเล่นกับอากาศ รู้ว่าเหงาแต่กับอากาศเก-DontScream-vdo",
+   "candidate": "v05-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2872,
+   "expected_duration": 2872
+  },
+  {
+   "name": "สมองไม่ได้พัง แม่อย่ายัดเยียดเพราะไม่มีตั้งแต-DontScream-vdo",
+   "candidate": "v05-05",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4294,
+   "expected_duration": 4294
+  },
+  {
+   "name": "ถอดสมองถาม  เสียงขาวคืออะไร เอาผงซักฟอกมาซักเ-DontScream-vdo",
+   "candidate": "v05-06",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2210,
+   "expected_duration": 2210
+  }
+ ]
+}

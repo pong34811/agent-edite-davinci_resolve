@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CHANNELS = ROOT / 'docs' / 'channels'
-SLUGS = ['katy404', 'aomimama', 'armigon', 'tygarina', 'sakuyako-cheris', 'laffy', 'kael']
+SLUGS = ['katy404', 'aomimama', 'armigon', 'tygarina', 'sakuyako-cheris', 'laffy', 'kael', 'hoshi-1489']
 SECTIONS = [
     '## ตัวตนและคอนเทนต์',
     '## ที่เก็บไฟล์',
