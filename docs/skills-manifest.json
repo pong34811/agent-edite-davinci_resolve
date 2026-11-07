@@ -3965,7 +3965,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "a16bc21a11a66061ac2f8942a3ae66fc5c0294094e028716914cde03c9412a33"
+      "sha256": "d97f9d322ec57d3a5e1a51120cb58e0c78c2f4676f5ed5040debd6ecf074dd89"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -4019,7 +4019,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "48668fc800e0f4c3e1c55a075dbc9ea1c8367213b6069b28d7d12d7f0574a904"
+      "sha256": "02890c84d86e7a7f5230cbbbcf5ed8de004701211b14f1d5e8e13310d561aea5"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
@@ -4935,7 +4935,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f68f98a0f197928a1b238c349f5c23015fe37c33bf08d6d2aac03b121745f1ee"
+      "sha256": "07b6f6e2855ae27f166a58d19a1314dfcfbb267e82cbbbab33a6d6b6bc56e5d9"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -7056,7 +7056,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "94e149f0e96cc8de0d9cbf7da03473469f2f13f57e3f475c564f4aadf1cebb37"
+      "sha256": "c0ce21210932e352307275da0fb977a21d29923af59536f35d4d3bba54ece3fd"
     },
     {
       "path": "scripts/README.md",
@@ -7341,6 +7341,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "8120de0fb076982b5e5484febe374bb63f08f4d3ea78dc46345a5e7eb9786258"
+    },
+    {
+      "path": "scripts/emoji_pop_overlay.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "5f445e834b24f886667049d2e6e6de6183a04da35e8aa77623b76fc145078675"
     },
     {
       "path": "scripts/enrich_timelines_python.py",
@@ -8255,6 +8261,12 @@
       "sha256": "205970ad436ec33d40dc090a82d4390915c0f9d091ec71f5645ba743191cbc57"
     },
     {
+      "path": "tests/test_emoji_pop_overlay.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "31a59573b03054dc22f85d74c29d8b6e454c5f2e5c878fb965e235f3a61ff20a"
+    },
+    {
       "path": "tests/test_enrich_timelines_python.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8822,7 +8834,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1179,
+    "manifest_files": 1181,
     "supporting_skills": 57,
     "active_skills": 74
   },

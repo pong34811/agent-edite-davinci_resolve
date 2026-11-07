@@ -1,7 +1,7 @@
 ---
 name: resolve-video-enrichment
 description: Use when editing Thai VTuber clips for YouTube.
-version: 0.1.0
+version: 0.2.0
 author: Hermes
 license: MIT
 platforms: [windows]

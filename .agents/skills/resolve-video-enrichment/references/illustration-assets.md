@@ -52,6 +52,21 @@ Use this workflow when adding new static images as visual illustrations or overl
 - Recheck protected picture/audio/subtitle ranges and track states, save with `ProjectManager.SaveProject()`, restore and read back the original active project/timeline/playhead/page/folder/track states, and report exact verification performed.
 - Before publication, recheck the selected license terms and provide required attribution. Editing permission and attribution alone do not establish copyright clearance or platform monetization eligibility.
 
+## Emoji pop illustrations for talk clips (verified 2026-11-07, Aomi-mama flood day 1)
+
+- `scripts/emoji_pop_overlay.py plan.json <dir beside footage>/illustrations` renders each Noto Emoji 3D PNG
+  into a full-raster alpha MOV (pop-in with 115% overshoot, 2 s hold, 0.25 s fade). Put the position in the
+  render and place at Zoom 1 / Pan 0 / Tilt 0; no transform-unit guessing.
+- Pick beats from the subtitle cue that speaks the word (22 beats in 18:45, roughly one a minute), then
+  look at every emoji: Noto's 📅 prints "July 17", which contradicts a spoken date; 🗓️ (1f5d3) is blank.
+- Placement: on a copy (`<timeline>_edit`), new V2 `ILLUSTRATIONS`; MCP `media_pool append_to_timeline`
+  with `clip_infos` (`track_index` 2, `media_type` 1, end exclusive 120) placed all 22 exactly. Alpha MOVs
+  carry no audio, so no audio items appear.
+- MCP `timeline duplicate` / `add_track` / `delete_track` each auto-archive a `_archived_vNN` timeline;
+  wrap a batch in `timeline_versioning begin_run/end_run` to keep it to one.
+- Compare a burned-in QC frame with the same frame of the untouched timeline before blaming the overlay:
+  the cut-off subtitle here was the unstyled default track, identical without V2.
+
 ## Pitfalls
 
 - A visually relevant image can still be wrong, illegible, low resolution, misleading, or unauthorized.

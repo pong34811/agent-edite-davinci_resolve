@@ -139,6 +139,7 @@
 | `p2_trim_bad_gif_tail.py` | ตัดเฟรมท้าย GIF ที่ render ไม่ได้ | p2 |
 | `p2_inventory_readonly.py` | inventory p2 ผ่าน review_enrichment_readonly | p2 |
 | `illustration_reel.py` | วาง reel ภาพประกอบ HyperFrames (placements.json) บนสำเนา timeline + V2 `REACTIONS`; baseline/pilot/apply/verify, backup `.drp`, เทียบ track ต้นฉบับกับ baseline | ใช้ซ้ำ |
+| `emoji_pop_overlay.py` | ดาวน์โหลด Noto Emoji 3D (Apache-2.0) แล้วทำ MOV ProRes 4444 alpha เต็ม raster แบบเด้งเข้า/ค้าง/จางออก จาก plan.json (`hex`, ตำแหน่ง x/y/size); วางที่ Zoom 1 Pan 0 ได้เลยไม่ต้องเดาหน่วย transform + `manifest.json` ที่มาและสัญญาอนุญาต | ใช้ซ้ำ |
 
 ## 6. QC / Review / Contact sheet
 

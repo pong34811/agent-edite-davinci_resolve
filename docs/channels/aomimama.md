@@ -91,3 +91,6 @@
 - ซับ Whisper ถูกผู้ใช้ปฏิเสธ (ไม่ตรงเสียง) แล้วลบออก; ผู้ใช้สั่งใช้ Descript แทน (โปรเจค Descript `8d88ab99-3a68-4e09-ab3d-6f8a8944d1b0`)
 - Subtitle 1 ปัจจุบัน 836 cue สั้น 3-4 คำ (ผู้ใช้ขอแบบคลิปสั้นแม้เป็น 16:9) ซอยจาก 153 ช่วงของ Descript, ยังไม่ proofread, ยังไม่โหลด preset `Mitr Font`; SRT และ `.drp` สำรองอยู่ `.hermes/projects/aomimama-flood-day1/`
 - มี `Timeline 1_archived_v01` (ซับ Whisper เก่า) ที่ MCP สร้างเองตอนลบ track ยังไม่ลบ
+- 2026-11-07 ภาพประกอบ: สำเนา `Timeline 1_edit` (ต้นฉบับไม่แตะ) V2 `ILLUSTRATIONS` 22 คลิป Noto Emoji 3D MOV 2 วิ มุมซ้ายบนบนผนัง (กลาง x 384 y 302 ขนาด 360 px) ไฟล์อยู่ `.../บันทึกน้ำถ่วมวันที่ 1 โอมิ 04-10-2026/illustrations/` พร้อม `manifest.json`; อวาตาร์อยู่กลาง-ขวาตลอดคลิป ฝั่งซ้ายว่าง
+- ซับค่าเริ่มต้น (ยังไม่มี `Mitr Font`) ตัวท้ายบาง cue หายตรงผมอวาตาร์ทั้งใน Timeline 1 และ `_edit`; มี timeline archive ที่ MCP สร้างเอง 3 อัน (`Timeline 1_archived_v01/v02`, `Timeline 1_edit_archived_v01`)
+- ไฟล์ภาพประกอบงาน `aomimama-2026-10` ใน `.hermes/projects/aomimama-2026-10/enrich/illustrations/` ไม่อยู่ในเครื่องแล้ว (ตรวจ 2026-11-07) timeline ในโปรเจคนั้นอาจขึ้น Media Offline
