@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.17.21 — นำ skill เข้าโปรเจกต์ + กฎอัปเดต skill เดิม
+
+### รายละเอียด
+- นำ skill ที่เขียนเองเข้าโปรเจกต์ 5 ตัวจาก `~/.agents/skills`: `katy404-canva-thumbnails`, `kt404-youtube-upload`, `sfx-library-manager`, `sfx-story-analyzer`, `subtitle-analyzer`
+- รวมกฎที่ไม่ซ้ำของ `davinci-resolve-workflow` เข้า `resolve-mcp/references/target-resolution.md` (resolve-mcp 0.4.0) แทนการสร้าง skill ซ้ำ
+- `project-learning` 0.2.0: skill ต้องอยู่ใน `.agents/skills` ของ repo เท่านั้น; ถ้ามี skill เดิมครอบคลุมให้อัปเดตตัวเดิมและเพิ่ม `version` ก่อนคิดสร้างใหม่; ก่อนลบโฟลเดอร์ที่ gitignore ให้ค้นการอ้างอิงก่อน (AGENTS.md เพิ่มกฎเดียวกัน)
+- `verify_skill_bundle` รู้จักลิงก์ `references/` ข้าม skill ของ HyperFrames และลิงก์โฟลเดอร์ ทำให้ test validation 3 ตัวที่เคยพังผ่านแล้ว
+- test QC เสียง/ซับของ Armigon ข้ามอัตโนมัติเมื่อไฟล์หลักฐานใน `.agents/teamwork` (gitignore) ไม่มีอยู่
+- ยังเหลือ test ที่พังมาก่อนงานนี้ 1 ตัว: `docs/channels/sakuyako-cheris.md` อ้าง `sk06_bands.py` ที่ไม่มีใน `scripts/`
+
 ## v0.17.20 — ติดตั้ง AutoHarness
 
 ### รายละเอียด
