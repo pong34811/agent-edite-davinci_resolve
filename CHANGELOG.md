@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.23 — Bunny Girl ep5 และกฎ ASR บน GPU ที่ไม่ว่าง
+
+### รายละเอียด
+- บันทึกงาน Bunny Girl ep5 "วันแรกที่ตัดสินใจว่าจะใส่ชุดบันนี่เกอร์" ในโปรไฟล์ Katy404: Timeline 1_pop (ซูม 6 ช่วง, Pop Kinetic 3 ส่วน, ซับ 48 cue, SFX/BGM) และผล render ทดสอบ 2440 เฟรม -15.6 LUFS peak -1.0 dBFS ไม่มีเฟรมดำ
+- เพิ่มกฎใน OPERATING-NOTES: เมื่อเกม/OBS ใช้ GPU เกือบเต็ม ให้รัน faster-whisper บน CPU int8 พร้อม HF_HUB_OFFLINE=1
+- เพิ่มกฎใน OPERATING-NOTES: heredoc ของ Bash tool เปลี่ยน backslash-n เป็นขึ้นบรรทัดจริง ให้ใช้ chr(92) หรือ Edit tool
+
 ## v0.17.22 — แก้อ้างอิงสคริปต์ Sakuyako ที่หายไป
 
 ### รายละเอียด
