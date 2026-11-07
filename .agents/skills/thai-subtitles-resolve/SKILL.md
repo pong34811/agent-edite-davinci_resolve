@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.4.0
+version: 0.5.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -94,6 +94,28 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
 - `scripts/load_subtitle_preset.py --backup-dir` is now resolved to an absolute path; a relative
   path made Resolve's `ExportProject` fail ("DRP backup failed; nothing written").
 - Preset names are exact: `Mitr Font` exists, `Mitr-Font` does not. Ask, never substitute.
+
+## Long free-talk clips: use Descript, not local Whisper (2026-11-07, Aomi-mama flood day 1, 18:45 @ 60 fps)
+
+- REJECTED: `asr_words_th.py --model large-v3` -> `words_to_short_srt.py` gave 604 lint-clean cues that read
+  back with 0 mismatches, yet the user stopped it: "ไม่ตรงกับเสียง". Whisper's Thai words were wrong and it
+  appended English translations ("So, if no one says that it's a birthday"). A frame readback proves the
+  track equals the SRT, never that the SRT matches the speech; listen to a sample before a full insert.
+- ACCEPTED route (user-chosen): Descript MCP `import_media` with a direct upload of the extracted 16 kHz WAV
+  (`language: th`, 36 MB PUT, ~2 min) -> `export_transcript format=srt include_speaker_labels=off` -> 153
+  segments of 4-10 s, two lines, with accurate Thai ("4 ตุลาคม", "วันเกิดหนู"). Some segments end exactly
+  4.000 s after their start: Descript's placeholder length, so timing inside them is a guess.
+- The user wants 3-4 words per cue even on 16:9 ("แบบเดิม ... เหมาะสมคลิปสั้นแนวตั้ง"): split each segment
+  with `p2_fix_captions.fix()` (word boundaries <= 14 chars, time shared by character count, 1.5 s cap),
+  strip Thai-Thai spaces, then replace the track (delete subtitle tracks, NEW SRT path, bare append):
+  153 -> 836 cues, verify mismatches=0 (a one-off scratch script wrapped `fix()`).
+- Resolve stores an SRT line break as U+2028, so `verify_srt_on_timeline.py` reports every two-line cue as a
+  text mismatch while frames match; compare after normalising, or split to one-line cues first.
+- The MCP now refuses Subtitle append (SUBTITLE_APPEND_CRASH); the bare Python append works on 21.1.0.17.
+  MCP `timeline delete_track` auto-creates `<timeline>_archived_v01`; report it, delete only on request.
+- Local GPU ASR was very slow here (large-v3 1 h 40 min; cached `nectec/Pathumma-whisper-th-large-v3`
+  converted with `ctranslate2.converters.transformers` stopped after 2 h) because Resolve and other jobs
+  shared the GPU. `words_to_short_srt.py` stays for word-timed ASR JSON, not as the default route.
 
 ## The three findings that matter
 

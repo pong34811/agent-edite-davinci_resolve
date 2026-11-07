@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "a91a1ffc64d0efd7b7fa0cf5208e6cc0f8cb8b8c3ecf25d0c1c234a3c22d3287"
+      "sha256": "4afc649ab9af03c91fcacb6c03266778e9af9ac9ea652ed0dfd2e55e71a6046f"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "16e908720884f0ce88eb15e1766a8ae6d3e95a0f04d8cbf4c383bc5b90cfa3f0",
+      "sha256": "639292d8e02af3b56a1ceb090061df5c98c5cc540acf8415e694a7578394c85e",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "4a1b8799a4e4e944d510f755b7fd88350788fd4ed45525c785b970a75646eb03",
+      "sha256": "6a5f4a73f1e97e60db913c3539a9303a5dd87e240cd6efb05a772420bbc41ed0",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "2e171b35fc08178d76e40b0601b4771d32f21f6d3ddea2fe42cb12d384afbf10"
+      "sha256": "2a7cb0bd7c9bdd03bb0365b8792b936372f2ed3ba660bdeb6235990545511af5"
     },
     {
       "path": "docs/README.md",
@@ -4935,13 +4935,13 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8171b766dc1e4c4ff97fcdf337d7c9832c497b2fe2e9917f9f629b8fb524ca73"
+      "sha256": "f68f98a0f197928a1b238c349f5c23015fe37c33bf08d6d2aac03b121745f1ee"
     },
     {
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b5fc843c098c8568cc0eb1fca0fea74916eab982a6d099fe014717cb29712b79"
+      "sha256": "b4dc3e29ba9e17c2ac426213422d21ae1ecd9c0c452b6dc67f5482bf5d5bf51d"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7056,7 +7056,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d831e34a9bb73bd6c84c58884c14482e77e2d153e55546c77dcbead85c31c4fc"
+      "sha256": "94e149f0e96cc8de0d9cbf7da03473469f2f13f57e3f475c564f4aadf1cebb37"
     },
     {
       "path": "scripts/README.md",
@@ -8009,6 +8009,12 @@
       "sha256": "b74789981a314023d8166b2326d75a1ca0dc86e2ef7948978042f5bafc409e15"
     },
     {
+      "path": "scripts/words_to_short_srt.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "7324c72be8ce519afbf308cb53289223fb11b0dc55cd584d08497353a4f09550"
+    },
+    {
       "path": "scripts/zoom_variant_stills.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -8421,6 +8427,12 @@
       "source": "project-authored",
       "kind": "integration_or_validation",
       "sha256": "f68bcde3d438c65ab3a23eaf271b1e5b557c0973735ae22b25b9348d025748c3"
+    },
+    {
+      "path": "tests/test_words_to_short_srt.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "0ab1639e7a3d975fa3e18142057b1bfe9c4f971c623c5a0a1f39e1855d2d50d6"
     }
   ],
   "historical_variants": [
@@ -8810,11 +8822,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1177,
+    "manifest_files": 1179,
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.26",
+  "bundle_version": "0.17.27",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

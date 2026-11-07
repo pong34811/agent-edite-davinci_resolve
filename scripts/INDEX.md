@@ -33,6 +33,7 @@
 |---|---|---|
 | `asr_words_th.py` | ASR ไทยระดับตัวอักษร (faster-whisper) offline | ใช้ซ้ำ |
 | `build_dynamic_srt.py` | สร้าง SRT สั้นจากจุดเริ่ม cue ที่คัดแล้ว | ใช้ซ้ำ |
+| `words_to_short_srt.py` | แบ่งคำจาก `asr_words_th.py` เป็น SRT สั้นอัตโนมัติ (≤14 ตัว ≤1.5 วิ, ตัดเมื่อหยุด ≥0.7 วิ) สำหรับ ASR ที่มีเวลาระดับคำ (Whisper ไทยบนคลิปยาวผู้ใช้ปฏิเสธว่าไม่ตรงเสียง ให้ใช้ Descript + `p2_fix_captions.fix` แทน); ข้าม segment hallucination, `--drop-latin --keep-latin VTuber` ตัดคำแปลอังกฤษที่ Whisper แทรก (ห้ามใช้กับคลิปเกม) | ใช้ซ้ำ |
 | `caption_lint.py` | ตรวจ SRT ตามกฎ house style (≤14 ตัวอักษร ≤1.5 วิ) | ใช้ซ้ำ |
 | `verify_srt_on_timeline.py` | เทียบ cue บน Subtitle track กับ SRT (ข้อความ + เฟรม) | ใช้ซ้ำ |
 | `load_subtitle_preset.py` | อ่าน/โหลด Subtitle preset (dry-run เท่านั้น ห้ามข้ามบล็อก `--apply`) | ใช้ซ้ำ |
