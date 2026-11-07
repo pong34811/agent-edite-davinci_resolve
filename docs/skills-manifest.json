@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "587d66c13e51a9dde7592108b7a71e132280451e1cf926bed9256e0e50b80bf8"
+      "sha256": "2e171b35fc08178d76e40b0601b4771d32f21f6d3ddea2fe42cb12d384afbf10"
     },
     {
       "path": "docs/README.md",
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b4dc3e29ba9e17c2ac426213422d21ae1ecd9c0c452b6dc67f5482bf5d5bf51d"
+      "sha256": "b5fc843c098c8568cc0eb1fca0fea74916eab982a6d099fe014717cb29712b79"
     },
     {
       "path": "docs/channels/kael.md",
@@ -4953,7 +4953,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0f7a494622b6f2abf9f097ba31edb575b7909140bbb2b812b18c0754b4689cb8"
+      "sha256": "74fa8fc9b70cc9138020f1b78d5438916e0a408aef7c9ed22e2921e7823829ba"
     },
     {
       "path": "docs/channels/laffy.md",
