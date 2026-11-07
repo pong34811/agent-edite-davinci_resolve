@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.22 — แก้อ้างอิงสคริปต์ Sakuyako ที่หายไป
+
+### รายละเอียด
+- `docs/channels/sakuyako-cheris.md`: ระบุว่าสคริปต์ `sk06_bands.py`, `sk06_9x16_layoutA.py`, `sk06_layoutA_qc.py` เป็น scratch ครั้งเดียวที่ไม่ได้เก็บไว้ (ไม่มีในเครื่องและไม่เคย commit)
+- `test_channel_profiles` ผ่านครบ 3 ตัว; `test_skill_bundle` ผ่าน
+
 ## v0.17.21 — นำ skill เข้าโปรเจกต์ + กฎอัปเดต skill เดิม
 
 ### รายละเอียด
