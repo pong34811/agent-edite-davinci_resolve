@@ -1,6 +1,8 @@
 __pycache__/
 *.py[cod]
 .venv/
+# AutoHarness (installed in .venv) writes its audit log to the cwd on every `autoharness check`
+audit.jsonl
 .env
 .env.*
 *.db
