@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.25 — Bunny Girl ep5 แนวตั้ง
+
+### รายละเอียด
+- Bunny Girl ep5 แนวตั้ง: สร้าง Timeline 1_9x16_mitr (1080x1920) ซับ Mitr-short-001 ด้วย drt_clone_subtitle_style, render ทดสอบ 2440 เฟรม -15.6 LUFS ไม่มีเฟรมดำ
+- แก้ drt_clone_subtitle_style ให้แปลง --workdir เป็น path เต็ม (Timeline.Export ล้มเหลวเมื่อได้ path แบบ relative)
+- skill resolve-mitr-subtitle-presets: ระบุไฟล์ DRT อ้างอิงของ Mitr Font (16:9) และ Mitr-short-001 (9:16)
+
 ## v0.17.24 — ใส่ฟอนต์ซับ Mitr โดยไม่ปิด Resolve
 
 ### รายละเอียด
