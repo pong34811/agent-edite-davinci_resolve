@@ -1,7 +1,7 @@
 ---
 name: resolve-session
 description: Start a Resolve working session — connect, confirm the bridge and edition, open the project, and report timeline and media-pool state before any editing begins.
-version: 0.3.0
+version: 0.3.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -128,3 +128,31 @@ start editing off the back of this.
   when the project library's drive is gone, relaunches via Explorer, reopens the
   project), re-verify the item in flight, and continue. A library on `G:` that
   vanished is the usual cause of `SaveProject` returning False and the crash.
+
+- **Library on `G:` shows empty (only "New Project") but the folder is there**
+  (seen 2026-11-07): Google Drive for desktop can list files while every content
+  read returns 0 bytes or "Could not find file". `ResolveDebug.txt` then shows
+  `Initializing fresh project library ...User.db` and `file is not a database`
+  for every `G:` library. `resolve_recover.py` does not catch this (the path
+  exists). Two stages were seen:
+  1. Every read empty: stop every `GoogleDriveFS.exe`, run
+     `C:\Program Files\Google\Drive File Stream\launch.bat`, wait for
+     `G:\My Drive` (it can drop once more while the second process restarts).
+  2. Files read but stop early, the same byte count every time (`User.db`
+     164,514 of 2,912,256; 53 of 128 `.db` files), error `database disk image is
+     malformed`. Drive's cached copy was truncated
+     (`%LOCALAPPDATA%\Google\DriveFS\<account>\content_cache\...` had a file of
+     exactly that size), and "Available offline", a restart or launching the old
+     132 exe (it hands off to 133) did not refresh it. The cloud copy was fine:
+     the MD5 in Drive's `metadata_sqlite_db` (`items.proto`) did not match the
+     read, also not with zero padding. Fix that worked: copy the metadata DB to
+     scratch and confirm `select count(*) from operations` is 0 (no pending
+     uploads), stop Drive, rename that account's `content_cache` to
+     `content_cache.bak_<date>`, run `launch.bat`; every file then read in full
+     and passed SQLite `pragma quick_check` (128/128).
+  Check each `.db` by reading it to the end and comparing with its size (the
+  header alone can look healthy), then reselect the library in Resolve. Do not
+  let Resolve "initialize" the library meanwhile. Library paths live in
+  `Preferences\dblist.conf`; several names may point at one Drive folder
+  (`My Drive\...` and `.shortcut-targets-by-id\...`). Never touch the user's
+  `Drive Z` library as a workaround.

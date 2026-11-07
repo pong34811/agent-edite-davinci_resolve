@@ -3925,7 +3925,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-session\\SKILL.md",
       "source_sha256": "15dffe7af2b1a7330fbab730d9d9b9ba5241e2958e00347e1272dfbfb5a4b90c",
       "kind": "editing_skill",
-      "sha256": "064a7d2207f38014d6bd5c215d083ee5c9a6bc5f9fb9949dec181f998056bd33"
+      "sha256": "5cf4e3658785d43cf8da4914d11b1f4fbf18833e3a366bfb58e08f3794c733ac"
     },
     {
       "path": ".agents/skills/resolve-session/agents/openai.yaml",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "2c61d92e19962bc2f057ea58ceaeb1408050fc6677a831a4fb7072ad37ec6978",
+      "sha256": "43c6a996933b8ef44efe7e28f29b093023d4debc34989a07b619530ea84bb62c",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "3b8fcc9e0a6d62fb2379b2945299aa313d6fff234c2d5195059a3fd813ee294c",
+      "sha256": "c16830402a6b3fd1faef9ca1d9b86bf06008e704f461ca76afb981edccda1870",
       "kind": "integration_or_validation"
     },
     {
@@ -8802,7 +8802,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.21",
+  "bundle_version": "0.17.22",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
