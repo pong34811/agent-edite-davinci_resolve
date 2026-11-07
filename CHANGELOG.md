@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.20 — ติดตั้ง AutoHarness
+
+### รายละเอียด
+- ติดตั้ง AutoHarness v0.1.0 (aiming-lab/AutoHarness) ใน `.venv` ของ repo ทดสอบ `autoharness check` แล้วบล็อก `rm -rf /` เป็น critical ได้จริง ยังไม่ติดตั้ง hook ของ Claude Code
+- `.gitignore` เพิ่ม `audit.jsonl` เพราะ `autoharness check` เขียน audit log ลงโฟลเดอร์ที่รันทุกครั้ง
+
 ## v0.17.19 — Aomi-mama ปกขึ้น Drive
 
 ### รายละเอียด
