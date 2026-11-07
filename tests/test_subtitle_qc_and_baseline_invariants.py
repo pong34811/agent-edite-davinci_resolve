@@ -19,19 +19,22 @@ AUDIT_JSON_PATH = WORKSPACE_DIR / ".agents" / "teamwork" / "subtitle_qc_worker" 
 
 @pytest.fixture(scope="module")
 def baseline_data():
-    assert BASELINE_PATH.exists(), f"Baseline inventory missing: {BASELINE_PATH}"
+    if not BASELINE_PATH.exists():  # local, gitignored audit evidence (.agents/teamwork, .hermes)
+        pytest.skip(f"Baseline inventory missing: {BASELINE_PATH}")
     return json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
 def placements_data():
-    assert PLACEMENTS_PATH.exists(), f"Placements file missing: {PLACEMENTS_PATH}"
+    if not PLACEMENTS_PATH.exists():  # local, gitignored audit evidence (.agents/teamwork, .hermes)
+        pytest.skip(f"Placements file missing: {PLACEMENTS_PATH}")
     return json.loads(PLACEMENTS_PATH.read_text(encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
 def audit_results():
-    assert AUDIT_JSON_PATH.exists(), f"Audit results file missing: {AUDIT_JSON_PATH}"
+    if not AUDIT_JSON_PATH.exists():  # local, gitignored audit evidence (.agents/teamwork, .hermes)
+        pytest.skip(f"Audit results file missing: {AUDIT_JSON_PATH}")
     return json.loads(AUDIT_JSON_PATH.read_text(encoding="utf-8"))
 
 

@@ -151,7 +151,14 @@ def validate():
             skill_root = next((p for p in path.parents if (p / 'SKILL.md').is_file()), None)
             if skill_root is not None:
                 candidates.append(skill_root / ref)
-            found = next((c for c in candidates if c.is_file()), None)
+            # HyperFrames skills cite a sibling skill's file as
+            # "`/hyperframes-core` -> `references/x.md`", i.e. relative to that sibling.
+            if ref.startswith('references/'):
+                candidates.extend(sorted((ROOT / '.agents/skills').glob(f'*/{ref}')))
+            if ref.endswith('/'):
+                found = next((c for c in candidates if c.is_dir()), None)
+            else:
+                found = next((c for c in candidates if c.is_file()), None)
             if found is None:
                 source = path.relative_to(ROOT).as_posix()
                 if ref in DOCUMENTED_EXAMPLE_LINKS.get(source, set()):

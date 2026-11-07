@@ -1,0 +1,23 @@
+{
+  "skill_name": "sfx-library-manager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我找一个适合用在 '成功通过' 这个时刻的 SFX, 类似游戏里通关的那种",
+      "expected_output": "推荐 collect 或 ding family, 给出具体文件名",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我想找一个搞笑的失败音效, 不要太严肃的那种",
+      "expected_output": "推荐 wrong 或 gong family, 说明为什么适合搞笑",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "帮我比较一下 impact-10.wav 和 wrong-10.wav 这两个音效, 哪个更适合用在 dramatic turn 的时刻",
+      "expected_output": "给出对比分析, 推荐 impact 用于 dramatic turn",
+      "files": []
+    }
+  ]
+}

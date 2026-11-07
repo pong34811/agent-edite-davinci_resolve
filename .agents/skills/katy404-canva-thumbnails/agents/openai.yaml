@@ -1,0 +1,4 @@
+interface:
+  display_name: "KATY404 Canva Thumbnails"
+  short_description: "สร้างปกคลิป Shorts และ LIVE สไตล์ KATY404 ใน Canva"
+  default_prompt: "ใช้ $katy404-canva-thumbnails สร้างปกจากหัวข้อและภาพที่แนบ ตามสไตล์ KATY404 ให้แก้ไขต่อใน Canva ได้"

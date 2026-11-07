@@ -16,13 +16,15 @@ NAME_V3_PATH = Path(r"D:\agent-edite-davinci_resolve\.hermes\projects\armigon-na
 
 @pytest.fixture(scope="module")
 def audio_results():
-    assert RESULTS_PATH.exists(), f"Audio QC results file missing: {RESULTS_PATH}"
+    if not RESULTS_PATH.exists():  # local, gitignored audit evidence (.agents/teamwork, .hermes)
+        pytest.skip(f"Audio QC results file missing: {RESULTS_PATH}")
     return json.loads(RESULTS_PATH.read_text(encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
 def baseline_data():
-    assert BASELINE_PATH.exists(), f"Baseline inventory file missing: {BASELINE_PATH}"
+    if not BASELINE_PATH.exists():  # local, gitignored audit evidence (.agents/teamwork, .hermes)
+        pytest.skip(f"Baseline inventory file missing: {BASELINE_PATH}")
     return json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
 
 

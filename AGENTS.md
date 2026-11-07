@@ -138,6 +138,7 @@ Merged from the `agent-seacrh-virus-cut` repo on 2026-11-02 (that folder is kept
 Before reporting done:
 
 - Channel facts -> `docs/channels/`; a new failure rule -> `docs/OPERATING-NOTES.md`; reusable workflow/trap -> matching `.agents/skills/<domain>/SKILL.md`; user taste correction -> `house-style/SKILL.md`.
+- Skills live only in this repo's `.agents/skills/`, never only in a global folder (`~/.claude`, `~/.codex`, `~/.hermes`, `~/.agents`). Search existing skills first: if one covers the work, update it and bump its `version`; create a new skill only when none fits (project-learning, "Writing or updating a skill").
 - Reusable scripts belong in `scripts/`, use `resolve_common` for Resolve work, have tests, and appear in `scripts/INDEX.md`; one-offs remain in `scripts/scratch/`.
 - Run `python -m pytest -q` and `python scripts/refresh_skill_manifest.py` after touching skills, scripts or docs.
 - For repo-level Python checks, inspect the root `.venv` before creating one and record whether it pre-existed. Reuse a suitable environment. From the repository root, remove a test-only `.venv` after checks only if this task created it; in PowerShell, verify the resolved target before deletion and confirm cleanup with `Test-Path` because `.venv` is ignored by Git:

@@ -1,7 +1,7 @@
 ---
 name: project-learning
 description: Use at the start and end of any DaVinci Resolve editing task in this repo, and whenever you are about to write a new script. Finds the existing tool first, keeps throwaway scripts inside the repo, and records new rules, scripts and corrections so the next session (Claude Code, Codex or Hermes) starts smarter and faster.
-version: 0.1.0
+version: 0.2.0
 author: Warit (pong34811)
 license: MIT
 platforms: [windows]
@@ -43,8 +43,21 @@ Answer each, in order, and act on every "yes":
 | Is the script in `scripts/scratch/` reusable by another timeline or project? | Move to `scripts/`, use `resolve_common`, add a test for pure logic, add a row to `scripts/INDEX.md` with its scope label. Otherwise leave it in scratch. |
 | Did the user correct taste (cut rhythm, subtitle wording, framing)? | Append to `.agents/skills/house-style/SKILL.md` using its capture protocol. |
 | Is there a rule that applies to every task? | Add it to `AGENTS.md`, one or two lines. Anything narrower goes to OPERATING-NOTES or a domain skill. |
-| Did you use a workflow, technique or tool sequence that worked (or failed) and is not yet in a skill? | Write it into the matching `.agents/skills/<domain>/SKILL.md` (or its `references/`); create a new skill folder only when no domain skill fits. |
+| Did you use a workflow, technique or tool sequence that worked (or failed) and is not yet in a skill? | Follow "Writing or updating a skill" below: update the existing skill that covers it; create a new folder in `.agents/skills/` only when none fits. |
 | Did project state change (which timelines are done, what is blocked)? | The agent's memory or `work/WORKLOG.md`; not AGENTS.md. |
+
+## Writing or updating a skill
+
+1. **Location.** Every skill for this project lives in `.agents/skills/<name>/` inside this repo, so it is committed and shared by Claude Code, Codex and Hermes. Never create or edit a project skill only in `~/.claude/skills`, `~/.codex/skills`, `~/.hermes/skills`, `~/.agents/skills` or `.claude/skills`. If an agent's own skill tool wrote one there (Hermes `~/.hermes/pending/skills/`, Codex `skill-creator`), copy it into `.agents/skills/` in the same task.
+2. **Search before creating.** Run `ls .agents/skills` and `grep -ril "<keyword>" .agents/skills/*/SKILL.md`, and read the `description` of each candidate.
+3. **Update when a skill already covers it.** Add the step, trap or example to that skill's `SKILL.md` or a file in its `references/`, keep its `name` and folder, and bump `version` (minor for a new workflow, patch for a fix or wording). Do not create a near-duplicate skill.
+4. **Create only when nothing fits.** A new skill needs frontmatter `name` (equal to the folder name) and a `description` that says when to use it. Every local file it cites must exist (the bundle test checks this).
+5. **Vendored third-party skills** (HyperFrames, superpowers) are copies of upstream: put project-specific additions in the project's own skill or a `references/` note rather than rewriting upstream text, so a later upstream update stays mergeable.
+6. **Register.** Run `python scripts/refresh_skill_manifest.py` (adds new skills to `docs/skills-manifest.json` as `supporting`), then `python -m pytest -q tests/test_skill_bundle.py`.
+
+## Cleaning up files
+
+Gitignored folders are not proof of junk: tests, scripts, channel profiles and live Resolve timelines can read them. Before deleting any path, run `git grep -n -F "<path>"` over `tests/ scripts/ docs/ .agents/` and check Resolve media for it; gitignored files cannot be recovered after `rm`. Deleting `.agents/teamwork/` on 2026-11-07 removed the audit evidence two Armigon QC tests read (they now skip when it is absent).
 
 ## Finish
 

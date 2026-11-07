@@ -1,7 +1,7 @@
 ---
 name: resolve-mcp
 description: Orientation and index for DaVinci Resolve MCP work — grading, editing, conforming, delivery, media analysis, and .drp/.drt/.drx file work, live in a running Resolve or offline with none open. Load this for a map of the domain skills, the live-vs-offline servers, and the cross-cutting safety rules. The per-domain skills (resolve-color / resolve-edit / resolve-conform / resolve-delivery / resolve-media-analysis) carry the depth and self-trigger on their own descriptions; use this as the map, or when a task spans several domains.
-version: 0.3.0
+version: 0.4.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -153,6 +153,7 @@ offer the call and let it fail.
 - `AGENTS.md` — canonical brief + the `## Domain Routing` index (all platforms).
 - `docs/SKILL.md` — operating reference for both servers.
 - `docs/kernels/` — per-action depth. `resolve-advanced/README.md` — offline catalog.
+- `references/target-resolution.md` — confirm which timeline/clip the user means before adding or editing, the native read-only probe, and common placement mistakes.
 
 ## Tool selection (MCP first)
 

@@ -152,6 +152,24 @@
       "history_sessions": 0
     },
     {
+      "name": "katy404-canva-thumbnails",
+      "tier": "supporting",
+      "path": ".agents/skills/katy404-canva-thumbnails/SKILL.md",
+      "source": "imported from ~/.agents/skills (user-authored, 2026-11-07)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "kt404-youtube-upload",
+      "tier": "supporting",
+      "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
+      "source": "imported from ~/.agents/skills (user-authored, 2026-11-07)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "livestream-highlight-clipping",
       "tier": "supporting",
       "path": ".agents/skills/livestream-highlight-clipping/SKILL.md",
@@ -598,6 +616,33 @@
       ],
       "history_loads": 54,
       "history_sessions": 11
+    },
+    {
+      "name": "sfx-library-manager",
+      "tier": "supporting",
+      "path": ".agents/skills/sfx-library-manager/SKILL.md",
+      "source": "imported from ~/.agents/skills (user-authored, 2026-11-07)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "sfx-story-analyzer",
+      "tier": "supporting",
+      "path": ".agents/skills/sfx-story-analyzer/SKILL.md",
+      "source": "imported from ~/.agents/skills (user-authored, 2026-11-07)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "subtitle-analyzer",
+      "tier": "supporting",
+      "path": ".agents/skills/subtitle-analyzer/SKILL.md",
+      "source": "imported from ~/.agents/skills (user-authored, 2026-11-07)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
     },
     {
       "name": "brainstorming",
@@ -2928,6 +2973,78 @@
       "sha256": "6ae3489a35ff81651b44fa59d33b804d1416460329fa8feee3ace23fbfa2d768"
     },
     {
+      "path": ".agents/skills/katy404-canva-thumbnails/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "ba8c516575681aed1059b1837a96c2e721159706d3bf42da8291d1d5eba21020"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/agents/openai.yaml",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "da120aea1daf1e567bf9279a0b5233adf0578ff4c01e4aceef5db4604558c2d8"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/canva-workflow.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "3ef9bce866e3ec440c1d3a7ed16a4c9b2a8df2e3e06aa905136088fcef862512"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/jpg-render-notes.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "715d7a422e7c34c1413f3f14a76d8c8eca966162b3ca0e4703da33442fe9b9cb"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/previews/clips-contact.jpg",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "c2f49a726d93c05933acc59ca3437f992bc68d909a3952630c796cc1ca17d3c1"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/previews/live-contact.jpg",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "8ca48dc80ce5a646c5119aa799bd17cc7bec03b0b1e76519072a6063546112cf"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/previews/shorts-contact.jpg",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "121c9b3be4a07cab88a78084fb7a19421f219f9e3921cc24ce87d91fa7e50ce8"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/previews/thai-vtuber-example-chuey-duay.jpg",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "6124823816960219f1fd7b4739a777e755e70904418867b62dc83bc9da1d701e"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/previews/thai-vtuber-layout-guide.png",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "03f9dbf56e37bb87cb6d77423193ad414770ac0fb739bdb2239455507e908bc3"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/source-manifest.json",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "1635f65565ed2334c72e624dfad41198d09a6fd932677e3f35220328eabe0f7c"
+    },
+    {
+      "path": ".agents/skills/katy404-canva-thumbnails/references/style-guide.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "9d3f0dc66d24f83d24e09c769a5e46e9aa5a43c1c74fab5253c0844e19d1fa26"
+    },
+    {
+      "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "0db17fbc70044896a33a8f6ca24a5fefa9adc39d214a67c0b25390c344c73e62"
+    },
+    {
       "path": ".agents/skills/livestream-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
@@ -3639,7 +3756,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "7e8fa50fca4900445524545d1ee076fb250e66b41ec7e2461850f6481c94e0aa"
+      "sha256": "0cd65e0ad7f295fbb25c5c476bb0b928cdc5aca92e233c159d02c780f15b838d"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -3748,7 +3865,13 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "01644b081cd850dd90aa0c7ca84b2e02999b61f5da746e135f3401f7190812af"
+      "sha256": "e406cef5f6a68deff6a6c886f22b22149193b45a26bedc49860fe61259cc6bf3"
+    },
+    {
+      "path": ".agents/skills/resolve-mcp/references/target-resolution.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "a8d2e3bf3726106476b26fd922b928e82dfc16140fdcd95be5d032a1836dd857"
     },
     {
       "path": ".agents/skills/resolve-media-analysis/SKILL.md",
@@ -3977,6 +4100,36 @@
       "sha256": "6bf8c52e503e58a3384680cce9200ef34056c121943c1780e7f1969a3c206ad2",
       "kind": "editing_skill",
       "local_amendment": "Normalize final newline for the repository bundle."
+    },
+    {
+      "path": ".agents/skills/sfx-library-manager/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "b1a1e084289045501e17fa549c868032fbf475b0f2f96da7c827834a04462fff"
+    },
+    {
+      "path": ".agents/skills/sfx-library-manager/evals/evals.json",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "04a18bf2e5aae7acd2ca35d9602e5e437bc825c62cc9f8ecdd21c40d7eb3097d"
+    },
+    {
+      "path": ".agents/skills/sfx-story-analyzer/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "88f64e79fd1fe99ce5dd4dce901e826ece9447ea56f02fc7bb3fac2f2bd9c820"
+    },
+    {
+      "path": ".agents/skills/sfx-story-analyzer/evals/evals.json",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "edbf3db1250c2a2695a18fb93bf6aac5a19121e255127d2b3a40b3a3440cbe3b"
+    },
+    {
+      "path": ".agents/skills/subtitle-analyzer/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "d304c4708ecfc2f572bf5fc47de5ad3a5ce48a14eb70c240804e2cc188b49982"
     },
     {
       "path": ".agents/skills/superpowers-brainstorming/SKILL.md",
@@ -4434,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "8d3ef9bc63a212e6f6712c2aa4439d27faaa893ff453d5e83847ce22d8d45d8b"
+      "sha256": "a91a1ffc64d0efd7b7fa0cf5208e6cc0f8cb8b8c3ecf25d0c1c234a3c22d3287"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4658,18 +4811,18 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "7770e016b002c775bb3c819ea34bc742de95437a4990c32493ec997b04f1c9a0"
+      "sha256": "6c99050de36aa721771d99491ce3984d3d6e30c2638ba4d6d68a278783f3d5a2"
     },
     {
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a2742bd66513e427ba3fe969edd1d17f12afb32c9575202d345db669823bcf7c"
+      "sha256": "0ea8120745be91578685254ecdda226a7d2f8694d8f95a9bd9a3e9cd913ec9fa"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "e7b8e7aee908f4cd4359f72ec70235cfbbf25a225cc406b0fa3d593b0662771f",
+      "sha256": "08ede0112281b761518f2527b6ebb7bdb75747186cd57ae2cc5fc254899d1002",
       "kind": "integration_or_validation"
     },
     {
@@ -4681,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "485ea8407d0c3e8313415e6315f039c26fb38c0e78aab8dfe703e8eb4911c8c8",
+      "sha256": "6daaa27191e7a68429aafc1b73fffb9e9e3b1b15f5e0613851e7e7502b0fbdd4",
       "kind": "integration_or_validation"
     },
     {
@@ -4694,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "adc30217d57ceae09bed5e7522f33da0c41452031bfb8e1a263c60c21d50fe9f"
+      "sha256": "587d66c13e51a9dde7592108b7a71e132280451e1cf926bed9256e0e50b80bf8"
     },
     {
       "path": "docs/README.md",
@@ -4788,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7acf0195a0be03271ffe83311ee1173fa37efde2e8bbe711e1596b04c9205bc3"
+      "sha256": "b4dc3e29ba9e17c2ac426213422d21ae1ecd9c0c452b6dc67f5482bf5d5bf51d"
     },
     {
       "path": "docs/channels/kael.md",
@@ -7829,7 +7982,7 @@
       "path": "scripts/verify_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "378dce4d6a748406713e59104fca91d037814c1d484e85ba943b2ebf12ea4bf4"
+      "sha256": "91bad27748be3e8ac05defefe94f48877b5ef8177fc9497e4bfc4821db419f51"
     },
     {
       "path": "scripts/verify_srt_on_timeline.py",
@@ -7979,7 +8132,7 @@
       "path": "tests/test_audio_qc_and_headroom.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3cef692c129e7aefcdf9f9ba1de4916d721a399e4beba2e13c994712d804e311"
+      "sha256": "0abf9311ece8ff6dcac22887a2f2660e5ff4eb6e717fff002d4f17fceaf01294"
     },
     {
       "path": "tests/test_backup_cleanup.py",
@@ -8237,7 +8390,7 @@
       "path": "tests/test_subtitle_qc_and_baseline_invariants.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "de677a1f0a1c502b911fdc8c2055d5cc09d2e7ca917940f3d45ba3c294dc48f2"
+      "sha256": "bee8286167fd32383638e0ffe21855dfb82099a5ce19b53cabc3b1fa62ac1a3b"
     },
     {
       "path": "tests/test_subtitle_workflow_rules.py",
@@ -8645,11 +8798,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1157,
-    "supporting_skills": 52,
-    "active_skills": 69
+    "manifest_files": 1175,
+    "supporting_skills": 57,
+    "active_skills": 74
   },
-  "bundle_version": "0.17.18",
+  "bundle_version": "0.17.20",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
