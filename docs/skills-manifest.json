@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "a51e7d1d4f297ef33d7853211e4d82e3a637ba65e2ca7522a3c29e8055604e72",
+      "sha256": "b267b7d1277229b4561c364fba8998f6497aa753a959f18b09255a2521b3b777",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "4da5a8bc55cd198fb15f730f082a4417ac03cea01e7e1ad355cf2493de38d0f4",
+      "sha256": "547b2b07424f0e356eedaea7605cbd118fb1b5742e11e2fbcb00143db68fdd6c",
       "kind": "integration_or_validation"
     },
     {
@@ -4959,7 +4959,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d5ccd3c0e62be8254324a42a5049f889e56792e6ae409986a9b9b6b9a469997b"
+      "sha256": "39b075a5d04c4f765d54cdd5cedd4c4517e6698d4eb614d51e3bba34911aaa20"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8844,7 +8844,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.33",
+  "bundle_version": "0.17.34",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
