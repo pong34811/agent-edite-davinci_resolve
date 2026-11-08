@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "a4c011800783aa5e0ed34583011d7637fb0f7c868d3f393597fab97dd7c416e1",
+      "sha256": "be34712bdf6c75e3a54209638f0162550dfcd0b4613ecc76f59cede167a217b7",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "9c2ff06cfd8267d55aca27b969ad24a79fff5a69e041d4e493bc4e6c12cab911",
+      "sha256": "139a8aa363178fe2ec926e33a4fc9b9f4e7e20c31056ad0ce9833b4d6802f255",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b550bec351b4b7962ed77b6d52482240a854596c4e4c1ce053d5b5382085844b"
+      "sha256": "20cbf1062b47b2b007e7be0f5d93ccd693521ab5a365fcbef159450570590676"
     },
     {
       "path": "docs/README.md",
@@ -4935,7 +4935,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "710c6907bd2ad4c1dcca101904cd9eab4062613847fae77b28574fb4d1e2cf06"
+      "sha256": "24b6fed8451183cde6a1db31dd5cd1486e5884299beafb7f973f1454a9dc03b9"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.36",
+  "bundle_version": "0.17.37",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
