@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.17.31 — Bunny Girl ep6 ขึ้น Timeline หลัก
+
+### รายละเอียด
+- Bunny Girl ep6: ย้ายงานตัดต่อขึ้นเป็น `Timeline 1` (timeline เดียวในโปรเจกต์ ทุก track ตรงกับก่อนเปลี่ยนชื่อ) และลบ timeline สำรอง 3 อันตามที่ผู้ใช้สั่ง; จุดย้อนกลับ `pre_promote.drp`
+
 ## v0.17.30 — ตัดต่อ Bunny Girl ep6 (16:9 test)
 
 ### รายละเอียด
