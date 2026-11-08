@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.1
+version: 0.3.2
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -92,6 +92,16 @@ report legibility problems without styling or retiming outside current scope.
 For preserve-text-and-timing migrations, flag legacy house-style exceptions
 
 instead of dropping words, shortening holds, or splitting cues automatically.
+
+Take Thai subtitle text from a Descript transcript, not local Whisper, on every
+clip length. The user rejected Whisper text on a long stream (Aomi-mama,
+2026-11-07) and stopped a local Whisper pass on a 2-minute Bunny Girl episode
+in favour of Descript (ep6, 2026-11-08). The trap is assuming a short clean read
+is safe for local ASR; use the silence map only for timing.
+
+When one SFX pushes a test render's peak above -0.5 dBFS, lower only that SFX
+item (a pop on a loud word: -9 to -12 dB) and re-render under a new name; do not
+drop A1 or every SFX (Bunny Girl ep6, 2026-11-08: -0.3 -> -1.1 dBFS).
 
 ## Saved subtitle font presets
 

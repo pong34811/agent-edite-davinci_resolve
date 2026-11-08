@@ -1356,7 +1356,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "29f8613d007c9bdec79f8f9108e3f79e91a62a069682070b30409eb529f89e38"
+      "sha256": "cf10a0badc5f902df429c6aeba448f853fc34cf10de0cbeb336d9faa3be74cf4"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "70c93ca0ac56aad1ac1fb0d9fb807a71770d20d0d8cdecf6d5e6ee4586903969"
+      "sha256": "9239c3d4d03de30d3708138f90fb22f93d55acdf7b827e6131b0cbdf76ff99df"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "4e635f1dfa4db6a9ee2760b63cba60163ff13bd0a7780d4e977ff2561a878528",
+      "sha256": "b109e01bbaa8846b8bd4fc007c5e8f223c2d32f89eb06c2a110608993e6db692",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "745a93cb6b6975f7a961f1c86400317c54fbf3eb28b6897cced9bdc4d267e6fd",
+      "sha256": "86e181a9cb489897f389c045636ed6d195cb0897e187c738ff9d03a6c32ff53c",
       "kind": "integration_or_validation"
     },
     {
@@ -4959,7 +4959,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9138f32c8755bbe26214e770827278385c4e873ce8d722a13516309b96afbedf"
+      "sha256": "90e2a26d130d2a0b68c882b9c77755949fe7976cc2b5c61d3484480bed4886f1"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8844,7 +8844,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.28",
+  "bundle_version": "0.17.29",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.0
+version: 0.5.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -116,6 +116,19 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
 - Local GPU ASR was very slow here (large-v3 1 h 40 min; cached `nectec/Pathumma-whisper-th-large-v3`
   converted with `ctranslate2.converters.transformers` stopped after 2 h) because Resolve and other jobs
   shared the GPU. `words_to_short_srt.py` stays for word-timed ASR JSON, not as the default route.
+
+## Short explainer clips: Descript text too (2026-11-08, Katy404 Bunny Girl ep6, 123.5 s)
+
+- The user stopped a local large-v3 pass mid-run ("ใช้ descript แทน") on a 2-minute clean read, so Descript is the
+  default Thai transcript for this project regardless of clip length. Same route: `import_media` direct upload of the
+  16 kHz mono WAV (`language: th`, 4 MB, PUT 200, import done in ~40 s) -> `export_transcript format=srt
+  include_speaker_labels=off` (18 segments, accurate Thai; it wrote the channel name as `เคทิ`, fix to `เคที่`).
+- Descript gives no word times, and Pop Kinetic slams/chapter cuts need phrase starts. Map each segment's text onto
+  the speech runs of the -40 dB / 80 ms silence map (plus -35 dB / 60 ms for pauses inside long runs), share words out
+  by run length (a one-off ep6 scratch aligner printed the draft), hand-correct the phrase list, then
+  split it with the Bunny Girl series subtitle builder (one-off `build_subs_epN` scratch copies: <= 14 chars, <= 1.5 s). Segment
+  line breaks matched measured pauses; the only misplacement was a whole run assigned to the previous segment by
+  midpoint (fixed by reading the next segment's first words).
 
 ## The three findings that matter
 
