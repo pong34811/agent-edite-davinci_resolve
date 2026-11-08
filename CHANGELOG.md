@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.29 — Render ไฮไลต์ Hoshi_1489 ครบ 30 Timeline
+
+### รายละเอียด
+- Render และส่งออกคลิปไฮไลต์ Hoshi_1489 (2026-10-1) ครบทั้ง 30 Timeline ลงโฟลเดอร์ `G:\My Drive\Projects\Hoshi_1489\2026-10-1\footer`
+- ใช้ DaVinci Resolve Python Scripting API ควบคุมการ Render ต่อเนื่องด้วย Preset `H.264 Master` (1920x1080@60fps)
+- ตรวจสอบคุณภาพไฟล์ผ่าน QC ด้วย `ffprobe` ครบถ้วนทั้ง 30 ไฟล์ (ขนาดรวม 8.85 GB, ความยาวรวม 32 นาที 22 วินาที) ยืนยัน Video Stream (H.264), Audio Stream (AAC) และความยาวตรงกับ Timeline
+- บันทึกบทเรียนการรอ Background Indexing สำหรับโปรเจกต์ขนาดใหญ่ (17.3 ชั่วโมง) และขั้นตอน Batch Render ตรงสู่ Google Drive ลงใน `docs/OPERATING-NOTES.md`
+
 ## v0.17.28 — ไฮไลต์ 30 Timelines สำหรับ Hoshi_1489 2026-10-1
 
 ### รายละเอียด
