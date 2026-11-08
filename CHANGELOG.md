@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.37 — Timeline อัปเดตน้ำท่วม Aomi-mama ครบ 6 วัน
+
+### รายละเอียด
+- สร้าง Timeline อัปเดตน้ำท่วม Aomi-mama ครบ 6 วัน (29-09 ถึง 22-10) ในโปรเจกต์ `น้ำถ่วม-2026`: คลิปเต็มไม่ตัดช่วงเงียบ มี hook, การ์ดวันที่, VTuber Zoom และภาพประกอบ HyperFrames; render preview และ QC ภาพผ่านทุกวัน
+- แก้ `scripts/asr_words_th.py` ให้ใช้กับ PyAV 19 ได้ (ถอดรหัส WAV เอง) และหา DLL CUDA จาก pip wheel ได้ พร้อมเทสต์ใหม่
+- house-style: ไม่ตัดช่วงเงียบ เว้นแต่ผู้ใช้สั่ง
+- บันทึกเลย์เอาต์และกรอบซูมของช่อง Aomi-mama และกับดักใหม่ 4 ข้อใน OPERATING-NOTES
+
 ## v0.17.36 — Bunny Girl ep6 ปกคลิป
 
 ### รายละเอียด
