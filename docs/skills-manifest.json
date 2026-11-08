@@ -1356,7 +1356,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "cf10a0badc5f902df429c6aeba448f853fc34cf10de0cbeb336d9faa3be74cf4"
+      "sha256": "9d471f4e5863269c88f654fbe3f153c52030d9bac7a72feb8f627342681c166e"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "1fede611cb0572253c4aad4a3f5be430d7ddff87e999d04f2ebd71468242d1f9",
+      "sha256": "a4c011800783aa5e0ed34583011d7637fb0f7c868d3f393597fab97dd7c416e1",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "d5313b4e64297d2e867dabf20a805fb22e588546e14ac04655502454609bba3f",
+      "sha256": "9c2ff06cfd8267d55aca27b969ad24a79fff5a69e041d4e493bc4e6c12cab911",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "41d8c32f30624caec8b81451385d1ffc0e5db65244f44e562f67f6eb8dd7c8f4"
+      "sha256": "b550bec351b4b7962ed77b6d52482240a854596c4e4c1ce053d5b5382085844b"
     },
     {
       "path": "docs/README.md",
@@ -4935,13 +4935,13 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "07b6f6e2855ae27f166a58d19a1314dfcfbb267e82cbbbab33a6d6b6bc56e5d9"
+      "sha256": "710c6907bd2ad4c1dcca101904cd9eab4062613847fae77b28574fb4d1e2cf06"
     },
     {
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b4dc3e29ba9e17c2ac426213422d21ae1ecd9c0c452b6dc67f5482bf5d5bf51d"
+      "sha256": "b5fc843c098c8568cc0eb1fca0fea74916eab982a6d099fe014717cb29712b79"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -7194,7 +7194,7 @@
       "path": "scripts/asr_words_th.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b5545ec8d118d3a938105eb2b709bcbfccd51ce999c05aa2d8449611fa4996d1"
+      "sha256": "70dc4fbeced637984b9410bb3d19603a458b7a6a14521ddb31184f8e7b2c4210"
     },
     {
       "path": "scripts/backup_drp.py",
@@ -8153,6 +8153,12 @@
       "sha256": "2a82e46deedf67e3876415bef6928d5a5dd581ee14ddaff80bd1987df89506f2"
     },
     {
+      "path": "tests/test_asr_words_th.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "849cfde6a228cdd2d1b43e19a5dc624582e961b7574009a42cfeb18f58fb9837"
+    },
+    {
       "path": "tests/test_audio_qc_and_headroom.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8840,11 +8846,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1182,
+    "manifest_files": 1183,
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.35",
+  "bundle_version": "0.17.36",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.2
+version: 0.3.3
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -62,6 +62,12 @@ Latin terms such as names. Use shorter holds when the spoken words arrive
 faster. The trap is using spaces to show word grouping, which makes Thai text
 
 look unnaturally spread out.
+
+Do not remove dead air or pauses from a talking recording unless the user asks
+for tightening; a "basic edit" means hook, titles, zoom and illustrations on the
+full take. Why: the user stopped the Aomi-mama flood updates and asked for the
+silences back (2026-11-08). The trap: "make viewers keep watching" sounds like a
+request to tighten.
 
 ## Subtitle track only
 

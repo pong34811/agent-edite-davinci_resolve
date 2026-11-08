@@ -17,6 +17,12 @@ import unicodedata
 
 
 def _register_cuda():
+    import site
+    from pathlib import Path
+    for root in site.getsitepackages():  # pip nvidia-cublas-cu12 / nvidia-cudnn-cu12 wheels
+        for b in (Path(root) / "nvidia").glob("*/bin"):
+            os.add_dll_directory(str(b))
+            os.environ["PATH"] = str(b) + os.pathsep + os.environ["PATH"]
     try:
         import torch
         lib = os.path.join(os.path.dirname(torch.__file__), "lib")
@@ -52,6 +58,23 @@ def build_words(segments):
     return out
 
 
+def load_audio(path):
+    """16 kHz mono 16-bit WAV -> float32 array; other inputs go to faster-whisper as a path.
+
+    faster-whisper 1.2.1 passes ``metadata_errors`` to ``av.open``, which PyAV 19 rejects,
+    so decoding the WAV here keeps ASR working without pinning PyAV.
+    """
+    import wave
+    if not str(path).lower().endswith(".wav"):
+        return path
+    import numpy as np
+    with wave.open(str(path), "rb") as w:
+        if (w.getframerate(), w.getnchannels(), w.getsampwidth()) != (16000, 1, 2):
+            raise ValueError("expected 16 kHz mono 16-bit WAV (ffmpeg -ac 1 -ar 16000)")
+        pcm = w.readframes(w.getnframes())
+    return np.frombuffer(pcm, dtype=np.int16).astype(np.float32) / 32768.0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("wav")
@@ -66,7 +89,7 @@ def main(argv=None):
         print("CUDA load failed (%s); CPU int8" % exc, file=sys.stderr)
         model = WhisperModel(args.model, device="cpu", compute_type="int8")
     it, info = model.transcribe(
-        args.wav, language="th", word_timestamps=True, beam_size=5,
+        load_audio(args.wav), language="th", word_timestamps=True, beam_size=5,
         temperature=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0], condition_on_previous_text=False,
         vad_filter=True, vad_parameters={"min_silence_duration_ms": 400, "speech_pad_ms": 200})
     segs = []
