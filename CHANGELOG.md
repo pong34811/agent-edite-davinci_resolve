@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.30 — ตัดต่อ Bunny Girl ep6 (16:9 test)
+
+### รายละเอียด
+- Katy404 Bunny Girl ep6 "แต่งชุดบันนี่เกอร์ได้ยังไง": ทำ `Timeline 1_pop_mitr` แบบ Pop Kinetic 16:9 (การ์ด CHAPTER 01–07 ตามชิ้นชุด 7 ชิ้น, slam 47, การ์ดภาพ 10, ซูม 8 ช่วง, ซับไทย 125 cue `Mitr Font`, SFX/BGM) โดยไม่แตะ `Timeline 1`
+- ซับไทยใช้ข้อความจาก Descript ตามที่ผู้ใช้สั่ง (หยุด Whisper ในเครื่อง) แล้วจับเวลาจากแผนที่ช่วงเงียบ
+- render ทดสอบ `Bunny Girl ep6_POP_test_v2_2026-11-08.mp4`: 8084 เฟรม, -15.9 LUFS, peak -1.1 dBFS, ไม่มีเฟรมดำ, ช่องว่างก่อนการ์ด CHAPTER เงียบทุกช่อง
+- house-style 0.3.2 / thai-subtitles-resolve 0.5.1: ใช้ Descript เป็นค่าเริ่มต้นแม้คลิปสั้น และลดเฉพาะ SFX ตัวที่ทำ peak เกิน
+
 ## v0.17.29 — Render ไฮไลต์ Hoshi_1489 ครบ 30 Timeline
 
 ### รายละเอียด
