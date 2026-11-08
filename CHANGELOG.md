@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.17.33 — Bunny Girl ep6 การ์ด INTRO ขึ้น Timeline หลัก
+
+### รายละเอียด
+- Bunny Girl ep6: ย้าย `Timeline 1_intro_wipe` (มีการ์ด INTRO "ครบเซต 7 ชิ้น") ขึ้นเป็น `Timeline 1` ตามที่ผู้ใช้อนุมัติ; เหลือ timeline เดียว ทุก track ตรงกับก่อนเปลี่ยนชื่อ; จุดย้อนกลับ `pre_promote_intro.drp`
+
 ## v0.17.32 — Bunny Girl ep6 การ์ดเปลี่ยนฉาก INTRO
 
 ### รายละเอียด
