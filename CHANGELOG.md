@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.40 — ปกคลิปอัปเดตน้ำท่วม Aomi-mama 6 วัน
+
+### รายละเอียด
+- ปก Aomi-mama อัปเดตน้ำท่วม 6 วัน (1920x1080) hook แดงจากคำภาพประกอบ + บรรทัด "อัปเดตน้ำท่วม <วันที่>" สไตล์เดียวกับปก 2026-10 วางที่ Drive `น้ำถ่วม-2026/covers/` พร้อม manifest
+- vtuber-cover-batch-pipeline: ต้อง import `text_thai` ของ agent-thumbnail ก่อน Pillow ไม่งั้น libraqm ไม่ทำงานและสระ/วรรณยุกต์ไทยเพี้ยน; วิธีวางโมเดลใหญ่ไม่มีขอบขาวสำหรับปกคุย Aomi-mama
+
 ## v0.17.39 — Timeline น้ำท่วม Aomi-mama ใช้ footage เต็ม + ซูม VTuber
 
 ### รายละเอียด
