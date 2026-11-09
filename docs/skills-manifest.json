@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "730b968baa8ba13f98c44937e279c1db7c57b5788236a6de819a1d948493e883",
+      "sha256": "fad54962d46691d51a11bcc416e14222f849ec142704e6dc7269b747ab641d0c",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "2e2bedda25b5358eeef2c0f33e5edc313e90a1b98ab4f3eb4be9ced6d272be9a",
+      "sha256": "d5ec1a4bb7848862da8bae6e255a78e3fa24b5907a75686f0c0b6c90aa14e84f",
       "kind": "integration_or_validation"
     },
     {
@@ -4935,7 +4935,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "eb17e99283bc767ca3815e1ae2cd0f73a3cbc03d5e24b11e49d301dced75a71e"
+      "sha256": "bf39ef116841c11dc51fac10875c7fdb714dac338415a8d4dc4ba38c0d42b808"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.40",
+  "bundle_version": "0.17.41",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
