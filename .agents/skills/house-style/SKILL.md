@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.3
+version: 0.3.4
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -64,10 +64,16 @@ faster. The trap is using spaces to show word grouping, which makes Thai text
 look unnaturally spread out.
 
 Do not remove dead air or pauses from a talking recording unless the user asks
-for tightening; a "basic edit" means hook, titles, zoom and illustrations on the
-full take. Why: the user stopped the Aomi-mama flood updates and asked for the
+for tightening. Why: the user stopped the Aomi-mama flood updates and asked for the
 silences back (2026-11-08). The trap: "make viewers keep watching" sounds like a
 request to tighten.
+
+A full-take update (vlog, flood update) is the whole source file from frame 0,
+with nothing cut and no pre-roll hook; enrich it only on top (date card,
+explanatory illustrations, VTuber Zoom on analysed key lines). Why: the user
+rejected the hook versions of all six flood days, asked for the whole footage
+with illustrations, then asked for the analysed zoom ranges back (2026-11-09).
+The trap: a repeated hook clip at the start looks like the footage was cut short.
 
 ## Subtitle track only
 

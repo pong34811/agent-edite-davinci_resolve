@@ -1356,7 +1356,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "9d471f4e5863269c88f654fbe3f153c52030d9bac7a72feb8f627342681c166e"
+      "sha256": "d361c56891024caffb31298f5fb8a76f6fe83f74b218766838125efe9afaf83f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "be34712bdf6c75e3a54209638f0162550dfcd0b4613ecc76f59cede167a217b7",
+      "sha256": "5ef6e2ff9e4845220dbbefc776e1cfdd5218e22afde1a161beeeb4c84e341de9",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "139a8aa363178fe2ec926e33a4fc9b9f4e7e20c31056ad0ce9833b4d6802f255",
+      "sha256": "24bcf529928e1287fabec8aeb8cc32113789d4bb3bf5c909505996bbb410ff40",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "20cbf1062b47b2b007e7be0f5d93ccd693521ab5a365fcbef159450570590676"
+      "sha256": "74b57f06b4eb59197f7587ae2f25b3f70e59f9d468449e5f7fc42834cb6cfb49"
     },
     {
       "path": "docs/README.md",
@@ -4935,7 +4935,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "24b6fed8451183cde6a1db31dd5cd1486e5884299beafb7f973f1454a9dc03b9"
+      "sha256": "6f8f8a89217afa9388d92fcd551402ee08b47de1f5dcf921da4d47440932a433"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.37",
+  "bundle_version": "0.17.38",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
