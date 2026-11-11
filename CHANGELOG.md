@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.46 — Armigon Shorts 2026-10 ปกคลิป
+
+### รายละเอียด
+- Armigon Shorts 2026-10: ทำปกแนวนอน 16:9 ครบ 48 timeline เก็บใน `G:\My Drive\Projects\Armigon\2026-10\vdo` (ตรวจแล้ว 1920×1080, < 2 MB, ชื่อไฟล์ตรง timeline)
+- โปรไฟล์ Armigon: บันทึกวิธีเลือกเฟรมและกับดักฉากโหลด/สไลด์ Debut
+- skill `vtuber-cover-batch-pipeline`: เพิ่มกับดักคลิปที่เป็นสไลด์ทั้งคลิป และสูตรแปลงเฟรม timeline 24 fps → source 60 fps
+
 ## v0.17.45 — Export คลิปน้ำท่วม Aomi-mama 6 คลิป
 
 ### รายละเอียด
