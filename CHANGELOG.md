@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.49 — ซับ Mitr Font บน pilot KT404 2026-10-1
+
+### รายละเอียด
+- ใส่สไตล์ซับ `Mitr Font` ให้ pilot `มอนเมินจนคนเหนื่อยเอง-Monster Hunter World-vdo_edit` ด้วย `load_subtitle_preset_auto --apply` (ผู้ใช้อนุมัติ) หลังโหลดผ่าน UI สองครั้งแล้วไม่ติด; ตรวจ `already_matches=True`, ซับ 72 cue, track และระดับเสียงทั้งหมดอ่านกลับตรงเดิม
+- render ไฟล์รีวิวใหม่ `มอนเมินจนคนเหนื่อยเอง_pilot_mitr_2026-11-11.mov`: ซับ Mitr มีขอบดำ, 3736 เฟรม, -16.7 LUFS, peak -0.7 dBFS, ไม่มีเฟรมดำ
+- เพิ่มกฎใน OPERATING-NOTES: หลังผู้ใช้โหลด preset ซับใน UI ให้ตรวจด้วย dry run และ render สั้นก่อนเสมอ ถ้าไม่ติดให้ใช้ DB patch
+
 ## v0.17.48 — Pilot ไฮไลต์ KT404 2026-10-1
 
 ### รายละเอียด
