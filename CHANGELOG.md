@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.48 — Pilot ไฮไลต์ KT404 2026-10-1
+
+### รายละเอียด
+- ตัดต่อ pilot ของโปรเจกต์ KT404 Highlights 2026-10-1: timeline ใหม่ `มอนเมินจนคนเหนื่อยเอง-Monster Hunter World-vdo_edit` มีซับไทย 72 cue (จาก Descript), VTuber Zoom 6 ช่วง (2.2x), GIF 5 ตัว (ค่า vdo), SFX 9 จุด, BGM และปรับระดับเสียง; timeline ต้นฉบับไม่ถูกแก้
+- ไฟล์ทดสอบ render ผ่านการตรวจ: 3736 เฟรม, -16.7 LUFS, peak -0.7 dBFS, ไม่มีเฟรมดำ
+- บันทึกกฎใหม่ใน OPERATING-NOTES: ห้ามเปิดโปรเจกต์อื่นเพื่อยืมสไตล์ซับ (ทำให้ Resolve ค้าง) ให้ใช้ cue จาก CreateSubtitlesFromAudio เป็นแม่แบบแทน, คำนวณความยาว GIF จาก FPS ใน Media Pool (25/50), MCP export_project ใช้กับโปรเจกต์ที่เปิดอยู่ไม่ได้, ใช้ `.venv` ของ repo บนเครื่อง pc-server
+- อัปเดตโปรไฟล์ช่อง Katy404 ด้วยข้อมูลโปรเจกต์ 2026-10-1 (timeline 24 fps, 67 timeline) และคำที่ต้องฟังยืนยัน
+
 ## v0.17.47 — อัปเดต MCP เป็น 5.2.1
 
 ### รายละเอียด
