@@ -21,6 +21,8 @@
 - Export ปลายทาง: `G:\My Drive\Projects\Armigon\2026-09\vdo`
 - Export ล่าสุด: เสร็จสิ้นสมบูรณ์ครบทั้ง 96 คลิป (48 แนวนอน + 48 แนวตั้งแนบภาพปกเฟรมแรก COVER_FRAMES=1) ผ่าน QC ทั้งหมด (96/96 pass)
 - ภาพปก: มีครบทั้ง 48 ปกแนวนอน และ 48 ปกแนวตั้ง (`_9x16.jpg`) เก็บไว้ใน `vdo` และ `Thumbnails/Portrait`
+- `Armigon Shorts 2026-10` (2026-11-11): 48 timeline แนวนอนอย่างเดียว (`<ชื่อ>-<เกม>-vdo`, 1920×1080 24 fps, V1 คลิปเดียวจาก live 60 fps บน `G:\My Drive\Projects\Armigon\2026-10\`); ผู้ใช้สั่ง "ทำปกคลิปทั้งหมด" → ปก 16:9 48 ใบ `G:\My Drive\Projects\Armigon\2026-10\vdo\<ชื่อ timeline>.jpg` สไตล์เดียวกับชุด 2026-09 (engine `D:\agent-thumbnail` `ThumbnailCompositor`, โมเดล `I:\My Drive\Dreamlight_projects\GEN-Sercet\armigon\*.png`); hook/sec ตัดจากชื่อ timeline (ข้อ 48 ตัดคำหยาบ "พวกมึง" ออก); เฟรมเลือกจากซับที่ตรงชื่อมากสุด (bigram) แล้ว source sec = (left + tl×60/24)/60; ไม่แตะ Resolve; builder `scripts/scratch/armigon_shorts_202610/`. status: verify ขนาด/จำนวน + QC ตาจาก contact sheet; ยังไม่ได้อนุมัติจากผู้ใช้; ไม่มีปก 9:16
+- กับดัก live Armigon: ช่วงคุยมักอยู่บนฉากโหลดม่วง ("RETAINING MEMORIES"/"ENTERING DUNGEON") หรือสไลด์ `ทำไมมาเป็น Vtuber?` ตลอดทั้งคลิป — สุ่มหลายจุดก่อน; ถ้าทั้งคลิปเป็นสไลด์ตัวหนังสือ (Debut 23/24) ใช้เฟรมโมเดลจากคลิปอื่นของสตรีมเดียวกัน เพราะข้อความสไลด์ชน hook
 
 ## รูปแบบและ layout
 - ต้นทาง 16:9; 9:16 ต้อง pilot ทีละ 1 timeline แล้วให้ผู้ใช้อนุมัติก่อนทำต่อ ห้ามสร้างทั้งชุดเอง
