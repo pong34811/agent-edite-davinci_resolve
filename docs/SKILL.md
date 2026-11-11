@@ -870,8 +870,9 @@ Health check and declarative spec (v2.28.0+):
 - `apply_spec(spec_path | spec, dry_run?, run_hooks?, continue_on_error?)` —
   reconcile the project toward the spec. Idempotent (re-runs are no-ops); color/
   HDR settings apply in dependency order; markers added only when absent; explicit
-  `settings` override a named `color_preset`; before/after shell hooks run only
-  with `run_hooks=true`. The spec is YAML or JSON:
+  `settings` override a named `color_preset`. Since MCP v5.0.0 spec hooks never
+  run: `run_hooks=true` is refused with `SPEC_HOOKS_NOT_RUN` and a successful
+  apply lists them in `hooks_not_run` (run those commands yourself). The spec is YAML or JSON:
   `{project, color_preset?, settings?, timelines:[{name, fps?, settings?, markers?}], hooks?}`.
   Note: `apply_spec` reconciles the **currently open or already-existing** project;
   creating a brand-new project from a spec depends on Resolve's `CreateProject`

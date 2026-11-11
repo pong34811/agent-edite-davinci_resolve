@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "3a2a88b4e60337d80e9739410f019b03705732c6c179a3c407760d107d6ff03f",
+      "sha256": "0e18afc18562ac6eddae9d4b9019bbd0b08d50cccba8476e3ab82245e7fc5a00",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "364106e0a916bac5d0b9c98d12800bc670d828f0e036e891e6534f7fb679748b",
+      "sha256": "6db0d3090810a4cdbf355e30a03d41b9fe591946d504bfb88626e05bdc76434d",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "62727e93f11d1db36760b549211110311c3b3624f96cca3b5165b0bb456f0db7"
+      "sha256": "a8269852208bb0f1270f435c707268405b02f9f0ab72f737051de2fbcb3adf61"
     },
     {
       "path": "docs/README.md",
@@ -4867,7 +4867,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\SKILL.md",
       "source_sha256": "c324d0bd3dc0437292603277b7ea9f04592f3208c00fde72a3d790bef445a440",
       "kind": "mcp_reference",
-      "sha256": "1e3d3273469213d6d6d034df726873a3cd226be474b3f93c933f1dc1ea05774b"
+      "sha256": "65437ddded6547fae7ea22b70a13c2c84848f88281cb2bc6b90c733791ff3edc"
     },
     {
       "path": "docs/authoring/fuse-dctl-authoring.md",
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "96ef3129215e2dde31829258cd22e34a584dfc426164b6db2036721e8c4b08bc"
+      "sha256": "cedcd89e605844e5f1b001849156135fabef62f8dca3f56552ccca1f3a22779a"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.45",
+  "bundle_version": "0.17.46",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
