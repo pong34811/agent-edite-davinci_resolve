@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.47 — อัปเดต MCP เป็น 5.2.1
+
+### รายละเอียด
+- อัปเดต MCP ชุมชน `davinci-resolve` จาก 4.19.3 เป็น 5.2.1 (ตัวตรวจรายงาน UP-TO-DATE)
+- `docs/SKILL.md`: ตั้งแต่ v5.0.0 `apply_spec` ไม่รัน spec hooks แล้ว (`run_hooks=true` ถูกปฏิเสธด้วย `SPEC_HOOKS_NOT_RUN`)
+
 ## v0.17.46 — Armigon Shorts 2026-10 ปกคลิป
 
 ### รายละเอียด
