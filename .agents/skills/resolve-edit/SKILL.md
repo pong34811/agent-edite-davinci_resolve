@@ -1,7 +1,7 @@
 ---
 name: resolve-edit
 description: Editing, cutting, trimming, pacing, and timeline restructuring in the DaVinci Resolve MCP. Apply when duplicating/moving clips, copying ranges, building variants, tightening or restructuring a cut, editing selects, or generating an editorial changelist/turnover — live in a running Resolve OR offline against .drt timeline files. Routes to the live edit tools, the offline editorial tools, and the project's editorial craft guidance.
-version: 0.3.0
+version: 0.3.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -281,6 +281,8 @@ render, proxy, or create derivatives of source media. Keep it that way. Treat
 generated probe reports as local scratch artifacts, not committed files.
 
 ## Pitfalls
+
+- MCP `timeline.duplicate_clips` (v4.19.3) on a 24 fps timeline with 60 fps media copied 310 of 775 frames (it read timeline frames as source frames) yet reported `duplicate_verified: true`. Place the copy with `media_pool.append_to_timeline` and explicit SOURCE frames (`end_frame` = V1 `GetSourceEndFrame()+1` gave an exact match), then compare start/end with V1 yourself. Also `timeline.duplicate` and the first destructive call on a timeline each add a `<name>_archived_v01` timeline to the project: delete the ones you created when done (Armigon 2026-10, 2026-11-11).
 
 - **AppendToTimeline endFrame is exclusive on 60 fps timelines.** Passing
   `endFrame = sourceStart + duration - 1` produces one frame less than

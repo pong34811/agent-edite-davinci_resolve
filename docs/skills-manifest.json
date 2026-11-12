@@ -3845,7 +3845,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-edit\\SKILL.md",
       "source_sha256": "ebe03e21a12e3be91441231749a8cd328cb4e7beac6adaf7468b7b8aad847b63",
       "kind": "editing_skill",
-      "sha256": "7e25a4c09aded0366087379a2a22112b8e02d4bf2e7ab9b1acd931ea0160e9f1"
+      "sha256": "058251d8b0996e7dab5ef1fe7367ab854daa550ee243606bbcb319aa7bc357bb"
     },
     {
       "path": ".agents/skills/resolve-folder-cover-batch/SKILL.md",
@@ -4709,7 +4709,7 @@
       "path": ".agents/skills/vtuber-cover-batch-pipeline/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "8e94cd3df55fef5951fce770005fb09b1ad59d16b0692bec3e996ef1f60bd917"
+      "sha256": "65bd0044bf99dd91eacebfe5bee5aacacf0450074ea6ec4491f932a0d05f6f46"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "91f0753d92600bc60afc5d93ec1dcd31ea3cd10e7f19db24bfe9d17d54d2d249",
+      "sha256": "7271c664dbf51745279240940cb5db59e08381e683be61e248c6afd5114323de",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "8549d17bd79c947dd62520042f78dd92d2ab30f741c00edb364c94d9acdb9806",
+      "sha256": "3a33719a7e984259b15a205cc1dc3f33be0238836e730ef569cafbb9e501e8f7",
       "kind": "integration_or_validation"
     },
     {
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "96ef3129215e2dde31829258cd22e34a584dfc426164b6db2036721e8c4b08bc"
+      "sha256": "697c8b9828192f4df1fe14e22dcde87279108d96382f0bbb0c745c8bf31d18e9"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.48",
+  "bundle_version": "0.17.49",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
