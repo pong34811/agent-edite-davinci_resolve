@@ -33,7 +33,7 @@ def snapshot(tl) -> dict:
             "audio": [(x.GetName(), x.GetStart(), x.GetEnd()) for n in range(1, tl.GetTrackCount("audio") + 1) for x in items(tl, "audio", n)]}
 
 
-def close_resolve(timeout=90):
+def close_resolve(timeout=240):  # 96-timeline project took >90 s to exit (Armigon 2026-11-12)
     subprocess.run(["powershell", "-NoProfile", "-Command",
                     "(Get-Process Resolve -ErrorAction SilentlyContinue) | ForEach-Object { $null = $_.CloseMainWindow() }"],
                    check=False)

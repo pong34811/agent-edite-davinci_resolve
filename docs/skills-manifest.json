@@ -3892,7 +3892,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "d6013e7bcc2af480c4e2499910a29a3c0a665b16b52b0af728d7f2e438d1d0e6"
+      "sha256": "dad1a66505c7ea7fc615a4108283200d1df8d4312efe28bac33b696d0804946b"
     },
     {
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "7271c664dbf51745279240940cb5db59e08381e683be61e248c6afd5114323de",
+      "sha256": "7b2820e39e04011ee2830280b2d677cc854e1cc4f48cd94de168b39537427c26",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "3a33719a7e984259b15a205cc1dc3f33be0238836e730ef569cafbb9e501e8f7",
+      "sha256": "8945f65dd88af28d1c048114dfd8a6a8666f169b2c45c7e67ceee0d73c6de49f",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a83243cc53b268d2e9a77b805debd3fbfcbc6cd576f602f9ed00999826293c9e"
+      "sha256": "6880b03bc9feaf9d0ae54cdb919716c5017a0a23bb6ed53aaf97d56bb53282f4"
     },
     {
       "path": "docs/README.md",
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "697c8b9828192f4df1fe14e22dcde87279108d96382f0bbb0c745c8bf31d18e9"
+      "sha256": "0a1817844c313364d3e742b4879af35d133eddca784ed4260a5b82ebe419d54f"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -7616,7 +7616,7 @@
       "path": "scripts/load_subtitle_preset_auto.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "81e25ea517b2777837626027207a2da12965a45ce4b215e3d034497ee1de9d9f"
+      "sha256": "4cf1bbb86225b885c5ac7d82a285fb98d6b2d4db2fa2507dd0a57f59d8f42ca2"
     },
     {
       "path": "scripts/p2_9x16_build.py",
@@ -8850,7 +8850,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.49",
+  "bundle_version": "0.17.50",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

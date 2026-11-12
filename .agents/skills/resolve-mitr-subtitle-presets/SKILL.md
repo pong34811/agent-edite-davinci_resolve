@@ -1,7 +1,7 @@
 ---
 name: resolve-mitr-subtitle-presets
 description: "Apply Mitr subtitle presets to 16:9 and 9:16 Resolve tracks."
-version: 0.2.1
+version: 0.2.2
 author: Hermes
 license: MIT
 platforms: [windows]
@@ -124,6 +124,7 @@ colon stripped, e.g. `G\My Drive\...`). Orientation comes from
 
 ## Pitfalls
 
+- `load_subtitle_preset_auto` on a large project: Armigon Shorts 2026-10 (96 timelines) needed more than 90 s to exit, so the first `--apply` stopped with 'did not close gracefully' and wrote nothing. The close timeout is now 240 s; if it still trips, reopen with `resolve_recover.py --project` and rerun. 48 `_9x16` tracks then patched in one relaunch (2,405 cues, every LOAD_OK), and a second dry run read `already_matches=True` on all 48 (2026-11-12).
 - `No target timeline has a subtitle track (orientation=vertical)` is normal
   for a project with only 16:9 timelines. It's not a bug.
 - `DB has N subtitle tracks but Resolve reports M`: unsaved new tracks. Save in
