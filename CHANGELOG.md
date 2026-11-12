@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.51 — Armigon แนวตั้ง ซับ Mitr-short-001
+
+### รายละเอียด
+- Armigon Shorts 2026-10: ใส่ preset ซับ `Mitr-short-001` ให้ timeline แนวตั้งครบ 48 อัน (2,405 cue ไม่เปลี่ยน, ตรวจซ้ำตรงทั้ง 48)
+- `load_subtitle_preset_auto`: รอ Resolve ปิดได้นานขึ้นเป็น 240 วินาที (โปรเจกต์ 96 timeline ปิดเกิน 90 วินาที)
+
 ## v0.17.50 — Armigon Shorts 2026-10 แนวตั้ง 48 คลิป
 
 ### รายละเอียด
