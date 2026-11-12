@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.50 — Armigon Shorts 2026-10 แนวตั้ง 48 คลิป
+
+### รายละเอียด
+- Armigon Shorts 2026-10: สร้าง timeline แนวตั้ง `_9x16` ครบ 48 อัน (เกมบน/Armigon ล่าง; Debut 21/23/24 โมเดลเต็มจอ, 22 สไลด์บน+โมเดลล่าง) ตรวจโครงสร้างครบ 48 อัน (1080×1920, ความยาว, เสียง, ซับตรงต้นฉบับ) ยังไม่ render รอผู้ใช้ QC
+- ปกคลิป 48 ใบ: แก้เวลาเฟรมพื้นหลังที่ผิด (`GetLeftOffset` เป็นเฟรม timeline 24 fps) แล้ว build ทับครบ
+- skill `resolve-edit`: กับดัก MCP `duplicate_clips` คัดลอกผิดความยาวเมื่อ fps ไม่ตรง และ `_archived_v01` ที่ MCP สร้างเอง
+- skill `vtuber-cover-batch-pipeline`: แก้สูตรแปลงเวลาเฟรมให้ถูกต้อง
+
 ## v0.17.49 — ซับ Mitr Font บน pilot KT404 2026-10-1
 
 ### รายละเอียด
