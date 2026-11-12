@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.17.52 — Armigon ปกแนวตั้ง 48 ใบ
+
+### รายละเอียด
+- Armigon Shorts 2026-10: ทำปกแนวตั้ง 1080×1920 ครบ 48 ใบ (`<ชื่อ timeline>_9x16.jpg` ในโฟลเดอร์ vdo) ตรวจขนาด/จำนวนครบ
+- skill `vtuber-cover-batch-pipeline`: กับดัก engine agent-thumbnail จัดข้อความกลางแล้วตัดท้ายคำบน Shorts พร้อมวิธีแก้โดยไม่แตะ repo นั้น
+
 ## v0.17.51 — Armigon แนวตั้ง ซับ Mitr-short-001
 
 ### รายละเอียด
