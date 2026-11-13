@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.56 — Laffy 004 ซับ Mitr Font
+
+### รายละเอียด
+- คลิป Laffy 004 ใส่ซับสไตล์ `Mitr Font` แล้วใน timeline `Underworld Goddess_edit_mitr` (ซับ 117 cue, ซูม, การ์ด และเสียงตรงกับต้นทางทุกแทร็ก)
+- `drt_clone_subtitle_style.py` คงชื่อ Subtitle track เดิมของ timeline ต้นทาง ไม่ใช้ชื่อจาก DRT อ้างอิง (ไม่ได้รัน test ตามที่ผู้ใช้สั่ง)
+- อัปเดตโปรไฟล์ Laffy และ skill ซับไทย: ผู้ใช้อนุมัติให้ใช้ Mitr Font จาก DRT ของ Katy404 ep6
+
 ## v0.17.55 — Laffy 004 รูปการ์ดเด้งและซับ Descript
 
 ### รายละเอียด
