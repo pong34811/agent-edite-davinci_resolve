@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.2
+version: 0.5.3
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -143,6 +143,10 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
 - `caption_lint.py` counts every Thai code point (vowel and tone marks too): `การ์ดที่มีชื่อว่า` is 17. Phrases that
   read naturally often exceed 14, so re-split them at newmm boundaries (custom dict for names such as `ราฟฟี่`) and
   then re-check the list for orphan one-word cues (`แสง`, `ได้`, `ตัว`) and fix them by hand.
+- `Mitr Font` for a new channel: the user approved borrowing the Katy404 ep6 16:9 styled track
+  (`.hermes/projects/bunny-girl-ep6/substyle/styled_subs.drt`) for Laffy. `drt_clone_subtitle_style.py` now keeps
+  the source subtitle track's name; before that fix the reference's `Subtitle 1` replaced `Thai` and the snapshot
+  check stopped on that name alone. Fusion zoom comps on V2 survived the DRT round trip (Transform read back equal).
 
 ## The three findings that matter
 

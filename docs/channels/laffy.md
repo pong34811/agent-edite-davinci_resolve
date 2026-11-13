@@ -14,7 +14,8 @@
 ## โปรเจคและ timeline ใน Resolve
 - Library `laffy_project` มีโปรเจกต์ `ตัวการ์ด Underworld Goddess-Yu-Gi-Oh! Master Duel` ที่ 1920x1080, 30 fps
   - `Timeline 1` คือต้นฉบับ ห้ามแก้
-  - `Underworld Goddess_edit` คืองานที่ตัดเสร็จ
+  - `Underworld Goddess_edit_mitr` คืองานที่ตัดเสร็จ ซับเป็น `Mitr Font`
+  - `Underworld Goddess_edit` คือเวอร์ชันเดียวกันแต่ซับเป็นสไตล์ default
   - `Underworld Goddess_edit_pre_zoom` คือสำเนาสำรองก่อนใส่ซูม
 
 ## รูปแบบและ layout (16:9)
@@ -35,15 +36,15 @@
 - ซับ: ใช้ Descript (`language: auto`) แล้วแบ่ง cue ด้วยมือ ตามกฎ house-style ไม่เกิน 14 ตัวอักษร ไม่เกิน 1.5 วิ
   - ใช้ชื่อการ์ดภาษาอังกฤษ (Underworld Goddess, I:P Masquerena, Kaiju) และเขียนตัวเลขเป็นตัวเลข
 - เสียงพูดดัง (-14.2 LUFS, peak -1.1 dBFS) BGM ใช้ระดับประมาณ -22 dB และ SFX ไม่เกิน -3 dB
-- ยังไม่มี preset สไตล์ซับของช่องนี้ (ตอนนี้ใช้ default ไม่มีขอบตัวหนังสือ)
+- สไตล์ซับ: `Mitr Font` (ผู้ใช้อนุมัติ 2026-11-13) clone จาก DRT ของ Katy404 Bunny Girl ep6 แนวนอน (`.hermes/projects/bunny-girl-ep6/substyle/styled_subs.drt`) ด้วย `drt_clone_subtitle_style.py`; ตัวหนาสีขาวขอบดำ อ่านชัดบนเสื้อดำ
 
 ## Script และ skill ที่เกี่ยวข้อง
 - `scripts/card_pop_overlay.py` (รูปการ์ดเด้ง), สคริปต์ขั้นตอนของงาน 004 อยู่ในโฟลเดอร์ scratch ชื่อ laffy004 (gitignored: backup, build_subs, subs_insert, zoom, audio, levels, verify)
 - skill: `resolve-video-enrichment` (illustration-assets), `thai-subtitles-resolve`, `vtuber-content-curriculum`
 
 ## กับดักและงานค้าง
-- ซับสีขาวไม่มีขอบทับเสื้อดำ จี้สีฟ้าโผล่ผ่านตัวอักษรบางคำ ควรใช้สไตล์ที่มีขอบ
-- รอผู้ใช้ตัดสินใจเรื่องสไตล์ซับ และยืนยันการสะกดชื่อ ราฟฟี่/ลาฟฟี่
+- สไตล์ default ไม่มีขอบตัวหนังสือ บนเสื้อดำจี้สีฟ้าจะโผล่ผ่านตัวอักษร ให้ใช้ `Mitr Font`
+- รอยืนยันการสะกดชื่อ ราฟฟี่/ลาฟฟี่
 
 ## ยังไม่ทราบ (ถามผู้ใช้ก่อนเดา)
-- preset ซับที่ช่องต้องการ และการสะกดชื่อช่องเป็นภาษาไทย
+- การสะกดชื่อช่องเป็นภาษาไทย

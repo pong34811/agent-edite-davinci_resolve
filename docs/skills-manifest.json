@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "01cf456c7210dc49c1d5b2088c05f510362a1bbbe2d895c1f9c882a4c1c5a29a"
+      "sha256": "7f8513692654365154d8c80af0f2a2a83880ef55c58d3c8131d0dd1da32493a3"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "9f80348bb43f3782cd2e14273706e87a118f2f4614c13ebb5f6c8acb35e7dd07",
+      "sha256": "623cceebc065f550a8cd2a93122c9b7356a3d76c5df1a087fa174cf5f26da014",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "04190cd009ae1f55775745ba6ac8dcfb23c4eb5f1bc2c160dbb94d18097ae1bf",
+      "sha256": "d2ee1fa00eae0a20c50ae3677e6d5d975a1499d6f6182ab4e13b2abaaf4aaf90",
       "kind": "integration_or_validation"
     },
     {
@@ -4965,7 +4965,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e624ac13e3d630da8d92f26373ac8498a64cb39a56935853ea14522a95234681"
+      "sha256": "b4f1521ffc811b6b15385d5e83077f9ca67134255126bb0b08c52b4cb8117db9"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -7316,7 +7316,7 @@
       "path": "scripts/drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1516a72acdd17505254cd3cdea2c5703103274213aed294cdccd4ae74d346566"
+      "sha256": "3dd890812f5c68717532f339f9ec27f46e2bb6f09ff177b35e5227dc43ca84e0"
     },
     {
       "path": "scripts/drt_focus_multi.py",
@@ -8862,7 +8862,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.54",
+  "bundle_version": "0.17.55",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
