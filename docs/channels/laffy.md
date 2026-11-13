@@ -34,7 +34,7 @@
 - ซับ: ใช้ Descript (`language: auto`) แล้วแบ่ง cue ด้วยมือ ตามกฎ house-style ไม่เกิน 14 ตัวอักษร ไม่เกิน 1.5 วิ
   - ใช้ชื่อการ์ดภาษาอังกฤษ (Underworld Goddess, I:P Masquerena, Kaiju) และเขียนตัวเลขเป็นตัวเลข
 - เสียงพูดดัง (-14.2 LUFS, peak -1.1 dBFS) BGM -22 dB, SFX -3 ถึง -6 dB, เสียง boom ยาวต้อง -24 dB (ที่ -12 render peak -0.01 dBFS)
-- ไฟล์ส่งงาน: `004/render/laffy004_Underworld_Goddess_v4.mp4` (H.264 1920x1080 30 fps, ซับ burn-in, -14.2 LUFS, peak -0.72 dBFS) ไฟล์เดียวในโฟลเดอร์ render (ลบ v1-v3 ตามที่ผู้ใช้สั่ง 2026-11-13)
+- ไฟล์ส่งงาน: `004/render/laffy004_Underworld_Goddess_v5.mp4` (2026-11-13, ซับปรับเวลาตามเสียงแล้ว; H.264 1920x1080 30 fps, ซับ burn-in, -14.2 LUFS, peak -0.7 dBFS) ส่วน v4 คือเวอร์ชันซับเวลาเก่า
 - สไตล์ซับ: `Mitr Font` (ผู้ใช้อนุมัติ 2026-11-13) clone จาก DRT ของ Katy404 Bunny Girl ep6 แนวนอน (`.hermes/projects/bunny-girl-ep6/substyle/styled_subs.drt`) ด้วย `drt_clone_subtitle_style.py`; ตัวหนาสีขาวขอบดำ อ่านชัดบนเสื้อดำ
 
 ## Script และ skill ที่เกี่ยวข้อง
