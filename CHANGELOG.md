@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.63 — Bunny Girl ep9 + โหลดซับ preset ผ่าน DRT
+
+### รายละเอียด
+- ตัดต่อ Bunny Girl ep9 "จากคาแรกเตอร์ปกติสู่ Bunny Girl" (Katy404) เป็น `Timeline 1_pop` แบบ Pop Kinetic: แบ่ง 4 บทพร้อมการ์ด CHAPTER และช่วงเงียบ 1.6 วิ, ซูม VTuber 6 จุด, กราฟิกคำกระแทก/การ์ดรูป/ป้าย/เช็กลิสต์ 5 ไฟล์, ซับไทย 75 cue, SFX 41 จุด, BGM; `Timeline 1` ต้นฉบับไม่ถูกแตะ
+- render ทดสอบ 5499 เฟรม 1080p60 ซับ burn-in -15.8 LUFS peak -0.5 dBFS ไม่มีเฟรมดำ
+- เพิ่ม `scripts/drt_set_subtitle_preset.py`: ใส่ Subtitle preset ที่บันทึกไว้ (เช่น `Mitr Font`) ผ่าน DRT โดยไม่เขียน database และไม่ต้องปิด/เปิด Resolve ทดสอบจริงบน ep9 ได้ style ตรงไบต์ พร้อม test 4 ข้อ
+- บันทึกกฎใหม่ใน OPERATING-NOTES (path DRT ต้องเป็น absolute, จำนวนเฟรม MOV alpha จาก HyperFrames, Python 3.12 บนเครื่องนี้) และอัปเดต house-style / thai-subtitles-resolve / โปรไฟล์ Katy404
+
 ## v0.17.62 — Laffy 004 จัดแทร็กให้ถูกชื่อ
 
 ### รายละเอียด
