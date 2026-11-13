@@ -13,10 +13,8 @@
 
 ## โปรเจคและ timeline ใน Resolve
 - Library `laffy_project` มีโปรเจกต์ `ตัวการ์ด Underworld Goddess-Yu-Gi-Oh! Master Duel` ที่ 1920x1080, 30 fps
-  - `Timeline 1` คือต้นฉบับ ห้ามแก้
-  - `Underworld Goddess_edit_mitr` คืองานที่ตัดเสร็จ ซับเป็น `Mitr Font`
-  - `Underworld Goddess_edit` คือเวอร์ชันเดียวกันแต่ซับเป็นสไตล์ default
-  - `Underworld Goddess_edit_pre_zoom` คือสำเนาสำรองก่อนใส่ซูม
+  - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id 8a4f42a3...) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
+  - timeline สำรอง/archive ทั้งหมดและโฟลเดอร์ `Archive` ลบแล้ว ถ้าต้องย้อนกลับใช้ `editackup\laffy004_pre_cleanup_*.drp`
 
 ## รูปแบบและ layout (16:9)
 | แทร็ก | ใช้สำหรับ |
