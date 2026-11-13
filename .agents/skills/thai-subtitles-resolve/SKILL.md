@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.1
+version: 0.5.2
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -129,6 +129,20 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
   split it with the Bunny Girl series subtitle builder (one-off `build_subs_epN` scratch copies: <= 14 chars, <= 1.5 s). Segment
   line breaks matched measured pauses; the only misplacement was a whole run assigned to the previous segment by
   midpoint (fixed by reading the next segment's first words).
+
+## Descript `language` has no `th` any more; hand phrases on the speech map (2026-11-12, Laffy 004, 92.8 s @ 30 fps)
+
+- The Descript MCP `import_media` language enum now lists no `th`; `language: auto` transcribed the Thai read
+  correctly (17 segments). A 128 kbps mono MP3 (1.5 MB) uploaded with one PUT; import took ~50 s.
+- Card names came back wrong in one place ("of the Ghost World" for "of the Closed World"): proofread every proper
+  noun against the source images before building cues. Write spoken numbers as digits (3000, 4 ใบ, 1 ตัว).
+- Cue builder pattern (`scripts/scratch/laffy004/build_subs.py`): one `(descript start, text)` row per segment,
+  phrases split by hand with `|`; the window runs from the segment's start to the next one's start, and each
+  phrase is spread over the -40 dB / 80 ms speech runs inside it by character weight (Latin x0.8), so cues follow
+  the talking and skip the silences.
+- `caption_lint.py` counts every Thai code point (vowel and tone marks too): `การ์ดที่มีชื่อว่า` is 17. Phrases that
+  read naturally often exceed 14, so re-split them at newmm boundaries (custom dict for names such as `ราฟฟี่`) and
+  then re-check the list for orphan one-word cues (`แสง`, `ได้`, `ตัว`) and fix them by hand.
 
 ## The three findings that matter
 

@@ -3965,7 +3965,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "d97f9d322ec57d3a5e1a51120cb58e0c78c2f4676f5ed5040debd6ecf074dd89"
+      "sha256": "53687b66b7b0a31ae97e08a33b38daedbbad1ae601f8791a8773fb32ece91523"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -4019,7 +4019,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "02890c84d86e7a7f5230cbbbcf5ed8de004701211b14f1d5e8e13310d561aea5"
+      "sha256": "73cc32cd9651e8d96e8c8f8021134092117e8af72c3a1092f6b21cd606032942"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "9239c3d4d03de30d3708138f90fb22f93d55acdf7b827e6131b0cbdf76ff99df"
+      "sha256": "01cf456c7210dc49c1d5b2088c05f510362a1bbbe2d895c1f9c882a4c1c5a29a"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a83243cc53b268d2e9a77b805debd3fbfcbc6cd576f602f9ed00999826293c9e"
+      "sha256": "6275cdee1ce68c87f841c957ac8f5b388f1247b70b9204fa98358645462501b5"
     },
     {
       "path": "docs/README.md",
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "39148c47f0b6257e1537e6375d01379e9b7df725b358f5f0febdee89581c104f"
+      "sha256": "b0709233b7e5171b87833d2e0c6831fb30dfefe0475b076826fbff11924f56e1"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4965,7 +4965,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e6952844c9b5da3b6adf468f594a5a465af82febeacbae77df8bf0a197eafdd9"
+      "sha256": "e624ac13e3d630da8d92f26373ac8498a64cb39a56935853ea14522a95234681"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -7062,7 +7062,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "c0ce21210932e352307275da0fb977a21d29923af59536f35d4d3bba54ece3fd"
+      "sha256": "8cb5da58225592044ca3b18a4d9b4f9229297aa05d00cc053c5eb566e8433bac"
     },
     {
       "path": "scripts/README.md",
@@ -7243,6 +7243,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "857a1a9d74b77e1d215d02a61e6e31bd5c4981e1fb1d54b4f0598b2ce4b9005a"
+    },
+    {
+      "path": "scripts/card_pop_overlay.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "f2ca6a1475a46449bdf2e5b2856428a3a8eae71fc5cb3cee024b28e7e1d438e0"
     },
     {
       "path": "scripts/channel_intelligence.py",
@@ -8195,6 +8201,12 @@
       "sha256": "03378c2a8ce34856ebfe596e7feab0058e68ce7c93095e0fc6dcbaa7c837bf01"
     },
     {
+      "path": "tests/test_card_pop_overlay.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "3548d0c2ee47e0f4956c03dcc313f59b1df83882e4cdd7da77685fa832ea903b"
+    },
+    {
       "path": "tests/test_channel_intelligence.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8846,7 +8858,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1183,
+    "manifest_files": 1185,
     "supporting_skills": 57,
     "active_skills": 74
   },

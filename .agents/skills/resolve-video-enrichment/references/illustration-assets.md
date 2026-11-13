@@ -79,3 +79,17 @@ Use this workflow when adding new static images as visual illustrations or overl
 ## Verification
 
 A placement passes only when the manifest and Resolve readback agree on source/path, target timeline/track, and frame range, and a rendered/viewer composite confirms correct appearance and no protected-range change. For advice-only tasks, verify the plan identifies authorization, provenance/rights, exact cue, import location, and visual QC without claiming a live edit.
+
+## User-supplied card stills (verified 2026-11-12, Laffy 004 Yu-Gi-Oh! card explainer)
+
+- `scripts/card_pop_overlay.py plan.json <dir beside footage>/overlays --fps <timeline fps>` turns the user's own
+  card images into full-raster ProRes 4444 alpha MOVs: pop-in with 115% overshoot, hold, 0.25 s fade, soft drop
+  shadow, aspect kept. Several cards in one item pop `stagger` seconds apart and stack later-over-earlier (a fan).
+- Layout used for a centred VTuber on 16:9: one card 860 px tall at cx 1560 (right) or 360 (left), cy 470, which
+  clears the face and the default subtitle line; six cards 520 px tall as two fans of three (cx 230/380/530 and
+  1390/1540/1690, cy 430). Check a composite frame (ffmpeg overlay on the source) before importing.
+- Timing: show a card from the cue that speaks its name to the end of the sentence about it; use the "overframe"
+  art on the first mention and the plain card (readable text) while the effect is explained. Keep cards out of the
+  VTuber Zoom ranges.
+- Place with MCP `media_pool append_to_timeline` (`track_index` 3, `media_type` 1, `end_frame` = MOV frames,
+  exclusive); all four landed exactly and rendered at Zoom 1 / Pan 0 / Tilt 0.
