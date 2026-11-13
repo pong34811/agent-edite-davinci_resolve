@@ -85,8 +85,9 @@ A placement passes only when the manifest and Resolve readback agree on source/p
 - `scripts/card_pop_overlay.py plan.json <dir beside footage>/overlays --fps <timeline fps>` turns the user's own
   card images into full-raster ProRes 4444 alpha MOVs: pop-in with 115% overshoot, hold, 0.25 s fade, soft drop
   shadow, aspect kept. Several cards in one item pop `stagger` seconds apart and stack later-over-earlier (a fan).
-- Layout used for a centred VTuber on 16:9: one card 860 px tall at cx 1560 (right) or 360 (left), cy 470, which
-  clears the face and the default subtitle line; six cards 520 px tall as two fans of three (cx 230/380/530 and
+- Layout used for a centred VTuber on 16:9: one card 820 px tall at cx 1600 (right) or 320 (left), cy 470. The first
+  pass (860 px at cx 1560) left only ~10 px between the `Mitr Font` cue `Underworld Goddess` and the card; measure the
+  gap on rendered frames over the whole card range (white text pixels in the subtitle rows vs the card edge, >= 60 px); six cards 520 px tall as two fans of three (cx 230/380/530 and
   1390/1540/1690, cy 430). Check a composite frame (ffmpeg overlay on the source) before importing.
 - Timing: show a card from the cue that speaks its name to the end of the sentence about it; use the "overframe"
   art on the first mention and the plain card (readable text) while the effect is explained. Keep cards out of the

@@ -3965,7 +3965,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "53687b66b7b0a31ae97e08a33b38daedbbad1ae601f8791a8773fb32ece91523"
+      "sha256": "f3b86856b194455f75608f29a012cce3a8b0dd9c5bdebd3085fde52fca2bf561"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -4019,7 +4019,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "73cc32cd9651e8d96e8c8f8021134092117e8af72c3a1092f6b21cd606032942"
+      "sha256": "0e63a3708b798a9b4b4ab875533f13a1d12f1e7e9d6d6115737f61cbc3da10a8"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a371d84dd3a3442b299fa017db06b6858d3c2fa1486338fc19701fbbc3c0230c"
+      "sha256": "cd59fad91d99743448a65d858a3e85d3824d5c861dd512c317aa9a3268e99063"
     },
     {
       "path": "docs/README.md",
@@ -4965,7 +4965,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "233776a9280c471c6068c560d2408f4c10abf33492dd6bc1c895bb7e9a6a6268"
+      "sha256": "aa512fe621c8e169aacfa1c3e854a66f7899be5428eb0313fdeb1ea67a2bdab1"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",

@@ -26,14 +26,15 @@
 | A3 | `BGM` |
 | ST1 | `Thai` |
 
-- รูปการ์ดใบเดียว: สูง 860 px อยู่ด้านขวา (cx 1560) หรือซ้าย (cx 360) ของอวตาร์
+- รูปการ์ดใบเดียว: สูง 820 px อยู่ด้านขวา (cx 1600) หรือซ้าย (cx 320) ของอวตาร์ เว้นช่องจากซับ Mitr Font อย่างน้อย 65 px (ขนาด 860 ที่ cx 1560 เกือบชนซับ)
 - การ์ดหลายใบ (เช่น Kaiju 6 ใบ): สูง 520 px แบ่งเป็นพัดซ้าย 3 ใบ ขวา 3 ใบ ไม่บังหน้า
 - ใบแรกที่พูดถึงการ์ดใช้แบบ overframe ส่วนตอนอธิบายเอฟเฟกต์ใช้การ์ดแบบธรรมดา
 
 ## ซับ เสียง และ enrichment
 - ซับ: ใช้ Descript (`language: auto`) แล้วแบ่ง cue ด้วยมือ ตามกฎ house-style ไม่เกิน 14 ตัวอักษร ไม่เกิน 1.5 วิ
   - ใช้ชื่อการ์ดภาษาอังกฤษ (Underworld Goddess, I:P Masquerena, Kaiju) และเขียนตัวเลขเป็นตัวเลข
-- เสียงพูดดัง (-14.2 LUFS, peak -1.1 dBFS) BGM ใช้ระดับประมาณ -22 dB และ SFX ไม่เกิน -3 dB
+- เสียงพูดดัง (-14.2 LUFS, peak -1.1 dBFS) BGM -22 dB, SFX -3 ถึง -6 dB, เสียง boom ยาวต้อง -24 dB (ที่ -12 render peak -0.01 dBFS)
+- ไฟล์ส่งงาน: `004/render/laffy004_Underworld_Goddess_v4.mp4` (H.264 1920x1080 30 fps, ซับ burn-in, -14.2 LUFS, peak -0.72 dBFS); v1-v3 เป็นรอบแก้ peak/ระยะการ์ด
 - สไตล์ซับ: `Mitr Font` (ผู้ใช้อนุมัติ 2026-11-13) clone จาก DRT ของ Katy404 Bunny Girl ep6 แนวนอน (`.hermes/projects/bunny-girl-ep6/substyle/styled_subs.drt`) ด้วย `drt_clone_subtitle_style.py`; ตัวหนาสีขาวขอบดำ อ่านชัดบนเสื้อดำ
 
 ## Script และ skill ที่เกี่ยวข้อง
