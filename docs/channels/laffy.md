@@ -13,13 +13,13 @@
 
 ## โปรเจคและ timeline ใน Resolve
 - Library `laffy_project` มีโปรเจกต์ `ตัวการ์ด Underworld Goddess-Yu-Gi-Oh! Master Duel` ที่ 1920x1080, 30 fps
-  - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id f8dc4868... หลังปรับเวลาซับ 2026-11-13) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
+  - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id b138d521... หลังย้ายฟุตเทจกลับ V1/A1 2026-11-13) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
   - timeline สำรอง/archive ทั้งหมดและโฟลเดอร์ `Archive` ลบแล้ว ถ้าต้องย้อนกลับใช้ `edit/backup/laffy004_pre_cleanup_*.drp`
 
 ## รูปแบบและ layout (16:9)
 | แทร็ก | ใช้สำหรับ |
 |---|---|
-| V1 | `Timeline 1.mov` ทั้งไฟล์ ไม่ตัด |
+| V1 | `Timeline 1.mov` ทั้งไฟล์ ไม่ตัด (ผู้ใช้ลบซูมและ SFX ออกเอง 2026-11-13; V2 `VTuber Zoom` และ A2 `SFX` ว่างไว้ตามโครงบ้าน) |
 | V2 | `VTuber Zoom` เป็น Fusion Transform 1.32x (window บน 0.04 ล่าง 0.80, cx 0.485) |
 | V3 | `REACTIONS` รูปการ์ด |
 | A2 | `SFX` |
