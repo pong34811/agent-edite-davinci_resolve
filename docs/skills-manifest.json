@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "0abf7b13609347d399d59da81eafd205a2df645d7efa03fb7c7de9961bc633fc"
+      "sha256": "2b29f5f59429be8cc08235654f9147cc7d67aa75323e4016815a3e4e180729c2"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4965,7 +4965,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "097edbc3e7ce65fe7a0ea99013f7a497f78dc57f94fe34a392e371b614ab8bf9"
+      "sha256": "a1d8cb42fee09eaba46dfc704c9f5693871eca13f10beac0403a448b15e56c43"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",

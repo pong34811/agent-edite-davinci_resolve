@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.4
+version: 0.5.5
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -149,6 +149,13 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
   check stopped on that name alone. Fusion zoom comps on V2 survived the DRT round trip (Transform read back equal).
 - One-cue text fix: `TimelineItem.SetName` on a subtitle item fails (MCP `set_name` -> success false). Patch the cue
   element's `Name` in an exported DRT and re-import; the track style is kept (Laffy `ราฟฟี่` -> `ลาฟฟี่`, 2026-11-13).
+- Re-timing after a user report (Laffy 004, 2026-11-13): character-count sharing put `มาเป็น` 0.6 s before its
+  word (it sat after a 0.5 s pause). A speech-map DP (scratch `laffy004/align_subs.py`: 10 ms RMS runs at -38 dB,
+  Descript segment starts as anchors, block cost on duration + envelope syllable peaks, a penalty per cue boundary
+  inside continuous speech, cues >= 10 frames) fixes most starts, but a pause between two equal-syllable phrases is
+  ambiguous on audio alone: take the user's ear as a pin (`PINS`). Apply new times by DRT (Start/Duration +
+  `_patch_fields_blob`), import as the same name, compare every non-subtitle item, render one frame in the pause and
+  one on the word. Local faster-whisper (even `small`) hung > 5 min while Resolve held the GPU: do not rely on it.
 
 ## The three findings that matter
 

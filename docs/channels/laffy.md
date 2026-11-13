@@ -13,7 +13,7 @@
 
 ## โปรเจคและ timeline ใน Resolve
 - Library `laffy_project` มีโปรเจกต์ `ตัวการ์ด Underworld Goddess-Yu-Gi-Oh! Master Duel` ที่ 1920x1080, 30 fps
-  - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id 8a4f42a3...) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
+  - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id f8dc4868... หลังปรับเวลาซับ 2026-11-13) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
   - timeline สำรอง/archive ทั้งหมดและโฟลเดอร์ `Archive` ลบแล้ว ถ้าต้องย้อนกลับใช้ `edit/backup/laffy004_pre_cleanup_*.drp`
 
 ## รูปแบบและ layout (16:9)
@@ -42,6 +42,7 @@
 - skill: `resolve-video-enrichment` (illustration-assets), `thai-subtitles-resolve`, `vtuber-content-curriculum`
 
 ## กับดักและงานค้าง
+- เวลาซับต้องตรงกับช่วงที่พูดจริง: การแบ่งเวลาตามจำนวนตัวอักษรทำให้ cue ขึ้นก่อนเสียงช่วงที่มีจังหวะหยุด (ผู้ใช้แจ้ง `มาเป็น` 2026-11-13) ใช้ speech map + ตรวจเฟรมในช่วงเงียบ
 - สไตล์ default ไม่มีขอบตัวหนังสือ บนเสื้อดำจี้สีฟ้าจะโผล่ผ่านตัวอักษร ให้ใช้ `Mitr Font`
 
 ## ยังไม่ทราบ (ถามผู้ใช้ก่อนเดา)
