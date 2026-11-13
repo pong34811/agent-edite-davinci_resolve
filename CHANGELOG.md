@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.17.59 — Laffy 004 render คลิป
+
+### รายละเอียด
+- render คลิป Laffy 004 แล้ว: `laffy004_Underworld_Goddess_v4.mp4` (1920x1080 30fps ซับ burn-in, -14.2 LUFS, peak -0.72 dBFS)
+- ลดเสียง boom ของการ์ด Kaiju เหลือ -24 dB เพราะไฟล์ render จริง peak -0.01 dBFS ทั้งที่ mix offline คาดไว้ -0.71
+- ย่อและขยับรูปการ์ดใบเดี่ยว (สูง 820 px, cx 1600/320) ให้ห่างซับอย่างน้อย 65 px
+- บันทึกกฎ: ตรวจ peak จากไฟล์ render จริง และวัดระยะซับกับการ์ดจากเฟรมที่ render
+
 ## v0.17.58 — Laffy 004 เหลือ Timeline หลักตัวเดียว
 
 ### รายละเอียด
