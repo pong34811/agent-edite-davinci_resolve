@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "37afdd7dafe385c7f620fab0154bb3c63ecd528297d9f7a057a64ddb22a14588",
+      "sha256": "2cf1c8b74f92ef891956e85e455c3f5e91a3f707fe631644dbeac04727b6f466",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "fa1a34ef61b694c8795284283cc88fc865cb20b3668cae1fb6b19950316e1f19",
+      "sha256": "04243849e6ddfe45ebb5e6a5d616d14b1a406c5577debd4bddf7489bba37dd58",
       "kind": "integration_or_validation"
     },
     {
@@ -4965,7 +4965,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "48d77a9258f532306fdccda5ffb151484cec188c941de3893c22508d4a374d09"
+      "sha256": "233776a9280c471c6068c560d2408f4c10abf33492dd6bc1c895bb7e9a6a6268"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8862,7 +8862,7 @@
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.57",
+  "bundle_version": "0.17.58",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
