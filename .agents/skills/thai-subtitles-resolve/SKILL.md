@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.3
+version: 0.5.4
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -147,6 +147,8 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
   (`.hermes/projects/bunny-girl-ep6/substyle/styled_subs.drt`) for Laffy. `drt_clone_subtitle_style.py` now keeps
   the source subtitle track's name; before that fix the reference's `Subtitle 1` replaced `Thai` and the snapshot
   check stopped on that name alone. Fusion zoom comps on V2 survived the DRT round trip (Transform read back equal).
+- One-cue text fix: `TimelineItem.SetName` on a subtitle item fails (MCP `set_name` -> success false). Patch the cue
+  element's `Name` in an exported DRT and re-import; the track style is kept (Laffy `ราฟฟี่` -> `ลาฟฟี่`, 2026-11-13).
 
 ## The three findings that matter
 
