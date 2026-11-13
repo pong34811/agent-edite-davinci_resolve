@@ -1,13 +1,13 @@
 {
-  "ok": true,
+  "ok": false,
   "core_skill_count": 17,
   "supporting_skill_count": 57,
   "active_skill_count": 74,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 1183,
+  "manifest_file_count": 1187,
   "excluded_repository_path_count": 43,
-  "local_reference_count": 378,
+  "local_reference_count": 380,
   "documented_example_link_exception_count": 14,
   "documented_example_link_exceptions": [
     {
@@ -83,7 +83,10 @@
   ],
   "scanner": "unavailable; structural/checksum checks only",
   "security_scans": [],
-  "errors": [],
+  "errors": [
+    "Missing local reference: .agents/skills/thai-subtitles-resolve/SKILL.md -> scripts/scratch/laffy004/build_subs.py",
+    "Missing local reference: .agents/skills/vtuber-cover-batch-pipeline/SKILL.md -> scripts/scratch/armigon_shorts_202610/build_covers.py"
+  ],
   "live_resolve_tested": false,
   "project_trust_changed": false
 }

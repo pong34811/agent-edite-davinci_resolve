@@ -46,6 +46,7 @@
 | `p2_verify_captions_after.py` | ตรวจหลังแก้ซับ read-only | p2 |
 | `armigon_fix_captions.py` | แผน offline สร้างซับ armigon-2026-09 | armigon |
 | `load_subtitle_preset_auto.py` | คำสั่งเดียวโหลด Subtitle preset ลง timeline ตามชื่อ (Resolve 21.1 ไม่มี API); ใส่ `--timeline` ซ้ำได้หลายอัน ปิดเปิด Resolve รอบเดียว | ใช้ซ้ำ |
+| `drt_set_subtitle_preset.py` | ใส่ Subtitle preset ที่บันทึกไว้ลง DRT (แก้ `EffectFiltersBA` ของ subtitle track) แล้ว import กลับ: ไม่ต้องมี DRT อ้างอิงแบบ `drt_clone_subtitle_style`, ไม่เขียน DB ไม่ต้องปิด Resolve | ใช้ซ้ำ |
 | `patch_subtitle_preset_offline.py` | แพตช์ Project.db ตอน Resolve ปิด เพื่อโหลด preset 1 timeline (ต้องมี `.drp` สำรอง + ได้รับอนุญาต) | ใช้ซ้ำ |
 
 ## 3. VTuber Zoom / Adjustment Clip / Focus

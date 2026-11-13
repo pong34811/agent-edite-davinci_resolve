@@ -171,3 +171,18 @@ Project Manager และ scripting ไม่ตอบ ให้รัน `pytho
 
 ยืนยันผลด้วย `load_subtitle_preset_auto` แบบ dry run (ไม่เขียน DB): ต้องได้ `already_matches=True`
 ครั้งนี้ทำครบ 47 timelines โดยไม่เขียน Project.db เพิ่มและไม่ต้องรีสตาร์ต Resolve เลย
+
+## โหลด preset ผ่าน DRT โดยไม่ปิด Resolve (Bunny Girl ep9, 2026-11-14, 21.1.0.17)
+
+วิธีนี้ไม่ต้องมี timeline นำร่องที่โหลด preset ไว้แล้ว: ไบต์ของ preset ใน `User.db` (`SubtitlePresetsBA`) คือค่าเดียวกับที่ `load_subtitle_preset_auto`
+เขียนลง `EffectFiltersBA` ของ subtitle track และ DRT export เก็บ FieldsBlob ของ track นั้นเป็น hex
+
+1. ใส่ SRT ลง subtitle track ตามปกติ (bare `mediaPoolItem`) แล้วอ่าน cue กลับ
+2. Export timeline เป็น DRT (path แบบ absolute)
+3. `python -m scripts.drt_set_subtitle_preset in.drt out.drt --user-db "<library>/Resolve Projects/Users/guest/User.db" --preset "Mitr Font"`
+   (อ่าน User.db แบบ read-only; ตรวจว่า entry อื่นใน blob และไฟล์อื่นใน DRT ไม่เปลี่ยน)
+4. `ImportTimelineFromFile` ด้วย path แบบ absolute (path relative คืนค่า None) แล้ว `SetName` timeline ใหม่ตาม ID
+5. อ่าน cue/track กลับเทียบแผน และตรวจ style แบบ read-only: `subtitle_tracks()` + `get_bytearray(..., STYLE_KEY) == preset`
+
+ทำร่วมกับ `drt_rebuild_focus_track` ใน round trip เดียวได้ (ep9: ใส่ zoom 6 ช่วงแล้วใส่ preset ใน DRT เดียวกัน import ครั้งเดียว)
+ผล ep9: `Timeline 1_pop` ได้ `Mitr Font` ตรงไบต์, 75 cue ตรงแผน, gain/fade/ช่วงทุก track เท่าเดิม ไม่ต้องเขียน Project.db และไม่ต้องรีสตาร์ต

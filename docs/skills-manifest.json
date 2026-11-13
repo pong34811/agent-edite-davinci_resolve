@@ -1356,7 +1356,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "d361c56891024caffb31298f5fb8a76f6fe83f74b218766838125efe9afaf83f"
+      "sha256": "efc99bafb982a41ef7e201f84184268090d73780d2a11ca85ac945b866dd59a8"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4587,7 +4587,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "2b29f5f59429be8cc08235654f9147cc7d67aa75323e4016815a3e4e180729c2"
+      "sha256": "28b2219e3878310cd36785304a39862004b492ad3e31e6eed3e6fc1aa0697ea0"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4599,7 +4599,7 @@
       "path": ".agents/skills/thai-subtitles-resolve/references/srt-insertion-and-presets.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "2dbd8566ff4ac558e6a15f92c733694952291c009cf33fe6eb3e8d4bd7ed4a92"
+      "sha256": "dc8dd596f6aea69d7d1168e0322196b4a14ccb57d4fc67beb0a5b3f0c0d07849"
     },
     {
       "path": ".agents/skills/timeline-naming-convention/SKILL.md",
@@ -4822,7 +4822,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "1299b76391c0658c1ab4587ad3227c2b6339722c7349b2796dd159802c60fc3c",
+      "sha256": "8391f7bb6787aa306c004d72fef33e036415c338853bd956dc00d789fe9b8ee8",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4834,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "cc114c35d3888a8c6841ba541294297f6ba1210f5297fcd165796a0835d34e95",
+      "sha256": "79766b30612ec572c0b93d4de28c2f8a5e5814ef50306a60f7f1caba40b52c9b",
       "kind": "integration_or_validation"
     },
     {
@@ -4847,7 +4847,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5f0dd1941cfc3451ec5ab789b8802ceb58053665a141d1100396590404042e22"
+      "sha256": "f06a0f861d081b5adc42e91d2f0cbc4d471e3ccff90f570c6b2ab512355a4ba3"
     },
     {
       "path": "docs/README.md",
@@ -4941,7 +4941,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0709233b7e5171b87833d2e0c6831fb30dfefe0475b076826fbff11924f56e1"
+      "sha256": "39148c47f0b6257e1537e6375d01379e9b7df725b358f5f0febdee89581c104f"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4959,7 +4959,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "bb32a6dd2b40173761e30bbef56c8a593bbfc067e1bd4bac0eb7135627362f20"
+      "sha256": "68ef573beb3a9503d0e87d09c2361613980afd402a26bb66378378f2d5488cf9"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7062,7 +7062,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "8cb5da58225592044ca3b18a4d9b4f9229297aa05d00cc053c5eb566e8433bac"
+      "sha256": "aa04380bdc2b0ffe3e28f148d8b113f7a5bcb0a305f65fec51aeb4e6e37a29f0"
     },
     {
       "path": "scripts/README.md",
@@ -7341,6 +7341,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "92b25f2e8de7e608b5cb06ffd93906c1071d6d9f925db53166075c4f65f6255f"
+    },
+    {
+      "path": "scripts/drt_set_subtitle_preset.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "b4dee4a08d45d7ab2fbbedb395b532f4fe941934bf1349570bb4db02be37e1e3"
     },
     {
       "path": "scripts/drt_shift_subtitles.py",
@@ -8279,6 +8285,12 @@
       "sha256": "1c176c6fbff4caa03562d9f5031bff1c12d83bb209b0584d5e055912a0255c5c"
     },
     {
+      "path": "tests/test_drt_set_subtitle_preset.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "8267737e9d8ada4ef83a531ddd2ca697851c77433ce53e0afa1e323a3ec3c4b1"
+    },
+    {
       "path": "tests/test_edit_workflow.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8858,11 +8870,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1185,
+    "manifest_files": 1187,
     "supporting_skills": 57,
     "active_skills": 74
   },
-  "bundle_version": "0.17.61",
+  "bundle_version": "0.17.62",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

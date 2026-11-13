@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.5
+version: 0.5.6
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -57,7 +57,11 @@ Read `references/srt-insertion-and-presets.md` for the complete procedure:
 3. Resolve the requested preset by its exact saved name and source library.
    `Mitr-Font` and `Mitr Font` are different identifiers; ask before substituting.
    Prefer the user-approved saved preset over guessed font/size/position values.
-4. On observed Resolve 21.1.0.17, subtitle preset loading has no public Python
+4. Keep-open routes first (no DB write): `scripts/drt_clone_subtitle_style.py`
+   (clone from a reference DRT) or `scripts/drt_set_subtitle_preset.py` (set the
+   preset bytes from `User.db` in an exported DRT, import, rename by ID; see the
+   reference's DRT section). Otherwise, on observed Resolve 21.1.0.17, subtitle
+   preset loading has no public Python
    API. `scripts/load_subtitle_preset.py` is a Python **database workaround**,
    not a native API setter. Require separate explicit database-write approval;
    save, verify a DRP backup, close the project, snapshot SQLite, update exact
