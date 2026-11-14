@@ -4608,7 +4608,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "28b2219e3878310cd36785304a39862004b492ad3e31e6eed3e6fc1aa0697ea0"
+      "sha256": "94f44d48d40749810207ff653876421a5a4b065dae7f59f832da465c965349e6"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4730,7 +4730,7 @@
       "path": ".agents/skills/vtuber-cover-batch-pipeline/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9585a54900c688a1bf2dcec4fc26635319d55adc22b492fa66bbfedfd460c9b8"
+      "sha256": "f32ddc2bd43766b92cf5fcb443f963e3f8322925ba3ef9f95573357e393636b7"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "6ea8a7e4e833a6b5ea9888e16d11748e4fd6e994213dbecd829dc027295b8d2d",
+      "sha256": "e484a94d0b0fe01fefbe7c2c0a5444ba5fbb0c8e63a347b9eb88f004d50b4ea3",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "eb4891ec7bb8e9d33f629a1274774fd08d491428eb2e696926d78c4c232b4385",
+      "sha256": "dcd1a237da244afbadfa173d15454e5db0f6433b61b0e429014fa4e29c979a7d",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "04b4ad9ee1a1f856c781642f21f4b6cab4ef3d14f28e33626ed79a90b05dada6"
+      "sha256": "3dcada4ab60eb236612ac681522b39b743b368db65ce50e483b7d1691cd53351"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "39148c47f0b6257e1537e6375d01379e9b7df725b358f5f0febdee89581c104f"
+      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "54f458c7c25bf0f1dbea94a370a9a19688cb4ba95047709033c155d31507a7af"
+      "sha256": "4a077b8b0606d4bca2fd9110e4c29f6c265018a44981a7b5fe17bb012287e1ad"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.79",
+  "bundle_version": "0.17.80",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

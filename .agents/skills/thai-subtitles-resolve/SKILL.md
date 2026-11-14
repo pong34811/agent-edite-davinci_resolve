@@ -140,7 +140,7 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
   correctly (17 segments). A 128 kbps mono MP3 (1.5 MB) uploaded with one PUT; import took ~50 s.
 - Card names came back wrong in one place ("of the Ghost World" for "of the Closed World"): proofread every proper
   noun against the source images before building cues. Write spoken numbers as digits (3000, 4 ใบ, 1 ตัว).
-- Cue builder pattern (`scripts/scratch/laffy004/build_subs.py`): one `(descript start, text)` row per segment,
+- Cue builder pattern (scratch `laffy004/build_subs.py`, gitignored): one `(descript start, text)` row per segment,
   phrases split by hand with `|`; the window runs from the segment's start to the next one's start, and each
   phrase is spread over the -40 dB / 80 ms speech runs inside it by character weight (Latin x0.8), so cues follow
   the talking and skip the silences.
