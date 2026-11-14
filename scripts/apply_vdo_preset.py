@@ -102,11 +102,21 @@ def write_item(item, values: dict) -> list[str]:
     return [f"{k}: got {g}, want {w}" for k, (g, w) in bad.items()]
 
 
-def capture(resolve, project, name: str) -> None:
+def capture(resolve, project, name: str, track_name: str | None = None, track_index: int = 0) -> None:
     tl = project.GetCurrentTimeline()
-    item = tl.GetCurrentVideoItem()
-    if not item:
-        sys.exit("no video item under the playhead on the active timeline")
+    # GetCurrentVideoItem() can return a lower track's clip (a 9:16 avatar on V3 instead of the GIF on V2),
+    # so take the clip under the playhead on the preset's own track.
+    k = find_track(tl, track_name, track_index)
+    if not k:
+        sys.exit(f"no '{track_name}' track on the active timeline")
+    tc = tl.GetCurrentTimecode()
+    fps = float(tl.GetSetting("timelineFrameRate"))
+    h, m, s, f = (int(x) for x in tc.replace(";", ":").split(":"))
+    frame = int(round(((h * 60 + m) * 60 + s) * fps)) + f
+    hits = [it for it in tl.GetItemListInTrack("video", k) or [] if it.GetStart() <= frame < it.GetEnd()]
+    if len(hits) != 1:
+        sys.exit(f"expected one clip on track {k} at {tc}, found {len(hits)}")
+    item = hits[0]
     keep = ("ZoomX", "ZoomY", "Pan", "Tilt", "RotationAngle", "AnchorPointX", "AnchorPointY", "Pitch", "Yaw",
             "FlipX", "FlipY", "CropLeft", "CropRight", "CropTop", "CropBottom", "CropSoftness", "Opacity",
             "CompositeMode")
@@ -134,7 +144,7 @@ def main() -> int:
     pm = resolve.GetProjectManager()
     project = pm.GetCurrentProject()
     if args.capture:
-        capture(resolve, project, args.capture)
+        capture(resolve, project, args.capture, args.track_name, args.track_index)
         return 0
 
     preset = load_presets()[args.preset]

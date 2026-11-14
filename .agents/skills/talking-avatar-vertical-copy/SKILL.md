@@ -1,7 +1,7 @@
 ---
 name: talking-avatar-vertical-copy
 description: "Use when making a 9:16 copy of a solo VTuber Resolve clip."
-version: 0.1.0
+version: 0.1.1
 author: Hermes
 platforms: [windows]
 metadata:
@@ -36,7 +36,7 @@ Turns a 16:9 Resolve timeline whose V1 is **one avatar talking in a room (no gam
 2. **Look at V1.** Extract 5 spread frames to scratch, `vision_analyze` the sheet for the head/face extents (not shoulders).
 3. **Fill the height.** Use Zoom 3.1605 when the **head, hair ornaments and visible hands** fall inside source x 0.34–0.66. Cropped shoulders/arms are expected. Lower the zoom only if the head or hands would be cut; never answer with a black band (house rule: full frame, no bands).
 4. **Measure every overlay** with `scripts/overlay_place.py` (invoke through the `terminal` tool). It prints the alpha box over the whole clip and the Zoom/Pan/Tilt for the slot.
-5. **Set overlays to house-style `short`** (`scripts/video_presets.json["short"]`: Zoom 0.42, Pan 0, Tilt 403.2) on every V3 item; it is the user's binding 9:16 rule and wins over any computed slot.
+5. **Set overlays to house-style `short`** (`scripts/video_presets.json["short"]`: Zoom 0.42, Pan 0, Tilt 655.26 since 2026-11-14; read the JSON, do not hard-code) on every V3 item; it is the user's binding 9:16 rule and wins over any computed slot.
    - If an overlay's measured box is < 50% of the canvas width (a side panel on a full canvas), `short` leaves the graphic ~150 px wide and off-centre. Still apply `short`, then put the `overlay_place.py` chest-band values in the handoff as a proposal and apply them only after the user approves them for that channel.
    - A channel profile in `docs/channels/` that records approved chest-band values counts as that approval.
 6. **Backup, then build** in one script, dry run first, `--apply` to write: `backup_drp.export_verified(pm, project, <scratch>.drp)`; inside `preserved_state(r)`: `SetCurrentTimeline(orig)` → `DuplicateTimeline` → sleep 1.25 s → compare the full track signature with the original → RASTER (0.3 s between) → `SetProperty` floats (retry 4x, 1 s, accept readback within 0.01) → re-compare signature → `SaveProject()`.

@@ -1,10 +1,11 @@
 {
   "short": {
-    "source": "User.db VideoPresetsBA 'short' (zstd protobuf: ids 42/43 = Zoom X/Y 0.42, id 41 = Position Y 0.21 x canvas height 1920 = 403.2); cross-checked against GIF items in the vertical timelines that carry the preset",
+    "source": "User updated the Inspector video preset 'short' on 2026-11-14 (not yet flushed to User.db, which still holds Position Y 0.21); captured from KT404 HL 2026-10-1 `ไฟต์ท้ายเกมปิดชัยชนะ-League of Legends-vdo_9x16` :: `งง - mochi-cat-what.gif` (V2 REACTIONS), Position Y 655.26 = 0.3413 x 1920. Previous value: Tilt 403.2 (Position Y 0.21).",
     "values": {
       "ZoomX": 0.42,
       "ZoomY": 0.42,
-      "Tilt": 403.2
+      "Pan": 0.0,
+      "Tilt": 655.261543782552
     }
   },
   "vdo": {

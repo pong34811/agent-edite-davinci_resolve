@@ -1365,7 +1365,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "efc99bafb982a41ef7e201f84184268090d73780d2a11ca85ac945b866dd59a8"
+      "sha256": "1f26a55341fffb41f24f526f26da28cf1490dccd131074207b8b2fb753eede8b"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4588,7 +4588,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "13e3c0b36eadc3126c100ae0246c39fbe46e03e9aa7180af5deee7d389f0ec91"
+      "sha256": "eaa0b8b5929cd42be8aceb91dc6ff6967af3ca1d11426ec579df5c97f9838efb"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "1a1d43c328342fd5f8e3f5b30ec88ac492d8000d27b15124d4a4b10c97faf345",
+      "sha256": "e90fc7e99812467baba646c4db7f4fcf90d718434bf1e97ac7cb5c8f0cef78c4",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "77591aaa2f72b62d4db763e7f2a567e92886b464d9a8516f4b75658149fb5557",
+      "sha256": "6e4a37255b950da7866cfad5d14bd11255b529fa163e122749d2b87d1f89ba6b",
       "kind": "integration_or_validation"
     },
     {
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b7a927611cbbd3ad3a8d5cc331bec849d40de532008f6cf3262ec087a1018f55"
+      "sha256": "4d408c3575fa2afe0bfa7dc7a92669bfb19e00841c4a37bb1d8a4aaf23b6d612"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7125,7 +7125,7 @@
       "path": "scripts/apply_vdo_preset.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "cbc8c95132fcc259cf88f7d4fdb2dd269b49e9078563977172a784cd32df75d7"
+      "sha256": "337dc87022d635e831c8d17b9410a4413f38bafbe722630db6df90e6093b82c9"
     },
     {
       "path": "scripts/apply_vdo_python.py",
@@ -8051,7 +8051,7 @@
       "path": "scripts/video_presets.json",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b74789981a314023d8166b2326d75a1ca0dc86e2ef7948978042f5bafc409e15"
+      "sha256": "e377d3e477c69f95de242a8567b555fecde0d45de08b5908a9445cfa06b6c1dc"
     },
     {
       "path": "scripts/words_to_short_srt.py",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.76",
+  "bundle_version": "0.17.77",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
