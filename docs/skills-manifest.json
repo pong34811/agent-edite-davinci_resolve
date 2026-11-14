@@ -3765,7 +3765,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "0cd65e0ad7f295fbb25c5c476bb0b928cdc5aca92e233c159d02c780f15b838d"
+      "sha256": "e51e08e754204005ea0d8cf054d88100c9964d28184e2d8aafa09269ad3f943e"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -4838,12 +4838,12 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "78c70a722f07d74955ce7925e53bef8d088cc1df37fe5461275b9ef450c01496"
+      "sha256": "78c637af80df917fcf6b10a97b0640fb52517347fa58d2ed14b9f143cd9ea9cd"
     },
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "b7963cbb231b4f05fd357efc63010c1a90fd30dfa55752f2950616bdc96493bd",
+      "sha256": "bd30564c3bf564d77d327ca520b01557cb96b35dca6898b8ddd1d26bdde29aa9",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "328498b2e8f8456a652af850e3d209a0bc58b66d87f1fa3478965ea7c10d622c",
+      "sha256": "3c53bc0dcb9b16b00ba34738e97c883f1472ec3c79f60ebfc6c952353560baf4",
       "kind": "integration_or_validation"
     },
     {
@@ -7083,7 +7083,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "aa04380bdc2b0ffe3e28f148d8b113f7a5bcb0a305f65fec51aeb4e6e37a29f0"
+      "sha256": "e55c8353d18aa7387f2bc638403efb5c992be4301f3061d22fece0a22b45d72c"
     },
     {
       "path": "scripts/README.md",
@@ -7907,7 +7907,7 @@
       "path": "scripts/release.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "12c91351b33631bf962175b6dea48a29c4ff3fd9c507bcd52b0f8aa007442bb4"
+      "sha256": "06126bb230fb87000efa08634f5837618c1192e33d292c6a0d99e5608e8f32e0"
     },
     {
       "path": "scripts/render_enrichment_pilot.py",
@@ -8423,7 +8423,7 @@
       "path": "tests/test_release.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "dae303a4f53a7366989bb3d57938fa1edc3130abfba90eb0d9e2e51f52c37284"
+      "sha256": "a436dd7cae1fa8a47eda87f7513bbd33da05d346e4b586ddbd7fd88c5f1f9655"
     },
     {
       "path": "tests/test_render_enrichment_pilot.py",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.71",
+  "bundle_version": "0.17.72",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

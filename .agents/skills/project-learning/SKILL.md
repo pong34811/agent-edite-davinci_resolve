@@ -1,7 +1,7 @@
 ---
 name: project-learning
 description: Use at the start and end of any DaVinci Resolve editing task in this repo, and whenever you are about to write a new script. Finds the existing tool first, keeps throwaway scripts inside the repo, and records new rules, scripts and corrections so the next session (Claude Code, Codex or Hermes) starts smarter and faster.
-version: 0.2.0
+version: 0.2.1
 author: Warit (pong34811)
 license: MIT
 platforms: [windows]
@@ -64,6 +64,6 @@ Gitignored folders are not proof of junk: tests, scripts, channel profiles and l
 - `python -m pytest -q` (tests that need Resolve are skipped without `--live`).
 - After touching skills, scripts or docs: `python scripts/refresh_skill_manifest.py`.
 - Inspect `git status`; stage only this task's files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
-- Write release notes in Thai as verified bullet points. Preview a patch release (default) with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <path>`; add `--publish` to update `VERSION`/`CHANGELOG.md`, commit those paths, tag, push `main` + the tag, and publish the GitHub Release. Use `--bump minor|major` only when justified. Verify the published tag and release URL; never force-push or move an existing tag.
+- Write release notes in Thai as verified bullet points. Preview a patch release (default) with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <path>`; add `--publish` to update `VERSION`/`CHANGELOG.md`, commit those paths, tag, push `main` + the tag, and publish the GitHub Release. Use `--bump minor|major` only when justified. The helper appends `### Skill ที่อัปเดต` and `### ไฟล์ที่เปลี่ยน` from `git diff --name-status <previous tag> HEAD`, so push the content commit first and do not hand-write those lists. Verify the published tag and release URL; never force-push or move an existing tag.
 - If checks, credentials, or network block publishing, report the blocker and do not claim success.
 - In the final report: name the path used (`davinci-resolve` MCP, Studio MCP, or script), list recorded learnings and paths, include version/release URL when published, and say what was not verified.

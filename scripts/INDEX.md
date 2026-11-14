@@ -25,7 +25,7 @@
 | `channel_intelligence.py` | ตรวจรายงานหลักฐานเกม/ช่องและ research แบบ offline (`validate REPORT.json`); ไม่ตรวจจับเกมหรือยืนยันความจริง | ใช้ซ้ำ |
 | `verify_skill_bundle.py` | ตรวจชุด skills ไม่ต้องต่อ Resolve | ใช้ซ้ำ |
 | `refresh_skill_manifest.py` | อัปเดต `docs/skills-manifest.json` และตรวจซ้ำหลังแก้ repo | ใช้ซ้ำ |
-| `release.py` | สร้าง patch release ค่าเริ่มต้น พร้อม changelog ภาษาไทยแบบ bullet; `--publish` อัปเดต VERSION/CHANGELOG, commit, tag, push และสร้าง GitHub Release | ใช้ซ้ำ |
+| `release.py` | สร้าง patch release ค่าเริ่มต้น พร้อม changelog ภาษาไทยแบบ bullet และสร้างหัวข้อ `Skill ที่อัปเดต` / `ไฟล์ที่เปลี่ยน` จาก git diff ตั้งแต่ tag ก่อนหน้าให้อัตโนมัติ; `--publish` อัปเดต VERSION/CHANGELOG, commit, tag, push และสร้าง GitHub Release | ใช้ซ้ำ |
 
 ## 2. ซับไตเติลภาษาไทย
 

@@ -131,3 +131,51 @@ def test_dry_run_prints_thai_on_a_cp1252_console(tmp_path):
                        capture_output=True, env=env)
     assert r.returncode == 0, r.stderr.decode("utf-8", "replace")
     assert "ทดสอบ" in r.stdout.decode("utf-8")
+
+
+NAME_STATUS = "\n".join([
+    "A\t.agents/skills/talking-avatar-vertical-copy/SKILL.md",
+    "A\t.agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
+    "M\t.agents/skills/vertical-video-reframing/SKILL.md",
+    "D\t.agents/skills/old-skill/SKILL.md",
+    "R100\tscripts/a.py\tscripts/b.py",
+    "M\tCHANGELOG.md",
+    "M\tVERSION",
+    "M\tdocs/channels/laffy.md",
+])
+
+
+def test_summarize_changes_groups_skills_with_status():
+    text = release.summarize_changes(NAME_STATUS)
+    skills = text.split("### Skill ที่อัปเดต", 1)[1].split("###", 1)[0]
+    assert "- `talking-avatar-vertical-copy` (ใหม่): `SKILL.md`, `scripts/overlay_place.py`" in skills
+    assert "- `vertical-video-reframing` (แก้ไข): `SKILL.md`" in skills
+    assert "- `old-skill` (ลบ): `SKILL.md`" in skills
+
+
+def test_summarize_changes_lists_every_file_except_release_bookkeeping():
+    text = release.summarize_changes(NAME_STATUS)
+    files = text.split("### ไฟล์ที่เปลี่ยน", 1)[1]
+    assert "- เพิ่ม `.agents/skills/talking-avatar-vertical-copy/SKILL.md`" in files
+    assert "- แก้ไข `docs/channels/laffy.md`" in files
+    assert "- ลบ `.agents/skills/old-skill/SKILL.md`" in files
+    assert "- เปลี่ยนชื่อ `scripts/a.py` → `scripts/b.py`" in files
+    assert "CHANGELOG.md" not in files and "`VERSION`" not in files
+
+
+def test_summarize_changes_without_skills_or_files():
+    text = release.summarize_changes("M\tVERSION\nM\tCHANGELOG.md")
+    assert "### Skill ที่อัปเดต\n- ไม่มี" in text
+    assert "### ไฟล์ที่เปลี่ยน\n- ไม่มี" in text
+
+
+def test_summarize_changes_caps_long_file_lists():
+    lines = "\n".join(f"M\tdocs/f{i}.md" for i in range(65))
+    files = release.summarize_changes(lines).split("### ไฟล์ที่เปลี่ยน", 1)[1]
+    assert files.count("- แก้ไข `docs/f") == release.MAX_FILES
+    assert f"และอีก {65 - release.MAX_FILES} ไฟล์" in files
+
+
+def test_changelog_entry_appends_change_summary():
+    entry = release.format_changelog("1.0.1", "หัวข้อ", "- ข้อหนึ่ง", release.summarize_changes(NAME_STATUS))
+    assert entry.index("### รายละเอียด") < entry.index("### Skill ที่อัปเดต") < entry.index("### ไฟล์ที่เปลี่ยน")

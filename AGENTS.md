@@ -152,6 +152,11 @@ Before reporting done:
   Never remove a pre-existing or nested environment.
 - Read `git status` and stage only this task's intended files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
 - Write release notes in Thai as bullet points, include only verified changes/results, and save the bullets to a notes file under `scripts/scratch/`. Preview the default patch bump with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <ไฟล์>`; publish with the same command plus `--publish`. Use `--bump minor|major` only when the change warrants it. The helper updates `VERSION` and `CHANGELOG.md`, commits those two paths only, creates a version tag, pushes `main` and the tag, and creates a GitHub Release. Verify the tag/release and report failures honestly; never force-push or move an existing tag.
+- Every release entry (CHANGELOG and GitHub Release) has three parts, in order:
+  1. `### รายละเอียด`: your Thai bullets, saying what changed and why, and the verified result.
+  2. `### Skill ที่อัปเดต`: one line per skill under `.agents/skills/`, with ใหม่/แก้ไข/ลบ and the files touched inside it.
+  3. `### ไฟล์ที่เปลี่ยน`: every file changed since the previous tag, marked เพิ่ม/แก้ไข/ลบ/เปลี่ยนชื่อ, capped at 40 lines.
+  `release.py` generates parts 2 and 3 from `git diff --name-status <previous tag> HEAD`. Do not type them into the notes file. Commit and push the task's content commit before running `--publish`: the helper needs a clean tree with `HEAD == origin/main`, and it reads the diff from `HEAD`. A local-only `.mcp.json` blocks the clean check, so stash just that path around the release. Check the dry-run preview: if part 2 or 3 lists files that are not this task's, say so in the bullets instead of hiding them.
 - Include the release URL/version and Thai bullet summary in the final report. If auth, network, tests, or push prevent release, state the exact blocker; never claim a release that was not verified.
 
 ## Verification and handoff

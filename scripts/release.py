@@ -29,11 +29,56 @@ def bump_version(version: str, bump: str = "patch") -> str:
     raise ValueError(f"Unknown bump type: {bump}")
 
 
-def format_changelog(version: str, title: str, notes: str) -> str:
+def format_changelog(version: str, title: str, notes: str, changes: str = "") -> str:
     bullets = [line.strip() for line in notes.splitlines() if line.strip()]
     if not bullets or any(not line.startswith("-") for line in bullets):
         raise ValueError("Release notes must contain Thai bullet lines beginning with '-'.")
-    return f"## v{version} — {title.strip()}\n\n### รายละเอียด\n" + "\n".join(bullets) + "\n"
+    entry = f"## v{version} — {title.strip()}\n\n### รายละเอียด\n" + "\n".join(bullets) + "\n"
+    return entry + ("\n" + changes.strip() + "\n" if changes.strip() else "")
+
+
+SKILLS_PREFIX = ".agents/skills/"
+BOOKKEEPING = {"VERSION", "CHANGELOG.md"}
+MAX_FILES = 40
+STATUS_TH = {"A": "เพิ่ม", "M": "แก้ไข", "D": "ลบ", "R": "เปลี่ยนชื่อ", "C": "คัดลอก", "T": "เปลี่ยนชนิด"}
+
+
+def summarize_changes(name_status: str) -> str:
+    """Thai 'skills updated' + 'files changed' sections from `git diff --name-status` output."""
+    files, skills = [], {}
+    for line in name_status.splitlines():
+        parts = line.strip().split("\t")
+        if len(parts) < 2:
+            continue
+        code, paths = parts[0][:1], parts[1:]
+        path = paths[-1]
+        if path in BOOKKEEPING:
+            continue
+        label = STATUS_TH.get(code, code)
+        files.append(f"- {label} `{paths[0]}` → `{paths[1]}`" if len(paths) == 2 else f"- {label} `{path}`")
+        for p in paths:
+            if p.startswith(SKILLS_PREFIX) and p.count("/") >= 3:
+                name, rel = p[len(SKILLS_PREFIX):].split("/", 1)
+                entry = skills.setdefault(name, {"files": [], "status": "แก้ไข"})
+                if rel not in entry["files"]:
+                    entry["files"].append(rel)
+                if rel == "SKILL.md" and code in ("A", "D"):
+                    entry["status"] = "ใหม่" if code == "A" else "ลบ"
+    skill_lines = [f"- `{n}` ({s['status']}): " + ", ".join(f"`{f}`" for f in s["files"])
+                   for n, s in sorted(skills.items())] or ["- ไม่มี"]
+    shown = files[:MAX_FILES] or ["- ไม่มี"]
+    if len(files) > MAX_FILES:
+        shown.append(f"- ... และอีก {len(files) - MAX_FILES} ไฟล์ (ดู `git diff --name-status` ของ tag นี้)")
+    return "### Skill ที่อัปเดต\n" + "\n".join(skill_lines) + "\n\n### ไฟล์ที่เปลี่ยน\n" + "\n".join(shown) + "\n"
+
+
+def changes_since_last_tag(root: Path = ROOT) -> str:
+    """Summary of everything committed since the previous release tag (empty if there is no tag)."""
+    try:
+        last = run("git", "describe", "--tags", "--abbrev=0", "HEAD", cwd=root)
+    except subprocess.CalledProcessError:
+        return ""
+    return summarize_changes(run("git", "diff", "--name-status", "-M", last, "HEAD", cwd=root))
 
 
 def run(*args: str, cwd: Path = ROOT) -> str:
@@ -103,7 +148,8 @@ def main() -> int:
     args = parser.parse_args()
     current = VERSION_FILE.read_text(encoding="utf-8").strip()
     version = bump_version(current, args.bump)
-    entry = format_changelog(version, args.title, args.notes_file.read_text(encoding="utf-8"))
+    entry = format_changelog(version, args.title, args.notes_file.read_text(encoding="utf-8"),
+                             changes_since_last_tag())
     if not args.publish:
         print(f"DRY RUN: {current} -> {version}\n{entry}")
         return 0
