@@ -114,6 +114,14 @@ current task. Uses `git` and an authenticated `gh` CLI.
   every earlier unsynced edit (new references, assets, a rewritten SKILL.md).
   Name those in the CHANGELOG `### Updated` entry instead of claiming only this
   task's change.
+- `scripts/release.py --publish` refuses unless the tree is fully clean AND
+  `HEAD == origin/main`. Push the task's content commit first, then release. A
+  local-only `.mcp.json` (machine paths) blocks the clean check: wrap the release
+  in `git stash push -- .mcp.json` / `git stash pop`; never commit it.
+- Another agent session can reset `main` to `origin/main` mid-task (reflog shows
+  `reset: moving to origin/main` after a `backup/local-work-*` branch commit).
+  Recover your files from that backup branch with `git checkout <sha> -- <paths>`
+  only where the origin blob is unchanged; merge by hand where origin moved on.
 
 ## Verification
 
