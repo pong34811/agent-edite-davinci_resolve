@@ -33,6 +33,19 @@ This is a **reframing** workflow, not the raw-footage assembly covered by `resol
   center + enlarge (`Pan=0`, `Zoom=1.0`). Reaction GIFs / short inserts → shrink
   to a corner (`Zoom≈0.38`, `Pan≈-250`, `Tilt≈+1250` = upper-left). Resolve sign:
   positive `Tilt` moves up, positive `Pan` moves right.
+- **Full-canvas alpha overlays (1920x1080 MOV with the graphic on one side):**
+  measure the graphic with `ffmpeg -vf fps=2,alphaextract` + PIL `getbbox()` over
+  the whole clip, then place it by arithmetic: in a scaleToFit 1080x1920 timeline
+  the clip's effective scale is `0.5625*Zoom`, and `Pan`/`Tilt` are timeline
+  pixels, so `Pan = target_x_offset - src_x_offset*0.5625*Zoom` (same for Tilt,
+  up positive). A side-third card panel centred in the chest band under the chin
+  and above the subtitles read well (Laffy 004); verify on a burn-in render. It
+  deviates from house-style `short`, so offer it as a proposal until the user
+  approves it for that channel.
+  The measuring script `overlay_place.py` lives in skill
+  `talking-avatar-vertical-copy`.
+- **Single talking avatar, no gameplay** (a VTuber in a room): use skill
+  `talking-avatar-vertical-copy` (fill height, overlays in the chest band).
 - **Full-frame 16:9 clips letterbox in a 9:16 timeline.** Budget a per-clip crop
   pass over gameplay segments instead of imposing a one-size template.
 

@@ -780,6 +780,15 @@
       "history_sessions": 0
     },
     {
+      "name": "talking-avatar-vertical-copy",
+      "tier": "supporting",
+      "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "thai-proofread",
       "tier": "editing",
       "path": ".agents/skills/thai-proofread/SKILL.md",
@@ -4576,6 +4585,18 @@
       "sha256": "134a5d0f695d717f6d34609dff44ec9316a593c2f6db981ec94a61750fcce1bb"
     },
     {
+      "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "13e3c0b36eadc3126c100ae0246c39fbe46e03e9aa7180af5deee7d389f0ec91"
+    },
+    {
+      "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "23fe38955be3c9c5b1f632144dab741e80c9747bcc1474f5816bb08d8b693f7f"
+    },
+    {
       "path": ".agents/skills/thai-proofread/SKILL.md",
       "source": "project-local copy",
       "kind": "editing_skill",
@@ -4617,7 +4638,7 @@
       "path": ".agents/skills/vertical-video-reframing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "51888013d2b8f63a7de9976a3853132a4bf9c742f879923ab1b9ed2fa2d09a16"
+      "sha256": "3222512e4de028a6d5ffbb422b07322460d68c25d8fe651176ba403cd5b5f790"
     },
     {
       "path": ".agents/skills/vertical-video-reframing/references/reference-study.md",
@@ -4822,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "941563f67e6dc1c5580915b24441b78c0abbaa6568ddd95d2ac4902ddae2148c",
+      "sha256": "2ca7fcbb39b21f77a786140735e943a417c80a47e312d70096f7986ef0a72461",
       "kind": "integration_or_validation"
     },
     {
@@ -4834,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "3559804abd8db6d363a180de9a597a8eb322bc2185654481992a814f90aa4401",
+      "sha256": "74685fee31d1e99408aa3b57c64189c7a6a6c43598d79d68dfa015ff359fcf72",
       "kind": "integration_or_validation"
     },
     {
@@ -4965,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "777f1ba80d339262a8813e3ab1fda642dbdac31de76b8d253e9a18fdfe00e6d9"
+      "sha256": "42920ff870f5852246a06539665134528b5de802af3bd5c82b283ceeec1172be"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8870,11 +8891,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1187,
-    "supporting_skills": 57,
-    "active_skills": 74
+    "manifest_files": 1189,
+    "supporting_skills": 58,
+    "active_skills": 75
   },
-  "bundle_version": "0.17.69",
+  "bundle_version": "0.17.70",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
