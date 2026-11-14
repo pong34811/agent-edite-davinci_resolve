@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.17.71 — skill ทำ 9:16 คลิป VTuber เดี่ยว
+
+### รายละเอียด
+- เพิ่ม skill `talking-avatar-vertical-copy` สำหรับทำสำเนา 9:16 ของคลิปที่มี VTuber คนเดียวในห้อง (ไม่มีภาพเกม): ซูม V1 เต็มความสูง (3.1605) ไม่มีขอบดำ ใช้ preset `short` กับ overlay ตาม house-style และเสนอตำแหน่งกลางช่วงอกเป็นทางเลือกที่ต้องให้ผู้ใช้อนุมัติ
+- เพิ่มสคริปต์ `overlay_place.py` ใน skill: วัดขอบเขต alpha ของ overlay เต็มเฟรมแล้วคำนวณ Zoom/Pan/Tilt (ค่าที่ได้ห่างจากค่าที่ render ตรวจแล้วของ Laffy 004 ไม่เกิน ~1%)
+- ทดสอบ skill แบบ RED/GREEN ด้วย subagent: ก่อนมี skill แผนใส่ขอบดำ 528 px และเรียก `DuplicateTimeline` ผิด object; หลังมี skill แก้ได้ทั้งสองข้อ
+- `vertical-video-reframing` ชี้ไปที่ skill ใหม่ และอธิบายสูตรวาง overlay เต็มเฟรม
+- โปรไฟล์ Laffy เพิ่มหัวข้อ 9:16 ของ `Timeline 1_9x16` (ค่าการ์ดยังไม่ได้รับอนุมัติให้ใช้แทน `short`)
+
 ## v0.17.70 — อัปเดต Timeline หลัก KT404 67 อันและลบ Timeline สำรอง
 
 ### รายละเอียด
