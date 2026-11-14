@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.81 — ปกคลิปครบทุก Timeline ของ KT404 Highlights 2026-10-1
+
+### รายละเอียด
+- ทำปกคลิปครบทุก Timeline ของ KT404 Highlights 2026-10-1: 67 Timeline x 2 สัดส่วน = 134 ไฟล์ (แนวนอน 1920x1080 และแนวตั้ง 1080x1920) ตั้งชื่อตาม Timeline และวางไว้ที่ `2026-10-1/Thumbnails/Horizontal_16x9` กับ `Vertical_9x16` ใน Google Drive (md5 ตรงกับไฟล์ต้นทางครบ 134 ไฟล์)
+- ใช้สไตล์เดียวกับปก KT404 2026-09-29 ที่อัปโหลดแล้ว: ข้อความจากชื่อคลิปใน Timeline แบ่งบรรทัดแดง/ขาว (Mitr Bold ขอบดำ) และเลือกโมเดลเคที่ตามอารมณ์ของชื่อคลิป ภาพพื้นหลังคัดจากเฟรมจริงของคลิปละ 6–14 เฟรม และครอปเฉพาะส่วนเกมเพื่อไม่ให้อวาตาร์ในสตรีมซ้อนกับโมเดล
+- ตรวจแล้ว: agent-thumbnail `cli.verify` ผ่าน 134/134 ไม่มีปัญหา, ขนาด/ฟอร์แมต/ไฟล์ไม่เกิน 2MB ครบ, ข้อความไม่ทับโมเดลในแนวนอน (นับพิกเซล = 0 ทุกใบ) และไม่ทับกรอบภาพเกมในแนวตั้ง, ตรวจ contact sheet ทุกใบ
+- ข้อสังเกต: #40 ชื่อ Timeline ถูกตัดที่ "ล้" จึงใช้คำจากซับ "โดนทีเดียวตาย"; #16 ไม่พบเฟรมที่เห็นป้ายโรงเรียน; ไม่ได้แก้อะไรใน Resolve (อ่านอย่างเดียว)
+- บันทึกบทเรียนการทำปกลง skill vtuber-cover-batch-pipeline และโปรไฟล์ช่อง Katy404 แก้การอ้างไฟล์ scratch ใน skill/โปรไฟล์ที่ทำให้เทสต์ล้ม (pytest ผ่าน 449)
+
+### Skill ที่อัปเดต
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+- `vtuber-cover-batch-pipeline` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `.agents/skills/vtuber-cover-batch-pipeline/SKILL.md`
+- แก้ไข `docs/channels/armigon.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.80 — ทำ 9:16 ครบทุก timeline ของ KT404 Highlights 2026-10-1
 
 ### รายละเอียด
