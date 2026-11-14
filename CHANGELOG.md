@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.80 — ทำ 9:16 ครบทุก timeline ของ KT404 Highlights 2026-10-1
+
+### รายละเอียด
+- สร้าง 9:16 ครบทุก timeline ของ `KT404 Highlights 2026-10-1` (67 อัน รวมตัวต้นแบบ) โครงเดียวกับตัวต้นแบบ: เกมบน / GIF preset `short` ใหม่ / อวาตาร์กลางกรอบล่าง / ซูมอวาตาร์เต็มจอตามช่วงซูม 16:9 / ซับสไตล์ใหม่ที่ผู้ใช้โหลด
+- ตรวจครบ 67 อัน: เสียง ซับ V1 ช่วงซูม ช่วง GIF สไตล์ซับ และ 1080x1920 ตรงกับต้นฉบับทุกอัน
+- ปรับกรอบเกมด้านบนให้อยู่ในพื้นที่เกมจริงของแต่ละไลฟ์ (RoV/Minecraft มีขอบดำในต้นฉบับ) อ่านค่ากลับครบ 67 อัน และดูภาพนิ่ง 1 อันต่อไลฟ์ (18 ไลฟ์)
+- บันทึกบทเรียน: วางคลิปเฟรมเรตต่างกันต้องลองเฟรมท้ายใกล้เคียง, รีสตาร์ต Resolve ทุก ~10 GB, ตรวจ `GetCurrentPage()` หลังเปิดใหม่, ไดรฟ์ G: ค้างทำให้ Resolve ปิดไม่ได้
+
+### Skill ที่อัปเดต
+- `vertical-video-reframing` (แก้ไข): `SKILL.md`
+- `vtuber-cover-batch-pipeline` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/vertical-video-reframing/SKILL.md`
+- แก้ไข `.agents/skills/vtuber-cover-batch-pipeline/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/hoshi-1489.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.79 — สร้างคลิปแนวตั้ง Katy404 วันที่ 27
 
 ### รายละเอียด
