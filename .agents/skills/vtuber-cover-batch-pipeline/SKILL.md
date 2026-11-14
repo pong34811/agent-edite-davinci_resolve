@@ -53,3 +53,5 @@ When the user wants `Thumbnails/` split by orientation, COPY (never move) from `
 - Vision on contact sheets is screening, not proof: low-res sheets yield wrong claims (a crop that starts below the text reads as 'text cut off', the big avatar reads as 'duplicate'). Confirm on a full-res crop that actually contains the region (measure the real text rows first) before changing anything.
 - The build script rewrites `delivery-manifest.json` from the rows it built, so `--only N` truncates the manifest. Always finish with a full rebuild before verify/package.
 - Red hook on red/brown footage is IMPORTANT, not CRITICAL (stroke keeps it readable); the compositor has no hook-colour parameter.
+- Landscape hook wider than `TEXT_MAX_WIDTH` (850 px) at `fit_text` min size 120 is drawn centred at x=505 and runs off the LEFT edge (`ของขวัญจาก Lovely` lost its first letter). Pass the hook as two lines (`["ของขวัญจาก", "Lovely"]`) instead of shortening a name (Hoshi 2026-09-01 covers, 2026-11-14).
+- Editor-added red circles/arrows in the source frame end up behind or around the pasted model and read as a second focus; pick a frame without them or blur the background.
