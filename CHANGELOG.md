@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.17.73 — release notes แสดง skill และไฟล์ที่เปลี่ยน
+
+### รายละเอียด
+- release ทุกเวอร์ชันมี 3 หัวข้อ: `รายละเอียด` (เขียนเอง), `Skill ที่อัปเดต` และ `ไฟล์ที่เปลี่ยน` (`release.py` สร้างให้จาก `git diff --name-status` ตั้งแต่ tag ก่อนหน้า)
+- รายการ skill บอกสถานะ ใหม่/แก้ไข/ลบ และไฟล์ในแต่ละ skill; รายการไฟล์บอก เพิ่ม/แก้ไข/ลบ/เปลี่ยนชื่อ ไม่รวม `VERSION`/`CHANGELOG.md` แสดงสูงสุด 40 บรรทัด
+- `AGENTS.md`, `project-learning` (0.2.1) และ `scripts/INDEX.md` อธิบายขั้นตอนใหม่: push commit เนื้อหาก่อน `--publish`, ห้ามพิมพ์รายการไฟล์เอง, stash `.mcp.json` ชั่วคราว
+- เพิ่ม test 5 ข้อใน `tests/test_release.py` ผ่านครบ 16/16; ทั้ง repo ผ่าน 446 ข้าม 35 ส่วนที่ตก 5 ข้อมีอยู่เดิมบน origin (โปรไฟล์ Armigon และ skill 2 ตัวอ้างสคริปต์ scratch ที่ไม่มี)
+
+### Skill ที่อัปเดต
+- `project-learning` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/project-learning/SKILL.md`
+- แก้ไข `AGENTS.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `scripts/INDEX.md`
+- แก้ไข `scripts/release.py`
+- แก้ไข `tests/test_release.py`
+
 ## v0.17.72 — กับดักการ release เมื่อมีหลาย session
 
 ### รายละเอียด
