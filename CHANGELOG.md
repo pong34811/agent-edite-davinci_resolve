@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.17.77 — โปรโมต Timeline หลัก Katy404 วันที่ 27
+
+### รายละเอียด
+- โปรโมต `Timeline 1_edit` ของ Katy404 วันที่ 27 เป็น `Timeline 1` ตามที่ผู้ใช้สั่ง และลบ Timeline ดิบเดิมด้วย unique ID; อ่านกลับทุก track แล้วเท่าเดิม (V2 5, V3 6, A2 13, S1 67)
+- สำรอง `pre_promote.drp` ไว้เป็นจุดย้อนกลับ และบันทึกในโปรไฟล์ช่อง Katy404
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.76 — โหลดซับ Mitr-short-001 ให้ 9:16 ของ KT404
 
 ### รายละเอียด
