@@ -48,6 +48,18 @@ This is a **reframing** workflow, not the raw-footage assembly covered by `resol
   `talking-avatar-vertical-copy` (fill height, overlays in the chest band).
 - **Full-frame 16:9 clips letterbox in a 9:16 timeline.** Budget a per-clip crop
   pass over gameplay segments instead of imposing a one-size template.
+- **Mixed-rate appends need a tolerant end frame.** In a 24 fps timeline,
+  `AppendToTimeline` of a 25/50 fps GIF or a 60 fps source range lands one
+  record frame short or long depending on rounding, and `GetSourceEndFrame()`
+  is inclusive for some GIFs. Try nearby source ends (`se+1`, `se`, `se+2`;
+  for video ±1 source frame), keep the first whose record range equals the
+  16:9 item, and delete the misses (KT404 HL 2026-10-1 9:16 batch).
+- **Do not walk dozens of timelines reading Fusion comps.** Activating each
+  timeline and calling `GetFusionCompByIndex` across 67 timelines hung
+  Resolve's scripting; the same comps read fine from the inactive timelines in
+  one pass. If Resolve hangs while its library is on `G:`, check `G:\` with a
+  thread timeout first: a stuck Drive leaves Resolve unkillable until the user
+  restarts Google Drive.
 
 ## Decision boundaries
 

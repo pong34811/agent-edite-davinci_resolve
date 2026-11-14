@@ -4638,7 +4638,7 @@
       "path": ".agents/skills/vertical-video-reframing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "3222512e4de028a6d5ffbb422b07322460d68c25d8fe651176ba403cd5b5f790"
+      "sha256": "b0e94a820c29109a4532db9c66512351d6e0d81f1c93f96e5e1451e10ec39192"
     },
     {
       "path": ".agents/skills/vertical-video-reframing/references/reference-study.md",
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "5cba68e57b31372fb354baf0be053270d3f10ac4e7e1bd787f230c1d90b82a7e"
+      "sha256": "04b4ad9ee1a1f856c781642f21f4b6cab4ef3d14f28e33626ed79a90b05dada6"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0709233b7e5171b87833d2e0c6831fb30dfefe0475b076826fbff11924f56e1"
+      "sha256": "39148c47f0b6257e1537e6375d01379e9b7df725b358f5f0febdee89581c104f"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b0690370a8a86e7eaa0c5b9e9575231aa145df0d41f69add5ffefea2a9400dd1"
+      "sha256": "54f458c7c25bf0f1dbea94a370a9a19688cb4ba95047709033c155d31507a7af"
     },
     {
       "path": "docs/channels/laffy.md",
