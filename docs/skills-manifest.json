@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "8e7606a381746f740416dcf032df5145d3556db154cfe854f9ca5c9fba255c7b"
+      "sha256": "5cba68e57b31372fb354baf0be053270d3f10ac4e7e1bd787f230c1d90b82a7e"
     },
     {
       "path": "docs/README.md",
@@ -4962,13 +4962,13 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "39148c47f0b6257e1537e6375d01379e9b7df725b358f5f0febdee89581c104f"
+      "sha256": "b0709233b7e5171b87833d2e0c6831fb30dfefe0475b076826fbff11924f56e1"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "aeb5f6ccbbe7684d35b3289cab91cf3b2be040659df4c6f15f21e87b38668745"
+      "sha256": "50303156084c30fbdbbcbc787a5ad9440fe56944081c7d8f02fb93ecc918d3a4"
     },
     {
       "path": "docs/channels/kael.md",
