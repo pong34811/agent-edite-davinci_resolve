@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.17.72 — กับดักการ release เมื่อมีหลาย session
+
+### รายละเอียด
+- `agent-skill-repo-release` เพิ่มกับดัก 2 ข้อ: `release.py --publish` ต้องการ working tree สะอาดและ `HEAD == origin/main` (push commit เนื้อหาก่อน, stash `.mcp.json` ชั่วคราว) และวิธีกู้ไฟล์เมื่อ session อื่น reset `main` ไปที่ `origin/main` ระหว่างทำงาน
+
 ## v0.17.71 — skill ทำ 9:16 คลิป VTuber เดี่ยว
 
 ### รายละเอียด
