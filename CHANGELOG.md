@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.17.78 — อัปเดต preset short และซับของ 9:16 KT404
+
+### รายละเอียด
+- อัปเดต video preset `short` ตามที่ผู้ใช้บันทึกใหม่: Zoom 0.42 / Pan 0 / Position Y 655.26 (เดิม 403.2) เก็บใน `scripts/video_presets.json` และใช้กับ GIF ทั้ง 2 ตัวบน `ไฟต์ท้ายเกมปิดชัยชนะ-League of Legends-vdo_9x16` แล้ว (อ่านค่ากลับตรงกัน)
+- แก้ `apply_vdo_preset.py --capture` ให้เก็บค่าจากคลิปบน track ของ preset (REACTIONS) ใต้ playhead แทน `GetCurrentVideoItem()` ที่ไปหยิบคลิปอวาตาร์ V3 ผิดตัว
+- เก็บสไตล์ซับใหม่ที่ผู้ใช้โหลดบน timeline นี้เป็น DRT อ้างอิงสำหรับทำ 9:16 ที่เหลือ; อัปเดต house-style, talking-avatar-vertical-copy และโปรไฟล์ Katy404
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `talking-avatar-vertical-copy` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/talking-avatar-vertical-copy/SKILL.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `scripts/apply_vdo_preset.py`
+- แก้ไข `scripts/video_presets.json`
+
 ## v0.17.77 — โปรโมต Timeline หลัก Katy404 วันที่ 27
 
 ### รายละเอียด
