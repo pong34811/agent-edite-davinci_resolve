@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.17.88 — แยกซับยาวในคลิปแนวตั้ง Yu-Gi-Oh ของ Laffy
+
+### รายละเอียด
+- แยก 2 cue ที่กว้างเกินเฟรมใน `รู้จัก Yu-Gi-Oh ได้ยังไง-vdo_9x16` ตามที่ผู้ใช้สั่ง: `ทุกวันเสาร์ | อาทิตย์เลยครับ` แยกที่เฟรม 726 และ `เรื่องนั้นคือเรื่อง | Yuki-o` แยกที่เฟรม 768 จุดแยกวางตรงช่วงเสียงเบาของเสียงพูด
+- ซับ 9:16 จาก 61 เพิ่มเป็น 63 cue ข้อความและเฟรมตรงตามแผนทุกตัว วิดีโอ/เสียงไม่เปลี่ยน และ backup .drp ไว้ก่อนแก้ ส่วน 16:9 ไม่ได้แตะ
+- render burn-in ยืนยันว่าสไตล์ `Mitr-short-001` ยังอยู่ และทั้ง 4 cue ใหม่อยู่ในเฟรม 1080
+- skill thai-subtitles-resolve (0.5.8) บันทึกวิธีแยก cue โดยไม่เสียสไตล์ของแทร็ก: ลบเฉพาะคลิปซับ แล้ว append SRT ลงแทร็กเดิม
+
+### Skill ที่อัปเดต
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`, `references/native-caption-migration.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/references/native-caption-migration.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.87 — ย้ายซับ Yu-Gi-Oh ของ Laffy ไป Subtitle track พร้อม preset
 
 ### รายละเอียด
