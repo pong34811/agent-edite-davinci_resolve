@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.17.94 — บันทึกการลบ Timeline สำรอง Bunny Girl ep10 (แก้ v0.17.93)
+
+### รายละเอียด
+- แก้ข้อผิดพลาดของ v0.17.93: บันทึกการลบ Timeline สำรองของ Bunny Girl ep10 ยังไม่ได้ลงโปรไฟล์ช่อง Katy404 เพราะการแก้ไฟล์ไม่สำเร็จ (ข้อความอ้างอิงไม่ตรง) ทั้งที่ release นั้นเขียนว่าบันทึกแล้ว รุ่นนี้เพิ่มบันทึกนั้นจริงแล้ว
+- เนื้อหาที่บันทึก: ลบ `Timeline 1_original`, `Timeline 1_base`, `Timeline 1_pop` ด้วย ID เหลือ `Timeline 1` อันเดียว ซึ่งอ่านกลับตรงกับก่อนลบทุก track, ไฟล์ย้อนกลับ `pre_delete_timelines.drp` และกับดักเรื่องสคริปต์ scratch ที่ไม่มี `__main__` guard จะทำงานซ้ำเมื่อถูก import
+- ทดสอบ: `pytest` ผ่าน 450 ข้าม 35
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.93 — ลบ Timeline สำรอง Bunny Girl ep10
 
 ### รายละเอียด
