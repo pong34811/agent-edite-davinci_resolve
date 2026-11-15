@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.99 — Export Katy404 2026-10-1 ครบ 134 คลิป (แนวนอน 67 + แนวตั้งพร้อมปก 67)
+
+### รายละเอียด
+- Render ส่งมอบคลิปไฮไลต์โปรเจกต์ `KT404 Highlights 2026-10-1` ครบ 134 ไฟล์ `.mov` (H.264/AAC 24 fps, preset `H.264 Master`, ซับไทยฝังในภาพ burn-in) ไปที่ `G:\My Drive\Projects\Katy404\2026-10-1\vdo`: แนวนอน 67 ไฟล์ (1920x1080) ไม่ใส่ปก และแนวตั้ง 67 ไฟล์ (1080x1920) พร้อมแทรกปกคลิป (`.jpg`) ที่เฟรมแรก (frame 0) 1 เฟรม
+- ตรวจสอบคุณภาพผ่านครบ 134/134 PASS: ffprobe ยืนยันขนาดภาพ, framerate 24 fps, audio stream, ซับไตเติล burn-in ทุกไฟล์ และตรวจ SSIM เฟรม 0 ของแนวตั้งเทียบภาพปก ≥ 0.90 ครบถ้วน
+- ไม่แตะต้อง Timeline ต้นฉบับ: ใช้โครงสร้างสำเนาชั่วคราว `__cover_tmp` ในการแทรกปกและเรนเดอร์ พร้อมลบออกอัตโนมัติ Media Pool สะอาดคงเหลือ 134 timeline หลัก
+- ปรับปรุง `scripts/p2_export_final.py`: เพิ่ม directory caching ป้องกันการสแกน I/O ซ้ำบน Google Drive, ปรับ auto-resume render queue ให้ทำงานต่อเนื่องเมื่อคิวหยุดชั่วคราว, และเพิ่ม defensive error handling เมื่อ reference โปรเจกต์หลุด
+- ปรับปรุง `scripts/backup_drp.py`: รองรับพฤติกรรม Resolve 21 ที่ `pm.SaveProject()` คืนค่า `None` เมื่อโปรเจกต์ไม่มีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก
+- บันทึกผลการส่งมอบและสถานะใน `docs/channels/katy404.md`
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `scripts/backup_drp.py`
+- แก้ไข `scripts/p2_export_final.py`
+
 ## v0.17.98 — Katy404 วันที่ 28 ลบ Timeline สำรอง
 
 ### รายละเอียด
