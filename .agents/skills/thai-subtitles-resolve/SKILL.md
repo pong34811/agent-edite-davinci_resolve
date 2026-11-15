@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.7
+version: 0.5.8
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
