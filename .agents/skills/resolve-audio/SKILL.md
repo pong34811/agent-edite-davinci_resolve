@@ -1,7 +1,7 @@
 ---
 name: resolve-audio
 description: Audio and Fairlight work in the DaVinci Resolve MCP. Apply when setting audio properties, syncing audio, isolating voice, generating subtitles, planning Fairlight track/bus layouts, checking loudness, routing buses, or splitting/trimming/converting audio — live in a running Resolve OR offline. Routes to the live audio tools, the offline audio planning/bus-routing tools, and the Fairlight kernel.
-version: 0.3.1
+version: 0.3.2
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -168,7 +168,8 @@ with remedies and are never auto-corrected — report them, do not paper over th
   loud + lift soft, BackgroundReduction off, OutputGain 0) alone rendered -13.7 LUFS,
   LRA 3.4 LU, true peak -1.0 dBFS with SFX/BGM on top. It also lifts game sounds in
   speech-free pauses (one pause -15.9 LUFS). `OutputGain` read back 0.0 after the set
-  and 2.0 on a later read (re-applied, it then held through a render at -14.0 LUFS): re-read it right before a render. Always confirm with a render.
+  and 2.0 on a later read (re-applied, it then held through a render at -14.0 LUFS): re-read it right before a render. Always confirm with a render. The leveler keys are
+  "[Active Timeline Only]": on an inactive timeline they all read `False`; activate first.
 - **SaveProject is slow on a large project.** On a ~100-timeline project in a
   Google Drive library, each activate + set + `SaveProject` took about 30-60 s.
   Windows showed Resolve as "Not responding" the whole time, but the log kept

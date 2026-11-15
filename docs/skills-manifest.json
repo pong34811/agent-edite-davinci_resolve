@@ -3772,7 +3772,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "826d81a1119039e2ab118d290257a8c896b93f2cb60748e61005e573bef71ef1"
+      "sha256": "15da633aad27d49bdca25c0dba0faa0cafc2b5a500a574700345f9c68aa53363"
     },
     {
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "f92473c79ba2153863d9a60addffe36f8c30367d5c0ebb3e8dba56156b4557f7",
+      "sha256": "c579bc213aa977cbfa2741352856469e52e35151a179f0c468cc46fb9dafcddb",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "264974aa987b224205e59febbd3d141e1a8c9e697af16cf379ae46e0be49f31b",
+      "sha256": "1178526e6c77be9970d46cfeb0017ce4ccce9d8c2f82c0adf7630ad795c19c67",
       "kind": "integration_or_validation"
     },
     {
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "856ab99358794acbf53f44e30cd786672cefff1ad1fa87716b3d16b3f5d569b6"
+      "sha256": "b1dd565ad15fbbd18288c424e0ca1468640b22d2422913e053b59d97a45a70ae"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8907,7 +8907,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.94",
+  "bundle_version": "0.17.95",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
