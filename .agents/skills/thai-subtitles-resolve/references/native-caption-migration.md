@@ -59,3 +59,12 @@ not permission to edit a project, change fonts, render, or migrate other clips.
 - SaveProject, read back each modified target, restore the state captured at
   this continuation's start, and verify it after page switches settle. Record
   exact remaining exceptions and deferred user-owned work, not blanket completion.
+
+## Resolve 21.1 "Subtitle as Text+" timelines (Laffy Yu-Gi-Oh, 2026-11-15)
+
+When a timeline has a disabled Subtitle track plus a video track `Subtitle as Text+` (Fusion Title clips made from those cues), the native track usually still holds the same cues. Compare the Text+ clip names and start/end with the live `GetName()` and frames of the subtitle items (an MCP `clip_where` on the subtitle track is enough), then migrate by enabling the Subtitle track and disabling the Text+ track. Do not rebuild the cues.
+
+- **Do not read Text+ `StyledText` live.** A `TextPlus.GetInput("StyledText")` loop over 61 clips hung Studio 21.1.0.17 (Not Responding, recovered with `resolve_recover.py`). Reading `Size` on the same tools had worked minutes earlier. A DRT does not help either: its `CompositionBA` for these clips holds only comp prefs, with no text.
+- **The DRT `<Name>` of a subtitle cue can be stale.** The Name kept the long pre-split phrase (`อยากรู้ไหมคะว่าผมรู้จักยูกิโอได้ยังไง` on four cues), while `GetName()` gave the edited short cue. An unchanged DRT imported back gave all 61 live texts, so the round trip is safe. Never rewrite cue text from the DRT `<Name>`; test-import once and compare `GetName()` before trusting a DRT edit.
+- **Preset through DRT:** `drt_set_subtitle_preset` (track 1) -> rename the old timeline `<name>_old` -> import -> rename to `<name>` -> enable ST1 and disable the Text+ track -> compare every track (items, offsets, V1-V3 transforms, audio volume) with the old dump. Keep `_old` until the user asks to delete it.
+- **Width on 9:16:** `Mitr-short-001` renders about 101 px Mitr SemiBold, so a cue over ~1000 px (`ทุกวันเสาร์อาทิตย์เลยครับ`, `เรื่องนั้นคือเรื่อง Yuki-o`) runs past the 1080 frame. Estimate every cue with Pillow `getlength` at the calibrated size, then report the cues that run over and ask before splitting them.
