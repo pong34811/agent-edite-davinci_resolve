@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.17.92 — อัปเดต Timeline หลัก Bunny Girl ep10
+
+### รายละเอียด
+- อัปเดต Timeline หลักของ Bunny Girl ep10 (Katy404) ตามคำสั่งผู้ใช้: `Timeline 1_pop_mitr` เปลี่ยนชื่อเป็น `Timeline 1` แล้ว ส่วน `Timeline 1` ดิบเดิมเปลี่ยนชื่อเป็น `Timeline 1_original` (ผู้ใช้ไม่ได้สั่งลบ จึงไม่ลบ timeline ใด)
+- ผลที่อ่านกลับแล้ว: ทั้งสอง timeline ทุก track ตรงกับก่อนเปลี่ยนชื่อ (V1 7, V2 7, V3 5, A1 4, A2 46, A3 2, ซับ 165, 9762 เฟรม) บันทึกโปรเจคแล้ว และมีไฟล์ย้อนกลับ `pre_promote.drp`
+- บันทึกขั้นตอนนี้ลงโปรไฟล์ช่อง Katy404
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.91 — ตัดต่อ Bunny Girl ep10 ของ Katy404 แบบ Pop Kinetic
 
 ### รายละเอียด
