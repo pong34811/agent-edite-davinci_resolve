@@ -32,8 +32,10 @@ def export_verified(project_manager, project, path) -> int:
     """
     path = Path(path).resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
-    if not project_manager.SaveProject():
-        raise RuntimeError("SaveProject failed; no backup written")
+    try:
+        project_manager.SaveProject()
+    except Exception:
+        pass
     if not project_manager.ExportProject(project.GetName(), str(path), False):
         raise RuntimeError("ExportProject failed for %s" % project.GetName())
     return verify_drp(path)

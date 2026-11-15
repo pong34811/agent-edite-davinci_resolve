@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "c42880867bd01c55cc7e23abf3b5e6312e7d4e207f8871067c0dd27086a9be81",
+      "sha256": "6289072191dac99c0b788ea4cf1aefb07b0c63bf8753c554db7dd652fa2ac24d",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "ccfbce6f65bd893043ae32b46637fc820f36b5dfef98a052ab2d77200b94a595",
+      "sha256": "600994b0fc01863f0bf5c2d00427da8cc5be1c288769db8d31148ddc70c01256",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "1380dcc3f5d271c21cd015d7f71090290e2584becd6057524561b77e0bb76359"
+      "sha256": "f7cd2ecf30479cf7587200a0e96f9f8b0e237bbdfd5be26c8785e5826c5ce20d"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9386e37af88d3dc346c58e045e3f701eab21ac09d1e9cebb907ebda78ffd7ef5"
+      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "1b51dd89f134991ab224215f91cb3f8f9d9bfa4e3a21f7ba4b9a14bf6f965e48"
+      "sha256": "0561b3e84474409c3e7ea8117b0b52dfc00a314af69052eafc9dabf9227d5cc6"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7221,7 +7221,7 @@
       "path": "scripts/backup_drp.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "183dfe5c7e5c6f576e3593d43bac7699010349faece51411bcb1a71455013c73"
+      "sha256": "5ec4cf4467de51b5e163fcd4c162d7f15851fdbd13f9fa59965fc17220e3f4c2"
     },
     {
       "path": "scripts/build_9x16_batch.py",
@@ -7763,7 +7763,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "14c0d16a852b421ccafd725109964bea762d19f6f3418fc131231eb17fe111bc"
+      "sha256": "138e843822ad09729bc2d6420f67478605251a80459570ad975dcebb6e9f3448"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -8907,7 +8907,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.97",
+  "bundle_version": "0.17.98",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

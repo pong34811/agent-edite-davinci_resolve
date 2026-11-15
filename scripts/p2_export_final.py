@@ -213,9 +213,31 @@ def _probe(path):
     return json.loads(out.stdout)
 
 
+_DIR_CACHE: tuple[str, list[Path]] | None = None
+
+
+def clear_dir_cache() -> None:
+    global _DIR_CACHE
+    _DIR_CACHE = None
+
+
+def _get_dir_entries(vdo_path: str | Path) -> list[Path]:
+    global _DIR_CACHE
+    v_str = str(vdo_path)
+    if _DIR_CACHE is None or _DIR_CACHE[0] != v_str:
+        try:
+            entries = [p for p in Path(vdo_path).iterdir() if p.is_file()]
+        except OSError:
+            entries = []
+        _DIR_CACHE = (v_str, entries)
+    return _DIR_CACHE[1]
+
+
 def _output_matches(out_name):
-    return sorted(p for p in Path(VDO).glob(out_name + ".*")
-                  if p.is_file() and p.suffix.lower() not in (".jpg", ".ini", ".db"))
+    entries = _get_dir_entries(VDO)
+    prefix = out_name + "."
+    return sorted(p for p in entries
+                  if p.name.startswith(prefix) and p.suffix.lower() not in (".jpg", ".ini", ".db"))
 
 
 def _find_output(out_name):
@@ -426,6 +448,7 @@ def _run(r, argv, covers):
             tl = src.DuplicateTimeline(j["out_name"] + TMP)
             assert tl, "DuplicateTimeline failed"
             time.sleep(GAP)
+            p = pm.GetCurrentProject() or p
             p.SetCurrentTimeline(tl)
             time.sleep(GAP)
             j["tmp"] = tl.GetName()
@@ -468,24 +491,47 @@ def _run(r, argv, covers):
         print("JOB", j["out_name"], jid, flush=True)
         time.sleep(0.5)
     except Exception:
+        curr_p = pm.GetCurrentProject() or p
         for jj in queued + [cur]:
-            if jj.get("job"):
-                p.DeleteRenderJob(jj["job"])
-            if jj.get("tmp"):
-                t = next((p.GetTimelineByIndex(i) for i in range(1, p.GetTimelineCount() + 1)
-                          if p.GetTimelineByIndex(i).GetName() == jj["tmp"]), None)
-                if t:
-                    p.SetCurrentTimeline(src_keep)
-                    time.sleep(GAP)
-                    mp.DeleteTimelines([t])
+            if jj.get("job") and hasattr(curr_p, "DeleteRenderJob"):
+                try:
+                    curr_p.DeleteRenderJob(jj["job"])
+                except Exception:
+                    pass
+            if jj.get("tmp") and hasattr(curr_p, "GetTimelineCount"):
+                try:
+                    t = next((curr_p.GetTimelineByIndex(i) for i in range(1, curr_p.GetTimelineCount() + 1)
+                              if curr_p.GetTimelineByIndex(i) and curr_p.GetTimelineByIndex(i).GetName() == jj["tmp"]), None)
+                    if t:
+                        curr_p.SetCurrentTimeline(src_keep)
+                        time.sleep(GAP)
+                        mp.DeleteTimelines([t])
+                except Exception:
+                    pass
         raise
     assert p.StartRendering([j["job"] for j in queued]), "StartRendering failed"
     pending = {j["job"]: j for j in queued}
     done = OUT / "done.jsonl"
     while pending:
         time.sleep(6)
+        if hasattr(p, "IsRenderingInProgress") and not p.IsRenderingInProgress():
+            ready = [jid for jid in pending if (p.GetRenderJobStatus(jid) or {}).get("JobStatus") == "Ready"]
+            if ready:
+                p.StartRendering(ready)
         for jid in list(pending):
-            st = p.GetRenderJobStatus(jid) or {}
+            func = getattr(p, "GetRenderJobStatus", None)
+            if not callable(func):
+                try:
+                    p = pm.GetCurrentProject() or p
+                    func = getattr(p, "GetRenderJobStatus", None)
+                except Exception:
+                    pass
+            if not callable(func):
+                continue
+            try:
+                st = func(jid) or {}
+            except Exception:
+                continue
             s = st.get("JobStatus")
             if s in ("Complete", "Failed", "Cancelled"):
                 j = pending.pop(jid)
@@ -494,6 +540,7 @@ def _run(r, argv, covers):
                 with done.open("a", encoding="utf-8") as fh:
                     fh.write(json.dumps(j, ensure_ascii=False) + "\n")
                 print("DONE", j["out_name"], s, flush=True)
+    clear_dir_cache()
     for j in queued:
         errors=verify_one(j,covers) if j["status"] == "Complete" else [j.get("render_status")]
         j["qc_errors"]=errors
