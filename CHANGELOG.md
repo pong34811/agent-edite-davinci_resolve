@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.17.97 — Katy404 วันที่ 28 FINAL + 9:16
+
+### รายละเอียด
+- Katy404 วันที่ 28 FINAL 16:9: ระหว่าง render ผู้ใช้ตัดหัว 6.3 วิ (เมนูหยุดเกม + นับ 1-2-3) ออกจาก `Timeline 1` เหลือ 5785 เฟรม; คลิปซูมแรกที่ถูกตัดหัวทำ render ล้ม ("Fusion composition at 00:00:06:12") จึงสร้าง track `VTuber Zoom` ใหม่ผ่าน DRT ตามช่วงของผู้ใช้ทุกช่วง แล้ว import เป็น `Timeline 1` ใหม่ (track อื่นตรงกับที่ผู้ใช้ตัดทุกชิ้น, Dialogue Leveler ยังอยู่, คืน BGM fade-in 12 เฟรมที่หายไปกับการตัด); ไฟล์ `วันที่ 28_FINAL_2026-11-15.mp4` 1920x1080@60, 5785 เฟรม, -13.0 LUFS, peak -1.1 dBFS, ไม่มีเฟรมดำ
+- Katy404 วันที่ 28 9:16: `Timeline 1_9x16` 1080x1920 (Game Top / REACTIONS GIF preset `short` / VTuber Bottom 2.8x / VTuber Full 3.2x ตามช่วงซูม) ซับ `Mitr-short-001` ผ่าน DRT ไม่เขียนฐานข้อมูล; ซับ/เสียง/V1 ตรงกับ 16:9; ไฟล์รีวิว `วันที่ 28_9x16_test_2026-11-15.mp4` 5785 เฟรม -13.0 LUFS ไม่มีเฟรมดำ ซับอยู่เหนือผมไม่บังหน้า
+- `rebuild_trimmed_zoom_clip.py`: เพิ่มคำเตือนว่าถ้า InsertGenerator ล้มหลังลบ clip track จะว่าง ให้ใช้เส้นทาง DRT (`drt_rebuild_focus_track.py`) แทน; OPERATING-NOTES เพิ่มกฎอ่าน timeline ซ้ำก่อน render ทุกครั้ง และย้ายแถว "Quiet raw mic recording" ที่ v0.17.95 วางผิดที่ (หลุดออกนอกตาราง) กลับเข้าตาราง
+- timeline ที่เก็บไว้: `Timeline 1_original` (ดิบ) และ `Timeline 1_pre_zoomfix` (ก่อนแก้ซูม, V2 ว่าง) ยังไม่ลบ
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `scripts/rebuild_trimmed_zoom_clip.py`
+
 ## v0.17.96 — Katy404 วันที่ 28 promote Timeline หลัก
 
 ### รายละเอียด
