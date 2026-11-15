@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.17.93 — ลบ Timeline สำรอง Bunny Girl ep10
+
+### รายละเอียด
+- ลบ Timeline สำรองของ Bunny Girl ep10 (Katy404) ตามคำสั่งผู้ใช้: `Timeline 1_original`, `Timeline 1_base`, `Timeline 1_pop` ลบด้วย ID แล้ว เหลือ `Timeline 1` (งานตัดต่อที่อัปเดตเป็น Timeline หลักไว้แล้ว) เพียงอันเดียว
+- ผลที่อ่านกลับแล้ว: `Timeline 1` ทุก track ตรงกับก่อนลบ (V1 7, V2 7, V3 5, A1 4, A2 46, A3 2, ซับ 165, 9762 เฟรม) บันทึกโปรเจคแล้ว และมีไฟล์ย้อนกลับ `pre_delete_timelines.drp`
+- บันทึกขั้นตอนและกับดักลงโปรไฟล์ช่อง Katy404: สคริปต์ scratch ที่ไม่มี `__main__` guard จะทำงานซ้ำเมื่อถูก import
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.92 — อัปเดต Timeline หลัก Bunny Girl ep10
 
 ### รายละเอียด
