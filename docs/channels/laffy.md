@@ -46,6 +46,20 @@
 - การ์ด V3 วางกลางช่วงอก (y ~1180) แทน preset `short`: แผงขวา Zoom 1.234 Pan -446 Tilt -261, แผงซ้าย Pan +446, Kaiju Zoom 0.982 Pan 0 Tilt -277 **ผู้ใช้ยังไม่อนุมัติให้ใช้แทน `short`** ให้ถามก่อนใช้ซ้ำ (skill `talking-avatar-vertical-copy`)
 - render ตรวจภาพ (ไม่มีเสียง) ซับ Mitr Font อยู่ y ~0.85–0.95 ไม่ล้นขอบ การ์ดไม่บังหน้า
 
+## งาน "รู้จัก Yu-Gi-Oh ได้ยังไง" (2026-11-15)
+- library `laffy_project` โปรเจกต์ `รู้จัก Yu-Gi-Oh ได้ยังไง` ขนาด 1920x1080 30 fps ฟุตเทจ OBS 720p อยู่ที่ `Z:\laffy\รู้จัก Yu-Gi-Oh ได้ยังไง\` (เป็นไฟล์ media ไม่ใช่ library Drive Z ให้อ่านอย่างเดียว)
+- timeline ต้นฉบับ `รู้จัก Yu-Gi-Oh ได้ยังไง-vdo` (id 0dd3efe9..., 1323 เฟรม) layout ต่างจากงาน 004:
+  - V1 ฟุตเทจตัดเป็น 23 ชิ้น
+  - V2 Adjustment Clip 10 ตัว ซูมด้วย Inspector 1.28/1.54/2.03x
+  - V3 รูปเต็มจอ 8 รูป
+  - V4 ซับ Text+ 61 ตัว ฟอนต์ Mitr Size 0.07 ที่ y 0.12
+  - ST1 ปิดอยู่
+  - A1 เสียงพูด, A2 BGM, A3/A4 SFX
+- `รู้จัก Yu-Gi-Oh ได้ยังไง-vdo_9x16` (id fdee0121...) สร้าง 2026-11-15 ตั้ง V1 Zoom 3.1605 Pan +83.6 (ให้ผมอยู่กลางเฟรม) และย่อซูม V2 ตามสัดส่วนเป็น 1.06/1.12/1.23x ผู้ใช้เลือกวิธีนี้
+- V3 ใช้ preset `short` ภาพนิ่ง QC พบว่ารูปบังหน้าทุกรูป ตามกฎบ้านให้รายงานแต่ห้ามย้ายรูปเอง
+- ซับ Text+ บน 9:16 เล็กลงเหลือ 56% ของขนาดเดิม ต้องถามก่อนแก้
+- backup: `.hermes/projects/laffy-yugioh/backup/pre_9x16_*.drp`
+
 ## ซับ เสียง และ enrichment
 - ซับ: ใช้ Descript (`language: auto`) แล้วแบ่ง cue ด้วยมือ ตามกฎ house-style ไม่เกิน 14 ตัวอักษร ไม่เกิน 1.5 วิ
   - ใช้ชื่อการ์ดภาษาอังกฤษ (Underworld Goddess, I:P Masquerena, Kaiju) และเขียนตัวเลขเป็นตัวเลข

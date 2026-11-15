@@ -4588,7 +4588,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "eaa0b8b5929cd42be8aceb91dc6ff6967af3ca1d11426ec579df5c97f9838efb"
+      "sha256": "23a131b6c95e9f110f3edd89021b1cc9c2429efdad8b80c97abbb6dc9eff7af8"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -4986,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "df03d2ca4f8d649337ee53a50a0f8d08e5890efb914dc1403c99208605489af3"
+      "sha256": "08689e3b76b7325463f69a945dca3367ac878bd9692fe0bf7fb9a740d9b24e5a"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
