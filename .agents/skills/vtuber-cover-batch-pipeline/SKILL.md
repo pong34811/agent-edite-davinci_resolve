@@ -29,6 +29,7 @@ with the shared Resolve helpers. Do not use screenshots or GUI automation.
 7. Measure each source's stream-overlay layout (below), build all, `python -m cli.verify`, QC sheets (<=25 covers per sheet, landscape and Shorts separately), fix, FULL rebuild, verify, write `reports/<ch>/<date>/qc-summary.md`, `cli.package`, `python -m cli.organize` (re-syncs `_LATEST`; `cli.open` alone leaves it on the previous batch), `cli.open <channel>`.
 
 ## Delivery to a user-named folder
+Ask or check the channel profile for the folder layout: Katy404 wants every cover flat in `Thumbnails/` (no orientation subfolders, user 2026-11-15); other channels (Hoshi) used `Horizontal_16x9` / `Vertical_9x16`.
 When the user wants `Thumbnails/` split by orientation, COPY (never move) from `outputs/<ch>/<date>/` into `<project>/Thumbnails/Horizontal_16x9` and `Vertical_9x16` (split on the `_9x16.jpg` suffix), check sizes with Pillow (1920x1080 / 1080x1920) and md5-compare against `outputs/`. After every later rebuild re-copy ONLY the changed filenames and re-run the md5 compare, otherwise the user's folder silently holds stale covers.
 
 ## Parallel QC and fix (subagents)
