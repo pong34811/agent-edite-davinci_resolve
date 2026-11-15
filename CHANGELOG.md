@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.17.90 — รูปประกอบเต็มจอในคลิปแนวตั้ง Yu-Gi-Oh ของ Laffy
+
+### รายละเอียด
+- ตั้งรูปประกอบบน V3 ของ `รู้จัก Yu-Gi-Oh ได้ยังไง-vdo_9x16` ทั้ง 8 รูปให้เต็มจอตามที่ผู้ใช้สั่ง ใช้ cover zoom 1.25–3.56 และ Pan/Tilt 0 แทน preset `short` ที่ทำให้รูปเล็กบังหน้า
+- ค่าทุกรูปอ่านกลับมาตรง และ backup .drp ไว้ก่อนแก้ ภาพนิ่ง QC ทั้ง 8 จุดเต็มเฟรม ไม่มีขอบดำ
+- รูปกว้างถูกตัดข้างกลางภาพ เช่น ตัวอักษรมีมใน `hq720.jpg`
+- house-style เพิ่มข้อยกเว้น: รูปที่เป็นภาพเต็มจอใน 16:9 ต้องเต็มจอใน 9:16 ด้วย ส่วน `short` ใช้กับ GIF และ overlay อื่น
+- อัปเดต skill talking-avatar-vertical-copy และโปรไฟล์ Laffy ให้ตรงกับกฎใหม่
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `talking-avatar-vertical-copy` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/talking-avatar-vertical-copy/SKILL.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.89 — ตรวจและจัดเวลาซับคลิปแนะนำตัว Laffy ให้ตรงเสียง
 
 ### รายละเอียด
