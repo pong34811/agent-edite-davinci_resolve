@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.89 — ตรวจและจัดเวลาซับคลิปแนะนำตัว Laffy ให้ตรงเสียง
+
+### รายละเอียด
+- ตรวจซับคลิปแนะนำตัว Laffy เทียบกับเสียง: cue เดิมที่แบ่งตามจำนวนตัวอักษรช้าหรือเร็วกว่าเสียงสูงสุด 1.7 วิ (39 cue เกิน 0.5 วิ) จึงจัดเวลาใหม่เป็น 151 cue โดยข้อความยังเป็นของ Descript ทุกตัว ใช้จุดเริ่มประโยคของ Descript + แผนที่เสียง 10 ms + Whisper (ในเครื่อง, ผู้ใช้อนุญาต, ใช้แค่เวลา) ผลตรวจ: ไม่มี cue ขึ้นก่อนเสียง ไม่มีช่วงพูดที่ไม่มีซับ caption_lint ผ่าน และ track อื่น/การ์ด/ซูม/เสียงไม่เปลี่ยน
+- render `laffy_intro_edit_v5.mov` 4407 เฟรม -14.4 LUFS peak -0.5 dBFS ตรวจภาพเฟรมที่แก้แล้ว
+- บันทึกวิธีตรวจ sync และกับดัก (Resolve auto-caption ภาษาไทยได้ 0 cue, Descript project เข้าไม่ได้เมื่อเปลี่ยนบัญชี, ช่วงเสียงคร่อมประโยคต้องตัดไม่ใช่ทิ้ง) ใน OPERATING-NOTES และ skill thai-subtitles-resolve
+- house-style: ใช้ Whisper ในเครื่องเป็นตัวอ้างอิงเวลาได้ (ไม่ใช้เป็นข้อความซับ)
+- ทดสอบทั้งชุดผ่าน 450 ตัว (ข้าม 35)
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.88 — แยกซับยาวในคลิปแนวตั้ง Yu-Gi-Oh ของ Laffy
 
 ### รายละเอียด
