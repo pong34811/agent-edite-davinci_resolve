@@ -1365,7 +1365,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "abb7e7edb5e619e6d8efa8c2e9c0213477d0bc2a52cc077986ee3aee60bd477c"
+      "sha256": "69a3bf906483c2db2bbf8744a6687499d5f5d12a4e3e53ecb619332004688e0f"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4588,7 +4588,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "9ee3b749005bda5c15a1137369852a689446a04ad4f408425c86ba3d26d12a9a"
+      "sha256": "e8412da0cadab985bc654e7d029897bc83fecb2db6b5e5b644060b7059055f24"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "2493003503227367c46b66a6b6532f773696319bfea720c001b2920b3aafa084",
+      "sha256": "ae0249d2b84bf188f72a113843cdb8085034b986dbdc20b2acd1f15000b48c94",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "69ea65640fdee371b78cd51e11d8995c9c06219dc336fe705ffb91c8b258fdb9",
+      "sha256": "45da51b0fb1df2cbc9e9a7a69e4b1d23ce8b9825f1bda00407212336a975f0fe",
       "kind": "integration_or_validation"
     },
     {
@@ -4986,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "85f4c003300de1139efa8a1229e7cef33512c29346975a5d1dee1bbfd55713b3"
+      "sha256": "dea7c4dfd0dfcdb8fda2c8be1113f548f384712b12698d505b6b370bd43e22c2"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.88",
+  "bundle_version": "0.17.89",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

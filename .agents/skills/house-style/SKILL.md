@@ -172,6 +172,14 @@ even where a full-frame avatar crop puts it over the face. The user asked for
 overlap in the bedroom shots (Aomi-mama 2026-10, 2026-11-07). The trap is
 re-placing overlays to dodge the face: report the overlap, do not move them.
 
+Exception: a still that is a **full-frame cutaway** in the 16:9 (Zoom 1, filling
+the 16:9 frame) must also fill the 9:16 frame. Use the cover zoom
+`max(1080/(W*s), 1920/(H*s))` with `s = min(1080/W, 1920/H)` and Pan/Tilt 0, not
+`short`. Why: on Laffy Yu-Gi-Oh (2026-11-15) `short` put every full-screen image
+as a small card over the face, and the user asked for "เต็มจอไปเลย ทุกรูปภาพ".
+The trap: a centre crop of a wide image (1200x600, 686x386) cuts its sides,
+including meme captions. Report what was cut instead of guessing a pan.
+
 ## Shot selection
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->
