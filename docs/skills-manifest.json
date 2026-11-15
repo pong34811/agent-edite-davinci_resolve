@@ -1365,7 +1365,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "fbd862e5d9202cd431d5509a0d3aecd7971e840ea9a6b3045795fa19c216a811"
+      "sha256": "abb7e7edb5e619e6d8efa8c2e9c0213477d0bc2a52cc077986ee3aee60bd477c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -4608,7 +4608,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "812cfb9366a0898d9bee369f9ba2c8461da4577e40088812bb1a92e403841cd0"
+      "sha256": "ce507dc68776150a9df09953d2c4d76ade9c8934ef330152a4ad48e6afe65f43"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "3e556835b48268ad334e9a229291427ecd410f6b19ef6b0802d6b0c536184cde",
+      "sha256": "2493003503227367c46b66a6b6532f773696319bfea720c001b2920b3aafa084",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "f7314ba8e792befac1b6cb46da4ca148ef04284a3e28ab654855f9b5001153e8",
+      "sha256": "69ea65640fdee371b78cd51e11d8995c9c06219dc336fe705ffb91c8b258fdb9",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fa76e2f64bf860990208be4b8c9076dd70a82fcc2e90dda0c77f5da752f7181c"
+      "sha256": "b9eaf6a8368e3d9c521f5963223c5811fc6b7cb964622457704c6ce0d2fdc9a3"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9386e37af88d3dc346c58e045e3f701eab21ac09d1e9cebb907ebda78ffd7ef5"
+      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4986,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d9be231fe70f987215e40cde8bd351847ae284b0986ebb5960d7167b708bf22e"
+      "sha256": "85f4c003300de1139efa8a1229e7cef33512c29346975a5d1dee1bbfd55713b3"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.87",
+  "bundle_version": "0.17.88",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.8
+version: 0.5.9
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -160,6 +160,17 @@ Worked for a 72 s gameplay clip: ffmpeg decode -> `scripts/asr_words_th.py` (fas
   ambiguous on audio alone: take the user's ear as a pin (`PINS`). Apply new times by DRT (Start/Duration +
   `_patch_fields_blob`), import as the same name, compare every non-subtitle item, render one frame in the pause and
   one on the word. Local faster-whisper (even `small`) hung > 5 min while Resolve held the GPU: do not rely on it.
+
+## Sync check after a Descript build (2026-11-15, Laffy intro, 146.9 s @ 30 fps)
+
+Character-count splitting inside a Descript segment looks fine on an energy check yet drifts up to 1.7 s at
+pauses. Verify with three references together: Descript segment starts (they hit the voice onset within
+~0.05 s; exact 4.000 s ends are placeholders), the 10 ms energy map, and local Whisper word times used only
+for relative timing inside a segment (user-approved timing reference; text stays Descript). Re-pack cues at
+pauses (<= 14 Thai chars, <= 1.5 s), keep names in a custom newmm dictionary (`ลาฟฟี่`, `แหยะๆ`) and glue a
+lone `ๆ` to its word. Accept only when every segment's spread against Whisper is small, no cue starts in
+silence and no speech is uncovered; then replace the track by DRT (`clone_styled_subtitle_track` with the
+timeline's own DRT as the style source) and compare every non-subtitle item. Details: OPERATING-NOTES.
 
 ## The three findings that matter
 

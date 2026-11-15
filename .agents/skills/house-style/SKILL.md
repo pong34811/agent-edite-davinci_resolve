@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.7
+version: 0.3.8
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -116,6 +116,8 @@ clip length. The user rejected Whisper text on a long stream (Aomi-mama,
 2026-11-07) and stopped a local Whisper pass on a 2-minute Bunny Girl episode
 in favour of Descript (ep6, 2026-11-08). The trap is assuming a short clean read
 is safe for local ASR; use the silence map only for timing.
+Local Whisper may serve as a word-TIMING reference to align Descript text (never as caption text): the
+user approved it for the Laffy intro sync check (2026-11-15) after Resolve auto-captions returned nothing.
 
 When one SFX pushes a test render's peak above -0.5 dBFS, lower only that SFX
 item (a pop on a loud word: -9 to -12 dB) and re-render under a new name; do not

@@ -23,8 +23,9 @@
   - V2 `VTuber Zoom` 8 ช่วง Fusion 1.32x (window 0.04/0.80/0.485), V3 `REACTIONS` การ์ดคีย์เวิร์ด 21 ใบ (ซ้าย cx 280 / ขวา cx 1640, y 400), A2 `SFX` pop -13 dB x21 + Record Scratch -15 dB ที่ 2963, A3 `BGM` `bgm_lofi_chill_loop_04.wav` -22 dB 2 ท่อนต่อกันที่ 2304 fade in 15 / out 90, Subtitle 1 `Mitr Font` 165 cue (Descript)
   - render `render\laffy_intro_edit_v3.mov` (H.264 + AAC, -14.4 LUFS, peak -0.5 dBFS, 4407 เฟรม) ; v2 ยังเป็นชื่อสะกดผิด, v1 peak 0.0 dBFS (pop -9) ใช้ไม่ได้
   - 2026-11-15 แก้ชื่อ: cue 222-244 `LaffeyNilvalen` (DRT round trip) + การ์ดชื่อ `card01b.mov`; timeline ปัจจุบัน id e9ea6ca9..., เวอร์ชันก่อนแก้เก็บเป็น `เเนะนำตัว 3 นาที_edit_old`
-  - ไฟล์งาน `edit2\` (backup `.drp`, DRT, cards/png + mov) สคริปต์ `scripts/scratch/laffy_intro/`
-  - ยังไม่ยืนยัน: คำอุทาน "ย่า" ใน cue แรก, ยังไม่ได้ฟังทั้งคลิป; รอผู้ใช้รีวิว
+  - ไฟล์งาน `edit\v2\` (backup `.drp`, DRT, cards/png + mov) สคริปต์ `scripts/scratch/laffy_intro/`
+  - 2026-11-15 ตรวจซับกับเสียง: cue เดิม (แบ่งตามจำนวนตัวอักษรในช่วง Descript) ช้า/เร็วกว่าเสียงสูงสุด 1.7 วิ (54-58, 99-100, 105-108, 113-116, 130-132 วิ) → จัดเวลาใหม่ 151 cue (ข้อความ Descript เดิม, ใช้ Whisper เป็นตัวอ้างอิงเวลาเท่านั้น ผู้ใช้อนุญาต) timeline ปัจจุบัน id 8eef4c6d..., ก่อนแก้เก็บเป็น `เเนะนำตัว 3 นาที_edit_pre_sync`; render `render\laffy_intro_edit_v5.mov` (-14.4 LUFS, peak -0.5 dBFS, 4407 เฟรม); v4 จัดเวลาผิดช่วง 53-58 วิ ห้ามใช้; ไฟล์ตรวจ `edit\v2\sync\`
+  - "ย่า" ต้นคลิป: Descript และ Whisper ได้ยินตรงกัน; ยังไม่แน่ใจ: "ประมาณนี้" vs "เนี้ย" (85.8 วิ), "อ่า" ก่อน Body Horror (80.3 วิ, ไม่ได้ใส่); ยังไม่ได้ฟังทั้งคลิป; รอผู้ใช้รีวิว
 
 ## รูปแบบและ layout (16:9)
 | แทร็ก | ใช้สำหรับ |
