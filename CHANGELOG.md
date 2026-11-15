@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.17.82 — ย้ายปก KT404 HL 2026-10-1 มารวมใน Thumbnails
+
+### รายละเอียด
+- ย้ายปก KT404 Highlights 2026-10-1 ทั้ง 134 ไฟล์ออกจากโฟลเดอร์ย่อย `Horizontal_16x9` / `Vertical_9x16` มาไว้ใน `2026-10-1/Thumbnails/` โดยตรงตามที่ผู้ใช้ขอ แล้วลบโฟลเดอร์ย่อยที่ว่างออก (แนวนอน 67 + แนวตั้ง `_9x16` 67, ไม่มีชื่อซ้ำ, md5 ตรงกับไฟล์ต้นทางครบ 134 ไฟล์)
+- บันทึกในโปรไฟล์ช่อง Katy404 และ skill vtuber-cover-batch-pipeline ว่าช่องนี้ต้องการปกรวมใน `Thumbnails/` ไม่แยกโฟลเดอร์ตามสัดส่วน
+
+### Skill ที่อัปเดต
+- `vtuber-cover-batch-pipeline` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/vtuber-cover-batch-pipeline/SKILL.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.81 — ปกคลิปครบทุก Timeline ของ KT404 Highlights 2026-10-1
 
 ### รายละเอียด
