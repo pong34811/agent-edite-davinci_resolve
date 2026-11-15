@@ -10,6 +10,11 @@ the same Size/Center/Edges. Other tracks are compared before/after.
 NOTE: inserting a generator ripples every later clip on the same track (a single-clip rebuild shifted six zoom clips by 229
 frames and stretched the timeline), so the whole track is emptied and re-inserted in time order.
 
+WARNING (Katy404 day 28, 21.1.0.17, 2026-11-15): the first InsertGeneratorIntoTimeline returned False AFTER the track was
+emptied, leaving V2 empty (unsaved; other tracks intact). Prefer the offline route: export the timeline DRT,
+`drt_rebuild_focus_track.py <src.drt> <template.drt> <out.drt> --ranges ...`, import it under a new name, set the
+transforms, compare every other track, then swap names. If this script stops here, re-read the track before anything else.
+
 Usage: python -m scripts.rebuild_trimmed_zoom_clip --backup pre.drp --ranges '[[0,229],...]' [--track 2] [--apply]   (dry run default)
 """
 from __future__ import annotations

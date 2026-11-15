@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "c579bc213aa977cbfa2741352856469e52e35151a179f0c468cc46fb9dafcddb",
+      "sha256": "f401dc61ac3f9337c701e15dc730d8f91e73ade50f8332479a4e31a3a6430213",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1178526e6c77be9970d46cfeb0017ce4ccce9d8c2f82c0adf7630ad795c19c67",
+      "sha256": "5cd21724227f35f79e2978107a8fb7b997cbef875628273eea3ddf6bc73996a0",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "148218b7718babe8cc04f059a48fca9cad531b616b8d05e0b32637981fba3829"
+      "sha256": "1380dcc3f5d271c21cd015d7f71090290e2584becd6057524561b77e0bb76359"
     },
     {
       "path": "docs/README.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b1dd565ad15fbbd18288c424e0ca1468640b22d2422913e053b59d97a45a70ae"
+      "sha256": "1075ba69f647526bf80c4407902dc609ac3bb1d0a5da1885bf162aad7aed2a64"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7895,7 +7895,7 @@
       "path": "scripts/rebuild_trimmed_zoom_clip.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "42a1977d5594438ff28d2ddd67c39b8d0ebb49c51a91b888890ab108df6d45d2"
+      "sha256": "65649fbf745d47d8c304eb3061224f12b409c49f3ab7b53db5ed6b9f693ec6f7"
     },
     {
       "path": "scripts/refresh_skill_manifest.py",
@@ -8907,7 +8907,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.95",
+  "bundle_version": "0.17.96",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
