@@ -4588,7 +4588,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "23a131b6c95e9f110f3edd89021b1cc9c2429efdad8b80c97abbb6dc9eff7af8"
+      "sha256": "9ee3b749005bda5c15a1137369852a689446a04ad4f408425c86ba3d26d12a9a"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "62ebab475b7c8cd4b1d241e8561660c90e4fbe854356229b7a6b2c280a66c3e9",
+      "sha256": "ae90dd437eb433a986d5b66e41d7804a344a5a4bf46304cac64e2547bc2e37d0",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "c8ff2a1643b7f3ebedff31aaeed1e66837d0d6da9c09cd2ee231af6cabda6fc3",
+      "sha256": "db2ffb67e4d49c6ba13ce79a5b95be04c28a2c48dd33fe3b3c98ca9d5ecf572e",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "d281feb8565db6c6e9d71c71c11ae5d2f56fd1155776b6ae72257d746f851e44"
+      "sha256": "fa76e2f64bf860990208be4b8c9076dd70a82fcc2e90dda0c77f5da752f7181c"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
+      "sha256": "9386e37af88d3dc346c58e045e3f701eab21ac09d1e9cebb907ebda78ffd7ef5"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4986,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "08689e3b76b7325463f69a945dca3367ac878bd9692fe0bf7fb9a740d9b24e5a"
+      "sha256": "19566ae5bc2cc3a3cd247d2ddd7df822d01a2b28968c97dbe4fff25f4e8e6fbf"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.84",
+  "bundle_version": "0.17.85",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
