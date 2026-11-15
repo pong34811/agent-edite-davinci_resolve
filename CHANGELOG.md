@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.17.83 — ตัดต่อคลิปแนะนำตัว 3 นาที ของ Laffy
+
+### รายละเอียด
+- ตัดต่อคลิป "แนะนำตัว 3 นาที" ของช่อง Laffy เป็น timeline ใหม่ `เเนะนำตัว 3 นาที_edit` (`Timeline 1` ต้นฉบับไม่แตะ) ไม่ตัดเนื้อหาออกตามที่ผู้ใช้เลือก: ซับไทย `Mitr Font` 165 cue, VTuber Zoom 1.32x 8 ช่วง, การ์ดคีย์เวิร์ด 21 ใบ (รวมมุก เทค 2/3/4), pop/record scratch, BGM lo-fi -22 dB; render ตรวจแล้ว 4407 เฟรม -14.4 LUFS peak -0.5 dBFS ไม่มีเฟรมดำ
+- `drt_clone_subtitle_style.py` ใส่สไตล์ซับให้ timeline ที่ยังไม่มี Subtitle track ได้ (ไม่ต้องสร้าง track ชั่วคราว) พร้อม test ใหม่
+- บันทึกบทเรียน: preset `H.264 Master` ได้ไฟล์ `.mov`, ลดเสียง pop เป็น -13 dB เมื่อเสียงพูดดัง, ทำการ์ดตัวหนังสือไทยด้วย headless Chrome + `card_pop_overlay.py`
+- house-style: เก็บช่วงพูดซ้ำ/ขอใหม่ไว้ถ้าผู้ใช้ไม่อนุมัติให้ตัด และทำเป็นมุกแทน
+- ทดสอบทั้งชุดผ่าน 450 ตัว (ข้าม 35)
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `resolve-video-enrichment` (แก้ไข): `SKILL.md`, `references/illustration-assets.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/resolve-video-enrichment/SKILL.md`
+- แก้ไข `.agents/skills/resolve-video-enrichment/references/illustration-assets.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- แก้ไข `scripts/drt_clone_subtitle_style.py`
+- แก้ไข `tests/test_drt_clone_subtitle_style.py`
+
 ## v0.17.82 — ย้ายปก KT404 HL 2026-10-1 มารวมใน Thumbnails
 
 ### รายละเอียด
