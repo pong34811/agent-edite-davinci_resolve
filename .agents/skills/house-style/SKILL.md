@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.6
+version: 0.3.7
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -67,6 +67,12 @@ Do not remove dead air or pauses from a talking recording unless the user asks
 for tightening. Why: the user stopped the Aomi-mama flood updates and asked for the
 silences back (2026-11-08). The trap: "make viewers keep watching" sounds like a
 request to tighten.
+
+Keep spoken retakes as recorded (a speaker saying "ขอใหม่นะ" and repeating a section) unless the user
+approves cutting them; offer the cut as a question, and when the takes stay, make them a visible running
+gag (`เทค 2` / `เทค 3` / `เทค 4` cards) instead of hiding them. Why: asked to cut three repeats of the
+channel-content line in the Laffy intro, the user chose "keep everything uncut" (2026-11-15). The trap:
+an explicit retake looks like obvious dead weight.
 
 A full-take update (vlog, flood update) is the whole source file from frame 0,
 with nothing cut and no pre-roll hook; enrich it only on top (date card,

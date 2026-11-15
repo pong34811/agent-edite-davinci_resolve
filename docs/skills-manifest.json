@@ -1365,7 +1365,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "1f26a55341fffb41f24f526f26da28cf1490dccd131074207b8b2fb753eede8b"
+      "sha256": "fbd862e5d9202cd431d5509a0d3aecd7971e840ea9a6b3045795fa19c216a811"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -3974,7 +3974,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "f3b86856b194455f75608f29a012cce3a8b0dd9c5bdebd3085fde52fca2bf561"
+      "sha256": "523000bd14e52e9c17c1c911fdaae031a14676d11eb00aa0b4c522d1e6432f4a"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -4028,7 +4028,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "0e63a3708b798a9b4b4ab875533f13a1d12f1e7e9d6d6115737f61cbc3da10a8"
+      "sha256": "e8bbb7e10ed1143c24ddff84e39073cded1f7ed068a2dc84ef1e973e08a75fa1"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "3ab5e4db3c39491582419952746f8d55f5bf0b6d629c93d29af4e88c4ebe2843",
+      "sha256": "03bccab2aeda41a60eb7619776f146c33a0b498c699396d8b9bd976d19436ef2",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "d4f030998421136ecdc809e552c4433e6a5d5e4ac2c9e4a42dd5a71ecf424d6b",
+      "sha256": "37747a62b5ee9bbf9cdc855c41a68f84e3f04d8fad2a759cbe9f805ac57e3be8",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "3dcada4ab60eb236612ac681522b39b743b368db65ce50e483b7d1691cd53351"
+      "sha256": "d281feb8565db6c6e9d71c71c11ae5d2f56fd1155776b6ae72257d746f851e44"
     },
     {
       "path": "docs/README.md",
@@ -4986,7 +4986,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "42920ff870f5852246a06539665134528b5de802af3bd5c82b283ceeec1172be"
+      "sha256": "1987b320357e38db1da8bf37a224e81371638fa8d3323ddce05a44fba13b2742"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -7083,7 +7083,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "e55c8353d18aa7387f2bc638403efb5c992be4301f3061d22fece0a22b45d72c"
+      "sha256": "97137d4aad50fa2ed472a67dda74e59ef6466b6168234b3f371c1d6095d8623e"
     },
     {
       "path": "scripts/README.md",
@@ -7337,7 +7337,7 @@
       "path": "scripts/drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3dd890812f5c68717532f339f9ec27f46e2bb6f09ff177b35e5227dc43ca84e0"
+      "sha256": "72b60e10481effe3ccff36581b4a64d1d10fdd685678f22fd6fd61d4d86263e2"
     },
     {
       "path": "scripts/drt_focus_multi.py",
@@ -8285,7 +8285,7 @@
       "path": "tests/test_drt_clone_subtitle_style.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "090b0bbd22e64b610d4683384ae76d9f414ae42fe18efee4c29ee843171291c2"
+      "sha256": "3abb79fdc870a4e5580e4425b1a42c85298f9136bb30d7e729900c5d255b401b"
     },
     {
       "path": "tests/test_drt_focus_track.py",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.81",
+  "bundle_version": "0.17.82",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

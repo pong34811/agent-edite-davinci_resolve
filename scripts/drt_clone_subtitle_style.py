@@ -60,17 +60,22 @@ def clone_styled_subtitle_track(src_drt, styled_drt, out, cues, styled_track=1):
         if x.get('DbId'):
             x.set('DbId', d._fresh_dbid(used))
     svec = root.find('SubtitleTrackVec')
+    if svec is None:
+        raise ValueError('source DRT has no SubtitleTrackVec')
     old = svec.findall('Element')
-    if len(old) != 1:
-        raise ValueError(f'source DRT must have exactly one subtitle track, has {len(old)}')
-    # Keep the source track's own name (e.g. `Thai`); the styled track's name otherwise leaks into the copy
-    # and the before/after snapshot stops on a name-only difference (Laffy 004, 2026-11-13).
-    src_name = old[0].find('Sm2TiTrack').find('UserDefinedName')
-    dst_name = st.find('UserDefinedName')
-    if src_name is not None and dst_name is not None:
-        dst_name.text = src_name.text
-    sw.tail = old[0].tail
-    svec.remove(old[0])
+    if len(old) > 1:
+        raise ValueError(f'source DRT must have at most one subtitle track, has {len(old)}')
+    if old:
+        # Keep the source track's own name (e.g. `Thai`); the styled track's name otherwise leaks into the copy
+        # and the before/after snapshot stops on a name-only difference (Laffy 004, 2026-11-13).
+        src_name = old[0].find('Sm2TiTrack').find('UserDefinedName')
+        dst_name = st.find('UserDefinedName')
+        if src_name is not None and dst_name is not None:
+            dst_name.text = src_name.text
+        sw.tail = old[0].tail
+        svec.remove(old[0])
+    # A timeline with no Subtitle track exports `<SubtitleTrackVec/>`: the styled track is added as Subtitle 1
+    # with its own name, so the source timeline needs no temporary AddTrack (Laffy intro, 2026-11-15).
     svec.append(sw)
     if out.exists():
         raise FileExistsError(out)

@@ -94,3 +94,14 @@ A placement passes only when the manifest and Resolve readback agree on source/p
   VTuber Zoom ranges.
 - Place with MCP `media_pool append_to_timeline` (`track_index` 3, `media_type` 1, `end_frame` = MOV frames,
   exclusive); all four landed exactly and rendered at Zoom 1 / Pan 0 / Tilt 0.
+
+
+## Thai keyword cards beside a centred avatar (verified 2026-11-15, Laffy intro)
+
+- One card per spoken topic change: emoji row, small accent tag (category), big title (Mitr Bold, black stroke), optional
+  detail line; 460x360 px, centred at x 280 (left) or 1640 (right), y 400 on a 1920x1080 frame so a centred VTuber's
+  face and the bottom subtitle line stay clear. Alternate sides; start on the keyword's cue frame; 2-8 s holds.
+- Render the PNG in headless Chrome (Thai shaping), animate with `scripts/card_pop_overlay.py --fps <timeline fps>`,
+  place on V3 `REACTIONS` with a -13 dB pop on A2 at each card start when the voice is hot (see OPERATING-NOTES).
+- Keep cards and VTuber Zoom ranges disjoint (assert it in the plan): the V2 Adjustment Clip does not scale V3, but a
+  zoomed avatar widens toward the side cards.

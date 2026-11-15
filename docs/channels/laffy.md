@@ -16,6 +16,15 @@
   - หลังผู้ใช้อนุมัติ (2026-11-13) เหลือ timeline เดียวคือ `Timeline 1` (id b138d521... หลังย้ายฟุตเทจกลับ V1/A1 2026-11-13) ที่เป็นงานตัดเสร็จ ซับ `Mitr Font`
   - timeline สำรอง/archive ทั้งหมดและโฟลเดอร์ `Archive` ลบแล้ว ถ้าต้องย้อนกลับใช้ `edit/backup/laffy004_pre_cleanup_*.drp`
 
+## งานแนะนำตัว 3 นาที (2026-11-15)
+- โฟลเดอร์ `G:\My Drive\laffy_projects\เเนะนำตัว 3 นาที\` ต้นฉบับ `Timeline 1.mov` 146.9 วิ 4407 เฟรม 1920x1080@30 (เสียง -14.4 LUFS peak -1.2 dBFS)
+- Resolve project `เเนะนำตัว laffy` (id f4bfbbe1...) : `Timeline 1` (d621d940...) ไม่แตะ, งานตัดคือ `เเนะนำตัว 3 นาที_edit` (2726b753...)
+  - ผู้ใช้เลือก **ไม่ตัดอะไรเลย** แม้ช่วงพูดเนื้อหาช่องซ้ำ 4 เทค ("อันนี้ขอใหม่นะ" ~99 วิ) → ทำเป็นมุก การ์ด `เทค 2/3/4`
+  - V2 `VTuber Zoom` 8 ช่วง Fusion 1.32x (window 0.04/0.80/0.485), V3 `REACTIONS` การ์ดคีย์เวิร์ด 21 ใบ (ซ้าย cx 280 / ขวา cx 1640, y 400), A2 `SFX` pop -13 dB x21 + Record Scratch -15 dB ที่ 2963, A3 `BGM` `bgm_lofi_chill_loop_04.wav` -22 dB 2 ท่อนต่อกันที่ 2304 fade in 15 / out 90, Subtitle 1 `Mitr Font` 165 cue (Descript)
+  - render `render\laffy_intro_edit_v2.mov` (H.264 + AAC, -14.4 LUFS, peak -0.5 dBFS, 4407 เฟรม ไม่มีเฟรมดำ) ; v1 peak 0.0 dBFS (pop -9) ใช้ไม่ได้
+  - ไฟล์งาน `edit2\` (backup `.drp`, DRT, cards/png + mov) สคริปต์ `scripts/scratch/laffy_intro/`
+  - ยังไม่ยืนยัน: ชื่อเต็มละติน `RaffyNiveren` (cue 222-244), คำอุทาน "ย่า" ใน cue แรก, ยังไม่ได้ฟังทั้งคลิป; รอผู้ใช้รีวิว
+
 ## รูปแบบและ layout (16:9)
 | แทร็ก | ใช้สำหรับ |
 |---|---|

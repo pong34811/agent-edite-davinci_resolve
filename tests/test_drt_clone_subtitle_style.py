@@ -91,6 +91,26 @@ def test_refuses_to_overwrite_and_bad_cues(tmp_path):
         clone_styled_subtitle_track(src, styled, tmp_path / "o2.drt", [(10, 10, "zero length")])
 
 
+def test_source_without_subtitle_track_gets_the_styled_track(tmp_path):
+    src = _drt(tmp_path / "src.drt", "seq-src", "default-style", [])
+    with zipfile.ZipFile(src) as z:
+        root = ET.fromstring(z.read("SeqContainer/sequence.xml"))
+    vec = root.find("SubtitleTrackVec")
+    for e in list(vec):
+        vec.remove(e)
+    with zipfile.ZipFile(src, "w") as z:
+        z.writestr("project.xml", b"<Project DbId='p'/>")
+        z.writestr("assets/opaque.bin", b"keep")
+        z.writestr("SeqContainer/sequence.xml", ET.tostring(root, encoding="utf-8", xml_declaration=True))
+    styled = _drt(tmp_path / "styled.drt", "seq-ref", "mitr-style", [_caption("t1", 100, 20, "template")])
+    out = tmp_path / "out.drt"
+    assert clone_styled_subtitle_track(src, styled, out, [(9, 38, "สวัสดีครับ")]) == 1
+    track = _subtitle_track(out)
+    assert track.findtext("FieldsBlob") == "mitr-style"
+    assert track.findtext("Sequence") == "seq-src"
+    assert [e[0].findtext("Name") for e in track.find("Items").findall("Element")] == ["สวัสดีครับ"]
+
+
 def test_styled_track_needs_a_template_cue(tmp_path):
     src = _drt(tmp_path / "src.drt", "seq-src", "default-style", [])
     styled = _drt(tmp_path / "styled.drt", "seq-ref", "mitr-style", [])
