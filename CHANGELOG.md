@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.17.87 — ย้ายซับ Yu-Gi-Oh ของ Laffy ไป Subtitle track พร้อม preset
+
+### รายละเอียด
+- ย้ายซับของ Laffy "รู้จัก Yu-Gi-Oh ได้ยังไง" ไปใช้ Subtitle track ทั้ง timeline แนวนอนและแนวตั้ง โดยเปิด ST1 (ข้อความและเวลาตรงกับ Text+ ทั้ง 61 cue) และปิด V4 Text+ ไว้ ไม่ได้ลบ
+- โหลด preset จาก library หลักตามที่ผู้ใช้เลือก แนวนอนใช้ `Mitr Font` แนวตั้งใช้ `Mitr-short-001` ผ่าน DRT ไม่ต้องปิด Resolve และ backup .drp ไว้ก่อนแก้
+- ทุกแทร็กอ่านค่ากลับมาตรงกับ timeline เดิม และเก็บ timeline เดิมไว้เป็น `_old`
+- render burn-in ช่วงสั้นยืนยันว่า preset ทำงานทั้งสองแบบ แต่แนวตั้งมี 2 cue ที่กว้างเกินเฟรม 1080 รายงานไว้แต่ยังไม่ได้แยก cue
+- skill thai-subtitles-resolve (0.5.7) บันทึกขั้นตอนย้าย "Subtitle as Text+" บน 21.1 ไว้ 4 เรื่อง:
+- ห้ามอ่าน `StyledText` ของ Text+ แบบสด เพราะทำให้ Resolve ค้างจนต้องกู้
+- ช่อง Name ของ cue ใน DRT อาจเป็นข้อความเก่า
+- ขั้นตอนใส่ preset ผ่าน DRT
+- วิธีวัดความกว้างซับบน 9:16
+
+### Skill ที่อัปเดต
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`, `references/native-caption-migration.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/references/native-caption-migration.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.86 — ขยายซับ Text+ ในคลิปแนวตั้ง Yu-Gi-Oh ของ Laffy
 
 ### รายละเอียด
