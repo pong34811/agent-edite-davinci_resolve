@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.17.96 — Katy404 วันที่ 28 promote Timeline หลัก
+
+### รายละเอียด
+- Katy404 วันที่ 28: promote `Timeline 1_edit` เป็น `Timeline 1` ตามที่ผู้ใช้สั่ง; timeline ดิบเก็บไว้เป็น `Timeline 1_original` (ไม่ลบ เพราะสั่งแค่ promote) อ่านกลับตรง baseline; timeline หลักอ่านกลับตรงแผนทุก track (ซูม 6, GIF 6, SFX 15, BGM 1, ซับ 86) และ Dialogue Leveler บน A1 ยังเปิด OutputGain 0.0; สำรอง `pre_promote.drp`
+- บันทึกกับดักใน skill `resolve-audio`: ค่า Dialogue Leveler เป็น "Active Timeline Only" อ่านจาก timeline ที่ไม่ได้เปิดอยู่จะได้ `False` ทั้งหมด ต้องเปิด timeline ก่อนอ่าน
+
+### Skill ที่อัปเดต
+- `resolve-audio` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/resolve-audio/SKILL.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.95 — Katy404 วันที่ 28 + Dialogue Leveler
 
 ### รายละเอียด
