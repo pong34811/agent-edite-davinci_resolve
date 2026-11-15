@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "ae0249d2b84bf188f72a113843cdb8085034b986dbdc20b2acd1f15000b48c94",
+      "sha256": "d09a319db4365c323ee5525b02f8be955ef0210850bdbf73121bf2d2f14698d1",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "45da51b0fb1df2cbc9e9a7a69e4b1d23ce8b9825f1bda00407212336a975f0fe",
+      "sha256": "7139b5d9ac7989e211601ec194a1b4473fce5765fa81f0a8fb8298b7c7ec565b",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "b9eaf6a8368e3d9c521f5963223c5811fc6b7cb964622457704c6ce0d2fdc9a3"
+      "sha256": "378e7b655a9b3ef9c8401c2b38f6d91c4202f7b06db020f92c5337687cd63335"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
+      "sha256": "76e918b897afe9b02f2a194487d258837ad3a737ca58ea5254671fd22d69b1a5"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d7a60731892a02ecae52d2614a8d337e02ccd2e63066f5f8872d3cd763e8bfad"
+      "sha256": "e7bfb3477c83d172b65ab4c9f1de2a66007e5274ec842d4fd9827544e93918c0"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8895,7 +8895,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.89",
+  "bundle_version": "0.17.90",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
