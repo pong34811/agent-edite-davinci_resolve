@@ -124,6 +124,7 @@
 | `enrich_timelines_python.py` | enrich เป็นชุดบนสำเนา (dry-run เป็นค่าเริ่มต้น) | ใช้ซ้ำ |
 | `apply_enrichment_d22.py` | ใส่ BGM+SFX+GIF ที่อนุมัติลงสำเนา `[ENHANCED]` | ใช้ซ้ำ |
 | `apply_vdo_preset.py` | ใช้ Video preset (`vdo`) กับ GIF บน REACTIONS | ใช้ซ้ำ |
+| `set_dialogue_leveler.py` | เปิด/ปิด Dialogue Leveler (ลดเสียงดัง + ยกเสียงเบา, ปิด BackgroundReduction, OutputGain 0) ทุก clip บน audio track ที่ระบุ + อ่านกลับ (dry-run เป็นค่าเริ่ม, `--apply`); ใช้กับไมค์เบามาก (day 28: -29 → -14 LUFS) | ใช้ซ้ำ |
 | `apply_vdo_python.py` | จับค่า vdo จาก clip ที่โหลดด้วย GUI แล้ว apply ตาม ID | ใช้ซ้ำ |
 | `apply_video_style.py` | จับ/apply คุณสมบัติวิดีโอ native | ใช้ซ้ำ |
 | `promote_drafts_to_originals.py` | ยก draft ที่ตรวจแล้วเข้า original (idempotent) | ใช้ซ้ำ |

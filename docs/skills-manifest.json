@@ -3772,7 +3772,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "3310ae4509eaa20d73021142789994f08edee312897035cc5a67aabe891072b7"
+      "sha256": "826d81a1119039e2ab118d290257a8c896b93f2cb60748e61005e573bef71ef1"
     },
     {
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "d14fbc964df7b4255f808c5b09698d2e2f0d7b35c54ddf046ad43ffc99d4d0c4",
+      "sha256": "f92473c79ba2153863d9a60addffe36f8c30367d5c0ebb3e8dba56156b4557f7",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "6490a3f9e6c7a583f20950f2e6b6c161545a7071cc908492a3ac62c7d8b57cd1",
+      "sha256": "264974aa987b224205e59febbd3d141e1a8c9e697af16cf379ae46e0be49f31b",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "378e7b655a9b3ef9c8401c2b38f6d91c4202f7b06db020f92c5337687cd63335"
+      "sha256": "148218b7718babe8cc04f059a48fca9cad531b616b8d05e0b32637981fba3829"
     },
     {
       "path": "docs/README.md",
@@ -4962,7 +4962,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "76e918b897afe9b02f2a194487d258837ad3a737ca58ea5254671fd22d69b1a5"
+      "sha256": "9386e37af88d3dc346c58e045e3f701eab21ac09d1e9cebb907ebda78ffd7ef5"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -4980,7 +4980,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "6c1f13f126d0e6f673630af7f7e8676c329b06e81658d7dc167f017122dd0fae"
+      "sha256": "856ab99358794acbf53f44e30cd786672cefff1ad1fa87716b3d16b3f5d569b6"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7083,7 +7083,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "97137d4aad50fa2ed472a67dda74e59ef6466b6168234b3f371c1d6095d8623e"
+      "sha256": "4ea0cfe15f2400e84529007e55923da612d8c63f23d51575091450909e3d5a7d"
     },
     {
       "path": "scripts/README.md",
@@ -8024,6 +8024,12 @@
       "sha256": "271fedd66001e37f722600594718075f6528a13f7d864729ab211498584f9bf4"
     },
     {
+      "path": "scripts/set_dialogue_leveler.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2f1271e221c8679b56c716ebbd48ce252fc8c3d6b2da209b9927eea509c73cbc"
+    },
+    {
       "path": "scripts/verify_review_resume.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -8468,6 +8474,12 @@
       "sha256": "2dd715e35b461cc5a01e25a9e17972046f5f1e931d526b6782aa9f94ed8c76a9"
     },
     {
+      "path": "tests/test_set_dialogue_leveler.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "430305abed4391dfbd662ce794b335ff4af2f3d88147206ed83c9951762460e1"
+    },
+    {
       "path": "tests/test_skill_bundle.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8891,11 +8903,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1189,
+    "manifest_files": 1191,
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.93",
+  "bundle_version": "0.17.94",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
