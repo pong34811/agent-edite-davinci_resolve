@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.17.95 — Katy404 วันที่ 28 + Dialogue Leveler
+
+### รายละเอียด
+- Katy404 วันที่ 28: สร้าง `Timeline 1_edit` สูตรเดียวกับวันที่ 27 ไม่ตัดเนื้อหา — VTuber Zoom 6 ช่วง (2.19x ไม่มีขอบดำ), GIF 6 ตัว (preset `vdo`), SFX 15 จุด (คลิก Minecraft นับ 1-2-3, Rare Achievement ตอนป๊อปอัป Voluntary Exile, Level Up ที่ 2,221 คน ฯลฯ), BGM `cheerful_blossom_day` -19 dB fade 12/120, ซับไทย 86 cue (ข้อความจาก Descript, Whisper ใช้จับเวลาเท่านั้น); `Timeline 1` ต้นฉบับไม่ถูกแตะ อ่านกลับครบทุก track
+- ไฟล์ดิบวันที่ 28 เสียงเบามาก (-29 LUFS) จึงเปิด Dialogue Leveler บน A1: render QC ได้ -14.0 LUFS, LRA 3.3 LU, peak -1.1 dBFS, 6163 เฟรม ไม่มีเฟรมดำ (ไฟล์ `วันที่ 28_EDIT_test_2026-11-15.mp4` ในโฟลเดอร์ตอน)
+- เพิ่มสคริปต์ใช้ซ้ำ `scripts/set_dialogue_leveler.py` (+ test) เปิด/ปิด Dialogue Leveler พร้อมตั้ง BackgroundReduction/OutputGain ชัดเจนและอ่านกลับ; บันทึกกับดัก OutputGain เด้งเป็น 2.0 ไว้ใน OPERATING-NOTES และ skill `resolve-audio`
+- ยังต้องให้ผู้ใช้ฟังยืนยันคำ: ขอเคลียร์พิลเลเจอร์ (27.9 วิ), อันนี้บังเอิญมากเลย (31.7 วิ), ไอ้วันของวันที่ 27 (57.2 วิ), 2,222 / เลข 2 สี่ตัว (77-81 วิ)
+
+### Skill ที่อัปเดต
+- `resolve-audio` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/resolve-audio/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- เพิ่ม `scripts/set_dialogue_leveler.py`
+- เพิ่ม `tests/test_set_dialogue_leveler.py`
+
 ## v0.17.94 — บันทึกการลบ Timeline สำรอง Bunny Girl ep10 (แก้ v0.17.93)
 
 ### รายละเอียด
