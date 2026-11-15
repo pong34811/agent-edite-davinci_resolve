@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.17.98 — Katy404 วันที่ 28 ลบ Timeline สำรอง
+
+### รายละเอียด
+- Katy404 วันที่ 28: ตามคำสั่ง "อัปเดต Timeline หลัก และลบ Timeline สำรอง" — `Timeline 1` เป็นงานล่าสุดอยู่แล้ว (อ่านกลับตรงกับที่ผู้ใช้ตัด) จึงคงไว้เป็น Timeline หลัก; ลบ `Timeline 1_original` และ `Timeline 1_pre_zoomfix` ด้วย unique ID หลังสำรอง `pre_delete_timelines.drp` (152,374 bytes); `Timeline 1` และ `Timeline 1_9x16` อ่านกลับไม่เปลี่ยน โปรเจกต์เหลือ 2 timeline
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.97 — Katy404 วันที่ 28 FINAL + 9:16
 
 ### รายละเอียด
