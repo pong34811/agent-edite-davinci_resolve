@@ -113,6 +113,7 @@
 | `armigon_9x16_snapshot.py` | baseline read-only ของ 48 timeline แนวนอน | armigon |
 | `build_9x16_day22.py` | สร้าง `<name>_9x16` โปรเจค Katy404 Minecraft day 22 (60 fps, อวาตาร์ขวาล่าง) | ครั้งเดียว |
 | `build_9x16_day24.py` | เหมือนกันสำหรับ day 24 | ครั้งเดียว |
+| `build_9x16_day29.py` | เหมือนกันสำหรับ day 29 | ครั้งเดียว |
 | `sakuyako_update_vertical_masters.py` | โปรโมตตัวแปรแนวตั้งที่ใส่ cover แล้วเป็น master | sakuyako |
 
 ## 5. Enrichment: BGM / SFX / GIF

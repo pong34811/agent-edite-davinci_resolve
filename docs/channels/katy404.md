@@ -26,6 +26,7 @@
 - skill: `resolve-video-enrichment` (มี `katy404-channel-study.md`), `vtuber-content-curriculum`, `vtuber-thumbnail-layout`
 
 ## กับดักและงานค้าง
+- day 29 9:16 (2026-11-16): สร้าง `Timeline 1_9x16` (1080x1920@60) ด้วย `scripts/build_9x16_day29.py`: V1 Game Top, V2 REACTIONS (ว่าง), V3 VTuber Bottom, V4 VTuber Full สำหรับช่วง focus [240-630) และ [1488-1998); ตรวจภาพ still 5 เฟรมผ่าน ไม่พบขอบดำ เสียง Dialogue/SFX/BGM เท่าต้นฉบับ
 - day 25 9:16 (2026-10-15): `Timeline 1_9x16` สร้างด้วยสำเนา `scripts/scratch/d25/build_9x16_day25.py` (geometry day 24 ใช้ซ้ำได้, GIF src end ต้อง +1); stills 8 เฟรมผ่าน; ซับ overlap/เสียงยังไม่ตรวจ; backup `.hermes/katy404-d25/pre_9x16.drp`
 - day 25 enrichment (2026-10-15): `Timeline 1 [ENHANCED]` = A2 SFX x6, A3 BGM `Melody Island` (-39.3 dB), V3 GIF x4 (vdo preset, นอกช่วง zoom); รอผู้ใช้รีวิวก่อน promote; ยังไม่ได้ฟังเสียง/ตรวจ licence; แผน/สคริปต์ที่ `.hermes/katy404-d25/`, `scripts/scratch/d25/`
 - day 25 (2026-10-15): Timeline เดียว, 2560x1440 บน 1920x1080@60, อวาตาร์มุมขวาล่างเหมือน day 24 ใช้ window top 0.515 / bottom 0.962 / cx 0.775 (ahoge ที่ ~0.547) ได้ 8 ช่วงบน `Timeline 1_focus_variant` (ต้นฉบับไม่แตะ); สคริปต์ชั่วคราวอยู่ `scripts/scratch/d25/`, แผน/ภาพ QC อยู่ `.hermes/katy404-d25/`
