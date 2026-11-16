@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.100 — แปลง 9:16 วันที่ 29 Katy404
+
+### รายละเอียด
+- สร้าง `Timeline 1_9x16` (1080x1920 @ 60 fps) จาก Timeline 1 แนวนอนของโปรเจกต์ "วันที่ 29 ปลูกข้าวจนกว่าจะ 10K ผู้ติดตาม - Katy404"
+- จัด layout แนวตั้งแบบซ้อน (Stacked Layout): V1 "Game Top" (ครึ่งบน 0..960 px), V2 "REACTIONS" (ว่างไว้สำหรับใส่ GIF/overlay ภายหลัง), V3 "VTuber Bottom" (ครึ่งล่าง 960..1920 px ขยายอวาตาร์ Katy404 ชัดเจนเว้น headroom พอดี)
+- ปรับช่วง VTuber Zoom เดิม 2 ช่วง ([240, 630) และ [1488, 1998)) ไปไว้ที่ V4 "VTuber Full" ขยายโคลสอัปเต็มจอในจังหวะโฟกัสตามสไตล์ของช่อง
+- ตรวจสอบ protected tracks: เสียง A1 (Dialogue), A2 (SFX 4 จุด), A3 (BGM) และช่วง V1 ต้นฉบับตรงกับต้นฉบับ 100%
+- ตรวจสอบภาพนิ่ง Export Still จาก DaVinci Resolve ทั้งหมด 5 เฟรม (เฟรม 100, 400, 1000, 1700, 2500) ยืนยันขนาด 1080x1920 ไม่มีขอบดำ ภาพเกมและอวาตาร์ชัดเจน
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- เพิ่ม `scripts/build_9x16_day29.py`
+- เพิ่ม `tests/test_build_9x16_day29.py`
+
 ## v0.17.99 — Export Katy404 2026-10-1 ครบ 134 คลิป (แนวนอน 67 + แนวตั้งพร้อมปก 67)
 
 ### รายละเอียด
