@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.17.103 — รีแชม skill manifest หลัง release + บันทึกกับดัก checksum ล้าสมัย
+
+### รายละเอียด
+- เพิ่มบทเรียนใน `docs/OPERATING-NOTES.md` (หัวข้อ Release manifest drift): `scripts/release.py --publish` แก้และ commit `VERSION` + `CHANGELOG.md` หลังที่ manifest ถูก refresh ไปแล้ว ทำให้ `tests/test_skill_bundle.py` แดงเพราะ checksum ของไฟล์สองตัวนั้นล้าสมัย — ต้องรัน `python scripts/refresh_skill_manifest.py` แล้ว commit `docs/skills-manifest.json` ก่อนรันทดสอบครั้งต่อไป
+- รีแชม `docs/skills-manifest.json` ให้ตรงไฟล์จริง (`CHANGELOG.md`, `VERSION`, `docs/OPERATING-NOTES.md`) หลังปิด release v0.17.102
+- รัน `python -m pytest -q` ผ่านทั้งชุด: 457 passed, 35 skipped
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.102 — ปก Aomi-mama 2026-10 v3 — มีโมเดลทับทุกใบ + พื้นหลังไม่มีตัวละคร
 
 ### รายละเอียด
