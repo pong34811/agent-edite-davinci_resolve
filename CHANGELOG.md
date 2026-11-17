@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.17.107 — Katy404 Day 30 เวอร์ชันแนวตั้ง 9:16 (Shorts/TikTok)
+
+### รายละเอียด
+- สร้างไทม์ไลน์แนวตั้ง `Timeline 1_9x16` (1080x1920 @ 60fps, 5,846 เฟรม / 97.433 วิ) สำหรับ Katy404 Minecraft Day 30 ใน DaVinci Resolve Studio ผ่านสคริปต์ `scripts/build_9x16_day30.py`
+- จัดวาง Track Architecture สไตล์ 9:16:
+- Video 1 (`Game Top`): สเกล 2.03x แถว 0..960 px โฟกัสเกมเพลย์ตรงกลางจอ ไร้ขอบดำ
+- Video 2 (`REACTIONS`): แทร็กเปล่าสำรองสำหรับ overlay ปฏิกิริยา
+- Video 3 (`VTuber Bottom`): สเกล 3.56x แถว 960..1920 px โฟกัสตัวละคร Katy404 เว้น Headroom ~6-7% เหนือจงอยผม
+- Video 4 (`VTuber Full`): สเกล 4.27x ซูมโคลสอัปเต็มจอสำหรับช่วง Focus Zoom ทั้ง 6 จุด ([545..803], [1217..1601], [2081..2441], [3671..4032], [4962..5102], [5422..5755])
+- Subtitle 1: 45 cues นำเข้า Preset `Mitr-short-001` (144 bytes จาก User.db ผ่าน `patch_drt`) ลอยตำแหน่งอก/คอ ไม่ทับหน้าตัวละคร
+- Audio 1-3: เสียงพูด Dialogue, SFX 15 จุด และ BGM `Melody Island` (-19 dB) คงที่เท่า Master 16:9 100%
+- ตรวจสอบภาพ Still Frame จาก Resolve 7 ช่วง (`still_100.png` ถึง `still_5600.png`) ผ่านเกณฑ์ไม่มีขอบดำ และสัดส่วนตัวละครถูกต้อง
+- เรนเดอร์ไฟล์ส่งมอบ `วันที่ 30_9x16_test_2026-11-17.mp4` (668,132,511 ไบต์) ไว้ใน Google Drive
+- ผลการตรวจเช็คคุณภาพ (QC):
+- ffprobe: 1080x1920 @ 60fps H.264, ความยาว 97.433s, AAC 48kHz Stereo
+- EBU R128: Integrated Loudness -13.2 LUFS, LRA 2.2 LU (ได้มาตรฐานวิดีโอโซเชียล -13 ถึง -14 LUFS)
+- Subtitle Burn-In: ฟอนต์ Mitr-short-001 ติดลงในวิดีโอชัดเจน สีขาวขอบดำ ตำแหน่งกลางจอระดับอก/รอยต่อเกม
+- สร้างชุดทดสอบยูนิต `tests/test_build_9x16_day30.py` ผ่าน 3/3 ข้อ และผ่าน test suite รวม 12/12 ข้อ
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- เพิ่ม `scripts/build_9x16_day30.py`
+- เพิ่ม `tests/test_build_9x16_day30.py`
+
 ## v0.17.106 — Katy404 Day 30 โหลด Subtitle Preset แนวนอน และ Promote Timeline 1
 
 ### รายละเอียด
