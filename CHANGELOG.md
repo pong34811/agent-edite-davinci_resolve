@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.17.106 — Katy404 Day 30 โหลด Subtitle Preset แนวนอน และ Promote Timeline 1
+
+### รายละเอียด
+- นำเข้า Subtitle preset `Mitr Font` แนวนอน (134 ไบต์จาก User.db) ลงบน Subtitle track ของคลิปแนวนอน Katy404 Day 30 ตรวจสอบ already_matches=True 100%
+- Promote งานตัดต่อ Clean เข้าสู่ Timeline หลัก `Timeline 1` (1920x1080 @ 60 fps, 5846 เฟรม, 97.43 วินาที)
+- ลบ Timeline สำรองทั้งหมด (`Timeline 1_enriched`, `Timeline 1_clean`, `__old_t1_to_delete`) ออกจากโปรเจกต์ คงเหลือ `Timeline 1` เป็นไทม์ไลน์หลักเพียงหนึ่งเดียวตามคำสั่งผู้ใช้
+- บันทึกสำรอง Project Archive (.drp) ก่อนลบไว้ที่ `exports/_backups/katy404_day30_pre_promote_clean_20261117_212607.drp` (158,391 ไบต์) ปลอดภัย 100%
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.105 — ตัดต่อ Katy404 Minecraft Day 30 สไตล์ Clean แนวนอน 16:9
 
 ### รายละเอียด
