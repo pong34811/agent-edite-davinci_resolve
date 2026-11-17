@@ -1,5 +1,44 @@
 # Changelog
 
+## v0.17.101 — ปก Aomi-mama 2026-10 v2 ครบ 12 ใบ + แก้ปก กินง่าย ตามฟีดแบ็ก + บทเรียน CSS/QC
+
+### รายละเอียด
+- ทำปกคลิป Aomi-mama 2026-10 ใหม่ทั้งชุด 12 ใบ (แนวนอน 1920x1080 + แนวตั้ง 1080x1920) ด้วยดีไซน์ `scene` ที่ผู้ใช้เลือกจากตัวอย่าง 8 ใบ — ส่งครบทั้ง 12 ไฟล์ชื่อ `<timeline>.jpg` + `manifest.json` ใหม่ไปที่ Drive `Projects/Aomi-mama/2026-10/covers/` แล้วตรวจไฟล์ปลายทางครบ (ปก v1 เก็บไว้ `covers/v1/`)
+- ผู้ใช้ตรวจปกที่ส่งแล้ว 2 ใบ (คลิป `กินง่าย`, ทั้ง 1920x1080 และ 1080x1920) แล้วสั่งแก้ "ไม่มีรูปตัวละคร, พื้นหลัง blur เกินไป" — เพิ่มโมเดลอวาตาร์ `vts_avatar_06` ทับ (ตามที่ผู้ใช้เลือก) และลด blur 14/10 → 6/5 ด้วยกลไก `force_avatar`/`blur` รายคลิปใน `covers_v2.py`; ส่งแทนที่ 2 ไฟล์ใน Drive + manifest 2 บรรทัดแล้ว verify ผ่านครบ (hair 290,190/446,477 px, bg-edge sharper ทั้งคู่, red/white px ครบ) ด้วย `scripts/scratch/aomimama_2026_10/fix_kin.py`
+- แก้บั๊กจริงในสคริปต์ทำปก: CSS ที่สร้าง rule `av{...}` ขาดจุด`.` ทำให้อวาตาร์ไม่ถูกจัดตำแหน่งและถูกฉากหลังทับ (position static ที่ 0,0) และ glow มี `}}` เกิน + ไม่มี `<div class="glow">` ใน body — แก้แล้ว re-render อ่านค่า bbox โมเดล (826,70 1214x1010) และจำนวน像素ผม 4091 -> 53331 ยืนยันว่า overlay แสดงจริง
+- QC ทั้งชุด 12 ใบผ่านด้วยตัวเลข: ขนาดถูกต้อง, hook แดง `#EC1C24` และข้อความขาวมี像素ครบ, bbox ข้อความอยู่ในขอบ, timestamp ไฟล์ต่างกัน (mtime ใหม่ทุกใบ)
+- บันทึกบทเรียน 2 แถวใน `docs/OPERATING-NOTES.md`: (1) CSS ที่สร้างจาก string ต้อง assert จุด `.` นำหน้า (2) ห้ามใช้ผลคืนของ image-read/screenshot เป็นหลักฐานเดียวเมื่อค่าที่คืนไม่ตรงไฟล์ ให้ QC ด้วย pixel mask/DOM/diff/timestamp แทน
+- อัปเดต `docs/channels/aomimama.md`: ประวัติปก v2 ปี 2026-11-17 (ดีไซน์ที่ผู้ใช้เลือก, blur 8-26 + brightness 0.70-0.88 แทน v1 ที่ดำสนิท, สคริปต์และปลายทางส่งมอบ)
+- skill `vtuber-thumbnail-qc` (0.1.1): เพิ่มกับดัก QC สำรองเชิงตัวเลขเมื่อ image-viewing ใช้ไม่ได้หรือผลไม่น่าเชื่อถือ
+- รัน `python -m pytest -q` ผ่านทั้งชุด (456 passed รอบล่าสุด รวม `test_channel_profiles` ที่แก้ชื่อสคริปต์ใน profile แล้ว) และ `python scripts/refresh_skill_manifest.py` แล้ว
+- ยังไม่ได้ตรวจสอบในรอบนี้: การ restart session ให้ MCP reload เป็น 5.3.1 (ยังไม่ได้ทำ)
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `resolve-audio` (แก้ไข): `SKILL.md`
+- `talking-avatar-vertical-copy` (แก้ไข): `SKILL.md`
+- `vtuber-thumbnail-qc` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/resolve-audio/SKILL.md`
+- แก้ไข `.agents/skills/talking-avatar-vertical-copy/SKILL.md`
+- แก้ไข `.agents/skills/vtuber-thumbnail-qc/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/aomimama.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- แก้ไข `scripts/backup_drp.py`
+- เพิ่ม `scripts/build_9x16_day29.py`
+- แก้ไข `scripts/p2_export_final.py`
+- แก้ไข `scripts/rebuild_trimmed_zoom_clip.py`
+- เพิ่ม `scripts/set_dialogue_leveler.py`
+- เพิ่ม `tests/test_build_9x16_day29.py`
+- เพิ่ม `tests/test_set_dialogue_leveler.py`
+
 ## v0.17.100 — แปลง 9:16 วันที่ 29 Katy404
 
 ### รายละเอียด
