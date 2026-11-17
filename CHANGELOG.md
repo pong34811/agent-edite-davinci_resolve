@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.17.104 — เพิ่ม skill vtuber-cover-source-video (ทำปกจากไฟล์วิดีโอ พื้นหลังไม่มีตัวละคร)
+
+### รายละเอียด
+- เพิ่ม skill ใหม่ `vtuber-cover-source-video` (`.agents/skills/vtuber-cover-source-video/`) รวม workflow การทำปกจากไฟล์วิดีโอที่ผ่านมาในรอบนี้: แยก layout ต้นทางด้วยความสว่าง, สแกนหยาบ 10 วิ + สแกน fine 3 วิ, วัด bbox ของตัวละครบนเฟรมจริงที่ extract, ตัดช่องห้อง L|R, ประกอบปก, QC สองชั้น และส่งมอบพร้อม manifest
+- มีสคริปต์จริง `scripts/character_free_bg.py` (คำสั่ง `scan` หาเฟรมที่ห่างกันกว้างสุด และ `crop --side L|R|LR` ตัดช่องที่ไม่มีตัวละคร) ทดสอบกับสตรีม Aomi-mama 2026-10 จริง: `crop --frame 33162 --side LR` ได้ 481x720 px และ hair=0 px; `scan --around-frame 31272` ได้เฟรม 33162 เป็นอันดับแรก (both=581) ตรงกับที่ส่งมอบ
+- บันทึกกับดักที่เจอจริงไว้ใน skill: `fps=1/10` กับ `ffmpeg -ss` เจอเฟรมคนละอัน (bbox ต่างกันถึง 600 px), hair mask false positive จากสีน้ำเงินในเกม/ในห้อง, อวาตาร์จอเล็กมุมขวาล่างหลุดเข้า crop, เฟรมเปิด/ปิดสตรีมมักมีภาพประกอบตัวละคร, และฉากที่ซูมจะนุ่ม
+- คัดลอก skill ไปยัง skill directory ของ profile เพื่อให้ `skill_view`/`skills_list` เห็น (skill_manage เขียนไปที่ profile และ repo rule คือ skill ต้องอยู่ใน `.agents/skills/`)
+- รัน `python -m pytest -q` ผ่านทั้งชุด: 457 passed, 35 skipped และ `refresh_skill_manifest.py` แล้ว
+
+### Skill ที่อัปเดต
+- `vtuber-cover-source-video` (ใหม่): `SKILL.md`, `scripts/character_free_bg.py`
+
+### ไฟล์ที่เปลี่ยน
+- เพิ่ม `.agents/skills/vtuber-cover-source-video/SKILL.md`
+- เพิ่ม `.agents/skills/vtuber-cover-source-video/scripts/character_free_bg.py`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.103 — รีแชม skill manifest หลัง release + บันทึกกับดัก checksum ล้าสมัย
 
 ### รายละเอียด
