@@ -4730,7 +4730,7 @@
       "path": ".agents/skills/vtuber-cover-batch-pipeline/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "1e0d7312e2e14ce61f5b19520feac1481b4c94cfc57b1a7fbb10c461f242d10f"
+      "sha256": "9831deb3187719c7f013fbd8da7ecfc645a4cfba85d648d7110e9fa96427ac66"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "eb79052e7e0e0a9fc30de3f81596c883f78f7cad7ab81d5fb3c3d0749695e089",
+      "sha256": "450bf24cfc014a4c613b0138dec3afaea0e92ca2e9b205fa6cc43c5e0508b38a",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "1c8d2797f2cc70a7e60ec32ce92e8f64b95fa3916b24db22d8686ca97e92c330",
+      "sha256": "f419e6944624078776d2903367951dfe617b5692cce940205fb1f99a606d1427",
       "kind": "integration_or_validation"
     },
     {
@@ -4956,7 +4956,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "515a71433e71f8218fc2bc90c451f3d6cbfaf2b6ea64cdba8883cadffed4646a"
+      "sha256": "4506607e1b2924326237904d6ce8c320c94763e8ab8a2e87cdcd8db725832222"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -8919,7 +8919,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.100",
+  "bundle_version": "0.17.101",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
