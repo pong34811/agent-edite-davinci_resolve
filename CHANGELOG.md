@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.17.108 — เพิ่มสกิล katy404-minecraft-editing และบันทึก Operating Notes จาก Day 30
+
+### รายละเอียด
+- เพิ่มสกิลใหม่ `katy404-minecraft-editing` บันทึกเวิร์กโฟลว์การตัดต่อคลิปซีรีส์ Minecraft ของ Katy404 ("ปลูกข้าวจนกว่าจะ 10K") ครอบคลุมทั้ง 16:9 Clean Master และ 9:16 Shorts/TikTok
+- บันทึกการแก้กับดักทางเทคนิค 6 ข้อใน `docs/OPERATING-NOTES.md`: การตัดหัวใน DRT XML ด้วย `<In>offset</In>`, การแพตช์ Subtitle Preset ผ่าน DRT โดยไม่ต้องปิด Resolve, ค่าคงที่ `r.EXPORT_DRT`/`r.EXPORT_NONE`, การหา `find_user_db` จาก Library root, มาตรฐาน Loudness -13 ถึง -14 LUFS, และการสำรอง .drp อย่างปลอดภัย
+- อัปเดต `.agents/skills/house-style/SKILL.md` (v0.3.9) เพิ่มเกณฑ์สไตล์ Katy404 Minecraft: ตัดหัวเมนู 168 เฟรม, งด Title Card และสติกเกอร์ Chibi รกๆ เพื่อโฟกัสปฏิกิริยาตัวละคร, และสเปกเลย์เอาต์แนวตั้ง 9:16
+- ตรวจสอบความถูกต้องผ่าน `scripts/refresh_skill_manifest.py` และชุดทดสอบ `pytest` ทั้งหมด 460 ข้อผ่าน 100%
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `katy404-minecraft-editing` (ใหม่): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- เพิ่ม `.agents/skills/katy404-minecraft-editing/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+
 ## v0.17.107 — Katy404 Day 30 เวอร์ชันแนวตั้ง 9:16 (Shorts/TikTok)
 
 ### รายละเอียด
