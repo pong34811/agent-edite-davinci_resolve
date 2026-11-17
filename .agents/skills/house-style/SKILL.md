@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.8
+version: 0.3.9
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -154,6 +154,18 @@ numeral as digits ("1,950", "10,000"), but give it its real spoken duration: a
 digits-only cue defaulted to a 0.3 s hold while the speaker needed ~1.5 s, so
 the caption vanished mid-word. The trap is trusting a length formula that only
 counts Thai letters; check each cue's end against the audio and set it explicitly.
+
+## Katy404 Minecraft series ("ปลูกข้าวจนกว่าจะ 10K")
+
+- **Clean Master Pacing:** สำหรับคลิปเกมเพลย์ซีรีส์ Minecraft ให้ตัดหัวเมนูเกม/ช่วงนับ 1–2–3 ออกทันทีเพื่อให้คลิปเริ่มที่แอ็กชันหรือบทสนทนา (เช่น Day 30 ตัด 0–2.8 วิ / 168 เฟรมแรก)
+- **Visual Simplicity (No Chibi / No Title Card clutter):** ยึดสไตล์เรียบง่ายแบบวันที่ 29 และ 30; ห้ามใส่ Title Card บังต้นคลิป และห้ามใส่สติกเกอร์ Chibi ป๊อปอัปหากผู้ใช้ไม่ได้ระบุชัดเจน ให้ปล่อยให้เกมเพลย์และอวาตาร์ VTuber เป็นตัวเล่าเรื่องหลัก
+- **Focus Zoom Threshold:** ซูมเน้นเฉพาะจังหวะสำคัญ 5–7 จุดต่อคลิป (เช่น พูดถึงเป้าหมายซับ, เจอเหตุการณ์ไม่คาดคิด, สัตว์หาย/พบ, หรือ Call to Action ท้ายคลิป)
+- **9:16 Shorts Split-Screen Geometry:**
+  - `Video 1 (Game Top)`: สเกล 2.03x ครอปเฉพาะกึ่งกลางจอเกม (0..960 px) ไร้ขอบดำ
+  - `Video 2 (REACTIONS)`: ว่างสำรองไว้
+  - `Video 3 (VTuber Bottom)`: สเกล 3.56x โฟกัสอวาตาร์ขวาล่างให้เด่น (960..1920 px) รักษาระดับ Headroom เหนือจงอยผม ~6-7% ไมค์และมือไม่ตกขอบ
+  - `Video 4 (VTuber Full Zoom)`: สเกล 4.27x ซูมโคลสอัปเต็มจอสำหรับช่วง Focus Zoom
+  - `Subtitle 1`: Preset `Mitr-short-001` ลอยระดับรอยต่อจอ/หน้าอก (y ~1000 px) ไม่ทับหน้าตัวละคร
 
 ## Reaction GIFs and VTuber zoom framing
 

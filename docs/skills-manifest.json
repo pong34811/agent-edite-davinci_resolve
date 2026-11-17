@@ -161,6 +161,15 @@
       "history_sessions": 0
     },
     {
+      "name": "katy404-minecraft-editing",
+      "tier": "supporting",
+      "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "kt404-youtube-upload",
       "tier": "supporting",
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -1374,7 +1383,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "69a3bf906483c2db2bbf8744a6687499d5f5d12a4e3e53ecb619332004688e0f"
+      "sha256": "8e710d933ee0354d5ad528085b9d1edec6e62ed9e334ca45e9e9b4a61d86f508"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -3055,6 +3064,12 @@
       "source": "project-authored",
       "kind": "editing_skill_reference",
       "sha256": "9d3f0dc66d24f83d24e09c769a5e46e9aa5a43c1c74fab5253c0844e19d1fa26"
+    },
+    {
+      "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "4ae6efac9d687279a293bd2c87e83b4faf961f48e36fb007571d23fdeef2e15b"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -4864,7 +4879,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "5e79170826e814eae7423ed180a28fa7c9e0d5733df74cd65778340de2b748b3",
+      "sha256": "0d63bedbe51229f5550e1e089f4c3febd61b6a952f95e1bf4d9411efe4b46840",
       "kind": "integration_or_validation"
     },
     {
@@ -4876,7 +4891,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "e3f3b717d56310bd20d0ce8da7622edac69bdc783dbc49a236ec4e3de7b65528",
+      "sha256": "78fed3c3126f0402f5fd00d3fb66aacd366697d580664361b8d9b6a7dcc3c878",
       "kind": "integration_or_validation"
     },
     {
@@ -4889,7 +4904,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "afa8224bdb874a56d923bd184f82a6cdb4c5b113a3e7ae5c0201dd54f09b794c"
+      "sha256": "f6afe0ce4b43434ca9e065ae62ea41d509070f2c38e4685b2ca442fb819b7c8e"
     },
     {
       "path": "docs/README.md",
@@ -8948,11 +8963,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1197,
-    "supporting_skills": 59,
-    "active_skills": 76
+    "manifest_files": 1198,
+    "supporting_skills": 60,
+    "active_skills": 77
   },
-  "bundle_version": "0.17.106",
+  "bundle_version": "0.17.107",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
