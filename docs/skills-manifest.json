@@ -922,6 +922,15 @@
       "history_sessions": 0
     },
     {
+      "name": "vtuber-cover-source-video",
+      "tier": "supporting",
+      "path": ".agents/skills/vtuber-cover-source-video/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "vtuber-thumbnail-layout",
       "tier": "supporting",
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
@@ -4731,6 +4740,18 @@
       "source": "project-authored",
       "kind": "editing_skill",
       "sha256": "9831deb3187719c7f013fbd8da7ecfc645a4cfba85d648d7110e9fa96427ac66"
+    },
+    {
+      "path": ".agents/skills/vtuber-cover-source-video/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "9da355fee7a929d0080a570e270712b82deafb2b502d899dc7bdf042f1ec63d5"
+    },
+    {
+      "path": ".agents/skills/vtuber-cover-source-video/scripts/character_free_bg.py",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "74a646a87ace34391e12a4b2a26f4f2e4421b0691a495b91789b1d44acb270d1"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-layout/SKILL.md",
@@ -8915,9 +8936,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1193,
-    "supporting_skills": 58,
-    "active_skills": 75
+    "manifest_files": 1195,
+    "supporting_skills": 59,
+    "active_skills": 76
   },
   "bundle_version": "0.17.103",
   "excluded_repository_paths": [
