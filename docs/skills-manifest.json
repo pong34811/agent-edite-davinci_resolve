@@ -3772,7 +3772,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "15da633aad27d49bdca25c0dba0faa0cafc2b5a500a574700345f9c68aa53363"
+      "sha256": "3debc081d92100f2130af18779819bf4b0d1c1515fbfbe166aa607abc10adbd8"
     },
     {
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
@@ -4778,7 +4778,7 @@
       "path": ".agents/skills/vtuber-thumbnail-qc/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "25731a89ff28c8401da5c138293f81f1b3829657ec2d252fd02a0e9e91e20396"
+      "sha256": "4043941dd2bfc1ff6aac2607d8a0aa6785c97b447b144454439ad379fbbc9bf8"
     },
     {
       "path": ".agents/skills/vtuber-thumbnail-qc/references/qc-checklist.md",
@@ -4843,7 +4843,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "fbc52aa85520512bec2f95a42f0d439ef48cfa1840283d57484a96785d7e5557",
+      "sha256": "eb79052e7e0e0a9fc30de3f81596c883f78f7cad7ab81d5fb3c3d0749695e089",
       "kind": "integration_or_validation"
     },
     {
@@ -4855,7 +4855,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "5200b163704a198973bfdc0e762780913532f655cf251c32e6172e8c92d263be",
+      "sha256": "1c8d2797f2cc70a7e60ec32ce92e8f64b95fa3916b24db22d8686ca97e92c330",
       "kind": "integration_or_validation"
     },
     {
@@ -4868,7 +4868,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f7cd2ecf30479cf7587200a0e96f9f8b0e237bbdfd5be26c8785e5826c5ce20d"
+      "sha256": "b0624bb44ce10959f63c480ac03c75579505c3e7c4705c02dee67a39c327f9b0"
     },
     {
       "path": "docs/README.md",
@@ -4956,7 +4956,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "bc833ee0151d4b82cb1f650a99aa48505bf7be0c2af3e6b7552a4e3b2c272a71"
+      "sha256": "40c94ff4a060eb7275e078ead5dbbc5c049c48d5b7c16c0913355d329b5b6b7f"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -7245,7 +7245,7 @@
       "path": "scripts/build_9x16_day29.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "d07da2970e9f848727d1d70dcd88a5908894ae351035cdbc3790ae0abea73b16"
+      "sha256": "61692711344532e6a389c18182f29123294a5136fecc38ff8a050cdaf71a65fb"
     },
     {
       "path": "scripts/build_dynamic_srt.py",
@@ -8033,7 +8033,7 @@
       "path": "scripts/set_dialogue_leveler.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2f1271e221c8679b56c716ebbd48ce252fc8c3d6b2da209b9927eea509c73cbc"
+      "sha256": "aa2aa3999e2d77daefd8f6024abd43fc53750e7f44488a8a0c08084cc79919de"
     },
     {
       "path": "scripts/verify_review_resume.py",
@@ -8225,7 +8225,7 @@
       "path": "tests/test_build_9x16_day29.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f6f03984cce7dca26b16288309fce578c19cd9ae8e8e0763feefc223aeea3b8c"
+      "sha256": "e95c04e6c789804c2a2df13766113ad4b5b3bdd78a1ddb9d3fb67703bd272a8b"
     },
     {
       "path": "tests/test_build_dynamic_srt.py",
@@ -8489,7 +8489,7 @@
       "path": "tests/test_set_dialogue_leveler.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "430305abed4391dfbd662ce794b335ff4af2f3d88147206ed83c9951762460e1"
+      "sha256": "f766107aeccf4a90358d9380cae144088278011ceda0c7a0ac054ae3111a2ab3"
     },
     {
       "path": "tests/test_skill_bundle.py",
@@ -8919,7 +8919,7 @@
     "supporting_skills": 58,
     "active_skills": 75
   },
-  "bundle_version": "0.17.99",
+  "bundle_version": "0.17.100",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

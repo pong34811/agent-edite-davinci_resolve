@@ -82,6 +82,7 @@
   - โมเดลปกใช้ `G:/My Drive/Projects/Aomi-mama/1.picture/vts_avatar_*.png` (โมเดลผมน้ำเงินปัจจุบัน 3840x2160) ท่า `11`, `12`, `13` ถือเครื่องเกมสีชมพู ใช้กับคลิปเกมเท่านั้น; ไฟล์ `chibi_emote_*` ชื่อไม่ตรงภาพ ให้เลือกจากภาพจริง
 - ซับไทยของสตรีมนี้ ASR อ่อนมาก (Typhoon กับ large-v3 ไม่ตรงกัน) ใส่เฉพาะคำที่มั่นใจ ช่วงที่ไม่ชัดเว้นไว้และรายงาน; คลิปบอสและซิมมีซับน้อย
 - เวิร์กล็อกและหลักฐาน: `.hermes/projects/aomimama-2026-10/worklog.md`, สคริปต์ `scripts/scratch/aomimama_2026_10/`
+- 2026-11-17 ปก v2 ชุดใหม่ 12 ใบ (แทน v1 ที่ฉากเบลอ 46-60 px + brightness 0.5 จนดำสนิท อ่านไม่ออกว่าเป็นคลิปไหน): confirmed ผู้ใช้เลือกดีไซน์ `scene` (เฟรมจริงเป็นปกหลัง อวาตาร์ซ้อนขวา ข้อความ hook แดง `#EC1C24` + รองขาวจาก subtitle cue จริงเท่านั้น) จากตัวอย่าง 8 ใบ; รอบนี้ blur 8-26 px + brightness 0.70-0.88 ฉากจึงอ่านออก; สคริปต์ `scripts/scratch/aomimama_2026_10/covers_v2.py` (แก้บั๊ก CSS ที่ `.av` ขาดจุดจนอวาตาร์ไม่ render และ glow มี `}}` เกินแล้ว re-render), ส่งมอบด้วย `scripts/scratch/aomimama_2026_10/deliver.py` ไป Drive `Projects/Aomi-mama/2026-10/covers/` เป็นชื่อ `<timeline>.jpg` 12 ไฟล์ + `manifest.json` ใหม่ (v1 เก็บไว้ `covers/v1/`), QC เชิงตัวเลขครบ 12/12 (ขนาด/แดง/ขาว/text bbox/timestamp) contact sheet: `.hermes/projects/aomimama-2026-10/covers/v2/sheet_final.html`
 
 ## อัปเดตน้ำท่วม 6 วัน (โปรเจค `น้ำถ่วม-2026`, 2026-11-08)
 - โปรเจค 1920x1080 @ 60 fps คลิปเดี่ยว 6 ไฟล์ `อัพเดดน้ำท่วม DD-MM-2026.mp4` (29-09, 04-10, 08-10, 13-10, 16-10, 22-10) จาก `G:/My Drive/Projects/Aomi-mama/drive-download-20261106T181323Z-1-001/` (16-10 มีเว้นวรรคคู่ในชื่อ)

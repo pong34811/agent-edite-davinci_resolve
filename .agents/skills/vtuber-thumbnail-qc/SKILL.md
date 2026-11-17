@@ -1,7 +1,7 @@
 ---
 name: vtuber-thumbnail-qc
 description: QC Thai VTuber YouTube thumbnails with scored fix lists.
-version: 0.1.0
+version: 0.1.1
 author: Hermes
 metadata:
   hermes:
@@ -77,6 +77,7 @@ Acts as Senior YouTube Thumbnail QC Director + VTuber Creative Director + Thai A
 - The badge overlay is an approximation of YouTube's duration badge position, not pixel-exact; treat overlap as WARNING unless key content sits squarely under it.
 - On Windows/git-bash pass a native `--out` path (e.g. `C:/Users/<you>/AppData/Local/hermes/cache/scratch/thumb-qc`); `$TMPDIR`/`/tmp` silently lands in `C:\tmp`.
 - Score is secondary — the fix list is the deliverable.
+- If the image-viewing path is unavailable or its output is suspect (a returned screenshot does not match the file on disk, or shows text that exists nowhere in the repo), do not QC from it: fall back to numeric checks on the delivered file itself — Pillow pixel masks for hook-red `#EC1C24`/white-text counts and text bbox, byte diff against the previous render, file mtime/timestamps — and say in the report which verdicts are numeric only (Aomi-mama 2026-10 covers v2, 2026-11-17: numeric QC passed all 12 while the image readback showed hook text absent from any source file).
 - In the agent-thumbnail repo, house conventions (AGENTS.md: hook 1–4 words, `#EC1C24` red/gold with ~8% black stroke, avatar right 35–50%, 0px-blur gameplay + left gradient mask, Shorts safe zone avoids bottom 25% / right 15%) count as the brand guide; `python -m cli.verify` covers the technical gate.
 
 ## Verification
