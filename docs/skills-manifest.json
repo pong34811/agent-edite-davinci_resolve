@@ -4864,7 +4864,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "d2a79f5922f411707ea5df2685e9a22464afc63df03e3339acd296ce9ca869c5",
+      "sha256": "5e79170826e814eae7423ed180a28fa7c9e0d5733df74cd65778340de2b748b3",
       "kind": "integration_or_validation"
     },
     {
@@ -4876,7 +4876,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "ec53dc5507264afad3d0caf675d02d9bcd2b5fa841cdcedf8d15aa03b78eb3b6",
+      "sha256": "e3f3b717d56310bd20d0ce8da7622edac69bdc783dbc49a236ec4e3de7b65528",
       "kind": "integration_or_validation"
     },
     {
@@ -5001,7 +5001,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "949cefddc749d63480d31e34857339cb5f3729d205efcfaa7b94591acf89be8c"
+      "sha256": "861964bdeb849d488d4c9af597f028194a95c760fec5ddb77d0e7ed260ac5295"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -7104,7 +7104,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7a506532a611e454d68747d23a6b66eb0ba556b7cf5ef19d54c99d2c5325f401"
+      "sha256": "292e726d3b011051cf6a0b7113da93c2cb050a8d26ec9022620f5d6ece359e57"
     },
     {
       "path": "scripts/README.md",
@@ -7267,6 +7267,12 @@
       "source": "project-authored",
       "kind": "project_helper",
       "sha256": "61692711344532e6a389c18182f29123294a5136fecc38ff8a050cdaf71a65fb"
+    },
+    {
+      "path": "scripts/build_9x16_day30.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "993158afcada53bc6d7da4c07901dfddc517af38b230d7dab012139a59a20445"
     },
     {
       "path": "scripts/build_dynamic_srt.py",
@@ -8249,6 +8255,12 @@
       "sha256": "e95c04e6c789804c2a2df13766113ad4b5b3bdd78a1ddb9d3fb67703bd272a8b"
     },
     {
+      "path": "tests/test_build_9x16_day30.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "6632198b83eb68a55c63900c5632fa1adcc2aebbeeeb50f0d9dba904e9c2e1fb"
+    },
+    {
       "path": "tests/test_build_dynamic_srt.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -8936,11 +8948,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1195,
+    "manifest_files": 1197,
     "supporting_skills": 59,
     "active_skills": 76
   },
-  "bundle_version": "0.17.105",
+  "bundle_version": "0.17.106",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
