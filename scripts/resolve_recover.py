@@ -119,6 +119,20 @@ def scripting_responsive(timeout: float) -> bool:
     return "PROBE ok" in out
 
 
+def _name_of(obj):
+    """GetName() that tolerates a Resolve wrapper whose attributes read as None (seen right after a
+    LoadProject/relaunch); re-fetch a few times before giving up."""
+    for _ in range(5):
+        try:
+            name = obj.GetName() if obj is not None else None
+            if isinstance(name, str) and name:
+                return name
+        except Exception:
+            pass
+        time.sleep(1.5)
+    return None
+
+
 def open_project(pm, name: str, depth: int = 0) -> bool:
     """Depth-first search of the project-folder tree; leaves the project loaded."""
     if depth == 0:
@@ -205,8 +219,8 @@ def main() -> int:
     opened = any(open_in_any_library(pm, a.project) or time.sleep(10) for _ in range(3))
     if not opened:
         cur = pm.GetCurrentProject()
-        if action == "ok" and cur is not None and cur.GetName() != "Untitled Project":
-            print(f"RECOVER_FAILED: {a.project!r} not found and {cur.GetName()!r} is open; not restarting")
+        if action == "ok" and cur is not None and _name_of(cur) != "Untitled Project":
+            print(f"RECOVER_FAILED: {a.project!r} not found and {_name_of(cur)!r} is open; not restarting")
             return 1
         # Resolve drops a library whose drive was absent at startup: restart once now that it is back
         print("project not found in", pm.GetDatabaseList(), "- restarting Resolve to re-read libraries")
@@ -218,10 +232,11 @@ def main() -> int:
         pm = r.GetProjectManager()
         any(open_in_any_library(pm, a.project) or time.sleep(10) for _ in range(3))
     p = pm.GetCurrentProject()
-    if p is None or p.GetName() != a.project:
-        print(f"RECOVER_FAILED: project {a.project!r} did not open (current: {p and p.GetName()!r})")
+    pname = _name_of(p)
+    if p is None or pname != a.project:
+        print(f"RECOVER_FAILED: project {a.project!r} did not open (current: {pname!r})")
         return 1
-    print(f"RECOVER_OK {p.GetName()} timelines={p.GetTimelineCount()}")
+    print(f"RECOVER_OK {pname} timelines={p.GetTimelineCount()}")
     return 0
 
 

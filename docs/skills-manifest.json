@@ -5125,7 +5125,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "6b106af47c56c6501e0757ea1d36f608906c7099e606197de6a118589dfacf78"
+      "sha256": "be8e2c13e9c48b9a3d5d5822f4b887c2a46edcb44998e3ed3a85e2d12e1cb17a"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
@@ -6158,7 +6158,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "f6afe0ce4b43434ca9e065ae62ea41d509070f2c38e4685b2ca442fb819b7c8e"
+      "sha256": "a260b5b4e0b6ec598745de730d5ef08bfebbf2600c4c21820ce6fadbf4509f8b"
     },
     {
       "path": "docs/README.md",
@@ -9065,7 +9065,7 @@
       "path": "scripts/p2_export_final.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "138e843822ad09729bc2d6420f67478605251a80459570ad975dcebb6e9f3448"
+      "sha256": "3338a48a29e6ea0f656be6897b118984ec98dd1a592419a974306042bca5392b"
     },
     {
       "path": "scripts/p2_fix_captions.py",
@@ -9245,7 +9245,7 @@
       "path": "scripts/resolve_recover.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "5247c2dd2e604a1aba678b0db4aec4f8fcd7abeffcb81dddbd238f064022e7e3"
+      "sha256": "6dcb9f3a7310ffb14948cb3bb5204f4666a03851ad996349eed42b17e60f19e9"
     },
     {
       "path": "scripts/retune_vtuber_zoom.py",

@@ -1,7 +1,7 @@
 ---
 name: resolve-delivery
 description: Delivery, rendering, and deliverable QC in the DaVinci Resolve MCP. Apply when preparing render jobs, validating render settings, QCing a finished render against a spec (video/loudness/blanking/completeness), building or reconciling a render manifest, expanding texted/textless/stems/slate deliverables, verifying media ingest, or producing a provenance/episode report — live in a running Resolve OR offline against rendered files and the project DB. Routes to the live render tools, the offline deliverable/media/provenance tools, and the deliverables craft skills.
-version: 0.3.0
+version: 0.3.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -241,7 +241,7 @@ Two things that bite when hand-writing specs, both handled by the projections:
 
 ## Batch final export (p2 pattern)
 
-`scripts/p2_export_final.py` is the verified loop for exporting many timelines: dry-run by default, `--apply` to render. It calls `LoadRenderPreset("H.264 Master")` before every job and overrides only frame range, `TargetDir` and `CustomName`; it starts only the jobs it created (the project queue holds old jobs). Vertical (`_9x16`) timelines are duplicated to `<name>__cover_tmp`, the matching `<name>.jpg` is laid on a new top video track for the first frames (nothing shifts), the copy is rendered then deleted; originals are never modified. `<name>_150s` variants (from `p2_trim_tail_150s.py`) replace their original in the output name. After render, verify Complete status, nonempty output and ffprobe video+audio; loudness comes from `p2_loudnorm_worker*.py` (I=-14, TP=-1.5). Export a verified `.drp` first (`backup_drp.py`).
+`scripts/p2_export_final.py` is the verified loop for exporting many timelines: dry-run by default, `--apply` to render. **Render clip by clip: `--chunk N` (default 1)** prepares, queues, renders and verifies N clips, then writes `jobs.json`/`done.jsonl` before the next chunk, so a crash costs at most one chunk and a rerun resumes. Before every chunk `ensure_alive()` checks that Resolve still answers and that the render folder is still mounted; if either is gone it reopens Resolve through `resolve_recover.py` (which also restarts Google Drive when the project library path disappears) and continues rather than aborting. It calls `LoadRenderPreset("H.264 Master")` before every job and overrides only frame range, `TargetDir` and `CustomName`; it starts only the jobs it creates (the project queue holds old jobs). Vertical (`_9x16`) timelines are duplicated to `<name>__cover_tmp`, the matching `<name>.jpg` is laid on a new top video track for the first frames (nothing shifts), the copy is rendered then deleted; originals are never modified. `<name>_150s` variants (from `p2_trim_tail_150s.py`) replace their original in the output name. After render, verify Complete status, nonempty output and ffprobe video+audio; loudness comes from `p2_loudnorm_worker*.py` (I=-14, TP=-1.5). Export a verified `.drp` first (`backup_drp.py`). `AddRenderJob`/`SetRenderSettings`/`LoadRenderPreset` retry on a falsy answer, and the p2-only bad-GIF tail trim warns instead of aborting the batch.
 
 ## Source-media safety (AGENTS.md)
 

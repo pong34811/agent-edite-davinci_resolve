@@ -11,8 +11,12 @@ the original name). Starts ONLY the jobs it creates (the project queue holds old
 Run from repo root (dry-run by default):
   python -m scripts.p2_export_final [--project NAME] [--covers DIR] [--out DIR] [--preset NAME] [--require-cover]
                                     [--apply] [--only "out_name,out_name"] [--limit N] [--verify]
-                                    [--prepend-cover-frames N]
+                                    [--prepend-cover-frames N] [--chunk N]
 
+`--chunk N` (default 1) renders N clips at a time and writes progress after each chunk, so a
+crash/close costs at most one chunk and a rerun resumes from `done.jsonl`. Before every chunk the
+script checks that Resolve still answers and that the render folder is still mounted; if either is
+gone it reopens Resolve (`resolve_recover.py`, which also restarts Google Drive) and continues.
 With --prepend-cover-frames, export/import DRT on a disposable copy shifts every
 video/audio/subtitle item by N frames before placing the cover. Requires zstandard.
 The original one-frame overlay behavior remains the default for other jobs.
@@ -349,6 +353,219 @@ def main():
         _run(r, argv, covers)
 
 
+def _project_name(obj):
+    """GetName() that survives a Resolve wrapper answering every attribute with None right after a
+    LoadProject/relaunch: re-fetch until the name reads back as a non-empty string."""
+    for _ in range(5):
+        try:
+            name = obj.GetName() if obj is not None else None
+            if isinstance(name, str) and name:
+                return name
+        except Exception:
+            pass
+        time.sleep(1.5)
+    return None
+
+
+def _out_dir_ready(path, limit=180):
+    """The render target lives on Google Drive; when Drive for desktop stops, G: disappears and
+    Resolve fails SaveProject/render. Start Drive and wait for the mount.
+
+    User rule (2026-11-17): when Drive or Resolve closes - on its own or on the agent's order -
+    the app is brought back, not reported as a blocker."""
+    target = Path(path)
+    if target.is_dir():
+        return True
+    print(f"output folder missing ({path}); starting Google Drive", flush=True)
+    exes = sorted(Path(r"C:\Program Files\Google\Drive File Stream").glob("*/GoogleDriveFS.exe"))
+    if exes:
+        subprocess.Popen(["explorer.exe", str(exes[-1])])
+    end = time.time() + limit
+    while time.time() < end and not target.is_dir():
+        time.sleep(5)
+    return target.is_dir()
+
+
+def ensure_alive(r, pm, project, out_dir=None):
+    """Reopen Resolve when it stopped answering, and Drive when the output folder vanished.
+
+    Returns a live (resolve, project_manager, project); raises after 3 attempts."""
+    for attempt in range(3):
+        try:
+            cur = pm.GetCurrentProject() if pm is not None else None
+            if _project_name(cur) == project and (out_dir is None or Path(out_dir).is_dir()):
+                return r, pm, cur
+        except Exception:
+            pass
+        if out_dir is not None:
+            _out_dir_ready(out_dir)
+        print(f"Resolve not answering (attempt {attempt + 1}/3); recovering", flush=True)
+        try:
+            subprocess.run([sys.executable, str(ROOT / "scripts" / "resolve_recover.py"), "--project", project],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900)
+        except Exception as exc:
+            print("resolve_recover failed:", exc, flush=True)
+        time.sleep(5)
+        r = connect_resolve()
+        pm = r.GetProjectManager() if r else None
+    raise RuntimeError(f"Resolve did not come back for {project!r}")
+
+
+def _render_chunk(r, pm, p, mp, batch, pool_covers, prepend, record, jobs_file, done, covers):
+    """Prepare, queue, render and verify one chunk of clips (default 1 = clip by clip)."""
+    tls = {p.GetTimelineByIndex(i).GetName(): p.GetTimelineByIndex(i) for i in range(1, p.GetTimelineCount() + 1)}
+    src_keep = tls[batch[0]["timeline"]]
+    queued = []
+    cur = {}
+    try:
+        for j in batch:
+            cur = j
+            src = tls[j["timeline"]]
+            tl = src
+            p.SetCurrentTimeline(src)
+            time.sleep(GAP)
+            bad = _bad_gifs(src)
+            if j["vertical"] and prepend:
+                tl = shifted_cover_timeline(r, p, mp, src, j["out_name"] + TMP, prepend)
+                j["tmp"] = tl.GetName()
+            elif j["vertical"] or bad:
+                tl = src.DuplicateTimeline(j["out_name"] + TMP)
+                assert tl, "DuplicateTimeline failed"
+                time.sleep(GAP)
+                p = pm.GetCurrentProject() or p
+                p.SetCurrentTimeline(tl)
+                time.sleep(GAP)
+                j["tmp"] = tl.GetName()
+                if bad:
+                    try:
+                        _trim_gif_tails(p, mp, tl)
+                    except Exception as ex:
+                        print(f"WARNING: bad-GIF trim skipped for {j['out_name']}: {ex}", flush=True)
+            if j["vertical"]:
+                before = {n: len(tl.GetItemListInTrack("video", n) or []) for n in range(1, tl.GetTrackCount("video") + 1)}
+                assert tl.AddTrack("video"), "AddTrack failed"
+                time.sleep(GAP)
+                top = tl.GetTrackCount("video")
+                start = tl.GetStartFrame()
+                # stills ignore startFrame/endFrame (land as 300 frames); pool mark in/out sets the real length
+                cov = pool_covers[j["out_name"]]
+                cover_frames = prepend or COVER_FRAMES
+                assert cov.SetMarkInOut(0, cover_frames - 1, "video"), "SetMarkInOut failed"
+                try:
+                    assert mp.AppendToTimeline([{"mediaPoolItem": cov, "mediaType": 1, "trackIndex": top,
+                                                 "recordFrame": start}]), "cover append failed"
+                finally:
+                    cov.ClearMarkInOut("all")
+                time.sleep(GAP)
+                it = tl.GetItemListInTrack("video", top) or []
+                assert len(it) == 1 and it[0].GetStart() == start and it[0].GetEnd() == start + cover_frames, \
+                    f"cover placement wrong: {[(x.GetStart(), x.GetEnd()) for x in it]}"
+                after = {n: len(tl.GetItemListInTrack("video", n) or []) for n in before}
+                assert after == before, "existing video tracks changed"
+            assert p.GetCurrentTimeline().GetUniqueId() == tl.GetUniqueId(), "activate failed"
+
+            def _retry(fn, what, attempts=4):
+                """Resolve intermittently answers a preset/settings/AddRenderJob call with a falsy value
+                while the Deliver page settles (seen on the Armigon 2026-10 batch: 20 adds then a bare
+                AddRenderJob failure); retry with a growing gap instead of aborting the whole batch."""
+                last = "no value"
+                for k in range(attempts):
+                    try:
+                        v = fn()
+                    except Exception as exc:  # surfaced after the retries are exhausted
+                        v, last = None, exc
+                    if v:
+                        return v
+                    time.sleep(GAP * (k + 1))
+                raise AssertionError(f"{what} failed {j['out_name']}: {last}")
+
+            assert _retry(lambda: p.LoadRenderPreset(PRESET), "LoadRenderPreset")
+            assert _retry(lambda: p.SetRenderSettings({"SelectAllFrames": True, "TargetDir": VDO, "CustomName": j["out_name"],
+                                                       "FormatWidth": 1080 if j["vertical"] else 1920,
+                                                       "FormatHeight": 1920 if j["vertical"] else 1080,
+                                                       "FrameRate": j["fps"],
+                                                       **SUBTITLE_BURN_IN}), "SetRenderSettings")
+            jid = _retry(lambda: p.AddRenderJob(), "AddRenderJob")
+            assert jid, f"AddRenderJob failed {j['out_name']}"
+            j["job"] = jid
+            queued.append(j)
+            print("JOB", j["out_name"], jid, flush=True)
+            time.sleep(0.5)
+    except Exception:
+        curr_p = pm.GetCurrentProject() or p
+        for jj in queued + [cur]:
+            if jj.get("job") and hasattr(curr_p, "DeleteRenderJob"):
+                try:
+                    curr_p.DeleteRenderJob(jj["job"])
+                except Exception:
+                    pass
+            if jj.get("tmp") and hasattr(curr_p, "GetTimelineCount"):
+                try:
+                    t = next((curr_p.GetTimelineByIndex(i) for i in range(1, curr_p.GetTimelineCount() + 1)
+                              if curr_p.GetTimelineByIndex(i) and curr_p.GetTimelineByIndex(i).GetName() == jj["tmp"]), None)
+                    if t:
+                        curr_p.SetCurrentTimeline(src_keep)
+                        time.sleep(GAP)
+                        mp.DeleteTimelines([t])
+                except Exception:
+                    pass
+        raise
+    assert p.StartRendering([j["job"] for j in queued]), "StartRendering failed"
+    pending = {j["job"]: j for j in queued}
+    while pending:
+        time.sleep(6)
+        if hasattr(p, "IsRenderingInProgress") and not p.IsRenderingInProgress():
+            ready = [jid for jid in pending if (p.GetRenderJobStatus(jid) or {}).get("JobStatus") == "Ready"]
+            if ready:
+                p.StartRendering(ready)
+        for jid in list(pending):
+            func = getattr(p, "GetRenderJobStatus", None)
+            if not callable(func):
+                try:
+                    p = pm.GetCurrentProject() or p
+                    func = getattr(p, "GetRenderJobStatus", None)
+                except Exception:
+                    pass
+            if not callable(func):
+                continue
+            try:
+                st = func(jid) or {}
+            except Exception:
+                continue
+            s = st.get("JobStatus")
+            if s in ("Complete", "Failed", "Cancelled"):
+                j = pending.pop(jid)
+                j["status"] = s
+                j["render_status"] = st
+                with done.open("a", encoding="utf-8") as fh:
+                    fh.write(json.dumps(j, ensure_ascii=False) + "\n")
+                print("DONE", j["out_name"], s, flush=True)
+    clear_dir_cache()
+    for j in queued:
+        errors = verify_one(j, covers) if j["status"] == "Complete" else [j.get("render_status")]
+        j["qc_errors"] = errors
+        if j.get("tmp") and j["status"] == "Complete" and not errors:
+            try:
+                curr_p = r.GetProjectManager().GetCurrentProject()
+                t = _find_timeline(curr_p, j["tmp"])
+                if t:
+                    curr_p.GetMediaPool().DeleteTimelines([t])
+                    time.sleep(GAP)
+            except Exception as ex:
+                print(f"Warning deleting tmp timeline: {ex}", flush=True)
+    for _ in range(5):
+        try:
+            cur_pm = r.GetProjectManager()
+            if cur_pm and cur_pm.SaveProject():
+                break
+        except Exception:
+            pass
+        time.sleep(1.2)
+    record.update({q["out_name"]: q for q in queued})
+    jobs_file.write_text(json.dumps(list(record.values()), ensure_ascii=False, indent=1), encoding="utf-8")
+    assert all(j["status"] == "Complete" and not j["qc_errors"] for j in queued), "render or output QC failed; inspect jobs.json"
+
+
 def _run(r, argv, covers):
     from scripts.backup_drp import export_verified
 
@@ -356,6 +573,7 @@ def _run(r, argv, covers):
     limit = int(_arg(argv, "--limit")) if "--limit" in argv else None
     only = set(_arg(argv, "--only").split(",")) if "--only" in argv else None
     prepend = int(_arg(argv, "--prepend-cover-frames", "0"))
+    chunk = max(1, int(_arg(argv, "--chunk", "1")))
     jobs_file = OUT / "jobs.json"
     pm = r.GetProjectManager()
     p = ensure_project(pm, PROJECT)
@@ -371,13 +589,13 @@ def _run(r, argv, covers):
         jobs = plan_jobs(list(tls))
     if only:
         jobs = [j for j in jobs if j["out_name"] in only]
-    print(f"{len(jobs)} jobs ({sum(j['vertical'] for j in jobs)} vertical)", flush=True)
-    prev = {x["out_name"]: x for x in json.loads(jobs_file.read_text(encoding="utf-8"))} if jobs_file.exists() else {}
+    print(f"{len(jobs)} jobs ({sum(j['vertical'] for j in jobs)} vertical), chunk={chunk}", flush=True)
+    record = {x["out_name"]: x for x in json.loads(jobs_file.read_text(encoding="utf-8"))} if jobs_file.exists() else {}
     for j in jobs:
-        src=tls[j["timeline"]]
-        j["fps"]=float(src.GetSetting("timelineFrameRate"))
-        j["prepend_frames"]=prepend if j["vertical"] else 0
-        j["dur_s"]=(src.GetEndFrame()-src.GetStartFrame()+j["prepend_frames"])/j["fps"]
+        src = tls[j["timeline"]]
+        j["fps"] = float(src.GetSetting("timelineFrameRate"))
+        j["prepend_frames"] = prepend if j["vertical"] else 0
+        j["dur_s"] = (src.GetEndFrame() - src.GetStartFrame() + j["prepend_frames"]) / j["fps"]
     completed = verified_completed_names(OUT / "done.jsonl", jobs, covers)
     ambiguous = [j["out_name"] for j in jobs if len(_output_matches(j["out_name"])) > 1]
     if ambiguous:
@@ -412,7 +630,6 @@ def _run(r, argv, covers):
     if not bk.exists():
         print("backup bytes:", export_verified(pm, p, bk), flush=True)
 
-    queued = []
     pool_covers = {}
     vert = [j for j in jobs if j["vertical"]]
     if vert:
@@ -431,139 +648,29 @@ def _run(r, argv, covers):
         for j in vert:
             assert cover_file_for(j["out_name"]) in have, f"cover not in pool: {j['out_name']}"
             pool_covers[j["out_name"]] = have[cover_file_for(j["out_name"])]
-    src_keep = tls[jobs[0]["timeline"]]
-    cur = {}
-    try:
-      for j in jobs:
-        cur = j
-        src = tls[j["timeline"]]
-        tl = src
-        p.SetCurrentTimeline(src)
-        time.sleep(GAP)
-        bad = _bad_gifs(src)
-        if j["vertical"] and prepend:
-            tl=shifted_cover_timeline(r,p,mp,src,j["out_name"]+TMP,prepend)
-            j["tmp"]=tl.GetName()
-        elif j["vertical"] or bad:
-            tl = src.DuplicateTimeline(j["out_name"] + TMP)
-            assert tl, "DuplicateTimeline failed"
-            time.sleep(GAP)
-            p = pm.GetCurrentProject() or p
-            p.SetCurrentTimeline(tl)
-            time.sleep(GAP)
-            j["tmp"] = tl.GetName()
-            if bad:
-                _trim_gif_tails(p, mp, tl)
-        if j["vertical"]:
-            before = {n: len(tl.GetItemListInTrack("video", n) or []) for n in range(1, tl.GetTrackCount("video") + 1)}
-            assert tl.AddTrack("video"), "AddTrack failed"
-            time.sleep(GAP)
-            top = tl.GetTrackCount("video")
-            start = tl.GetStartFrame()
-            # stills ignore startFrame/endFrame (land as 300 frames); pool mark in/out sets the real length
-            cov = pool_covers[j["out_name"]]
-            cover_frames=prepend or COVER_FRAMES
-            assert cov.SetMarkInOut(0, cover_frames - 1, "video"), "SetMarkInOut failed"
-            try:
-                assert mp.AppendToTimeline([{"mediaPoolItem": cov, "mediaType": 1, "trackIndex": top,
-                                             "recordFrame": start}]), "cover append failed"
-            finally:
-                cov.ClearMarkInOut("all")
-            time.sleep(GAP)
-            it = tl.GetItemListInTrack("video", top) or []
-            assert len(it) == 1 and it[0].GetStart() == start and it[0].GetEnd() == start + cover_frames, \
-                f"cover placement wrong: {[(x.GetStart(), x.GetEnd()) for x in it]}"
-            after = {n: len(tl.GetItemListInTrack("video", n) or []) for n in before}
-            assert after == before, "existing video tracks changed"
-        assert p.GetCurrentTimeline().GetUniqueId() == tl.GetUniqueId(), "activate failed"
-        assert p.LoadRenderPreset(PRESET), "LoadRenderPreset failed"
-        assert p.SetRenderSettings({"SelectAllFrames": True, "TargetDir": VDO, "CustomName": j["out_name"],
-                                    "FormatWidth":1080 if j["vertical"] else 1920,
-                                    "FormatHeight":1920 if j["vertical"] else 1080,
-                                    "FrameRate":j["fps"],
-                                    **SUBTITLE_BURN_IN}), "SetRenderSettings failed"
-        jid = p.AddRenderJob()
-        assert jid, f"AddRenderJob failed {j['out_name']}"
-        j["job"] = jid
-        queued.append(j)
-        jobs_file.write_text(json.dumps(list({**prev, **{q["out_name"]: q for q in queued}}.values()),
-                                             ensure_ascii=False, indent=1), encoding="utf-8")
-        print("JOB", j["out_name"], jid, flush=True)
-        time.sleep(0.5)
-    except Exception:
-        curr_p = pm.GetCurrentProject() or p
-        for jj in queued + [cur]:
-            if jj.get("job") and hasattr(curr_p, "DeleteRenderJob"):
-                try:
-                    curr_p.DeleteRenderJob(jj["job"])
-                except Exception:
-                    pass
-            if jj.get("tmp") and hasattr(curr_p, "GetTimelineCount"):
-                try:
-                    t = next((curr_p.GetTimelineByIndex(i) for i in range(1, curr_p.GetTimelineCount() + 1)
-                              if curr_p.GetTimelineByIndex(i) and curr_p.GetTimelineByIndex(i).GetName() == jj["tmp"]), None)
-                    if t:
-                        curr_p.SetCurrentTimeline(src_keep)
-                        time.sleep(GAP)
-                        mp.DeleteTimelines([t])
-                except Exception:
-                    pass
-        raise
-    assert p.StartRendering([j["job"] for j in queued]), "StartRendering failed"
-    pending = {j["job"]: j for j in queued}
+
     done = OUT / "done.jsonl"
-    while pending:
-        time.sleep(6)
-        if hasattr(p, "IsRenderingInProgress") and not p.IsRenderingInProgress():
-            ready = [jid for jid in pending if (p.GetRenderJobStatus(jid) or {}).get("JobStatus") == "Ready"]
-            if ready:
-                p.StartRendering(ready)
-        for jid in list(pending):
-            func = getattr(p, "GetRenderJobStatus", None)
-            if not callable(func):
-                try:
-                    p = pm.GetCurrentProject() or p
-                    func = getattr(p, "GetRenderJobStatus", None)
-                except Exception:
-                    pass
-            if not callable(func):
-                continue
+    total = len(jobs)
+    for start in range(0, total, chunk):
+        batch = jobs[start:start + chunk]
+        for attempt in range(3):
             try:
-                st = func(jid) or {}
-            except Exception:
-                continue
-            s = st.get("JobStatus")
-            if s in ("Complete", "Failed", "Cancelled"):
-                j = pending.pop(jid)
-                j["status"] = s
-                j["render_status"] = st
-                with done.open("a", encoding="utf-8") as fh:
-                    fh.write(json.dumps(j, ensure_ascii=False) + "\n")
-                print("DONE", j["out_name"], s, flush=True)
-    clear_dir_cache()
-    for j in queued:
-        errors=verify_one(j,covers) if j["status"] == "Complete" else [j.get("render_status")]
-        j["qc_errors"]=errors
-        if j.get("tmp") and j["status"] == "Complete" and not errors:
-            try:
-                curr_p = r.GetProjectManager().GetCurrentProject()
-                t = _find_timeline(curr_p, j["tmp"])
-                if t:
-                    curr_p.GetMediaPool().DeleteTimelines([t])
-                    time.sleep(GAP)
-            except Exception as ex:
-                print(f"Warning deleting tmp timeline: {ex}", flush=True)
-    for _ in range(5):
-        try:
-            cur_pm = r.GetProjectManager()
-            if cur_pm and cur_pm.SaveProject():
+                r, pm, p = ensure_alive(r, pm, PROJECT, VDO)
+                mp = p.GetMediaPool()
+                _render_chunk(r, pm, p, mp, batch, pool_covers, prepend, record, jobs_file, done, covers)
                 break
-        except Exception:
-            pass
-        time.sleep(1.2)
-    jobs_file.write_text(json.dumps(list({**prev, **{q["out_name"]: q for q in queued}}.values()),ensure_ascii=False,indent=1),encoding="utf-8")
-    assert all(j["status"]=="Complete" and not j["qc_errors"] for j in queued), "render or output QC failed; inspect jobs.json"
-    print("ALL DONE", len(queued), flush=True)
+            except Exception as exc:
+                alive = False
+                try:
+                    alive = _project_name(pm.GetCurrentProject() if pm is not None else None) == PROJECT
+                except Exception:
+                    alive = False
+                if alive or attempt == 2:
+                    raise
+                print(f"chunk {start // chunk + 1} failed ({exc!r}); recovering and retrying", flush=True)
+                r, pm, p = ensure_alive(None, None, PROJECT, VDO)
+        print(f"CHUNK DONE {start + len(batch)}/{total}", flush=True)
+    print("ALL DONE", total, flush=True)
 
 
 if __name__ == "__main__":
