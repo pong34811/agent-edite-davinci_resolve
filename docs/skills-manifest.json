@@ -3913,7 +3913,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "e406cef5f6a68deff6a6c886f22b22149193b45a26bedc49860fe61259cc6bf3"
+      "sha256": "ad89255f2309a2973dbb7b3b84474932c4e5df3556c32b1c502b23b78a27be64"
     },
     {
       "path": ".agents/skills/resolve-mcp/references/target-resolution.md",

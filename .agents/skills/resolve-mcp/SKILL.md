@@ -1,7 +1,7 @@
 ---
 name: resolve-mcp
 description: Orientation and index for DaVinci Resolve MCP work — grading, editing, conforming, delivery, media analysis, and .drp/.drt/.drx file work, live in a running Resolve or offline with none open. Load this for a map of the domain skills, the live-vs-offline servers, and the cross-cutting safety rules. The per-domain skills (resolve-color / resolve-edit / resolve-conform / resolve-delivery / resolve-media-analysis) carry the depth and self-trigger on their own descriptions; use this as the map, or when a task spans several domains.
-version: 0.4.0
+version: 0.5.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -60,7 +60,23 @@ index rather than their own skill:
 
   `docs/kernels/project-lifecycle-kernel.md`. Offline DB read/patch: advanced
 
-  `project_read` / `project_db` (project CLOSED + quit/relaunch).
+  `project_read` / `project_db` (project CLOSED + quit/relaunch). Create and
+
+  restore projects through the MCP tool (`create_project`, `import_project`)
+
+  — never through Resolve's own "Save Current Project" dialog: a save-as copy
+
+  is a manual GUI step with no read-back, so it cannot be verified.
+
+  `project_manager create` takes `name` plus `media_location_path`
+
+  (Resolve 20.2.2+), so it does not need the dialog at all; measured on
+
+  21.1.0.17 it created `Agent Editing` with no modal. `project_settings
+
+  set_name` is the opposite case: it returned `False` on the same build and
+
+  cannot name a never-saved project, so it is not a way around the prompt.
 
 - **Review / annotations** — timeline markers, review reports, annotation
 
