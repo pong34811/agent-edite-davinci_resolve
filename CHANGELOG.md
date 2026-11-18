@@ -1,5 +1,36 @@
 # Changelog
 
+## v0.17.109 — เพิ่ม skill davinci-resolve-api และสร้างโปรเจกต์ Resolve ผ่าน MCP ได้โดยไม่มี dialog
+
+### รายละเอียด
+- เพิ่ม skill ใหม่ `davinci-resolve-api` (`.agents/skills/davinci-resolve-api/SKILL.md`) — รวบรวมเอกสาร DaVinci Resolve scripting API ไว้ใน repo เพื่อให้อ้างอิง method ได้โดยไม่ต้องเดินไปอ่าน gist ภายนอก
+- `project-learning` 0.3.0: เพิ่มหัวข้อ "Fast Resolve iteration" (ไม่รัน pytest ในลูป run-inspect-fix บนไทม์ไลน์จริง แต่ยังคง .drp backup/preserved_state และห้ามเขียน master timeline) และเปลี่ยนขั้นตอนจบงานเป็น refresh manifest ก่อน แล้วรัน bundle check + test ที่กระทบ พร้อมรัน full suite ก่อนออก release
+- `resolve-smart-edit` 0.1.0: เขียนใหม่สำหรับ Resolve 21 เป็น MCP-first (prerequisites, quick reference, procedure, execution recipes) แทนเอกสาร pipeline เดิม
+- `AGENTS.md`: ผ่อนกฎ "บังคับ release หลังทุก task" และปรับคำแนะนำ pytest ให้สอดคล้องกับ skill (ไม่ต้องรันใน live loop แต่รันก่อน release)
+- `resolve-mcp` 0.5.0: บันทึกเส้นทาง project lifecycle ว่า `project_manager create` รับ `name` + `media_location_path` (Resolve 20.2.2+) สร้างโปรเจกต์ได้จริงโดยไม่มี modal ขณะที่ `project_settings set_name` คืน `False` บน 21.1.0.17 และห้ามใช้ dialog Save Current Project เพราะเป็น GUI step ที่ read-back ไม่ได้
+- `.mcp.json`: ชี้ `davinci-resolve-mcp` ไปที่ `C:\Users\warit\Desktop\davinci-resolve-mcp` (แก้ `command` และ `args[0]` เท่านั้น คง `env` เดิม)
+- บันทึก job artifact ของ Laffy introduction 2 ไฟล์ log ไว้ใน `work/laffy-introduction/intake/`
+- ตรวจสอบจริงบนเครื่องนี้: `project_manager create` สร้างโปรเจกต์ `Agent Editing` (media location `C:\Users\warit\DaVinci Resolve Media`) โดยไม่มี dialog และ read-back `get_name` ได้ `Agent Editing`; `project_settings set_name` ล้มเหลงตามที่ระบุ; `py -m pytest -q` ผ่านทั้งชุด 460 passed, 35 skipped
+- ยังไม่ได้ commit stills 3 ไฟล์ใน `work/laffy-introduction/intake/` (`pilot-1s.jpg`, `source-8s.jpg`, `source-sheet.jpg`) ตามกฎ repo ที่ห้าม staging stills/footage
+
+### Skill ที่อัปเดต
+- `davinci-resolve-api` (ใหม่): `SKILL.md`
+- `project-learning` (แก้ไข): `SKILL.md`
+- `resolve-mcp` (แก้ไข): `SKILL.md`
+- `resolve-smart-edit` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- เพิ่ม `.agents/skills/davinci-resolve-api/SKILL.md`
+- แก้ไข `.agents/skills/project-learning/SKILL.md`
+- แก้ไข `.agents/skills/resolve-mcp/SKILL.md`
+- แก้ไข `.agents/skills/resolve-smart-edit/SKILL.md`
+- แก้ไข `.mcp.json`
+- แก้ไข `AGENTS.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- เพิ่ม `work/laffy-introduction/intake/caption-prep.log`
+- เพิ่ม `work/laffy-introduction/intake/source-audio-analysis.log`
+
 ## v0.17.108 — เพิ่มสกิล katy404-minecraft-editing และบันทึก Operating Notes จาก Day 30
 
 ### รายละเอียด
