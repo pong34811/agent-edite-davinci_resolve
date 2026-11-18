@@ -3147,7 +3147,7 @@
       "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "4ae6efac9d687279a293bd2c87e83b4faf961f48e36fb007571d23fdeef2e15b"
+      "sha256": "5a9f601e1a5ef54a0b146e5b335c55a96c19e516080f680054ad8150a5e9b6c0"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -6158,7 +6158,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "a260b5b4e0b6ec598745de730d5ef08bfebbf2600c4c21820ce6fadbf4509f8b"
+"sha256": "a260b5b4e0b6ec598745de730d5ef08bfebbf2600c4c21820ce6fadbf4509f8b"
     },
     {
       "path": "docs/README.md",
@@ -6270,7 +6270,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "861964bdeb849d488d4c9af597f028194a95c760fec5ddb77d0e7ed260ac5295"
+      "sha256": "0f8c5840de3fc6d3523776f061c8ca167791dce1cd52ad7f4e2dd5f3a681274c"
     },
     {
       "path": "docs/channels/laffy.md",

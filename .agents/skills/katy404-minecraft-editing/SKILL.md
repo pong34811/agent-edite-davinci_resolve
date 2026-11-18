@@ -1,7 +1,7 @@
 ---
 name: katy404-minecraft-editing
 description: ใช้เมื่อตัดต่อคลิปเกม Minecraft ช่อง KATY404 (ซีรีส์ "ปลูกข้าวจนกว่าจะ 10K ผู้ติดตาม") ทั้ง 16:9 Clean Master และ 9:16 Shorts/TikTok ใน DaVinci Resolve — ครอบคลุมการจัดโครงสร้างแทร็ก, ค่า Geometry/Scale, Preset ซับไตเติล Mitr, การวาง Focus Zoom, กลยุทธ์การตัดต่อเพิ่มยอดวิว/Retention, และการแก้ Bug/Trap ทางเทคนิค (DRT XML In-offset, Live DRT Preset patch, Loudness -13.2 LUFS)
-version: 0.1.0
+version: 0.1.2
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -140,3 +140,62 @@ user-invocable: true
 - `tests/test_build_9x16_day30.py`: เทสต์สำหรับสคริปต์ 9:16 (merge ranges, layout math, timeline naming)
 - `scripts/drt_set_subtitle_preset.py`: ตัวแพตช์ Subtitle Preset เข้าไฟล์ DRT XML
 - `scripts/backup_drp.py`: ตัวสำรองโปรเจกต์ DRP ที่ตรวจสอบความถูกต้องแล้ว
+
+### Trap 7: ไมค์เบามากในไฟล์ OBS ดิบ (day 31)
+- **ปัญหา**: ไฟล์ day 31 วัดได้ -34.7 LUFS (true peak -15.8 dBFS) ขณะที่ day 30 ได้ -30.8 LUFS; ถ้าใช้แค่ AudioVolume จะต้องเพิ่ม ~20 dB ซึ่งทำให้ peak ชน
+- **วิธีแก้**: ใช้ `scripts/set_dialogue_leveler.py --apply` เปิด AI Dialogue Leveler บน A1 (ReduceLoud + LiftSoft, BackgroundReduction ปิด, OutputGain 0) แล้วค่อยปรับ AudioVolume; day 31 ได้ -12.3 LUFS / true peak -1.1 dBFS (A1 +9.6 dB จากเดิม +11.6 dB ที่ผู้ใช้ตั้งไว้)
+- **หมายเหตุ**: หน้าต่างซูมต้องวัดใหม่ทุกสตรีม — day 31 อวาตาร์อยู่คอลัมน์ ~0.78 ของเฟรม โทนผมเริ่ม ~0.556 ทำให้ window top 0.520 / bottom 0.985 / cx 0.760 (Size 2.15) ได้ headroom ~7% และไม่มีขอบดำขวา ไม่ใช้ค่าของ day 30 ได้โดยตรง
+
+---
+
+## 6. Day 31 Learned Rules & SOPs (เพิ่มเติมจาก Session Summary)
+
+### 6.1 Timeline Promotion Workflow (โปรโมตไทม์ไลน์หลักและลบตัวดิบ)
+- **คำสั่งทริกเกอร์**: "อัปเดต Timeline หลัก และลบ Timeline สำรอง"
+- **ขั้นตอน**:
+  1. สำรองไฟล์ `.drp` ก่อน (เช่น `pre_promote.drp`) ผ่าน `scripts/backup_drp.py`
+  2. ลบ Timeline ตัวดิบด้วย unique ID ผ่าน Python `MediaPool.DeleteTimelines` (ห้ามใช้ MCP `timeline.delete_timeline` เพราะจะสร้าง `_archived` ค้างในโปรเจกต์)
+  3. เปลี่ยนชื่อ `Timeline 1_edit` → `Timeline 1`
+  4. ตรวจสอบ: 3,140 เฟรม, A1 OutputGain = 2.0
+- **เหตุผล**: MCP `delete_timeline` ทำให้เกิด timeline `_archived` ค้าง ใช้ Python API ตรงๆ สะดวกกว่าและสะอาดกว่า
+
+### 6.2 การคำนวณ Geometry 9:16 สำหรับ Katy404 (Day 31)
+- **หลักการ**: **ห้ามคัดลอกค่าพิกัดและสเกลจากตอนก่อนหน้า** ต้องวัดค่าจาก source ใหม่ทุกครั้ง เนื่องจากขนาดและตำแหน่งอวาตาร์เปลี่ยนไปในแต่ละวัน
+- **ค่าที่วัดได้ Day 31**:
+  - `AV_CENTRE`: (1022, 532)
+  - `K_STACK`: 2.8235
+  - `K_FULL`: 3.3 (ปรับลดจาก 4.0 เพื่อหลบซับ)
+  - `GAME_WIN`: (230, 90, 860, 650)
+- **QC**: ผ่าน 6/6 เฟรม และเรนเดอร์ส่งมอบ `วันที่ 31_9x16_test_2026-11-18.mp4` (-12.3 LUFS)
+- **สคริปต์**: เก็บไว้ที่ `scripts/scratch/d31/`
+
+### 6.3 ระยะปลอดภัยของซับไตเติล (Mitr-short-001)
+- **ความละเอียด**: 1080x1920
+- **แถบซับ**: อยู่ที่ y ≈ 985-1090
+- **กฎ**: ตั้งค่าสเกลและตำแหน่งของอวาตาร์โหมด Full (K_FULL) ให้ **ดวงตาอยู่ต่ำกว่า y = 1090 เสมอ**
+- **ตัวอย่าง**: K_FULL 3.3 → ดวงตาอยู่ที่ y ≈ 1129 (ปลอดภัย)
+- **หมายเหตุ**: K_FULL 4.0 เดิมทำให้ดวงตาสูงเกินไป ทับซับ → ปรับเป็น 3.3
+
+### 6.4 การตรวจสอบ QC ตำแหน่งซับ (Subtitle Position QC)
+- **ปัญหา**: การ `ExportCurrentFrameAsStill` จาก DaVinci Resolve **จะไม่ติดซับไตเติล** (native still export omits subtitles)
+- **วิธีที่ถูกต้อง**: ใช้วิธี **diff ภาพเฟรมจากไฟล์วิดีโอที่เรนเดอร์จริง** เทียบกับ `expected canvas` เพื่อตรวจสอบตำแหน่งซับ
+- **เครื่องมือ**: `scripts/focus_frame_qc.py` หรือ `ffprobe` + pixel comparison
+- **หลักฐาน**: ต้องดูภาพเคลื่อนไหวจากไฟล์ render จริง ไม่ใช่ still image
+
+### 6.5 การอัปเดตเอกสารและทดสอบ Repo (Day 31)
+- เพิ่มบันทึกใน `docs/channels/katy404.md` และ `docs/OPERATING-NOTES.md`
+- รีเฟรช `docs/skills-manifest.json`
+- `pytest` ผ่าน 27 รายการ
+- **ยังไม่ได้ commit** และ **ไม่แตะไฟล์** `katy404-minecraft-editing/SKILL.md` ที่ถูกแก้ไขค้างไว้ (จะทำในครั้งนี้)
+
+---
+
+## 7. สคริปต์และชุดคำสั่งสำคัญใน Repository (อัปเดต Day 31)
+
+- `scripts/build_9x16_day30.py`: สคริปต์ประกอบ 9:16 อัตโนมัติ (V1/V3/V4 layout, focus zoom 6 จุด, patch Mitr-short-001 ผ่าน DRT, verify ภาพนิ่ง)
+- `scripts/scratch/d31/`: สคริปต์ Day 31 geometry measurement และ 9:16 build
+- `tests/test_build_9x16_day30.py`: เทสต์สำหรับสคริปต์ 9:16 (merge ranges, layout math, timeline naming)
+- `scripts/drt_set_subtitle_preset.py`: ตัวแพตช์ Subtitle Preset เข้าไฟล์ DRT XML
+- `scripts/backup_drp.py`: ตัวสำรองโปรเจกต์ DRP ที่ตรวจสอบความถูกต้องแล้ว
+- `scripts/focus_frame_qc.py`: QC ตำแหน่งซับด้วย pixel diff จากไฟล์ render จริง
+- `scripts/set_dialogue_leveler.py`: AI Dialogue Leveler สำหรับไฟล์มิกเบา
