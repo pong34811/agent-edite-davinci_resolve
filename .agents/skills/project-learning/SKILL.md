@@ -1,7 +1,7 @@
 ---
 name: project-learning
 description: Use at the start and end of any DaVinci Resolve editing task in this repo, and whenever you are about to write a new script. Finds the existing tool first, keeps throwaway scripts inside the repo, and records new rules, scripts and corrections so the next session (Claude Code, Codex or Hermes) starts smarter and faster.
-version: 0.2.1
+version: 0.3.0
 author: Warit (pong34811)
 license: MIT
 platforms: [windows]
@@ -33,6 +33,12 @@ For each editing assignment, consult `.agents/skills/resolve-video-enrichment/re
 3. A project-specific script (`p2`, `armigon`, `sakuyako`) may be adapted: copy it into `scripts/scratch/`, change the constants, keep the `resolve_common` plumbing.
 4. Nothing fits: print `MCP-GAP: <tool/action checked> -> <reason>` and write `scripts/scratch/<name>.py`. Never write to the Desktop, `%TEMP%`, the home directory or another repo.
 
+## Fast Resolve iteration
+
+- No pytest in the run–inspect–fix loop. Confirm the live target with a read-only probe, run the tool on a test or duplicate timeline, and read back each changed item before retrying or concluding. A clean exit is not proof that the edit landed correctly.
+- Keep the existing safety gates: verified `.drp` backup before batch operations, `preserved_state` for Python mutations, and no writes to master timelines unless explicitly authorized.
+- If only Resolve state or a gitignored one-off script changes, live QC is the verification; repo pytest is not required. Before promoting a reusable script, add a pure-logic test and run the affected tests.
+
 ## Before saying the task is done
 
 Answer each, in order, and act on every "yes":
@@ -53,7 +59,7 @@ Answer each, in order, and act on every "yes":
 3. **Update when a skill already covers it.** Add the step, trap or example to that skill's `SKILL.md` or a file in its `references/`, keep its `name` and folder, and bump `version` (minor for a new workflow, patch for a fix or wording). Do not create a near-duplicate skill.
 4. **Create only when nothing fits.** A new skill needs frontmatter `name` (equal to the folder name) and a `description` that says when to use it. Every local file it cites must exist (the bundle test checks this).
 5. **Vendored third-party skills** (HyperFrames, superpowers) are copies of upstream: put project-specific additions in the project's own skill or a `references/` note rather than rewriting upstream text, so a later upstream update stays mergeable.
-6. **Register.** Run `python scripts/refresh_skill_manifest.py` (adds new skills to `docs/skills-manifest.json` as `supporting`), then `python -m pytest -q tests/test_skill_bundle.py`.
+6. **Register.** Follow the manifest refresh and targeted bundle check under Finish. New skills are registered in `docs/skills-manifest.json` as `supporting`.
 
 ## Cleaning up files
 
@@ -61,8 +67,8 @@ Gitignored folders are not proof of junk: tests, scripts, channel profiles and l
 
 ## Finish
 
-- `python -m pytest -q` (tests that need Resolve are skipped without `--live`).
-- After touching skills, scripts or docs: `python scripts/refresh_skill_manifest.py`.
+- After changing tracked skills, scripts, or docs, run `python scripts/refresh_skill_manifest.py` first, then `py -m pytest -q tests/test_skill_bundle.py` on this Windows setup (or `python -m pytest -q tests/test_skill_bundle.py` where `python` has pytest). Run affected tests as well when changing reusable code.
+- Run the full suite (`py -m pytest -q` on this Windows setup) before a release and when changing shared validation, packaging, or test infrastructure. Do not remove or disable tests. Measured on this workstation: bundle check about 5 seconds; full suite about 3 minutes.
 - Inspect `git status`; stage only this task's files. Never stage footage, renders, `.drp`/`.drt`, `.env`, credentials, or unrelated pre-existing changes.
 - Write release notes in Thai as verified bullet points. Preview a patch release (default) with `python scripts/release.py --title "<หัวข้อไทย>" --notes-file <path>`; add `--publish` to update `VERSION`/`CHANGELOG.md`, commit those paths, tag, push `main` + the tag, and publish the GitHub Release. Use `--bump minor|major` only when justified. The helper appends `### Skill ที่อัปเดต` and `### ไฟล์ที่เปลี่ยน` from `git diff --name-status <previous tag> HEAD`, so push the content commit first and do not hand-write those lists. Verify the published tag and release URL; never force-push or move an existing tag.
 - If checks, credentials, or network block publishing, report the blocker and do not claim success.

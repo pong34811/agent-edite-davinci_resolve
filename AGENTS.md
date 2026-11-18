@@ -133,14 +133,14 @@ Merged from the `agent-seacrh-virus-cut` repo on 2026-11-02 (that folder is kept
 
 ## Finish of task: record what you learned
 
-**Mandatory after every task, every time:** record reusable learnings in the matching skill/docs, improve a reusable project tool when useful, run tests and refresh the manifest, then create a patch release and publish it. Follow `.agents/skills/project-learning/SKILL.md`; don't invent a lesson when there was none, and don't change Resolve state unless the task authorizes it.
+Record reusable learnings in the matching skill/docs and improve a reusable tool when useful. Follow `.agents/skills/project-learning/SKILL.md` for the verification tier. Don't invent a lesson when there was none, change Resolve state without authorization, or publish a release for a live-only edit.
 
 Before reporting done:
 
 - Channel facts -> `docs/channels/`; a new failure rule -> `docs/OPERATING-NOTES.md`; reusable workflow/trap -> matching `.agents/skills/<domain>/SKILL.md`; user taste correction -> `house-style/SKILL.md`.
 - Skills live only in this repo's `.agents/skills/`, never only in a global folder (`~/.claude`, `~/.codex`, `~/.hermes`, `~/.agents`). Search existing skills first: if one covers the work, update it and bump its `version`; create a new skill only when none fits (project-learning, "Writing or updating a skill").
 - Reusable scripts belong in `scripts/`, use `resolve_common` for Resolve work, have tests, and appear in `scripts/INDEX.md`; one-offs remain in `scripts/scratch/`.
-- Run `python -m pytest -q` and `python scripts/refresh_skill_manifest.py` after touching skills, scripts or docs.
+- Skip pytest in the live Resolve iteration loop; use a test timeline and read back the edits. For tracked skill, script, or docs changes, refresh the manifest first and run the targeted bundle check plus any affected code tests. Run the full suite before release or when changing shared validation, packaging, or test infrastructure.
 - For repo-level Python checks, inspect the root `.venv` before creating one and record whether it pre-existed. Reuse a suitable environment. From the repository root, remove a test-only `.venv` after checks only if this task created it; in PowerShell, verify the resolved target before deletion and confirm cleanup with `Test-Path` because `.venv` is ignored by Git:
   ```powershell
   $repoRoot = (Get-Location).Path

@@ -27,6 +27,15 @@
       "history_sessions": 0
     },
     {
+      "name": "davinci-resolve-api",
+      "tier": "supporting",
+      "path": ".agents/skills/davinci-resolve-api/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "general-video",
       "tier": "supporting",
       "path": ".agents/skills/general-video/SKILL.md",
@@ -1328,6 +1337,12 @@
       "source": "project-authored",
       "kind": "editing_skill",
       "sha256": "fbba33edb43e41da1d1573bfa9a09928155269be595991da1d2a82b30c88ff91"
+    },
+    {
+      "path": ".agents/skills/davinci-resolve-api/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "4951e33384607526dba0f048930090982416b4da8d880936a482d3e467b9003b"
     },
     {
       "path": ".agents/skills/general-video/SKILL.md",
@@ -3789,7 +3804,7 @@
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e51e08e754204005ea0d8cf054d88100c9964d28184e2d8aafa09269ad3f943e"
+      "sha256": "a08018b3df300168ba787024dd4250b0577763d5e75b66c9af18d2ab1f1ae121"
     },
     {
       "path": ".agents/skills/resolve-audio/SKILL.md",
@@ -3971,7 +3986,7 @@
       "path": ".agents/skills/resolve-smart-edit/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "06ffb45d263e29f49c880b2698a501bd21f36bbe12bcc6082e491f8f8381decc"
+      "sha256": "70e172faaf6de1e2e02bdf34359e73679775c6cb2a0ae747f7f80f9ec0c4886b"
     },
     {
       "path": ".agents/skills/resolve-still-qc-capture/SKILL.md",
@@ -4874,7 +4889,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "78c637af80df917fcf6b10a97b0640fb52517347fa58d2ed14b9f143cd9ea9cd"
+      "sha256": "56cfba47d3d3c58ad5187cfc489ccedd78797735960916701c6f162a73086d47"
     },
     {
       "path": "CHANGELOG.md",
@@ -8963,9 +8978,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1198,
-    "supporting_skills": 60,
-    "active_skills": 77
+    "manifest_files": 1199,
+    "supporting_skills": 61,
+    "active_skills": 78
   },
   "bundle_version": "0.17.108",
   "excluded_repository_paths": [
