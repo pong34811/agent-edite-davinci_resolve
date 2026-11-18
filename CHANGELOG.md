@@ -1,5 +1,67 @@
 # Changelog
 
+## v0.17.110 — export ทีละคลิป + เปิด Resolve/Drive กลับอัตโนมัติ — Armigon Shorts 2026-10 96 คลิป
+
+### รายละเอียด
+- `scripts/p2_export_final.py`: เพิ่ม `--chunk N` (ค่าเริ่มต้น 1) — render + verify ทีล่ะคลิป เขียน `jobs.json`/`done.jsonl` หลังแต่ละชุด แล้วรันใหม่เพื่อทำต่อได้; เพิ่ม `ensure_alive()` และ `_out_dir_ready()` เช็ค Resolve กับโฟลเดอร์ปลายทางก่อนทุกชุด ถ้าปิดให้เปิดกลับ (Resolve ผ่าน `resolve_recover.py` ซึ่งเปิด Google Drive เมื่อ library path หาย) แล้วทำต่อ ไม่หยุด batch; `LoadRenderPreset`/`SetRenderSettings`/`AddRenderJob` รีทได้; การ trim หาง GIF เฉพาะ p2 เปลี่ยนเป็นคำเตือน ไม่ abort
+- `scripts/resolve_recover.py`: แก้ `GetName()` ที่ตอบ `None` หลัง relaunch ให้ re-fetch ด้วย `_name_of()`
+- export Armigon Shorts 2026-10 ครบ 96 คลิปที่ `G:\My Drive\Projects\Armigon\2026-10\vdo` (48 แนวนอน 1920×1080 + 48 แนวตั้ง 1080×1920, 24 fps, H.264 + AAC, รวม 11.13 GB) คลิปแนวตั้งแนบปก 1 เฟรมแรก; `--verify` ผ่าน 96/96 และ ffprobe ยืนยันขนาด/เฟรมเรต/เสียงครบทุกไฟล์
+- `docs/OPERATING-NOTES.md` บันทึกกฎใหม่ 5 ข้อ (export ทีละคลิป, เปิด app กลับเมื่อปิด, `Project.SaveProject` บน 21.1, `GetName()` หลัง relaunch, restart Resolve ทุก ~20 คลิป) และ `resolve-delivery` skill อัปเดตส่วน batch export
+- หมายเหตุ: release นี้ยังรวมงานที่ยังไม่เคย release ของ session อื่น (skill `ponytail`, `ponytail-audit/debt/gain/help/review` และ `last30days`) ที่เข้ามาหลัง tag v0.17.109
+
+### Skill ที่อัปเดต
+- `last30days` (ใหม่): `.skillignore`, `SKILL.md`, `agents/openai.yaml`, `assets/aging-portrait.jpeg`, `assets/claude-code-rap.mp3`, `assets/dog-as-human.png`, `assets/dog-original.jpeg`, `assets/swimmom-mockup.jpeg`, `references/agent-mode.md`, `references/category-peers.md`, `references/comparison.md`, `references/competitors.md`, `references/discovery.md`, `references/followups.md`, `references/grok-bot-x.md`, `references/hiring-signals.md`, `references/library-queue.md`, `references/patent-signals.md`, `references/recommendations.md`, `references/reddit-session.md`, `references/research-runbook.md`, `references/runtime.md`, `references/save-html-brief.md`, `references/setup-wizard.md`, `references/synthesis.md`, `scripts/box_chrome_login.py`, `scripts/briefing.py`, `scripts/build-skill.sh`, `scripts/compare.sh`, `scripts/evaluate_search_quality.py`, `scripts/last30days.py`, `scripts/lib/__init__.py`, `scripts/lib/agentcookie.py`, `scripts/lib/amazon.py`, `scripts/lib/arxiv.py`, `scripts/lib/backends.py`, `scripts/lib/bird_x.py`, `scripts/lib/bluesky.py`, `scripts/lib/bounded_get.py`, `scripts/lib/brightdata.py`, `scripts/lib/categories.py`, `scripts/lib/chrome_cdp.py`, `scripts/lib/chrome_cookies.py`, `scripts/lib/cjk.py`, `scripts/lib/cluster.py`, `scripts/lib/cluster_diversity.py`, `scripts/lib/company_names.py`, `scripts/lib/company_resolve.py`, `scripts/lib/competitors.py`, `scripts/lib/cookie_extract.py`, `scripts/lib/cookie_paths.py`, `scripts/lib/corpus.py`, `scripts/lib/dates.py`, `scripts/lib/dedupe.py`, `scripts/lib/devto.py`, `scripts/lib/digg.py`, `scripts/lib/discovery_handoff.py`, `scripts/lib/doctor.py`, `scripts/lib/dripstack.py`, `scripts/lib/entity_extract.py`, `scripts/lib/env.py`, `scripts/lib/fanout.py`, `scripts/lib/feed.py`, `scripts/lib/fetch_memo.py`, `scripts/lib/freshness.py`, `scripts/lib/fusion.py`, `scripts/lib/github.py`, `scripts/lib/grok_audit.py`, `scripts/lib/grok_x.py`, `scripts/lib/grounding.py`, `scripts/lib/hackernews.py`, `scripts/lib/health.py`, `scripts/lib/hiring_signals.py`, `scripts/lib/hosted.py`, `scripts/lib/html_publish.py`, `scripts/lib/html_render.py`, `scripts/lib/http.py`, `scripts/lib/instagram.py`, `scripts/lib/job_boards/__init__.py`, `scripts/lib/job_boards/detect.py`, `scripts/lib/job_boards/google.py`, `scripts/lib/job_boards/ibm.py`, `scripts/lib/job_boards/jibe.py`, `scripts/lib/job_boards/kula.py`, `scripts/lib/job_boards/oracle.py`, `scripts/lib/job_boards/phenom.py`, `scripts/lib/job_boards/robots.py`, `scripts/lib/job_boards/sitemap.py`, `scripts/lib/job_boards/talentbrew.py`, `scripts/lib/job_boilerplate.py`, `scripts/lib/jobs.py`, `scripts/lib/jobs_digest.py`, `scripts/lib/jobs_story.py`, `scripts/lib/jobs_teams.py`, `scripts/lib/library.py`, `scripts/lib/library_index.py`, `scripts/lib/linkedin.py`, `scripts/lib/log.py`, `scripts/lib/meta_ads.py`, `scripts/lib/normalize.py`, `scripts/lib/parallel_mcp.py`, `scripts/lib/patent_digest.py`, `scripts/lib/patents.py`, `scripts/lib/permission_preflight.py`, `scripts/lib/perplexity.py`, `scripts/lib/pinterest.py`, `scripts/lib/pipeline.py`, `scripts/lib/planner.py`, `scripts/lib/polymarket.py`, `scripts/lib/preflight.py`, `scripts/lib/prescriptions.py`, `scripts/lib/private_files.py`, `scripts/lib/providers.py`, `scripts/lib/quality_nudge.py`, `scripts/lib/query.py`, `scripts/lib/reddit.py`, `scripts/lib/reddit_arctic.py`, `scripts/lib/reddit_discover.py`, `scripts/lib/reddit_enrich.py`, `scripts/lib/reddit_envelope.py`, `scripts/lib/reddit_health.py`, `scripts/lib/reddit_hydrate.py`, `scripts/lib/reddit_keyless.py`, `scripts/lib/reddit_listing.py`, `scripts/lib/reddit_public.py`, `scripts/lib/reddit_refs.py`, `scripts/lib/reddit_search.py`, `scripts/lib/reddit_session.py`, `scripts/lib/reddit_shreddit.py`, `scripts/lib/registers.py`, `scripts/lib/relevance.py`, `scripts/lib/render.py`, `scripts/lib/report_checklist.py`, `scripts/lib/rerank.py`, `scripts/lib/resolve.py`, `scripts/lib/safari_cookies.py`, `scripts/lib/schema.py`, `scripts/lib/setup_wizard.py`, `scripts/lib/signals.py`, `scripts/lib/skill_meta.py`, `scripts/lib/snippet.py`, `scripts/lib/sqlite_snapshot.py`, `scripts/lib/stocktwits.py`, `scripts/lib/subproc.py`, `scripts/lib/techmeme.py`, `scripts/lib/telegram.py`, `scripts/lib/threads.py`, `scripts/lib/tiktok.py`, `scripts/lib/topic_shape.py`, `scripts/lib/transcribe.py`, `scripts/lib/trustpilot.py`, `scripts/lib/truthsocial.py`, `scripts/lib/ui.py`, `scripts/lib/usage.py`, `scripts/lib/vendor/bird-search/LICENSE`, `scripts/lib/vendor/bird-search/bird-search.mjs`, `scripts/lib/vendor/bird-search/lib/cookies.js`, `scripts/lib/vendor/bird-search/lib/features.json`, `scripts/lib/vendor/bird-search/lib/paginate-cursor.js`, `scripts/lib/vendor/bird-search/lib/query-ids.json`, `scripts/lib/vendor/bird-search/lib/runtime-features.js`, `scripts/lib/vendor/bird-search/lib/runtime-query-ids.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-base.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-constants.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-features.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-search.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-types.js`, `scripts/lib/vendor/bird-search/lib/twitter-client-utils.js`, `scripts/lib/vendor/bird-search/package.json`, `scripts/lib/web_fetch_keyless.py`, `scripts/lib/web_search_keyless.py`, `scripts/lib/windows_job.py`, `scripts/lib/x_api.py`, `scripts/lib/x_envelope.py`, `scripts/lib/x_judge.py`, `scripts/lib/xai_x.py`, `scripts/lib/xiaohongshu_api.py`, `scripts/lib/xquik.py`, `scripts/lib/xurl_x.py`, `scripts/lib/yahoo_finance.py`, `scripts/lib/youtube_yt.py`, `scripts/reddit_canary.py`, `scripts/setup-keychain.sh`, `scripts/setup-pass.sh`, `scripts/store.py`, `scripts/test-v1-vs-v2.sh`, `scripts/test_device_auth.py`, `scripts/verify_v3.py`, `scripts/watchlist.py`, `scripts/x_lane_parity.py`
+- `ponytail` (ใหม่): `SKILL.md`
+- `ponytail-audit` (ใหม่): `SKILL.md`
+- `ponytail-debt` (ใหม่): `SKILL.md`
+- `ponytail-gain` (ใหม่): `SKILL.md`
+- `ponytail-help` (ใหม่): `SKILL.md`
+- `ponytail-review` (ใหม่): `SKILL.md`
+- `resolve-delivery` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- เพิ่ม `.agents/skills/last30days/.skillignore`
+- เพิ่ม `.agents/skills/last30days/SKILL.md`
+- เพิ่ม `.agents/skills/last30days/agents/openai.yaml`
+- เพิ่ม `.agents/skills/last30days/assets/aging-portrait.jpeg`
+- เพิ่ม `.agents/skills/last30days/assets/claude-code-rap.mp3`
+- เพิ่ม `.agents/skills/last30days/assets/dog-as-human.png`
+- เพิ่ม `.agents/skills/last30days/assets/dog-original.jpeg`
+- เพิ่ม `.agents/skills/last30days/assets/swimmom-mockup.jpeg`
+- เพิ่ม `.agents/skills/last30days/references/agent-mode.md`
+- เพิ่ม `.agents/skills/last30days/references/category-peers.md`
+- เพิ่ม `.agents/skills/last30days/references/comparison.md`
+- เพิ่ม `.agents/skills/last30days/references/competitors.md`
+- เพิ่ม `.agents/skills/last30days/references/discovery.md`
+- เพิ่ม `.agents/skills/last30days/references/followups.md`
+- เพิ่ม `.agents/skills/last30days/references/grok-bot-x.md`
+- เพิ่ม `.agents/skills/last30days/references/hiring-signals.md`
+- เพิ่ม `.agents/skills/last30days/references/library-queue.md`
+- เพิ่ม `.agents/skills/last30days/references/patent-signals.md`
+- เพิ่ม `.agents/skills/last30days/references/recommendations.md`
+- เพิ่ม `.agents/skills/last30days/references/reddit-session.md`
+- เพิ่ม `.agents/skills/last30days/references/research-runbook.md`
+- เพิ่ม `.agents/skills/last30days/references/runtime.md`
+- เพิ่ม `.agents/skills/last30days/references/save-html-brief.md`
+- เพิ่ม `.agents/skills/last30days/references/setup-wizard.md`
+- เพิ่ม `.agents/skills/last30days/references/synthesis.md`
+- เพิ่ม `.agents/skills/last30days/scripts/box_chrome_login.py`
+- เพิ่ม `.agents/skills/last30days/scripts/briefing.py`
+- เพิ่ม `.agents/skills/last30days/scripts/build-skill.sh`
+- เพิ่ม `.agents/skills/last30days/scripts/compare.sh`
+- เพิ่ม `.agents/skills/last30days/scripts/evaluate_search_quality.py`
+- เพิ่ม `.agents/skills/last30days/scripts/last30days.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/__init__.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/agentcookie.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/amazon.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/arxiv.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/backends.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/bird_x.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/bluesky.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/bounded_get.py`
+- เพิ่ม `.agents/skills/last30days/scripts/lib/brightdata.py`
+- ... และอีก 163 ไฟล์ (ดู `git diff --name-status` ของ tag นี้)
+
 ## v0.17.109 — เพิ่ม skill davinci-resolve-api และสร้างโปรเจกต์ Resolve ผ่าน MCP ได้โดยไม่มี dialog
 
 ### รายละเอียด
