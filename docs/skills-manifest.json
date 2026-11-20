@@ -5886,7 +5886,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "ce507dc68776150a9df09953d2c4d76ade9c8934ef330152a4ad48e6afe65f43"
+      "sha256": "508b69f4727d11b43d904d56d4c1484475406b560afd4f225719a7343830e8d7"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -6133,7 +6133,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "6395d87954fee54d6f45235e1031ad9b11fbf9af629f872beec94761ae511982",
+      "sha256": "2f18f5ad635a86726320473108fd3fb6f75a479fbeb637b998edb3875d62bb98",
       "kind": "integration_or_validation"
     },
     {
@@ -6145,7 +6145,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "f1c9b3dc925b7fd5b4357b89bbc2c221b8a7e6f0726d60b45c50d4bfe632bf87",
+      "sha256": "174e844a72c1836bebf5682b636d4167609d75bc92f230748945993d0699b377",
       "kind": "integration_or_validation"
     },
     {
@@ -6276,7 +6276,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f069539b8828f61009221b96641ead27bd0aab51ea9742dd69f5aee0a811fa49"
+      "sha256": "1555b1751514c79e7f5d57b8d6285f11169db8d9eb9cf28459f568e3cb9e5024"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -10253,7 +10253,7 @@
     "supporting_skills": 68,
     "active_skills": 85
   },
-  "bundle_version": "0.17.110",
+  "bundle_version": "0.17.111",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.9
+version: 0.5.10
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -171,6 +171,21 @@ pauses (<= 14 Thai chars, <= 1.5 s), keep names in a custom newmm dictionary (`�
 lone `ๆ` to its word. Accept only when every segment's spread against Whisper is small, no cue starts in
 silence and no speech is uncovered; then replace the track by DRT (`clone_styled_subtitle_track` with the
 timeline's own DRT as the style source) and compare every non-subtitle item. Details: OPERATING-NOTES.
+
+## Retime by CTC forced alignment, not Whisper word times (2026-11-20, Laffy เหตุผลที่มาเป็นวี, 240.4 s @ 30 fps)
+
+Measured against 71 speech onsets (10 ms energy, >= 0.25 s silence before): faster-whisper large-v3 Thai word
+times lead the voice by 0.36 s median (p10 -0.74, p90 +0.22) and leave holes (one 8 s token at 136-144.6 s,
+nothing at 84-89 s); a Whisper-anchored build still had 70/251 cues off by > 0.2 s (max 1.3 s). CTC forced
+alignment of the cue text with `airesearch/wav2vec2-large-xlsr-53-th` (HF, Thai char vocab, 20 ms frames,
+`torchaudio.functional.forced_align`, 20 s chunks on GPU) landed within 0.05 s median of the onsets. Recipe
+(scripts in `scripts/scratch/laffy_reason/`): `forced_align.py` (map Latin names to spoken Thai, drop `ๆ`),
+`retime.py` (start = aligned start - 0.04 s snapped to an onset within 0.15 s; end = next start if the gap
+< 0.5 s else aligned end + 0.25 s; cap 45 f; merge cues under 8 f when the result is <= 14 chars; keep the
+old time where the CTC score < 0.35), `local_ctc.py START END "text" ...` to compare candidate texts or
+re-split a phrase (higher mean log-prob wins). Watch for Descript splits that put the previous sentence's
+`ครับ` at the start of the next cue. A nearest-onset metric still reports mid-cue pauses and -37 dB blips:
+read each flag before calling it a miss.
 
 ## The three findings that matter
 
