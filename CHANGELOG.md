@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.114 — บทเรียนส่งงานซับ CTC: สำเนา timeline + QC ครบวงจร
+
+### รายละเอียด
+- เพิ่ม `references/ctc-retime-delivery.md` ใน thai-subtitles-resolve: ขั้นตอนครบวงจรจากงาน Laffy แนะนำตัว 3 นาที — ตรวจซับที่จัดเวลาด้วย Whisper ด้วย CTC forced alignment (พบคลาด > 0.2 วิ 35/151 cue, สูงสุด 1.3 วิ), ให้คะแนนคำที่สงสัยด้วย local_ctc (นี้→เนี้ย, บ้าง→มั่ง; คะแนนใกล้เคียงกันให้คงข้อความ Descript), จัดเวลาใหม่ (รวม cue สั้น "น่ะ" 7 เฟรมเป็น "สัมผัสมันเฉยๆน่ะ", 151→150 cue), สร้าง timeline `_v2` สำเนาโดยไม่แตะของเดิม (DRP snapshot ก่อนแก้, DRT clone สไตล์ซับของ timeline เอง, readback ทุกแทร็ก V/A + Fusion zoom และ cue ตรงแผนทุกตัว), ปิดท้ายด้วย render/QC (4407 เฟรม, -14.4 LUFS, ภาพนิ่ง burn-in 6 จุดตรวจซับไม่ทับซ้อนตรงเฟรม)
+- อัปเดต SKILL.md เป็น v0.5.12: เพิ่ม delivery gates ในหัวข้อ CTC และปรับ description เป็น "Insert, style, and CTC-sync Thai subtitles in Resolve." (54 ตัวอักษร)
+- เพิ่มรายละเอียด visual QC ภาพนิ่ง 6 จุดใน docs/channels/laffy.md และแก้การอ้างสคริปต์ scratch เป็น path เต็ม (ให้ผ่านการทดสอบ channel profile)
+- เพิ่มกฎใน docs/OPERATING-NOTES.md: แก้ skill ใน repo ด้วย `patch`/`write_file` เพราะ `skill_manage` อาจชนสำเนาเก่าชื่อเดียวกันใน profile dir
+- ตรวจแล้ว: refresh manifest + test_skill_bundle 9 passed, full suite 459 passed / 35 skipped (แก้ 1 failure เดิมเรื่องชื่อสคริปต์ใน laffy.md), test_channel_profiles 12 passed
+
+### Skill ที่อัปเดต
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`, `references/ctc-retime-delivery.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- เพิ่ม `.agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+
 ## v0.17.113 — ตรวจและจัดเวลาซับ Laffy แนะนำตัวด้วย CTC
 
 ### รายละเอียด
