@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.10
+version: 0.5.11
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -186,6 +186,14 @@ old time where the CTC score < 0.35), `local_ctc.py START END "text" ...` to com
 re-split a phrase (higher mean log-prob wins). Watch for Descript splits that put the previous sentence's
 `ครับ` at the start of the next cue. A nearest-onset metric still reports mid-cue pauses and -37 dB blips:
 read each flag before calling it a miss.
+
+Second run (Laffy แนะนำตัว, 146.9 s, 151 cues already "synced" with Whisper times): CTC still found 35 starts
+off by > 0.2 s, worst 1.3 s early (a cue shown during an `อ่าม` filler before the word) and 1.07 s late, so
+a Whisper-timed track is not verified. Use the greedy CTC decode per cue to list text suspects, then score
+each suspect with `local_ctc.py` candidates: it settled `บ้าง`->`มั่ง` (-4.0 vs -6.3) and `นี้`->`เนี้ย`
+(-8.3 vs -10.9), and kept names and meaning where the greedy decode mishears (`มีชื่อว่า` vs `ไม่เชื่อว่า`
+scored -4.2 vs -4.0: a near-tie is not evidence; keep the Descript text). The intro scripts take a jobs
+file (`scripts/scratch/laffy_intro/local_ctc.py jobs.json`) so the model loads once for many checks.
 
 ## The three findings that matter
 
