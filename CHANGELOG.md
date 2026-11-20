@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.17.111 — งานตัดคลิป Laffy เหตุผลที่มาเป็นวี และบทเรียนการ์ด
+
+### รายละเอียด
+- ตัดต่อคลิป Laffy "เหตุผลที่มาเป็นวี" ใน Resolve เป็น timeline ใหม่ `เหตุผลที่มาเป็นวี_edit` (ไม่แตะ Timeline 1): ซับไทย Mitr Font 251 cue, VTuber Zoom 7 ช่วง, การ์ดคีย์เวิร์ด 18 ใบ, ป้ายบทมุมจอ 3 บท, SFX และ BGM; render `laffy_reason_edit_v2.mov` ตรวจแล้ว 7212 เฟรม, -14.3 LUFS, true peak -0.5 dBFS และตรวจภาพ 9 เฟรม
+- บันทึกข้อมูลงานนี้ในโปรไฟล์ช่อง Laffy (คำสั่งผู้ใช้: ไม่มี hook, ไม่ตัดคำซ้ำ, ชื่อทีมมู/dreamlight projects, ระดับเสียง SFX ที่ใช้จริง)
+- แก้วิธีทำการ์ดภาษาไทย: ฝังฟอนต์ Mitr แบบ data URI จาก `C:\Windows\Fonts` และวัดขนาดหลัง `document.fonts.ready` เพราะ path เดิมไม่มีอยู่และ Chrome ใช้ฟอนต์ serif แทนโดยไม่แจ้ง
+- เพิ่มวิธีทำป้ายบทมุมจอเป็น MOV qtrle บน V4 `CHAPTER` และกับดัก ffmpeg ที่ต้องใส่ `-f image2` ไม่เช่นนั้นค้าง
+- รวมการเปลี่ยนแปลงจาก commit ก่อนหน้า 430523d (กฎและ SOP ของ Katy404 Day 31: `katy404-minecraft-editing` และ `docs/channels/katy404.md`) ที่ยังไม่ได้ออก release ไว้ด้วย ไม่ใช่งานของรอบนี้
+
+### Skill ที่อัปเดต
+- `katy404-minecraft-editing` (แก้ไข): `SKILL.md`
+- `resolve-video-enrichment` (แก้ไข): `SKILL.md`, `references/illustration-assets.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/katy404-minecraft-editing/SKILL.md`
+- แก้ไข `.agents/skills/resolve-video-enrichment/SKILL.md`
+- แก้ไข `.agents/skills/resolve-video-enrichment/references/illustration-assets.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.110 — export ทีละคลิป + เปิด Resolve/Drive กลับอัตโนมัติ — Armigon Shorts 2026-10 96 คลิป
 
 ### รายละเอียด
