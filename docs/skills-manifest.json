@@ -3147,7 +3147,7 @@
       "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "5a9f601e1a5ef54a0b146e5b335c55a96c19e516080f680054ad8150a5e9b6c0"
+      "sha256": "035293279288566b7a3e5d7798e86389f72a2ccac0d6c6b2756d4ba186256df8"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -5252,7 +5252,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "523000bd14e52e9c17c1c911fdaae031a14676d11eb00aa0b4c522d1e6432f4a"
+      "sha256": "2c490ec90552a4131443c290107953c71a5b24274a77a21d54e7020c1f242a91"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -5306,7 +5306,7 @@
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\media\\resolve-video-enrichment\\references\\illustration-assets.md",
       "source_sha256": "6715b3cf9456a3e29858546e8b6675c15d1ebd24e77f24ec14f59780498a3b82",
       "kind": "editing_skill",
-      "sha256": "e8bbb7e10ed1143c24ddff84e39073cded1f7ed068a2dc84ef1e973e08a75fa1"
+      "sha256": "0df78611907c37d5cea97b898d435b4e7bee243a426493f1863513acd16f17f0"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/references/katy404-channel-study.md",
@@ -6158,7 +6158,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-"sha256": "a260b5b4e0b6ec598745de730d5ef08bfebbf2600c4c21820ce6fadbf4509f8b"
+      "sha256": "84c307f5cc9021db64a5ab9e83413b7e96212d5221eba46db0485bafbddd7be7"
     },
     {
       "path": "docs/README.md",
@@ -6276,7 +6276,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "dea7c4dfd0dfcdb8fda2c8be1113f548f384712b12698d505b6b370bd43e22c2"
+      "sha256": "f069539b8828f61009221b96641ead27bd0aab51ea9742dd69f5aee0a811fa49"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",

@@ -105,3 +105,12 @@ A placement passes only when the manifest and Resolve readback agree on source/p
   place on V3 `REACTIONS` with a -13 dB pop on A2 at each card start when the voice is hot (see OPERATING-NOTES).
 - Keep cards and VTuber Zoom ranges disjoint (assert it in the plan): the V2 Adjustment Clip does not scale V3, but a
   zoomed avatar widens toward the side cards.
+- Embed Mitr as a base64 `data:` URI and run the title shrink loop inside `document.fonts.ready.then(...)`. On this
+  machine Mitr is in `C:\Windows\Fonts` (not `%LOCALAPPDATA%\Microsoft\Windows\Fonts`), and a missing `file://` font
+  silently falls back to a serif face; a loop that runs before the font loads lets titles overflow the card edge.
+  Tile all PNGs into one contact sheet and look at it before rendering MOVs (Laffy reason video, 2026-11-20).
+- Corner chapter badges (story chapters, `บทที่ n/3` + title + progress dots, top-left at x 44 / y 36): render one
+  full-raster PNG per chapter and encode a still MOV with `ffmpeg -f image2 -loop 1 -framerate 30 -i ch.png -t <sec>
+  -vf "format=argb,fade=t=in:st=0:d=0.3:alpha=1,fade=t=out:st=<sec-0.3>:d=0.3:alpha=1" -c:v qtrle`; place on V4
+  `CHAPTER` above the Adjustment Clip so zoom does not scale it. Without `-f image2` ffmpeg looped forever printing
+  `Failed to reallocate parser buffer to -2147482428`. Sample: `scripts/scratch/laffy_reason/chapters.py`.
