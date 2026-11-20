@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.17.113 — ตรวจและจัดเวลาซับ Laffy แนะนำตัวด้วย CTC
+
+### รายละเอียด
+- ตรวจซับคลิป Laffy แนะนำตัว 3 นาทีกับเสียงด้วย CTC forced alignment: timeline ที่เคยจัดเวลาด้วย Whisper ยังคลาดเกิน 0.2 วิ 35 cue (สูงสุด 1.3 วิ)
+- สร้าง timeline ใหม่ `เเนะนำตัว 3 นาที_edit_v2` (150 cue) แก้ข้อความตามที่พูดจริง 3 จุด (ประมาณเนี้ย, มั่ง x2) และรวม cue สั้น "น่ะ"; อ่านกลับแล้ววิดีโอ/เสียงทุกแทร็กเหมือนเดิม และ cue ตรงกับแผนทุกตัว
+- render `laffy_intro_edit_v6.mov` เสร็จ 4407 เฟรม 1080p30 + AAC, -14.4 LUFS, ตรวจภาพนิ่ง 6 จุดเห็นซับถูกต้อง
+- เพิ่มบทเรียนใน thai-subtitles-resolve: ซับที่จัดเวลาด้วย Whisper ยังไม่ถือว่าตรวจแล้ว และวิธีให้คะแนนคำที่สงสัยด้วย local_ctc
+
+### Skill ที่อัปเดต
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.112 — ตรวจและจัดเวลาซับ Laffy เหตุผลที่มาเป็นวีใหม่
 
 ### รายละเอียด
