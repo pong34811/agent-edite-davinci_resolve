@@ -5886,7 +5886,13 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "2333f18010aa6fd50f7b34535e864c7e84160a009d247010177f5e0235896a48"
+      "sha256": "ce94abceb471c7909cd0b87e3c8c6544995f516bdd361081d462f7a507d118ef"
+    },
+    {
+      "path": ".agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "fc99159220c24d5fcc38a8bee32b7bd833f7252e9bf70d2288f6106815ef7959"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -6133,7 +6139,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "dd11fe20e5c91c2b46e5989bf4b97a3ea5ca0b805f318070a07ae17b8148ea38",
+      "sha256": "890dc054bc7560ce737136ee2662cc71fafa769581569b560e1773e6d0d0d0f6",
       "kind": "integration_or_validation"
     },
     {
@@ -6145,7 +6151,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "e86bf178a177a672c678d55c9e1ac470146bbcb798ffbe5c2429de528eb316b3",
+      "sha256": "f34998dd490cc497d4616d65621d92882de60898c4390d35ee85ae5f312a0c59",
       "kind": "integration_or_validation"
     },
     {
@@ -6158,7 +6164,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "84c307f5cc9021db64a5ab9e83413b7e96212d5221eba46db0485bafbddd7be7"
+      "sha256": "f33360a245eb0b107cacc5df82cca62edbbf7fdeb7efd307aabec1ade281e1b3"
     },
     {
       "path": "docs/README.md",
@@ -6276,7 +6282,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f627fb68297ef8e3510cff7259e8c72afa4ac29d9b584d61ef266e8e5402af6a"
+      "sha256": "625f0cef0a67a1a9aa500bc0cac763210370406ffbe43e23042b25e1b407977b"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -10249,11 +10255,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1395,
+    "manifest_files": 1396,
     "supporting_skills": 68,
     "active_skills": 85
   },
-  "bundle_version": "0.17.112",
+  "bundle_version": "0.17.113",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

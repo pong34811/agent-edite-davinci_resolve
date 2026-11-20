@@ -5,9 +5,9 @@
   "active_skill_count": 85,
   "related_archive_count": 13,
   "history_evidenced_core_count": 14,
-  "manifest_file_count": 1395,
+  "manifest_file_count": 1396,
   "excluded_repository_path_count": 43,
-  "local_reference_count": 410,
+  "local_reference_count": 416,
   "documented_example_link_exception_count": 14,
   "documented_example_link_exceptions": [
     {
@@ -587,7 +587,7 @@
           "severity": "medium",
           "file": "scripts\\lib\\pipeline.py",
           "line": 0,
-          "description": "file is 345KB (limit: 256KB)"
+          "description": "file is 353KB (limit: 256KB)"
         },
         {
           "pattern_id": "too_many_files",
@@ -601,7 +601,7 @@
           "severity": "low",
           "file": "(directory)",
           "line": 0,
-          "description": "skill is 18138KB total (limit: 5120KB)"
+          "description": "skill is 18233KB total (limit: 5120KB)"
         },
         {
           "pattern_id": "allowed_tools_field",
@@ -2465,14 +2465,14 @@
           "pattern_id": "unicode_escape_chain",
           "severity": "medium",
           "file": "SKILL.md",
-          "line": 368,
+          "line": 403,
           "description": "chain of unicode escapes (possible obfuscation)"
         },
         {
           "pattern_id": "agent_config_ref",
           "severity": "low",
           "file": "SKILL.md",
-          "line": 644,
+          "line": 679,
           "description": "references agent config files (informational; only modification intent is scored)"
         },
         {

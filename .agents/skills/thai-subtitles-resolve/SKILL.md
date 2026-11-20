@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
-description: Insert native Thai subtitles and load saved font presets.
-version: 0.5.11
+description: Insert, style, and CTC-sync Thai subtitles in Resolve.
+version: 0.5.12
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -194,6 +194,18 @@ each suspect with `local_ctc.py` candidates: it settled `บ้าง`->`มั�
 (-8.3 vs -10.9), and kept names and meaning where the greedy decode mishears (`มีชื่อว่า` vs `ไม่เชื่อว่า`
 scored -4.2 vs -4.0: a near-tie is not evidence; keep the Descript text). The intro scripts take a jobs
 file (`scripts/scratch/laffy_intro/local_ctc.py jobs.json`) so the model loads once for many checks.
+
+Delivery gates (verified on the intro run; full procedure in
+`references/ctc-retime-delivery.md`): retime into a NEW `<variant>_v2` timeline, never the
+master — verified DRP snapshot first (`before_subs_v2.drp`), DRT clone of the timeline's own
+styled subtitle track, import with `importSourceClips: False`, then read back EVERY video/audio
+item (range, LeftOffset, AudioVolume, V2 Fusion transform) plus the exact cue list before
+saving. Merge flash cues (< 8 f) into the neighbour only when the combined text stays <= 14
+chars (`น่ะ` 7 f -> `สัมผัสมันเฉยๆน่ะ`, 151 -> 150 cues). Deliverable QC: burn-in render, ffprobe
+frame count equal to the source (4407), loudness unchanged (-14.4 LUFS, `ebur128=peak=true`),
+and 6 sample stills via `scripts/render_subtitle_stills.py` (native stills omit subtitles)
+inspected for correct, non-overlapping, on-frame captions. Near-tie CTC scores keep the
+Descript text; record kept-uncertain cues in the channel doc.
 
 ## The three findings that matter
 
