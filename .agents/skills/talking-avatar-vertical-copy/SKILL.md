@@ -1,7 +1,7 @@
 ---
 name: talking-avatar-vertical-copy
 description: "Use when making a 9:16 copy of a solo VTuber Resolve clip."
-version: 0.1.4
+version: 0.1.6
 author: Hermes
 platforms: [windows]
 metadata:
@@ -44,6 +44,7 @@ Turns a 16:9 Resolve timeline whose V1 is **one avatar talking in a room (no gam
 
 ## Pitfalls
 - Judging the fill by full-body width: the baseline agent rejected Zoom 3.16 over shoulders and shipped a 528 px black band. Judge by head/face/hands.
+- When the user explicitly rejects tiny `short` illustrations, treat the correction as authorization to enlarge the scoped illustrations, not as permission to change their timing or rebuild assets. Measure the visible alpha bounds, use MCP `timeline.bulk_set_item_properties` for existing clip transforms, and render every distinct placement with subtitles. Do not certify the helper's predicted pixel position: on the Laffy reason portrait, its computed Tilt -693.8 overlapped the caption despite correct property readback; a rendered pilot at Tilt -2200 cleared it. These numbers are project-specific, not a replacement preset.
 - Skipping the measurement: `short` is still applied, but only the measured box tells you whether the handoff needs a chest-band proposal.
 - `import p2_9x16_build` for RASTER fails outside `python -m` (it imports `scripts.p2_9x16_common`); copy the list.
 - `SetProperty` returns False for strings and right after timeline changes; pass floats and re-read before retrying.
@@ -51,6 +52,18 @@ Turns a 16:9 Resolve timeline whose V1 is **one avatar talking in a room (no gam
 - The subtitle track keeps its 16:9 style; check burn-in width per cue and report if the channel has no 9:16 preset.
 - **Inspector Adjustment Clips on V2 (no Fusion comp):** copying the 16:9 zoom 1:1 crops the hair, because at V1 fill only 31.6% of the source width is visible. Compute a hair cap per range, `cap = (WIN_W/2) / max(sx - (hairL - 0.02), (hairR + 0.02) - sx)` with `WIN_W = 1080/(1920*0.5625*V1_ZOOM)`, then scale the push-in `Z_v = min(1 + (Z_h - 1)*k, cap)` with k chosen so the biggest punch reaches the cap (user picked this over min(Z_h, cap), which flattens every punch onto one level). Keep each range's source centre: `Tilt_v = (sy - 0.5)*Z_v*1920`, `Pan_v = (V1_cx - sx)*Z_v/WIN_W*1080`, and clamp `sy` to `0.5/Z_v .. 1 - 0.5/Z_v` against black bands. Laffy Yu-Gi-Oh (2026-11-15): 1.28/1.54/2.03 became 1.06/1.12/1.23, with the hair whole in every QC still; the one-off build script lives in the gitignored scratch folder `laffy_yugioh`.
 - **Text+ captions on a video track** keep their Fusion `Size` relative to frame width, so on the 1080-wide copy they render at 56% of the 16:9 size (Laffy Mitr Size 0.07 at y 0.88). They are not a Subtitle track, so a subtitle preset does not reach them. Report the size and ask before changing the user's Text+. When the user asks to enlarge them (Laffy, 2026-11-15), set the TextPlus tool `Size` in each item's Fusion comp of the copy only: 0.07 -> 0.12 (1.71x, close to the 1/0.5625 that restores the 16:9 pixel size) kept the longest Thai cue at ~2/3 of the width. Check first that `Size` has no connected spline; the original's comps stay separate after `DuplicateTimeline` (read back 0.07 on all 61).
+- **Fusion Transform Adjustment Clips on V2** (Laffy intro, 2026-11-20): keep `Size`, re-aim `Center` in 9:16 frame
+  coordinates: `Cx = 0.5 - (frame_x - 0.5)*Size` with `frame_x = 0.5 + (src_x - V1_CX)/WIN_W`, `Cy = 0.5 + (src_y - 0.5)*Size`
+  (Fusion y is up). Pick `src_y` from the SUBTITLE, not the 16:9 window: with `Mitr-short-001` (y ~940-1056) the 16:9
+  centre put the cue over the eyes; aiming at source y 0.53 put the chin at ~897. Burn-in render a zoomed range first.
+- **Side cards rebuilt as a native 1080x1920 HyperFrames reel** beat `short` for HyperFrames cards (user-approved for
+  Laffy): `short` shrank a 460 px side card to ~110 px. Under `Mitr-short-001` the only room is y ~1075+, past the
+  Shorts/TikTok safe bottom (~1250, HyperFrames `outside_safe_zone`). Laffy's final choice was the TOP of the frame
+  instead (cy 215, y 35-395, above the hair at ~434, outside every zoom range): offer the top first next time.
+- **Subtitles from a 16:9 Subtitle track get a 9:16 preset by DRT round trip**: export the master DRT,
+  `drt_set_subtitle_preset.patch_drt(..., read_presets(User.db)['Mitr-short-001'])`, import as `<name>_9x16`, compare
+  every track with the master, then set raster/zoom on the import. Measure the longest cues afterwards: Latin-heavy
+  cues (`Body Horror น่ะพวกแบบ`) overflow 1080; report them, do not split without the user.
 - **`ExportCurrentFrameAsStill` is enough for framing QC on such a copy**, because Text+ and still overlays sit on video tracks and appear in it. Only native Subtitle-track cues need a burn-in render.
 
 ## Verification

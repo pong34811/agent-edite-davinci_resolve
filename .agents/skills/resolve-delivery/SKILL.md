@@ -1,7 +1,7 @@
 ---
 name: resolve-delivery
 description: Delivery, rendering, and deliverable QC in the DaVinci Resolve MCP. Apply when preparing render jobs, validating render settings, QCing a finished render against a spec (video/loudness/blanking/completeness), building or reconciling a render manifest, expanding texted/textless/stems/slate deliverables, verifying media ingest, or producing a provenance/episode report — live in a running Resolve OR offline against rendered files and the project DB. Routes to the live render tools, the offline deliverable/media/provenance tools, and the deliverables craft skills.
-version: 0.3.1
+version: 0.3.2
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -238,6 +238,23 @@ Two things that bite when hand-writing specs, both handled by the projections:
   job and taking the render with it. Fix: MCP `resolve_control
   disable_background_tasks_for_current_session` (session only; reset on
   restart), then render again (KT404 Highlights, 21.1.0.17, 2026-11-04).
+
+### Background queue stalls with native Fusion graphics
+
+When `StartRendering` returns true but the job stays `Ready for background
+render`, do not treat it as running. If status reads time out, use the bounded
+recovery workflow and re-verify the saved timeline before another render. Try
+`resolve_control disable_background_tasks_for_current_session`, then a new
+output name with a pinned `H.264 Master` preset and the live `H264` codec.
+This combination completed a native-Fusion full render on Studio 21.1.0.17;
+it does not establish whether the encoder or the background helper caused the
+earlier stall. Require Complete, full-frame-count/output QC and protected-track
+readback after recovery and rendering.
+
+Allow enough time for a progressing native-Fusion render: a four-minute wall
+limit can cancel valid work before completion. Record agent-requested stops as
+Cancelled, not as render failures, and wait for Resolve to settle before saving
+or restoring session state.
 
 ## Batch final export (p2 pattern)
 

@@ -54,6 +54,7 @@
 | Script | ทำอะไร | ขอบเขต |
 |---|---|---|
 | `drt_focus_track.py` | ฉีด Adjustment Clip track ลง DRT (วิธีที่ปลอดภัยกว่า InsertGenerator) | ใช้ซ้ำ |
+| `wipe_gap_plan.py` | คำนวณเฟรมสำหรับช่วงเงียบหลังการ์ด CHAPTER: จุดตัดใน pause, การเลื่อน item/ซับ/whoosh, ช่วงของ overlay ที่ re-render, ตัวเติมภาพใต้การ์ด (pure logic, ไม่ต่อ Resolve) — ดู skill `pop-kinetic-chapter-gap` | ใช้ซ้ำ |
 | `drt_focus_multi.py` | DRT offline: track ใหม่ 1 track ที่มี Adjustment Clip หลายช่วง (`--ranges`) ต่อยอด `drt_focus_track` | ใช้ซ้ำ |
 | `import_focus_drt.py` | import DRT ที่ patch แล้วเป็น `_focus_variant` + ใส่ Fusion Transform ให้ทุก Adjustment Clip (dry run เป็นค่าเริ่ม, `--apply`) | ใช้ซ้ำ |
 | `render_subtitle_stills.py` | render เฟรมเดี่ยวเป็น PNG พร้อม burn-in ซับ (แทน still export ที่ไม่ติดซับ) | ใช้ซ้ำ |

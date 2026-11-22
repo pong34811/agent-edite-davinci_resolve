@@ -45,7 +45,10 @@ def main():
     out = Path(a.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     preset = f"focus-qc-{int(time.time())}"
-    require(project.SaveAsNewRenderPreset(preset), "preset save failed")
+    # 21.1.0.17: SaveAsNewRenderPreset can return False yet save; trust the list, not the boolean.
+    saved = bool(project.SaveAsNewRenderPreset(preset)) or preset in (project.GetRenderPresetList() or [])
+    if not saved:
+        print("warning: could not save the current render settings; they will not be restored", file=sys.stderr)
     try:
         require(project.LoadRenderPreset("H.264 Master"), "base preset failed")
         require(project.SetCurrentRenderFormatAndCodec("mp4", "H264_NVIDIA"), "codec failed")
@@ -75,7 +78,10 @@ def main():
         project.DeleteRenderJob(job) if "DeleteRenderJob" in dir(project) else None
         print("OK", video, video.stat().st_size)
     finally:
-        print("preset_restored", bool(project.LoadRenderPreset(preset)))
+        if saved:
+            print("preset_restored", bool(project.LoadRenderPreset(preset)))
+            project.DeleteRenderPreset(preset)
+            print("preset_deleted", preset not in (project.GetRenderPresetList() or []))
 
 
 if __name__ == "__main__":

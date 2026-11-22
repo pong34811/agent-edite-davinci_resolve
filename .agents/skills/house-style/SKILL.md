@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.10
+version: 0.3.12
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -202,6 +202,8 @@ as a small card over the face, and the user asked for "เต็มจอไป�
 The trap: a centre crop of a wide image (1200x600, 686x386) cuts its sides,
 including meme captions. Report what was cut instead of guessing a pan.
 
+In a 9:16 Pop Kinetic overlay (rendered HyperFrames graphics: slams, tag chips, cards, stickers, chapter title), centre every graphic horizontally on x 540 inside the safe zone (x 100-980); a single card sits at the centre and a pair is symmetric about it. Why: the user asked "รูปภาพประกอบย้ายให้อยู่ตรงกลางทั้งหมด" on the left-aligned Bunny Girl ep1 layout (2026-11-21). The trap: centring the slam box with a fixed width leaves the spark and rotation anchored to its left edge; size the box to its content (`width:max-content; margin:0 auto`).
+
 ## Shot selection
 
 <!-- What earns a place in the cut; what gets dropped even when it's a good shot. -->
@@ -212,6 +214,7 @@ For a talking-host explainer, make keyword graphics large (a slam word at least 
 When dialogue subtitles share the frame, a keyword must leave a visible gap to the subtitle; cap its width (640 px on a 1920 frame with centred `Mitr Font` subtitles) instead of letting the two touch (Bunny Girl, 2026-10-18).
 
 When the user asks for a "transition" between chapters of a Pop Kinetic explainer, they mean the full-screen CHAPTER card (pink, gold `CHAPTER NN` tag, title, bunny ears) with its own 1.6 s silent gap and whoosh, not a short cut wipe. A 0.5 s colour-panel wipe over the cut was rejected for the CHAPTER 03 look (Bunny Girl ep3, 2026-10-25). The trap is reading "transition" as a cut effect.
+Every CHAPTER card plays in silence: speech and the chapter's first subtitle start only after the card has gone, in older episodes too. Why: the user asked again for ep1, which predates the gap rule ("เปลี่ยนฉากให้เสร็จก่อน แล้วเริ่มต่อ", 2026-11-21). The trap: a cue that starts a few frames before its word can still sit on the card's exit after the gap.
 
 ## VTuber Zoom Focus
 

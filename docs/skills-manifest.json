@@ -296,6 +296,15 @@
       "history_sessions": 0
     },
     {
+      "name": "pop-kinetic-chapter-gap",
+      "tier": "supporting",
+      "path": ".agents/skills/pop-kinetic-chapter-gap/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "project-learning",
       "tier": "supporting",
       "path": ".agents/skills/project-learning/SKILL.md",
@@ -1470,7 +1479,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "c55531069b02172afb43ba7636822cb60e41c9d896ffbc61caa4cfebe3823229"
+      "sha256": "8f80cd9a9eabf363f9b68b3fd9faf099c9276559d3740a118c1ebded8d03d5ad"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -5049,6 +5058,12 @@
       "sha256": "f18008471528f0adde90a560d053f85935eed5cee26c447b7177ad24472bcf32"
     },
     {
+      "path": ".agents/skills/pop-kinetic-chapter-gap/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "4544e9aae299505603c17e064f1de1e69a89aace31b562b8b4416c7377e18716"
+    },
+    {
       "path": ".agents/skills/project-learning/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
@@ -5134,7 +5149,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "be8e2c13e9c48b9a3d5d5822f4b887c2a46edcb44998e3ed3a85e2d12e1cb17a"
+      "sha256": "b97d70bd82b0c5561aa64642bc0a5b83f4695c0f4aa8cf270cd603b9cd72f17a"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
@@ -5154,7 +5169,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-fusion\\SKILL.md",
       "source_sha256": "ed18e1b025ef9b27afbc9115327df54bfc287c591d7948e8403390ec59280b4b",
       "kind": "editing_skill",
-      "sha256": "4a4eeda16a4a55f6b09961b82322d20b2e9d814ba9d3eff3cd6e07b2dfcf4d08"
+      "sha256": "e64c377d3ff89c962e3d9df380b4bf29164efa3933e6c9162d01ba2dd863864f"
     },
     {
       "path": ".agents/skills/resolve-mcp/SKILL.md",
@@ -5188,7 +5203,7 @@
       "path": ".agents/skills/resolve-mitr-subtitle-presets/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "dad1a66505c7ea7fc615a4108283200d1df8d4312efe28bac33b696d0804946b"
+      "sha256": "aa709d5608ec969a8e099258fcbbe17e26de8ed4540f3405dcce62086b9554e1"
     },
     {
       "path": ".agents/skills/resolve-mitr-subtitle-presets/scripts/load_subtitle_preset.py",
@@ -5267,7 +5282,7 @@
       "source_sha256": "2cc8d462fe479a2746f87cda0f332a58be105ca3432e671e960e615ceed8d575",
       "kind": "editing_skill",
       "local_amendment": "Retain regression-tested state, caption-legibility, and AAC verification guards in the lean core.",
-      "sha256": "2c490ec90552a4131443c290107953c71a5b24274a77a21d54e7020c1f242a91"
+      "sha256": "eee27bb4670cac5d509258706dcf82b785eca0123d30824f4d7fa9a5fffca40b"
     },
     {
       "path": ".agents/skills/resolve-video-enrichment/assets/katy404-vertical-reaction-layout.png",
@@ -5881,7 +5896,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e8412da0cadab985bc654e7d029897bc83fecb2db6b5e5b644060b7059055f24"
+      "sha256": "613c1424156712d2d2852e2b0a8f38c3c404630a6ba4c0616c83d4cb1d4cb97c"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -5907,7 +5922,7 @@
       "path": ".agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "fc99159220c24d5fcc38a8bee32b7bd833f7252e9bf70d2288f6106815ef7959"
+      "sha256": "510ca195421b658555590a078002cbb5fff9b53c538b6889bc4c5af628d2bbc0"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/native-caption-migration.md",
@@ -6143,7 +6158,7 @@
       "path": ".gitignore",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "6c99050de36aa721771d99491ce3984d3d6e30c2638ba4d6d68a278783f3d5a2"
+      "sha256": "85e35c2c299c56913bbd8e4c8623fb1d750294f0255069de7760289eccb3124f"
     },
     {
       "path": "AGENTS.md",
@@ -6179,7 +6194,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "aae859143b9db2331383060ce56d2c49b3098f55d01bb090006aa7d0a5a3ee1e"
+      "sha256": "4c4fc4b9bcae278179ff6cc169d066edc688b88d119a6ee61395fe102c610bad"
     },
     {
       "path": "docs/README.md",
@@ -6273,7 +6288,7 @@
       "path": "docs/channels/armigon.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "7d340fbb14c7060d69bd25881af5900cf5dcb1c726750dffa0626bfdac0b6400"
+      "sha256": "9386e37af88d3dc346c58e045e3f701eab21ac09d1e9cebb907ebda78ffd7ef5"
     },
     {
       "path": "docs/channels/hoshi-1489.md",
@@ -6291,13 +6306,13 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "0f8c5840de3fc6d3523776f061c8ca167791dce1cd52ad7f4e2dd5f3a681274c"
+      "sha256": "7ca5b506e11c6262d8b6832e280c8b0ce4c3b27b70238c5c070538298ea7447c"
     },
     {
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "625f0cef0a67a1a9aa500bc0cac763210370406ffbe43e23042b25e1b407977b"
+      "sha256": "a069448205a40be69d201adf1325fbdf9b3f99d0840c28c6a238a44d3a11bb1f"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -8394,7 +8409,7 @@
       "path": "scripts/INDEX.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "292e726d3b011051cf6a0b7113da93c2cb050a8d26ec9022620f5d6ece359e57"
+      "sha256": "69b8c82de789c413b1e1754a1547dfae3fc2ca71e98a8557d52773a634bea319"
     },
     {
       "path": "scripts/README.md",
@@ -8774,7 +8789,7 @@
       "path": "scripts/focus_qc_frames.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "66771aeb90b2a97155e1037cc07dc72d8dfc01d9dcfcf3fd2792b973bd85a352"
+      "sha256": "65a60bc3c0d031b630b7b4c181b3910deaead6341967eb69465f800a4fb431d7"
     },
     {
       "path": "scripts/focus_tune.py",
@@ -9383,6 +9398,12 @@
       "sha256": "e377d3e477c69f95de242a8567b555fecde0d45de08b5908a9445cfa06b6c1dc"
     },
     {
+      "path": "scripts/wipe_gap_plan.py",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "fc648694bbea83339734bcdc83088c3caabf90bd3d3d57b7a5886a9c6c2c4ca3"
+    },
+    {
       "path": "scripts/words_to_short_srt.py",
       "source": "project-authored",
       "kind": "project_helper",
@@ -9845,6 +9866,12 @@
       "sha256": "f68bcde3d438c65ab3a23eaf271b1e5b557c0973735ae22b25b9348d025748c3"
     },
     {
+      "path": "tests/test_wipe_gap_plan.py",
+      "source": "project-authored",
+      "kind": "integration_or_validation",
+      "sha256": "6e375e9024b047fe460ad9382c5e1844db172a56447f2570c26af6e0cebf80c3"
+    },
+    {
       "path": "tests/test_words_to_short_srt.py",
       "source": "project-authored",
       "kind": "integration_or_validation",
@@ -10270,9 +10297,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1397,
-    "supporting_skills": 69,
-    "active_skills": 86
+    "manifest_files": 1400,
+    "supporting_skills": 70,
+    "active_skills": 87
   },
   "bundle_version": "0.17.114",
   "excluded_repository_paths": [
