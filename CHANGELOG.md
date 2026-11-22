@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.17.116 — Bunny Girl ep12 อัปเดต Timeline หลักและลบ timeline สำรอง
+
+### รายละเอียด
+- Bunny Girl ep12: เปลี่ยนชื่อ `Timeline 1_pop_mitr` เป็น `Timeline 1` และลบ timeline สำรอง 3 อัน (ต้นฉบับ, `_base`, `_pop`) ด้วย ID ในคำสั่งเดียว ตามที่ผู้ใช้สั่ง
+- อ่านกลับทุก track และ gain เท่าเดิม (V1 5, V2 5, V3 4, A1 3, A2 20, A3 1, ซับ 68 cue, 4077 เฟรม); สำรอง `pre_promote.drp` ก่อนลบ
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.115 — ตัดต่อ Bunny Girl ep12 และกฎ timeline ที่ตัดหัว
 
 ### รายละเอียด
