@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.17.118 — Bunny Girl ep12 จัดตัวละครแนวตั้งให้อยู่กึ่งกลาง
+
+### รายละเอียด
+- Bunny Girl ep12 แนวตั้ง: จัดตัวละครให้อยู่กึ่งกลางตามที่ผู้ใช้ขอ โดยวัดตำแหน่งหน้าจาก source ของตอนนี้ (ราว 0.545) แล้วตั้ง Pan ใหม่ (cx 0.53, Pan -102.4) ทั้ง 5 ชิ้น ส่วน track อื่นเท่าเดิม
+- render ทดสอบ `Bunny Girl ep12_9x16_test_v3_2026-11-22.mp4`: 4077 เฟรม, -16.0 LUFS, peak -0.8 dBFS ดู 8 เฟรมแล้วหน้าและอกอยู่บนเส้นกึ่งกลาง ไม่มีขอบดำ
+- skill talking-avatar-vertical-copy: เพิ่มบทเรียนให้วัดตำแหน่งหน้าจาก source ของแต่ละตอน ไม่ใช้ค่า cx ของตอนก่อน
+
+### Skill ที่อัปเดต
+- `talking-avatar-vertical-copy` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/talking-avatar-vertical-copy/SKILL.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.117 — Bunny Girl ep12 แนวตั้ง 9:16
 
 ### รายละเอียด
