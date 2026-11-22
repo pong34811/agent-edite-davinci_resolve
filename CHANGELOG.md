@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.17.117 — Bunny Girl ep12 แนวตั้ง 9:16
+
+### รายละเอียด
+- Bunny Girl ep12: สร้าง `Timeline 1_9x16` (1080x1920) จาก `Timeline 1` โดยไม่แก้ต้นฉบับ ซับ preset `Mitr-short-001` ผ่าน DRT (ไม่เขียน DB), ภาพเต็มจอที่หน้า, ซูม 1.1x 5 ช่วง และกราฟิก Pop Kinetic แนวตั้งจัดกึ่งกลาง 4 บท
+- render ทดสอบ `Bunny Girl ep12_9x16_test_2026-11-22.mp4`: 4077 เฟรม, -16.0 LUFS, peak -0.8 dBFS, ไม่มีเฟรมดำ, ซับอยู่ระดับคอ/อก ไม่ชนคำกระแทก
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.116 — Bunny Girl ep12 อัปเดต Timeline หลักและลบ timeline สำรอง
 
 ### รายละเอียด
