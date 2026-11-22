@@ -5896,7 +5896,7 @@
       "path": ".agents/skills/talking-avatar-vertical-copy/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "613c1424156712d2d2852e2b0a8f38c3c404630a6ba4c0616c83d4cb1d4cb97c"
+      "sha256": "bb6e0a8c4385e0873511368cf3bb0eb5c70d2ccde7049bbc3fa992f95a2a00f2"
     },
     {
       "path": ".agents/skills/talking-avatar-vertical-copy/scripts/overlay_place.py",
@@ -6306,7 +6306,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "122d05c1dfc2f82906dc647706246db8fff010f2860bc0609111614a5ce400dd"
+      "sha256": "f112f7a0fd26617b3421aec098695621ddc704dccac1dedcb8ffb117a5836188"
     },
     {
       "path": "docs/channels/laffy.md",

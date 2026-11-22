@@ -1,7 +1,7 @@
 ---
 name: talking-avatar-vertical-copy
 description: "Use when making a 9:16 copy of a solo VTuber Resolve clip."
-version: 0.1.6
+version: 0.1.7
 author: Hermes
 platforms: [windows]
 metadata:
@@ -50,6 +50,7 @@ Turns a 16:9 Resolve timeline whose V1 is **one avatar talking in a room (no gam
 - `SetProperty` returns False for strings and right after timeline changes; pass floats and re-read before retrying.
 - `focus_qc_frames` rejects an fps that differs from the timeline, and its render has no audio: it proves picture and subtitle placement only.
 - The subtitle track keeps its 16:9 style; check burn-in width per cue and report if the channel has no 9:16 preset.
+- **Measure the face column on this episode's source before setting the V1 Pan.** At V1 fill only 31.6% of the source width is visible, so a cx carried over from an earlier episode can push the avatar to one side. Grab 4–5 source frames with a 5% grid, read the face centre, set `Pan = -(cx - 0.5)*1080*V1_ZOOM`, then check a rendered sheet with a centre line. Bunny Girl ep12 (2026-11-22): the ep10 cx 0.57 left the face at ~37% of the width and the user asked for it centred; cx 0.53 put face and chest on the centre line.
 - **Inspector Adjustment Clips on V2 (no Fusion comp):** copying the 16:9 zoom 1:1 crops the hair, because at V1 fill only 31.6% of the source width is visible. Compute a hair cap per range, `cap = (WIN_W/2) / max(sx - (hairL - 0.02), (hairR + 0.02) - sx)` with `WIN_W = 1080/(1920*0.5625*V1_ZOOM)`, then scale the push-in `Z_v = min(1 + (Z_h - 1)*k, cap)` with k chosen so the biggest punch reaches the cap (user picked this over min(Z_h, cap), which flattens every punch onto one level). Keep each range's source centre: `Tilt_v = (sy - 0.5)*Z_v*1920`, `Pan_v = (V1_cx - sx)*Z_v/WIN_W*1080`, and clamp `sy` to `0.5/Z_v .. 1 - 0.5/Z_v` against black bands. Laffy Yu-Gi-Oh (2026-11-15): 1.28/1.54/2.03 became 1.06/1.12/1.23, with the hair whole in every QC still; the one-off build script lives in the gitignored scratch folder `laffy_yugioh`.
 - **Text+ captions on a video track** keep their Fusion `Size` relative to frame width, so on the 1080-wide copy they render at 56% of the 16:9 size (Laffy Mitr Size 0.07 at y 0.88). They are not a Subtitle track, so a subtitle preset does not reach them. Report the size and ask before changing the user's Text+. When the user asks to enlarge them (Laffy, 2026-11-15), set the TextPlus tool `Size` in each item's Fusion comp of the copy only: 0.07 -> 0.12 (1.71x, close to the 1/0.5625 that restores the 16:9 pixel size) kept the longest Thai cue at ~2/3 of the width. Check first that `Size` has no connected spline; the original's comps stay separate after `DuplicateTimeline` (read back 0.07 on all 61).
 - **Fusion Transform Adjustment Clips on V2** (Laffy intro, 2026-11-20): keep `Size`, re-aim `Center` in 9:16 frame
