@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.17.120 — แก้ path สคริปต์ในโปรไฟล์ Katy404
+
+### รายละเอียด
+- แก้โปรไฟล์ Katy404: บันทึก ep12 อ้างสคริปต์ `build_pop_ep12_vertical.py` โดยไม่มี path ทำให้ `test_channel_profiles` ล้มใน v0.17.119 จึงเปลี่ยนเป็น path เต็ม; ชุดตรวจ bundle/profile/entrypoint ผ่าน 18 ข้อ
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.119 — Bunny Girl ep12 แนวตั้ง เอาคำกระแทก Subscribe ออก
 
 ### รายละเอียด
