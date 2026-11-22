@@ -1,7 +1,7 @@
 ---
 name: katy404-minecraft-editing
 description: ใช้เมื่อตัดต่อคลิปเกม Minecraft ช่อง KATY404 (ซีรีส์ "ปลูกข้าวจนกว่าจะ 10K ผู้ติดตาม") ทั้ง 16:9 Clean Master และ 9:16 Shorts/TikTok ใน DaVinci Resolve — ครอบคลุมการจัดโครงสร้างแทร็ก, ค่า Geometry/Scale, Preset ซับไตเติล Mitr, การวาง Focus Zoom, กลยุทธ์การตัดต่อเพิ่มยอดวิว/Retention, และการแก้ Bug/Trap ทางเทคนิค (DRT XML In-offset, Live DRT Preset patch, Loudness -13.2 LUFS)
-version: 0.1.2
+version: 0.2.0
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -194,8 +194,57 @@ user-invocable: true
 
 - `scripts/build_9x16_day30.py`: สคริปต์ประกอบ 9:16 อัตโนมัติ (V1/V3/V4 layout, focus zoom 6 จุด, patch Mitr-short-001 ผ่าน DRT, verify ภาพนิ่ง)
 - `scripts/scratch/d31/`: สคริปต์ Day 31 geometry measurement และ 9:16 build
+- `scripts/scratch/d35/`: สคริปต์ Day 35 16:9 master, DRT subtitle patch, avatar centering calibration และ 9:16 build
 - `tests/test_build_9x16_day30.py`: เทสต์สำหรับสคริปต์ 9:16 (merge ranges, layout math, timeline naming)
 - `scripts/drt_set_subtitle_preset.py`: ตัวแพตช์ Subtitle Preset เข้าไฟล์ DRT XML
 - `scripts/backup_drp.py`: ตัวสำรองโปรเจกต์ DRP ที่ตรวจสอบความถูกต้องแล้ว
 - `scripts/focus_frame_qc.py`: QC ตำแหน่งซับด้วย pixel diff จากไฟล์ render จริง
 - `scripts/set_dialogue_leveler.py`: AI Dialogue Leveler สำหรับไฟล์มิกเบา
+
+---
+
+## 8. Day 35 Learned Rules & SOPs (Minecraft Day 35)
+
+### 8.1 การตัดต่อ 16:9 Clean Master (Cold Open Pacing)
+- **แหล่งฟุตเทจ**: `2026-11-22 22-28-34.mp4` (2560x1440 @ 60fps บนไทม์ไลน์ 1920x1080 @ 60fps)
+- **การตัดหัวและท้าย**:
+  - ตัดหัว 0–318 เฟรม (5.3 วินาที) ลบหน้าเมนูเกมและช่วงนับเลข 1–2–3 เพื่อเปิดด้วยประโยคพูดทักทายทันที
+  - ตัดท้าย 3,660–3,760 เฟรม ลบช่วงเงียบหลังพูด "บ๊ายบาย" ได้ความยาวสุทธิ 55.7 วินาที (3,342 เฟรม)
+- **VTuber Zoom (Video 2)**: 5 Adjustment Clips ด้วย Fusion Transform (สเกล 2.15x, จัดกึ่งกลางอวาตาร์ Katy404, คุม Headroom ~7% ไม่ตัดจงอยผม ahoge และไร้ขอบดำ):
+  1. เปิดคลิป & ทักทาย
+  2. ประกาศเป้าหมายปลูกข้าวจนกว่าจะ 10,000 ซับ
+  3. เผยยอดผู้ติดตามปัจจุบัน
+  4. จังหวะขอบคุณคนดู
+  5. Call to action ฝากแชร์ & โบกมือลาจบคลิป
+- **ซับไตเติล (Subtitle 1)**: 33 cues ด้วย Preset `Mitr Font` ผ่าน `caption_lint.py` 100%
+- **ระดับเสียง (Audio 1)**: ยกเกน +11.5 dB จากต้นทาง -29.4 LUFS (เป้า -13 ถึง -14 LUFS; ยังไม่ได้วัดความดังหลังปรับจากไฟล์ render — ต้องวัดก่อนส่งมอบ)
+
+### 8.2 Clean Timeline Promotion Workflow
+- **กติกาสำคัญ**: ห้ามใช้ MCP `timeline.delete_timeline` เพราะจะทิ้งไทม์ไลน์ `_archived` ตกค้างในโปรเจกต์
+- **ขั้นตอนที่ถูกต้อง**:
+  1. สำรองไฟล์ DRP: `day35_pre_promote_cleanup.drp` (ตรวจความสมบูรณ์ไฟล์)
+  2. ลบไทม์ไลน์ดิบเดิมออกด้วย Python API ตรง: `media_pool.DeleteTimelines([raw_timeline])`
+  3. เปลี่ยนชื่อไทม์ไลน์ตัดต่อ `Timeline 1_edit` เป็น `Timeline 1` ให้เป็นไทม์ไลน์หลักหนึ่งเดียว
+
+### 8.3 กับดักพิกัดอวาตาร์ 9:16 (Day 35 Geometry & Centering Trap)
+- **ปัญหาที่พบ**: เมื่อใช้ค่า `AV_CENTRE = (1065.0, 540.0)` ที่คัดลอกมาจาก Day 30 ตัวละครเยื้องไปทางขวา ~118–133 พิกเซล (วัดด้วยสคริปต์ สคริปต์วัดของ opencode ใน `scripts/scratch/d35/`: V3 +117.6 px, V4 +127..+133 px; หลังแก้เหลือไม่เกิน 27 px) ทำให้ผู้ใช้ต้องทักว่า *"ตัวละคร ให้อยู่ตรงกลางให้หน่อย"* และซับไตเติลทับหน้าผาก/ดวงตา
+- **การวัดพิกัดจริงของ Day 35**:
+  - Bounding Box เส้นผม: x = 999..1214, จุดกึ่งกลางแท้จริง `cx = 1103.0`
+  - ปลายจงอยผม (ahoge): y = 405
+- **สูตรพิกัดที่ถูกต้องสำหรับ Day 35**:
+  - `GAME_WIN = (300.0, 90.0, 930.0, 650.0)`
+  - `AV_CENTRE = (1103.0, 540.0)`
+  - `K_STACK = 3.06`: หน้าต่าง 353x314 px (`x = [926.5, 1279.5]`), Headroom เหนือ ahoge ~7%, `CropRight = 0.45 >= 0` (ไม่เกิด Crop ติดลบ)
+  - `K_FULL = 3.3`: สเกล 3.91x, จัดกึ่งกลางหน้าจอพอดีที่ x = 540, ตาอยู่ที่ y ≈ 1194 (อยู่ใต้แถบซับไตเติล y ≈ 985-1090 พอดี ไม่โดนซับบังตา)
+  - `SRC_BOTTOM = 720.0`: ยึดขอบล่างของอวาตาร์ชิดขอบล่างจอ canvas y = 1920 ไร้ขอบดำ 100%
+
+### 8.4 การลง Subtitle Preset โดยไม่รีสตาร์ท Resolve ผ่าน DRT Round-trip
+- ส่งออกไทม์ไลน์เป็น DRT ด้วย `timeline.Export(tmp_export, resolve.EXPORT_DRT, resolve.EXPORT_NONE)`
+- แพตช์ไบต์ Preset `Mitr-short-001` ลงใน DRT ด้วย `patch_drt`
+- สลับหน้าไปไทม์ไลน์เดิม ลบไทม์ไลน์ชั่วคราว แล้ว `media_pool.ImportTimelineFromFile(tmp_patched)`
+- ไทม์ไลน์ 9:16 จะได้สไตล์ฟอนต์ Mitr สำหรับแนวตั้งทันทีโดยไม่ต้องแก้ SQLite Database ออฟไลน์
+
+### 8.5 Automated Visual QC ด้วยภาพนิ่ง
+- สคริปต์สุ่มส่งออกภาพนิ่ง 6 เฟรม (100, 500, 1000, 1800, 2300, 3100) ไปยัง `exports/9x16-day35/verify/`
+- รันสคริปต์ตรวจสอบความสมดุลขอบซ้าย-ขวา (Margin Diff ≤ 30-70px), ตรวจสอบขอบดำทั้ง 6 ด้าน, และยืนยันว่าซับไตเติลไม่ทับบังตา
+

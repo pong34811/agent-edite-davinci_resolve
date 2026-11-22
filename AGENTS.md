@@ -14,6 +14,10 @@ Entry points: Claude Code reads `CLAUDE.md` (a thin pointer to this file); Codex
 3. Search `scripts/INDEX.md` and `grep -r` in `scripts/` for an existing tool. **Never create a tool outside this repository** (no new folders on the Desktop, no temp scripts under `%TEMP%` or the home directory).
 4. Only if nothing exists, print the `MCP-GAP:` line and write the script in `scripts/scratch/` (gitignored, no approval needed). Promote it to `scripts/` only when it is reusable: use `resolve_common`, add a test, add a row to `scripts/INDEX.md`.
 
+## Team roles (several agents on one project)
+
+When more than one agent works on a job, each takes one role from `.agents/roles/README.md` (producer-lead, resolve-editor, render-qc, thai-content, floating-helper) and follows its file. Only the agent holding the Resolve write turn changes Resolve; everyone else reads only.
+
 ## Before editing
 
 - Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`, then load the skill matching the actual request. Use `read_file` if a project skill is not yet registered in `skill_view`.

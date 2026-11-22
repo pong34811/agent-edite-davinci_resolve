@@ -1340,6 +1340,12 @@
   ],
   "files": [
     {
+      "path": ".agents/roles/README.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "235ea52e484f3982ddb0a0e04af85da3dba7c43ec139cb5113a8cb24e3b47d1a"
+    },
+    {
       "path": ".agents/roles/cut-reviewer.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\roles\\cut-reviewer.md",
       "source_sha256": "6bc16c826391ad204b2e49d1b8917f242bdd9a6767468bde6e44278ce301e176",
@@ -1347,11 +1353,41 @@
       "sha256": "6bc16c826391ad204b2e49d1b8917f242bdd9a6767468bde6e44278ce301e176"
     },
     {
+      "path": ".agents/roles/floating-helper.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "0d1dd4046dd01aa22b5d42c1ce3d97406b14f9da0204c05f8e61bb71c292fc21"
+    },
+    {
       "path": ".agents/roles/grade-match-verifier.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\roles\\grade-match-verifier.md",
       "source_sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2",
       "kind": "review_role",
       "sha256": "797bfd4ac379a19ca2b1858141ee058e28d3f65aa6d7b4824e077817e391d6b2"
+    },
+    {
+      "path": ".agents/roles/producer-lead.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "e34fe5bebab3db87141a7c783e636210c0bd9c330db950869742d26c121765c8"
+    },
+    {
+      "path": ".agents/roles/render-qc.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "04dc498e2ce515eb71ba8549393ec262efbd9287c4119d5465ad2df89ab2b356"
+    },
+    {
+      "path": ".agents/roles/resolve-editor.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "2d7111f62196030deeab122b14e5f8752dc887f832814100256ed0e7b8a43b26"
+    },
+    {
+      "path": ".agents/roles/thai-content.md",
+      "source": "project-authored",
+      "kind": "project_helper",
+      "sha256": "806cdd1509b343c9ec147308b4dd31a06ffe5147717a1dd3ed127fb05f7f3dec"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/SKILL.md",
@@ -3165,7 +3201,7 @@
       "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "035293279288566b7a3e5d7798e86389f72a2ccac0d6c6b2756d4ba186256df8"
+      "sha256": "25c86167aa7228a9607ed82dc362b8eb3e69f9dc87b7bff3d09a6a806af0252d"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -5952,7 +5988,7 @@
       "path": ".agents/skills/vertical-video-reframing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "b0e94a820c29109a4532db9c66512351d6e0d81f1c93f96e5e1451e10ec39192"
+      "sha256": "ccb360056a1541bd3bf56ed5798f0e9505b4ae48101940a9e30ebaa9dae3736d"
     },
     {
       "path": ".agents/skills/vertical-video-reframing/references/reference-study.md",
@@ -6164,7 +6200,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "56cfba47d3d3c58ad5187cfc489ccedd78797735960916701c6f162a73086d47"
+      "sha256": "33f4b5f6925c09a5b9d579ec149ae2f95c35251c79373c2ba8c0871f00066a82"
     },
     {
       "path": "CHANGELOG.md",
@@ -6201,7 +6237,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\docs\\README.md",
       "source_sha256": "c255d0727829846b697d281c23948566be4a8e386eec561d401a32fdc01e82e2",
       "kind": "mcp_reference",
-      "sha256": "01395b318745364f74f5472d733dc407188c4a3180f4066f61942819e777564c"
+      "sha256": "bb1659c934c251c5bcfcc0177717152033983263b00445c54e823c3ab5877d79"
     },
     {
       "path": "docs/REVIEW.md",
@@ -6306,7 +6342,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "564c0034f1c73392852598e31cd11acf16703afdff1c4dfc8d7cf4ff6db643e4"
+      "sha256": "3b6d3c39b81930cabd4d8622d86c8a234f1b36a169c1575e66b5b6c0474f32ba"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -10297,7 +10333,7 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1400,
+    "manifest_files": 1406,
     "supporting_skills": 70,
     "active_skills": 87
   },

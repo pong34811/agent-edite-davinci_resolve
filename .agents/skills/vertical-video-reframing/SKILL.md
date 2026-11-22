@@ -1,6 +1,7 @@
 ---
 name: vertical-video-reframing
 description: Use when reframing edited landscape video to portrait.
+version: 0.1.0
 ---
 
 # Reframe an existing cut for portrait delivery
@@ -60,6 +61,13 @@ This is a **reframing** workflow, not the raw-footage assembly covered by `resol
   one pass. If Resolve hangs while its library is on `G:`, check `G:\` with a
   thread timeout first: a stuck Drive leaves Resolve unkillable until the user
   restarts Google Drive.
+
+## Reading back an existing 9:16 transform (measure, don't nudge)
+
+- **Geometry model, verified against `scripts/fix_vtuber2d_9x16.py`** (1280x720 source, 1080x1920 canvas): `S0 = 1080/1280 = 0.84375`, `k = ZoomX * S0`, so `canvas_x = 540 + (src_x - 640) * k + Pan` (Pan in timeline px, +right) and `canvas_y = 960 + (src_y - 360) * k - Tilt * TILT_PX` with `TILT_PX = 720*S0/1920 = 0.31640625` (+Tilt up). Crop fields are a pre-zoom source window in S0 units: `CropLeft = x0*S0`, `CropRight = (1280 - x1)*S0`, same for top/bottom. Solve these inversely for a target canvas point; do not tune Pan/Zoom by eye.
+- **Pan and crop are coupled.** The crop window must equal the window the zoom/pan actually shows, or the uncovered area renders black. Derive both from one window; a negative crop side means the window ran past the source edge, so widen nothing — shrink the window or lower the zoom.
+- **Measure the subject from that stream day's source frame.** Decode one frame, mask the avatar (hair/face colour mask with PIL), take the bbox centre as the centre you feed `place()`. Reusing a previous day's centre moved the day-35 avatar ~150 px off-centre and put the subtitle band over the eyes.
+- **Read back, then look at pixels.** After writing, re-read Zoom/Pan/Tilt/Crop through MCP and check them against the model; then scan exported stills for black frame borders and re-check protected tracks' `(name, start, end, enabled)` tuples. Values that read back correct but still show black mean the crop/window math is wrong, not the write.
 
 ## Decision boundaries
 

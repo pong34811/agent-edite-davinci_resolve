@@ -196,6 +196,10 @@ definitions under `.codex/agents/` and Claude adapters under `.claude/agents/`:
   (the same checks `npm-publish.yml` runs before every release) and reports
   which files are stale relative to their source, without fixing them.
 
+Team roles for multi-agent jobs (one Resolve writer at a time) are indexed in
+`.agents/roles/README.md`: `producer-lead`, `resolve-editor`, `render-qc`,
+`thai-content`, `floating-helper`.
+
 ## Authoring References
 
 - [Fuse + DCTL Authoring](authoring/fuse-dctl-authoring.md)
