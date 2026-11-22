@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert, style, and CTC-sync Thai subtitles in Resolve.
-version: 0.5.12
+version: 0.5.14
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -206,6 +206,32 @@ frame count equal to the source (4407), loudness unchanged (-14.4 LUFS, `ebur128
 and 6 sample stills via `scripts/render_subtitle_stills.py` (native stills omit subtitles)
 inspected for correct, non-overlapping, on-frame captions. Near-tie CTC scores keep the
 Descript text; record kept-uncertain cues in the channel doc.
+
+## Sparse-track audits and native MCP revisions
+
+- For sparse captions, do not force the whole audio window through only the cue's
+  characters: uncaptioned speech before/after is not CTC blank. Use free prefix/suffix
+  states, inspect the character path and greedy decode, and keep ambiguous repetitions
+  unchanged. A local acoustic alignment is timing evidence, not proof of every word
+  or of complete speech coverage; do not replace approved text with its greedy decode.
+- Re-check the attached catalog: MCP 5.3.1 exposes `timeline_ai.list_captions_live`
+  and `write_captions_live` on observed Resolve 21.1.0.17. Ordinary native cues read
+  with `words: []`, but replacement with an empty `words` array is refused. A single
+  whole-phrase word record with the cue's exact text/start/end passed live readback.
+  Dry-run first, use a named revision, and compare every cue and non-subtitle item.
+- These writes retain the original and also auto-create an archive. Report both;
+  never silently promote a partially checked revision. The tool does not verify
+  rendered styling, Fusion compositions, grades or audio content. Readback on GIF
+  copies can change `GetRightOffset()` by one frame even when record bounds and
+  source bounds match; log that separately rather than claiming byte-identical edits.
+- A missing illustration can block burn-in QC even when dialogue footage is online.
+  Report the failed render and exact missing asset; do not disable/delete overlays
+  or regenerate source media merely to turn the render status green.
+- If track-enabled bits read from an inactive timeline disagree with an active
+  read of that same timeline, treat the inactive read as unreliable; do not
+  toggle tracks to fix a comparison artifact. Reuse one Resolve connection for
+  its object handles, preserve the entry UI state, and report any timed-out
+  state audit separately from the completed cue/bounds/media checks.
 
 ## The three findings that matter
 

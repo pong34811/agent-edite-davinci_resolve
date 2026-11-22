@@ -577,6 +577,15 @@
       "history_sessions": 0
     },
     {
+      "name": "resolve-project-media-storage",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-project-media-storage/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "resolve-rough-cut",
       "tier": "editing",
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
@@ -1461,7 +1470,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "8e710d933ee0354d5ad528085b9d1edec6e62ed9e334ca45e9e9b4a61d86f508"
+      "sha256": "c55531069b02172afb43ba7636822cb60e41c9d896ffbc61caa4cfebe3823229"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -5200,6 +5209,12 @@
       "sha256": "73015ef71cc1e542cc41d0476a21c777fa020d5071675e37c18b92510fa2d73d"
     },
     {
+      "path": ".agents/skills/resolve-project-media-storage/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "e26b0b7d6303e14f2a175f4bf2c0f53f35781582685bb690f6c43b422c907787"
+    },
+    {
       "path": ".agents/skills/resolve-rough-cut/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-rough-cut\\SKILL.md",
       "source_sha256": "aee1ffd3e2c0a539466f1fc7be4346f67f2845a0cbb6e24a0eb117dad0523ba4",
@@ -5886,7 +5901,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "ce94abceb471c7909cd0b87e3c8c6544995f516bdd361081d462f7a507d118ef"
+      "sha256": "b833edb23e1544457b875f4b44b67c84499c6637970cfc26cbd028dd1861a568"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md",
@@ -6252,7 +6267,7 @@
       "path": "docs/channels/aomimama.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "01b686d6b67e217564d1b624e44b5923382d492824b09fd4a1838bb2613401c6"
+      "sha256": "1f03bcf22ee92fcd2c3c97199e2a99ec89195ef9010a28200fb3a53976b45702"
     },
     {
       "path": "docs/channels/armigon.md",
@@ -10255,9 +10270,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1396,
-    "supporting_skills": 68,
-    "active_skills": 85
+    "manifest_files": 1397,
+    "supporting_skills": 69,
+    "active_skills": 86
   },
   "bundle_version": "0.17.114",
   "excluded_repository_paths": [

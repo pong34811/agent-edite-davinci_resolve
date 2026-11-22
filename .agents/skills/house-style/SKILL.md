@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.9
+version: 0.3.10
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -118,6 +118,16 @@ in favour of Descript (ep6, 2026-11-08). The trap is assuming a short clean read
 is safe for local ASR; use the silence map only for timing.
 Local Whisper may serve as a word-TIMING reference to align Descript text (never as caption text): the
 user approved it for the Laffy intro sync check (2026-11-15) after Resolve auto-captions returned nothing.
+
+When the user authorizes skipping unclear speech, leave those intervals without
+captions: omit unknown, conflicting or weakly supported words rather than guessing,
+retaining a doubtful old cue, or inserting a literal “ไม่ชัด” placeholder. Keep the
+source audio/video and pauses unchanged, and keep only supported Descript wording.
+Why: the user explicitly chose “ไม่รู้ ไม่ชัด ไม่ต้องใส่ข้อความ ให้ข้ามได้เลย” for
+the Aomi-mama subtitle audit (2026-11-22). The trap is treating “all timelines” as
+permission to fill every spoken interval with speculative ASR or to keep asking for
+new external providers after the user has chosen Descript and allowed omissions.
+Report the deliberate caption gaps; do not call them complete dialogue coverage.
 
 When one SFX pushes a test render's peak above -0.5 dBFS, lower only that SFX
 item (a pop on a loud word: -9 to -12 dB) and re-render under a new name; do not
