@@ -1,5 +1,36 @@
 # Changelog
 
+## v0.17.122 — เพิ่ม team roles และบทเรียน Katy404 Day 35
+
+### รายละเอียด
+- เพิ่ม team roles สำหรับงานที่มีหลาย agent ทำโปรเจกต์เดียวกัน ใน `.agents/roles/`: producer-lead, resolve-editor, render-qc, thai-content, floating-helper พร้อม `README.md` ที่มีตารางคนกับ role และกติกาใช้ Resolve ทีละคน (ต้องประกาศว่าถือคิว)
+- `AGENTS.md` และ `docs/README.md` ชี้ไปที่ team roles
+- สกิล `katy404-minecraft-editing` 0.2.0: บทเรียน Day 35 — ตัวละคร 9:16 เยื้อง ~118–133 px เพราะลอกค่า day 30 (หลังวัดใหม่เหลือไม่เกิน 27 px), K_FULL 3.3 ให้ตาอยู่ใต้แถบซับ, ขั้นตอน promote timeline
+- สกิล `vertical-video-reframing`: วิธีอ่านค่า transform 9:16 กลับแล้ววัดจากภาพ แทนการเดาค่า
+- โน้ตงาน Day 35 (`work/day35_center_qc.md`, `work/day35_edit_notes.md`)
+- ตรวจแล้ว: test bundle/validation/entrypoints/channel profiles/manifest ผ่าน 32 รายการ; ยังไม่ได้วัดความดังและตรวจซับจากไฟล์ render ของ Day 35
+
+### Skill ที่อัปเดต
+- `katy404-minecraft-editing` (แก้ไข): `SKILL.md`
+- `vertical-video-reframing` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- เพิ่ม `.agents/roles/README.md`
+- เพิ่ม `.agents/roles/floating-helper.md`
+- เพิ่ม `.agents/roles/producer-lead.md`
+- เพิ่ม `.agents/roles/render-qc.md`
+- เพิ่ม `.agents/roles/resolve-editor.md`
+- เพิ่ม `.agents/roles/thai-content.md`
+- แก้ไข `.agents/skills/katy404-minecraft-editing/SKILL.md`
+- แก้ไข `.agents/skills/vertical-video-reframing/SKILL.md`
+- แก้ไข `AGENTS.md`
+- แก้ไข `docs/README.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- เพิ่ม `work/day35_center_qc.md`
+- เพิ่ม `work/day35_edit_notes.md`
+
 ## v0.17.121 — Bunny Girl ep12 แนวตั้ง เอาคำกระแทกออกทั้งหมด
 
 ### รายละเอียด
