@@ -1,5 +1,47 @@
 # Changelog
 
+## v0.17.115 — ตัดต่อ Bunny Girl ep12 และกฎ timeline ที่ตัดหัว
+
+### รายละเอียด
+- ตัดต่อ Bunny Girl ep12 "รู้สึกยังไงตอนใส่ชุดบันนี่เกอร์ครั้งแรก" (Katy404) เป็น `Timeline 1_pop_mitr`: การ์ด CHAPTER 2 ใบพร้อมช่วงเงียบ 1.6 วิ, ซูม VTuber 5 ช่วง, กราฟิก Pop Kinetic 4 บท, ซับไทย 68 cue จาก Descript (Mitr Font), SFX 20 จุด และ BGM; `Timeline 1` ต้นฉบับไม่ถูกแก้
+- render ทดสอบ `Bunny Girl ep12_POP_test_v2_2026-11-22.mp4` ผ่าน: 4077 เฟรม 1920x1080@60, -16.0 LUFS, true peak -0.8 dBFS, ไม่มีเฟรมดำ, ช่วงการ์ดเงียบ -29/-30 dB และไม่มีซับบนการ์ด
+- เพิ่มกฎใน OPERATING-NOTES: ถ้า `Timeline 1` ไม่ได้เริ่มที่ source frame 0 (ผู้ใช้ตัดหัว) ต้องบวก offset ให้ทุกช่วง V1/A1 และตัดไฟล์เสียงวิเคราะห์จากจุดนั้น
+- รอบนี้ push commit ค้างอีก 2 รายการที่มีอยู่ก่อนงานนี้ (skill pop-kinetic-chapter-gap, wipe_gap_plan, เอกสารช่อง, `.mcp.json` และบันทึก Aomi-mama) จึงอาจเห็นไฟล์เหล่านั้นในรายการไฟล์ที่เปลี่ยน
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `pop-kinetic-chapter-gap` (ใหม่): `SKILL.md`
+- `resolve-delivery` (แก้ไข): `SKILL.md`
+- `resolve-fusion` (แก้ไข): `SKILL.md`
+- `resolve-mitr-subtitle-presets` (แก้ไข): `SKILL.md`
+- `resolve-project-media-storage` (ใหม่): `SKILL.md`
+- `talking-avatar-vertical-copy` (แก้ไข): `SKILL.md`
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- เพิ่ม `.agents/skills/pop-kinetic-chapter-gap/SKILL.md`
+- แก้ไข `.agents/skills/resolve-delivery/SKILL.md`
+- แก้ไข `.agents/skills/resolve-fusion/SKILL.md`
+- แก้ไข `.agents/skills/resolve-mitr-subtitle-presets/SKILL.md`
+- เพิ่ม `.agents/skills/resolve-project-media-storage/SKILL.md`
+- แก้ไข `.agents/skills/talking-avatar-vertical-copy/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `.gitignore`
+- แก้ไข `.mcp.json`
+- เพิ่ม `IDEA.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/aomimama.md`
+- แก้ไข `docs/channels/armigon.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/channels/laffy.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/INDEX.md`
+- แก้ไข `scripts/focus_qc_frames.py`
+- เพิ่ม `scripts/wipe_gap_plan.py`
+- เพิ่ม `tests/test_wipe_gap_plan.py`
+
 ## v0.17.114 — บทเรียนส่งงานซับ CTC: สำเนา timeline + QC ครบวงจร
 
 ### รายละเอียด
