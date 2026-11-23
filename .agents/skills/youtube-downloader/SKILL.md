@@ -1,7 +1,7 @@
 ---
 name: youtube-downloader
 description: "Download YouTube videos and playlists with yt-dlp."
-version: 1.1.0
+version: 1.2.0
 author: Hermes Agent
 license: MIT
 platforms: [windows, linux, macos]
@@ -29,6 +29,7 @@ Use the project Python CLI for downloading individual YouTube videos with yt-dlp
 - Cookies: do not read a browser cookie store or use account credentials unless the user explicitly authorizes cookie-based access for this download. Prefer public, unauthenticated access. A `cookies.txt` file may contain session secrets; never print, copy, stage, or expose it.
 - Playlists: `playlist?list=...` expands to individual videos before validation, queue creation, and batch limit.
 - Output dir flag: `--output-dir <path>` sets queue output_dir.
+- Windows paths: pass native Windows paths (e.g. `G:/My Drive/...` or `G:\My Drive\...`) or use `--output-dir` / `-P`. Never pass Git Bash POSIX-style paths like `/g/...` to Windows yt-dlp; Windows executables do not translate `/g` to `G:\` and will write to relative paths such as `D:\g\...`.
 
 ## Procedure
 
@@ -71,6 +72,7 @@ Use the project Python CLI for downloading individual YouTube videos with yt-dlp
 - Do not enable browser-cookie extraction as an automatic fallback. If public access fails and the user has not explicitly approved cookie access, stop and ask before using account credentials.
 - Output directory is stored in queue. Changing `--output-dir` on resume is ignored; output_dir comes from queue_data. To change destination, clear queue and start fresh.
 - CLI updates yt-dlp by default. Use `--no-update` to skip update check.
+- Concurrent downloads and claim files: when downloading footage (especially under `@everyone` tasks), only ONE agent may execute the download. All agents must check running processes and claim files (e.g. `_DOWNLOADING_by_<agent>.txt` in destination) before starting. Multiple concurrent downloaders writing to the same destination cause duplicate files, partial `.part` files, and severe disk/cloud bloat (measured: 7 parallel downloads created ~110 GB of duplicate files).
 
 ## User preferences
 

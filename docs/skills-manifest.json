@@ -1343,7 +1343,7 @@
       "path": ".agents/roles/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "235ea52e484f3982ddb0a0e04af85da3dba7c43ec139cb5113a8cb24e3b47d1a"
+      "sha256": "ca1ddd970e1c67fec271495f6c5f4e7271f1189354ae034b76a16328a19b511c"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
@@ -1507,7 +1507,7 @@
       "path": ".agents/skills/highlight/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "08e109207c60c63146d92a11738c61f7efab55288377bdce6b048010a950d0db"
+      "sha256": "52530bc28687bfc49f1f94e4471be676c693d51b5eac33232e7f763dd181ddc5"
     },
     {
       "path": ".agents/skills/house-style/SKILL.md",
@@ -4371,7 +4371,7 @@
       "path": ".agents/skills/long-video-highlight-clipping/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "278e3fdbb6849c061a2e19bcc94418bb0aae77372713ef016471404e0a88c4e2"
+      "sha256": "695f6d3cd41d5ae1d5dfbc1ab2cd66af6d21e3f4eb6819c1372e0dd6f7f9d94a"
     },
     {
       "path": ".agents/skills/long-video-highlight-clipping/templates/reviewer_brief.md",
@@ -5212,7 +5212,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
       "kind": "editing_skill",
-      "sha256": "ad89255f2309a2973dbb7b3b84474932c4e5df3556c32b1c502b23b78a27be64"
+      "sha256": "092959a122350baa11f7960176d4e09fef91e5603d1c3989df2fe4a23de8135a"
     },
     {
       "path": ".agents/skills/resolve-mcp/references/target-resolution.md",
@@ -5257,7 +5257,7 @@
       "path": ".agents/skills/resolve-project-folder-targeting/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "73015ef71cc1e542cc41d0476a21c777fa020d5071675e37c18b92510fa2d73d"
+      "sha256": "082b356bb1f83ff57140ecbff899c7e69458b913c3eb747da8c9c1aa839ae775"
     },
     {
       "path": ".agents/skills/resolve-project-media-storage/SKILL.md",
@@ -6182,7 +6182,7 @@
       "path": ".agents/skills/youtube-downloader/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "744423850b34cd1940ac7ca43a66e05406fa27ef38a1b12b7e0fa24df99e9770"
+      "sha256": "ae1b894651114903c95851d5d7295ed02cfed2273390d7497978e43b50637f34"
     },
     {
       "path": ".agents/skills/youtube-downloader/references/queue-format.md",
@@ -6205,7 +6205,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "8a4c479c63296309559eedb6df51b16075c880ba36a22f4315085a152b375469",
+      "sha256": "36243154be65b19a0c81d76f14391f01611b9bdec1b08b64346ecfd97a5733e7",
       "kind": "integration_or_validation"
     },
     {
@@ -6217,7 +6217,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "a259b5fae72a14d869b37c3bf42b7f0748f83f61e703d45874bd8dc2419caa71",
+      "sha256": "dbd7a5b43a2f9a5ae22f8604dfc07bae62e3b1ae83b2de8a66362573b0f19821",
       "kind": "integration_or_validation"
     },
     {
@@ -6230,7 +6230,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "c6dd7d27124ecc13b7d711c0dde3585757dc9a450171e2f2fbfbdc703baa39e4"
+      "sha256": "fcd220775389f83b588c6fa69e6aa877317b79359966dcfcc9d00cdabb098042"
     },
     {
       "path": "docs/README.md",
@@ -6342,7 +6342,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "3b6d3c39b81930cabd4d8622d86c8a234f1b36a169c1575e66b5b6c0474f32ba"
+      "sha256": "f0650718a9a159ad298adbc21de1416c6139fa460beef27a44435b97002f2ba9"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -10337,7 +10337,7 @@
     "supporting_skills": 70,
     "active_skills": 87
   },
-  "bundle_version": "0.17.121",
+  "bundle_version": "0.17.122",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

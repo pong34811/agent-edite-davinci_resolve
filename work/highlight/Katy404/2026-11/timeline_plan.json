@@ -1,0 +1,786 @@
+[
+ {
+  "name": "เข้าแถวก่อนกลับบ้าน-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "17480a81-03ea-45ad-97b0-d69fc99ffcf9",
+    "start_frame": 89123,
+    "end_frame": 93603,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-01",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "อัญเชิญวิเทอร์-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "17480a81-03ea-45ad-97b0-d69fc99ffcf9",
+    "start_frame": 118601,
+    "end_frame": 128730,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-02",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ตื่นสาย เสียงเหมือนเอสเปรสโซ 10 ช็อต-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "17480a81-03ea-45ad-97b0-d69fc99ffcf9",
+    "start_frame": 327349,
+    "end_frame": 331209,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-03",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "เล่นวาโลจนชิน กด B เปิดของ-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "17480a81-03ea-45ad-97b0-d69fc99ffcf9",
+    "start_frame": 624149,
+    "end_frame": 627463,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v01-04",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ลืมเปิดไมค์ เทคสอง-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "5734afff-964d-491b-a6df-2673ae5ce444",
+    "start_frame": 4295,
+    "end_frame": 6648,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-01",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "ไล่ล่าจนหนีไม่รอด-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "5734afff-964d-491b-a6df-2673ae5ce444",
+    "start_frame": 21580,
+    "end_frame": 25315,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-02",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "กดปุ๊บแคนเซิลเลย-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "5734afff-964d-491b-a6df-2673ae5ce444",
+    "start_frame": 66788,
+    "end_frame": 70214,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-03",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "จุดจบของคนหิว-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "5734afff-964d-491b-a6df-2673ae5ce444",
+    "start_frame": 156784,
+    "end_frame": 159746,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v02-04",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "เฟิร์สบลัด เกิร์ตบูม-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a006f24e-a6b8-4f76-b7c5-487f78384495",
+    "start_frame": 128880,
+    "end_frame": 134940,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-01",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "สกอร์ 12.2 ไม่ได้ MVP-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a006f24e-a6b8-4f76-b7c5-487f78384495",
+    "start_frame": 170309,
+    "end_frame": 173297,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-02",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "ตามทางแม่ สวย ช่วยด้วย-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a006f24e-a6b8-4f76-b7c5-487f78384495",
+    "start_frame": 213060,
+    "end_frame": 219134,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-03",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "จะลั่นวงการเกม-Arena of Valor (RoV)-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a006f24e-a6b8-4f76-b7c5-487f78384495",
+    "start_frame": 272451,
+    "end_frame": 278791,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v03-04",
+  "game": "Arena of Valor (RoV)",
+  "project": null
+ },
+ {
+  "name": "ซื้อคอมใหม่หมดไปสี่หมื่น-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a513d21f-0de9-4852-a582-7d662c5b60a3",
+    "start_frame": 20759,
+    "end_frame": 23647,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-01",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "มังกรสายฟ้าโคตรสวย-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a513d21f-0de9-4852-a582-7d662c5b60a3",
+    "start_frame": 35700,
+    "end_frame": 40202,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-02",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "โดนมอนข้างทางตอนรีโหลด-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a513d21f-0de9-4852-a582-7d662c5b60a3",
+    "start_frame": 68987,
+    "end_frame": 73535,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-03",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "จบเนื้อเรื่องแล้ว ราคาเต็ม 1,600-Monster Hunter World-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "a513d21f-0de9-4852-a582-7d662c5b60a3",
+    "start_frame": 518573,
+    "end_frame": 526860,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v04-04",
+  "game": "Monster Hunter World",
+  "project": null
+ },
+ {
+  "name": "จำชื่อท่า KOF ไม่ได้-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "95e7c6e7-1224-40a2-8278-1999d76f760c",
+    "start_frame": 133738,
+    "end_frame": 138554,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-01",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "ฉันไม่ใช่อาร์เชอร์ ฉันคือโจร-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "95e7c6e7-1224-40a2-8278-1999d76f760c",
+    "start_frame": 148565,
+    "end_frame": 151731,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-02",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "บอสเกิด ฉันดูแต่เลือด-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "95e7c6e7-1224-40a2-8278-1999d76f760c",
+    "start_frame": 358864,
+    "end_frame": 365163,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-03",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "ไปจับใบดำใบแดง-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "95e7c6e7-1224-40a2-8278-1999d76f760c",
+    "start_frame": 397860,
+    "end_frame": 403940,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v05-04",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "เล่นหลายคนหาตัวเองไม่เจอ-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59726584-41d6-4941-8f97-21dc066a5cc7",
+    "start_frame": 38460,
+    "end_frame": 41780,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-01",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "บอสไม่ยอมตาย กองเชียร์บังจอ-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59726584-41d6-4941-8f97-21dc066a5cc7",
+    "start_frame": 78117,
+    "end_frame": 82260,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-02",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "วิ่งหนีจนรอด-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59726584-41d6-4941-8f97-21dc066a5cc7",
+    "start_frame": 119940,
+    "end_frame": 125880,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-03",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "ขนมปังแปลงร่าง-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "59726584-41d6-4941-8f97-21dc066a5cc7",
+    "start_frame": 325433,
+    "end_frame": 330252,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v06-04",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "พูดชื่อปุ๊บโดนแย่งปั๊บ-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "90017ac4-72a3-4ec2-93a2-cf7fad0c8d47",
+    "start_frame": 40129,
+    "end_frame": 43919,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-01",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "แฟตสวยเพื่อน-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "90017ac4-72a3-4ec2-93a2-cf7fad0c8d47",
+    "start_frame": 226289,
+    "end_frame": 229899,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-02",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ตายฟรีเพราะป่า แค้นมาก-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "90017ac4-72a3-4ec2-93a2-cf7fad0c8d47",
+    "start_frame": 335103,
+    "end_frame": 341620,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-03",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ยิงกูไม่ได้เหรอ ไอ้กระจอก-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "90017ac4-72a3-4ec2-93a2-cf7fad0c8d47",
+    "start_frame": 435171,
+    "end_frame": 438684,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v07-04",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ใช้แอปอะไรเป็น VTuber-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "cdb371e8-1070-4812-894a-1a2e234fd4ef",
+    "start_frame": 176990,
+    "end_frame": 181064,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-01",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "บทจะตึงก็ตึง-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "cdb371e8-1070-4812-894a-1a2e234fd4ef",
+    "start_frame": 250834,
+    "end_frame": 253800,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-02",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "เราทำบาปทำกรรมอะไรไว้-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "cdb371e8-1070-4812-894a-1a2e234fd4ef",
+    "start_frame": 358486,
+    "end_frame": 362400,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-03",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ไลฟ์แบบโจร ไม่มีตาราง-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "cdb371e8-1070-4812-894a-1a2e234fd4ef",
+    "start_frame": 514598,
+    "end_frame": 517975,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v08-04",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "หัวก้อยชิบหาย-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6e26d5c0-8fc0-40f5-9fb4-ae0dcd657dba",
+    "start_frame": 15412,
+    "end_frame": 18827,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-01",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "ทีมเราทำอะไรไม่ได้-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6e26d5c0-8fc0-40f5-9fb4-ae0dcd657dba",
+    "start_frame": 46920,
+    "end_frame": 50499,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-02",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "เจอคนไทยแต่เปลี่ยนภาษาไม่ได้-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6e26d5c0-8fc0-40f5-9fb4-ae0dcd657dba",
+    "start_frame": 223243,
+    "end_frame": 229800,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-03",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "แพ้ติดจนต้องไปนอน-League of Legends-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "6e26d5c0-8fc0-40f5-9fb4-ae0dcd657dba",
+    "start_frame": 389205,
+    "end_frame": 397291,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v09-04",
+  "game": "League of Legends",
+  "project": null
+ },
+ {
+  "name": "สตันหนึ่งวิที่ติดมาหนึ่งนาที-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "e8a14e11-11a8-467e-8530-ed6172cd775e",
+    "start_frame": 31027,
+    "end_frame": 35059,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-01",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "เดินไม่ได้แล้วชีวิต-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "e8a14e11-11a8-467e-8530-ed6172cd775e",
+    "start_frame": 61906,
+    "end_frame": 66465,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-02",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "ชอบมันลูก ฟ้าแสนโวลต์-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "e8a14e11-11a8-467e-8530-ed6172cd775e",
+    "start_frame": 124249,
+    "end_frame": 127647,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-03",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "สละชีพได้แต่อย่าตาย-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "e8a14e11-11a8-467e-8530-ed6172cd775e",
+    "start_frame": 279520,
+    "end_frame": 285383,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v10-04",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "ตัวกินหัว ระวังไอ้กลมๆ-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "75836225-2aa3-4abb-894f-78c6cf0aab69",
+    "start_frame": 11522,
+    "end_frame": 15780,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-01",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "ลืมซื้อยา-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "75836225-2aa3-4abb-894f-78c6cf0aab69",
+    "start_frame": 186060,
+    "end_frame": 190143,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-02",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "ร้านล่าง 11 บาท มึงซื้อ 18-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "75836225-2aa3-4abb-894f-78c6cf0aab69",
+    "start_frame": 268548,
+    "end_frame": 272447,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-03",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "เทอร์มิเนเตอร์ T-800-Castle Crashers-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "75836225-2aa3-4abb-894f-78c6cf0aab69",
+    "start_frame": 299299,
+    "end_frame": 307465,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v11-04",
+  "game": "Castle Crashers",
+  "project": null
+ },
+ {
+  "name": "พิลเลเจอร์ที่กระจอกที่สุด-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "55c7e954-7287-42d7-82fd-e936669187ae",
+    "start_frame": 84563,
+    "end_frame": 90619,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-01",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "คนเริ่มต้องเป็นคนจบเอง-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "55c7e954-7287-42d7-82fd-e936669187ae",
+    "start_frame": 117587,
+    "end_frame": 123709,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-02",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "คนดูหาว่าเป็นแฟนบอย-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "55c7e954-7287-42d7-82fd-e936669187ae",
+    "start_frame": 224696,
+    "end_frame": 228936,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-03",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "บ้านคือ supply chain-Minecraft-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "55c7e954-7287-42d7-82fd-e936669187ae",
+    "start_frame": 362562,
+    "end_frame": 365471,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v12-04",
+  "game": "Minecraft",
+  "project": null
+ },
+ {
+  "name": "ไก่ตัวเดียวล่าเป็นชั่วโมง-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8af74faf-e837-4487-8e6c-4c5520e486e6",
+    "start_frame": 57215,
+    "end_frame": 61856,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v13-01",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "EXP ที่ฟาร์มมาหายไปหนึ่งในสาม-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8af74faf-e837-4487-8e6c-4c5520e486e6",
+    "start_frame": 102446,
+    "end_frame": 106165,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v13-02",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "มอนไม่สนความสูง-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8af74faf-e837-4487-8e6c-4c5520e486e6",
+    "start_frame": 134906,
+    "end_frame": 138711,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v13-03",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "บัตรหมด เจอชุดไทยลอยกระทง-Ever Planet-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "8af74faf-e837-4487-8e6c-4c5520e486e6",
+    "start_frame": 285258,
+    "end_frame": 288407,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v13-04",
+  "game": "Ever Planet",
+  "project": null
+ },
+ {
+  "name": "หาเรื่องมาโม้ จอดำ-Arpiel Online-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "0f1c7ab0-431a-4777-b9a7-000df931ab0e",
+    "start_frame": 6150,
+    "end_frame": 8999,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v14-01",
+  "game": "Arpiel Online",
+  "project": null
+ },
+ {
+  "name": "เมื่อวานซึมมาก-Arpiel Online-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "0f1c7ab0-431a-4777-b9a7-000df931ab0e",
+    "start_frame": 67440,
+    "end_frame": 70856,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v14-02",
+  "game": "Arpiel Online",
+  "project": null
+ },
+ {
+  "name": "ลักกี้ออก กูรวยแล้ว-Arpiel Online-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "0f1c7ab0-431a-4777-b9a7-000df931ab0e",
+    "start_frame": 165142,
+    "end_frame": 168960,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v14-03",
+  "game": "Arpiel Online",
+  "project": null
+ },
+ {
+  "name": "ลักกี้คือลักขโมย-Arpiel Online-vdo",
+  "clip_infos": [
+   {
+    "clip_id": "0f1c7ab0-431a-4777-b9a7-000df931ab0e",
+    "start_frame": 308340,
+    "end_frame": 312026,
+    "record_frame": 0
+   }
+  ],
+  "candidate": "v14-04",
+  "game": "Arpiel Online",
+  "project": null
+ }
+]

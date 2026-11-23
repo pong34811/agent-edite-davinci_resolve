@@ -1,0 +1,1 @@
+Highlight job Katy404/2026-11 is run by claude (lead) since 2026-11-23 13:56. Do not run pipeline stages for this job in parallel; ask claude in the channel for a part.

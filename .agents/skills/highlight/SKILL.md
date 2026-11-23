@@ -1,6 +1,7 @@
 ---
 name: highlight
 description: Entry point for finding the interesting moments in long livestream/VOD files (2-3 h mp4, Thai audio) and turning them into one Resolve timeline per clip. Use when the user runs /highlight, gives a footage folder and asks to find highlights, "หาช่วงน่าสนใจ", "ตัดไฮไลต์", or asks to resume a highlight job. Works the same in Claude Code, Codex and Hermes.
+version: 0.2.0
 ---
 
 # /highlight
@@ -40,12 +41,12 @@ GPU: run `python tools/gpu_smoke.py` once before `fulltext` (CUDA DLLs on Window
      - Hermes: terminal background/`notify`.
      - Codex: `nohup <cmd> > <WORK_DIR>/<stage>.log 2>&1 &`, then read the log.
 2. **Cheap signals.** `features`, then `shortlist` (loudness windows). Footage on `G:/My Drive`: set `DEMUX_WORKERS` 1-2 first.
-3. **Whole transcript.** `fulltext` (background; about 34x realtime on the 8 GB RTX, so a 3 h stream takes about 5 min). It writes `transcripts/<id>.fulltext.txt`: `[H:MM:SS] text   [ends s]`.
-4. **Readers.** `readpacks` then `readbriefs`. Spawn one subagent per pack with the prompt `Read <WORK_DIR>/review/<pack>.brief.md and follow it exactly.` Run up to 8 at a time. Then `proposals`; it prints rejected items (quote not in the pack, bad order/length) and missing packs.
+3. **Whole transcript.** `fulltext` (background; about 34x realtime on the 8 GB RTX, so a 3 h stream takes about 5 min). If repo `.venv` lacks `faster-whisper` or CUDA DLLs, run with base system Python (e.g. `Python313`) where CUDA libraries are installed. Cloud drive reads add latency (~45 min for 14 streams). It writes `transcripts/<id>.fulltext.txt`: `[H:MM:SS] text   [ends s]`.
+4. **Readers.** `readpacks` then `readbriefs`. Assign packs explicitly per subagent/member before `@everyone` calls so packs are not duplicated or skipped. Spawn one subagent per pack with the prompt `Read <WORK_DIR>/review/<pack>.brief.md and follow it exactly.` Run up to 8 at a time. Then `proposals`; it prints rejected items (quote not in the pack, bad order/length) and missing packs.
 5. **Final reviewers.** `sheets`, `packets`, `briefs <channel hint>` (rebuild packets after `fulltext`, so they show `[ends]`). Spawn one subagent per video: `Read <WORK_DIR>/review/<id>.brief.md and follow it exactly.` It reads `<id>.proposals.md` first and writes `review/<id>.json`.
 6. **Gate.** `python -m pytest -q ../../tests/highlight -k review_files_match_schema`. Check the files, not the subagents' summaries.
 7. **Plan.** Read the Resolve project read-only. Save the MCP `media_pool probe_media_pool` result to a file, then run `python resolve_clips.py <file>` to get `resolve_clips.json`. Then `python build_timelines.py` writes `candidates.json` and `timeline_plan.json`. Show the clip list to the user and stop if `APPROVAL` is `ask`.
-8. **Resolve.** Follow the `long-video-highlight-clipping` section "Building the timelines": one `media_pool create_timeline_from_clips` per clip (`if_exists: "fail"`), `project_manager save`, then `python verify_timelines.py`.
+8. **Resolve.** Follow the `long-video-highlight-clipping` section "Building the timelines": one `media_pool create_timeline_from_clips` per clip (`if_exists: "fail"`). Note: `CreateTimelineFromClips` expects `endFrame` to be exclusive (`[startFrame, endFrame)`); passing `end - 1` cuts the timeline 1 frame short. Then `project_manager save`, and verify all timelines with `python scripts/highlight/verify_timelines.py` (confirm 100% pass, e.g. 56/56).
 9. **Hand over.** Report in Thai: timelines made, `quiet` picks, low-confidence clips, and what nobody has watched yet.
 
 Subagents per agent:

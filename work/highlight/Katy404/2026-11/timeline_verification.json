@@ -1,0 +1,456 @@
+{
+ "project": "KT404 Highlights 2026-11",
+ "timeline_count": 56,
+ "planned": 56,
+ "ok": 56,
+ "rows": [
+  {
+   "name": "เข้าแถวก่อนกลับบ้าน-Minecraft-vdo",
+   "candidate": "v01-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4480,
+   "expected_duration": 4480
+  },
+  {
+   "name": "อัญเชิญวิเทอร์-Minecraft-vdo",
+   "candidate": "v01-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 10129,
+   "expected_duration": 10129
+  },
+  {
+   "name": "ตื่นสาย เสียงเหมือนเอสเปรสโซ 10 ช็อต-Minecraft-vdo",
+   "candidate": "v01-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3860,
+   "expected_duration": 3860
+  },
+  {
+   "name": "เล่นวาโลจนชิน กด B เปิดของ-Minecraft-vdo",
+   "candidate": "v01-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3314,
+   "expected_duration": 3314
+  },
+  {
+   "name": "ลืมเปิดไมค์ เทคสอง-Arena of Valor (RoV)-vdo",
+   "candidate": "v02-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2353,
+   "expected_duration": 2353
+  },
+  {
+   "name": "ไล่ล่าจนหนีไม่รอด-Arena of Valor (RoV)-vdo",
+   "candidate": "v02-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3735,
+   "expected_duration": 3735
+  },
+  {
+   "name": "กดปุ๊บแคนเซิลเลย-Arena of Valor (RoV)-vdo",
+   "candidate": "v02-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3426,
+   "expected_duration": 3426
+  },
+  {
+   "name": "จุดจบของคนหิว-Arena of Valor (RoV)-vdo",
+   "candidate": "v02-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2962,
+   "expected_duration": 2962
+  },
+  {
+   "name": "เฟิร์สบลัด เกิร์ตบูม-Arena of Valor (RoV)-vdo",
+   "candidate": "v03-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6060,
+   "expected_duration": 6060
+  },
+  {
+   "name": "สกอร์ 12.2 ไม่ได้ MVP-Arena of Valor (RoV)-vdo",
+   "candidate": "v03-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2988,
+   "expected_duration": 2988
+  },
+  {
+   "name": "ตามทางแม่ สวย ช่วยด้วย-Arena of Valor (RoV)-vdo",
+   "candidate": "v03-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6074,
+   "expected_duration": 6074
+  },
+  {
+   "name": "จะลั่นวงการเกม-Arena of Valor (RoV)-vdo",
+   "candidate": "v03-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6340,
+   "expected_duration": 6340
+  },
+  {
+   "name": "ซื้อคอมใหม่หมดไปสี่หมื่น-Monster Hunter World-vdo",
+   "candidate": "v04-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2888,
+   "expected_duration": 2888
+  },
+  {
+   "name": "มังกรสายฟ้าโคตรสวย-Monster Hunter World-vdo",
+   "candidate": "v04-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4502,
+   "expected_duration": 4502
+  },
+  {
+   "name": "โดนมอนข้างทางตอนรีโหลด-Monster Hunter World-vdo",
+   "candidate": "v04-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4548,
+   "expected_duration": 4548
+  },
+  {
+   "name": "จบเนื้อเรื่องแล้ว ราคาเต็ม 1,600-Monster Hunter World-vdo",
+   "candidate": "v04-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 8287,
+   "expected_duration": 8287
+  },
+  {
+   "name": "จำชื่อท่า KOF ไม่ได้-Ever Planet-vdo",
+   "candidate": "v05-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4816,
+   "expected_duration": 4816
+  },
+  {
+   "name": "ฉันไม่ใช่อาร์เชอร์ ฉันคือโจร-Ever Planet-vdo",
+   "candidate": "v05-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3166,
+   "expected_duration": 3166
+  },
+  {
+   "name": "บอสเกิด ฉันดูแต่เลือด-Ever Planet-vdo",
+   "candidate": "v05-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6299,
+   "expected_duration": 6299
+  },
+  {
+   "name": "ไปจับใบดำใบแดง-Ever Planet-vdo",
+   "candidate": "v05-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6080,
+   "expected_duration": 6080
+  },
+  {
+   "name": "เล่นหลายคนหาตัวเองไม่เจอ-Castle Crashers-vdo",
+   "candidate": "v06-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3320,
+   "expected_duration": 3320
+  },
+  {
+   "name": "บอสไม่ยอมตาย กองเชียร์บังจอ-Castle Crashers-vdo",
+   "candidate": "v06-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4143,
+   "expected_duration": 4143
+  },
+  {
+   "name": "วิ่งหนีจนรอด-Castle Crashers-vdo",
+   "candidate": "v06-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5940,
+   "expected_duration": 5940
+  },
+  {
+   "name": "ขนมปังแปลงร่าง-Castle Crashers-vdo",
+   "candidate": "v06-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4819,
+   "expected_duration": 4819
+  },
+  {
+   "name": "พูดชื่อปุ๊บโดนแย่งปั๊บ-League of Legends-vdo",
+   "candidate": "v07-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3790,
+   "expected_duration": 3790
+  },
+  {
+   "name": "แฟตสวยเพื่อน-League of Legends-vdo",
+   "candidate": "v07-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3610,
+   "expected_duration": 3610
+  },
+  {
+   "name": "ตายฟรีเพราะป่า แค้นมาก-League of Legends-vdo",
+   "candidate": "v07-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6517,
+   "expected_duration": 6517
+  },
+  {
+   "name": "ยิงกูไม่ได้เหรอ ไอ้กระจอก-League of Legends-vdo",
+   "candidate": "v07-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3513,
+   "expected_duration": 3513
+  },
+  {
+   "name": "ใช้แอปอะไรเป็น VTuber-League of Legends-vdo",
+   "candidate": "v08-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4074,
+   "expected_duration": 4074
+  },
+  {
+   "name": "บทจะตึงก็ตึง-League of Legends-vdo",
+   "candidate": "v08-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2966,
+   "expected_duration": 2966
+  },
+  {
+   "name": "เราทำบาปทำกรรมอะไรไว้-League of Legends-vdo",
+   "candidate": "v08-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3914,
+   "expected_duration": 3914
+  },
+  {
+   "name": "ไลฟ์แบบโจร ไม่มีตาราง-League of Legends-vdo",
+   "candidate": "v08-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3377,
+   "expected_duration": 3377
+  },
+  {
+   "name": "หัวก้อยชิบหาย-League of Legends-vdo",
+   "candidate": "v09-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3415,
+   "expected_duration": 3415
+  },
+  {
+   "name": "ทีมเราทำอะไรไม่ได้-League of Legends-vdo",
+   "candidate": "v09-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3579,
+   "expected_duration": 3579
+  },
+  {
+   "name": "เจอคนไทยแต่เปลี่ยนภาษาไม่ได้-League of Legends-vdo",
+   "candidate": "v09-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6557,
+   "expected_duration": 6557
+  },
+  {
+   "name": "แพ้ติดจนต้องไปนอน-League of Legends-vdo",
+   "candidate": "v09-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 8086,
+   "expected_duration": 8086
+  },
+  {
+   "name": "สตันหนึ่งวิที่ติดมาหนึ่งนาที-Ever Planet-vdo",
+   "candidate": "v10-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4032,
+   "expected_duration": 4032
+  },
+  {
+   "name": "เดินไม่ได้แล้วชีวิต-Ever Planet-vdo",
+   "candidate": "v10-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4559,
+   "expected_duration": 4559
+  },
+  {
+   "name": "ชอบมันลูก ฟ้าแสนโวลต์-Ever Planet-vdo",
+   "candidate": "v10-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3398,
+   "expected_duration": 3398
+  },
+  {
+   "name": "สละชีพได้แต่อย่าตาย-Ever Planet-vdo",
+   "candidate": "v10-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 5863,
+   "expected_duration": 5863
+  },
+  {
+   "name": "ตัวกินหัว ระวังไอ้กลมๆ-Castle Crashers-vdo",
+   "candidate": "v11-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4258,
+   "expected_duration": 4258
+  },
+  {
+   "name": "ลืมซื้อยา-Castle Crashers-vdo",
+   "candidate": "v11-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4083,
+   "expected_duration": 4083
+  },
+  {
+   "name": "ร้านล่าง 11 บาท มึงซื้อ 18-Castle Crashers-vdo",
+   "candidate": "v11-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3899,
+   "expected_duration": 3899
+  },
+  {
+   "name": "เทอร์มิเนเตอร์ T-800-Castle Crashers-vdo",
+   "candidate": "v11-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 8166,
+   "expected_duration": 8166
+  },
+  {
+   "name": "พิลเลเจอร์ที่กระจอกที่สุด-Minecraft-vdo",
+   "candidate": "v12-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6056,
+   "expected_duration": 6056
+  },
+  {
+   "name": "คนเริ่มต้องเป็นคนจบเอง-Minecraft-vdo",
+   "candidate": "v12-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 6122,
+   "expected_duration": 6122
+  },
+  {
+   "name": "คนดูหาว่าเป็นแฟนบอย-Minecraft-vdo",
+   "candidate": "v12-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4240,
+   "expected_duration": 4240
+  },
+  {
+   "name": "บ้านคือ supply chain-Minecraft-vdo",
+   "candidate": "v12-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2909,
+   "expected_duration": 2909
+  },
+  {
+   "name": "ไก่ตัวเดียวล่าเป็นชั่วโมง-Ever Planet-vdo",
+   "candidate": "v13-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 4641,
+   "expected_duration": 4641
+  },
+  {
+   "name": "EXP ที่ฟาร์มมาหายไปหนึ่งในสาม-Ever Planet-vdo",
+   "candidate": "v13-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3719,
+   "expected_duration": 3719
+  },
+  {
+   "name": "มอนไม่สนความสูง-Ever Planet-vdo",
+   "candidate": "v13-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3805,
+   "expected_duration": 3805
+  },
+  {
+   "name": "บัตรหมด เจอชุดไทยลอยกระทง-Ever Planet-vdo",
+   "candidate": "v13-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3149,
+   "expected_duration": 3149
+  },
+  {
+   "name": "หาเรื่องมาโม้ จอดำ-Arpiel Online-vdo",
+   "candidate": "v14-01",
+   "ok": true,
+   "problems": [],
+   "video_duration": 2849,
+   "expected_duration": 2849
+  },
+  {
+   "name": "เมื่อวานซึมมาก-Arpiel Online-vdo",
+   "candidate": "v14-02",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3416,
+   "expected_duration": 3416
+  },
+  {
+   "name": "ลักกี้ออก กูรวยแล้ว-Arpiel Online-vdo",
+   "candidate": "v14-03",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3818,
+   "expected_duration": 3818
+  },
+  {
+   "name": "ลักกี้คือลักขโมย-Arpiel Online-vdo",
+   "candidate": "v14-04",
+   "ok": true,
+   "problems": [],
+   "video_duration": 3686,
+   "expected_duration": 3686
+  }
+ ]
+}

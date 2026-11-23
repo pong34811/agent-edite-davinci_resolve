@@ -41,9 +41,15 @@ reassigns someone.
 2. Rules in `AGENTS.md` apply to every role: MCP first, Python scripts second,
    no GUI automation, verified `.drp` backup before a batch change, work on a
    copy timeline, never overwrite source footage.
-3. No upload, final render, release, or timeline deletion unless the user asked
+3. **One owner per @everyone job.** When a task is requested with `@everyone`,
+   only the designated owner for that domain (e.g. producer-lead for downloads
+   and pipeline dispatch, resolve-editor for Resolve writes) takes execution.
+   Other members must check for active claim files (e.g. `_DOWNLOADING_by_<agent>.txt`
+   or lock files) and active system processes before initiating work, preventing
+   duplicate work runs (e.g. parallel downloaders creating ~110 GB of duplicate data).
+4. No upload, final render, release, or timeline deletion unless the user asked
    for it in words.
-4. Report only what was verified, with the evidence (file path, measured
+5. Report only what was verified, with the evidence (file path, measured
    number, frame checked). Say what was not checked.
-5. Name every file you changed in your handoff, so the lead can stage only the
+6. Name every file you changed in your handoff, so the lead can stage only the
    task's files.

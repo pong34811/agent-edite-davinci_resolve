@@ -1,7 +1,7 @@
 ---
 name: resolve-mcp
 description: Orientation and index for DaVinci Resolve MCP work — grading, editing, conforming, delivery, media analysis, and .drp/.drt/.drx file work, live in a running Resolve or offline with none open. Load this for a map of the domain skills, the live-vs-offline servers, and the cross-cutting safety rules. The per-domain skills (resolve-color / resolve-edit / resolve-conform / resolve-delivery / resolve-media-analysis) carry the depth and self-trigger on their own descriptions; use this as the map, or when a task spans several domains.
-version: 0.5.0
+version: 0.5.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -77,6 +77,15 @@ index rather than their own skill:
   set_name` is the opposite case: it returned `False` on the same build and
 
   cannot name a never-saved project, so it is not a way around the prompt.
+
+  **Trap: never call `SaveProject()` on an Untitled Project** (such as immediately
+  after launching Resolve): calling save without a name triggers the native
+  GUI modal "Save Current Project", blocking all API and MCP calls until a human
+  clicks Cancel. Always navigate to `<channel>/<YYYY-MM>` via `project_manager_folders`,
+  check if the project exists, and call `create_project` (or Python
+  `pm.CreateProject(name, media_location_path)`) before saving.
+  Note that `timelinePlaybackFrameRate` cannot be set via API on 21.1.0.17
+  (reads 24 fps); ask the user to adjust it in Project Settings → Master Settings.
 
 - **Review / annotations** — timeline markers, review reports, annotation
 
