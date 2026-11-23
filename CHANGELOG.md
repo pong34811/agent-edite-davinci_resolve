@@ -1,5 +1,66 @@
 # Changelog
 
+## v0.17.123 — บทเรียน KT404 2026-11: สร้างโปรเจกต์ โหลดคลิป และไฮไลต์
+
+### รายละเอียด
+- บันทึกบทเรียนจากงาน KT404 2026-11 ลงสกิลเจ้าของเรื่อง (ทำโดย antigravity ด้วย `project-learning`, claude ตรวจ diff แล้ว)
+- สร้างโปรเจกต์ Resolve: ห้ามเรียก `SaveProject()` บน Untitled Project (ทำให้ขึ้น dialog Save Current Project และ API ค้าง), ต้องสร้างด้วย `CreateProject(name, media_location_path)` ในโฟลเดอร์ `<channel>/<YYYY-MM>`, ค่า playback fps ตั้งผ่าน API ไม่ได้ (`resolve-mcp` 0.5.1, `resolve-project-folder-targeting` 0.2.0, `docs/OPERATING-NOTES.md`)
+- โหลดคลิป: ใช้ path แบบ Windows ห้ามใช้ `/g/...` กับ yt-dlp, ให้โหลดได้คนเดียวต่องานและเช็ก claim file ก่อน — รอบนี้มีการโหลดซ้ำราว 110 GB (`youtube-downloader` 1.2.0)
+- ไฮไลต์: ถอดเสียงด้วย Python ระบบเมื่อ `.venv` ไม่มี faster-whisper, แบ่ง pack ก่อนสั่ง @everyone, `CreateTimelineFromClips` ใช้ `endFrame` แบบ exclusive, ตรวจ timeline ครบ 100% (`highlight` 0.2.0, `long-video-highlight-clipping` 0.2.0)
+- ทีม: เพิ่มกฎ "งาน @everyone มีเจ้าของคนเดียว" ใน `.agents/roles/README.md`
+- งาน `work/highlight/Katy404/2026-11`: 14 ฟุตเทจ คัดได้ 56 คลิป, โปรเจกต์ `KT404 Highlights 2026-11` สร้างใหม่ถูกวิธี, `verify_timelines.py` ผ่าน 56/56; ชื่อคลิปมาจากถอดเสียงอัตโนมัติ ยังไม่มีคนฟังยืนยัน
+- ตรวจแล้ว: test bundle/validation/entrypoints/channel profiles/learning rules ผ่าน 33 รายการ
+
+### Skill ที่อัปเดต
+- `highlight` (แก้ไข): `SKILL.md`
+- `long-video-highlight-clipping` (แก้ไข): `SKILL.md`
+- `resolve-mcp` (แก้ไข): `SKILL.md`
+- `resolve-project-folder-targeting` (แก้ไข): `SKILL.md`
+- `youtube-downloader` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/roles/README.md`
+- แก้ไข `.agents/skills/highlight/SKILL.md`
+- แก้ไข `.agents/skills/long-video-highlight-clipping/SKILL.md`
+- แก้ไข `.agents/skills/resolve-mcp/SKILL.md`
+- แก้ไข `.agents/skills/resolve-project-folder-targeting/SKILL.md`
+- แก้ไข `.agents/skills/youtube-downloader/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/.gitignore`
+- เพิ่ม `work/highlight/Katy404/2026-11/SESSION_SUMMARY.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/_CLAIMED_by_claude.txt`
+- เพิ่ม `work/highlight/Katy404/2026-11/candidates.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/inventory.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/inventory.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/job.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/resolve_clips.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/READERS.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/read-plan.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-01.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-02.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-03.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-04.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-05.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-06.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01-read-07.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01.brief.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01.proposals.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v01.proposals.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02-read-01.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02-read-02.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02.brief.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02.proposals.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v02.proposals.md`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v03-read-01.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v03-read-02.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v03-read-03.json`
+- เพิ่ม `work/highlight/Katy404/2026-11/review/v03.brief.md`
+- ... และอีก 28 ไฟล์ (ดู `git diff --name-status` ของ tag นี้)
+
 ## v0.17.122 — เพิ่ม team roles และบทเรียน Katy404 Day 35
 
 ### รายละเอียด
