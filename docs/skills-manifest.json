@@ -6262,7 +6262,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "b16545ef0a651ce1ed2ad53b3728d0217eb51875a63003a473bce6952fd15e39",
+      "sha256": "9f41f151d9e1051e7c8c8a8ad630ed565b2b0744d4725171e698026319b3b7a1",
       "kind": "integration_or_validation"
     },
     {
@@ -6274,7 +6274,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "6db627b3c19aa50f6612398d2672d175881c21cc95cea5305c6439638a8a62d8",
+      "sha256": "87eeba7ebb1836494b9f784679789e43ab636da120a5712e4d8dcf77e68722dc",
       "kind": "integration_or_validation"
     },
     {
@@ -10394,7 +10394,7 @@
     "supporting_skills": 73,
     "active_skills": 90
   },
-  "bundle_version": "0.17.124",
+  "bundle_version": "0.17.125",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",
