@@ -487,6 +487,15 @@
       "history_sessions": 2
     },
     {
+      "name": "resolve-highlight-batch-production",
+      "tier": "supporting",
+      "path": ".agents/skills/resolve-highlight-batch-production/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "resolve-mcp",
       "tier": "editing",
       "path": ".agents/skills/resolve-mcp/SKILL.md",
@@ -1361,7 +1370,7 @@
       "path": ".agents/roles/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "ca1ddd970e1c67fec271495f6c5f4e7271f1189354ae034b76a16328a19b511c"
+      "sha256": "223a4b873dc5dbced7af1c647c7ae9eba9d0d8976f2bf09027d52fac0f32d38c"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
@@ -1411,7 +1420,7 @@
       "path": ".agents/skills/agent-edite-skills-catalog/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "e450494729325bb38296da6cac2551f75fb685c079c3aebdc15959d4b7c1bff0"
+      "sha256": "6699f565504217379cd5de13074fa7b2ec2973135f9d9bafc3ce8ed7a02062e1"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/domain-resolve-skills.md",
@@ -1447,7 +1456,7 @@
       "path": ".agents/skills/agent-edite-skills-catalog/references/task-recipe-skills.md",
       "source": "project-authored",
       "kind": "editing_skill_reference",
-      "sha256": "de9fab5ec1be90f6b1ba71a9ca31316cece3b275a2f1eabe7392c5eea90a5635"
+      "sha256": "0c2cbdb3ef1a78f25d5fec78841bf7f7d803b43753f1c9f8ac6c05b5fc924fad"
     },
     {
       "path": ".agents/skills/agent-edite-skills-catalog/references/thai-vtuber-skills.md",
@@ -3243,7 +3252,7 @@
       "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "25c86167aa7228a9607ed82dc362b8eb3e69f9dc87b7bff3d09a6a806af0252d"
+      "sha256": "1ec2785cb4fc4b065d801ca301488561b6d21ec4fc27265834924e864f04b05d"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -5250,6 +5259,12 @@
       "sha256": "e64c377d3ff89c962e3d9df380b4bf29164efa3933e6c9162d01ba2dd863864f"
     },
     {
+      "path": ".agents/skills/resolve-highlight-batch-production/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "80ae12c908a416ebd0a367d0f3cc2421dd655a30121c63985d50a0d7c37450be"
+    },
+    {
       "path": ".agents/skills/resolve-mcp/SKILL.md",
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-mcp\\SKILL.md",
       "source_sha256": "a575eba2344824bf6ad6e077d7873e547279cc655a93a0cc37a47139178aa8a6",
@@ -6018,7 +6033,7 @@
       "path": ".agents/skills/timeline-naming-convention/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "ccd28ac449c955098091ba05c26eeb7e121c4a6503e1fe086f2d8ba4f68db24b"
+      "sha256": "a1b4e93b54223cedf7eb49b269bd299e40c10359231625f6f8af70d9f6cb39cd"
     },
     {
       "path": ".agents/skills/user-feedback-capture/SKILL.md",
@@ -6030,7 +6045,7 @@
       "path": ".agents/skills/vertical-video-reframing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "ccb360056a1541bd3bf56ed5798f0e9505b4ae48101940a9e30ebaa9dae3736d"
+      "sha256": "32882ee9a0e558b3085f99b10b89e45afc8a41d8c4137e9e00554441c63c0573"
     },
     {
       "path": ".agents/skills/vertical-video-reframing/references/reference-study.md",
@@ -6272,7 +6287,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "364f73ae37907bfcb933458d5ec862415133d6d513b3963a8bbce7cdd84ec8a0"
+      "sha256": "c3e3caef93aaa515b951237069b73e80474eeb5fc2e8e70bb95251d556f6c873"
     },
     {
       "path": "docs/README.md",
@@ -6384,7 +6399,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "f0650718a9a159ad298adbc21de1416c6139fa460beef27a44435b97002f2ba9"
+      "sha256": "9793f2733a298b8e6bb524027304754d9f9e0f9fe29a6982e091abdffb8ea1cd"
     },
     {
       "path": "docs/channels/laffy.md",
@@ -8619,7 +8634,7 @@
       "path": "scripts/asr_words_th.py",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "70dc4fbeced637984b9410bb3d19603a458b7a6a14521ddb31184f8e7b2c4210"
+      "sha256": "2d92d5fc6cfe090b3cd7a9dbdaee74de31a4a49b5965f10858606a8865a1ddbf"
     },
     {
       "path": "scripts/backup_drp.py",
@@ -10375,9 +10390,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1410,
-    "supporting_skills": 72,
-    "active_skills": 89
+    "manifest_files": 1411,
+    "supporting_skills": 73,
+    "active_skills": 90
   },
   "bundle_version": "0.17.123",
   "excluded_repository_paths": [
