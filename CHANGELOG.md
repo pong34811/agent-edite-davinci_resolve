@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.17.125 — กฎข้ามเรนเดอร์เริ่มต้นใน AGENTS.md และบทเรียนซับไตเติล Katy404 Day 37
+
+### รายละเอียด
+- อัปเดต `AGENTS.md`: เพิ่มกฎ `No rendering by default` ข้ามการเรนเดอร์และการส่งออกหน้า Deliver ทั้งหมดเป็นค่าเริ่มต้น ให้จบงานที่ไทม์ไลน์ใน Resolve และรอคำสั่งเรนเดอร์จากผู้ใช้โดยตรง
+- บันทึกบทเรียนจากปัญหาซับไตเติลไม่ตรงเสียงของ Katy404 Day 37 ลงใน `house-style` (`0.3.13`), `thai-subtitles-resolve` (`0.5.16`), `katy404-minecraft-editing` (`0.3.1`), `.agents/roles/resolve-editor.md`, `docs/OPERATING-NOTES.md` และ `docs/channels/katy404.md` — บังคับตรวจเวลา Descript SRT เทียบเสียง `16 kHz` ด้วย Thai CTC forced alignment (`airesearch/wav2vec2-large-xlsr-53-th`) + 10 ms RMS ก่อนนำเข้าทั้ง 16:9 และ 9:16
+- อัปเดตรายชื่อบทบาทใน `.agents/roles/README.md` (`2026-11-25`) และรีเฟรช checksum ใน `docs/skills-manifest.json` พร้อม `docs/validation-report.json` (`1,411` ไฟล์, `90` active skills)
+- ผลตรวจหลังแก้ล่าสุด: `python scripts/refresh_skill_manifest.py` ผ่าน (`errors: []`) และ full suite `python -m pytest -q` ผ่านทั้งหมด (`467 passed, 35 skipped, 10 subtests passed`)
+
+### Skill ที่อัปเดต
+- `house-style` (แก้ไข): `SKILL.md`
+- `katy404-minecraft-editing` (แก้ไข): `SKILL.md`
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/roles/README.md`
+- แก้ไข `.agents/roles/resolve-editor.md`
+- แก้ไข `.agents/skills/house-style/SKILL.md`
+- แก้ไข `.agents/skills/katy404-minecraft-editing/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `AGENTS.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.124 — บทเรียน Katy404 Day 36: จัดกลาง 9:16 ห้ามยืด (ZoomGang) และชุดสกิลล่าสุด
 
 ### รายละเอียด
