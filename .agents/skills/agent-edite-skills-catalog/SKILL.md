@@ -11,7 +11,7 @@ metadata:
 
 # Project Skills Catalog (agent-edite-davinci_resolve)
 
-Inventories and routes the 46 portable skills shipped in this repo's
+Inventories and routes the 88 portable skills shipped in this repo's
 `.agents/skills/`, grouping them by job and recording each group's real
 triggers, verified commands, and traps so a task goes straight to the skill
 that owns it. It does NOT replace those skills — load the owning skill with
@@ -54,7 +54,7 @@ render, import, relink, or publish. Read-only; stdlib only.
 |---|---|---|
 | Domain map + Resolve MCP routing (9) | `resolve-mcp`, `resolve-color`, `resolve-edit`, `resolve-conform`, `resolve-delivery`, `resolve-fusion`, `resolve-audio`, `resolve-media-pool`, `resolve-media-analysis` | `references/domain-resolve-skills.md` |
 | Domain depth — build gates, offline action catalogs, the gotcha that bites (same 9) | the `resolve-*` domain skills | `references/resolve-domain-depth.md` |
-| End-to-end task recipes (10) | `resolve-session`, `resolve-rough-cut`, `resolve-tighten-recording`, `resolve-trim-to-length`, `resolve-batch-export`, `resolve-folder-cover-batch`, `resolve-offline-media-repair`, `resolve-mitr-subtitle-presets`, `video-footage-review`, `video-provider-smoke-qc` | `references/task-recipe-skills.md` |
+| End-to-end task recipes (11) | `resolve-session`, `resolve-rough-cut`, `resolve-tighten-recording`, `resolve-trim-to-length`, `resolve-batch-export`, `resolve-folder-cover-batch`, `resolve-offline-media-repair`, `resolve-mitr-subtitle-presets`, `resolve-highlight-batch-production`, `video-footage-review`, `video-provider-smoke-qc` | `references/task-recipe-skills.md` |
 | Thai / VTuber production (10) | `resolve-video-enrichment`, `thai-subtitles-resolve`, `thai-proofread`, `vtuber-content-curriculum`, `vtuber-thumbnail-layout`, `vtuber-thumbnail-qc`, `vtuber-cover-batch-pipeline`, `youtube-content`, `youtube-downloader`, `gif-search` | `references/thai-vtuber-skills.md` |
 | Superpowers methodology (15) | `superpowers-*` (dir prefix) → frontmatter names without the prefix | `references/superpowers-skills.md` |
 | House rules and release (2) | `house-style`, `agent-skill-repo-release` | `references/governance-and-conventions.md` |
@@ -70,7 +70,7 @@ Load a reference on demand with
 1. Confirm the repo root and read `AGENTS.md` first — it carries the tool
    mandate, track architecture, and the "current explicit user instructions
    govern scope" rule that overrides any skill text.
-2. Run the inventory script (step 1 of How to Run). Expect 46 `SKILL.md` files;
+2. Run the inventory script (step 1 of How to Run). Expect 88 `SKILL.md` files;
    a different count means a skill was added or removed — read `CHANGELOG.md`
    and `git status` before trusting the table above.
 3. Match the task to a group in Quick Reference, then load that reference file.
@@ -115,11 +115,11 @@ Load a reference on demand with
 ## Verification
 
 `python <skill_dir>/scripts/inventory_skills.py --root <repo> --problems` prints
-one line per frontmatter defect. Verified baseline on this repo: **46 skills,
-31 flagged**, all falling into exactly three known classes — long descriptions
-(>60 chars) on the Resolve family and `house-style`, the `superpowers-*`
-directory/name alias pairs, and three one-off findings (`thai-proofread`
-description not sentence-final; `video-provider-smoke-qc` and
-`vtuber-cover-batch-pipeline` declare no `version`). Anything outside those
+one line per frontmatter defect. Verified baseline (2026-11-25 KT404 batch): **62 of 88 skills
+flagged**, all in known classes — long descriptions
+(>60 chars) on many skills, missing `version` / non-sentence-final descriptions, and the `superpowers-*`
+directory/name alias pairs.
+
+Anything outside those
 classes is a real regression — a skill whose frontmatter `name` no longer
 matches its directory will not route.

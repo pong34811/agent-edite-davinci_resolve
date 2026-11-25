@@ -1,4 +1,4 @@
-# End-to-end task recipe skills (10 skills)
+# End-to-end task recipe skills (11 skills)
 
 These walk a whole job rather than routing a domain. Each states its own
 deliverable contract; violating that contract is the most common way the work
@@ -195,6 +195,15 @@ no Resolve process holds the DB, and verify every changed row. Never bypass the
 gate by calling SQL directly. `No target timeline has a subtitle track` is
 normal for a 16:9-only project, not a bug; `DB has N subtitle tracks but Resolve
 reports M` means unsaved new tracks — save and rerun.
+
+
+## `resolve-highlight-batch-production` — 16:9 → 9:16 batch with V3 full-screen zoom
+
+Triggers: "make all vertical timelines", "create VTuber zoom in every 9:16 timeline", or any multi-stream highlight batch that ends with 16:9 + 9:16 deliverables. Verified on `KT404 Highlights 2026-11` (14 lives, 56 clips, 112 timelines). This skill orchestrates `long-video-highlight-clipping`, `resolve-video-enrichment`, `vertical-video-reframing`, `resolve-mitr-subtitle-presets`, and `thai-subtitles-resolve`; load the owner skill for each stage.
+
+Pipeline: `CreateProject(name, media_dir)` (never `SaveProject()` on `Untitled Project`; set playback FPS manually) → 16:9 enrichment (`V2` `VTuber Zoom` 202 Adjustment Clips, `V3` `REACTIONS` GIFs with `vdo`, `Dialogue Leveler` + peak fix) → Descript Thai subs (audio-evidence only; map candidates by timeline name, never row index) → stacked 9:16 (`V1` Game Top, `V2` VTuber Bottom, `V4` `REACTIONS` `short`, `Mitr-short-001`) → V3 full-screen zoom → burn-in QC.
+
+Critical traps: place raw **uncropped** source clips on `V3`, not a scaled pre-cropped `V2` or a `16:9` Adjustment Clip (`Pivot=(0.5,0)` + `Center=(0.5,0.5)` lifts the bottom panel into a half-screen black void); avoid DRT round-trips on 9:16 (they drop `Mitr-short-001` and create `_archived` copies); `DeleteClips` needs `r.OpenPage("edit")`; assert `GetFusionCompCount() == 0`; `SetTrackEnable` may need offline `Flags=2 → 0` + reopen; stills omit subtitles, so render a burn-in `H.264 Master` and `ffprobe` it. One Resolve writer at a time. Verified values: V2 `ZoomX` 3.282051 ×40 / 2.942529 ×16; V3 202 raw clips (`k_full` 2.5 ×40 / 2.15 ×16), `Flags=0` on 56/56.
 
 ## `video-footage-review` — first-pass cutlist from footage (222 lines)
 

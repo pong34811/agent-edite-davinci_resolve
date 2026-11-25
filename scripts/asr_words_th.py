@@ -80,6 +80,9 @@ def main(argv=None):
     ap.add_argument("wav")
     ap.add_argument("out")
     ap.add_argument("--model", default="large-v3-turbo")
+    ap.add_argument("--no-vad", action="store_true",
+                    help="decode the whole file; use when VAD drops real speech (quiet or music-covered talk)")
+    ap.add_argument("--vad-silence-ms", type=int, default=400)
     args = ap.parse_args(argv)
     _register_cuda()
     from faster_whisper import WhisperModel
@@ -91,7 +94,9 @@ def main(argv=None):
     it, info = model.transcribe(
         load_audio(args.wav), language="th", word_timestamps=True, beam_size=5,
         temperature=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0], condition_on_previous_text=False,
-        vad_filter=True, vad_parameters={"min_silence_duration_ms": 400, "speech_pad_ms": 200})
+        vad_filter=not args.no_vad,
+        vad_parameters=None if args.no_vad else
+        {"min_silence_duration_ms": args.vad_silence_ms, "speech_pad_ms": 200})
     segs = []
     for i, s in enumerate(it):
         segs.append({"id": i, "start": s.start, "end": s.end, "text": s.text,

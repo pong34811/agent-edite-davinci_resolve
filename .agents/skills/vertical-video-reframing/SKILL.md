@@ -1,7 +1,7 @@
 ---
 name: vertical-video-reframing
 description: Use when reframing edited landscape video to portrait.
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Reframe an existing cut for portrait delivery
@@ -68,6 +68,18 @@ This is a **reframing** workflow, not the raw-footage assembly covered by `resol
 - **Pan and crop are coupled.** The crop window must equal the window the zoom/pan actually shows, or the uncovered area renders black. Derive both from one window; a negative crop side means the window ran past the source edge, so widen nothing — shrink the window or lower the zoom.
 - **Measure the subject from that stream day's source frame.** Decode one frame, mask the avatar (hair/face colour mask with PIL), take the bbox centre as the centre you feed `place()`. Reusing a previous day's centre moved the day-35 avatar ~150 px off-centre and put the subtitle band over the eyes.
 - **Read back, then look at pixels.** After writing, re-read Zoom/Pan/Tilt/Crop through MCP and check them against the model; then scan exported stills for black frame borders and re-check protected tracks' `(name, start, end, enabled)` tuples. Values that read back correct but still show black mean the crop/window math is wrong, not the write.
+
+## Full-screen V3 VTuber Zoom without Adjustment-Clip/DRT traps (verified 2026-11-25)
+
+When adding or fixing `V3` `"VTuber Zoom"` punch-ins on stacked `9:16` timelines (`V1` top game, `V2` bottom avatar, `Mitr-short-001` at `y ≈ 974–1090`), replace `16:9` Adjustment Clips with **raw uncropped source clip segments** on `V3` (`CropTop=0`, `AppendToTimeline`, `trackIndex=3`) matching the original `16:9` V2 ranges:
+
+- **Why not scale `V2` via a `V3` Adjustment Clip Fusion Transform**: `Pivot=(0.5,0), Center=(0.5,0.5)` lifts the bottom panel into a half-screen black void; scaling `V2` when `CropTop > 0` also crops avatar width down tightly. Raw `V3` source segments fill `1080x1920` cleanly and align source bottom (`1080`) to canvas bottom (`1920`) so **eyes sit below `Mitr-short-001`** (`y > 1090`) while hair/ahoge, mic, hands, and shoulders remain unclipped.
+- **No DRT round-trip**: Removing/appending `V3` via Python avoids DRT export/import, preserving `Mitr-short-001` (`EffectFiltersBA`) and zero `_archived` timelines (whereas MCP `delete_clips` / `set_track_enable` auto-archive copies).
+- **Mandatory guards on Resolve `21.1.0.17`**:
+  1. Call `r.OpenPage("edit")` before `tl.DeleteClips` and confirm `items(tl, "video", 3) == []` via readback retry.
+  2. Assert `item.GetFusionCompCount() == 0` on placed V3 source clips so stale/competing Fusion Transforms cannot double-scale frames.
+  3. On disabled (`Flags=2`) tracks, `SetTrackEnable("video", 3, True)` may read back `False` until reload or offline `Project.db` `Flags=0` update + reopen.
+  4. Verify item/property integrity across large batches (`50+` timelines) from inactive timelines in one pass (avoiding ~24 GB RAM / ~45s switch lag) and activate representative multi-game samples for `GetIsTrackEnabled` + burn-in `H.264 Master` render QC.
 
 ## Decision boundaries
 

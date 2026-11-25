@@ -53,3 +53,28 @@ reassigns someone.
    number, frame checked). Say what was not checked.
 6. Name every file you changed in your handoff, so the lead can stage only the
    task's files.
+
+## Speed and quality rules (added 2026-11-24 after the KT404 2026-11 job)
+
+The 56-clip job took ~20 h; most of it was waiting on hung Resolve, duplicate
+work and rework, not editing. These rules remove those losses.
+
+7. **Lead splits every @everyone job in the first reply**: one owner per part,
+   by name, with the output path each part must produce. Others do not start
+   that part. Parallel work only on parts that do not touch Resolve (ASR,
+   subtitles, loudness, title review, frame QC).
+8. **"Done" = path + count + one check.** e.g. "`edit/qc_render/` 56/56 mp4,
+   all > 0 bytes, ffprobe OK". A claim without files on disk is not done.
+9. **Long Resolve batches run under the watchdog**, never in a chat turn:
+   `python scripts/scratch/hl2611/supervise.py --out <dir> --project "<P>" -- <py> <resume-safe script>`
+   started detached. It restarts Resolve and resumes after a hang (no new file
+   for 8 min and Resolve CPU idle). Read `<dir>/supervise.log` for status.
+   Batch scripts must be resume-safe (skip finished items) and do one
+   timeline per Resolve call; never queue all timelines in one render.
+10. **Quality gates before Resolve work, not after.** Check on a 1–2 clip pilot
+    first and only then batch: subtitles from the clip's own audio + lint +
+    a listen of the pilot; loudness measured (≤ −1 dBTP) on the pilot mix;
+    project created with `CreateProject(name, media_location)` and verified.
+11. **Never wait on your own command.** Wait loops must match a PID or an
+    output file, not a process command line.
+12. Status every 30 min while a long job runs: done/total, ETA, blockers.
