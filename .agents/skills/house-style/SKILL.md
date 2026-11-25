@@ -1,7 +1,7 @@
 ---
 name: house-style
 description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
-version: 0.3.12
+version: 0.3.13
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -118,6 +118,8 @@ in favour of Descript (ep6, 2026-11-08). The trap is assuming a short clean read
 is safe for local ASR; use the silence map only for timing.
 Local Whisper may serve as a word-TIMING reference to align Descript text (never as caption text): the
 user approved it for the Laffy intro sync check (2026-11-15) after Resolve auto-captions returned nothing.
+
+Before placing or burn-in rendering a Descript-derived Thai SRT, verify cue timing against the cut timeline's 16 kHz audio using Thai CTC forced alignment plus a 10 ms RMS energy check (expanding numerals and Latin words to spoken Thai for alignment); do not treat `caption_lint.py`, SRT-to-timeline readback, or cue-window pixel presence as proof of speech sync. Why: Descript exports coarse 4–10 s segments (including 4.000 s placeholders), so character-split cues on Katy404 Day 37 drifted 0.8–3.2 s off the voice while passing lint and cue-window burn-in checks. The trap: assuming accurate Descript text implies accurate per-cue timing.
 
 When the user authorizes skipping unclear speech, leave those intervals without
 captions: omit unknown, conflicting or weakly supported words rather than guessing,

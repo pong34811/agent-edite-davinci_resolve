@@ -18,7 +18,7 @@ handoff contains.
 **Reviewer roles** — single-purpose checkers that never edit:
 `cut-reviewer.md`, `grade-match-verifier.md`.
 
-## Current assignment (Davinci Team channel, 2026-11-23)
+## Current assignment (Davinci Team channel, 2026-11-25)
 
 | Role | Agent |
 |---|---|
@@ -26,7 +26,7 @@ handoff contains.
 | Resolve editor | antigravity |
 | Render & QC (and backup editor) | opencode |
 | Thai content | chatgpt |
-| Floating helper | hermes |
+| Floating helper | Hermes |
 
 The agent names change; the roles do not. Update this table when the user
 reassigns someone.

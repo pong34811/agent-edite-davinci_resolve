@@ -27,6 +27,10 @@ while you hold the write turn from the lead.
   ahoge, hands or mic; no black edges.
 - Use the content role's highlight list and subtitle text. Do not put
   unverified words or numbers on screen.
+- Never place or promote a Descript-derived Thai SRT on `caption_lint.py` or
+  cue-count readback alone: verify timing against the cut timeline's 16 kHz
+  audio with Thai CTC forced alignment + 10 ms RMS (expanding numerals/Latin
+  to spoken Thai, pinning scream/SFX bursts) before placing into 16:9 or 9:16.
 - Change only the tracks the step needs; read the other tracks back unchanged.
 
 ## Handoff

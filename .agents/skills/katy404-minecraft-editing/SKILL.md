@@ -1,7 +1,7 @@
 ---
 name: katy404-minecraft-editing
 description: ใช้เมื่อตัดต่อคลิปเกม Minecraft ช่อง KATY404 (ซีรีส์ "ปลูกข้าวจนกว่าจะ 10K ผู้ติดตาม") ทั้ง 16:9 Clean Master และ 9:16 Shorts/TikTok ใน DaVinci Resolve — ครอบคลุมการจัดโครงสร้างแทร็ก, ค่า Geometry/Scale, Preset ซับไตเติล Mitr, การวาง Focus Zoom, กลยุทธ์การตัดต่อเพิ่มยอดวิว/Retention, และการแก้ Bug/Trap ทางเทคนิค (DRT XML In-offset, Live DRT Preset patch, Loudness -13.2 LUFS)
-version: 0.3.0
+version: 0.3.1
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -145,6 +145,13 @@ user-invocable: true
 - **ปัญหา**: ไฟล์ day 31 วัดได้ -34.7 LUFS (true peak -15.8 dBFS) ขณะที่ day 30 ได้ -30.8 LUFS; ถ้าใช้แค่ AudioVolume จะต้องเพิ่ม ~20 dB ซึ่งทำให้ peak ชน
 - **วิธีแก้**: ใช้ `scripts/set_dialogue_leveler.py --apply` เปิด AI Dialogue Leveler บน A1 (ReduceLoud + LiftSoft, BackgroundReduction ปิด, OutputGain 0) แล้วค่อยปรับ AudioVolume; day 31 ได้ -12.3 LUFS / true peak -1.1 dBFS (A1 +9.6 dB จากเดิม +11.6 dB ที่ผู้ใช้ตั้งไว้)
 - **หมายเหตุ**: หน้าต่างซูมต้องวัดใหม่ทุกสตรีม — day 31 อวาตาร์อยู่คอลัมน์ ~0.78 ของเฟรม โทนผมเริ่ม ~0.556 ทำให้ window top 0.520 / bottom 0.985 / cx 0.760 (Size 2.15) ได้ headroom ~7% และไม่มีขอบดำขวา ไม่ใช้ค่าของ day 30 ได้โดยตรง
+
+### Trap 8: ซับไตเติลจาก Descript ไม่ตรงเสียงคลิป (Descript SRT Timing Drift — Day 37)
+- **ปัญหา**: Descript ส่งออกข้อความเป็น segment ยาว 4–10 วินาที (มีปลาย `4.000 s` แบบ placeholder) เมื่อแบ่งเป็นซับสั้นแล้วนำเข้า Resolve โดยไม่อิงเสียงจริงของไทม์ไลน์ที่ตัดแล้ว เกิดอาการเวลาคลาดเคลื่อนสะสม (`cue 07–08` ขึ้นเร็วกว่าเสียง `0.8–1.0 s`, `cue 25–26` ช้ากว่าเสียง `1.2–1.6 s`, `cue 44–55` ช้ากว่าเสียง `1.3–3.2 s`) โดยที่ `caption_lint.py` และ `verify_srt_on_timeline.py` ยังรายงาน 0 ข้อผิดพลาด
+- **วิธีแก้บังคับก่อนนำเข้าและก่อนเรนเดอร์**:
+  1. ดึง `16 kHz` mono WAV จากเสียงของไทม์ไลน์ที่ตัดแล้ว (`Timeline 1_edit` / `Timeline 1`) แล้วซิงก์ทุก cue ด้วย Thai CTC forced alignment (`airesearch/wav2vec2-large-xlsr-53-th`) + 10 ms RMS energy map
+  2. แปลงตัวเลขและคำอังกฤษเป็นคำอ่านภาษาไทยก่อนจัดแนว CTC (เช่น `37` → `สามสิบเจ็ด`, `10,000` → `หนึ่งหมื่น`, `2,356` → `สองพันสามร้อยห้าสิบหก`, `Creeper` → `ครีปเปอร์`, `Third Person` → `เธิร์ดเพอร์สัน`) และล็อกช่วงร้องตกใจ/เสียงเกมดังทับด้วย 10 ms RMS + ASR
+  3. ตรวจ `caption_lint.py` ผ่าน 0 ข้อผิดพลาด แล้วอัปเดตซับชุดเดียวกันลงทั้ง `Timeline 1` (`16:9`, `Mitr Font`) และ `Timeline 1_9x16` (`9:16`, `Mitr-short-001`) พร้อม spot-check เฟรม burn-in เทียบเวลาเสียงจริงช่วงต้น–กลาง–ท้ายคลิป
 
 ---
 

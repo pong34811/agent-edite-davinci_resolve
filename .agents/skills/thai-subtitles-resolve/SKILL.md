@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert, style, and CTC-sync Thai subtitles in Resolve.
-version: 0.5.15
+version: 0.5.16
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -236,6 +236,15 @@ Descript text; record kept-uncertain cues in the channel doc.
 ## Check for a global offset before shifting subtitles
 
 Compare the dialogue-reference waveform to the rendered audio in windows at the start, middle, and end. If the lag is effectively zero, correct individual cues against phrase edges and word-timing evidence rather than shifting the whole track. Check the actual burn-in separately: Resolve cue readback confirms placement, not speech sync.
+
+## Mandatory pre-import CTC sync gate for Descript SRTs (2026-11-25, Katy404 Day 37)
+
+Descript exports coarse 4–10 s segments (with `4.000 s` placeholder ends), so cues split by character count can drift `0.8–3.2 s` off the live voice even when `caption_lint.py` reports 0 problems, `verify_srt_on_timeline.py` matches 100%, and burn-in QC sees pixels inside every cue's own window. Before importing any Descript-derived SRT into `16:9` or cloning it to `9:16`:
+
+1. Extract a `16 kHz` mono WAV from the **cut timeline's** audio (after head/tail trims and any A1 splits) and compute a 10 ms RMS envelope alongside `airesearch/wav2vec2-large-xlsr-53-th` CTC log-probabilities (`20 ms` frames).
+2. Expand numerals, Latin terms, and live spoken contractions to spoken Thai before forced alignment (e.g. `37` -> `สามสิบเจ็ด`, `10,000` -> `หนึ่งหมื่น`, `2,356` -> `สองพันสามร้อยห้าสิบหก`, `Creeper` -> `ครีปเปอร์`, `Third Person` -> `เธิร์ดเพอร์สัน`, `เพื่อนๆ` -> `เพื่อนเพื่อน`, or `แล้วนะครับ` -> `แล้ว` when the audio drops the particle).
+3. Run monotonic block-wise Viterbi alignment across pause-bounded blocks (`<= 0.20 s` drift target; `LEAD = 0.04 s`, `MAXF = 90` @ 60 fps = `1.50 s`, `MINF >= 16` frames), and pin scream/gameplay-SFX-overlapping exclamations directly from 10 ms RMS bursts + ASR rather than trusting raw CTC alone.
+4. Re-run `caption_lint.py` on the synced SRT and verify the exact `(start, end, text)` list on **both** `16:9` and `9:16` timelines after DRT style cloning (`drt_clone_subtitle_style.py`), then spot-check burned-in frames against the audio timestamps at early, mid, and late cues.
 
 ## The three findings that matter
 

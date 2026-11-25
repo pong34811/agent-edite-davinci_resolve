@@ -9,20 +9,21 @@ Entry points: Claude Code reads `CLAUDE.md` (a thin pointer to this file); Codex
 0. Run `python scripts/check_mcp_update.py` (compares the installed community MCP with the newest tag of https://github.com/samuelgursky/davinci-resolve-mcp). If it says `UPDATE`, read the upstream `CHANGELOG.md` for the new versions, run it with `--apply`, tell the user to restart the agent session so the MCP reloads, and continue with the Studio MCP / scripts until then. `BLOCKED` (local changes in the install) or `UNKNOWN` (offline): report it, do not force.
    If `BLOCKED` reports a missing configured install, read `.mcp.json` to identify the stale paths, then search local checkouts. Verify the candidate's `origin` is `https://github.com/samuelgursky/davinci-resolve-mcp`, `src/server.py` exists, and the configured venv Python exists and runs; check its version and working tree before use. Update only `mcpServers.davinci-resolve.command` and `args[0]` to the verified paths, preserve `env` and other settings, and rerun the checker. Never clone, overwrite local changes, or guess a replacement path. A corrected project config does not prove the active client attached the server: restart the session and probe `resolve_control get_version`; if its tools remain absent, report that the active client still needs its own MCP configuration.
 1. Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`; load the domain skill that matches the request (`resolve-mcp` is the index). If the user names a channel or project (Katy404, Aomi-mama, Armigon, Tygarina, Sakuyako-Cheris, Laffy, Kael, Hoshi_1489), read its profile in `docs/channels/` first.
-   For an editing assignment, also follow `.agents/skills/project-learning/SKILL.md`: research current guidance at the start per `.agents/skills/resolve-video-enrichment/references/post-edit-review.md`, and prepare its evidence-limited review after QC.
+   For an editing assignment, also follow `.agents/skills/project-learning/SKILL.md`: research current guidance at the start per `.agents/skills/resolve-video-enrichment/references/post-edit-review.md`, and prepare its evidence-limited review after edit verification (skip rendering unless explicitly requested).
 2. Check the attached MCP tool catalog and run a read-only probe (`resolve_control get_version`; Studio MCP `get_resolve_status`). If the `davinci-resolve` MCP is disabled or unreachable, say so before falling back.
 3. Search `scripts/INDEX.md` and `grep -r` in `scripts/` for an existing tool. **Never create a tool outside this repository** (no new folders on the Desktop, no temp scripts under `%TEMP%` or the home directory).
 4. Only if nothing exists, print the `MCP-GAP:` line and write the script in `scripts/scratch/` (gitignored, no approval needed). Promote it to `scripts/` only when it is reusable: use `resolve_common`, add a test, add a row to `scripts/INDEX.md`.
 
 ## Team roles (several agents on one project)
 
-When more than one agent works on a job, each takes one role from `.agents/roles/README.md` (producer-lead, resolve-editor, render-qc, thai-content, floating-helper) and follows its file. Only the agent holding the Resolve write turn changes Resolve; everyone else reads only.
+When more than one agent works on a job, each takes one role from `.agents/roles/README.md` (producer-lead, resolve-editor, render-qc, thai-content, floating-helper) and follows its file. Only the agent holding the Resolve write turn changes Resolve; everyone else reads only. By default, complete editing on the timeline without invoking `render-qc` for video rendering; run render/deliver steps only when the user explicitly requests rendering.
 
 ## Before editing
 
 - Read `.agents/skills/house-style/SKILL.md` and `docs/OPERATING-NOTES.md`, then load the skill matching the actual request. Use `read_file` if a project skill is not yet registered in `skill_view`.
 - Skills are in `.agents/skills/`; their Resolve manuals retain the original `docs/` and `resolve-advanced/README.md` layout. `docs/related-skills/` and `docs/skill-variants/` are archives, not default editing instructions.
 - Current explicit user instructions govern scope. Historical skill usage does not authorize a new edit, render, import, relink, cleanup, or database patch.
+- **No rendering by default (edit-only completion):** Skip all rendering and Deliver-page exports (including test renders and burn-in QC renders) unless the user explicitly asks to render. Finish all timeline edits cleanly in DaVinci Resolve, save (`SaveProject()`), verify via readback/stills, and wait for the user's explicit command before queuing or running any render.
 - Discover the live project, timeline IDs, exact Resolve build, resolution, both frame-rate settings, media paths, and existing video/audio/subtitle coverage before writing.
 - Preserve the project's approved aspect ratio. Do not automatically turn a 16:9 project into 9:16 or assume settings from another project.
 
@@ -165,6 +166,6 @@ Before reporting done:
 
 ## Verification and handoff
 
-Save with `ProjectManager.SaveProject()`. Read back every modified target and restore the original active project/timeline, playhead, page, folder, and track states. Verify each batch item, not just one example. For renders, require Complete status, a nonempty output, ffprobe video/audio verification, and visual QC; native still export can omit subtitles.
+Save with `ProjectManager.SaveProject()`. Read back every modified target and restore the original active project/timeline, playhead, page, folder, and track states. Verify each batch item, not just one example. **Do not render by default** — finish at verified timeline state (including readback and native still checks where needed; native still export can omit subtitles) and wait for the user to ask before rendering. Only when rendering is explicitly requested, require Complete status, a nonempty output, ffprobe video/audio verification, and visual QC.
 
 Only report what was actually verified. Skills/documents are not proof that a tool is installed or an API works on the currently running build. This packaging task does not itself authorize connecting to or changing Resolve.

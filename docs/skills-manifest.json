@@ -1370,7 +1370,7 @@
       "path": ".agents/roles/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "223a4b873dc5dbced7af1c647c7ae9eba9d0d8976f2bf09027d52fac0f32d38c"
+      "sha256": "85ecfcc392612b0cc63b6c9d19ea89a3c546f1ec560cca072b238271865646aa"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
@@ -1408,7 +1408,7 @@
       "path": ".agents/roles/resolve-editor.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "2d7111f62196030deeab122b14e5f8752dc887f832814100256ed0e7b8a43b26"
+      "sha256": "7731bd5bfb3133d2a715800ecab22b17f0abbbb263c1c65b141cec942aa18bff"
     },
     {
       "path": ".agents/roles/thai-content.md",
@@ -1566,7 +1566,7 @@
       "source_sha256": "2262cbf0ed33e48aaebc893f62b067574012d33fb7afe9f34151407e0f486d92",
       "kind": "editing_skill",
       "local_amendment": "Native Subtitle-only workflow; migration targets, protected legacy timelines, preserved text/timing, and user-owned style scope.",
-      "sha256": "8f80cd9a9eabf363f9b68b3fd9faf099c9276559d3740a118c1ebded8d03d5ad"
+      "sha256": "34f62e639e737320aaf7d51ca7429c443459d0dabc4f47e87e5925818e0e039c"
     },
     {
       "path": ".agents/skills/hyperframes-animation/SKILL.md",
@@ -3252,7 +3252,7 @@
       "path": ".agents/skills/katy404-minecraft-editing/SKILL.md",
       "source": "project-authored",
       "kind": "editing_skill",
-      "sha256": "1ec2785cb4fc4b065d801ca301488561b6d21ec4fc27265834924e864f04b05d"
+      "sha256": "6c9f0edea0e93194f6de0091750356593eaf6e775ff534f7978ed19003871931"
     },
     {
       "path": ".agents/skills/kt404-youtube-upload/SKILL.md",
@@ -6009,7 +6009,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "f310cb9ae7dbdaca6d7980216490b7580dec8cd8254714cb5a23573486ffcacb"
+      "sha256": "053cb7d453ca003211e5a4b4161fc69232e1abff9e370d5ce46f8cd035e113df"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md",
@@ -6257,7 +6257,7 @@
       "path": "AGENTS.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "33f4b5f6925c09a5b9d579ec149ae2f95c35251c79373c2ba8c0871f00066a82"
+      "sha256": "ca988dcd9feb6e914de3b79ae9a173930547ce093bf3982c6752e4c36717167d"
     },
     {
       "path": "CHANGELOG.md",
@@ -6287,7 +6287,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "c3e3caef93aaa515b951237069b73e80474eeb5fc2e8e70bb95251d556f6c873"
+      "sha256": "0dbe20096402ecbbdb0a7e63b2c0546c3f22849c237cfebe9733db656d95c238"
     },
     {
       "path": "docs/README.md",
@@ -6399,7 +6399,7 @@
       "path": "docs/channels/katy404.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "9793f2733a298b8e6bb524027304754d9f9e0f9fe29a6982e091abdffb8ea1cd"
+      "sha256": "0012958aff9af9c8308579241ff67e76be59f0c91f71fad36a82e1f551a94ed0"
     },
     {
       "path": "docs/channels/laffy.md",
