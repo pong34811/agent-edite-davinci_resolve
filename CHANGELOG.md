@@ -1,5 +1,48 @@
 # Changelog
 
+## v0.17.124 — บทเรียน Katy404 Day 36: จัดกลาง 9:16 ห้ามยืด (ZoomGang) และชุดสกิลล่าสุด
+
+### รายละเอียด
+- เพิ่มบทเรียนงาน Katy404 Day 36 ลงใน `.agents/skills/katy404-minecraft-editing/SKILL.md` (`0.3.0`) และ `docs/channels/katy404.md`: บังคับตั้ง `ZoomGang = True` (`ZoomX == ZoomY`) บนแทร็ก `V3` และ `V4` สำหรับคลิป 9:16 พร้อมสูตรคำนวณสเกลคงสัดส่วนขั้นต่ำ `K_UNIFORM >= 540.0 / (1280.0 - AV_CX)` เพื่อกันแถบดำด้านข้างโดยไม่ทำให้ตัวละครยืดเบี้ยว (ค่า Day 36 ที่ยืนยันแล้ว: `K_UNIFORM = 3.18` → Resolve `ZoomX = ZoomY = 3.769`, `Pan = -1492.056`)
+- บันทึกค่าคาลิเบรตเสียงต้นทาง OBS เบา (`-33.5 LUFS`) ของ Day 36 (`Dialogue Leveler` เปิด `ReduceLoud + LiftSoft` + `AudioVolume +4.5 dB` บน `A1`, `BGM -20.0 dB` บน `A3` ได้ผลส่งมอบ `-14.2 LUFS`, True Peak `-1.1 dBFS`) รวมถึงกฎเปิดแอ็กทีฟไทม์ไลน์ก่อนอ่าน `GetIsTrackEnabled` และลบสำเนา `_delivery_tmp` หลังเรนเดอร์เสร็จ
+- อัปเดตกฎกลางข้ามช่องใน `.agents/skills/vertical-video-reframing/SKILL.md` (`0.3.0`) และ `docs/OPERATING-NOTES.md` ให้บังคับล็อกสัดส่วน `ZoomGang = True` แทนการยืดแกนเดียวเพื่อปิดแถบดำ
+- รวมการเปลี่ยนแปลงก่อนหน้าตั้งแต่แท็ก `v0.17.123` (`b17192c` และ `c00330a`/`fdb60b9`): เพิ่มสกิล `grill-me`, `grilling` และ `resolve-highlight-batch-production`, อัปเดต `resolve-audio`, `resolve-delivery`, `thai-subtitles-resolve`, `timeline-naming-convention`, `agent-edite-skills-catalog`, `.agents/roles/README.md`, `scripts/asr_words_th.py`, `skills-lock.json` และกฎโปรเจกต์/ไฮไลต์ใน `docs/OPERATING-NOTES.md` และ `docs/channels/katy404.md`
+- รีเฟรช `docs/skills-manifest.json` (`90` สกิลที่ใช้งาน, `1,411` ไฟล์) และ `docs/validation-report.json` แล้วรันชุดทดสอบทั้งรีโปผ่านครบ (`467 passed, 35 skipped, 10 subtests passed`; ไม่ได้เชื่อมต่อ Resolve สดในรอบทดสอบ)
+
+### Skill ที่อัปเดต
+- `agent-edite-skills-catalog` (แก้ไข): `SKILL.md`, `references/task-recipe-skills.md`
+- `grill-me` (ใหม่): `SKILL.md`, `agents/openai.yaml`
+- `grilling` (ใหม่): `SKILL.md`, `agents/openai.yaml`
+- `katy404-minecraft-editing` (แก้ไข): `SKILL.md`
+- `resolve-audio` (แก้ไข): `SKILL.md`
+- `resolve-delivery` (แก้ไข): `SKILL.md`
+- `resolve-highlight-batch-production` (ใหม่): `SKILL.md`
+- `thai-subtitles-resolve` (แก้ไข): `SKILL.md`
+- `timeline-naming-convention` (แก้ไข): `SKILL.md`
+- `vertical-video-reframing` (แก้ไข): `SKILL.md`
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/roles/README.md`
+- แก้ไข `.agents/skills/agent-edite-skills-catalog/SKILL.md`
+- แก้ไข `.agents/skills/agent-edite-skills-catalog/references/task-recipe-skills.md`
+- เพิ่ม `.agents/skills/grill-me/SKILL.md`
+- เพิ่ม `.agents/skills/grill-me/agents/openai.yaml`
+- เพิ่ม `.agents/skills/grilling/SKILL.md`
+- เพิ่ม `.agents/skills/grilling/agents/openai.yaml`
+- แก้ไข `.agents/skills/katy404-minecraft-editing/SKILL.md`
+- แก้ไข `.agents/skills/resolve-audio/SKILL.md`
+- แก้ไข `.agents/skills/resolve-delivery/SKILL.md`
+- เพิ่ม `.agents/skills/resolve-highlight-batch-production/SKILL.md`
+- แก้ไข `.agents/skills/thai-subtitles-resolve/SKILL.md`
+- แก้ไข `.agents/skills/timeline-naming-convention/SKILL.md`
+- แก้ไข `.agents/skills/vertical-video-reframing/SKILL.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/channels/katy404.md`
+- แก้ไข `docs/skills-manifest.json`
+- แก้ไข `docs/validation-report.json`
+- แก้ไข `scripts/asr_words_th.py`
+- แก้ไข `skills-lock.json`
+
 ## v0.17.123 — บทเรียน KT404 2026-11: สร้างโปรเจกต์ โหลดคลิป และไฮไลต์
 
 ### รายละเอียด
