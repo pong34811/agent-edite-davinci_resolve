@@ -1,7 +1,7 @@
 ---
 name: resolve-delivery
 description: Delivery, rendering, and deliverable QC in the DaVinci Resolve MCP. Apply when preparing render jobs, validating render settings, QCing a finished render against a spec (video/loudness/blanking/completeness), building or reconciling a render manifest, expanding texted/textless/stems/slate deliverables, verifying media ingest, or producing a provenance/episode report — live in a running Resolve OR offline against rendered files and the project DB. Routes to the live render tools, the offline deliverable/media/provenance tools, and the deliverables craft skills.
-version: 0.3.2
+version: 0.3.3
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -114,6 +114,8 @@ Use the lower-level path below when you need something no target covers.
 - `safe_quick_export` forces `EnableUpload=False` and needs `allow_render=True`
 
   before it actually renders.
+
+- If a Deliver-queue export hangs and no output was written, recover and verify the saved timeline by ID. For a local output, try `RenderWithQuickExport` using a discovered preset, an unused output stem, and `EnableUpload=False`. On Windows Studio 21.1.1.10, H.264 Master honored `ExportSubtitle=True, SubtitleFormat='BurnIn'` with a native subtitle track; check actual pixels on active cues rather than assuming burn-in. The call may return `Rendering` immediately; read `GetRenderWithQuickExportStatus()` until terminal (`Render Complete` on Windows Studio 21.1.1.10), then verify the actual container, both streams, frame count, picture and loudness. Restore the session only after the asynchronous export finishes.
 
 - **Pin the base render state with `prepare_render_job(from_preset=...)`.**
 

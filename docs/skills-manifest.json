@@ -54,6 +54,24 @@
       "history_sessions": 0
     },
     {
+      "name": "grill-me",
+      "tier": "supporting",
+      "path": ".agents/skills/grill-me/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
+      "name": "grilling",
+      "tier": "supporting",
+      "path": ".agents/skills/grilling/SKILL.md",
+      "source": "profile skill sync (commit 10370a1)",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "highlight",
       "tier": "supporting",
       "path": ".agents/skills/highlight/SKILL.md",
@@ -1502,6 +1520,30 @@
       "source": "project-authored",
       "kind": "editing_skill",
       "sha256": "60780ed24c53e2e01f14f6e728e1f6c220b3cf8e8dd0df6d1c5fb72091cf3c5a"
+    },
+    {
+      "path": ".agents/skills/grill-me/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "19e660207b447acf6ee0d600471c02e549c7aca8fb3ab38fdc2c7056aa442fc8"
+    },
+    {
+      "path": ".agents/skills/grill-me/agents/openai.yaml",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "c03a1eee1161bb70ca360b3d17705638b93bc8eec41319732725dc05a53196a5"
+    },
+    {
+      "path": ".agents/skills/grilling/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "ec91c3f684a0a6323eaf30faa26d3aac5b95f28811eca6d4f108138934063c5c"
+    },
+    {
+      "path": ".agents/skills/grilling/agents/openai.yaml",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "ad75163922ff8263acdd25ebc37420e8fcf1fccb93483fd5742e9bd26f5c45f6"
     },
     {
       "path": ".agents/skills/highlight/SKILL.md",
@@ -5110,7 +5152,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-audio\\SKILL.md",
       "source_sha256": "3734a5f38e8c01063e37258bdb516676d5c2ec09096512075016e9767ea5e0fb",
       "kind": "editing_skill",
-      "sha256": "3debc081d92100f2130af18779819bf4b0d1c1515fbfbe166aa607abc10adbd8"
+      "sha256": "5ca78a752d30ecfc9423e46a15544f77e98431898373831696039eec21194649"
     },
     {
       "path": ".agents/skills/resolve-batch-export/SKILL.md",
@@ -5185,7 +5227,7 @@
       "source": "C:\\Users\\warit\\Desktop\\davinci-resolve-mcp\\.agents\\skills\\resolve-delivery\\SKILL.md",
       "source_sha256": "ea471434a6acabd8430d58d3622d175b15ceb7f641070aec9b12cba8c95c3dd8",
       "kind": "editing_skill",
-      "sha256": "b97d70bd82b0c5561aa64642bc0a5b83f4695c0f4aa8cf270cd603b9cd72f17a"
+      "sha256": "a31220c7391e4621015ccfa3d741e2e32cbe1e723b7a452938811bc2803c976b"
     },
     {
       "path": ".agents/skills/resolve-edit/SKILL.md",
@@ -5952,7 +5994,7 @@
       "source_sha256": "13a8673442d604f220e61c0681bfcf5a370be131cd623295e1313385a2a8a49b",
       "kind": "editing_skill",
       "local_amendment": "House-style 1.5s cue cap; bare SRT payload; conservative structural mutation pacing; native-only migration reference; current-state readback and explicit style/SQL scope.",
-      "sha256": "b833edb23e1544457b875f4b44b67c84499c6637970cfc26cbd028dd1861a568"
+      "sha256": "f310cb9ae7dbdaca6d7980216490b7580dec8cd8254714cb5a23573486ffcacb"
     },
     {
       "path": ".agents/skills/thai-subtitles-resolve/references/ctc-retime-delivery.md",
@@ -6205,7 +6247,7 @@
     {
       "path": "CHANGELOG.md",
       "source": "project-authored",
-      "sha256": "36243154be65b19a0c81d76f14391f01611b9bdec1b08b64346ecfd97a5733e7",
+      "sha256": "3c1505ddeaec89f66271dbdee79c4e331d13b15f199cbd316bc4134d365711bc",
       "kind": "integration_or_validation"
     },
     {
@@ -6217,7 +6259,7 @@
     {
       "path": "VERSION",
       "source": "project-authored",
-      "sha256": "dbd7a5b43a2f9a5ae22f8604dfc07bae62e3b1ae83b2de8a66362573b0f19821",
+      "sha256": "f783e12b3fcfee4bb8080d0b71fbcb212ca377b0eb347b849fbd2f37e5c6a080",
       "kind": "integration_or_validation"
     },
     {
@@ -6230,7 +6272,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "fcd220775389f83b588c6fa69e6aa877317b79359966dcfcc9d00cdabb098042"
+      "sha256": "364f73ae37907bfcb933458d5ec862415133d6d513b3963a8bbce7cdd84ec8a0"
     },
     {
       "path": "docs/README.md",
@@ -10333,11 +10375,11 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1406,
-    "supporting_skills": 70,
-    "active_skills": 87
+    "manifest_files": 1410,
+    "supporting_skills": 72,
+    "active_skills": 89
   },
-  "bundle_version": "0.17.122",
+  "bundle_version": "0.17.123",
   "excluded_repository_paths": [
     {
       "path": "scripts/scratch/chaiwithjai-review/**",

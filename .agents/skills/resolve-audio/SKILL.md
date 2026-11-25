@@ -1,7 +1,7 @@
 ---
 name: resolve-audio
 description: Audio and Fairlight work in the DaVinci Resolve MCP. Apply when setting audio properties, syncing audio, isolating voice, generating subtitles, planning Fairlight track/bus layouts, checking loudness, routing buses, or splitting/trimming/converting audio — live in a running Resolve OR offline. Routes to the live audio tools, the offline audio planning/bus-routing tools, and the Fairlight kernel.
-version: 0.3.2
+version: 0.3.3
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -162,6 +162,7 @@ with remedies and are never auto-corrected — report them, do not paper over th
     - Lower only the SFX that covers each peak by `peak - ceiling + margin`.
       A1 and BGM stay untouched, so integrated loudness barely moves.
     - Keep the SFX bed below the speech ceiling from the start.
+- **Read back all Dialogue Leveler fields after DRT reimport.** On Resolve 21.1.1.10 the enabled state and clip gain can survive while `AudioDialogueLevelerBackgroundReduction` and `AudioDialogueLevelerOutputGain` reset to `True` and `+2 dB`. Compare against the active source timeline, restore the intended settings on the variant (`scripts/set_dialogue_leveler.py` for its standard profile), and measure the new render.
 - **Quiet raw mic recording: Dialogue Leveler first (Katy404 day 28, 21.1.0.17, 2026-11-15).**
   Opposite case to the hot VODs above. Source -29 LUFS with peaks at -5.5 dBFS: flat
   gain was capped at ~+4.5 dB, but `scripts/set_dialogue_leveler.py --apply` (reduce

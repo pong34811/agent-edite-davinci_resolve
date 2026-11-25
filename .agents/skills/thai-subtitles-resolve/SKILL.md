@@ -1,7 +1,7 @@
 ---
 name: thai-subtitles-resolve
 description: Insert, style, and CTC-sync Thai subtitles in Resolve.
-version: 0.5.14
+version: 0.5.15
 author: Warit (pong34811), Hermes Agent
 license: MIT
 platforms: [windows]
@@ -232,6 +232,10 @@ Descript text; record kept-uncertain cues in the channel doc.
   toggle tracks to fix a comparison artifact. Reuse one Resolve connection for
   its object handles, preserve the entry UI state, and report any timed-out
   state audit separately from the completed cue/bounds/media checks.
+
+## Check for a global offset before shifting subtitles
+
+Compare the dialogue-reference waveform to the rendered audio in windows at the start, middle, and end. If the lag is effectively zero, correct individual cues against phrase edges and word-timing evidence rather than shifting the whole track. Check the actual burn-in separately: Resolve cue readback confirms placement, not speech sync.
 
 ## The three findings that matter
 
