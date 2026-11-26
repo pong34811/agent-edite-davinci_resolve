@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.17.126 — มอบ /learn ownership ให้ Hermes และบทเรียน Render/QC/ffmpeg Day 37
+
+### รายละเอียด
+- มอบความรับผิดชอบ /learn ให้ Hermes อย่างเป็นทางการ: Floating helper เป็นเจ้าของ docs/OPERATING-NOTES.md, รีเฟรช docs/skills-manifest.json, รัน pytest และ commit บทเรียนหลังจบงานทุกครั้ง (.agents/roles/README.md)
+- บันทึกบทเรียน KT404 Day 37 ฝั่ง render/QC/ffmpeg ลง docs/OPERATING-NOTES.md (12 บรรทัด): SetRenderSettings คืน False เงียบๆ เมื่อ key ไม่รองรับ, build 21.1.0.17 ไม่มี GetRenderSettings, AddRenderJob สลับไปหน้า Deliver, render ที่ยกเลิกทิ้ง queue ค้างและไฟล์ MP4 ที่ดูเหมือนเสร็จ → ตรวจ ffprobe/ebur128 ก่อนเสมอ
+- กฎวัดเสียง/ffmpeg 9.0: ใช้ "-af ebur128=peak=true -f null -", อ่าน FTPK (peak ต่อ 100 ms) แทน TPK ที่เป็น running max, ใช้ "select=eq(n\,F)" แทน -vsync 0 ที่ถูกถอด, และใช้ -count_frames เป็นจำนวนเฟรม decode จริง
+- QC false positive: แถบฟ้าคืนไม่ใช่ black bar (ต้องมืดและสม่ำเสมอ + ดูภาพประกอบ), ผม/ผิวขาว-ฟ้าทำ detector หมึกซับผิด → บังคับขาวใกล้กลาง; เช็กซับ 9:16 ด้วย eye_y > sub_y1 ทุกเฟรมสุ่ม
+- 16:9 export พังที่ 25% (เฟรม 1110) เพราะ Adjustment Clip มี <In>210</In> เกินช่วง Fusion comp [0,99] → rebuild ด้วย In="" แล้วใช้คลิปซอร์สจริง
+- check_mcp_update.py ยัง BLOCKED จาก local changes ใน D:\davinci-resolve-mcp (ติด 5.3.1, มี 5.4.3) → อย่าเขียนทับ, routine รายวันตรวจอย่างเดียว
+- เปิดอยู่ / รอผู้ใช้ตัดสิน: ทุก render ยังไม่ถึงเป้า -13..-14 LUFS และ ≤ -1.0 dBFS (v1 -16.0/+0.9, v2 และ 9:16 -16.4/+0.3) → เลือก 2-pass loudnorm (-c:v copy) หรือใส่ Fairlight Main Bus limiter ก่อน final render
+- รีเฟรช docs/skills-manifest.json ให้ checksum ของ .agents/roles/README.md และ docs/OPERATING-NOTES.md ตรงกับเนื้อหา; pytest tests/test_skill_bundle.py → 9 passed
+
+### Skill ที่อัปเดต
+- ไม่มี
+
+### ไฟล์ที่เปลี่ยน
+- แก้ไข `.agents/roles/README.md`
+- แก้ไข `docs/OPERATING-NOTES.md`
+- แก้ไข `docs/skills-manifest.json`
+
 ## v0.17.125 — กฎข้ามเรนเดอร์เริ่มต้นใน AGENTS.md และบทเรียนซับไตเติล Katy404 Day 37
 
 ### รายละเอียด
