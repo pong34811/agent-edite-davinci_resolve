@@ -6269,7 +6269,7 @@
       "path": "README.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "50dfb0c57b33874c782b2acd0734af0a22d0a2d3686a4aaae0d22b4061e80bdb"
+      "sha256": "f108d370b44787b963618d84227a259d1df7805a5143cbd8cc1fc9fa272b7a88"
     },
     {
       "path": "VERSION",
