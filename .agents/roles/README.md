@@ -13,7 +13,7 @@ handoff contains.
 | Resolve editor | `resolve-editor.md` | all timeline writes: 16:9 cut, 9:16 build, zoom, subtitles, audio mix |
 | Render & QC | `render-qc.md` | `.drp` backups, test renders, ffprobe/loudness/black-frame/position checks, scripts and tests |
 | Thai content | `thai-content.md` | highlight picks, hook, Thai subtitle proofread, YouTube title/description/thumbnail text |
-| Floating helper | `floating-helper.md` | any unowned or late part, and help for a role that asks; no Resolve writes without the turn |
+| Floating helper | `floating-helper.md` | any unowned or late part, /learn ownership (docs/OPERATING-NOTES.md, skills manifest refresh, commit for learning entries), and help for a role that asks; no Resolve writes without the turn |
 
 **Reviewer roles** — single-purpose checkers that never edit:
 `cut-reviewer.md`, `grade-match-verifier.md`.
