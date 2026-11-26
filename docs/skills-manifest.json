@@ -1370,7 +1370,7 @@
       "path": ".agents/roles/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "90189faec27ee97700c4ea2969d8e48cd9c0473d449ba51e5709e55f9d467aee"
+      "sha256": "b1fa3ecaa525dab4ce06cf8c2aba21df9955acccaaeb973c7cb9d352e1ff9d86"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
