@@ -18,14 +18,15 @@ handoff contains.
 **Reviewer roles** — single-purpose checkers that never edit:
 `cut-reviewer.md`, `grade-match-verifier.md`.
 
-## Current assignment (Davinci Team channel, 2026-11-26)
+## Current assignment (Davinci Team channel, 2026-11-28)
 
 | Role | Agent |
 |---|---|
 | Producer / lead (+ /learn owner: docs/OPERATING-NOTES.md, skills manifest, commit/push) | Hermes-claude |
 | Resolve editor (16:9 + 9:16, default holder of the Resolve write turn) | antigravity |
-| Render & QC (and backup editor) | opencode |
+| Render & QC (and backup editor) | opencode (new agent, joined 2026-11-28) |
 | Thai content + floating helper (non-Resolve gaps: ASR, subtitle drafts, titles, docs) | Hermes chatgpt |
+| Cut reviewer (read-only, `cut-reviewer.md`) | Learning Coach |
 
 The agent names change; the roles do not. Update this table when the user
 reassigns someone.

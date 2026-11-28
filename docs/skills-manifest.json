@@ -986,6 +986,15 @@
       "history_sessions": 0
     },
     {
+      "name": "video-cut-review",
+      "tier": "supporting",
+      "path": ".agents/skills/video-cut-review/SKILL.md",
+      "source": "copied from Hermes profile skill after 2026-11-28 Laffy Fusion monster cut review",
+      "history_evidence": [],
+      "history_loads": 0,
+      "history_sessions": 0
+    },
+    {
       "name": "video-footage-review",
       "tier": "editing",
       "path": ".agents/skills/video-footage-review/SKILL.md",
@@ -1370,7 +1379,7 @@
       "path": ".agents/roles/README.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "b1fa3ecaa525dab4ce06cf8c2aba21df9955acccaaeb973c7cb9d352e1ff9d86"
+      "sha256": "78a0501ac19606517f989449e2ccf885a9aee66ab6c761ecacb2a348ecdff27b"
     },
     {
       "path": ".agents/roles/cut-reviewer.md",
@@ -6054,6 +6063,18 @@
       "sha256": "b1f87163715e44c58a1abe6ed9918cc635f3b9ce66203b8b43fff9ecb7cbe118"
     },
     {
+      "path": ".agents/skills/video-cut-review/SKILL.md",
+      "source": "project-authored",
+      "kind": "editing_skill",
+      "sha256": "005379e923b6ddb957b2f82a61ca4e7529909e681309bb4ccf137e5ff77999f4"
+    },
+    {
+      "path": ".agents/skills/video-cut-review/references/frame-probes.md",
+      "source": "project-authored",
+      "kind": "editing_skill_reference",
+      "sha256": "2d322261d6974164516185f0b9914d2ae1c8f9ec1c811939520d7d26f9c24e37"
+    },
+    {
       "path": ".agents/skills/video-footage-review/SKILL.md",
       "source": "C:\\Users\\warit\\AppData\\Local\\hermes\\skills\\video-footage-review\\SKILL.md",
       "source_sha256": "c16281a4c076ae438c85398705767c2c4eaa60c9c6273fd8222d3781b5aa0e41",
@@ -6287,7 +6308,7 @@
       "path": "docs/OPERATING-NOTES.md",
       "source": "project-authored",
       "kind": "integration_or_validation",
-      "sha256": "39b68b414af11d94f41657a18fbf1ab8e493f295df6ce7f3cb3d05ce30e868f7"
+      "sha256": "3421ebb8cda5fc08d8dbafcaa45b6649333a74008e94af0800d9a89e0edf9de8"
     },
     {
       "path": "docs/README.md",
@@ -6405,7 +6426,7 @@
       "path": "docs/channels/laffy.md",
       "source": "project-authored",
       "kind": "project_helper",
-      "sha256": "a069448205a40be69d201adf1325fbdf9b3f99d0840c28c6a238a44d3a11bb1f"
+      "sha256": "6d5434c6eac69c09a8681d40c30ee9431db96fba247a925b8b50ee4c00f76379"
     },
     {
       "path": "docs/channels/sakuyako-cheris.md",
@@ -10390,9 +10411,9 @@
     "editing_skills": 17,
     "related_archive_skills": 13,
     "history_evidenced_editing_skills": 14,
-    "manifest_files": 1411,
-    "supporting_skills": 73,
-    "active_skills": 90
+    "manifest_files": 1413,
+    "supporting_skills": 74,
+    "active_skills": 91
   },
   "bundle_version": "0.17.126",
   "excluded_repository_paths": [
